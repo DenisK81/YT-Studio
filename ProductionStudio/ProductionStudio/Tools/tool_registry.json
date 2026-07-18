@@ -1,0 +1,82 @@
+{
+  "$comment": "Seed registry. Update this file every time a tool is added, changed, or retired. Tool Manager Agent reads/writes this.",
+  "tools": [
+    {
+      "name": "fact_check_tool",
+      "path": "Tools/fact_check_tool.md",
+      "description": "Wraps web search/fetch with the channel's fixed source-priority ranking.",
+      "input_schema_ref": "claims: string[]",
+      "output_schema_ref": "verified: object[], flagged: object[]",
+      "tags": ["research", "verification", "web-search"],
+      "provider": "Anthropic web_search tool or equivalent search API",
+      "status": "draft",
+      "last_updated": "2026-07-18"
+    },
+    {
+      "name": "elevenlabs_voice_tool",
+      "path": "Tools/elevenlabs_voice_tool.md",
+      "description": "Provider-agnostic voiceover generation wrapper; default provider ElevenLabs Studio.",
+      "input_schema_ref": "text: string, voice_id: string, chapter: string",
+      "output_schema_ref": "audio_url_or_bytes: string, duration_seconds: number",
+      "tags": ["voice", "tts", "audio"],
+      "provider": "ElevenLabs",
+      "status": "draft",
+      "last_updated": "2026-07-18"
+    },
+    {
+      "name": "image_gen_tool",
+      "path": "Tools/image_gen_tool.md",
+      "description": "Provider-agnostic image generation wrapper (Midjourney / Flux / other).",
+      "input_schema_ref": "prompt: string, style_tags: string[]",
+      "output_schema_ref": "image_url_or_file: string",
+      "tags": ["image", "generation", "visual"],
+      "provider": "configurable (Midjourney, Flux via Leonardo/Freepik/Replicate)",
+      "status": "draft",
+      "last_updated": "2026-07-18"
+    },
+    {
+      "name": "remotion_assembly_tool",
+      "path": "Tools/remotion_assembly_tool.md",
+      "description": "Programmatic video assembly: audio + images + timing + subtitles + effects.",
+      "input_schema_ref": "scenes: object[], audio_track: string, subtitle_track: string",
+      "output_schema_ref": "render_path: string, duration_seconds: number",
+      "tags": ["video", "assembly", "render"],
+      "provider": "Remotion (Node.js)",
+      "status": "draft",
+      "last_updated": "2026-07-18"
+    },
+    {
+      "name": "youtube_publish_tool",
+      "path": "Tools/youtube_publish_tool.md",
+      "description": "Wraps YouTube Data API v3 upload + metadata; publish call is human-gated.",
+      "input_schema_ref": "video_file: string, metadata: object",
+      "output_schema_ref": "video_id: string, status: string",
+      "tags": ["publishing", "youtube"],
+      "provider": "YouTube Data API v3",
+      "status": "draft",
+      "last_updated": "2026-07-18"
+    },
+    {
+      "name": "seo_export_tool",
+      "path": "Tools/seo_export_tool.md",
+      "description": "Formats SEO Agent's structured output into Templates/SEO.md.",
+      "input_schema_ref": "seo_json: object",
+      "output_schema_ref": "SEO.md: file",
+      "tags": ["seo", "formatting"],
+      "provider": "none (pure formatting)",
+      "status": "draft",
+      "last_updated": "2026-07-18"
+    },
+    {
+      "name": "github_sync_tool",
+      "path": "Tools/github_sync_tool.md",
+      "description": "Checks/updates tool_registry.json and commits studio changes to GitHub.",
+      "input_schema_ref": "action: 'check'|'commit', payload: object",
+      "output_schema_ref": "result: object",
+      "tags": ["github", "meta", "tool-management"],
+      "provider": "GitHub API / git CLI",
+      "status": "draft",
+      "last_updated": "2026-07-18"
+    }
+  ]
+}

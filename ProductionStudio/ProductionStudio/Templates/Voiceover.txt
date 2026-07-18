@@ -1,0 +1,11 @@
+VOICEOVER — {CASE_NAME}
+Provider: ElevenLabs (Studio project) | Model: {Eleven v3 / Multilingual v2} | Voice: {voice_id}
+No emotion tags. Natural American English. Short sentences.
+
+=== CHAPTER 1 (scenes 0001-00XX) ===
+{text}
+
+=== CHAPTER 2 (scenes 00XX-00XX) ===
+{text}
+
+(continue per chapter — chapter breaks should roughly match the 10-beat structure in Script.md)

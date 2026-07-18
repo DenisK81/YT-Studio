@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Fatal Affairs Studio Config",
+  "type": "object",
+  "properties": {
+    "channel": {
+      "type": "object",
+      "properties": {
+        "name": { "const": "Fatal Affairs" },
+        "slogan": { "const": "Every Affair Has a Story. Some End in Murder." },
+        "colors": {
+          "type": "object",
+          "properties": {
+            "bg": { "const": "#111111" },
+            "text": { "const": "#FFFFFF" },
+            "accent": { "const": "#A30E15" },
+            "gray": { "const": "#4D4D4D" },
+            "light_gray": { "const": "#BDBDBD" }
+          }
+        },
+        "fonts": {
+          "type": "object",
+          "properties": {
+            "headline": { "const": "Bebas Neue / Oswald Bold" },
+            "body": { "const": "Montserrat" }
+          }
+        }
+      }
+    },
+    "providers": {
+      "type": "object",
+      "properties": {
+        "voice": { "enum": ["elevenlabs"], "default": "elevenlabs" },
+        "image": { "enum": ["midjourney", "flux"], "default": "midjourney" },
+        "video_assembly": { "enum": ["remotion"], "default": "remotion" },
+        "publish": { "enum": ["youtube_data_api_v3"], "default": "youtube_data_api_v3" }
+      }
+    },
+    "publishing_pace": {
+      "type": "object",
+      "description": "Encodes the channel owner's own release strategy — see fatal-affairs-project-brief.md",
+      "properties": {
+        "main_video_and_first_short_same_day": { "const": true },
+        "remaining_shorts_one_per_day": { "const": true },
+        "shorts_order": { "const": "strongest_hook_first_not_chronological" }
+      }
+    }
+  }
+}

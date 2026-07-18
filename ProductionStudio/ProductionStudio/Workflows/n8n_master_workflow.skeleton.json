@@ -1,0 +1,42 @@
+{
+  "$comment": "SKELETON ONLY. Not importable as a working workflow. Node parameters, credentials, and error branches must be built in the n8n editor per Documentation/HANDOFF_TO_CLAUDE_CODE.md. Structure shows intended node order and connections only.",
+  "name": "Fatal Affairs — Master Pipeline",
+  "nodes": [
+    { "id": "case_request", "name": "Case Request (Webhook/Manual Trigger)", "type": "n8n-nodes-base.webhook", "notes": "Entry point: case name or 'find next case'" },
+    { "id": "research_agent", "name": "Research Agent", "type": "n8n-nodes-base.httpRequest", "notes": "POST to Anthropic API with Agents/research_agent.md as system prompt" },
+    { "id": "fact_verification_agent", "name": "Fact Verification Agent", "type": "n8n-nodes-base.httpRequest" },
+    { "id": "human_case_check", "name": "Human Review: case selection close call?", "type": "n8n-nodes-base.if", "notes": "Branch to Wait node if Story Agent flags ambiguous case choice" },
+    { "id": "story_agent", "name": "Story Agent", "type": "n8n-nodes-base.httpRequest" },
+    { "id": "scene_planner_agent", "name": "Scene Planner Agent", "type": "n8n-nodes-base.httpRequest" },
+    { "id": "voice_production_agent", "name": "Voice Production Agent", "type": "n8n-nodes-base.httpRequest" },
+    { "id": "elevenlabs_call", "name": "ElevenLabs Voice Generation", "type": "n8n-nodes-base.httpRequest", "notes": "Tools/elevenlabs_voice_tool.md" },
+    { "id": "image_planning_agent", "name": "Image Planning Agent", "type": "n8n-nodes-base.httpRequest" },
+    { "id": "image_generation_loop", "name": "Image Generation Loop", "type": "n8n-nodes-base.splitInBatches", "notes": "Tools/image_gen_tool.md, retry-once-on-failure logic inside" },
+    { "id": "assembly_agent", "name": "Video Assembly (Remotion)", "type": "n8n-nodes-base.httpRequest", "notes": "Tools/remotion_assembly_tool.md — separate render worker" },
+    { "id": "thumbnail_agent", "name": "Thumbnail Agent", "type": "n8n-nodes-base.httpRequest" },
+    { "id": "seo_agent", "name": "SEO Agent", "type": "n8n-nodes-base.httpRequest" },
+    { "id": "qc_agent", "name": "Quality Control Agent", "type": "n8n-nodes-base.httpRequest" },
+    { "id": "qc_gate", "name": "QC Gate (pass/warning/fail)", "type": "n8n-nodes-base.switch" },
+    { "id": "human_qc_fail", "name": "Human Review: QC failed", "type": "n8n-nodes-base.wait" },
+    { "id": "publishing_agent", "name": "Publishing Agent (prepare only)", "type": "n8n-nodes-base.httpRequest" },
+    { "id": "human_publish_confirm", "name": "Human Confirmation: Publish", "type": "n8n-nodes-base.wait", "notes": "Always required — never auto-fires. See Agents/publishing_agent.md" },
+    { "id": "youtube_publish_call", "name": "YouTube Publish Call", "type": "n8n-nodes-base.httpRequest" },
+    { "id": "tool_manager_check", "name": "Tool Manager: registry check", "type": "n8n-nodes-base.function", "notes": "Runs ahead of any node that would otherwise need a brand-new one-off script" }
+  ],
+  "connections_overview": [
+    "case_request -> research_agent -> fact_verification_agent -> story_agent",
+    "story_agent -> human_case_check (conditional) -> scene_planner_agent",
+    "scene_planner_agent -> voice_production_agent -> elevenlabs_call -> assembly_agent",
+    "scene_planner_agent -> image_planning_agent -> image_generation_loop -> assembly_agent",
+    "assembly_agent -> thumbnail_agent -> qc_agent",
+    "story_agent -> seo_agent -> qc_agent",
+    "qc_agent -> qc_gate",
+    "qc_gate (fail) -> human_qc_fail -> (back to relevant stage)",
+    "qc_gate (pass) -> publishing_agent -> human_publish_confirm -> youtube_publish_call"
+  ],
+  "credentials_needed": [
+    "ANTHROPIC_API_KEY", "ELEVENLABS_API_KEY", "IMAGE_PROVIDER_API_KEY",
+    "YOUTUBE_OAUTH_CLIENT_ID", "YOUTUBE_OAUTH_CLIENT_SECRET", "YOUTUBE_OAUTH_REFRESH_TOKEN",
+    "GITHUB_TOKEN"
+  ]
+}
