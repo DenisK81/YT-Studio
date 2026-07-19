@@ -28,15 +28,21 @@ flowchart TD
     G --> H[Image Generation Agent]
     F --> I[Video Assembly Agent]
     H --> I
+    I --> P[Shorts Agent]
     I --> J[Thumbnail Agent]
     D --> K[SEO Agent]
-    J --> L[Quality Control Agent]
+    P --> L[Quality Control Agent]
+    J --> L
     K --> L
     I --> L
     L -->|pass| M[Publishing Agent]
     L -->|fail| N[Human review]
     M --> O[Human confirms publish]
 ```
+
+**Shorts Agent runs immediately after Video Assembly Agent** — not a separate, later pass. It
+selects moments from the finished render and writes each Short its own hook; see
+`Agents/shorts_agent.md` and the "Shorts & captions requirement" section below.
 
 Cross-cutting: **Tool Manager Agent** runs before any new script is written anywhere in the
 pipeline — not as a pipeline stage, but as a standing check against `Tools/tool_registry.json`.
@@ -53,9 +59,10 @@ pipeline — not as a pipeline stage, but as a standing check against `Tools/too
 | Image Planning | `Templates/ImagePrompts.md` | scene list |
 | Image Generation | files in `Assets/images/` | ImagePrompts.md |
 | Video Assembly | draft render in `Assets/renders/` | Voiceover audio + images + timestamps |
+| Shorts | `Templates/Shorts.md` | final render + scene list (runs right after Video Assembly) |
 | Thumbnail | `Templates/Thumbnail.md` | case summary/twist |
 | SEO | `Templates/SEO.md` | Script.md + `Templates/SuccessRules.md` |
-| Quality Control | `Templates/Checklist.md` | everything above |
+| Quality Control | `Templates/Checklist.md` | everything above, including Shorts.md |
 | Publishing | publish plan (human-gated) | Checklist.md = pass |
 
 `Templates/Sources.md` is written continuously by Research + Fact Verification, not as a
@@ -85,6 +92,33 @@ themselves, but the underlying rule is a permanent one, not just a one-off patch
 - **SEO Agent must produce output ready to paste with no manual trimming** — verify the tag
   string's actual character count and hashtag count before finalizing, don't just target a
   round number and hope it fits.
+
+## Shorts & captions requirement (added 2026-07-19, after a user review of the pipeline)
+
+Two real gaps surfaced: subtitles had no defined style at all (risk of ending up small/low-
+contrast, which is not how the format performs in 2026), and no agent owned "decide which
+moments become Shorts and write each one's own hook" — Publishing Agent's input schema just
+assumed `shorts: [...]` already existed with content, hooks, and titles. Both fixed with real
+research grounding, not guesses:
+
+- **New `Agents/shorts_agent.md`**, running immediately after Video Assembly Agent produces the
+  final render (not a separate later pass). It selects standalone-worthy moments and writes each
+  Short its own hook — never a reworded copy of the main video's Hook beat, since a Short has
+  ~3 seconds to work with and a different job to do.
+- **Hard 45-second cap per Short.** Research (2026 completion-rate/view-count data across a
+  5,400-Short sample) shows 30-45s is the actual sweet spot for total views and algorithm
+  weighting — not the shorter caps that maximize completion % alone but under-perform on raw
+  views and rewatch signal.
+- **One hook per Short: a single bold claim or curiosity gap, landing in under 3 seconds.**
+  50-60% of Shorts drop-off happens in the first 3 seconds; never stack two promises.
+- **Captions are a fixed, brand-consistent style, not an afterthought** (see
+  `Tools/remotion_assembly_tool.md`'s "Caption style" section): bold Montserrat (the channel's
+  existing body font), white text with a black stroke, word-by-word karaoke-style highlight in
+  the channel's existing accent color (`#A30E15`), centered lower-third, minimum 2 seconds
+  on-screen per phrase. This is the dominant 2026 short-form caption style (the CapCut/Hormozi
+  look), not a stylistic guess — captions measurably improve completion rate 12-15%.
+- **Assume sound-off for every Short.** 60%+ of viewers watch muted, so the on-screen hook text
+  must carry the meaning alone, not just reinforce narration.
 
 ## Error handling
 

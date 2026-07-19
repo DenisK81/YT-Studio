@@ -52,6 +52,25 @@
         "remaining_shorts_one_per_day": { "const": true },
         "shorts_order": { "const": "strongest_hook_first_not_chronological" }
       }
+    },
+    "shorts": {
+      "type": "object",
+      "description": "See Agents/shorts_agent.md — decided 2026-07-19 after real 2026 completion-rate/view-count research (5,400-Short sample), not a guess.",
+      "properties": {
+        "max_seconds": {
+          "const": 45,
+          "description": "Hard cap, not a range. 30-45s is the actual sweet spot for total views + algorithm weighting per 2026 data — shorter caps win on completion % alone but lose on raw views/rewatch signal."
+        },
+        "count_per_video": { "const": 5 },
+        "caption_font": {
+          "const": "Montserrat Bold",
+          "description": "Reuses the channel's existing body font (see channel.fonts.body) rather than introducing a new one, for brand consistency."
+        },
+        "caption_highlight_color": {
+          "const": "#A30E15",
+          "description": "Reuses the channel's existing accent color (see channel.colors.accent) for the word-by-word karaoke highlight, instead of the generic yellow default seen elsewhere in the genre."
+        }
+      }
     }
   }
 }
