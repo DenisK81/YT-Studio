@@ -40,7 +40,10 @@ starts once explicitly requested — don't self-initiate Phase 2 work from a Pha
 - Orchestrator: n8n, intended to run on the user's existing Hetzner VPS (not yet installed as
   of this writing — confirm current status with the user before assuming it exists).
 - Voice: ElevenLabs Studio API.
-- Images: Midjourney or Flux — not yet chosen. Ask before committing code to one.
+- Images: fal.ai + Flux `schnell` is the Phase 1 default (see
+  `ProductionStudio/Tools/image_gen_tool.md`), with Leonardo.ai/Replicate as fallback providers.
+  Midjourney is excluded from automation (no official API) but is fine for one-off manual
+  generation in Phase 1.
 - Video assembly: Remotion.
 - Publishing: YouTube Data API v3, always human-gated.
 - First real test case: the Molly Watson / James Addie script. Chapters 6-16 and the ending
