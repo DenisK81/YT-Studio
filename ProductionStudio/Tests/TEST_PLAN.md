@@ -6,7 +6,7 @@ pipeline first and debug it as one black box.
 ## Stage 1 — Agents in isolation
 For each `Agents/*.md`, send a single real request (use the Molly Watson case already drafted
 in `fatal-affairs-project-brief.md` as the fixture) and check the output matches the schema in
-that agent's file exactly. Do this for all 13 agents before connecting any two together.
+that agent's file exactly. Do this for all 14 agents before connecting any two together.
 
 ## Stage 2 — Tools in isolation
 For each `Tools/*.md`, make one real call against the actual provider (small/cheap request —
@@ -17,8 +17,8 @@ live verification.
 ## Stage 3 — Two-node links
 Research → Fact Verification. Fact Verification → Story. Story → Scene Planner. Scene Planner
 → Voice Production. Scene Planner → Image Planning. Image Planning → Image Generation. Voice +
-Images → Assembly. Assembly + Thumbnail + SEO → QC. QC → Publishing (prepare only, no real
-publish call yet).
+Images → Assembly. Assembly → Shorts (runs immediately after the render, not a later pass).
+Shorts + Thumbnail + SEO → QC. QC → Publishing (prepare only, no real publish call yet).
 
 ## Stage 4 — Full chain, one real case, dry-run publish
 Run the Molly Watson case end to end once chapters 1-5 exist. Stop at the human-confirmation

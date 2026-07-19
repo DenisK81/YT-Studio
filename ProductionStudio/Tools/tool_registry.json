@@ -37,13 +37,13 @@
     {
       "name": "remotion_assembly_tool",
       "path": "Tools/remotion_assembly_tool.md",
-      "description": "Programmatic video assembly: audio + images + timing + subtitles + effects.",
+      "description": "Programmatic video assembly: audio + images + timing + burned-in captions (fixed 2026 karaoke-style spec) + effects. Renders both the 16:9 main video and 9:16 Shorts selected by Agents/shorts_agent.md.",
       "input_schema_ref": "scenes: object[], audio_track: string, subtitle_track: string",
       "output_schema_ref": "render_path: string, duration_seconds: number",
-      "tags": ["video", "assembly", "render"],
+      "tags": ["video", "assembly", "render", "captions", "shorts"],
       "provider": "Remotion (Node.js)",
       "status": "draft",
-      "last_updated": "2026-07-18"
+      "last_updated": "2026-07-19"
     },
     {
       "name": "youtube_publish_tool",

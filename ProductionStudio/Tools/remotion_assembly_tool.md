@@ -24,12 +24,31 @@ assemble({
   plain chat sandbox restricted to package registries — it needs its own render worker,
   reachable from n8n as an HTTP call or a queued render job.
 - Should support: zoom/pan/fade transitions between images (Ken-Burns-style, standard for this
-  documentary format), burned-in or soft subtitles, multiple export presets (16:9 for main
-  video, 9:16 for shorts).
+  documentary format), burned-in captions per the fixed style below, multiple export presets
+  (16:9 for main video, 9:16 for Shorts).
+
+## Caption style (fixed, research-grounded 2026-07-19 — see `Documentation/ARCHITECTURE.md`'s
+"Shorts & captions requirement" section)
+- **Font**: Montserrat Bold — reuses the channel's existing body font
+  (`Config/config.schema.json`), not a new arbitrary font, for brand consistency.
+- **Color/stroke**: white text, thin black stroke/outline for contrast on any background.
+- **Chunking**: 1 word or short 2-5 word phrases, not full sentences at once.
+- **Word-by-word karaoke highlight**: the actively-spoken word is enlarged/highlighted in the
+  channel's accent color (`#A30E15`), surrounding words stay dimmer/smaller — this is the
+  dominant 2026 short-form caption style, not a stylistic guess.
+- **Position**: centered, lower third of frame.
+- **Minimum on-screen duration**: 2 seconds per phrase, even if the spoken pace is faster —
+  readability matters more than perfect audio sync, especially since 60%+ of Shorts viewers
+  watch muted.
+- Applies to both the main video (16:9) and Shorts (9:16) — one caption style across the
+  channel, not a per-video decision.
 
 ## Implementation notes
-- Build the shorts export (9:16, ~30-60s cuts) as a second composition sharing the same scene
-  data, not a separate pipeline — reuse the same assets.
+- **Shorts are no longer a blind re-export of the same scene data.** `Agents/shorts_agent.md`
+  now selects specific moments and writes each Short's own hook/title/description
+  (`Templates/Shorts.md`) immediately after this tool produces the main render — this tool then
+  renders each selected Short as its own 9:16 composition (hard cap 45 seconds, per
+  `Config/config.schema.json` `shorts.max_seconds`), not a generic same-content repackage.
 - This spec has not been tested against a real Remotion project — Claude Code should scaffold
   a minimal composition first and confirm render output before wiring it into the full agent
   chain.
