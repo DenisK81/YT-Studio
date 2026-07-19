@@ -45,7 +45,7 @@ pipeline — not as a pipeline stage, but as a standing check against `Tools/too
 
 | Stage | Produces | Consumes |
 |---|---|---|
-| Research | raw case data, sources | case query |
+| Research | raw case data, sources, `genre_trend_notes` | case query |
 | Fact Verification | verified/flagged claims | raw case data |
 | Story | `Templates/Script.md` (draft) | verified claims |
 | Scene Planner | scene list (timestamps, beats) | Script.md |
@@ -60,6 +60,31 @@ pipeline — not as a pipeline stage, but as a standing check against `Tools/too
 
 `Templates/Sources.md` is written continuously by Research + Fact Verification, not as a
 single stage.
+
+## Trend-grounding requirement (added 2026-07-19, after a Stage 1 SEO Agent test)
+
+Testing surfaced two related bugs: `Agents/seo_agent.md` asked for a fixed tag/hashtag *count*
+with no awareness of YouTube's actual limits (tags: 500-character total budget, not a tag
+count; hashtags: over 15 anywhere gets all of them ignored, practical range 3-5), and neither
+Research Agent nor SEO Agent had a real mechanism for "current trends" — the system prompts
+said to "analyze current YouTube trends" but had no tool behind that instruction, so it was
+being asserted from training knowledge rather than checked. Both are fixed in the agent files
+themselves, but the underlying rule is a permanent one, not just a one-off patch:
+
+- **Research Agent must run a real web search on current true-crime genre/format trends every
+  run** (output field `genre_trend_notes`), not assert trends from memory. Genre trends shift;
+  stale assumptions produce generic filler, not real signal.
+- **`viral_potential_notes` (per-candidate) and `genre_trend_notes` (genre-wide) must be
+  grounded in something actually checkable** — real outlet coverage found, a real search result
+  — never a bare "this could go viral" assertion.
+- **A trending frame must never override the facts.** If "unsolved mystery" content is
+  currently trending but a candidate case is solved and adjudicated, that mismatch gets flagged,
+  not papered over — forcing a trending frame onto a case it doesn't fit is exactly the
+  clickbait-lie behavior this channel's agents are built to avoid (see Story/SEO Agents' rules
+  against overselling beyond verified facts).
+- **SEO Agent must produce output ready to paste with no manual trimming** — verify the tag
+  string's actual character count and hashtag count before finalizing, don't just target a
+  round number and hope it fits.
 
 ## Error handling
 

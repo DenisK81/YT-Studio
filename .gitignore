@@ -1,0 +1,13 @@
+# Secrets — real credentials must never be committed. Only .env.example (with empty
+# values) belongs in git — see CLAUDE.md.
+.env
+.env.local
+.env.*.local
+*/.env
+*/.env.local
+
+# Generated media — see ProductionStudio/Assets/README.md. Keep this repo a
+# code/prompt/template repo, not a media dump.
+ProductionStudio/Assets/images/
+ProductionStudio/Assets/audio/
+ProductionStudio/Assets/renders/

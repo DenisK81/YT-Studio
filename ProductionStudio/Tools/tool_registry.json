@@ -77,6 +77,17 @@
       "provider": "GitHub API / git CLI",
       "status": "draft",
       "last_updated": "2026-07-18"
+    },
+    {
+      "name": "mugshot_fetch_tool",
+      "path": "Tools/mugshot_fetch_tool.md",
+      "description": "Fetches real booking photos / court exhibits / agency press-release images from public-record sources only (sheriff/DOC/court), for mixing with Image Generation Agent's AI stills. Deliberately excludes news-outlet article photos (copyright risk) already used in Sources.md. BLOCKED pending legal review: Stage 2 live-check on the Banfield/Fairfax County case found no automatable public mugshot access (FOIA-request-only) and a commercial-use/consent restriction on mugshots generally — see the tool file's Stage 2 note before reviving this.",
+      "input_schema_ref": "case_name: string, subjects: object[]",
+      "output_schema_ref": "images: object[], not_found: object[]",
+      "tags": ["images", "public-records", "mugshots", "legal", "blocked"],
+      "provider": "county sheriff / state DOC inmate lookup / court press releases (per-jurisdiction)",
+      "status": "draft",
+      "last_updated": "2026-07-19"
     }
   ]
 }

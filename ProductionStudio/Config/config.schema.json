@@ -31,7 +31,15 @@
       "type": "object",
       "properties": {
         "voice": { "enum": ["elevenlabs"], "default": "elevenlabs" },
-        "image": { "enum": ["midjourney", "flux"], "default": "midjourney" },
+        "voice_id": {
+          "const": "wSChTcAxdiTjLPhHeyrM",
+          "description": "Jimmy - Canadian Podcast Narration (male, Canadian accent, formal, narrative_story use-case). Verified via live TTS test 2026-07-19 — the MCP tool's silent default produced a female voice, which is wrong for this channel, so voice_id must always be passed explicitly."
+        },
+        "voice_model": {
+          "const": "eleven_multilingual_v2",
+          "description": "Stable long-form narration without emotion tags, per this channel's voiceover policy — see Agents/voice_production_agent.md."
+        },
+        "image": { "enum": ["midjourney", "flux"], "default": "flux" },
         "video_assembly": { "enum": ["remotion"], "default": "remotion" },
         "publish": { "enum": ["youtube_data_api_v3"], "default": "youtube_data_api_v3" }
       }
