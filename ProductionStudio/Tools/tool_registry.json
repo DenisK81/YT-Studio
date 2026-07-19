@@ -26,13 +26,13 @@
     {
       "name": "image_gen_tool",
       "path": "Tools/image_gen_tool.md",
-      "description": "Provider-agnostic image generation wrapper (Midjourney / Flux / other).",
+      "description": "Provider-agnostic image generation wrapper. Default: fal.ai + Flux schnell (real API, near-free at test volume). Leonardo/Replicate as fallback. Midjourney excluded from automation (no official API).",
       "input_schema_ref": "prompt: string, style_tags: string[]",
       "output_schema_ref": "image_url_or_file: string",
       "tags": ["image", "generation", "visual"],
-      "provider": "configurable (Midjourney, Flux via Leonardo/Freepik/Replicate)",
+      "provider": "fal.ai (flux/schnell), fallback: Leonardo.ai API, Replicate",
       "status": "draft",
-      "last_updated": "2026-07-18"
+      "last_updated": "2026-07-19"
     },
     {
       "name": "remotion_assembly_tool",
