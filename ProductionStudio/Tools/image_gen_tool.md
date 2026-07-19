@@ -25,8 +25,26 @@ with no official API) and is effectively free at this volume:
   entire 10-video test phase with room to spare.
 - **Auth**: `FAL_KEY` (or equivalent per current fal.ai docs) in `Config/.env.example` /
   n8n credential store. Never commit the real key.
-- **Endpoint shape**: verify against fal.ai's current docs before wiring the n8n node — this
-  spec was written without a live test call.
+- **Endpoint shape**: verified live 2026-07-19 (Stage 2 test, see below) — matches current docs.
+
+## Stage 2 live-test result (2026-07-19)
+Real call against the Banfield case, scene 0001 from `ImagePrompts.md`:
+- **Endpoint**: `POST https://fal.run/fal-ai/flux/schnell`, header `Authorization: Key $FAL_KEY`.
+- **Request body confirmed**: `{ prompt, image_size, num_images, output_format }` — used
+  `image_size: "landscape_16_9"` for the fixed 16:9 style rule; produced a 1024x576 image
+  (correct 16:9 ratio).
+- **Response shape confirmed**: `{ images: [{url, width, height, content_type}], prompt, seed,
+  has_nsfw_concepts, timings }` — matches current fal.ai docs exactly.
+- **Cost/latency**: inference time ~0.11s per the response `timings` field; well within the
+  ~$0.003–0.01/image estimate above.
+- **⚠ "no text" style rule is not reliably honored by the model**: the generated image (two
+  police cruisers outside a house) rendered a legible "POLICE" decal on one vehicle despite
+  `no text` being in the prompt. This is a known limitation of diffusion models with text in
+  the scene concept (police cars, signage, badges) — the prompt constraint reduces but doesn't
+  eliminate it. **Quality Control Agent needs to actually visually check for stray
+  text/logos/watermark-like artifacts per image, not just trust that "no text" in the prompt
+  was sufficient.** Worth a note in `Agents/quality_control_agent.md` if this keeps recurring
+  across scenes.
 
 ## Fallback / secondary providers (keep the interface provider-agnostic)
 - Leonardo.ai API — separate pay-as-you-go balance (starts with its own free credit), useful
@@ -35,6 +53,17 @@ with no official API) and is effectively free at this volume:
 - Midjourney — deliberately NOT used for automation: no official API, Discord-only, would
   require unofficial workarounds. Fine for one-off manual generation in Phase 1 if someone
   wants to hand-pick a specific image, but never wire it into this tool's automated path.
+- **fal.ai's `fal-ai/nano-banana` (Gemini 2.5 Flash Image)** — same-prompt comparison run
+  2026-07-19 on scene 0001: honored "no text" better than Flux schnell and produced a more
+  detailed/textured result, but (a) its response omits `width`/`height` (`null` in the JSON,
+  unlike Flux's clean shape — would need a follow-up call or local image inspection to get
+  dimensions if wired in), (b) adds an extra `description` text field not present in Flux's
+  response, and (c) costs ~$0.039/image vs Flux's ~$0.003–0.01 — roughly 4–13x more, which at
+  80-100 images/video would blow past the "near-free at test volume" budget this default was
+  chosen for. **Decision (2026-07-19): keep Flux schnell as the default for all scenes** — not
+  worth the cost multiplier for the whole batch. Revisit as a possible hero-shot/thumbnail-only
+  override later if quality on those specific shots matters enough to justify the per-image
+  cost (mirrors the existing flux-pro-for-hero-shots idea above).
 
 ## Implementation notes
 - 80-100 images per video (per the channel's current plan) means this tool will be called in

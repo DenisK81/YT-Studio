@@ -14,8 +14,10 @@
 ## Pinned Comment
 
 
-## Tags (50)
+## Tags (≤500 characters total when joined with ", " — YouTube's limit is a character
+budget, not a tag count. Aim for ~8-15 focused tags, not filler.)
 
 
-## Hashtags (20)
+## Hashtags (3-5, strongest first — YouTube shows the first 3 above the title; more than 15
+anywhere gets ALL hashtags on the video ignored)
 
