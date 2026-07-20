@@ -49,15 +49,35 @@ Never from news-outlet article pages, stock photo sites, social media scrapes, o
 copyright/legitimacy problems distinct from the person themselves being a public figure in a
 public-record case.
 
+**Exception, decided 2026-07-20 after a real Stage 2 test found this exact case:** a mugshot
+*hosted* on a news-outlet page still counts as Track 1 (official source) **if the outlet's own
+caption explicitly attributes it to an official issuing authority** — e.g. "(Fairfax County
+Police Department)" — rather than crediting the outlet's own photography. The outlet is just
+republishing a public record in that case, not claiming it as their work, so the "never from
+outlet pages" rule (aimed at avoiding outlet/photographer copyright) doesn't actually apply.
+Ambiguous or uncredited outlet photos still don't count — this exception is narrow, only for a
+clear, explicit official-source caption.
+
 **Mandatory redaction:** every person photo gets a black rectangle over the eyes before it's
 used anywhere in the video. This is the channel owner's own risk-mitigation decision
 (2026-07-19) — using the real photo for documentary authenticity while reducing full
 identifiability. Never publish the unredacted original.
-- **Phase 1 (current, low volume — ~1-2 subject photos per video):** redact manually in
-  standard image-editing software before the file is used.
-- **Phase 2 (once this tool is actually automated):** use a face-landmark detection step to
-  locate the eye region and draw the bar programmatically. Not worth building this automation
-  at current volume — do it manually until Phase 2 wiring.
+
+**Redaction is automated, not manual — confirmed working 2026-07-20 (Stage 2 live test, see
+`Cases/brendan-banfield-double-murder/PersonPhotos.md`).** The original "not worth automating
+at current volume, do manually until Phase 2" plan was too pessimistic: OpenCV's bundled Haar
+cascades (`opencv-python-headless<5` — note v5.0 dropped `cv2.CascadeClassifier` from the main
+namespace, install the 4.x line) do this in under a second with no external model download, no
+GPU, and no Node/Remotion environment needed — runs fine in this same Phase 1 sandbox.
+**Method:**
+1. `haarcascade_frontalface_default.xml` to find the face box.
+2. Run `haarcascade_eye.xml` **restricted to the upper 60% of the face box only** — running it
+   on the whole image produces false positives (nostrils/mouth misdetected as eyes).
+3. Draw one black bar spanning both detected eyes, with ~15% horizontal / ~25% vertical margin
+   beyond the tightest bounding box, so the bar reads as a deliberate redaction rather than a
+   tight, precise crop.
+4. If eye detection fails within the face ROI, fall back to a fixed proportional estimate (eyes
+   sit ~30-50% down a frontal mugshot face box) rather than leaving the photo unredacted.
 
 **Legal grounding (informational research, not legal advice — see
 `Documentation/ARCHITECTURE.md`'s "Real-photo sourcing decision" section for the full research):**
@@ -108,10 +128,14 @@ as a "scene" photo.
 - Output feeds Image Generation Agent's asset pool as a secondary source alongside
   `Assets/images/{scene_id}.png`, not as a replacement.
 
-## Status: unblocked (2026-07-19)
+## Status: unblocked (2026-07-19), Track 1 live-tested end-to-end (2026-07-20)
 Previously blocked pending legal review (see git history for the original Stage 2 live-check
 note). Unblocked after real research into the newsworthy/documentary exception (favorable, see
 above) and an explicit, informed risk decision by the channel owner: use real person photos with
 mandatory eye redaction, and accept photographer-copyright risk for non-person photos sourced
 from news articles. The Fairfax County FOIA-only access constraint for person photos still
-stands separately and isn't resolved by this decision — that's a manual task per case.
+stands separately as the general rule for that jurisdiction — but the outlet-attribution
+exception above found a real, usable photo for the Banfield case specifically without needing
+that FOIA request. Full pipeline (find → verify official attribution → download → detect →
+redact → save) run for real on the Banfield mugshot; Track 2 (non-person) tried on the same
+article and found no valid candidate that run — see `Tests/stage2_mugshot_tool_test.md`.

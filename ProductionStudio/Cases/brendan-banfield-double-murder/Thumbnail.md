@@ -22,11 +22,14 @@ Fonts: headline Bebas Neue / Oswald Bold · body Montserrat
   no-real-likeness rule) rather than Brendan Banfield's actual likeness — no escalation fires
   under the strict rule ("requires depicting a real identifiable person's face") because we
   didn't attempt to depict him specifically.
-- **Update (2026-07-19): `mugshot_fetch_tool.md` is no longer blocked** — the channel owner made
-  an informed decision to use real person photos with mandatory eye redaction (see
-  `Documentation/ARCHITECTURE.md`'s "Real-photo sourcing decision"). For *this specific case*,
-  though, the photo still isn't in hand: Fairfax County requires a manual Virginia FOIA request
-  (no API/database), which hasn't been filed. So this thumbnail stays generic-face-only until
-  that request is actually made and a real photo comes back — not because the tool is blocked
-  anymore, but because the manual FOIA step for this jurisdiction hasn't happened yet. Once a
-  real photo exists, redact the eyes and swap it in for a likely CTR improvement.
+- **Update (2026-07-20): a real, redacted photo now exists for this case.** Found an
+  officially-attributed mugshot ("Fairfax County Police Department") republished by WJLA,
+  downloaded and automatically redacted (eyes blacked via OpenCV face/eye detection) — see
+  `Cases/brendan-banfield-double-murder/PersonPhotos.md`. Bypassed the Fairfax FOIA-only
+  constraint entirely for this case via the outlet-attribution exception added to
+  `Tools/mugshot_fetch_tool.md` the same day. **The thumbnail image prompt above is now stale**
+  — it should be replaced with the real redacted photo
+  (`Assets/images/real_photos/banfield_mugshot_REDACTED.jpg`) composited into the brand's
+  dark-background / police-light thumbnail style, rather than an AI-generated generic face, for
+  the CTR benefit real-face thumbnails have in this genre. Not yet re-composited — flagging as
+  the next actual production step, not a blocked one.
