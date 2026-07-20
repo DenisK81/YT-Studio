@@ -120,6 +120,100 @@ research grounding, not guesses:
 - **Assume sound-off for every Short.** 60%+ of viewers watch muted, so the on-screen hook text
   must carry the meaning alone, not just reinforce narration.
 
+## Research yield / discovery-sources requirement (added 2026-07-19, after a user concern about
+video-pipeline volume)
+
+The channel's Phase 1 goal is 10 test videos, and a single Research Agent test run only
+produced 2-3 candidates that cleared the 5-source bar out of 5 requested — a real yield problem
+worth addressing, not just noting. Two fixes:
+
+- **Added DOJ/US Attorney/state AG/DA press releases as a top-tier citation source**
+  (`justice.gov/usao/pressreleases` and equivalent state/county pages) — these are primary-source
+  prosecution announcements, searchable by jurisdiction/date/offense type, and were missing
+  entirely from the original source list despite being at least as authoritative as AP/ABC/CBS/NBC
+  reporting on the same cases.
+- **Separated "discovery" from "citation" sources.** The original source-priority list was meant
+  to govern what a *claim* can be cited to, but its phrasing also read as restricting *where to
+  look for candidates* — which isn't the same thing and was likely suppressing yield. Forums
+  (r/TrueCrime, r/UnresolvedMysteries, Websleuths) are now explicitly fine for finding candidate
+  leads, same as before for verification: never citable as fact, but a legitimate way to surface
+  cases worth then researching properly.
+- **Explicit yield guidance:** a thin result (1-2 usable candidates out of 5 requested) is a
+  signal to widen the search — more candidates requested, broader niche, or the discovery
+  sources above — not a result to settle for. See `Agents/research_agent.md`'s "Yield note".
+- **Validated with a real search, not just asserted:** a `justice.gov`-targeted search for
+  affair/betrayal murder sentencings immediately surfaced several real candidates not found in
+  the original general web search pass (a murder-for-hire plot targeting an ex-wife and her
+  boyfriend, a husband sentenced for killing his wife in a parking lot, a man sentenced for
+  killing his ex-partner, among others) — confirming this source genuinely increases yield
+  rather than just sounding plausible.
+
+## Background music requirement (added 2026-07-19, after a user review of the pipeline)
+
+Neither `Agents/video_assembly_agent.md` nor `Tools/remotion_assembly_tool.md` specified
+background music at all before this — a real gap, since the channel's Netflix-documentary tone
+depends on it. Fixed with real research grounding:
+
+- **`Tools/elevenlabs_voice_tool.md` extended with `generate_music()`** (the real Eleven Music
+  API — mood prompt + style tags, `music_length_ms` for duration) rather than adding a new tool,
+  per the same `extend_existing` logic Tool Manager Agent now supports.
+- **Superseded as the default the same day:** Eleven Music charges per-generation credits, and
+  the channel owner wants this sourced free instead. New `Tools/royalty_free_music_tool.md`
+  was added; `generate_music()` is now the fallback.
+- **Confirmed, not just flagged (2026-07-19, by directly reading Pixabay's live API docs page in
+  a browser):** Pixabay's public REST API only covers Search Images and Search Videos — there is
+  no music/audio-search endpoint at all, "music" is merely a category filter on those two.
+  YouTube Audio Library has no public API either. Freesound has a real API but requires separate
+  commercial licensing to use for a monetized channel, and is more of an SFX library than a
+  music-bed one. **Net result: no source checked is simultaneously free, safe, and automatable.**
+  **Finalized (2026-07-19): the channel owner hand-picked 10 tracks from Pixabay Music**, stored
+  at `ProductionStudio/Assets/audio/music_bed/bed_01.mp3`..`bed_10.mp3` (gitignored, channel-wide
+  — not per-case). `Tools/royalty_free_music_tool.md`'s `get_bed_track()` just picks one and
+  loops/trims it to fill each render's duration — no live search, no per-video mood matching,
+  since the set was already curated once for the channel's fixed tense/investigative sound.
+  Automation via API stays possible only through the paid ElevenLabs fallback.
+- **Mixing is fixed, not per-video taste: -18 to -20dB below the voiceover**, never less than
+  -15dB below (masking risk, especially on phone speakers), plus a subtle 1-3kHz EQ dip on the
+  music track so narration doesn't need to be pushed louder to compete.
+- **One track per render, looped/trimmed to fill it exactly** (tense/anxious/investigative mood,
+  fixed default description in `Config/config.schema.json`) — the main video and each Short pick
+  independently from the same 10-track set, not a shared segment; subtle and emotionally
+  controlled, never overwhelming or melodic enough to distract from narration.
+- **Live-test blocked, not by a spec bug:** a real `generate_music()` call returned `401 —
+  missing the music_generation permission` on the current ElevenLabs API key. This needs the
+  channel owner to enable that permission (or check plan tier) before it can be verified
+  end-to-end — tracked as an open item, not silently worked around.
+
+## Real-photo sourcing decision (added 2026-07-19, after user review of `mugshot_fetch_tool.md`)
+
+`Tools/mugshot_fetch_tool.md` was originally blocked pending legal review (see git history):
+Fairfax County has no automatable public mugshot database (FOIA-request-only), and general
+guidance suggested mugshots can't be used commercially without the pictured person's consent.
+Real research into the actual legal doctrine, plus an explicit risk decision by the channel
+owner, unblocked it with a two-track policy — this is informational research, not legal advice,
+and not a substitute for an actual media/entertainment lawyer's opinion if higher certainty is
+wanted before scaling past the test phase:
+
+- **The "newsworthy" exception to right-of-publicity claims broadly covers documentary/true-crime
+  use of a real, adjudicated case's photo, even when monetized.** Courts weigh how fictionalized
+  the surrounding content is (*Porco v. Lifetime Entertainment* — a fictionalized biopic lost
+  this defense); this studio's verified-claims-only, no-invented-dialogue practice (Fact
+  Verification Agent, Story Agent's rules) directly supports staying inside that exception,
+  beyond just being good journalism practice.
+- **Person photos (mugshots/court exhibits) get a mandatory redaction, not unrestricted use:**
+  a black bar over the eyes before any such photo is used, as the channel owner's own chosen risk
+  mitigation — real photo for documentary authenticity, reduced full identifiability. Manual for
+  now (Phase 1 volume), automatable later via face-landmark detection (Phase 2).
+- **Non-person photos (buildings, scenes, evidence) may come from any source, including the news
+  articles already used in `Sources.md`** — an explicit, informed decision to accept
+  photographer/publication copyright risk for this category, since no person's right-of-publicity
+  is implicated when nobody appears in the photo. This is a *different* risk category from person
+  photos — photographer copyright applies to a photo regardless of whether a person is in it, so
+  this acceptance is scoped narrowly to non-person images, not a blanket "images are fine now."
+- **The Fairfax County access constraint (FOIA-only, no API) is unrelated to the legal question
+  and remains unresolved** — a human still has to manually request a person photo per case in
+  that jurisdiction; this isn't something Tool Manager or any agent can automate around.
+
 ## Error handling
 
 Every agent returns:

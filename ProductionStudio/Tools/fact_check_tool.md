@@ -14,11 +14,14 @@ check(claims: string[]) -> {
 ```
 
 ## Source ranking (fixed)
-1. FBI / court documents / police reports
+1. FBI / DOJ / US Attorney / state AG / DA press releases (justice.gov/usao/pressreleases and
+   equivalent state/county pages) / court documents / police reports
 2. AP, ABC, CBS, NBC News
 3. People, CourtTV, Law&Crime, Oxygen
 4. Wikipedia — timeline cross-check only, never sole source for a claim
 5. Reddit — sentiment only, never usable as `verified`
+
+Kept in sync with `Agents/research_agent.md`'s source-priority list — update both together.
 
 ## Implementation notes
 - If built on the Anthropic API: use the built-in web_search tool, then apply the ranking
