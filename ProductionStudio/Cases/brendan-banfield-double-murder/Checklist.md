@@ -27,10 +27,10 @@
 
 ## The five questions
 - Would I stop scrolling? Yes — staged-home-invasion-that-isn't hook is strong.
-- Would I click this? Moderate — thumbnail is currently generic-face-only (see `Thumbnail.md`
-  notes: `mugshot_fetch_tool.md` is unblocked now, but this case's actual photo still requires a
-  manual Fairfax County FOIA request that hasn't been filed yet), which likely underperforms a
-  real-photo thumbnail for this genre.
+- Would I click this? A real redacted photo now exists (`PersonPhotos.md`) but hasn't been
+  re-composited into the thumbnail yet (see `Thumbnail.md`'s 2026-07-20 update) — the thumbnail
+  file itself is still the older generic-face version, so this is a real, actionable next step,
+  not a blocked one.
 - Would an American viewer care? Yes — US case, English-language, matches channel niche.
 - Can the hook be stronger? Yes — the catfishing/twist detail could be teased earlier; also
   limited by the investigative-depth gap already noted in `Script.md` (694 words vs. 3500-4500
@@ -44,7 +44,7 @@
 | Scene consistency | fail | 20 of 21 scenes have no generated image; no formal missing-asset report exists |
 | Voice timing | fail | No per-scene audio files exist under `Assets/audio/` |
 | Export integrity | fail | No draft render exists — Video Assembly Agent not run (Phase 2 scope, deliberately skipped) |
-| Thumbnail CTR | warning | Generic-face thumbnail only — tool is unblocked now, but this case's real photo needs a manual Fairfax County FOIA request not yet filed |
+| Thumbnail CTR | warning | Real redacted photo now available (`PersonPhotos.md`) but not yet re-composited into the actual thumbnail file — an open production step, not a blocker |
 | Script length | warning | 694 words vs. 3500-4500 target — accepted short by user decision, not a defect, but flagged per QC's own duty to surface it |
 
 **Status: fail. This project does not proceed to Publishing Agent until resolved by a human —

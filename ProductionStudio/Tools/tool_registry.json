@@ -4,13 +4,13 @@
     {
       "name": "fact_check_tool",
       "path": "Tools/fact_check_tool.md",
-      "description": "Wraps web search/fetch with the channel's fixed source-priority ranking.",
+      "description": "Wraps web search/fetch with the channel's fixed source-priority ranking. Stage 2 live-tested 2026-07-20 (Tests/stage2_fact_check_tool_test.md): correctly ranked a DOJ press release over secondary outlets, and correctly flagged two deliberately-unsupported bait claims rather than fabricating sources for them.",
       "input_schema_ref": "claims: string[]",
       "output_schema_ref": "verified: object[], flagged: object[]",
       "tags": ["research", "verification", "web-search"],
       "provider": "Anthropic web_search tool or equivalent search API",
-      "status": "draft",
-      "last_updated": "2026-07-18"
+      "status": "active",
+      "last_updated": "2026-07-20"
     },
     {
       "name": "elevenlabs_voice_tool",
@@ -20,7 +20,7 @@
       "output_schema_ref": "audio_url_or_bytes: string, duration_seconds: number",
       "tags": ["voice", "tts", "audio", "music", "fallback"],
       "provider": "ElevenLabs",
-      "status": "draft",
+      "status": "active",
       "last_updated": "2026-07-19"
     },
     {
@@ -31,7 +31,7 @@
       "output_schema_ref": "image_url_or_file: string",
       "tags": ["image", "generation", "visual"],
       "provider": "fal.ai (flux/schnell), fallback: Leonardo.ai API, Replicate",
-      "status": "draft",
+      "status": "active",
       "last_updated": "2026-07-19"
     },
     {
@@ -59,35 +59,35 @@
     {
       "name": "seo_export_tool",
       "path": "Tools/seo_export_tool.md",
-      "description": "Formats SEO Agent's structured output into Templates/SEO.md.",
+      "description": "Formats SEO Agent's structured output into Templates/SEO.md. Validated 2026-07-20 via real session use (Tests/stage2_seo_export_and_github_sync_test.md) — Cases/brendan-banfield-double-murder/SEO.md is a real product of exactly this transform.",
       "input_schema_ref": "seo_json: object",
       "output_schema_ref": "SEO.md: file",
       "tags": ["seo", "formatting"],
       "provider": "none (pure formatting)",
-      "status": "draft",
-      "last_updated": "2026-07-18"
+      "status": "active",
+      "last_updated": "2026-07-20"
     },
     {
       "name": "github_sync_tool",
       "path": "Tools/github_sync_tool.md",
-      "description": "Checks/updates tool_registry.json and commits studio changes to GitHub.",
+      "description": "Checks/updates tool_registry.json and commits studio changes to GitHub. Validated 2026-07-20 via real, repeated session use (Tests/stage2_seo_export_and_github_sync_test.md) — 5 real merged PRs this session with real commit SHAs; this environment has the real git/GitHub access the spec's own note said a plain chat session wouldn't.",
       "input_schema_ref": "action: 'check'|'commit', payload: object",
       "output_schema_ref": "result: object",
       "tags": ["github", "meta", "tool-management"],
       "provider": "GitHub API / git CLI",
-      "status": "draft",
-      "last_updated": "2026-07-18"
+      "status": "active",
+      "last_updated": "2026-07-20"
     },
     {
       "name": "mugshot_fetch_tool",
       "path": "Tools/mugshot_fetch_tool.md",
-      "description": "Two-track real-photo sourcing. Track 1: person photos (mugshot/court exhibit) from official public-record sources only, always eyes-redacted before use. Track 2: non-person photos (scenes/buildings/evidence) from any source including news articles, per the channel owner's 2026-07-19 risk decision. Unblocked after real newsworthy-exception research; Fairfax County FOIA-only access for person photos remains a separate manual constraint.",
+      "description": "Two-track real-photo sourcing. Track 1: person photos (mugshot/court exhibit) from official public-record sources only (now including outlet-hosted photos with explicit official-source captions), always eyes-redacted before use via OpenCV Haar-cascade detection. Track 2: non-person photos from any source including news articles, per the channel owner's 2026-07-19 risk decision. Track 1 live-tested end-to-end 2026-07-20 on the real Banfield mugshot (Cases/brendan-banfield-double-murder/PersonPhotos.md) — found, verified, downloaded, and automatically redacted successfully. Track 2 tried on the same article, found no valid candidate that run.",
       "input_schema_ref": "case_name: string, subjects: object[], scene_targets: object[]",
       "output_schema_ref": "person_images: object[], scene_images: object[], not_found: object[]",
       "tags": ["images", "public-records", "mugshots", "legal"],
-      "provider": "county sheriff / state DOC inmate lookup / court press releases (person track); any outlet (scene track)",
-      "status": "draft",
-      "last_updated": "2026-07-19"
+      "provider": "county sheriff / state DOC inmate lookup / court press releases / outlet-hosted-with-official-attribution (person track); any outlet (scene track)",
+      "status": "active",
+      "last_updated": "2026-07-20"
     },
     {
       "name": "royalty_free_music_tool",

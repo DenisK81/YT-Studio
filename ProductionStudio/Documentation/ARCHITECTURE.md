@@ -202,8 +202,15 @@ wanted before scaling past the test phase:
   beyond just being good journalism practice.
 - **Person photos (mugshots/court exhibits) get a mandatory redaction, not unrestricted use:**
   a black bar over the eyes before any such photo is used, as the channel owner's own chosen risk
-  mitigation — real photo for documentary authenticity, reduced full identifiability. Manual for
-  now (Phase 1 volume), automatable later via face-landmark detection (Phase 2).
+  mitigation — real photo for documentary authenticity, reduced full identifiability.
+  **Update 2026-07-20: this is automated now, not deferred to Phase 2.** A real Stage 2 test
+  found and redacted the actual Banfield mugshot end-to-end using OpenCV's bundled Haar cascades
+  (face detection, then eye detection restricted to the face region) — under a second, no
+  external model, runs fine in this Phase 1 sandbox. Also found a real usable photo for a case
+  whose jurisdiction (Fairfax County) has no mugshot API: the outlet-attribution exception (a
+  mugshot explicitly captioned as sourced from the police department, republished by a news
+  outlet, still counts as an official-source Track 1 photo) — see
+  `Tools/mugshot_fetch_tool.md` and `Cases/brendan-banfield-double-murder/PersonPhotos.md`.
 - **Non-person photos (buildings, scenes, evidence) may come from any source, including the news
   articles already used in `Sources.md`** — an explicit, informed decision to accept
   photographer/publication copyright risk for this category, since no person's right-of-publicity
