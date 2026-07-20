@@ -221,6 +221,28 @@ wanted before scaling past the test phase:
   and remains unresolved** — a human still has to manually request a person photo per case in
   that jurisdiction; this isn't something Tool Manager or any agent can automate around.
 
+## Stage 3 link contracts (added 2026-07-20, after a link-by-link audit)
+
+`Tests/TEST_PLAN.md`'s Stage 3 found 4 real schema mismatches between adjacent agents — not
+hypothetical, each one would have broken a real n8n wiring attempt. All fixed directly in the
+relevant agent files (see `Tests/stage3_link_audit.md` for the full audit):
+
+- Research Agent's candidate data doesn't produce Fact Verification's expected pre-broken claims
+  array — `Agents/fact_verification_agent.md` now documents deriving it from `key_facts`.
+- Image Planning's `style_tags` field doesn't survive into the real image-gen APIs (single
+  `prompt` string only) — `Agents/image_generation_agent.md` now owns merging them in.
+- Voice Production's declared output was text-only (`Voiceover.txt`), missing the actual
+  per-chapter MP3 file convention Video Assembly needs — now declared explicitly.
+- Quality Control's output field was named `status`; Publishing Agent's input has always
+  expected `checklist_status` — a real name mismatch, now fixed to match exactly.
+
+**Also clarified (not a bug):** `Agents/thumbnail_agent.md`, `Agents/seo_agent.md`, and
+`Agents/shorts_agent.md` all take a `twist`/`case_summary` field that no single upstream agent
+literally outputs by that name — in every real run this session it was manually pulled from
+`Script.md`'s Twist beat and Research Agent's `summary`, the same multi-source-derivation
+pattern `timeline_draft` already has in Story Agent's input. Worth remembering when wiring n8n:
+these three agents need a small merge/extract step feeding them, not a direct single-node pipe.
+
 ## Error handling
 
 Every agent returns:

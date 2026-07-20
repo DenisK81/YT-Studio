@@ -20,6 +20,15 @@ Research → Fact Verification. Fact Verification → Story. Story → Scene Pla
 Images → Assembly. Assembly → Shorts (runs immediately after the render, not a later pass).
 Shorts + Thumbnail + SEO → QC. QC → Publishing (prepare only, no real publish call yet).
 
+**Audited 2026-07-20** (`Tests/stage3_link_audit.md`) — checked every link's actual declared
+output against the next agent's actual declared input, not just re-running agents with
+hand-fed data. Found and fixed 4 real schema mismatches (Research→FactVerification claim
+derivation, ImagePlanning→ImageGeneration style_tags merging, VoiceProduction→Assembly missing
+audio-file convention, QC→Publishing field name mismatch) — see the linked audit and
+`Documentation/ARCHITECTURE.md`'s "Stage 3 link contracts" section. This was a schema audit, not
+a live n8n rewiring (that's Stage 4/Phase 2 territory) — but every link listed above was
+exercised at least once with real chained data during this session's Banfield case work.
+
 ## Stage 4 — Full chain, one real case, dry-run publish
 Run the Molly Watson case end to end once chapters 1-5 exist. Stop at the human-confirmation
 gate before Publishing Agent's actual YouTube call — verify everything up to that point without
