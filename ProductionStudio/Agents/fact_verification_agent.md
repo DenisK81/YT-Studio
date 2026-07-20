@@ -10,6 +10,14 @@ or evidence. Anything unverifiable is explicitly marked "unknown" — it is neve
 { "script_draft_or_scene_claims": ["string, one per claim/scene"],
   "sources": [ {"url":"", "outlet":"", "key_facts":[""]} ] }
 ```
+**Stage 3 link note (added 2026-07-20):** Research Agent's output doesn't produce a
+pre-broken `script_draft_or_scene_claims` array directly — nothing in the pipeline does, since
+this agent runs right after a case is chosen from Research Agent's candidates, with no
+intermediate "claim extraction" stage. When wiring `Research Agent → Fact Verification Agent`
+directly, derive `script_draft_or_scene_claims` by flattening the chosen candidate's
+`sources[].key_facts` entries, `summary`, and `timeline_draft` items into individual claim
+strings — each `key_facts` entry is already written as an atomic factual statement, so this is
+a mechanical flatten, not a rewrite. `sources` passes through unchanged.
 
 ## Output
 ```json

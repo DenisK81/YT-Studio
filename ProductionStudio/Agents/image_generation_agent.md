@@ -8,6 +8,16 @@ report per-scene success/failure. Never blocks the whole pipeline on one failed 
 ```json
 { "prompts": [ {"scene_id":"", "prompt":""} ] }
 ```
+**Stage 3 link note (added 2026-07-20):** Image Planning Agent's real output
+(`Templates/ImagePrompts.md`) carries `prompt` and `style_tags` as **separate** fields per
+scene, but the actual image-gen APIs (confirmed live against fal.ai in
+`Tools/image_gen_tool.md`'s Stage 2 test) only accept a single `prompt` string — there's no
+separate style-tags parameter. This agent is responsible for merging `style_tags` into the
+`prompt` string (appended as a plain-language clause, e.g. "..., photorealistic, cinematic,
+35mm, 16:9, no text, no watermark") before calling `image_gen_tool`. Do this merge here, not
+upstream in Image Planning Agent — keeps that agent's output structured (useful for QC to
+audit style-tag compliance per scene) while this agent flattens it only at the point the real
+API needs a single string.
 
 ## Output
 - Files: `Assets/images/{scene_id}.png`
