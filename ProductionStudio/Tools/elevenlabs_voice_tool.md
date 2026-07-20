@@ -11,7 +11,24 @@ generate(text: string, voice_id: string, chapter_label: string) -> {
   audio_url_or_bytes,
   duration_seconds
 }
+
+generate_music(mood_prompt: string, duration_seconds: number, instrumental: boolean = true) -> {
+  audio_url_or_bytes,
+  duration_seconds
+}
 ```
+`generate_music` is the real Eleven Music API (`music_length_ms` param, 10s-5min range,
+natural-language mood prompt + up to 10 style tags) — added 2026-07-19 to close the gap where
+background music had no spec at all. This is exactly the "extend, don't duplicate" case Tool
+Manager Agent's `extend_existing` output shape (see `Agents/tool_manager_agent.md`) was built
+for: this tool's own notes already anticipated SFX/music via "a different mode parameter" before
+this was formalized.
+
+**Superseded as the default the same day (2026-07-19):** Eleven Music charges per-generation
+credits, and the channel owner wants background music sourced free instead —
+`Tools/royalty_free_music_tool.md` is now the default for `background_music_track`.
+`generate_music` here stays as the **fallback** (e.g. if the free library has no good match for
+a specific mood/duration), not the primary path.
 
 ## Default provider notes (ElevenLabs, verify against current docs before building)
 - Recommended for this channel's long-form narration: **Studio** project mode (chapter
@@ -66,3 +83,47 @@ as a small/cheap test per `Tests/TEST_PLAN.md`.
   redundant. Note this if/when this gets reimplemented as a plain API call in n8n instead of
   through this MCP integration, since n8n won't have an equivalent "auto-play" side effect to
   account for.
+
+## Background music — Stage 2 live-test attempt (2026-07-19)
+Tried a real call through the MCP integration (`generate_music`) with a tense/ambient true-crime
+mood prompt, instrumental, 30s test duration — the small/cheap test this warrants per
+`Tests/TEST_PLAN.md`.
+
+- **Call failed: `401 unauthorized — missing the permission music_generation`.** This is an
+  ElevenLabs account/API-key permission gap, not a spec or code bug — Eleven Music appears to be
+  gated separately from standard TTS access on this account/plan. **Needs the channel owner to
+  enable the `music_generation` permission on the ElevenLabs API key (or upgrade the plan tier if
+  that's what gates it) before this can be live-tested.**
+- Real API shape confirmed via docs regardless (not blocked by the permission issue): mood
+  described in natural language plus up to 10 style tags, `music_length_ms` for duration
+  (10s-5min range), or a detailed "composition plan" JSON for finer control (chunk structure,
+  arrangement) if simple prompting isn't precise enough later.
+- **Fixed mixing spec (research-grounded, not a guess):** background music sits **-18 to -20dB
+  below the voiceover** (never less than -15dB below, which risks masking narration,
+  particularly on phone speakers). True-crime specific: apply a subtle 1.5-2.5dB EQ dip between
+  1-3kHz on the music track (where the voice sits) so narration doesn't need to be pushed
+  louder, plus a 40Hz high-pass / 10kHz low-pass to keep the music track clean. This is a Video
+  Assembly Agent / Remotion mixing responsibility — see `Tools/remotion_assembly_tool.md`.
+- **Fixed mood direction:** subtle, investigative, emotionally controlled — supports the
+  narration and builds atmosphere without overwhelming or becoming melodic/dramatic. One
+  continuous instrumental bed per video is the default (not a per-scene track), looped/extended
+  to match the final render's duration.
+
+## Gap closure (2026-07-19) — concrete fix for the two shape mismatches above
+This MCP integration is a Phase 1 testing convenience, not the final n8n wiring — so rather than
+changing this file's declared contract to match the MCP tool's shape, the fix belongs in how the
+*real* ElevenLabs Data API v1 call gets wrapped in n8n:
+- **`duration_seconds`**: the real ElevenLabs API doesn't return this either (it returns raw
+  audio bytes/URL) — measure it locally after the call (e.g. an audio-length library reading the
+  file's own header) rather than expecting any TTS provider to report it. Add this as an
+  explicit post-processing step in the n8n node, not an assumption baked into this tool's output
+  contract.
+- **File location**: whatever calls this tool (real API or an MCP-style integration) must save
+  or copy the result into `Assets/audio/{scene_id}.mp3` itself — this tool's `generate()` should
+  not assume the provider writes there natively, since neither the real API nor this MCP
+  integration does.
+- Both of these are now explicit responsibilities of whatever *wires* this tool (Video Assembly
+  Agent's input needs both a file at the right path and a duration) — not gaps in this file's
+  contract, since the contract itself (`{ audio_url_or_bytes, duration_seconds }`) was always the
+  *tool's* output, and the wrapping logic derives the missing piece rather than trusting the
+  provider for it.

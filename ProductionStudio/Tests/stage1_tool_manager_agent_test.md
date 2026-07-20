@@ -35,12 +35,19 @@ an SFX mode (it doesn't — its Interface section only defines `generate(text, v
 chapter_label)`); forcing it into `{new_tool_registered}` risks a duplicate tool for a
 capability that should live in the existing one.
 
-**Flagging rather than picking one:** returning `{existing_tool: elevenlabs_voice_tool}` with an
-explicit note that its Interface needs extending (add an SFX/music mode) before this capability
-is actually usable — not registering a new `sfx_tool`.
+**Corrected output (2026-07-19, after adding the `extend_existing` shape to
+`Agents/tool_manager_agent.md`):**
+```json
+{ "extend_existing": {
+    "name": "elevenlabs_voice_tool",
+    "path": "Tools/elevenlabs_voice_tool.md",
+    "missing_capability": "SFX/ambient sound + music generation",
+    "suggested_change": "Add a `mode: 'tts' | 'sfx' | 'music'` parameter to the Interface's generate() signature; ElevenLabs already supports this via the same provider account, per this tool's own 'Default provider notes' section." } }
+```
 
-## Recommendation
-Add a third output shape to `Agents/tool_manager_agent.md`, e.g.
-`{ "extend_existing": {"name":"", "path":"", "missing_capability":"", "suggested_change":""} }`,
-so this distinction is representable instead of overloaded onto `existing_tool`. Not applied in
-this pass — flagging for a human call, since it changes an agent's output contract.
+## Resolution
+Added a third output shape, `extend_existing`, to `Agents/tool_manager_agent.md` — this test's
+original finding is now fixed rather than just flagged. No new `sfx_tool` was registered; the
+recommendation stays "extend `elevenlabs_voice_tool`'s Interface," which is a follow-up
+implementation task (adding the actual `mode` parameter), not something to do speculatively
+ahead of an actual SFX need.

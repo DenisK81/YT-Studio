@@ -15,13 +15,13 @@
     {
       "name": "elevenlabs_voice_tool",
       "path": "Tools/elevenlabs_voice_tool.md",
-      "description": "Provider-agnostic voiceover generation wrapper; default provider ElevenLabs Studio.",
-      "input_schema_ref": "text: string, voice_id: string, chapter: string",
+      "description": "Provider-agnostic voiceover generation wrapper; default provider ElevenLabs Studio. generate_music() (Eleven Music API) is now the background-music FALLBACK only, superseded by Tools/royalty_free_music_tool.md as default since it costs per-generation credits. Real live-test of generate_music blocked by a missing music_generation permission on the current API key.",
+      "input_schema_ref": "text: string, voice_id: string, chapter: string | mood_prompt: string, duration_seconds: number",
       "output_schema_ref": "audio_url_or_bytes: string, duration_seconds: number",
-      "tags": ["voice", "tts", "audio"],
+      "tags": ["voice", "tts", "audio", "music", "fallback"],
       "provider": "ElevenLabs",
       "status": "draft",
-      "last_updated": "2026-07-18"
+      "last_updated": "2026-07-19"
     },
     {
       "name": "image_gen_tool",
@@ -38,7 +38,7 @@
       "name": "remotion_assembly_tool",
       "path": "Tools/remotion_assembly_tool.md",
       "description": "Programmatic video assembly: audio + images + timing + burned-in captions (fixed 2026 karaoke-style spec) + effects. Renders both the 16:9 main video and 9:16 Shorts selected by Agents/shorts_agent.md.",
-      "input_schema_ref": "scenes: object[], audio_track: string, subtitle_track: string",
+      "input_schema_ref": "scenes: object[], audio_track: string, background_music_track: string, subtitle_track: string",
       "output_schema_ref": "render_path: string, duration_seconds: number",
       "tags": ["video", "assembly", "render", "captions", "shorts"],
       "provider": "Remotion (Node.js)",
@@ -81,12 +81,23 @@
     {
       "name": "mugshot_fetch_tool",
       "path": "Tools/mugshot_fetch_tool.md",
-      "description": "Fetches real booking photos / court exhibits / agency press-release images from public-record sources only (sheriff/DOC/court), for mixing with Image Generation Agent's AI stills. Deliberately excludes news-outlet article photos (copyright risk) already used in Sources.md. BLOCKED pending legal review: Stage 2 live-check on the Banfield/Fairfax County case found no automatable public mugshot access (FOIA-request-only) and a commercial-use/consent restriction on mugshots generally — see the tool file's Stage 2 note before reviving this.",
-      "input_schema_ref": "case_name: string, subjects: object[]",
-      "output_schema_ref": "images: object[], not_found: object[]",
-      "tags": ["images", "public-records", "mugshots", "legal", "blocked"],
-      "provider": "county sheriff / state DOC inmate lookup / court press releases (per-jurisdiction)",
+      "description": "Two-track real-photo sourcing. Track 1: person photos (mugshot/court exhibit) from official public-record sources only, always eyes-redacted before use. Track 2: non-person photos (scenes/buildings/evidence) from any source including news articles, per the channel owner's 2026-07-19 risk decision. Unblocked after real newsworthy-exception research; Fairfax County FOIA-only access for person photos remains a separate manual constraint.",
+      "input_schema_ref": "case_name: string, subjects: object[], scene_targets: object[]",
+      "output_schema_ref": "person_images: object[], scene_images: object[], not_found: object[]",
+      "tags": ["images", "public-records", "mugshots", "legal"],
+      "provider": "county sheriff / state DOC inmate lookup / court press releases (person track); any outlet (scene track)",
       "status": "draft",
+      "last_updated": "2026-07-19"
+    },
+    {
+      "name": "royalty_free_music_tool",
+      "path": "Tools/royalty_free_music_tool.md",
+      "description": "Confirmed 2026-07-19 (direct read of Pixabay's API docs): no free music source checked has a public API. Finalized approach: channel owner hand-picked 10 tracks from Pixabay Music, stored at ProductionStudio/Assets/audio/music_bed/bed_01.mp3..bed_10.mp3 (gitignored). get_bed_track() picks one and loops/trims it per render (main video or Short) — no live search needed. Stage 1 live-tested 2026-07-19: all 10 files verified as valid MP3s (mutagen), real durations read (99-504s), pick-and-loop math confirmed against the real Banfield case (main video + 2 Shorts).",
+      "input_schema_ref": "get_bed_track() -> track_path",
+      "output_schema_ref": "track_path: string",
+      "tags": ["audio", "music", "royalty-free", "legal"],
+      "provider": "Pixabay Music (10 hand-picked tracks, local); ElevenLabs Music (automated fallback, paid)",
+      "status": "active",
       "last_updated": "2026-07-19"
     }
   ]

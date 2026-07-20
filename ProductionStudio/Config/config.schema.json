@@ -71,6 +71,28 @@
           "description": "Reuses the channel's existing accent color (see channel.colors.accent) for the word-by-word karaoke highlight, instead of the generic yellow default seen elsewhere in the genre."
         }
       }
+    },
+    "background_music": {
+      "type": "object",
+      "description": "See Tools/royalty_free_music_tool.md — added 2026-07-19, a real gap (no background music was specified anywhere before this). Confirmed 2026-07-19 (by directly reading Pixabay's API docs): no source checked is both free and automatable via API, so the default is a hand-picked, reusable local bed-track set, not a live per-video fetch.",
+      "properties": {
+        "provider": {
+          "enum": ["local_bed_track_set", "elevenlabs"],
+          "default": "local_bed_track_set",
+          "description": "local_bed_track_set: 10 tracks hand-picked from Pixabay Music (free/safe, no public API — confirmed 2026-07-19), stored at ProductionStudio/Assets/audio/music_bed/bed_01.mp3..bed_10.mp3 (gitignored). One is picked and looped/trimmed per render (main video or Short) via Tools/royalty_free_music_tool.md's get_bed_track(). elevenlabs: automated fallback via generate_music(), costs credits per generation."
+        },
+        "bed_track_count": { "const": 10 },
+        "bed_track_path": { "const": "ProductionStudio/Assets/audio/music_bed/" },
+        "mood_prompt": {
+          "const": "Tense, anxious true-crime documentary background music. Slow ominous pulsing low drone, subtle dissonant piano, minimal percussion, building unease without becoming dramatic or melodic. Netflix true-crime documentary underscore style.",
+          "description": "Fixed default mood direction for every video, for consistent channel atmosphere. Subtle, investigative, emotionally controlled — never overwhelms narration. Used as search tags for the free-library providers, or as a generation prompt for the elevenlabs fallback."
+        },
+        "mix_db_below_voiceover": {
+          "const": -18,
+          "description": "-18 to -20dB below the voiceover, never less than -15dB below (masking risk). See remotion_assembly_tool.md's 'Background music mixing' section."
+        },
+        "instrumental": { "const": true }
+      }
     }
   }
 }

@@ -22,9 +22,11 @@ Fonts: headline Bebas Neue / Oswald Bold · body Montserrat
   no-real-likeness rule) rather than Brendan Banfield's actual likeness — no escalation fires
   under the strict rule ("requires depicting a real identifiable person's face") because we
   didn't attempt to depict him specifically.
-- **Real limitation worth flagging (not a formal escalation, but a CTR concern):** the brand's
-  "large face" thumbnail composition is designed around true-crime convention, where channels
-  typically use the actual perpetrator's mugshot for recognition/CTR. That's currently
-  unavailable here — `Tools/mugshot_fetch_tool.md` is blocked pending legal review (see its
-  Stage 2 note). So this thumbnail is generic-face-only for now, which may underperform a
-  real-photo thumbnail. Worth revisiting once the mugshot legal question is resolved.
+- **Update (2026-07-19): `mugshot_fetch_tool.md` is no longer blocked** — the channel owner made
+  an informed decision to use real person photos with mandatory eye redaction (see
+  `Documentation/ARCHITECTURE.md`'s "Real-photo sourcing decision"). For *this specific case*,
+  though, the photo still isn't in hand: Fairfax County requires a manual Virginia FOIA request
+  (no API/database), which hasn't been filed. So this thumbnail stays generic-face-only until
+  that request is actually made and a real photo comes back — not because the tool is blocked
+  anymore, but because the manual FOIA step for this jurisdiction hasn't happened yet. Once a
+  real photo exists, redact the eyes and swap it in for a likely CTR improvement.
