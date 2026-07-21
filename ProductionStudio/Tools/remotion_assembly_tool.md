@@ -33,16 +33,25 @@ assemble({
 - **Font**: Montserrat Bold — reuses the channel's existing body font
   (`Config/config.schema.json`), not a new arbitrary font, for brand consistency.
 - **Color/stroke**: white text, thin black stroke/outline for contrast on any background.
-- **Chunking**: 1 word or short 2-5 word phrases, not full sentences at once.
+- **Chunking**: 1 word or short 2-5 word phrases, not full sentences at once. Prefer breaking on
+  natural punctuation/clause boundaries over a blind fixed word-count split — a live test
+  (2026-07-20) found that blindly grouping every 3 words produces awkward mid-clause breaks
+  (e.g. splitting "...needs him to **be —** **and** the husband..." across two unrelated
+  chunks). Not fixed in code yet, just documented as the right target.
 - **Word-by-word karaoke highlight**: the actively-spoken word is enlarged/highlighted in the
   channel's accent color (`#A30E15`), surrounding words stay dimmer/smaller — this is the
   dominant 2026 short-form caption style, not a stylistic guess.
 - **Position**: centered, lower third of frame.
-- **Minimum on-screen duration**: 2 seconds per phrase, even if the spoken pace is faster —
-  readability matters more than perfect audio sync, especially since 60%+ of Shorts viewers
-  watch muted.
-- Applies to both the main video (16:9) and Shorts (9:16) — one caption style across the
-  channel, not a per-video decision.
+- **Minimum on-screen duration: 2 seconds per phrase — Shorts only.** A live test (2026-07-20)
+  found this rule doesn't work for continuous main-video narration at natural pace: the
+  Banfield Hook clip is 62 words over 17.87s (~3.5 words/sec); enforcing a 2s floor on 3-word
+  chunks would need ~40s of captions to cover 17.87s of audio, desyncing captions from speech
+  entirely. **For the main video (16:9), use natural proportional timing by word count instead**
+  — phrases still read fine at normal speaking pace without a hard floor. The 2s floor stays
+  correct for Shorts specifically, where captions are sparse and punchy by design (few phrases,
+  not continuous transcription), not for continuous narration.
+- Same font/color/stroke/position style applies to both the main video (16:9) and Shorts
+  (9:16) — only the *timing* rule (natural pacing vs. 2s floor) differs between them.
 
 ## Background music mixing (fixed, research-grounded 2026-07-19 — see
 `Tools/royalty_free_music_tool.md` for sourcing, `Tools/elevenlabs_voice_tool.md`'s "Background
@@ -66,6 +75,31 @@ music" section for the fallback path)
   (`Templates/Shorts.md`) immediately after this tool produces the main render — this tool then
   renders each selected Short as its own 9:16 composition (hard cap 45 seconds, per
   `Config/config.schema.json` `shorts.max_seconds`), not a generic same-content repackage.
-- This spec has not been tested against a real Remotion project — Claude Code should scaffold
-  a minimal composition first and confirm render output before wiring it into the full agent
-  chain.
+
+## Stage 2/4 local live-test result (2026-07-20) — real Remotion render confirmed
+Node.js LTS installed (`winget install OpenJS.NodeJS.LTS`), a blank project scaffolded via
+`npx create-video@latest --yes --blank`, and a real ~18s composition built and rendered using
+actual Banfield-case assets (kept in a local scratch project, not committed — this was a
+render-mechanics proof, not the real Phase 2 render worker):
+- `Assets/images/0001.png` (real Flux-generated Hook image) as the background, with a Ken
+  Burns pan/zoom via `interpolate()` on a CSS `transform: scale()/translateX()`.
+- The real Jimmy-voice Hook TTS clip as the voiceover `<Audio>`, one `bed_XX.mp3` track from
+  `Assets/audio/music_bed/` as a second `<Audio>` with `volume={10^(-18/20)} ≈ 0.126` (the fixed
+  -18dB mix spec above, expressed as Remotion's linear 0-1 volume prop — there's no separate EQ
+  API in Remotion's `<Audio>` component itself; the 1-3kHz dip/high-pass/low-pass from the mixing
+  spec would need an actual audio-processing library, not attempted in this proof).
+- Karaoke captions per the fixed style, using natural per-word proportional timing (see the
+  caption-timing finding above) — confirmed correct visually across multiple extracted frames
+  (`cv2.VideoCapture` + `imwrite`, since no `ffmpeg` is installed on this machine either — worth
+  installing `ffmpeg` before doing real production renders, since Remotion itself may want it
+  for some codecs/operations even though this basic render didn't need it).
+- **Render succeeded**: 536 frames at 1920x1080/30fps, encoded to a 12.8MB MP4 with no errors.
+- **Confirmed by actually looking at the output**, not just a clean exit code: captions render
+  with the correct font weight/stroke/highlight color, the Ken Burns pan is visible and subtle,
+  audio muxes into the file. This satisfies the "scaffold a minimal composition, confirm render
+  output before wiring into the full chain" requirement that was open since this file was first
+  drafted.
+- **Status: no longer untested.** The render mechanics work on this machine. Still not wired to
+  the actual agent chain (that's the n8n/orchestration side, tracked separately) and still needs
+  the real EQ processing and natural-language-aware caption chunking noted above before a real
+  production render.
