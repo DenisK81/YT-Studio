@@ -63,6 +63,18 @@ assemble({
   `Tools/elevenlabs_voice_tool.md`), never from a separate agent's estimate of that text. See
   `Workflows/process_pipeline_audio.py` for the real implementation (per-word timing + real
   scene/image boundaries, both derived from the same alignment).
+- **A second, distinct bug found the same day, after switching to chat-driven agent execution
+  (no n8n):** Voice Production Agent (played by Claude Code directly, per
+  `Documentation/ARCHITECTURE.md`'s "Orchestration decision") appended trailing prose after
+  the real narration — a "Rendered audio: chapter_01.mp3 — scenes..." note and an escalation
+  reminder — with nothing separating it from the actual chapter text. Nothing in the pipeline
+  stopped that trailing text from being sent to TTS and read aloud; caught by ear on the
+  re-render, not automatically. **Fixed:** `Workflows/generate_case_assets.py`'s
+  `parse_voiceover()` now only treats text inside the outermost `` ``` `` fence as narration —
+  the convention the agent had already used to separate its actual deliverable from
+  commentary — and excludes/warns about anything outside it instead of silently narrating it.
+  This is a general safety net: it holds regardless of which model or which turn produced
+  `Voiceover.txt`.
 - Same font/color/stroke/position style applies to both the main video (16:9) and Shorts
   (9:16) — only the *timing* rule (natural pacing vs. 2s floor) differs between them.
 

@@ -60,6 +60,23 @@ def get_bytes(url, timeout=120):
 
 # --- shared: parse Voiceover.txt into chapters + [[SCENE:NNNN]] marker offsets ---
 def parse_voiceover(voiceover_text):
+    # Guard against exactly the bug found 2026-07-21: a Voice Production Agent turn
+    # (real or Claude Code acting the role) can append trailing prose after the real
+    # narration - "Rendered audio: chapter_01.mp3 - scenes ...", an escalation note,
+    # etc. - and that text got literally read aloud by TTS because nothing separated
+    # it from the real content. If the file wraps its narration in a ``` fence (as
+    # this agent has done when adding such notes), only text INSIDE the first fence
+    # counts; anything outside is meta-commentary for a human, never narration.
+    fence = re.search(r"```(?:\w+)?\n([\s\S]*?)```", voiceover_text)
+    if fence:
+        before, after = voiceover_text[:fence.start()], voiceover_text[fence.end():]
+        stray = (before + after).strip()
+        if stray:
+            print(f"NOTE: {len(stray)} chars outside the ``` fence were excluded from narration "
+                  f"(meta-commentary, not spoken text) - review Voiceover.txt if this looks wrong:")
+            print("  " + stray[:300].replace("\n", "\n  "))
+        voiceover_text = fence.group(1)
+
     parts = re.split(r"^===\s*CHAPTER\s+", voiceover_text, flags=re.M)[1:]
     if not parts:
         raise SystemExit("No '=== CHAPTER NN (scenes ...) ===' headers found in Voiceover.txt")
