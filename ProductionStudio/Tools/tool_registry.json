@@ -15,7 +15,7 @@
     {
       "name": "elevenlabs_voice_tool",
       "path": "Tools/elevenlabs_voice_tool.md",
-      "description": "Provider-agnostic voiceover generation wrapper; default provider ElevenLabs Studio. generate_music() (Eleven Music API) is now the background-music FALLBACK only, superseded by Tools/royalty_free_music_tool.md as default since it costs per-generation credits. Real live-test of generate_music blocked by a missing music_generation permission on the current API key.",
+      "description": "Provider-agnostic voiceover generation wrapper; default provider ElevenLabs Studio. generate_music() (Eleven Music API) is now the background-music FALLBACK only, superseded by Tools/royalty_free_music_tool.md as default since it costs per-generation credits. Real live-test of generate_music blocked by a missing music_generation permission on the current API key. Stage 4 (2026-07-21): TTS live-tested as a real n8n HTTP node with the standalone ELEVENLABS_API_KEY - 7 full chapters rendered in one run (Tests/stage4_full_pipeline_n8n_test.md). CONSTRAINT found: Creator plan allows max 5 concurrent requests, and n8n batchInterval only spaces request starts - use batchSize 1 + batchInterval 20000ms for chapter batches.",
       "input_schema_ref": "text: string, voice_id: string, chapter: string | mood_prompt: string, duration_seconds: number",
       "output_schema_ref": "audio_url_or_bytes: string, duration_seconds: number",
       "tags": ["voice", "tts", "audio", "music", "fallback"],
@@ -26,7 +26,7 @@
     {
       "name": "image_gen_tool",
       "path": "Tools/image_gen_tool.md",
-      "description": "Provider-agnostic image generation wrapper. Default: fal.ai + Flux schnell (real API, near-free at test volume). Leonardo/Replicate as fallback. Midjourney excluded from automation (no official API). Stage 4 (2026-07-21): the same contract also confirmed working as a real n8n HTTP Request node (Tests/stage4_n8n_local_bootstrap.md) - the first live node of the n8n skeleton workflow.",
+      "description": "Provider-agnostic image generation wrapper. Default: fal.ai + Flux schnell (real API, near-free at test volume). Leonardo/Replicate as fallback. Midjourney excluded from automation (no official API). Stage 4 (2026-07-21): the same contract also confirmed working as a real n8n HTTP Request node (Tests/stage4_n8n_local_bootstrap.md), then batch-proven in the full pipeline trial - 70 scene images generated and saved to disk in one n8n run with batchSize 1 / 1s spacing, zero failures (Tests/stage4_full_pipeline_n8n_test.md).",
       "input_schema_ref": "prompt: string, style_tags: string[]",
       "output_schema_ref": "image_url_or_file: string",
       "tags": ["image", "generation", "visual"],
