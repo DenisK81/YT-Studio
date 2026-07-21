@@ -1,0 +1,557 @@
+{
+  "scenes": [
+    {
+      "scene_id": "0001",
+      "beat": "hook",
+      "text": "A children's book about learning to live with grief. Written by the woman who caused it. That's not a twist we're saving for the end.",
+      "estimated_seconds": 10,
+      "retention_note": "Cold open: the irony (grief book written by the killer) before any setup - the hook itself."
+    },
+    {
+      "scene_id": "0002",
+      "beat": "hook",
+      "text": "That's where this one starts, because nothing else about this case makes sense until you know that detail is real — and that it's not the strangest part of the story. Not even close.",
+      "estimated_seconds": 14,
+      "retention_note": "Promise: everything else in the case explains this one detail."
+    },
+    {
+      "scene_id": "0003",
+      "beat": "conflict",
+      "text": "Here's the setup. A husband. A wife. Three young sons. A house outside Park City, Utah — the kind of place people move to for the mountains and the quiet, not for anything resembling this.",
+      "estimated_seconds": 14,
+      "retention_note": "Scene-setting: family, place, surface normalcy - contrast for what's coming."
+    },
+    {
+      "scene_id": "0004",
+      "beat": "conflict",
+      "text": "He runs a stonemasonry business. She flips houses for a living. On paper, it's a good life. The kind of life people photograph for a Christmas card.",
+      "estimated_seconds": 11,
+      "retention_note": "Occupations established - grounds the couple as ordinary, successful people."
+    },
+    {
+      "scene_id": "0005",
+      "beat": "conflict",
+      "text": "Then, on a night in early March 2022, the husband is dead. Cause of death: fentanyl. Not a trace of it. Not an accidental brush with it.",
+      "estimated_seconds": 11,
+      "retention_note": "First conflict beat: the death itself, cause named immediately (fentanyl, 5x lethal)."
+    },
+    {
+      "scene_id": "0006",
+      "beat": "conflict",
+      "text": "A dose roughly five times what it takes to kill a person. And the wife tells police she doesn't understand it. He didn't do drugs. He never had.",
+      "estimated_seconds": 11,
+      "retention_note": "Wife's own denial on record - sets up the mystery."
+    },
+    {
+      "scene_id": "0007",
+      "beat": "conflict",
+      "text": "Not once, not that she knew of, not in all the years she'd known him. So investigators are left holding a question that refuses to have an easy answer: how does a 39-year-old man with no history of drug abuse end up with five times a lethal dose of fentanyl in his system, in his own home, on an ordinary night, with no one else in the house claiming to have seen anything?",
+      "estimated_seconds": 29,
+      "retention_note": "States the central unanswered question driving the whole case."
+    },
+    {
+      "scene_id": "0008",
+      "beat": "conflict",
+      "text": "That question is the entire case. Everything that follows — every piece of evidence, every witness, every year this took to reach a courtroom — is the answer, assembled one piece at a time.",
+      "estimated_seconds": 14,
+      "retention_note": "Naming the victim/defendant - delayed identification is itself a device."
+    },
+    {
+      "scene_id": "0009",
+      "beat": "conflict",
+      "text": "His name was Eric Richins. Hers is Kouri. And by the time a jury is finished with this story, the answer to that question will not be a tragic accident. It will be a plan.",
+      "estimated_seconds": 14,
+      "retention_note": "Promise of the twist: plan, not accident; failed once already."
+    },
+    {
+      "scene_id": "0010",
+      "beat": "mystery",
+      "text": "One that failed the first time, and did not fail the second. Start with the night itself, because it matters how ordinary it looks from the outside.",
+      "estimated_seconds": 11,
+      "retention_note": "The night itself, rendered ordinary - drink he'd had before."
+    },
+    {
+      "scene_id": "0011",
+      "beat": "mystery",
+      "text": "Eric drinks a Moscow Mule — nothing unusual, a drink he'd had plenty of times before, made more or less the way it's always made.",
+      "estimated_seconds": 10,
+      "retention_note": "The dose size stated plainly - no room for accidental doubt."
+    },
+    {
+      "scene_id": "0012",
+      "beat": "mystery",
+      "text": "Except this time, that drink is carrying enough fentanyl to kill several men his size. He goes to sleep. He does not wake up.",
+      "estimated_seconds": 10,
+      "retention_note": "Initial read: tragedy, not crime - the false first impression."
+    },
+    {
+      "scene_id": "0013",
+      "beat": "mystery",
+      "text": "At first, without an obvious cause laid out in front of them, this reads like exactly what grief wants it to read like: a sudden, senseless tragedy.",
+      "estimated_seconds": 11,
+      "retention_note": "Reinforces the false impression before it's overturned."
+    },
+    {
+      "scene_id": "0014",
+      "beat": "mystery",
+      "text": "A healthy man, gone with no warning, no explanation, nothing anyone could have done. For a while, that's genuinely how the people around this family are allowed to understand it.",
+      "estimated_seconds": 12,
+      "retention_note": "Investigators' pivotal reframing move - the real start of the case."
+    },
+    {
+      "scene_id": "0015",
+      "beat": "mystery",
+      "text": "But investigators do something here that changes the entire shape of the case: they don't stop at \"he had no history of drug use.\" They ask the harder, more uncomfortable question underneath it.",
+      "estimated_seconds": 13,
+      "retention_note": "The logical chain that turns tragedy into homicide."
+    },
+    {
+      "scene_id": "0016",
+      "beat": "mystery",
+      "text": "If he wasn't using — if there is no plausible story where this drug enters his body by his own hand — then where did it come from? And who put it there?",
+      "estimated_seconds": 13,
+      "retention_note": "Case officially becomes a homicide investigation - beat turn."
+    },
+    {
+      "scene_id": "0017",
+      "beat": "mystery",
+      "text": "The moment that question gets asked seriously, this case stops being a medical mystery and starts being a homicide investigation.",
+      "estimated_seconds": 8,
+      "retention_note": "New clue: the sandwich - first attempt existed."
+    },
+    {
+      "scene_id": "0018",
+      "beat": "mystery",
+      "text": "Because here is the first detail that refuses to fit a simple accident: this was not the first time.",
+      "estimated_seconds": 8,
+      "retention_note": "First attempt confirmed as deliberate and failed."
+    },
+    {
+      "scene_id": "0019",
+      "beat": "escalation",
+      "text": "About seventeen days before the night that finally killed him, prosecutors say, Eric was given a sandwich. It, too, was laced with fentanyl. He got sick. He did not die.",
+      "estimated_seconds": 12,
+      "retention_note": "The sandwich attempt detailed - 17 days before the fatal dose."
+    },
+    {
+      "scene_id": "0020",
+      "beat": "escalation",
+      "text": "Whoever did this — if this was deliberate, and investigators are now certain it was — tried once, failed, watched him survive, and came back seventeen days later to finish what the first attempt didn't.",
+      "estimated_seconds": 14,
+      "retention_note": "Direct address to viewer - frames why this detail matters."
+    },
+    {
+      "scene_id": "0021",
+      "beat": "escalation",
+      "text": "Sit with that detail for a second, because it's the one that separates this from almost every other case like it. This isn't a single moment of rage or panic.",
+      "estimated_seconds": 12,
+      "retention_note": "Names the calculated-patience trait - reframes the killer's psychology."
+    },
+    {
+      "scene_id": "0022",
+      "beat": "escalation",
+      "text": "This is someone who fails, recalculates, waits over two weeks, and tries again. That takes a kind of patience that should scare you more than the poison itself. So who would do that to him?",
+      "estimated_seconds": 14,
+      "retention_note": "Transition: investigators turn to the wife."
+    },
+    {
+      "scene_id": "0023",
+      "beat": "escalation",
+      "text": "Investigators start where cases like this almost always start: close to home. And the deeper they look at Kouri Richins, the more the comfortable version of this family's life starts to come apart.",
+      "estimated_seconds": 13,
+      "retention_note": "Financial motive introduced - real estate debt."
+    },
+    {
+      "scene_id": "0024",
+      "beat": "escalation",
+      "text": "Start with the money, because money is where a lot of these stories quietly begin. The couple's real estate business is not the success story it looks like from the outside — not even close.",
+      "estimated_seconds": 14,
+      "retention_note": "Debt specifics - the business isn't what it looks like."
+    },
+    {
+      "scene_id": "0025",
+      "beat": "escalation",
+      "text": "Behind the surface, there's real estate debt reaching into the millions. A business that looks solid at a dinner party and is actually bleeding out behind the scenes, while the family keeps up every appearance of doing just fine.",
+      "estimated_seconds": 16,
+      "retention_note": "Insurance stacked on top of debt - motive layer two."
+    },
+    {
+      "scene_id": "0026",
+      "beat": "escalation",
+      "text": "Now stack insurance on top of that debt. Eric's life is covered for more than two million dollars, spread across multiple policies.",
+      "estimated_seconds": 9,
+      "retention_note": "The forged signature - a new, concrete piece of evidence."
+    },
+    {
+      "scene_id": "0027",
+      "beat": "escalation",
+      "text": "And one of those policies — investigators find — was obtained using a forged signature. His forged signature. On a document he apparently never actually signed, for a policy he may never have known existed.",
+      "estimated_seconds": 14,
+      "retention_note": "Names financial motive explicitly as 'motive number one.'"
+    },
+    {
+      "scene_id": "0028",
+      "beat": "escalation",
+      "text": "That's motive number one, laid out in plain financial terms: debt piling up on one side of the ledger, and a payout waiting on the other side of Eric's death.",
+      "estimated_seconds": 12,
+      "retention_note": "Introduces the affair - motive number two, harder to see."
+    },
+    {
+      "scene_id": "0029",
+      "beat": "escalation",
+      "text": "Motive number two takes longer to surface, because it's personal, and people are good at hiding the personal ones.",
+      "estimated_seconds": 8,
+      "retention_note": "The boyfriend named; two-year relationship established."
+    },
+    {
+      "scene_id": "0030",
+      "beat": "escalation",
+      "text": "Kouri has been in a relationship with another man — Robert Josh Grossman — since early 2020. Two years, running quietly underneath the marriage, underneath the family photos, underneath all of it.",
+      "estimated_seconds": 13,
+      "retention_note": "The damning text message quoted directly."
+    },
+    {
+      "scene_id": "0031",
+      "beat": "escalation",
+      "text": "And in messages investigators later recover, Kouri writes to him something that reads less like private longing and more like a plan already forming: \"If he could just go away and you could just be here!",
+      "estimated_seconds": 14,
+      "retention_note": "Close reading of the text - reframes its meaning for viewer."
+    },
+    {
+      "scene_id": "0032",
+      "beat": "escalation",
+      "text": "Life would be so perfect!!\" Read that again, slowly. Not \"I wish things were different.\" Not even \"I wish I could leave him.\" \"If he could just go away.\" That's not a woman imagining an escape.",
+      "estimated_seconds": 14,
+      "retention_note": "Synthesis: two motives converging on one obstacle (Eric)."
+    },
+    {
+      "scene_id": "0033",
+      "beat": "escalation",
+      "text": "That's a woman imagining an ending. So now you've got debt pulling in one direction and a relationship she wants to make permanent pulling in the other — and a husband standing directly between both of them.",
+      "estimated_seconds": 15,
+      "retention_note": "Turn: evidence stops being separate facts, starts compounding."
+    },
+    {
+      "scene_id": "0034",
+      "beat": "escalation",
+      "text": "From here, the evidence doesn't just accumulate. It compounds, each piece making the last one worse. A former housekeeper, Carmen Lauber, comes forward with something investigators can't ignore.",
+      "estimated_seconds": 11,
+      "retention_note": "Housekeeper witness introduced - new named source."
+    },
+    {
+      "scene_id": "0035",
+      "beat": "evidence",
+      "text": "She says Kouri approached her — not once, but four separate times — asking for help getting something stronger than what she already had access to.",
+      "estimated_seconds": 10,
+      "retention_note": "The exact drug request quoted - concrete, damning specific."
+    },
+    {
+      "scene_id": "0036",
+      "beat": "evidence",
+      "text": "At one point, according to her testimony, Kouri specifically asks for what she calls \"the Michael Jackson stuff.\" That's not a vague, desperate ask. That's someone who knows exactly what she's requesting, and why.",
+      "estimated_seconds": 14,
+      "retention_note": "Phone search history introduced - new evidence category."
+    },
+    {
+      "scene_id": "0037",
+      "beat": "evidence",
+      "text": "Then there's Kouri's phone, and phones have a way of remembering things people wish they hadn't searched. Investigators find search history that includes \"can cops force you to do a lie detector test\" and \"can deleted text messages be retrieved.\" Those aren't the searches of a grieving widow trying to make sense of a senseless death.",
+      "estimated_seconds": 22,
+      "retention_note": "The specific searches quoted - proof of premeditated concealment."
+    },
+    {
+      "scene_id": "0038",
+      "beat": "evidence",
+      "text": "Those are the searches of someone already calculating what she can hide, how thoroughly, and how fast — weeks and months before anyone has formally accused her of anything at all.",
+      "estimated_seconds": 12,
+      "retention_note": "Synthesis line - ties evidence categories together."
+    },
+    {
+      "scene_id": "0039",
+      "beat": "evidence",
+      "text": "Every strand of evidence points the same direction, and none of them stand alone. There's the financial motive. There's the personal motive.",
+      "estimated_seconds": 9,
+      "retention_note": "Recaps evidence strands compounding toward guilt."
+    },
+    {
+      "scene_id": "0040",
+      "beat": "evidence",
+      "text": "There's a documented pattern of trying to acquire the exact drug that eventually killed him. There's a first attempt that failed, followed by a second that didn't.",
+      "estimated_seconds": 11,
+      "retention_note": "Underlying pattern named: quiet panic before any accusation."
+    },
+    {
+      "scene_id": "0041",
+      "beat": "evidence",
+      "text": "And running underneath all of it, there's a pattern of quiet, calculated panic about being caught — panic that predates any accusation.",
+      "estimated_seconds": 9,
+      "retention_note": "Pivot line into the twist - promises something bigger."
+    },
+    {
+      "scene_id": "0042",
+      "beat": "twist",
+      "text": "And then comes the detail that turns this from a hard case into one people will be talking about for years.",
+      "estimated_seconds": 8,
+      "retention_note": "The children's book reveal begins - the case's signature twist."
+    },
+    {
+      "scene_id": "0043",
+      "beat": "twist",
+      "text": "About a year after Eric's death — while she is already a suspect, while investigators are quietly building the case that will eventually convict her, but before she has been formally charged with anything — Kouri Richins sits down and writes a children's picture book.",
+      "estimated_seconds": 18,
+      "retention_note": "Book title and subject named - grief processing, written by suspect."
+    },
+    {
+      "scene_id": "0044",
+      "beat": "twist",
+      "text": "It's called \"Are You With Me?\" It's about a child learning to process grief after losing a parent. She self-publishes it. She promotes it, on local media, in her own community.",
+      "estimated_seconds": 12,
+      "retention_note": "Her own quoted rationale for writing it."
+    },
+    {
+      "scene_id": "0045",
+      "beat": "twist",
+      "text": "She says, in her own words, that she just wanted something to read to her own kids at night. Sit with that for a moment, because it deserves more than a passing mention.",
+      "estimated_seconds": 13,
+      "retention_note": "Direct address - frames the moral weight of the detail."
+    },
+    {
+      "scene_id": "0046",
+      "beat": "twist",
+      "text": "A book meant to help a child process the loss of a parent — written, according to the very prosecutors building a murder case against her, by the parent who caused that loss in the first place.",
+      "estimated_seconds": 15,
+      "retention_note": "Promotion detail - not private, done publicly before arrest."
+    },
+    {
+      "scene_id": "0047",
+      "beat": "twist",
+      "text": "Promoted publicly. Sold to other families. All of it happening months before her arrest, while the investigation into her was already quietly underway.",
+      "estimated_seconds": 9,
+      "retention_note": "Three interpretive questions posed - invites viewer judgment."
+    },
+    {
+      "scene_id": "0048",
+      "beat": "twist",
+      "text": "Is that grief, channeled into something productive by someone who doesn't yet know she'll be caught? Is that a genuine attempt to process what she'd done, wrapped in denial?",
+      "estimated_seconds": 12,
+      "retention_note": "Second interpretation offered - performance vs. genuine grief."
+    },
+    {
+      "scene_id": "0049",
+      "beat": "twist",
+      "text": "Or is it something colder — a performance of innocent, devoted motherhood, so convincing she put it into print and sold copies of it? The book itself doesn't answer that question.",
+      "estimated_seconds": 12,
+      "retention_note": "Leaves the twist unresolved, then moves the case forward: charges filed."
+    },
+    {
+      "scene_id": "0050",
+      "beat": "twist",
+      "text": "It just makes the question impossible to look away from. A few weeks after that book reaches the public, in May of 2023, Kouri Richins is charged with murder.",
+      "estimated_seconds": 12,
+      "retention_note": "Sets real-world expectation: this case took years, not days."
+    },
+    {
+      "scene_id": "0051",
+      "beat": "investigation",
+      "text": "What follows is not a quick trial, and it's worth saying that plainly, because real cases rarely move at the speed true-crime stories want them to.",
+      "estimated_seconds": 10,
+      "retention_note": "Specific delay causes named - grounds the long timeline."
+    },
+    {
+      "scene_id": "0052",
+      "beat": "investigation",
+      "text": "This one stretches on for years — delayed by disputes over evidence, by fights over legal representation, by jury selection that drags out far longer than anyone watching from the outside would expect.",
+      "estimated_seconds": 13,
+      "retention_note": "Names the tension of a multi-year gap between charge and trial."
+    },
+    {
+      "scene_id": "0053",
+      "beat": "investigation",
+      "text": "That gap, between charge and courtroom, is its own kind of quiet tension: years where the public accusation exists, but no verdict does.",
+      "estimated_seconds": 9,
+      "retention_note": "Trial finally begins in 2026 - new phase."
+    },
+    {
+      "scene_id": "0054",
+      "beat": "investigation",
+      "text": "Eventually, in early 2026, the case finally goes in front of a jury. And the prosecution builds its case methodically, witness by witness, piece by piece.",
+      "estimated_seconds": 10,
+      "retention_note": "Housekeeper testifies live - evidence enters the courtroom."
+    },
+    {
+      "scene_id": "0055",
+      "beat": "investigation",
+      "text": "The housekeeper testifies again, this time under oath in front of the jury, walking through those four separate requests for stronger drugs.",
+      "estimated_seconds": 9,
+      "retention_note": "Forensic pathologist's toxicology testimony - rules out accident formally."
+    },
+    {
+      "scene_id": "0056",
+      "beat": "investigation",
+      "text": "A forensic pathologist takes the stand and walks the jury through the toxicology in plain terms: fentanyl, at levels high enough to rule out any accidental explanation, any question of a dosing mistake, any benefit of the doubt.",
+      "estimated_seconds": 15,
+      "retention_note": "Boyfriend takes the stand - four-year anniversary detail adds weight."
+    },
+    {
+      "scene_id": "0057",
+      "beat": "investigation",
+      "text": "And on March 4th, 2026 — almost exactly four years, to the week, after Eric's death — Robert Josh Grossman takes the stand himself. He testifies about the relationship. About the messages.",
+      "estimated_seconds": 13,
+      "retention_note": "What he testified to - the discussed future."
+    },
+    {
+      "scene_id": "0058",
+      "beat": "investigation",
+      "text": "About a future the two of them had apparently discussed, in a life where Eric simply wasn't in the way anymore.",
+      "estimated_seconds": 8,
+      "retention_note": "Defense declines to present a case - notable strategic silence."
+    },
+    {
+      "scene_id": "0059",
+      "beat": "investigation",
+      "text": "Kouri's defense makes a choice that speaks for itself, in a courtroom where silence is its own kind of statement: she does not testify. Her legal team calls no witnesses at all.",
+      "estimated_seconds": 13,
+      "retention_note": "Defense rests without witnesses - closing arguments begin."
+    },
+    {
+      "scene_id": "0060",
+      "beat": "investigation",
+      "text": "On March 13th, they rest their case without presenting a single one. Closing arguments begin March 16th. Her defense asks for a mistrial, arguing the prosecution's closing remarks crossed a line.",
+      "estimated_seconds": 12,
+      "retention_note": "Mistrial request denied - final procedural hurdle before verdict."
+    },
+    {
+      "scene_id": "0061",
+      "beat": "investigation",
+      "text": "The judge disagrees, and rules the comments were fair. Then the jury goes back to deliberate on a case that took four years to reach this room. They return in three hours. Guilty.",
+      "estimated_seconds": 13,
+      "retention_note": "The verdict: guilty, all five counts named individually."
+    },
+    {
+      "scene_id": "0062",
+      "beat": "reveal",
+      "text": "On all five counts. First-degree aggravated murder. Attempted aggravated murder — for the sandwich, seventeen days before the drink that finished what it started. Two counts of insurance fraud. Forgery.",
+      "estimated_seconds": 12,
+      "retention_note": "Only three hours of deliberation - signals how clear-cut the jury found it."
+    },
+    {
+      "scene_id": "0063",
+      "beat": "reveal",
+      "text": "Three hours, for a case built over four years of investigation and delay. That's not a jury wrestling with reasonable doubt.",
+      "estimated_seconds": 8,
+      "retention_note": "Interprets the short deliberation for the viewer."
+    },
+    {
+      "scene_id": "0064",
+      "beat": "reveal",
+      "text": "That's a jury that heard the evidence laid out in full and didn't need long at all to agree on exactly what it meant.",
+      "estimated_seconds": 10,
+      "retention_note": "Sentencing date lands on victim's birthday - grim coincidence."
+    },
+    {
+      "scene_id": "0065",
+      "beat": "aftermath",
+      "text": "The sentencing comes two months later, on May 13th, 2026 — a date that lands, by no design of the court's, on what would have been Eric's birthday.",
+      "estimated_seconds": 11,
+      "retention_note": "Judge's direct quote - the case's moral verdict in his own words."
+    },
+    {
+      "scene_id": "0066",
+      "beat": "aftermath",
+      "text": "Judge Richard Mrazik does not soften a single word of it. He describes what happened as calculated from the start — a woman who failed once, and then, in his words, spent the next seventeen days \"doubling down, preparing to try again.\" He tells her directly that she is \"simply too dangerous to ever be free.\"",
+      "estimated_seconds": 22,
+      "retention_note": "Sentence breakdown begins - concrete consequence."
+    },
+    {
+      "scene_id": "0067",
+      "beat": "aftermath",
+      "text": "The sentence: life without the possibility of parole for the murder itself. On top of that, five years to life for the attempted murder by sandwich.",
+      "estimated_seconds": 10,
+      "retention_note": "Sentence breakdown continues - fraud and forgery counts."
+    },
+    {
+      "scene_id": "0068",
+      "beat": "aftermath",
+      "text": "One to fifteen years on each of the two insurance fraud counts. Up to five more years for the forgery.",
+      "estimated_seconds": 8,
+      "retention_note": "Consecutive sentencing detail - total severity underscored."
+    },
+    {
+      "scene_id": "0069",
+      "beat": "aftermath",
+      "text": "All of it stacked to run consecutively, one sentence beginning only after the last one technically could have ended. Eric's family speaks after the sentence is handed down.",
+      "estimated_seconds": 11,
+      "retention_note": "Victim's family speaks - sister's direct quote about the marriage."
+    },
+    {
+      "scene_id": "0070",
+      "beat": "aftermath",
+      "text": "His sister Katie says that before his death, Eric had already come to believe Kouri was \"evil\" — his own word, according to his sister, used about the woman he was married to.",
+      "estimated_seconds": 13,
+      "retention_note": "Second family statement - closure/justice framing."
+    },
+    {
+      "scene_id": "0071",
+      "beat": "aftermath",
+      "text": "Another sister, Amy, keeps her statement simple: \"Just very happy that we got justice for my brother.\" And Kouri — even now, even convicted on all five counts, even sentenced to die in prison — does not admit to any of it.",
+      "estimated_seconds": 17,
+      "retention_note": "Defendant's own denial, quoted directly, even after conviction."
+    },
+    {
+      "scene_id": "0072",
+      "beat": "aftermath",
+      "text": "She tells the court: \"God did not put me in this world to take a life.\" She says her contact with her own three sons has been blocked for more than two years.",
+      "estimated_seconds": 13,
+      "retention_note": "Her claims about being blocked from her sons; appeal plans."
+    },
+    {
+      "scene_id": "0073",
+      "beat": "aftermath",
+      "text": "She says she intends to appeal, and the court grants her extra time — twenty-eight days instead of the standard fourteen — to file it.",
+      "estimated_seconds": 10,
+      "retention_note": "Leaves the appeal's outcome genuinely open - honest, not resolved."
+    },
+    {
+      "scene_id": "0074",
+      "beat": "aftermath",
+      "text": "Whether that appeal changes anything is still an open question, one that hasn't been answered as of this telling.",
+      "estimated_seconds": 8,
+      "retention_note": "Final framing line before closing - what the jury actually decided."
+    },
+    {
+      "scene_id": "0075",
+      "beat": "aftermath",
+      "text": "What isn't in question, according to twelve jurors who heard every piece of this evidence, is what happened inside that house in March of 2022 — and why it happened twice before it finally worked.",
+      "estimated_seconds": 14,
+      "retention_note": "Summarizes the pattern (fail, wait, retry) one last time."
+    },
+    {
+      "scene_id": "0076",
+      "beat": "question",
+      "text": "So here's what this case actually leaves behind. A woman who tried once, failed, waited seventeen days, and tried again.",
+      "estimated_seconds": 8,
+      "retention_note": "Recaps the concealment and the book in one closing sweep."
+    },
+    {
+      "scene_id": "0077",
+      "beat": "question",
+      "text": "Who searched for ways to cover her tracks before a single person had accused her of anything. And who, while investigators were quietly assembling the case that would eventually convict her, sat down and wrote a book to help other families' children process exactly the kind of loss she stands convicted of causing.",
+      "estimated_seconds": 21,
+      "retention_note": "Direct question to the viewer - the unresolved moral core."
+    },
+    {
+      "scene_id": "0078",
+      "beat": "question",
+      "text": "If you had read that book before any of this came out — would you have felt anything except sympathy for a mother trying to help her kids grieve?",
+      "estimated_seconds": 12,
+      "retention_note": "Call to comment - standard channel closer, invites engagement."
+    },
+    {
+      "scene_id": "0079",
+      "beat": "question",
+      "text": "That's the part of this story that never gets a clean answer. Tell us what you think in the comments. We read every one.",
+      "estimated_seconds": 10,
+      "retention_note": "Continues the beat - no new element flag needed, natural connective sentence."
+    }
+  ]
+}
