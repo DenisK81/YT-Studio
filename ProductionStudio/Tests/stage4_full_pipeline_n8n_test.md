@@ -82,13 +82,35 @@ the escalation is a human step at publish time.) Publishing Agent correctly prod
   attempt was recovered from n8n's binary store, not regenerated.
 - fal.ai: 70 Flux schnell images ≈ $0.2–0.7.
 
+## Full trial render (same day, follow-up)
+
+The complete 70-scene video was then rendered locally with Remotion from the generated
+assets: `Assets/renders/banfield_auto_draft.mp4` (gitignored) — 1920x1080 @ 30fps,
+25,574 frames / 14.21 min, 360 MB, rendered in ~13 min. Composition
+(`BanfieldTrial.tsx` in the local remotion project): 7 chapter MP3s sequenced back-to-back,
+per-scene timing scaled proportionally to each chapter's *real* audio duration (not the
+estimates), alternating-direction Ken Burns per scene with an 8-frame fade-in, karaoke
+captions (natural word-count timing, `#A30E15` active word), `bed_07.mp3` looped at -18dB.
+Spot-checked frames at the start/middle/end: images on-style, captions correct throughout.
+QC-relevant observation: "anonymized face" prompts occasionally render as a literal
+mask-like face (seen in a courtroom scene) — human frame review should watch for this.
+
+## Research Agent memory (same day, follow-up)
+
+The re-picked-Banfield problem is now solved structurally, not by a hardcoded list:
+`Cases/covered_cases.json` is the channel's covered-case memory, injected into the Research
+node's prompt by `Workflows/build_master_workflow.py` on every build (see
+`Agents/research_agent.md`'s "Covered-case memory" section). Append a case there the moment
+it enters production.
+
 ## Verdict
 
-The full LLM chain, both asset branches, the Stage 3 contracts, and the escalation/QC/publish
-gating all work end-to-end through n8n on this machine. Remaining before Hetzner:
-- Remotion render of this trial video from the generated assets (next step, local).
+The full LLM chain, both asset branches, the Stage 3 contracts, the escalation/QC/publish
+gating, and the Remotion render all work end-to-end on this machine — the complete
+case-query → draft-video path has now run for real, locally. Remaining:
 - Human resolution of the QC escalation (victim identities via official sources) before any
-  publish of this content.
+  publish of this content; per-word caption alignment and clause-boundary chunking are
+  known polish items.
 - On Hetzner: set `N8N_RESTRICT_FILE_ACCESS_TO`, keep the 20s TTS spacing, and use n8n
   credentials store instead of embedded keys (local build script embeds them because the
   local editor-credential flow was already proven unreliable to automate here).
