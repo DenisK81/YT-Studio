@@ -1,6 +1,6 @@
 ```json
 {
-  "checklist_status": "warning",
+  "checklist_status": "pass",
   "issues": [
     {
       "area": "story_consistency",
@@ -40,7 +40,12 @@
     {
       "area": "export_integrity",
       "severity": "warning",
-      "detail": "PENDING — Remotion render has not yet been produced this pass (next step after this QC file). Will confirm 16:9 MP4 playability once rendered."
+      "detail": "PASS — rendered to Assets/renders/kouri-richins-fentanyl-murder.mp4, 1920x1080 16:9 MP4, 14.71 min, confirmed playable and correctly synced by extracting and viewing real frames at multiple timestamps, including the exact moment of the twist reveal."
+    },
+    {
+      "area": "image_quality",
+      "severity": "warning",
+      "detail": "Two of 79 scene images (0044, 0079) initially rendered with garbled/illegible fake text where the prompt implied on-screen text (a book cover title, a YouTube UI mockup) — a known Flux schnell limitation with small/dense text, not a prompt-compliance failure elsewhere (a simple 'FOR SALE' sign at scene 0016 rendered perfectly legible). Both regenerated with prompts that avoid or blur on-screen text; video re-rendered. Spot-check the final render once more before publish, since this failure mode can recur on any scene whose prompt implies readable text — Image Planning Agent's fixed style should avoid describing legible on-screen text/UI going forward."
     },
     {
       "area": "legal_review",
@@ -59,8 +64,9 @@
     "hook_can_improve": false,
     "retention_can_improve": true
   },
-  "escalations": [
-    "STATUS RATIONALE: checklist_status is 'warning', not yet 'pass', solely because export_integrity is PENDING (Remotion render not yet produced this pass). No text-side check failed and no human decision is required — unlike the Banfield case, all identifying facts here are sourced to named national outlets (ABC, CBS, CNN, NewsNation), not Wikipedia, and the case is fully adjudicated with no minors involved as victim/perpetrator. Re-run to 'pass' once the render is confirmed."
+  "escalations": [],
+  "resolution_log": [
+    "2026-07-21: checklist_status is 'pass'. All identifying facts here are sourced to named national outlets (ABC, CBS, CNN, NewsNation), not Wikipedia, and the case is fully adjudicated with no minors involved — no human decision required, unlike the Banfield case. Render confirmed. Two scene images (0044, 0079) were regenerated after the first render surfaced illegible on-screen text; the video was re-rendered with the fixes. Recommend a final human skim of the render before publish given the text-rendering failure mode noted in image_quality above."
   ]
 }
 ```
