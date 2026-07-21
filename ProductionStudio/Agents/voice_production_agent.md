@@ -27,6 +27,21 @@ narration. Video Assembly Agent (via `Tools/remotion_assembly_tool.md`, whose `a
 interface takes one `audio_track: string`, singular) is responsible for concatenating these
 per-chapter chunks into one continuous track before rendering — not this agent's job.
 
+## Caption/scene alignment marker (added 2026-07-21)
+This agent is free to reword or expand a scene's text for natural narration — its job was
+never verbatim reformatting — but the pipeline needs to know, in the real spoken audio, where
+each scene's narration actually starts. A live pipeline run found the naive approach (assuming
+the original scene text's word count) breaks badly: one chapter came out 74% longer than its
+source scenes, and downstream captions built from the original scene text drifted increasingly
+out of sync with the real audio, ending up reading different words than the narrator entirely.
+**Fix:** within each chapter chunk, immediately before the narration text for a given scene_id,
+insert an inline marker `[[SCENE:NNNN]]` (four-digit scene_id) on its own — one per scene_id, in
+order, placed at the real start of that scene's content regardless of how much it was reworded.
+Downstream tooling strips these before the text reaches TTS and uses ElevenLabs' `with-timestamps`
+per-character alignment (see `Tools/elevenlabs_voice_tool.md`) to derive both real caption timing
+and real scene/image boundaries directly from the actual audio — never from an estimate. See
+`Workflows/process_pipeline_audio.py`.
+
 ## Tools
 `Tools/elevenlabs_voice_tool.md` (provider-swappable — see Voice Policy in
 `Documentation/ARCHITECTURE.md`; the contract is `generate(text, voice_id) -> audio`, so

@@ -7,6 +7,23 @@ local workflow JSON only (scratchpad + local n8n SQLite; never committed).
 
 Out-of-band by design: Video Assembly (local Remotion render), Tool Manager
 (design-time agent), YouTube publish (always human-gated).
+
+Cost note (2026-07-21): the first full trial run cost ~$4.50 on ANTHROPIC_API_KEY_N8N
+(11 Opus 4.8 calls, plus a partial re-run from an ElevenLabs concurrency bug, now
+fixed). Model mix below cuts that: Opus 4.8 stays only on Research/Story/QC (the
+reasoning- and accuracy-critical steps); everything else runs on Sonnet 5.
+
+Caption-sync note (2026-07-21): the first render's captions drifted badly after ~9
+minutes and went nonsensical near the end. Root cause: captions were built from
+Scene Planner's SceneList.json scene text, but Voice Production Agent legitimately
+rewrites/expands that text for natural narration (chapter 7 alone came out 74%
+longer than the scene list) - so captions and audio were, in the worst chapter,
+showing/saying different words. Fixed at the root: Voice Production Agent now
+emits inline [[SCENE:NNNN]] markers in its chapter output, TTS runs against
+ElevenLabs' with-timestamps endpoint (real per-character audio alignment), and the
+post-processing script (Workflows/process_pipeline_audio.py) derives real per-word
+caption timing and real scene/image boundaries directly from that alignment -
+never from an estimate, and always from the exact words actually spoken.
 """
 import json
 import os
@@ -23,6 +40,10 @@ el_key = os.environ["ELEVENLABS_API_KEY"]
 fal_key = os.environ["FAL_KEY"]
 
 VOICE_ID = "wSChTcAxdiTjLPhHeyrM"  # Jimmy - Canadian Podcast Narration (fixed in config)
+
+# Model mix: Opus 4.8 for reasoning/accuracy-critical steps, Sonnet 5 for the rest.
+MODEL_OPUS = "claude-opus-4-8"
+MODEL_SONNET = "claude-sonnet-5"
 
 def read_agent(fname):
     with open(os.path.join(AGENTS, fname), encoding="utf-8") as f:
@@ -69,9 +90,9 @@ def txt(node_name):
         ".filter(b => b.type === 'text').map(b => b.text).join('\\n')"
     )
 
-def anthropic_node(nid, name, pos, sys_key, user_expr, max_tokens, tools_js=None):
+def anthropic_node(nid, name, pos, sys_key, user_expr, max_tokens, tools_js=None, model=MODEL_SONNET):
     body = (
-        "={{ JSON.stringify({ model: 'claude-opus-4-8', max_tokens: " + str(max_tokens)
+        "={{ JSON.stringify({ model: '" + model + "', max_tokens: " + str(max_tokens)
         + ", thinking: { type: 'adaptive' }, "
         + ("tools: " + tools_js + ", " if tools_js else "")
         + "system: $('Agent Prompts').first().json." + sys_key
@@ -151,6 +172,7 @@ nodes.append(anthropic_node(
     "aliases as candidates): " + covered_cases_js + "'",
     12000,
     tools_js="[ { type: 'web_search_20260209', name: 'web_search', max_uses: 8 } ]",
+    model=MODEL_OPUS,
 ))
 connect("Agent Prompts", "Research Agent")
 
@@ -174,6 +196,7 @@ nodes.append(anthropic_node(
     + " + '\\n\\nResearch output (for timeline_draft of the chosen case):\\n\\n' + "
     + txt("Research Agent"),
     16000,
+    model=MODEL_OPUS,
 ))
 connect("Fact Verification Agent", "Story Agent")
 
@@ -189,7 +212,16 @@ nodes.append(anthropic_node(
     "'Scenes JSON below. OUTPUT FORMAT REQUIREMENT for this pipeline: precede each "
     "chapter chunk with a header line of exactly this shape: "
     "=== CHAPTER 01 (scenes 0001-0008) === (two-digit chapter number, real scene "
-    "range), then that chapter voiceover text. No other === lines anywhere.\\n\\n' + "
+    "range). Within the chapter body, immediately before the narration text written "
+    "for each individual scene_id, insert an inline marker of exactly this shape on "
+    "its own: [[SCENE:0001]] (four-digit scene_id, double brackets, no space "
+    "inside). One marker per scene_id, in order, even when a scene is merged or "
+    "reworded into a longer or shorter passage than the original scene text - the "
+    "marker marks where that scene narration actually begins, not a word-count "
+    "boundary. These markers are stripped before the text reaches text-to-speech and "
+    "are used only to time-align captions and images to the real narration, so place "
+    "them precisely at the real start of each scene content, not evenly spaced. No "
+    "other double-bracket or triple-equals markup anywhere.\\n\\n' + "
     + txt("Scene Planner Agent"),
     16000,
 ))
@@ -244,6 +276,7 @@ nodes.append(anthropic_node(
     + " + '\\n\\n=== SEO.md ===\\n' + " + txt("SEO Agent")
     + " + '\\n\\n=== Shorts.md ===\\n' + " + txt("Shorts Agent"),
     6000,
+    model=MODEL_OPUS,
 ))
 connect("Shorts Agent", "Quality Control Agent")
 
@@ -260,7 +293,13 @@ nodes.append(anthropic_node(
 ))
 connect("Quality Control Agent", "Publishing Agent (prepare only)")
 
-# --- branch A: voiceover -> ElevenLabs TTS per chapter -> mp3 files ---
+# --- branch A: voiceover -> strip [[SCENE:NNNN]] markers -> ElevenLabs TTS
+# with-timestamps per chapter. Real per-character alignment comes back in the
+# JSON response; Workflows/process_pipeline_audio.py (run after n8n execute)
+# decodes the base64 audio, derives real per-word caption timing and real
+# scene/image boundaries from the marker offsets + alignment, and writes the
+# mp3 + alignment files to disk. No file-write node needed inside n8n for this
+# branch anymore (also sidesteps n8n's default disk-write restriction).
 nodes.append({
     "id": "parse_chapters", "name": "Parse Chapters",
     "type": "n8n-nodes-base.code", "typeVersion": 2,
@@ -272,22 +311,34 @@ nodes.append({
         "if (!parts.length) throw new Error('No chapter headers found in voiceover');\n"
         "return parts.map(p => {\n"
         "  const num = (p.match(/^(\\d+)/) || [null, '00'])[1].padStart(2, '0');\n"
-        "  const text = p.substring(p.indexOf('===') + 3).trim();\n"
-        "  if (text.length > 9500) throw new Error('Chapter ' + num + ' exceeds TTS char limit');\n"
-        "  return { json: { chapter_label: 'chapter_' + num, text } };\n"
+        "  const body = p.substring(p.indexOf('===') + 3).trim();\n"
+        "  const markerRe = /\\[\\[SCENE:(\\d{4})\\]\\]\\s*/g;\n"
+        "  let clean = '';\n"
+        "  let lastIndex = 0;\n"
+        "  const markers = [];\n"
+        "  let m;\n"
+        "  while ((m = markerRe.exec(body)) !== null) {\n"
+        "    clean += body.slice(lastIndex, m.index);\n"
+        "    markers.push({ scene_id: m[1], charOffset: clean.length });\n"
+        "    lastIndex = markerRe.lastIndex;\n"
+        "  }\n"
+        "  clean += body.slice(lastIndex);\n"
+        "  if (!markers.length) throw new Error('Chapter ' + num + ' has no [[SCENE:NNNN]] markers');\n"
+        "  if (clean.length > 9500) throw new Error('Chapter ' + num + ' exceeds TTS char limit');\n"
+        "  return { json: { chapter_label: 'chapter_' + num, text: clean, scene_markers: markers } };\n"
         "});"
     )},
 })
 connect("Voice Production Agent", "Parse Chapters")
 
 nodes.append({
-    "id": "tts", "name": "ElevenLabs TTS",
+    "id": "tts", "name": "ElevenLabs TTS (with-timestamps)",
     "type": "n8n-nodes-base.httpRequest", "typeVersion": 4.2,
     "position": [1800, 700],
     "retryOnFail": True, "maxTries": 2, "waitBetweenTries": 5000,
     "parameters": {
         "method": "POST",
-        "url": "https://api.elevenlabs.io/v1/text-to-speech/" + VOICE_ID + "?output_format=mp3_44100_128",
+        "url": "https://api.elevenlabs.io/v1/text-to-speech/" + VOICE_ID + "/with-timestamps?output_format=mp3_44100_128",
         "sendHeaders": True,
         "headerParameters": {"parameters": [
             {"name": "xi-api-key", "value": el_key},
@@ -299,24 +350,10 @@ nodes.append({
         "options": {
             "timeout": 300000,
             "batching": {"batch": {"batchSize": 1, "batchInterval": 20000}},
-            "response": {"response": {"responseFormat": "file", "outputPropertyName": "data"}},
         },
     },
 })
-connect("Parse Chapters", "ElevenLabs TTS")
-
-nodes.append({
-    "id": "save_audio", "name": "Save Chapter Audio",
-    "type": "n8n-nodes-base.readWriteFile", "typeVersion": 1,
-    "position": [2000, 700],
-    "parameters": {
-        "operation": "write",
-        "fileName": "=" + ASSETS + "/audio/{{ $('Parse Chapters').item.json.chapter_label }}.mp3",
-        "dataPropertyName": "data",
-        "options": {},
-    },
-})
-connect("ElevenLabs TTS", "Save Chapter Audio")
+connect("Parse Chapters", "ElevenLabs TTS (with-timestamps)")
 
 # --- branch B: image prompts -> fal.ai Flux schnell -> png files ---
 nodes.append({

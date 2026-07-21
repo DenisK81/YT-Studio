@@ -52,8 +52,21 @@ live "find next case" query. Produced a complete text package + 7 chapter MP3s (
 70 scene images for the case its own web search picked (Banfield — now excluded for future
 runs), with the QC/escalation/publish gating behaving exactly as designed. Three real
 infrastructure bugs found and fixed (ElevenLabs 5-concurrent limit vs n8n batching semantics,
-n8n default disk-write restriction, SEO token budget). Still open before Stage 5: the Remotion
-render of this trial video, and the QC escalation (victim identities) is a human decision.
+n8n default disk-write restriction, SEO token budget). Rendered the same day too: a real
+Remotion render of the full 70-scene video confirmed the chain produces a watchable draft.
+
+**Orchestration changed the same day** (`Documentation/ARCHITECTURE.md`'s "Orchestration
+decision" section): the n8n run above cost ~$4.50 and hit real n8n-specific bugs. For Phase 1
+test videos (manually reviewed/uploaded, not unattended), the channel owner chose to have
+Claude Code play each agent role directly in conversation instead — zero marginal Anthropic
+cost. Only ElevenLabs (voice) and fal.ai (images) remain real API calls, via
+`Workflows/generate_case_assets.py`. This also fixed a real caption-drift/mismatch bug found by
+watching the first render (root cause and fix: `Tools/remotion_assembly_tool.md`) — captions
+now come from ElevenLabs' own real per-word timestamps, never an estimate. n8n stays proven and
+available (`Workflows/build_master_workflow.py` + `Tests/stage4_full_pipeline_n8n_test.md`) for
+a later real scale/autonomy decision, not the current default. Still open before Stage 5: the
+QC escalation (victim identities) is a human decision, and a fresh video hasn't yet been run
+through this new no-n8n process end to end.
 
 ## Stage 5 — First real publish
 Only after Stage 4 passes clean. Use the channel owner's own release pacing (main video + 1

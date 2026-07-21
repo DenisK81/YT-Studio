@@ -1,7 +1,13 @@
 # Pipeline Overview
 
-This mirrors `Documentation/ARCHITECTURE.md`'s diagram, written here as the operational view
-for whoever builds the actual n8n workflow.
+This mirrors `Documentation/ARCHITECTURE.md`'s diagram — the stage flow below is accurate
+regardless of orchestrator. **Current Phase 1 default (2026-07-21, see ARCHITECTURE.md's
+"Orchestration decision" section): the n8n node table below is not how this actually runs.**
+Claude Code plays each `Agents/*.md` role directly in conversation for every stage except
+Voice Production's audio and Image Generation's images, which go through a real API call via
+`Workflows/generate_case_assets.py` (ElevenLabs, fal.ai — no n8n, no separate Anthropic key).
+The table stays as a reference for the n8n path this was originally designed for, and for
+whenever a real scale/autonomy decision brings that path back.
 
 ```mermaid
 flowchart TD

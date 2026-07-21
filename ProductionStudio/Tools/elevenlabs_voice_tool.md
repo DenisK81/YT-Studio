@@ -109,6 +109,20 @@ mood prompt, instrumental, 30s test duration — the small/cheap test this warra
   continuous instrumental bed per video is the default (not a per-scene track), looped/extended
   to match the final render's duration.
 
+## Real-timestamp captioning — fixed endpoint choice (2026-07-21)
+Stage 4's first full-pipeline render used the plain `POST /v1/text-to-speech/{voice_id}`
+endpoint and derived caption timing from a separate agent's word-count estimate — this drifted
+badly and, on the pipeline's longest chapter, showed captions for completely different words
+than what was actually narrated (root cause + fix: `Agents/voice_production_agent.md`'s
+"Caption/scene alignment marker" section, `Tools/remotion_assembly_tool.md`'s caption-timing
+section). **The n8n TTS node must call `POST /v1/text-to-speech/{voice_id}/with-timestamps`
+instead** (same request body; JSON response instead of raw audio bytes:
+`{ audio_base64, alignment: { characters, character_start_times_seconds,
+character_end_times_seconds }, normalized_alignment }`). `Workflows/process_pipeline_audio.py`
+decodes the base64 audio and derives real per-word caption timing and real scene/image
+boundaries from `alignment` directly — this is now the only correct way to generate captions
+for this pipeline; the plain endpoint should not be used for narration that will be captioned.
+
 ## Gap closure (2026-07-19) — concrete fix for the two shape mismatches above
 This MCP integration is a Phase 1 testing convenience, not the final n8n wiring — so rather than
 changing this file's declared contract to match the MCP tool's shape, the fix belongs in how the
