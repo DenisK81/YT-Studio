@@ -50,6 +50,19 @@ assemble({
   — phrases still read fine at normal speaking pace without a hard floor. The 2s floor stays
   correct for Shorts specifically, where captions are sparse and punchy by design (few phrases,
   not continuous transcription), not for continuous narration.
+- **Caption timing source of truth, corrected 2026-07-21 (`Tests/stage4_full_pipeline_n8n_test.md`
+  follow-up):** the first full-pipeline trial render used per-scene word-count proportional
+  timing scaled against each chapter's real audio *duration*, but derived the caption *text*
+  from Scene Planner's `SceneList.json` scene text — a different text than what was actually
+  sent to TTS. Voice Production Agent's own job is to reformat/expand for natural narration
+  (its spec never promised verbatim), and on the real run one chapter came out 74% longer than
+  its scene-list source. Result: captions drifted increasingly out of sync after ~9 minutes and
+  were reading completely different words than the narrator by the end of the longest chapter.
+  **Fixed at the root, not patched:** captions must be derived from ElevenLabs' own per-character
+  alignment of the *exact* text sent to TTS (the `with-timestamps` endpoint — see
+  `Tools/elevenlabs_voice_tool.md`), never from a separate agent's estimate of that text. See
+  `Workflows/process_pipeline_audio.py` for the real implementation (per-word timing + real
+  scene/image boundaries, both derived from the same alignment).
 - Same font/color/stroke/position style applies to both the main video (16:9) and Shorts
   (9:16) — only the *timing* rule (natural pacing vs. 2s floor) differs between them.
 

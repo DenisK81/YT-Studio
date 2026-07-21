@@ -103,14 +103,51 @@ node's prompt by `Workflows/build_master_workflow.py` on every build (see
 `Agents/research_agent.md`'s "Covered-case memory" section). Append a case there the moment
 it enters production.
 
+## User feedback on the render, and two real fixes (2026-07-21, second follow-up)
+
+Watching the full render surfaced two things:
+
+**1. Caption drift/mismatch after ~9 minutes, nonsensical near the end.** Root-caused by
+diffing `SceneList.json` scene text against `Voiceover.txt` per chapter: chapters 1-6 matched
+1:1, but Voice Production Agent's chapter 7 (the longest, and — at ~10 min cumulative — right
+where the drift started) came out **74% longer** than its source scenes. Captions were being
+built from the scene-list text while the narrator was reading Voice Production's own (longer,
+reworded) text — two different texts for the same audio. Fixed at the root, not patched:
+- Voice Production Agent's pipeline prompt now requires an inline `[[SCENE:NNNN]]` marker at
+  the real start of each scene's narration (`Agents/voice_production_agent.md`, "Caption/scene
+  alignment marker" section) — it can still reword/expand freely, the marker just records
+  where each scene actually begins in the real narration.
+- TTS now calls ElevenLabs' `with-timestamps` endpoint instead of the plain audio endpoint,
+  returning real per-character alignment (`Tools/elevenlabs_voice_tool.md`).
+- `Workflows/process_pipeline_audio.py` (new) decodes the audio and derives **real per-word
+  caption timing and real scene/image boundaries directly from that alignment** — never from
+  an estimate. `Tools/remotion_assembly_tool.md`'s caption-timing section documents this fix.
+- Validated cheaply: `Workflows/build_voice_regen_workflow.py` (new) re-runs *only* Voice
+  Production Agent (now on Sonnet 5) against the already-generated `SceneList.json` — no
+  Research/Story/etc. re-run, no re-paying the rest of the chain. Re-render
+  (`Assets/renders/banfield_auto_draft.mp4`, overwritten) confirmed captions track the real
+  narration throughout, including in what was chapter 7.
+
+**2. Cost.** The first trial run's ANTHROPIC_API_KEY_N8N spend was ~$4.50 (11 Opus 4.8 calls,
+inflated further by the ElevenLabs-concurrency re-run above). `Workflows/build_master_workflow.py`
+now mixes models: Opus 4.8 stays only on Research, Story, and Quality Control (the
+reasoning/accuracy-critical steps); Fact Verification, Scene Planner, Voice Production, Image
+Planning, SEO, Thumbnail, Shorts, and Publishing all run on Sonnet 5 ($2/$10 per MTok intro
+pricing vs Opus's $5/$25) — expected to roughly halve the per-run Anthropic cost on the next
+full run. Not yet re-validated with a fresh full 11-agent run (that costs real money again;
+deferred pending the channel owner's go-ahead).
+
 ## Verdict
 
 The full LLM chain, both asset branches, the Stage 3 contracts, the escalation/QC/publish
 gating, and the Remotion render all work end-to-end on this machine — the complete
-case-query → draft-video path has now run for real, locally. Remaining:
+case-query → draft-video path has now run for real, locally, with real (not estimated)
+audio-caption sync. Remaining:
 - Human resolution of the QC escalation (victim identities via official sources) before any
-  publish of this content; per-word caption alignment and clause-boundary chunking are
-  known polish items.
+  publish of this content; clause-boundary caption chunking (vs. blind 3-word grouping) is
+  still a known cosmetic polish item.
+- A fresh full pipeline run to confirm the new Opus/Sonnet mix holds text quality while
+  cutting cost — not run yet, since it costs new money.
 - On Hetzner: set `N8N_RESTRICT_FILE_ACCESS_TO`, keep the 20s TTS spacing, and use n8n
   credentials store instead of embedded keys (local build script embeds them because the
   local editor-credential flow was already proven unreliable to automate here).
