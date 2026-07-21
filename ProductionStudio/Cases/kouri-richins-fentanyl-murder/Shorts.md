@@ -4,6 +4,9 @@
     {
       "short_id": "short_1",
       "title": "The Grief Book Twist",
+      "youtube_title": "She Wrote a Book About Grief. She Caused It. #shorts",
+      "youtube_description": "A children's grief book, written and promoted by the woman later convicted of causing that very grief — months before she was ever charged. Full case breakdown on the main channel. Subscribe and tell us what you think really happened.",
+      "tags": ["Kouri Richins", "true crime", "true crime shorts", "children's book murder", "Utah murder", "fentanyl poisoning", "wife poisons husband", "true crime documentary", "Park City Utah", "murder trial 2026"],
       "narration_script": "It's called \"Are You With Me?\" A children's book about a child learning to cope with grief after losing a parent. She wrote it. She promoted it on local media. She said she just wanted something to read to her own kids at night. Here's the problem. Prosecutors say she was the reason for that loss, and she wrote this while she was already a suspect. All of it, published and sold to other families, months before she was ever charged.",
       "source_scene_ids": ["0044", "0045", "0046", "0047"],
       "hook_overlay_text": "SHE WROTE THIS?",
@@ -18,6 +21,9 @@
     {
       "short_id": "short_3",
       "title": "The Text That Convicted Her",
+      "youtube_title": "The One Text That Convicted Her #shorts",
+      "youtube_description": "Investigators recovered one text message she sent her boyfriend — and it became some of the most damning evidence at trial. Full timeline of the Kouri Richins case on the main channel. Subscribe for more real trial breakdowns.",
+      "tags": ["Kouri Richins", "true crime", "true crime shorts", "Robert Josh Grossman", "murder evidence", "text message evidence", "Utah murder trial", "fentanyl poisoning", "true crime documentary", "affair murder case"],
       "narration_script": "Kouri had been seeing another man, Robert Josh Grossman, for two years, hidden underneath the marriage. Investigators recovered a text she sent him. Read it for yourself. \"If he could just go away and you could just be here! Life would be so perfect!!\" That's not a woman imagining an escape. That's a woman imagining an ending.",
       "source_scene_ids": ["0030", "0031", "0032"],
       "hook_overlay_text": "ONE TEXT. GUILTY.",
@@ -32,6 +38,9 @@
     {
       "short_id": "short_4",
       "title": "Guilty In 3 Hours",
+      "youtube_title": "Guilty In 3 Hours | Kouri Richins Verdict #shorts",
+      "youtube_description": "Four years of investigation, delays, and disputes — all decided in a 3-hour jury deliberation. Watch the complete Kouri Richins trial story on the main channel. Subscribe so you don't miss the next case.",
+      "tags": ["Kouri Richins", "true crime", "true crime shorts", "murder verdict", "Utah murder trial", "jury verdict", "fentanyl poisoning", "insurance fraud murder", "true crime documentary", "murder trial 2026"],
       "narration_script": "The verdict: guilty on all five counts. First-degree aggravated murder. Attempted aggravated murder. Insurance fraud. Forgery. Four years of investigation. Delays. Disputes. All of it building to this moment. The jury needed three hours to agree on every count.",
       "source_scene_ids": ["0062", "0063", "0064"],
       "hook_overlay_text": "GUILTY IN 3 HOURS",
@@ -46,6 +55,9 @@
     {
       "short_id": "short_5",
       "title": "Too Dangerous To Be Free",
+      "youtube_title": "The Judge's Words: \"Too Dangerous To Be Free\" #shorts",
+      "youtube_description": "The judge's exact words before sentencing her to life without parole, plus decades more. Full trial and sentencing breakdown on the main channel — subscribe for the complete story.",
+      "tags": ["Kouri Richins", "true crime", "true crime shorts", "life without parole", "murder sentencing", "Utah murder trial", "fentanyl poisoning", "true crime documentary", "judge sentencing quote", "murder trial 2026"],
       "narration_script": "The judge didn't hold back. He said she'd spent seventeen days \"doubling down, preparing to try again.\" Then he told her directly: she is \"simply too dangerous to ever be free.\" Life without parole. Plus decades more, stacked on top.",
       "source_scene_ids": ["0066", "0067", "0068"],
       "hook_overlay_text": "NEVER FREE AGAIN",
@@ -108,5 +120,10 @@ sentencing quote) rather than invented mystery. All 4 hook texts above are 2-4 w
 ## Rendered files
 
 All 4 rendered 2026-07-21, 1080x1920, real audio + real per-word captions, spot-checked frame by
-frame (cold open, mid-body captions, CTA card) — see `render_file` paths above
-(`Assets/renders/`, gitignored).
+frame (cold open, mid-body captions, CTA card) — see `render_file` paths above (relative to
+`ProductionStudio/`, gitignored). Full absolute paths on this machine:
+
+- `D:\SHOPS\AI Projects\YT_Crime\YT-Studio\ProductionStudio\Assets\renders\kouri-richins-fentanyl-murder-short_1-she-wrote-this.mp4`
+- `D:\SHOPS\AI Projects\YT_Crime\YT-Studio\ProductionStudio\Assets\renders\kouri-richins-fentanyl-murder-short_3-one-text-guilty.mp4`
+- `D:\SHOPS\AI Projects\YT_Crime\YT-Studio\ProductionStudio\Assets\renders\kouri-richins-fentanyl-murder-short_4-guilty-in-3-hours.mp4`
+- `D:\SHOPS\AI Projects\YT_Crime\YT-Studio\ProductionStudio\Assets\renders\kouri-richins-fentanyl-murder-short_5-never-free-again.mp4`
