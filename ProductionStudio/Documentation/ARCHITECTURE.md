@@ -243,6 +243,35 @@ literally outputs by that name — in every real run this session it was manuall
 pattern `timeline_draft` already has in Story Agent's input. Worth remembering when wiring n8n:
 these three agents need a small merge/extract step feeding them, not a direct single-node pipe.
 
+## Phase 2 local bootstrap (added 2026-07-20/21, after the user asked to start Phase 2 locally)
+
+First real infrastructure test of the two things every prior test this session deliberately
+skipped: Remotion (render engine) and n8n (orchestrator). Scoped to this machine only — the
+Hetzner VPS is untouched, deliberately deferred by the user to a later session. Full detail in
+`Tests/stage4_remotion_local_render_test.md` and `Tests/stage4_n8n_local_bootstrap.md`.
+
+- **Node.js/npm/Docker were all absent from this machine.** Installed Node.js LTS via
+  `winget install OpenJS.NodeJS.LTS`. No Docker — n8n ran via `npx n8n` instead of the (n8n's
+  own recommended) Docker image.
+- **Remotion**: a real ~18s composition was built and rendered using actual Banfield-case assets
+  (the Flux-generated Hook image, the Jimmy-voice TTS clip, a real Pixabay bed track), not a
+  throwaway test. Confirmed working: captions, karaoke highlight, Ken Burns pan, audio mix.
+  Found and fixed a real caption-timing bug in the process (see `Tools/remotion_assembly_tool.md`
+  — the "2s minimum per phrase" rule doesn't work for continuous main-video narration, only for
+  Shorts).
+- **n8n**: browser-UI automation of the canvas editor proved unreliable in this environment
+  (screenshot timeouts, clicks that appeared to succeed but produced zero database rows) — the
+  reliable path was building the workflow as JSON and driving it via `n8n import:workflow` /
+  `n8n execute` CLI commands instead of clicking through the editor. A real HTTP Request node
+  calling fal.ai (reusing the `FAL_KEY` credential and exact contract from
+  `Tools/image_gen_tool.md`'s Stage 2 test) executed successfully end-to-end, confirming the
+  first real node of `Workflows/n8n_master_workflow.skeleton.json` works, not just its
+  placeholder shape.
+- **Still blocked on a standalone `ANTHROPIC_API_KEY`** (different from Claude Code's own
+  access) before any of the 13 LLM-agent nodes can be wired for real — the user will obtain one
+  separately. `ELEVENLABS_API_KEY` (a real key, distinct from the MCP integration used all
+  session) is needed the same way before Voice Production can be wired.
+
 ## Error handling
 
 Every agent returns:

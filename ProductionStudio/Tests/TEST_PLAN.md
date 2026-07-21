@@ -34,6 +34,17 @@ Run the Molly Watson case end to end once chapters 1-5 exist. Stop at the human-
 gate before Publishing Agent's actual YouTube call — verify everything up to that point without
 actually publishing.
 
+**Partially started 2026-07-20/21 (local Phase 2 bootstrap, not the full chain yet):**
+Node.js/Remotion/n8n were all missing from this machine — installed/scaffolded them and ran two
+real infrastructure tests: (1) a real Remotion render using actual Banfield assets, confirmed
+correct visually (`Tests/stage4_remotion_local_render_test.md`); (2) a real n8n workflow
+(imported/executed via CLI, since browser-UI canvas automation proved unreliable here) calling
+fal.ai with the exact proven contract, executed successfully
+(`Tests/stage4_n8n_local_bootstrap.md`). This is the render engine and orchestrator working
+locally, not the full 14-agent chain wired together — that still needs a standalone
+`ANTHROPIC_API_KEY`/`ELEVENLABS_API_KEY` and remains open. The Hetzner VPS is untouched,
+deliberately deferred.
+
 ## Stage 5 — First real publish
 Only after Stage 4 passes clean. Use the channel owner's own release pacing (main video + 1
 short day one, remaining 4 shorts one per day) for the first real upload.

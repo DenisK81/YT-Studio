@@ -65,6 +65,14 @@ Real call against the Banfield case, scene 0001 from `ImagePrompts.md`:
   override later if quality on those specific shots matters enough to justify the per-image
   cost (mirrors the existing flux-pro-for-hero-shots idea above).
 
+## Stage 4 live-test result (2026-07-20/21) — confirmed working through n8n, not just direct Python
+Ran the exact same request contract through a real local n8n instance (`npx n8n`, no Docker) as
+an HTTP Request node — see `Tests/stage4_n8n_local_bootstrap.md` for the full setup/friction
+notes. Result: `executionStatus: "success"`, real image returned (1024x576, correct 16:9),
+identical shape to the direct-Python Stage 2 test above. **This is the first node of
+`Workflows/n8n_master_workflow.skeleton.json` (`image_generation_loop`) confirmed as a working
+HTTP Request configuration, not just a placeholder node type.**
+
 ## Implementation notes
 - 80-100 images per video (per the channel's current plan) means this tool will be called in
   batch — build with basic rate-limit/backoff handling from day one, not as an afterthought.

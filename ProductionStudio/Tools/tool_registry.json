@@ -26,24 +26,24 @@
     {
       "name": "image_gen_tool",
       "path": "Tools/image_gen_tool.md",
-      "description": "Provider-agnostic image generation wrapper. Default: fal.ai + Flux schnell (real API, near-free at test volume). Leonardo/Replicate as fallback. Midjourney excluded from automation (no official API).",
+      "description": "Provider-agnostic image generation wrapper. Default: fal.ai + Flux schnell (real API, near-free at test volume). Leonardo/Replicate as fallback. Midjourney excluded from automation (no official API). Stage 4 (2026-07-21): the same contract also confirmed working as a real n8n HTTP Request node (Tests/stage4_n8n_local_bootstrap.md) - the first live node of the n8n skeleton workflow.",
       "input_schema_ref": "prompt: string, style_tags: string[]",
       "output_schema_ref": "image_url_or_file: string",
       "tags": ["image", "generation", "visual"],
       "provider": "fal.ai (flux/schnell), fallback: Leonardo.ai API, Replicate",
       "status": "active",
-      "last_updated": "2026-07-19"
+      "last_updated": "2026-07-21"
     },
     {
       "name": "remotion_assembly_tool",
       "path": "Tools/remotion_assembly_tool.md",
-      "description": "Programmatic video assembly: audio + images + timing + burned-in captions (fixed 2026 karaoke-style spec) + effects. Renders both the 16:9 main video and 9:16 Shorts selected by Agents/shorts_agent.md.",
+      "description": "Programmatic video assembly: audio + images + timing + burned-in captions (fixed 2026 karaoke-style spec) + effects. Renders both the 16:9 main video and 9:16 Shorts selected by Agents/shorts_agent.md. Live-tested locally 2026-07-20 (Node.js installed via winget, Remotion scaffolded via create-video): real ~18s render using actual Banfield assets (0001.png, Jimmy-voice TTS, a bed track) succeeded and was visually confirmed correct (captions, karaoke highlight, Ken Burns pan, audio mix). Found the caption-timing 2s-minimum rule doesn't work for continuous main-video narration (fixed: natural word-count timing for main video, 2s floor stays for Shorts only) and that chunking should prefer clause boundaries over blind word-count splits (not yet implemented).",
       "input_schema_ref": "scenes: object[], audio_track: string, background_music_track: string, subtitle_track: string",
       "output_schema_ref": "render_path: string, duration_seconds: number",
       "tags": ["video", "assembly", "render", "captions", "shorts"],
       "provider": "Remotion (Node.js)",
-      "status": "draft",
-      "last_updated": "2026-07-19"
+      "status": "active",
+      "last_updated": "2026-07-20"
     },
     {
       "name": "youtube_publish_tool",
