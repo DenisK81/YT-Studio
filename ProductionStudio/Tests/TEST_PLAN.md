@@ -45,6 +45,16 @@ locally, not the full 14-agent chain wired together — that still needs a stand
 `ANTHROPIC_API_KEY`/`ELEVENLABS_API_KEY` and remains open. The Hetzner VPS is untouched,
 deliberately deferred.
 
+**Full chain wired and run 2026-07-21** (`Tests/stage4_full_pipeline_n8n_test.md`): with the
+standalone keys in place, all 11 LLM agents + the ElevenLabs and fal.ai asset branches ran
+end-to-end as one real n8n workflow (`Workflows/build_master_workflow.py` generates it) on a
+live "find next case" query. Produced a complete text package + 7 chapter MP3s (14.2 min) +
+70 scene images for the case its own web search picked (Banfield — now excluded for future
+runs), with the QC/escalation/publish gating behaving exactly as designed. Three real
+infrastructure bugs found and fixed (ElevenLabs 5-concurrent limit vs n8n batching semantics,
+n8n default disk-write restriction, SEO token budget). Still open before Stage 5: the Remotion
+render of this trial video, and the QC escalation (victim identities) is a human decision.
+
 ## Stage 5 — First real publish
 Only after Stage 4 passes clean. Use the channel owner's own release pacing (main video + 1
 short day one, remaining 4 shorts one per day) for the first real upload.
