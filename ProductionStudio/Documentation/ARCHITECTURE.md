@@ -328,15 +328,29 @@ below) to open with a **short branded bumper, 2-3 seconds, functioning as the ch
 - **Placement:** prepended before the Hook beat begins; does not count against the Hook's own
   "must land in under 3 seconds" pacing rule (`Agents/story_agent.md`) since it is additive,
   not part of the narrated hook itself.
-- **Shorts:** open question whether Shorts get the same bumper, a shorter (~1s) version, or
-  none at all, given Shorts already assume sound-off and a hook that must land in under 3
-  seconds (`Agents/shorts_agent.md`) — a 2-3s bumper eating into that budget may hurt more than
-  it helps brand recognition. Decide when this is actually built, not guessed here.
+- **Shorts: decided (2026-07-21) — no bumper.** The channel owner confirmed Shorts skip the
+  intro entirely; a 2-3s branded bumper would eat directly into the under-3-second hook budget
+  (`Agents/shorts_agent.md`) for no real brand-recognition gain on a format that's already
+  built around instant curiosity/shock. Main videos only.
 - **Status: not yet built.** Neither trial video has one. This is a real backlog item for
   `Tools/remotion_assembly_tool.md` / `Agents/video_assembly_agent.md`'s `intro` field (already
   present in that agent's interface as an unspecified string) before the next real production
   render, not before Kouri Richins is published — retrofitting it into an already-rendered
   video is a separate, smaller task if wanted.
+
+## Shorts visual style requirement (added 2026-07-21, after the channel owner asked for actual
+rendered Shorts with a specific look)
+
+Real research (web search, 2026-07-21) on true-crime Shorts hooks/CTAs/captions, applied on top
+of the channel owner's explicit ask (big contrasting center-screen text, a large dramatic face
+at the very start like the thumbnail, a follow/full-video CTA): cold-open dramatic face image
+(anonymized, same policy as every other image) with a 3-4 word ALL-CAPS hook overlay burned in
+big and centered — real 2026 formula types are "revelation," "timeline," "witness," and
+"system-failure" hooks — followed by the actual clip with captions centered mid-frame (not
+lower-third like the main video), and a text-only CTA in the final 3-5 seconds ("FULL STORY ON
+THE CHANNEL"). Full detail and the exact schema fields: `Agents/shorts_agent.md`'s "Shorts
+visual style" section. First real production use: the 4 Kouri Richins Shorts
+(`Assets/renders/kouri-richins-fentanyl-murder_short_*.mp4`).
 
 ## Error handling
 

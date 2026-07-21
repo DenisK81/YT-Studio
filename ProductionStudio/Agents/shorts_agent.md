@@ -21,11 +21,36 @@ different constraints), and specifies the caption/pacing treatment for that Shor
     { "short_id": "short_1",
       "source_scene_ids": [""],
       "hook_text": "string — a single bold claim or curiosity gap, must land in under 3 seconds, never a reused/reworded copy of the main video's Hook beat",
+      "hook_overlay_text": "string, 3-4 words max, ALL CAPS — the big on-screen text shown over the cold-open face image (see 'Shorts visual style' below); a compressed version of hook_text, not a restatement of the full sentence",
+      "cold_open_image_prompt": "string — a dramatic close-up face image prompt in the same style as Tools/image_gen_tool.md's thumbnail convention (anonymized/generic subject, no real likeness), shown for the first ~1.5-2s before the scene footage starts",
+      "cta_text": "string, short, e.g. 'FULL STORY ON THE CHANNEL' — shown in the final 3-5 seconds, ALL CAPS, per the fixed CTA placement rule below",
       "title": "string, max 3-5 words",
       "description": "string",
       "hashtags": ["... 3-5 total, strongest first — same YouTube limits as SEO Agent"],
       "estimated_seconds": "target ~45s; hard cap 45s per Config/config.schema.json shorts.max_seconds" } ] }
 ```
+
+## Shorts visual style (research-grounded, added 2026-07-21 — see `Documentation/ARCHITECTURE.md`'s
+"Shorts visual style requirement" for sourcing)
+- **Cold open, first ~1.5-2s:** a dramatic close-up face image (same anonymized-reenactment
+  policy as every other image in this pipeline — no real person's likeness) with
+  `hook_overlay_text` burned in big, centered, high-contrast (channel's white/`#A30E15`
+  brand colors with a black stroke — not the yellow/electric-blue some generic Shorts
+  advice suggests, since brand consistency with the thumbnail/main video matters more here).
+  Real research (2026) frames this as a "revelation," "timeline," "witness," or
+  "system-failure" hook formula — pick whichever fits the specific Short's content, 3-4
+  words max.
+- **Captions run center-frame for Shorts, not lower-third.** This is a deliberate style
+  difference from the main video (`Tools/remotion_assembly_tool.md`'s caption spec is
+  lower-third for the 16:9 format) — center placement reads better on a vertical phone
+  screen and is what the channel owner asked for directly.
+- **CTA in the final 3-5 seconds, not earlier.** A short, direct instruction ("FULL STORY ON
+  THE CHANNEL", "FOLLOW FOR PART 2") as bold on-screen text — real research confirms
+  text-based CTAs are what actually work on Shorts since a majority of viewers watch muted.
+- **End on a genuine open question, not a manufactured one.** Real research warns true-crime
+  audiences specifically disengage from clickbait-y fake mystery — the closing beat should be
+  an honest unresolved detail from the case (a real gap in the record), matching this
+  channel's existing no-clickbait-lies policy.
 
 ## Fixed rules (research-grounded, see `Documentation/ARCHITECTURE.md`'s "Shorts & captions
 requirement" section for sourcing)
