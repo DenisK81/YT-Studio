@@ -28,6 +28,14 @@ assemble({
   documentary format), burned-in captions per the fixed style below, multiple export presets
   (16:9 for main video, 9:16 for Shorts).
 
+## Channel intro bumper (open task, added 2026-07-21 — see `Documentation/ARCHITECTURE.md`'s
+"Channel intro bumper requirement" for full detail)
+Neither trial render (Banfield, Richins) has one. Needed before the next real production
+render: a **fixed, reusable 2-3 second branded template** — channel name in brand style
+(`Config/config.schema.json` colors/fonts) plus a short music sting — prepended to the
+`intro` field above and reused unchanged across every video, never regenerated per case. This
+is the one render element that should NOT vary video-to-video; consistency is the point.
+
 ## Caption style (fixed, research-grounded 2026-07-19 — see `Documentation/ARCHITECTURE.md`'s
 "Shorts & captions requirement" section)
 - **Font**: Montserrat Bold — reuses the channel's existing body font

@@ -307,6 +307,37 @@ uploaded by the channel owner (not an unattended scheduled product), the channel
 **If a future session is asked to "wire the pipeline" or "set up n8n," check with the channel
 owner first** — per the above, that is a deliberate scale-up decision, not the current default.
 
+## Channel intro bumper requirement (added 2026-07-21, after watching the Kouri Richins render)
+
+Neither trial video (Banfield, Richins) opens with any channel branding — they cut straight
+into the Hook beat. The channel owner wants every main video (not necessarily Shorts, see
+below) to open with a **short branded bumper, 2-3 seconds, functioning as the channel's
+"visiting card"** — consistent across every video, not regenerated per case.
+
+- **Not AI-generated per video.** This is a fixed template asset, built once (a short
+  Remotion sub-composition or a pre-rendered clip), reused unchanged on every render — the
+  opposite of the per-scene AI image generation everywhere else in this pipeline. Consistency
+  across videos is the entire point; a different intro each time would defeat it.
+- **Contents:** channel name/logo in the established brand style
+  (`Config/config.schema.json`: colors `#111111`/`#FFFFFF`/`#A30E15`, headline font Bebas Neue
+  or Oswald Bold — the same identity `Agents/thumbnail_agent.md` already uses, so the channel
+  reads as one consistent brand across thumbnail and video), plus a short music sting (a
+  distinct audio logo, not simply the first few seconds of whichever `bed_XX.mp3` that video's
+  background track happens to be — open question: source/compose one fixed sting once, reuse
+  it everywhere, same "built once" principle as the visual).
+- **Placement:** prepended before the Hook beat begins; does not count against the Hook's own
+  "must land in under 3 seconds" pacing rule (`Agents/story_agent.md`) since it is additive,
+  not part of the narrated hook itself.
+- **Shorts:** open question whether Shorts get the same bumper, a shorter (~1s) version, or
+  none at all, given Shorts already assume sound-off and a hook that must land in under 3
+  seconds (`Agents/shorts_agent.md`) — a 2-3s bumper eating into that budget may hurt more than
+  it helps brand recognition. Decide when this is actually built, not guessed here.
+- **Status: not yet built.** Neither trial video has one. This is a real backlog item for
+  `Tools/remotion_assembly_tool.md` / `Agents/video_assembly_agent.md`'s `intro` field (already
+  present in that agent's interface as an unspecified string) before the next real production
+  render, not before Kouri Richins is published — retrofitting it into an already-rendered
+  video is a separate, smaller task if wanted.
+
 ## Error handling
 
 Every agent returns:
