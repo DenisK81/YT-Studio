@@ -1,0 +1,17 @@
+{
+  "$comment": "Research Agent's memory of cases this channel has already covered or has in production. The workflow builder (Workflows/build_master_workflow.py) injects this list into the Research node's prompt on every build, so 'find next case' runs never re-propose them. APPEND an entry here the moment a case enters production - before the next discovery run, not after publish.",
+  "cases": [
+    {
+      "case_name": "Molly Watson / James Addie",
+      "aka": ["Molly Watson murder", "James Addie", "Missouri conservation agent affair murder"],
+      "status": "produced_manually",
+      "added": "2026-07-21"
+    },
+    {
+      "case_name": "Brendan Banfield double murder",
+      "aka": ["Christine Banfield", "Joseph Ryan", "Juliana Peres Magalhaes", "au pair affair Fairfax County Virginia"],
+      "status": "in_production",
+      "added": "2026-07-21"
+    }
+  ]
+}

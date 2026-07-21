@@ -58,6 +58,16 @@ specifically (not citation), it's fine and encouraged to also check:
 A candidate sourced this way is not exempt from the 5-independent-source or escalation rules
 above — discovery and verification are two different steps.
 
+## Covered-case memory (added 2026-07-21)
+The channel's already-covered and in-production cases live in `Cases/covered_cases.json`.
+The orchestrator injects that list into every discovery run's input as `covered_cases` —
+**never propose a case on that list (or an obvious alias of one) as a candidate.** This was
+added after the first live "find next case" pipeline run independently re-picked the Banfield
+case the studio was already producing — the agent had no memory of the channel's own catalog.
+Whenever a new case enters production, its entry (with common aliases) must be appended to
+`Cases/covered_cases.json` BEFORE the next discovery run — that file is the memory, not this
+spec.
+
 ## Yield note
 If a run produces very few usable candidates (e.g. only 1-2 out of `n_candidates` clear the
 5-source bar), that's a legitimate signal to widen the search rather than settle: try a higher

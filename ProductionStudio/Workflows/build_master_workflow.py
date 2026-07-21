@@ -53,6 +53,15 @@ prompts = {
     "sys_publish": FRAME + read_agent("publishing_agent.md"),
 }
 
+# Research Agent memory: covered-cases registry injected into every discovery run.
+# Single-quoted JS string fragment; sanitized so it can't break the expression.
+with open(REPO + "/ProductionStudio/Cases/covered_cases.json", encoding="utf-8") as f:
+    _covered = json.load(f)["cases"]
+covered_cases_js = "; ".join(
+    c["case_name"] + " (aka: " + ", ".join(c.get("aka", [])) + ")"
+    for c in _covered
+).replace("'", "").replace("{", "").replace("}", "")
+
 def txt(node_name):
     """JS expr: concatenated text blocks of an Anthropic node's response."""
     return (
@@ -138,10 +147,8 @@ nodes.append(anthropic_node(
     "'Case query: ' + $('Case Input').first().json.case_query + "
     "'\\nchannel_niche: affairs / betrayal / murder / love triangle / missing persons"
     "\\nn_candidates: 5"
-    "\\nALREADY COVERED by this channel - NEVER propose these as candidates: "
-    "1) Molly Watson / James Addie (Missouri); "
-    "2) Brendan Banfield / Christine Banfield / Juliana Peres Magalhaes "
-    "(Fairfax County, Virginia au pair case)'",
+    "\\ncovered_cases (ALREADY COVERED by this channel - NEVER propose these or their "
+    "aliases as candidates): " + covered_cases_js + "'",
     12000,
     tools_js="[ { type: 'web_search_20260209', name: 'web_search', max_uses: 8 } ]",
 ))
@@ -393,8 +400,13 @@ workflow = {
     "settings": {"executionTimeout": 5400},
 }
 
-script_dir = os.path.dirname(os.path.abspath(__file__))
-out_path = os.path.join(script_dir, "n8n_master_workflow.json")
+# SECURITY: the generated JSON embeds real API keys - it must NEVER land inside
+# the repo tree. Write to WORKFLOW_OUT_DIR (or the system temp dir by default).
+import tempfile
+out_dir = os.environ.get("WORKFLOW_OUT_DIR", tempfile.gettempdir())
+if os.path.abspath(out_dir).startswith(os.path.abspath(REPO)):
+    sys.exit("refusing to write key-bearing workflow JSON inside the repo")
+out_path = os.path.join(out_dir, "n8n_master_workflow.json")
 with open(out_path, "w", encoding="utf-8") as f:
     json.dump(workflow, f, indent=2, ensure_ascii=False)
 
