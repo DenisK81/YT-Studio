@@ -144,17 +144,35 @@ pricing vs Opus's $5/$25) — expected to roughly halve the per-run Anthropic co
 full run. Not yet re-validated with a fresh full 11-agent run (that costs real money again;
 deferred pending the channel owner's go-ahead).
 
+## Third fix, same day: trailing meta-prose leaking into narration
+
+Watching the *second* render (real per-word timing) surfaced a different bug: Voice
+Production Agent (now Claude Code playing the role directly, no n8n) appended a "Rendered
+audio: chapter_N.mp3 — scenes..." note and an escalation reminder after the real chapter 5
+narration, with nothing marking it as non-narration — so it was read aloud by ElevenLabs
+verbatim and showed up as garbled captions ("0014-0019, and 0062-0064 intentionally keep...")
+near the true end of the video. Fixed generically in
+`Workflows/generate_case_assets.py`'s `parse_voiceover()`: only text inside the outermost
+` ``` ` fence counts as narration (the agent had already used that convention to separate its
+deliverable from commentary); anything outside is excluded and printed as a review warning,
+never silently narrated. Full detail: `Tools/remotion_assembly_tool.md`.
+
+Re-ran audio generation (all 5 chapters, ~$0 marginal Anthropic cost — this only re-spends
+already-budgeted ElevenLabs characters) and re-rendered
+(`Assets/renders/banfield_auto_draft.mp4`, 11.39 min, corrected). Verified by ear/eye: the very
+last spoken line ("...the truth is almost never as simple as the story a killer wants you to
+believe") matches the on-screen caption exactly at the true end of the video — no stray
+content anywhere.
+
 ## Verdict
 
-The full LLM chain, both asset branches, the Stage 3 contracts, the escalation/QC/publish
-gating, and the Remotion render all work end-to-end on this machine — the complete
-case-query → draft-video path has now run for real, locally, with real (not estimated)
-audio-caption sync. Remaining:
+The full pipeline — now running as **Claude Code playing each agent role directly, no n8n, no
+separate Anthropic API key** (see `Documentation/ARCHITECTURE.md`'s "Orchestration decision")
+— produced a complete, correctly-synced 11.39-minute draft video from real assets, with three
+real bugs found by actually watching/listening to the output and fixed at the root rather than
+patched. Remaining:
 - Human resolution of the QC escalation (victim identities via official sources) before any
   publish of this content; clause-boundary caption chunking (vs. blind 3-word grouping) is
   still a known cosmetic polish item.
-- A fresh full pipeline run to confirm the new Opus/Sonnet mix holds text quality while
-  cutting cost — not run yet, since it costs new money.
-- On Hetzner: set `N8N_RESTRICT_FILE_ACCESS_TO`, keep the 20s TTS spacing, and use n8n
-  credentials store instead of embedded keys (local build script embeds them because the
-  local editor-credential flow was already proven unreliable to automate here).
+- The next new video is the first real test of the full no-n8n, chat-driven process end to
+  end (this one only had its post-generation asset/render steps redone that way).
