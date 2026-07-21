@@ -1,5 +1,12 @@
 # Stage 4 — Full 14-agent pipeline trial through n8n (local, 2026-07-21)
 
+> **Superseded as the Phase 1 default the same day** — see
+> `Documentation/ARCHITECTURE.md`'s "Orchestration decision: no n8n / no API key for Phase 1"
+> section. This run proved the chain works and surfaced real bugs (fixed below), but its
+> ~$4.50 cost + n8n-specific footguns led the channel owner to run the agent chain via Claude
+> Code directly instead, for Phase 1 test videos. n8n stays as a working, tested reference for
+> a later scale/autonomy decision — this document is not obsolete, just not the current path.
+
 First end-to-end run of the whole agent chain as a real n8n workflow on the local machine,
 using standalone API keys (`ANTHROPIC_API_KEY_N8N`, `ELEVENLABS_API_KEY`, `FAL_KEY` in
 `.claude/settings.local.json`, gitignored). This is the test the user asked for before

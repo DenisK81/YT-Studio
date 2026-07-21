@@ -272,6 +272,41 @@ Hetzner VPS is untouched, deliberately deferred by the user to a later session. 
   separately. `ELEVENLABS_API_KEY` (a real key, distinct from the MCP integration used all
   session) is needed the same way before Voice Production can be wired.
 
+## Orchestration decision: no n8n / no API key for Phase 1 (added 2026-07-21)
+
+The standalone key was obtained and the full 11-agent chain *was* wired and run for real
+through n8n (`Tests/stage4_full_pipeline_n8n_test.md`) — this section documents what changed
+right after that, and **supersedes "Phase 2 local bootstrap" above as the actual default.**
+
+The full run worked, but cost ~$4.50 in Anthropic API spend (11 Opus 4.8 calls) and surfaced
+three real n8n-specific bugs (ElevenLabs's 5-concurrent-request limit vs n8n's batching
+semantics; n8n's default disk-write restriction outside its own folder; a caption-sync bug
+traced to captions being built from a different text than what was actually narrated — see
+`Tools/remotion_assembly_tool.md`). Given these are Phase 1 test videos, manually reviewed and
+uploaded by the channel owner (not an unattended scheduled product), the channel owner decided:
+
+- **The 11-agent chain runs by asking Claude Code to play each agent role directly in a
+  conversation**, per video — reading the relevant `Agents/*.md` file and producing that
+  stage's output, exactly like the very first manual Molly Watson pass, just repeated for each
+  new case. Zero marginal Anthropic cost: this is regular Claude Code usage, covered by the
+  existing subscription, not the metered Developer Platform API.
+- **n8n and the standalone `ANTHROPIC_API_KEY_N8N` are deferred**, not deleted.
+  `Workflows/n8n_master_workflow.skeleton.json`, `build_master_workflow.py`, and the Stage 4 n8n
+  test docs stay in the repo as a proven reference for a real future scale/autonomy decision
+  (a Hetzner install makes sense once the product needs to run unattended on a schedule, not
+  before).
+- **Only ElevenLabs (voice) and fal.ai (images) remain real API calls**, via
+  `Workflows/generate_case_assets.py` — a plain local Python script, invoked by Claude Code
+  after it (acting as Voice Production / Image Planning Agent) produces the text those calls
+  need. No orchestration framework, no separate LLM billing for this part.
+- A raw Python script hitting `api.anthropic.com` directly (instead of via n8n) would **not**
+  have solved the cost problem — same metered endpoint regardless of what calls it. The actual
+  fix was moving the LLM reasoning itself into Claude Code's own (subscription-covered) turns,
+  not just changing the caller.
+
+**If a future session is asked to "wire the pipeline" or "set up n8n," check with the channel
+owner first** — per the above, that is a deliberate scale-up decision, not the current default.
+
 ## Error handling
 
 Every agent returns:
