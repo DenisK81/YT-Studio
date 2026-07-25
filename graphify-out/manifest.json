@@ -1,0 +1,452 @@
+{
+  ".claude/settings.json": {
+    "mtime": 1784425340.0,
+    "ast_hash": "3899f3862562d29448c834c1bb0b2ffe",
+    "semantic_hash": "3899f3862562d29448c834c1bb0b2ffe"
+  },
+  ".claude/settings.local.json": {
+    "mtime": 1784958375.2266297,
+    "ast_hash": "284def99b35114d0cd1312c2258a3997",
+    "semantic_hash": "284def99b35114d0cd1312c2258a3997"
+  },
+  "ProductionStudio/Cases/brendan-banfield-double-murder/SceneList.json": {
+    "mtime": 1784437338.4095516,
+    "ast_hash": "c0ea2cbccdbdd71a7bfdf4e5da2f6766",
+    "semantic_hash": "c0ea2cbccdbdd71a7bfdf4e5da2f6766"
+  },
+  "ProductionStudio/Cases/brendan-banfield-double-murder/auto-run-2026-07-21/SceneList.json": {
+    "mtime": 1784655134.7967687,
+    "ast_hash": "1fbedeb144ccb84bf22dcd8c576123e7",
+    "semantic_hash": "1fbedeb144ccb84bf22dcd8c576123e7"
+  },
+  "ProductionStudio/Cases/covered_cases.json": {
+    "mtime": 1784665943.0113888,
+    "ast_hash": "af4e5e8140d8c2c2b93c4e54cb0b97b8",
+    "semantic_hash": "af4e5e8140d8c2c2b93c4e54cb0b97b8"
+  },
+  "ProductionStudio/Cases/kouri-richins-fentanyl-murder/SceneList.json": {
+    "mtime": 1784665943.0153754,
+    "ast_hash": "233795a10a881f4b694ca9862423f085",
+    "semantic_hash": "233795a10a881f4b694ca9862423f085"
+  },
+  "ProductionStudio/Config/config.schema.json": {
+    "mtime": 1784530321.206345,
+    "ast_hash": "8be3eefe4c72f18e2ffaaab25330b069",
+    "semantic_hash": "8be3eefe4c72f18e2ffaaab25330b069"
+  },
+  "ProductionStudio/Tools/tool_registry.json": {
+    "mtime": 1784656182.4413538,
+    "ast_hash": "0e25b35c89a3f7955ad79f2049fc8df2",
+    "semantic_hash": "0e25b35c89a3f7955ad79f2049fc8df2"
+  },
+  "ProductionStudio/Workflows/build_master_workflow.py": {
+    "mtime": 1784656182.4423742,
+    "ast_hash": "e8a7b0b3d97b6f9507f596d02a77a6bd",
+    "semantic_hash": "e8a7b0b3d97b6f9507f596d02a77a6bd"
+  },
+  "ProductionStudio/Workflows/generate_case_assets.py": {
+    "mtime": 1784656182.4434266,
+    "ast_hash": "ef906f06eb7aefef1a7489471828a81d",
+    "semantic_hash": "ef906f06eb7aefef1a7489471828a81d"
+  },
+  "ProductionStudio/Workflows/generate_shorts_audio.py": {
+    "mtime": 1784668395.9756238,
+    "ast_hash": "a1f6e31afc07be7cdc422fd8889f5182",
+    "semantic_hash": "a1f6e31afc07be7cdc422fd8889f5182"
+  },
+  "ProductionStudio/Workflows/n8n_master_workflow.skeleton.json": {
+    "mtime": 1784423014.4536414,
+    "ast_hash": "6b097dbbf761cb6579092628b744108d",
+    "semantic_hash": "6b097dbbf761cb6579092628b744108d"
+  },
+  "ProductionStudio/Workflows/prep_remotion_render.py": {
+    "mtime": 1784665943.0198686,
+    "ast_hash": "8e26e53ad2b7db983ef7506d787be2da",
+    "semantic_hash": "8e26e53ad2b7db983ef7506d787be2da"
+  },
+  "ProductionStudio/Workflows/prep_short_render.py": {
+    "mtime": 1784668395.9766726,
+    "ast_hash": "605065d575db04bb00ca6512e261b1ad",
+    "semantic_hash": "605065d575db04bb00ca6512e261b1ad"
+  },
+  "ProductionStudio/Workflows/process_pipeline_audio.py": {
+    "mtime": 1784656182.4434266,
+    "ast_hash": "ba1e6db4b44372e3052e368adf254ab9",
+    "semantic_hash": "ba1e6db4b44372e3052e368adf254ab9"
+  },
+  "CLAUDE.md": {
+    "mtime": 1784429938.0056906,
+    "ast_hash": "2cb4dfa9f4ece48f180b594fdffa54a8",
+    "semantic_hash": "2cb4dfa9f4ece48f180b594fdffa54a8"
+  },
+  "KICKOFF_PROMPT.md": {
+    "mtime": 1784425351.0,
+    "ast_hash": "318b9b62ae531c69a20343172530e540",
+    "semantic_hash": "318b9b62ae531c69a20343172530e540"
+  },
+  "ProductionStudio/Agents/fact_verification_agent.md": {
+    "mtime": 1784532495.0190668,
+    "ast_hash": "c81ba2ed7cf3cd2fad86182d3612ed6c",
+    "semantic_hash": "c81ba2ed7cf3cd2fad86182d3612ed6c"
+  },
+  "ProductionStudio/Agents/image_generation_agent.md": {
+    "mtime": 1784532495.0203166,
+    "ast_hash": "f4bbbc93df8747d68b07a98ef2162de9",
+    "semantic_hash": "f4bbbc93df8747d68b07a98ef2162de9"
+  },
+  "ProductionStudio/Agents/image_planning_agent.md": {
+    "mtime": 1784423014.44494,
+    "ast_hash": "29de1e7bcb092c0d1036bc291ab25477",
+    "semantic_hash": "29de1e7bcb092c0d1036bc291ab25477"
+  },
+  "ProductionStudio/Agents/publishing_agent.md": {
+    "mtime": 1784423014.44494,
+    "ast_hash": "8b2ba09b760b2912cc08da36ef210f6c",
+    "semantic_hash": "8b2ba09b760b2912cc08da36ef210f6c"
+  },
+  "ProductionStudio/Agents/quality_control_agent.md": {
+    "mtime": 1784532495.0203166,
+    "ast_hash": "d16b95df0c111718299bc19363e873b6",
+    "semantic_hash": "d16b95df0c111718299bc19363e873b6"
+  },
+  "ProductionStudio/Agents/research_agent.md": {
+    "mtime": 1784655134.7914174,
+    "ast_hash": "d5eabbaee9d525b9913e3f6c00bf4a7e",
+    "semantic_hash": "d5eabbaee9d525b9913e3f6c00bf4a7e"
+  },
+  "ProductionStudio/Agents/scene_planner_agent.md": {
+    "mtime": 1784423014.44494,
+    "ast_hash": "45a28218d52b05b6fb323e77d15e19bc",
+    "semantic_hash": "45a28218d52b05b6fb323e77d15e19bc"
+  },
+  "ProductionStudio/Agents/seo_agent.md": {
+    "mtime": 1784437338.4085526,
+    "ast_hash": "8d6fc83ddddfd1b862db368213ab8734",
+    "semantic_hash": "8d6fc83ddddfd1b862db368213ab8734"
+  },
+  "ProductionStudio/Agents/shorts_agent.md": {
+    "mtime": 1784668395.9732268,
+    "ast_hash": "991241356a0667c463bba40169b371a1",
+    "semantic_hash": "991241356a0667c463bba40169b371a1"
+  },
+  "ProductionStudio/Agents/story_agent.md": {
+    "mtime": 1784423014.44494,
+    "ast_hash": "7b5b57da35389422d791ee5de7c658fe",
+    "semantic_hash": "7b5b57da35389422d791ee5de7c658fe"
+  },
+  "ProductionStudio/Agents/thumbnail_agent.md": {
+    "mtime": 1784423014.44494,
+    "ast_hash": "720bea2f1a0580be0a40dde0225261b4",
+    "semantic_hash": "720bea2f1a0580be0a40dde0225261b4"
+  },
+  "ProductionStudio/Agents/tool_manager_agent.md": {
+    "mtime": 1784530321.204285,
+    "ast_hash": "d993f6d17f8d2023d71c4dae9c35be51",
+    "semantic_hash": "d993f6d17f8d2023d71c4dae9c35be51"
+  },
+  "ProductionStudio/Agents/video_assembly_agent.md": {
+    "mtime": 1784530321.204285,
+    "ast_hash": "13d5300df0430a8d97624db2697a5e12",
+    "semantic_hash": "13d5300df0430a8d97624db2697a5e12"
+  },
+  "ProductionStudio/Agents/voice_production_agent.md": {
+    "mtime": 1784656182.43531,
+    "ast_hash": "9bd59fc9c89c10f3b22a70b87de59e63",
+    "semantic_hash": "9bd59fc9c89c10f3b22a70b87de59e63"
+  },
+  "ProductionStudio/Assets/README.md": {
+    "mtime": 1784530321.204285,
+    "ast_hash": "c49e2bf31978eb2086338f4edf438aab",
+    "semantic_hash": "c49e2bf31978eb2086338f4edf438aab"
+  },
+  "ProductionStudio/Cases/brendan-banfield-double-murder/Checklist.md": {
+    "mtime": 1784532029.029508,
+    "ast_hash": "ea365805aabf2e6871072428c540ae04",
+    "semantic_hash": "ea365805aabf2e6871072428c540ae04"
+  },
+  "ProductionStudio/Cases/brendan-banfield-double-murder/ImagePrompts.md": {
+    "mtime": 1784437338.4095516,
+    "ast_hash": "93d15f57f4dfd7397afebc308f4a7b6c",
+    "semantic_hash": "93d15f57f4dfd7397afebc308f4a7b6c"
+  },
+  "ProductionStudio/Cases/brendan-banfield-double-murder/PersonPhotos.md": {
+    "mtime": 1784532029.0305252,
+    "ast_hash": "c8218fec06ac881848bc7555d7ee98bf",
+    "semantic_hash": "c8218fec06ac881848bc7555d7ee98bf"
+  },
+  "ProductionStudio/Cases/brendan-banfield-double-murder/PublishPlan.md": {
+    "mtime": 1784438561.4111934,
+    "ast_hash": "659ce7fbd1c11b72f2dc74945dec32df",
+    "semantic_hash": "659ce7fbd1c11b72f2dc74945dec32df"
+  },
+  "ProductionStudio/Cases/brendan-banfield-double-murder/SEO.md": {
+    "mtime": 1784437338.4095516,
+    "ast_hash": "8f850bdd646583ebda17817c40cf53ca",
+    "semantic_hash": "8f850bdd646583ebda17817c40cf53ca"
+  },
+  "ProductionStudio/Cases/brendan-banfield-double-murder/Script.md": {
+    "mtime": 1784437338.4105482,
+    "ast_hash": "7d7dcc9403547fbd843bcf9222f18ceb",
+    "semantic_hash": "7d7dcc9403547fbd843bcf9222f18ceb"
+  },
+  "ProductionStudio/Cases/brendan-banfield-double-murder/Shorts.md": {
+    "mtime": 1784438561.4121966,
+    "ast_hash": "38d782c84cefa00bb29769caeed38812",
+    "semantic_hash": "38d782c84cefa00bb29769caeed38812"
+  },
+  "ProductionStudio/Cases/brendan-banfield-double-murder/Sources.md": {
+    "mtime": 1784437338.4105482,
+    "ast_hash": "5edea1734814d0a660594ee639fb81ec",
+    "semantic_hash": "5edea1734814d0a660594ee639fb81ec"
+  },
+  "ProductionStudio/Cases/brendan-banfield-double-murder/Thumbnail.md": {
+    "mtime": 1784532029.0305252,
+    "ast_hash": "e2c305c24648c9868ab8ab8f8ea755ac",
+    "semantic_hash": "e2c305c24648c9868ab8ab8f8ea755ac"
+  },
+  "ProductionStudio/Cases/brendan-banfield-double-murder/Voiceover.txt": {
+    "mtime": 1784437338.4115448,
+    "ast_hash": "2be4314b2ef2ad4f67089084d744d5c3",
+    "semantic_hash": "2be4314b2ef2ad4f67089084d744d5c3"
+  },
+  "ProductionStudio/Cases/brendan-banfield-double-murder/auto-run-2026-07-21/Checklist.md": {
+    "mtime": 1784656177.016758,
+    "ast_hash": "d7d6c8474b820f87084867acf4bc836a",
+    "semantic_hash": "d7d6c8474b820f87084867acf4bc836a"
+  },
+  "ProductionStudio/Cases/brendan-banfield-double-murder/auto-run-2026-07-21/FactCheck.md": {
+    "mtime": 1784655134.792416,
+    "ast_hash": "3e3b7c3e676b8e7071942f3199f1765c",
+    "semantic_hash": "3e3b7c3e676b8e7071942f3199f1765c"
+  },
+  "ProductionStudio/Cases/brendan-banfield-double-murder/auto-run-2026-07-21/ImagePrompts.md": {
+    "mtime": 1784655134.7934127,
+    "ast_hash": "d0edcdb33b2fe2fb96df2e502fcf7711",
+    "semantic_hash": "d0edcdb33b2fe2fb96df2e502fcf7711"
+  },
+  "ProductionStudio/Cases/brendan-banfield-double-murder/auto-run-2026-07-21/PublishPlan.md": {
+    "mtime": 1784656177.0178926,
+    "ast_hash": "3982c499e70fa08ee612640c19b4e59e",
+    "semantic_hash": "3982c499e70fa08ee612640c19b4e59e"
+  },
+  "ProductionStudio/Cases/brendan-banfield-double-murder/auto-run-2026-07-21/ResearchOutput.md": {
+    "mtime": 1784655134.79441,
+    "ast_hash": "cccf358f4a5ded03086436e16a181236",
+    "semantic_hash": "cccf358f4a5ded03086436e16a181236"
+  },
+  "ProductionStudio/Cases/brendan-banfield-double-murder/auto-run-2026-07-21/SEO.md": {
+    "mtime": 1784655134.7967687,
+    "ast_hash": "0ab7644d0a0bb8527433cca559140e80",
+    "semantic_hash": "0ab7644d0a0bb8527433cca559140e80"
+  },
+  "ProductionStudio/Cases/brendan-banfield-double-murder/auto-run-2026-07-21/Script.md": {
+    "mtime": 1784655134.7977748,
+    "ast_hash": "5e52a61a4c516372f3a2301c074739cc",
+    "semantic_hash": "5e52a61a4c516372f3a2301c074739cc"
+  },
+  "ProductionStudio/Cases/brendan-banfield-double-murder/auto-run-2026-07-21/Shorts.md": {
+    "mtime": 1784655134.7994246,
+    "ast_hash": "6fa7da11b7201492fdcff0526136853c",
+    "semantic_hash": "6fa7da11b7201492fdcff0526136853c"
+  },
+  "ProductionStudio/Cases/brendan-banfield-double-murder/auto-run-2026-07-21/Thumbnail.md": {
+    "mtime": 1784655134.8005142,
+    "ast_hash": "8fe8849eb6fecc9f84887963bc756f35",
+    "semantic_hash": "8fe8849eb6fecc9f84887963bc756f35"
+  },
+  "ProductionStudio/Cases/brendan-banfield-double-murder/auto-run-2026-07-21/Voiceover.txt": {
+    "mtime": 1784656182.4363053,
+    "ast_hash": "3b0428da2a1ca33db5840c6158f2ebd2",
+    "semantic_hash": "3b0428da2a1ca33db5840c6158f2ebd2"
+  },
+  "ProductionStudio/Cases/dalia-dippolito-murder-for-hire/Sources.md": {
+    "mtime": 1784431166.261317,
+    "ast_hash": "76eede6721cb3c3533d68b8d5eddcced",
+    "semantic_hash": "76eede6721cb3c3533d68b8d5eddcced"
+  },
+  "ProductionStudio/Cases/devyn-michaels-decapitation/Sources.md": {
+    "mtime": 1784431166.2623134,
+    "ast_hash": "ff36e3f8688b4198229a47b51ddd89e9",
+    "semantic_hash": "ff36e3f8688b4198229a47b51ddd89e9"
+  },
+  "ProductionStudio/Cases/eric-thompson-jon-tokuhara-murder/Sources.md": {
+    "mtime": 1784431166.2623134,
+    "ast_hash": "68a8966cb46beef8c939f43740f98faf",
+    "semantic_hash": "68a8966cb46beef8c939f43740f98faf"
+  },
+  "ProductionStudio/Cases/kouri-richins-fentanyl-murder/Checklist.md": {
+    "mtime": 1784665943.0123856,
+    "ast_hash": "2c012b4af8e28a199a3c45dccd6ae7c0",
+    "semantic_hash": "2c012b4af8e28a199a3c45dccd6ae7c0"
+  },
+  "ProductionStudio/Cases/kouri-richins-fentanyl-murder/FactCheck.md": {
+    "mtime": 1784665943.0123856,
+    "ast_hash": "42193a3463392b5ad346203c98c55b0d",
+    "semantic_hash": "42193a3463392b5ad346203c98c55b0d"
+  },
+  "ProductionStudio/Cases/kouri-richins-fentanyl-murder/ImagePrompts.md": {
+    "mtime": 1784665943.0133817,
+    "ast_hash": "8d1a5a4085d7f397b44509ef8f6d68b7",
+    "semantic_hash": "8d1a5a4085d7f397b44509ef8f6d68b7"
+  },
+  "ProductionStudio/Cases/kouri-richins-fentanyl-murder/PublishPlan.md": {
+    "mtime": 1784665943.0143785,
+    "ast_hash": "e228284ff645c4d35a0e9b3eadb8be4a",
+    "semantic_hash": "e228284ff645c4d35a0e9b3eadb8be4a"
+  },
+  "ProductionStudio/Cases/kouri-richins-fentanyl-murder/SEO.md": {
+    "mtime": 1784665943.0143785,
+    "ast_hash": "b17c9bb08f62a777e354796ffef4b8da",
+    "semantic_hash": "b17c9bb08f62a777e354796ffef4b8da"
+  },
+  "ProductionStudio/Cases/kouri-richins-fentanyl-murder/Script.md": {
+    "mtime": 1784665943.0163722,
+    "ast_hash": "501585111a5e7ee7eb71c63005b6b45c",
+    "semantic_hash": "501585111a5e7ee7eb71c63005b6b45c"
+  },
+  "ProductionStudio/Cases/kouri-richins-fentanyl-murder/Shorts.md": {
+    "mtime": 1784668678.7225451,
+    "ast_hash": "1b2d6b2408abcdf87e69f59ab0094554",
+    "semantic_hash": "1b2d6b2408abcdf87e69f59ab0094554"
+  },
+  "ProductionStudio/Cases/kouri-richins-fentanyl-murder/Sources.md": {
+    "mtime": 1784665943.0173688,
+    "ast_hash": "4a545d3a9833706f03a943b9c3d0ced4",
+    "semantic_hash": "4a545d3a9833706f03a943b9c3d0ced4"
+  },
+  "ProductionStudio/Cases/kouri-richins-fentanyl-murder/Thumbnail.md": {
+    "mtime": 1784665943.0183659,
+    "ast_hash": "395ee1cd8cc80c5c6bb7c346446b0617",
+    "semantic_hash": "395ee1cd8cc80c5c6bb7c346446b0617"
+  },
+  "ProductionStudio/Cases/kouri-richins-fentanyl-murder/Voiceover.txt": {
+    "mtime": 1784665943.0188694,
+    "ast_hash": "c5082568461dc74392d96946e159f9a9",
+    "semantic_hash": "c5082568461dc74392d96946e159f9a9"
+  },
+  "ProductionStudio/Cases/sonam-raghuvanshi-honeymoon-murder/Sources.md": {
+    "mtime": 1784431166.2623134,
+    "ast_hash": "75d29810f69e000544d479f3f3fd0579",
+    "semantic_hash": "75d29810f69e000544d479f3f3fd0579"
+  },
+  "ProductionStudio/Documentation/ARCHITECTURE.md": {
+    "mtime": 1784668395.9742222,
+    "ast_hash": "62f9effb8d5e4bcf5b515dec274bd8f2",
+    "semantic_hash": "62f9effb8d5e4bcf5b515dec274bd8f2"
+  },
+  "ProductionStudio/Documentation/HANDOFF_TO_CLAUDE_CODE.md": {
+    "mtime": 1784423014.4532897,
+    "ast_hash": "a4c64a53cfd00b4df574a82a9aedba59",
+    "semantic_hash": "a4c64a53cfd00b4df574a82a9aedba59"
+  },
+  "ProductionStudio/Documentation/SELF_IMPROVEMENT_PROCESS.md": {
+    "mtime": 1784423014.4536414,
+    "ast_hash": "02bbcfde0b641545f4fc0c28ced67d60",
+    "semantic_hash": "02bbcfde0b641545f4fc0c28ced67d60"
+  },
+  "ProductionStudio/README.md": {
+    "mtime": 1784656182.4390514,
+    "ast_hash": "06cd1bf16e9e74b5fa7d3ca0df429d30",
+    "semantic_hash": "06cd1bf16e9e74b5fa7d3ca0df429d30"
+  },
+  "ProductionStudio/Tests/TEST_PLAN.md": {
+    "mtime": 1784656182.4390514,
+    "ast_hash": "38c2baa9efc82afd7701a1a8270be03a",
+    "semantic_hash": "38c2baa9efc82afd7701a1a8270be03a"
+  },
+  "ProductionStudio/Tests/stage1_tool_manager_agent_test.md": {
+    "mtime": 1784530321.2073412,
+    "ast_hash": "a69d5305575b73a0edd166d1f65fb28c",
+    "semantic_hash": "a69d5305575b73a0edd166d1f65fb28c"
+  },
+  "ProductionStudio/Tests/stage2_fact_check_tool_test.md": {
+    "mtime": 1784532029.0319686,
+    "ast_hash": "92b64a6425b31d2408fe2752f24bd983",
+    "semantic_hash": "92b64a6425b31d2408fe2752f24bd983"
+  },
+  "ProductionStudio/Tests/stage2_mugshot_tool_test.md": {
+    "mtime": 1784532029.0319686,
+    "ast_hash": "a111a4a7936a9b11cc9ebbca34232eb8",
+    "semantic_hash": "a111a4a7936a9b11cc9ebbca34232eb8"
+  },
+  "ProductionStudio/Tests/stage2_seo_export_and_github_sync_test.md": {
+    "mtime": 1784532029.032978,
+    "ast_hash": "48b1f814c13ba8c833300dd9770601c4",
+    "semantic_hash": "48b1f814c13ba8c833300dd9770601c4"
+  },
+  "ProductionStudio/Tests/stage3_link_audit.md": {
+    "mtime": 1784532495.022507,
+    "ast_hash": "483673aeb2d063fb99c8a1e1e4616a86",
+    "semantic_hash": "483673aeb2d063fb99c8a1e1e4616a86"
+  },
+  "ProductionStudio/Tests/stage4_full_pipeline_n8n_test.md": {
+    "mtime": 1784656182.4390514,
+    "ast_hash": "d53e025aff89a1319a925bcb374f3c61",
+    "semantic_hash": "d53e025aff89a1319a925bcb374f3c61"
+  },
+  "ProductionStudio/Tests/stage4_n8n_local_bootstrap.md": {
+    "mtime": 1784618258.2961419,
+    "ast_hash": "a4911365ba0b200ea41356aeb8ec6ffa",
+    "semantic_hash": "a4911365ba0b200ea41356aeb8ec6ffa"
+  },
+  "ProductionStudio/Tests/stage4_remotion_local_render_test.md": {
+    "mtime": 1784618258.2961419,
+    "ast_hash": "f12ae95b2418f6fa87447fd42a0197f7",
+    "semantic_hash": "f12ae95b2418f6fa87447fd42a0197f7"
+  },
+  "ProductionStudio/Tools/elevenlabs_voice_tool.md": {
+    "mtime": 1784656182.4403417,
+    "ast_hash": "7ca67e65df16d7229d748e8bb390796f",
+    "semantic_hash": "7ca67e65df16d7229d748e8bb390796f"
+  },
+  "ProductionStudio/Tools/fact_check_tool.md": {
+    "mtime": 1784530321.2073412,
+    "ast_hash": "43fa51043fa94796cba5952d02971444",
+    "semantic_hash": "43fa51043fa94796cba5952d02971444"
+  },
+  "ProductionStudio/Tools/github_sync_tool.md": {
+    "mtime": 1784423014.4536414,
+    "ast_hash": "279f19414d43eb1cf16c0116d0ae6496",
+    "semantic_hash": "279f19414d43eb1cf16c0116d0ae6496"
+  },
+  "ProductionStudio/Tools/image_gen_tool.md": {
+    "mtime": 1784618258.2978673,
+    "ast_hash": "26faa9039026a67d8adc3fa09f4bbd3f",
+    "semantic_hash": "26faa9039026a67d8adc3fa09f4bbd3f"
+  },
+  "ProductionStudio/Tools/mugshot_fetch_tool.md": {
+    "mtime": 1784532029.032978,
+    "ast_hash": "4d3bc682060d4848d101fd8f772508d6",
+    "semantic_hash": "4d3bc682060d4848d101fd8f772508d6"
+  },
+  "ProductionStudio/Tools/remotion_assembly_tool.md": {
+    "mtime": 1784666064.6081192,
+    "ast_hash": "1a34fb9006f76a9761b33d145528a117",
+    "semantic_hash": "1a34fb9006f76a9761b33d145528a117"
+  },
+  "ProductionStudio/Tools/royalty_free_music_tool.md": {
+    "mtime": 1784530321.2093349,
+    "ast_hash": "b230e22891185389731f79868db6df8e",
+    "semantic_hash": "b230e22891185389731f79868db6df8e"
+  },
+  "ProductionStudio/Tools/seo_export_tool.md": {
+    "mtime": 1784423014.4536414,
+    "ast_hash": "d79a25a484791c0d7ef241b2a0160cd3",
+    "semantic_hash": "d79a25a484791c0d7ef241b2a0160cd3"
+  },
+  "ProductionStudio/Tools/youtube_publish_tool.md": {
+    "mtime": 1784423014.4536414,
+    "ast_hash": "4df63b587fd5a18e679a9bf8d32f7b74",
+    "semantic_hash": "4df63b587fd5a18e679a9bf8d32f7b74"
+  },
+  "ProductionStudio/Workflows/PIPELINE_OVERVIEW.md": {
+    "mtime": 1784656182.4423742,
+    "ast_hash": "6cb09e76702ee3f26daa69aa592a8c59",
+    "semantic_hash": "6cb09e76702ee3f26daa69aa592a8c59"
+  },
+  "README.md": {
+    "mtime": 1784423014.4536414,
+    "ast_hash": "d81e94107dae8cd69d190f35502fff0a",
+    "semantic_hash": "d81e94107dae8cd69d190f35502fff0a"
+  }
+}
