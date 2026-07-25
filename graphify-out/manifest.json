@@ -20,9 +20,9 @@
     "semantic_hash": "1fbedeb144ccb84bf22dcd8c576123e7"
   },
   "ProductionStudio/Cases/covered_cases.json": {
-    "mtime": 1784665943.0113888,
-    "ast_hash": "af4e5e8140d8c2c2b93c4e54cb0b97b8",
-    "semantic_hash": "af4e5e8140d8c2c2b93c4e54cb0b97b8"
+    "mtime": 1784995424.476624,
+    "ast_hash": "3c209c37f802b29791767c15ed3d03c1",
+    "semantic_hash": "3c209c37f802b29791767c15ed3d03c1"
   },
   "ProductionStudio/Cases/kouri-richins-fentanyl-murder/SceneList.json": {
     "mtime": 1784665943.0153754,
@@ -448,5 +448,110 @@
     "mtime": 1784423014.4536414,
     "ast_hash": "d81e94107dae8cd69d190f35502fff0a",
     "semantic_hash": "d81e94107dae8cd69d190f35502fff0a"
+  },
+  "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/SceneList.json": {
+    "mtime": 1784995424.4809923,
+    "ast_hash": "2b10b8beafe6ce0b6636b913630c4fb8",
+    "semantic_hash": "2b10b8beafe6ce0b6636b913630c4fb8"
+  },
+  "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/Checklist.md": {
+    "mtime": 1784995424.4776206,
+    "ast_hash": "90963354fd895bcb52f6d611038cba2b",
+    "semantic_hash": "90963354fd895bcb52f6d611038cba2b"
+  },
+  "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/FactCheck.md": {
+    "mtime": 1784995424.4776206,
+    "ast_hash": "564760ea2cd0f4279c27a44360e40d42",
+    "semantic_hash": "564760ea2cd0f4279c27a44360e40d42"
+  },
+  "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/ImagePrompts.md": {
+    "mtime": 1784995424.478618,
+    "ast_hash": "5acd20825abf262614db1cde7706bf23",
+    "semantic_hash": "5acd20825abf262614db1cde7706bf23"
+  },
+  "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PersonPhotos.md": {
+    "mtime": 1784995424.478618,
+    "ast_hash": "fddab73ecab2781ebd9129dae6b95dc7",
+    "semantic_hash": "fddab73ecab2781ebd9129dae6b95dc7"
+  },
+  "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md": {
+    "mtime": 1784995424.47999,
+    "ast_hash": "02fe7a8895f74e49fbca73f3a7fcfe21",
+    "semantic_hash": "02fe7a8895f74e49fbca73f3a7fcfe21"
+  },
+  "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/SEO.md": {
+    "mtime": 1784995424.47999,
+    "ast_hash": "834b9b7a1203a69e5e744c3347592c10",
+    "semantic_hash": "834b9b7a1203a69e5e744c3347592c10"
+  },
+  "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/Script.md": {
+    "mtime": 1784995424.4809923,
+    "ast_hash": "f7ac102259d4b1c4f6840ce95b7a4e36",
+    "semantic_hash": "f7ac102259d4b1c4f6840ce95b7a4e36"
+  },
+  "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/Shorts.md": {
+    "mtime": 1784995424.482453,
+    "ast_hash": "a0a396228aac1b58bdc41808171cb0ab",
+    "semantic_hash": "a0a396228aac1b58bdc41808171cb0ab"
+  },
+  "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/Sources.md": {
+    "mtime": 1784995424.482453,
+    "ast_hash": "aec04ef1d1eb8fe6f4ef27a80b5cefcd",
+    "semantic_hash": "aec04ef1d1eb8fe6f4ef27a80b5cefcd"
+  },
+  "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/Thumbnail.md": {
+    "mtime": 1784995424.482453,
+    "ast_hash": "1458fb6da430b7d62599d90ca27139f9",
+    "semantic_hash": "1458fb6da430b7d62599d90ca27139f9"
+  },
+  "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/Voiceover.txt": {
+    "mtime": 1784995424.4835384,
+    "ast_hash": "15479ec550595e704acd23f67a4a8bb0",
+    "semantic_hash": "15479ec550595e704acd23f67a4a8bb0"
+  },
+  "ProductionStudio/Templates/Checklist.md": {
+    "mtime": 1784423014.4536414,
+    "ast_hash": "7484e74fca6b33c4fd0a27cfd391278e",
+    "semantic_hash": "7484e74fca6b33c4fd0a27cfd391278e"
+  },
+  "ProductionStudio/Templates/ImagePrompts.md": {
+    "mtime": 1784423014.4536414,
+    "ast_hash": "06a3846c6119a90b51465f4bd37222e1",
+    "semantic_hash": "06a3846c6119a90b51465f4bd37222e1"
+  },
+  "ProductionStudio/Templates/SEO.md": {
+    "mtime": 1784437338.4127648,
+    "ast_hash": "e3b880e971462bd5c751070d4fbee0db",
+    "semantic_hash": "e3b880e971462bd5c751070d4fbee0db"
+  },
+  "ProductionStudio/Templates/Script.md": {
+    "mtime": 1784423014.4536414,
+    "ast_hash": "702700f6b849d4cbbc451f5c1787a3fd",
+    "semantic_hash": "702700f6b849d4cbbc451f5c1787a3fd"
+  },
+  "ProductionStudio/Templates/Shorts.md": {
+    "mtime": 1784438561.4131932,
+    "ast_hash": "8b1f4ca03d40c7be8c6a3f278b635f6b",
+    "semantic_hash": "8b1f4ca03d40c7be8c6a3f278b635f6b"
+  },
+  "ProductionStudio/Templates/Sources.md": {
+    "mtime": 1784423014.4536414,
+    "ast_hash": "f82eb918741c40c0903d8f1fbe7e98ef",
+    "semantic_hash": "f82eb918741c40c0903d8f1fbe7e98ef"
+  },
+  "ProductionStudio/Templates/SuccessRules.md": {
+    "mtime": 1784423014.4536414,
+    "ast_hash": "9b1ee33f796c2eb21cc97a3f843fc0a7",
+    "semantic_hash": "9b1ee33f796c2eb21cc97a3f843fc0a7"
+  },
+  "ProductionStudio/Templates/Thumbnail.md": {
+    "mtime": 1784423014.4536414,
+    "ast_hash": "c9cb4f0c560b6b4c8d72d825251d47e3",
+    "semantic_hash": "c9cb4f0c560b6b4c8d72d825251d47e3"
+  },
+  "ProductionStudio/Templates/Voiceover.txt": {
+    "mtime": 1784423014.4536414,
+    "ast_hash": "ded0608fff8df73a13111664a2e8b556",
+    "semantic_hash": "ded0608fff8df73a13111664a2e8b556"
   }
 }

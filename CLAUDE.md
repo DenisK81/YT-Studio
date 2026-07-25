@@ -61,3 +61,25 @@ channel's audience and output are English-language (US market).
 Prefer plain, working code over speculative abstractions beyond what
 `Documentation/ARCHITECTURE.md` already specifies. Don't add new agents, tools, or folders that
 aren't in the existing scaffold without flagging it first.
+
+## graphify
+
+This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships. **Treat it as this project's actual memory** — for questions about architecture, agents, tools, or what happened on a past case, query the graph before grepping/reading files cold or relying on your own session recall. The point is for the graph to know the project so you don't have to hold it all in your head.
+
+Rules:
+- For any question about architecture, agents, tools, or a past case ("what does X agent do", "what happened with case Y", "why was Z decided"), first run `graphify query "<question>"` when graphify-out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
+- If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
+- Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
+- **This project's real content is almost entirely Markdown/JSON docs, not code** — case files
+  under `ProductionStudio/Cases/*/`, agent specs under `ProductionStudio/Agents/`, tool specs
+  under `ProductionStudio/Tools/`. The bare `graphify update .` CLI command is **AST-only** and
+  silently skips all of these (confirmed 2026-07-25: it re-extracts `.py`/code but leaves new
+  case docs completely un-indexed). **After producing or editing any case file, agent spec, or
+  tool spec, run the full `/graphify --update` flow** (the skill's incremental semantic path —
+  detect changed docs, dispatch extraction subagents, merge, rebuild) **before ending the
+  session** — not just the bare CLI command. Skipping this is exactly how the graph went stale
+  and didn't know about a fully-produced case (Monica Sementilli) until caught and fixed.
+- If the merge step ever refuses to write with a "would shrink the graph" warning, don't just
+  force it — check whether the nodes being removed are real content or empty `_origin: ast`
+  stub nodes with no edges (a byproduct of running the bare code-only update over doc files by
+  mistake). Only force through once you've confirmed it's the latter.
