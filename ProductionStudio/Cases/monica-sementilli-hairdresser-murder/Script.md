@@ -1,0 +1,193 @@
+```
+[[SCENE:0001]]
+A sixteen-year-old girl walks out to the backyard pool to find her father. He's a hairdresser to celebrities, a beauty executive, a man who built a life most people only see in magazines.
+
+[[SCENE:0002]]
+She finds him slumped in a chair. Blood everywhere. He's been stabbed seven times — to the face, the jaw, the neck, the chest, the thigh.
+
+[[SCENE:0003]]
+Behind her, the house has been torn apart. Drawers pulled open. Things thrown across the floor. His car — a red Porsche — is gone from the driveway.
+
+[[SCENE:0004]]
+It looks exactly like a robbery gone wrong. It wasn't. And the person who orchestrated it had been in that house with him every single day.
+
+[[SCENE:0005]]
+His name was Fabio Sementilli. Forty-nine years old. Canadian-born, and one of the most respected names in the beauty industry — vice president of education for Wella, the salon-professional division of Procter & Gamble.
+
+[[SCENE:0006]]
+He'd styled the hair of stars like Jennifer Lopez and Jennifer Love Hewitt. "Hairdresser" doesn't come close to what he'd actually built.
+
+[[SCENE:0007]]
+He married Monica in 1997, in Toronto. Two daughters followed — Gessica and Isabella. In 2008, Fabio's promotion at Wella changed everything about how the family lived. A home in Woodland Hills, Los Angeles. A swimming pool.
+
+[[SCENE:0008]]
+A Porsche in the driveway. On paper, it was the version of success people spend their whole careers chasing.
+
+[[SCENE:0009]]
+From the outside, Monica looked like exactly what the role called for — the wife of a beauty-industry executive, present at the events, present in the photos, present at her daughters' lives.
+
+[[SCENE:0010]]
+Nobody outside that house had any reason to look twice at the marriage.
+
+[[SCENE:0011]]
+On January 23rd, 2017, that version of the family's life ended in the backyard of that same house. Isabella — sixteen years old — walked outside and found her father dead. She's the one who called 911.
+
+[[SCENE:0012]]
+At first, it read like the worst kind of bad luck. Los Angeles had seen a run of so-called "knock-knock burglars" — thieves who ring the doorbell, confirm nobody's answering, then force their way in and take whatever's inside.
+
+[[SCENE:0013]]
+Investigators clocked the pattern almost immediately when they walked through the house: ransacked rooms, a missing car, a man dead in his own backyard.
+
+[[SCENE:0014]]
+Fabio's Porsche turned up abandoned, miles from the house. On the surface, every piece of it lined up with a burglary that had gone catastrophically wrong.
+
+[[SCENE:0015]]
+But a staged crime scene doesn't hold up to real scrutiny for long. Detectives with LAPD's Robbery-Homicide Division — led by Detective Mitzi Roberts — started pulling at the threads.
+
+[[SCENE:0016]]
+And the threads didn't lead out toward a stranger casing the neighborhood. They led back inside the house Fabio Sementilli had just died in front of.
+
+[[SCENE:0017]]
+The trail led to his wife. And to a man named Robert Louis Baker. Baker wasn't a stranger who'd wandered into the wrong house.
+
+[[SCENE:0018]]
+He was in his sixties, a convicted sex offender, a former adult-film actor — and, investigators would learn, Monica Sementilli's lover.
+
+[[SCENE:0019]]
+Whatever brought the two of them together, by the time detectives were piecing together Fabio's last months, Baker wasn't a peripheral figure in Monica's life. He was central to it.
+
+[[SCENE:0020]]
+This wasn't a quiet fling nobody had noticed. Detectives found a relationship documented in real time, through an encrypted messaging app called Viber. On the day of the murder alone, Monica and Baker exchanged ninety-five messages.
+
+[[SCENE:0021]]
+The day before: a hundred and eighty. That's not two people keeping something private. That's two people in constant, urgent contact — on the exact day a man was murdered in his own backyard.
+
+[[SCENE:0022]]
+And there was a third name in the middle of it: Christopher Austin, a former Oregon probation officer. He was present at the scene and assisted Baker.
+
+[[SCENE:0023]]
+He would later testify that Baker had told him Monica wanted her husband "gone" — and that everything Baker did that day, he did right after getting a text message.
+
+[[SCENE:0024]]
+A convicted sex offender. A probation officer. And the wife who introduced them to her husband's life. This wasn't an impulsive crime. It was staffed.
+
+[[SCENE:0025]]
+Prosecutors built their case around exactly what those messages said — and around something even harder to explain away.
+
+[[SCENE:0026]]
+Surveillance video, shown to the jury, captured Monica watching a live feed of the area around the house shortly before the attack, making sure Robert Baker had a clear, unobstructed path to her husband.
+
+[[SCENE:0027]]
+Baker had received a text telling him the front door would be left unlocked. He walked straight in.
+
+[[SCENE:0028]]
+Fabio never had a chance to see it coming — attacked from behind, in his own backyard, in the house where he'd raised his daughters.
+
+[[SCENE:0029]]
+Every piece investigators pulled together painted the same picture: this wasn't a burglary that spiraled into violence.
+
+[[SCENE:0030]]
+It was a plan, timed to the minute, executed by someone who'd walked through that house's routines a hundred times before — because he'd been let in on purpose.
+
+[[SCENE:0031]]
+Here's the detail that made this case impossible to look away from once it surfaced. Fabio's funeral was held in Toronto — surrounded by family, by grief, by people who'd flown in to mourn a husband and a father.
+
+[[SCENE:0032]]
+During that same service, Monica and Robert Baker were exchanging sexual messages. She sent him nude photographs — while she was standing at her husband's funeral, in a room full of people who believed she was grieving him.
+
+[[SCENE:0033]]
+That's not a woman in shock. That's not a marriage that quietly fell apart after the fact. Prosecutors would later describe it as exactly what it looked like on the page: cold, and calculated, from the funeral onward.
+
+[[SCENE:0034]]
+Getting to an arrest at all meant reconstructing a private conversation nobody was supposed to see.
+
+[[SCENE:0035]]
+Investigators had to legally recover the Viber history between Monica and Baker — an app built around encryption, chosen, prosecutors argued, specifically because the two of them thought it couldn't be read by anyone else. It could.
+
+[[SCENE:0036]]
+And once it was unlocked, the timeline of that day laid itself out message by message.
+
+[[SCENE:0037]]
+Monica Sementilli and Robert Baker were arrested in June 2017 — about five months after Fabio's death. In most true-crime cases, that's the point where the story jumps straight to a trial and a verdict.
+
+[[SCENE:0038]]
+Not this one.
+
+[[SCENE:0039]]
+This case sat for almost eight years before Monica ever stood trial. Legal delays stacked on legal delays. Then the COVID-19 pandemic shut courts down for months at a stretch.
+
+[[SCENE:0040]]
+Motions, continuances, postponements — an entire decade compressed into paperwork, while a family waited for someone, anyone, in a courtroom to say out loud what had actually happened to Fabio.
+
+[[SCENE:0041]]
+Piece by piece, the rest of the conspiracy resolved first, while Monica's own case sat waiting. In 2023, Robert Baker pleaded no contest to murder and was sentenced to life without the possibility of parole.
+
+[[SCENE:0042]]
+In January 2025, Christopher Austin pleaded no contest to second-degree murder — sixteen years to life. Both men admitted their part before Monica's trial even began.
+
+[[SCENE:0043]]
+Only one person from that house was left to answer for it in front of a jury.
+
+[[SCENE:0044]]
+Monica Sementilli's trial started in January 2025 and ran for ten weeks. Her defense never tried to deny the affair — how could they, against ninety-five messages in a single day?
+
+[[SCENE:0045]]
+Her own attorney told the jury she was guilty of "stupidity, duplicity, lying, adultery." Just not murder. "Adultery is not murder," he argued. Reckless, humiliating, devastating to her family — but not, on its own, a conspiracy.
+
+[[SCENE:0046]]
+According to testimony described in CBS's coverage of the trial, Monica's own account of learning of Fabio's death framed her simply as a woman whose husband was suddenly gone — not as someone who already knew exactly what that meant for her.
+
+[[SCENE:0047]]
+Then Robert Baker himself took the stand — for her, not against her. "I murdered him because I wanted her," he testified. "She had nothing to do with it."
+
+[[SCENE:0048]]
+It was the last card the defense had left to play: a confessed killer, trying to carry the entire conspiracy alone, in open court, under oath.
+
+[[SCENE:0049]]
+The jury didn't buy it. Not with the surveillance video. Not with the message logs. Not with a funeral spent sexting the man who had just killed her husband, three days after burying him.
+
+[[SCENE:0050]]
+On April 11th, 2025, the jury found Monica Sementilli guilty of first-degree murder with special circumstances — murder for financial gain, and murder by lying in wait — plus conspiracy to commit murder.
+
+[[SCENE:0051]]
+"Special circumstances" isn't just a dramatic phrase prosecutors reach for.
+
+[[SCENE:0052]]
+In California, it's the specific legal finding that takes a murder charge to its maximum weight — and here, the jury agreed to two of them at once: that Fabio was killed for financial gain, and that he was killed by lying in wait, meaning the attack was planned and concealed, not a moment of rage.
+
+[[SCENE:0053]]
+Both findings are exactly what unlocked a sentence of life without any chance of parole.
+
+[[SCENE:0054]]
+On June 23rd, 2025, she was sentenced to life in prison without the possibility of parole. Judge Ronald Coen didn't soften the verdict on his way to that sentence: "Defendant was the mastermind in this conspiracy to commit murder."
+
+[[SCENE:0055]]
+District Attorney Nathan Hochman put it just as plainly. "Monica Sementilli betrayed the person who loved and trusted her most." A cold and calculated crime, he called it — motivated by greed, and by betrayal.
+
+[[SCENE:0056]]
+The number at the center of all of it: roughly $1.6 million in life insurance.
+
+[[SCENE:0057]]
+That was the figure prosecutors say made a nineteen-year marriage — and eventually a man's life — worth less than a payout to the people who planned it.
+
+[[SCENE:0058]]
+Fabio Sementilli spent his career making other people look their best in front of a camera — red carpets, magazine covers, some of the most photographed women in the world.
+
+[[SCENE:0059]]
+He never got to see his own daughters finish growing up.
+
+[[SCENE:0060]]
+And the family didn't split cleanly into "the victim's side" and "the killer's side" the way these stories sometimes do.
+
+[[SCENE:0061]]
+Even after the guilty verdict, Monica's daughters maintained they believed in their mother's innocence, and said they planned to appeal — meaning the same family that lost Fabio in that backyard is still, years later, divided over what actually happened inside their own home.
+
+[[SCENE:0062]]
+The case has since become one of the most covered true-crime stories to come out of Los Angeles in years — profiled by NBC's Dateline and by People Magazine Investigates, replayed for audiences who, like the jury, keep landing on the same question: how does a marriage that looked this normal from the outside end with a wife watching a live camera feed to time her husband's murder?
+
+[[SCENE:0063]]
+Somewhere in Toronto, at a funeral surrounded by people mourning a husband and a father, a phone buzzed with a message that had nothing to do with grief at all.
+
+[[SCENE:0064]]
+If you'd been standing in that room, grieving beside her — would you have seen anything wrong?
+```
