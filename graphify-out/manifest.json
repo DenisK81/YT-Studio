@@ -1,8 +1,8 @@
 {
   ".claude/settings.json": {
-    "mtime": 1784425340.0,
-    "ast_hash": "3899f3862562d29448c834c1bb0b2ffe",
-    "semantic_hash": "3899f3862562d29448c834c1bb0b2ffe"
+    "mtime": 1784997798.412575,
+    "ast_hash": "c70ef00121eb5612cdc025725b6c6baa",
+    "semantic_hash": "c70ef00121eb5612cdc025725b6c6baa"
   },
   ".claude/settings.local.json": {
     "mtime": 1784958375.2266297,
@@ -75,9 +75,9 @@
     "semantic_hash": "ba1e6db4b44372e3052e368adf254ab9"
   },
   "CLAUDE.md": {
-    "mtime": 1784429938.0056906,
-    "ast_hash": "2cb4dfa9f4ece48f180b594fdffa54a8",
-    "semantic_hash": "2cb4dfa9f4ece48f180b594fdffa54a8"
+    "mtime": 1784997798.414056,
+    "ast_hash": "2c7e91c3af24e460aae7f88041376222",
+    "semantic_hash": "2c7e91c3af24e460aae7f88041376222"
   },
   "KICKOFF_PROMPT.md": {
     "mtime": 1784425351.0,
@@ -553,5 +553,10 @@
     "mtime": 1784423014.4536414,
     "ast_hash": "ded0608fff8df73a13111664a2e8b556",
     "semantic_hash": "ded0608fff8df73a13111664a2e8b556"
+  },
+  "ProductionStudio/Channel/Trailer.md": {
+    "mtime": 1784999624.390474,
+    "ast_hash": "119c730db8293dc9d60f6665b06f89aa",
+    "semantic_hash": "119c730db8293dc9d60f6665b06f89aa"
   }
 }
