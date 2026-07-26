@@ -48,13 +48,14 @@
     {
       "name": "youtube_publish_tool",
       "path": "Tools/youtube_publish_tool.md",
-      "description": "Wraps YouTube Data API v3 upload + metadata; publish call is human-gated.",
-      "input_schema_ref": "video_file: string, metadata: object",
+      "implementation": "Workflows/youtube_agent.py",
+      "description": "Real implementation written 2026-07-25 per the channel owner's instruction to write it once and reuse for every future publish. Official google-api-python-client + google-auth-oauthlib against YouTube Data API v3, OAuth client from Google Cloud Console (Config/client_secret_*.json, gitignored). prepare_upload() uploads as PRIVATE with full metadata (this is the 'draft_id' from this tool's own contract, implemented as the real video_id). confirm_publish() is the ONLY function that can make a video public/scheduled and hard-requires human_confirmed=True passed explicitly - never set programmatically, per Agents/publishing_agent.md's no-exceptions rule. One-time interactive OAuth consent (`python youtube_agent.py auth`) opens a local browser for the channel owner to log in themselves; Claude never sees or enters credentials.",
+      "input_schema_ref": "video_file: string, title/description/tags: metadata, category_id: string, thumbnail_file: string?",
       "output_schema_ref": "video_id: string, status: string",
       "tags": ["publishing", "youtube"],
-      "provider": "YouTube Data API v3",
-      "status": "draft",
-      "last_updated": "2026-07-18"
+      "provider": "YouTube Data API v3 (official google-api-python-client)",
+      "status": "active",
+      "last_updated": "2026-07-25"
     },
     {
       "name": "seo_export_tool",

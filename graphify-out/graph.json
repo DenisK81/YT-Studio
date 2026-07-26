@@ -4,22 +4,6 @@
   "graph": {
     "hyperedges": [
       {
-        "id": "trailer_image_rights_clearance",
-        "label": "Channel Trailer Image Rights Clearance",
-        "nodes": [
-          "productionstudio_channel_trailer_collage_images",
-          "productionstudio_channel_trailer_rights_basis",
-          "productionstudio_channel_trailer_banfield_case_ref",
-          "productionstudio_channel_trailer_mugshot_fetch_tool_ref",
-          "productionstudio_channel_trailer_architecture_real_photo_decision_ref",
-          "productionstudio_channel_trailer_ai_generated_images"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "ProductionStudio/Channel/Trailer.md"
-      },
-      {
         "id": "graphify_incremental_update_workflow",
         "label": "Graphify Incremental Update Workflow (query-first + doc-vs-code update)",
         "nodes": [
@@ -241,7 +225,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "config.schema.json",
       "id": "productionstudio_config_config_schema"
@@ -252,7 +236,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L2",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "$schema",
       "id": "productionstudio_config_config_schema_schema"
@@ -263,7 +247,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "title",
       "id": "productionstudio_config_config_schema_title"
@@ -274,7 +258,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "type",
       "id": "productionstudio_config_config_schema_type"
@@ -285,7 +269,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "properties",
       "id": "productionstudio_config_config_schema_properties"
@@ -296,7 +280,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "channel",
       "id": "productionstudio_config_config_schema_properties_channel"
@@ -307,7 +291,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "type",
       "id": "productionstudio_config_config_schema_channel_type"
@@ -593,7 +577,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "providers",
       "id": "productionstudio_config_config_schema_properties_providers"
@@ -604,7 +588,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L31",
       "_origin": "ast",
-      "community": 8,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "type",
       "id": "productionstudio_config_config_schema_providers_type"
@@ -626,7 +610,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "voice",
       "id": "productionstudio_config_config_schema_properties_voice"
@@ -637,7 +621,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "enum",
       "id": "productionstudio_config_config_schema_voice_enum"
@@ -648,7 +632,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "elevenlabs",
       "id": "ref_elevenlabs"
@@ -659,7 +643,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "default",
       "id": "productionstudio_config_config_schema_voice_default"
@@ -879,7 +863,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L47",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "publishing_pace",
       "id": "productionstudio_config_config_schema_properties_publishing_pace"
@@ -890,7 +874,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L48",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "type",
       "id": "productionstudio_config_config_schema_publishing_pace_type"
@@ -901,7 +885,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L49",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "description",
       "id": "productionstudio_config_config_schema_publishing_pace_description"
@@ -912,7 +896,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L50",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "properties",
       "id": "productionstudio_config_config_schema_publishing_pace_properties"
@@ -923,7 +907,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L51",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "main_video_and_first_short_same_day",
       "id": "productionstudio_config_config_schema_properties_main_video_and_first_short_same_day"
@@ -934,7 +918,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L51",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_main_video_and_first_short_same_day_const"
@@ -945,7 +929,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L52",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "remaining_shorts_one_per_day",
       "id": "productionstudio_config_config_schema_properties_remaining_shorts_one_per_day"
@@ -956,7 +940,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L52",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_remaining_shorts_one_per_day_const"
@@ -967,7 +951,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L53",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "shorts_order",
       "id": "productionstudio_config_config_schema_properties_shorts_order"
@@ -978,7 +962,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L53",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_shorts_order_const"
@@ -989,7 +973,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L56",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "shorts",
       "id": "productionstudio_config_config_schema_properties_shorts"
@@ -1000,7 +984,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L57",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "type",
       "id": "productionstudio_config_config_schema_shorts_type"
@@ -1011,7 +995,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L58",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "description",
       "id": "productionstudio_config_config_schema_shorts_description"
@@ -1022,7 +1006,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L59",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "properties",
       "id": "productionstudio_config_config_schema_shorts_properties"
@@ -1033,7 +1017,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L60",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "max_seconds",
       "id": "productionstudio_config_config_schema_properties_max_seconds"
@@ -1044,7 +1028,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L61",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_max_seconds_const"
@@ -1055,7 +1039,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L62",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "description",
       "id": "productionstudio_config_config_schema_max_seconds_description"
@@ -1066,7 +1050,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L64",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "count_per_video",
       "id": "productionstudio_config_config_schema_properties_count_per_video"
@@ -1077,7 +1061,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L64",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_count_per_video_const"
@@ -1088,7 +1072,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L65",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "caption_font",
       "id": "productionstudio_config_config_schema_properties_caption_font"
@@ -1099,7 +1083,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L66",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_caption_font_const"
@@ -1110,7 +1094,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L67",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "description",
       "id": "productionstudio_config_config_schema_caption_font_description"
@@ -1121,7 +1105,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L69",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "caption_highlight_color",
       "id": "productionstudio_config_config_schema_properties_caption_highlight_color"
@@ -1132,7 +1116,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L70",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_caption_highlight_color_const"
@@ -1143,7 +1127,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L71",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "description",
       "id": "productionstudio_config_config_schema_caption_highlight_color_description"
@@ -1154,7 +1138,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L75",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "background_music",
       "id": "productionstudio_config_config_schema_properties_background_music"
@@ -1165,7 +1149,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L76",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "type",
       "id": "productionstudio_config_config_schema_background_music_type"
@@ -1176,7 +1160,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L77",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "description",
       "id": "productionstudio_config_config_schema_background_music_description"
@@ -1187,7 +1171,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L78",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "properties",
       "id": "productionstudio_config_config_schema_background_music_properties"
@@ -1198,7 +1182,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L79",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "provider",
       "id": "productionstudio_config_config_schema_properties_provider"
@@ -1209,7 +1193,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L80",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "enum",
       "id": "productionstudio_config_config_schema_provider_enum"
@@ -1220,7 +1204,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L80",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "local_bed_track_set",
       "id": "ref_local_bed_track_set"
@@ -1231,7 +1215,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L81",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "default",
       "id": "productionstudio_config_config_schema_provider_default"
@@ -1242,7 +1226,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L82",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "description",
       "id": "productionstudio_config_config_schema_provider_description"
@@ -1253,7 +1237,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L84",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "bed_track_count",
       "id": "productionstudio_config_config_schema_properties_bed_track_count"
@@ -1264,7 +1248,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L84",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_bed_track_count_const"
@@ -1275,7 +1259,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L85",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "bed_track_path",
       "id": "productionstudio_config_config_schema_properties_bed_track_path"
@@ -1286,7 +1270,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L85",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_bed_track_path_const"
@@ -1297,7 +1281,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L86",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "mood_prompt",
       "id": "productionstudio_config_config_schema_properties_mood_prompt"
@@ -1308,7 +1292,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L87",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_mood_prompt_const"
@@ -1319,7 +1303,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L88",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "description",
       "id": "productionstudio_config_config_schema_mood_prompt_description"
@@ -1330,7 +1314,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L90",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "mix_db_below_voiceover",
       "id": "productionstudio_config_config_schema_properties_mix_db_below_voiceover"
@@ -1341,7 +1325,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L91",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_mix_db_below_voiceover_const"
@@ -1352,7 +1336,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L92",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "description",
       "id": "productionstudio_config_config_schema_mix_db_below_voiceover_description"
@@ -1363,7 +1347,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L94",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "instrumental",
       "id": "productionstudio_config_config_schema_properties_instrumental"
@@ -1374,7 +1358,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L94",
       "_origin": "ast",
-      "community": 7,
+      "community": 6,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_instrumental_const"
@@ -1462,7 +1446,7 @@
       "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "community_name": "Case Asset Generator Script",
       "norm_label": "generate_case_assets.py",
       "id": "productionstudio_workflows_generate_case_assets"
@@ -1473,7 +1457,7 @@
       "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
       "source_location": "L40",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "community_name": "Case Asset Generator Script",
       "norm_label": "repo_root()",
       "id": "productionstudio_workflows_generate_case_assets_repo_root"
@@ -1484,7 +1468,7 @@
       "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
       "source_location": "L45",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "community_name": "Case Asset Generator Script",
       "norm_label": "post_json()",
       "id": "productionstudio_workflows_generate_case_assets_post_json"
@@ -1495,7 +1479,7 @@
       "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
       "source_location": "L56",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "community_name": "Case Asset Generator Script",
       "norm_label": "get_bytes()",
       "id": "productionstudio_workflows_generate_case_assets_get_bytes"
@@ -1506,7 +1490,7 @@
       "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
       "source_location": "L62",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "community_name": "Case Asset Generator Script",
       "norm_label": "parse_voiceover()",
       "id": "productionstudio_workflows_generate_case_assets_parse_voiceover"
@@ -1517,7 +1501,7 @@
       "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
       "source_location": "L107",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "community_name": "Case Asset Generator Script",
       "norm_label": "word_spans()",
       "id": "productionstudio_workflows_generate_case_assets_word_spans"
@@ -1528,7 +1512,7 @@
       "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
       "source_location": "L126",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "community_name": "Case Asset Generator Script",
       "norm_label": "cmd_audio()",
       "id": "productionstudio_workflows_generate_case_assets_cmd_audio"
@@ -1539,7 +1523,7 @@
       "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
       "source_location": "L199",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "community_name": "Case Asset Generator Script",
       "norm_label": "cmd_images()",
       "id": "productionstudio_workflows_generate_case_assets_cmd_images"
@@ -1550,7 +1534,7 @@
       "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
       "source_location": "L232",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "community_name": "Case Asset Generator Script",
       "norm_label": "main()",
       "id": "productionstudio_workflows_generate_case_assets_main"
@@ -1561,7 +1545,7 @@
       "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "community_name": "Case Asset Generator Script",
       "norm_label": "local, no-n8n, no-anthropic-key asset generator for a case.  phase 1 default (",
       "id": "productionstudio_workflows_generate_case_assets_rationale_1"
@@ -1572,7 +1556,7 @@
       "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
       "source_location": "L108",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "community_name": "Case Asset Generator Script",
       "norm_label": "group per-character alignment into (start, end, word) spans on whitespace.",
       "id": "productionstudio_workflows_generate_case_assets_rationale_108"
@@ -1583,7 +1567,7 @@
       "source_file": "ProductionStudio/Workflows/generate_shorts_audio.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "community_name": "Case Asset Generator Script",
       "norm_label": "generate_shorts_audio.py",
       "id": "productionstudio_workflows_generate_shorts_audio"
@@ -1594,7 +1578,7 @@
       "source_file": "ProductionStudio/Workflows/generate_shorts_audio.py",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "community_name": "Case Asset Generator Script",
       "norm_label": "extract_marked_text_from_script()",
       "id": "productionstudio_workflows_generate_shorts_audio_extract_marked_text_from_script"
@@ -1605,7 +1589,7 @@
       "source_file": "ProductionStudio/Workflows/generate_shorts_audio.py",
       "source_location": "L41",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "community_name": "Case Asset Generator Script",
       "norm_label": "extract_marked_text()",
       "id": "productionstudio_workflows_generate_shorts_audio_extract_marked_text"
@@ -1616,7 +1600,7 @@
       "source_file": "ProductionStudio/Workflows/generate_shorts_audio.py",
       "source_location": "L67",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "community_name": "Case Asset Generator Script",
       "norm_label": "main()",
       "id": "productionstudio_workflows_generate_shorts_audio_main"
@@ -1627,7 +1611,7 @@
       "source_file": "ProductionStudio/Workflows/generate_shorts_audio.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "community_name": "Case Asset Generator Script",
       "norm_label": "generate standalone audio + real per-word timing for a single short from its ow",
       "id": "productionstudio_workflows_generate_shorts_audio_rationale_1"
@@ -1638,7 +1622,7 @@
       "source_file": "ProductionStudio/Workflows/generate_shorts_audio.py",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 11,
+      "community": 10,
       "community_name": "Case Asset Generator Script",
       "norm_label": "a standalone script file already in [[scene:nnnn]] text ... format,     one par",
       "id": "productionstudio_workflows_generate_shorts_audio_rationale_23"
@@ -1649,7 +1633,7 @@
       "source_file": "ProductionStudio/Workflows/prep_remotion_render.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 23,
+      "community": 25,
       "community_name": "Remotion Render Prep Script",
       "norm_label": "prep_remotion_render.py",
       "id": "productionstudio_workflows_prep_remotion_render"
@@ -1660,7 +1644,7 @@
       "source_file": "ProductionStudio/Workflows/prep_remotion_render.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 23,
+      "community": 25,
       "community_name": "Remotion Render Prep Script",
       "norm_label": "prepare a remotion render from a case's real timing.json (produced by process_p",
       "id": "productionstudio_workflows_prep_remotion_render_rationale_1"
@@ -1671,7 +1655,7 @@
       "source_file": "ProductionStudio/Workflows/prep_short_render.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 24,
+      "community": 26,
       "community_name": "Shorts Render Prep Script",
       "norm_label": "prep_short_render.py",
       "id": "productionstudio_workflows_prep_short_render"
@@ -1682,7 +1666,7 @@
       "source_file": "ProductionStudio/Workflows/prep_short_render.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 24,
+      "community": 26,
       "community_name": "Shorts Render Prep Script",
       "norm_label": "prepare a single short's remotion render data: copies its narration audio, cold",
       "id": "productionstudio_workflows_prep_short_render_rationale_1"
@@ -1693,7 +1677,7 @@
       "source_file": "ProductionStudio/Workflows/process_pipeline_audio.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "community_name": "process_pipeline_audio.py",
       "norm_label": "process_pipeline_audio.py",
       "id": "productionstudio_workflows_process_pipeline_audio"
@@ -1704,7 +1688,7 @@
       "source_file": "ProductionStudio/Workflows/process_pipeline_audio.py",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "community_name": "process_pipeline_audio.py",
       "norm_label": "load_rawoutput()",
       "id": "productionstudio_workflows_process_pipeline_audio_load_rawoutput"
@@ -1715,7 +1699,7 @@
       "source_file": "ProductionStudio/Workflows/process_pipeline_audio.py",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "community_name": "process_pipeline_audio.py",
       "norm_label": "node_items()",
       "id": "productionstudio_workflows_process_pipeline_audio_node_items"
@@ -1726,7 +1710,7 @@
       "source_file": "ProductionStudio/Workflows/process_pipeline_audio.py",
       "source_location": "L41",
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "community_name": "process_pipeline_audio.py",
       "norm_label": "word_spans()",
       "id": "productionstudio_workflows_process_pipeline_audio_word_spans"
@@ -1737,7 +1721,7 @@
       "source_file": "ProductionStudio/Workflows/process_pipeline_audio.py",
       "source_location": "L62",
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "community_name": "process_pipeline_audio.py",
       "norm_label": "main()",
       "id": "productionstudio_workflows_process_pipeline_audio_main"
@@ -1748,7 +1732,7 @@
       "source_file": "ProductionStudio/Workflows/process_pipeline_audio.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "community_name": "process_pipeline_audio.py",
       "norm_label": "post-process an n8n execution's rawoutput after the elevenlabs with-timestamps",
       "id": "productionstudio_workflows_process_pipeline_audio_rationale_1"
@@ -1759,7 +1743,7 @@
       "source_file": "ProductionStudio/Workflows/process_pipeline_audio.py",
       "source_location": "L42",
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "community_name": "process_pipeline_audio.py",
       "norm_label": "group a per-character alignment into per-word (start, end, word) spans,     spl",
       "id": "productionstudio_workflows_process_pipeline_audio_rationale_42"
@@ -1770,7 +1754,7 @@
       "source_file": "ProductionStudio/Documentation/HANDOFF_TO_CLAUDE_CODE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "Project Stack & Policies",
       "norm_label": "handoff_to_claude_code.md",
       "id": "productionstudio_documentation_handoff_to_claude_code"
@@ -1781,7 +1765,7 @@
       "source_file": "ProductionStudio/Documentation/HANDOFF_TO_CLAUDE_CODE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "Project Stack & Policies",
       "norm_label": "handoff to claude code",
       "id": "productionstudio_documentation_handoff_to_claude_code_handoff_to_claude_code"
@@ -1792,7 +1776,7 @@
       "source_file": "ProductionStudio/Documentation/HANDOFF_TO_CLAUDE_CODE.md",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "Project Stack & Policies",
       "norm_label": "build order",
       "id": "productionstudio_documentation_handoff_to_claude_code_build_order"
@@ -1803,7 +1787,7 @@
       "source_file": "ProductionStudio/Documentation/HANDOFF_TO_CLAUDE_CODE.md",
       "source_location": "L62",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "Project Stack & Policies",
       "norm_label": "what not to do",
       "id": "productionstudio_documentation_handoff_to_claude_code_what_not_to_do"
@@ -1814,7 +1798,7 @@
       "source_file": "ProductionStudio/README.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "Project Stack & Policies",
       "norm_label": "readme.md",
       "id": "productionstudio_readme"
@@ -1825,7 +1809,7 @@
       "source_file": "ProductionStudio/README.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "Project Stack & Policies",
       "norm_label": "fatal affairs \u2014 production studio",
       "id": "productionstudio_readme_fatal_affairs_production_studio"
@@ -1836,7 +1820,7 @@
       "source_file": "ProductionStudio/README.md",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "Project Stack & Policies",
       "norm_label": "current status (2026-07-21 \u2014 read this before assuming anything below is still the plan)",
       "id": "productionstudio_readme_current_status_2026_07_21_read_this_before_assuming_anything_below_is_still_the_plan"
@@ -1847,7 +1831,7 @@
       "source_file": "ProductionStudio/README.md",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "Project Stack & Policies",
       "norm_label": "philosophy",
       "id": "productionstudio_readme_philosophy"
@@ -1858,7 +1842,7 @@
       "source_file": "ProductionStudio/README.md",
       "source_location": "L45",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "Project Stack & Policies",
       "norm_label": "structure",
       "id": "productionstudio_readme_structure"
@@ -1869,7 +1853,7 @@
       "source_file": "ProductionStudio/README.md",
       "source_location": "L59",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "Project Stack & Policies",
       "norm_label": "where this came from / what it is not",
       "id": "productionstudio_readme_where_this_came_from_what_it_is_not"
@@ -1880,7 +1864,7 @@
       "source_file": "ProductionStudio/README.md",
       "source_location": "L67",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "Project Stack & Policies",
       "norm_label": "quick start for whoever builds this (claude code or a human dev)",
       "id": "productionstudio_readme_quick_start_for_whoever_builds_this_claude_code_or_a_human_dev"
@@ -1891,7 +1875,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "community_name": "Production Agents & Style Rules",
       "norm_label": "test_plan.md",
       "id": "productionstudio_tests_test_plan"
@@ -1902,7 +1886,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 13,
+      "community": 0,
       "community_name": "Test Plan",
       "norm_label": "test plan",
       "id": "productionstudio_tests_test_plan_test_plan"
@@ -1913,7 +1897,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 13,
+      "community": 0,
       "community_name": "Test Plan",
       "norm_label": "stage 1 \u2014 agents in isolation",
       "id": "productionstudio_tests_test_plan_stage_1_agents_in_isolation"
@@ -1924,7 +1908,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 13,
+      "community": 0,
       "community_name": "Test Plan",
       "norm_label": "stage 2 \u2014 tools in isolation",
       "id": "productionstudio_tests_test_plan_stage_2_tools_in_isolation"
@@ -1935,7 +1919,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 13,
+      "community": 0,
       "community_name": "Test Plan",
       "norm_label": "stage 3 \u2014 two-node links",
       "id": "productionstudio_tests_test_plan_stage_3_two_node_links"
@@ -1946,7 +1930,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 13,
+      "community": 0,
       "community_name": "Test Plan",
       "norm_label": "stage 4 \u2014 full chain, one real case, dry-run publish",
       "id": "productionstudio_tests_test_plan_stage_4_full_chain_one_real_case_dry_run_publish"
@@ -1957,7 +1941,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L71",
       "_origin": "ast",
-      "community": 13,
+      "community": 0,
       "community_name": "Test Plan",
       "norm_label": "stage 5 \u2014 first real publish",
       "id": "productionstudio_tests_test_plan_stage_5_first_real_publish"
@@ -1968,7 +1952,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L75",
       "_origin": "ast",
-      "community": 13,
+      "community": 0,
       "community_name": "Test Plan",
       "norm_label": "regression check",
       "id": "productionstudio_tests_test_plan_regression_check"
@@ -1979,7 +1963,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "community_name": "Production Agents & Style Rules",
       "norm_label": "elevenlabs_voice_tool.md",
       "id": "productionstudio_tools_elevenlabs_voice_tool"
@@ -1990,7 +1974,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "tool: elevenlabs_voice_tool",
       "id": "productionstudio_tools_elevenlabs_voice_tool_tool_elevenlabs_voice_tool"
@@ -2001,7 +1985,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "purpose",
       "id": "productionstudio_tools_elevenlabs_voice_tool_purpose"
@@ -2012,7 +1996,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "interface",
       "id": "productionstudio_tools_elevenlabs_voice_tool_interface"
@@ -2023,7 +2007,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "default provider notes (elevenlabs, verify against current docs before building)",
       "id": "productionstudio_tools_elevenlabs_voice_tool_default_provider_notes_elevenlabs_verify_against_current_docs_before_building"
@@ -2034,7 +2018,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L47",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "implementation notes",
       "id": "productionstudio_tools_elevenlabs_voice_tool_implementation_notes"
@@ -2045,7 +2029,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L53",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "stage 1/2 live-test result (2026-07-19)",
       "id": "productionstudio_tools_elevenlabs_voice_tool_stage_1_2_live_test_result_2026_07_19"
@@ -2056,7 +2040,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L87",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "background music \u2014 stage 2 live-test attempt (2026-07-19)",
       "id": "productionstudio_tools_elevenlabs_voice_tool_background_music_stage_2_live_test_attempt_2026_07_19"
@@ -2067,7 +2051,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L112",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "real-timestamp captioning \u2014 fixed endpoint choice (2026-07-21)",
       "id": "productionstudio_tools_elevenlabs_voice_tool_real_timestamp_captioning_fixed_endpoint_choice_2026_07_21"
@@ -2078,7 +2062,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L126",
       "_origin": "ast",
-      "community": 15,
+      "community": 14,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "gap closure (2026-07-19) \u2014 concrete fix for the two shape mismatches above",
       "id": "productionstudio_tools_elevenlabs_voice_tool_gap_closure_2026_07_19_concrete_fix_for_the_two_shape_mismatches_above"
@@ -2089,7 +2073,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 0,
       "community_name": "Production Agents & Style Rules",
       "norm_label": "image_gen_tool.md",
       "id": "productionstudio_tools_image_gen_tool"
@@ -2100,7 +2084,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 13,
+      "community": 15,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "tool: image_gen_tool",
       "id": "productionstudio_tools_image_gen_tool_tool_image_gen_tool"
@@ -2111,7 +2095,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 13,
+      "community": 15,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "purpose",
       "id": "productionstudio_tools_image_gen_tool_purpose"
@@ -2122,7 +2106,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 13,
+      "community": 15,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "interface",
       "id": "productionstudio_tools_image_gen_tool_interface"
@@ -2133,7 +2117,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 13,
+      "community": 15,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "default provider: fal.ai + flux",
       "id": "productionstudio_tools_image_gen_tool_default_provider_fal_ai_flux"
@@ -2144,7 +2128,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 13,
+      "community": 15,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "stage 2 live-test result (2026-07-19)",
       "id": "productionstudio_tools_image_gen_tool_stage_2_live_test_result_2026_07_19"
@@ -2155,7 +2139,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L49",
       "_origin": "ast",
-      "community": 13,
+      "community": 15,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "fallback / secondary providers (keep the interface provider-agnostic)",
       "id": "productionstudio_tools_image_gen_tool_fallback_secondary_providers_keep_the_interface_provider_agnostic"
@@ -2166,7 +2150,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L68",
       "_origin": "ast",
-      "community": 13,
+      "community": 15,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "stage 4 live-test result (2026-07-20/21) \u2014 confirmed working through n8n, not just direct python",
       "id": "productionstudio_tools_image_gen_tool_stage_4_live_test_result_2026_07_20_21_confirmed_working_through_n8n_not_just_direct_python"
@@ -2177,65 +2161,10 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L76",
       "_origin": "ast",
-      "community": 13,
+      "community": 15,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "implementation notes",
       "id": "productionstudio_tools_image_gen_tool_implementation_notes"
-    },
-    {
-      "label": "youtube_publish_tool.md",
-      "file_type": "document",
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "Project Stack & Policies",
-      "norm_label": "youtube_publish_tool.md",
-      "id": "productionstudio_tools_youtube_publish_tool"
-    },
-    {
-      "label": "Tool: youtube_publish_tool",
-      "file_type": "document",
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "Project Stack & Policies",
-      "norm_label": "tool: youtube_publish_tool",
-      "id": "productionstudio_tools_youtube_publish_tool_tool_youtube_publish_tool"
-    },
-    {
-      "label": "Purpose",
-      "file_type": "document",
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": "L3",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "Project Stack & Policies",
-      "norm_label": "purpose",
-      "id": "productionstudio_tools_youtube_publish_tool_purpose"
-    },
-    {
-      "label": "Interface",
-      "file_type": "document",
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": "L8",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "Project Stack & Policies",
-      "norm_label": "interface",
-      "id": "productionstudio_tools_youtube_publish_tool_interface"
-    },
-    {
-      "label": "Implementation notes",
-      "file_type": "document",
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": "L17",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "Project Stack & Policies",
-      "norm_label": "implementation notes",
-      "id": "productionstudio_tools_youtube_publish_tool_implementation_notes"
     },
     {
       "label": "KICKOFF_PROMPT.md",
@@ -2246,7 +2175,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "kickoff_prompt.md",
       "community_name": "Project Stack & Policies",
       "id": "kickoff_prompt"
@@ -2260,7 +2189,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 9,
       "norm_label": "fact verification agent",
       "community_name": "Project Stack & Policies",
       "id": "productionstudio_agents_fact_verification_agent"
@@ -2274,7 +2203,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "image generation agent",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_agents_image_generation_agent"
@@ -2288,7 +2217,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 0,
       "norm_label": "image planning agent",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "productionstudio_agents_image_planning_agent"
@@ -2302,7 +2231,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "publishing agent",
       "community_name": "Project Stack & Policies",
       "id": "productionstudio_agents_publishing_agent"
@@ -2316,7 +2245,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "quality control agent",
       "community_name": "Project Stack & Policies",
       "id": "productionstudio_agents_quality_control_agent"
@@ -2330,7 +2259,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 9,
       "norm_label": "research agent",
       "community_name": "Research Agent",
       "id": "productionstudio_agents_research_agent"
@@ -2344,7 +2273,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "scene planner agent",
       "community_name": "Script \u2014 {CASE_NAME}",
       "id": "productionstudio_agents_scene_planner_agent"
@@ -2358,7 +2287,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 9,
       "norm_label": "seo agent",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_agents_seo_agent"
@@ -2372,7 +2301,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 7,
       "norm_label": "shorts agent",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_agents_shorts_agent"
@@ -2386,7 +2315,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 9,
       "norm_label": "story agent",
       "community_name": "Project Stack & Policies",
       "id": "productionstudio_agents_story_agent"
@@ -2400,7 +2329,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 0,
       "norm_label": "thumbnail agent",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "productionstudio_agents_thumbnail_agent"
@@ -2414,7 +2343,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "tool manager agent",
       "community_name": "Project Stack & Policies",
       "id": "productionstudio_agents_tool_manager_agent"
@@ -2428,7 +2357,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "video assembly agent",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_agents_video_assembly_agent"
@@ -2442,7 +2371,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "voice production agent",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_agents_voice_production_agent"
@@ -2456,7 +2385,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "productionstudio/assets readme",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_assets_readme"
@@ -2470,7 +2399,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 0,
       "norm_label": "brendan banfield case checklist",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "productionstudio_cases_brendan_banfield_double_murder_checklist"
@@ -2484,7 +2413,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 0,
       "norm_label": "brendan banfield case imageprompts",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "productionstudio_cases_brendan_banfield_double_murder_imageprompts"
@@ -2498,7 +2427,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 11,
       "norm_label": "brendan banfield case personphotos",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "productionstudio_cases_brendan_banfield_double_murder_personphotos"
@@ -2512,7 +2441,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 0,
       "norm_label": "brendan banfield case publishplan",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "productionstudio_cases_brendan_banfield_double_murder_publishplan"
@@ -2526,7 +2455,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "template \u2014 voiceover.txt",
       "id": "productionstudio_templates_voiceover"
     },
@@ -2539,7 +2468,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "tools/remotion_assembly_tool.md (referenced, not read this chunk)",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tools_remotion_assembly_tool"
@@ -2553,7 +2482,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "tools/royalty_free_music_tool.md (referenced, not read this chunk)",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tools_royalty_free_music_tool"
@@ -2567,7 +2496,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 11,
       "norm_label": "tools/mugshot_fetch_tool.md (referenced, not read this chunk)",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tools_mugshot_fetch_tool"
@@ -2581,7 +2510,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 9,
       "norm_label": "cases/covered_cases.json (referenced, not read this chunk)",
       "community_name": "Research Agent",
       "id": "productionstudio_cases_covered_cases"
@@ -2595,7 +2524,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "tests/stage1_tool_manager_agent_test.md (referenced, not read this chunk)",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage1_tool_manager_agent_test"
@@ -2609,7 +2538,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "fatal-affairs-project-brief.md (referenced, not read this chunk)",
       "community_name": "Project Stack & Policies",
       "id": "fatal_affairs_project_brief"
@@ -2623,7 +2552,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 0,
       "norm_label": "brendan banfield case scenelist.json (referenced, not read this chunk)",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "productionstudio_cases_brendan_banfield_double_murder_scenelist"
@@ -2637,7 +2566,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "human-gated publishing rule (rationale: publishing is irreversible/public, no exceptions even in a fully automated pipeline)",
       "community_name": "Project Stack & Policies",
       "id": "concept_human_gated_publishing"
@@ -2651,7 +2580,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "tool management policy: never solve the same problem twice (rationale: avoid duplicate/competing tools)",
       "community_name": "Project Stack & Policies",
       "id": "concept_tool_reuse_policy"
@@ -2665,7 +2594,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 9,
       "norm_label": "no-clickbait-lies policy (rationale: true-crime audiences disengage from fake mystery/oversold claims)",
       "community_name": "Production Agents & Style Rules",
       "id": "concept_no_clickbait_lies_policy"
@@ -2679,7 +2608,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "shorts release pacing rule: one strong short day-of, remaining shorts one per day after (rationale: avoid dumping all 5 shorts on day one)",
       "community_name": "Project Stack & Policies",
       "id": "concept_shorts_release_pacing"
@@ -2693,7 +2622,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "scene_id convention shared across scene planner, voice, image, assembly agents",
       "community_name": "Script \u2014 {CASE_NAME}",
       "id": "concept_scene_id_convention"
@@ -2707,7 +2636,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "checklist_status field (renamed from 'status' 2026-07-20 so it exactly matches publishing agent's gating input)",
       "community_name": "Project Stack & Policies",
       "id": "concept_checklist_status_field"
@@ -2721,7 +2650,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "[[scene:nnnn]] inline marker convention (rationale: naive word-count estimates drifted 74% from real audio, so real caption/scene timing must come from elevenlabs per-character alignment, not estimation)",
       "community_name": "Production Agents & Style Rules",
       "id": "concept_scene_marker_convention"
@@ -2735,7 +2664,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 9,
       "norm_label": "research source priority list (fbi/doj/court docs/ap/courttv/law&crime/oxygen; wikipedia timeline-only; reddit sentiment-only)",
       "community_name": "Research Agent",
       "id": "concept_source_priority_list"
@@ -2749,7 +2678,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 9,
       "norm_label": "discovery sources for candidate cases (doj/usao press feeds, r/truecrime, r/unresolvedmysteries, websleuths) distinct from the citation source list",
       "community_name": "Research Agent",
       "id": "concept_discovery_sources"
@@ -2763,7 +2692,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 0,
       "norm_label": "channel fixed visual brand style (photorealistic, cinematic, 35mm, 16:9, dark backgrounds, colors #111111/#ffffff/#a30e15/#4d4d4d/#bdbdbd, bebas neue/oswald headline)",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "concept_brand_style"
@@ -2777,7 +2706,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 9,
       "norm_label": "fixed 10-beat script structure: hook, conflict, mystery, escalation, evidence, twist, investigation, final reveal, aftermath, question",
       "community_name": "Project Stack & Policies",
       "id": "concept_fixed_10_beat_structure"
@@ -2791,7 +2720,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 11,
       "norm_label": "track 1 mugshot redaction policy (haar-cascade face+eye detection, eyes_blacked, raw file kept only for verification, never used in output)",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "concept_thumbnail_redaction_policy"
@@ -2805,7 +2734,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 0,
       "norm_label": "brendan banfield",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "entity_brendan_banfield"
@@ -2819,7 +2748,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 0,
       "norm_label": "christine banfield",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "entity_christine_banfield"
@@ -2833,7 +2762,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 0,
       "norm_label": "joseph ryan",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "entity_joseph_ryan"
@@ -2847,7 +2776,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 11,
       "norm_label": "juliana peres magalhaes",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "entity_juliana_peres_magalhaes"
@@ -2861,7 +2790,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 9,
       "norm_label": "shanna golyar",
       "community_name": "Project Stack & Policies",
       "id": "entity_shanna_golyar"
@@ -2875,7 +2804,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 11,
       "norm_label": "fairfax county police department",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "entity_fairfax_county_police_department"
@@ -2889,7 +2818,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 11,
       "norm_label": "wjla (news outlet)",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "entity_wjla"
@@ -3477,7 +3406,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 7,
       "norm_label": "kouri richins case \u2014 checklist.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_checklist"
@@ -3491,7 +3420,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 7,
       "norm_label": "kouri richins case \u2014 factcheck.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_factcheck"
@@ -3505,7 +3434,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 7,
       "norm_label": "kouri richins case \u2014 imageprompts.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_imageprompts"
@@ -3519,7 +3448,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 7,
       "norm_label": "kouri richins case \u2014 publishplan.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_publishplan"
@@ -3533,7 +3462,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 7,
       "norm_label": "kouri richins case \u2014 seo.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_seo"
@@ -3547,7 +3476,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 7,
       "norm_label": "kouri richins case \u2014 script.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_script"
@@ -3561,7 +3490,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 7,
       "norm_label": "kouri richins case \u2014 shorts.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_shorts"
@@ -3575,7 +3504,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 9,
       "norm_label": "kouri richins case \u2014 sources.md",
       "community_name": "Research Agent",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_sources"
@@ -3589,7 +3518,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 7,
       "norm_label": "kouri richins case \u2014 thumbnail.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_thumbnail"
@@ -3603,7 +3532,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 7,
       "norm_label": "kouri richins case \u2014 voiceover.txt",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_voiceover"
@@ -3617,7 +3546,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 9,
       "norm_label": "sonam raghuvanshi case \u2014 sources.md",
       "community_name": "Research Agent",
       "id": "productionstudio_cases_sonam_raghuvanshi_honeymoon_murder_sources"
@@ -3631,7 +3560,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "documentation \u2014 self_improvement_process.md",
       "community_name": "Project Stack & Policies",
       "id": "productionstudio_documentation_self_improvement_process"
@@ -3645,7 +3574,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 7,
       "norm_label": "kouri richins",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_sources_kouri_richins"
@@ -3659,7 +3588,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 7,
       "norm_label": "eric richins",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_sources_eric_richins"
@@ -3673,7 +3602,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 7,
       "norm_label": "robert josh grossman",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_sources_robert_josh_grossman"
@@ -3687,7 +3616,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 7,
       "norm_label": "carmen lauber",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_sources_carmen_lauber"
@@ -3701,7 +3630,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 7,
       "norm_label": "\"are you with me?\" (children's grief book)",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_sources_are_you_with_me_book"
@@ -3715,7 +3644,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 7,
       "norm_label": "judge richard mrazik",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_sources_judge_richard_mrazik"
@@ -3729,7 +3658,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 28,
       "norm_label": "\"agent\" as a stateless system-prompt api call",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_documentation_architecture_agent_as_stateless_api_call"
@@ -3743,7 +3672,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 10,
       "norm_label": "orchestration decision \u2014 no n8n / no standalone api key for phase 1",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_documentation_architecture_no_n8n_phase1_decision"
@@ -3757,7 +3686,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 7,
       "norm_label": "channel intro bumper requirement",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_documentation_architecture_channel_intro_bumper_requirement"
@@ -3771,7 +3700,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 7,
       "norm_label": "shorts visual style requirement",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_documentation_architecture_shorts_visual_style_requirement"
@@ -3785,7 +3714,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 11,
       "norm_label": "real-photo sourcing decision (mugshot/redaction policy)",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_documentation_architecture_real_photo_sourcing_decision"
@@ -3799,7 +3728,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 9,
       "norm_label": "trend-grounding requirement",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_documentation_architecture_trend_grounding_requirement"
@@ -3813,7 +3742,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "background music requirement",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_documentation_architecture_background_music_requirement"
@@ -3827,7 +3756,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "file-based self-improvement loop",
       "community_name": "Project Stack & Policies",
       "id": "productionstudio_documentation_self_improvement_process_self_improvement_loop"
@@ -3841,7 +3770,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 7,
       "norm_label": "flux schnell on-screen text rendering limitation",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_checklist_flux_text_rendering_limitation"
@@ -3855,7 +3784,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 9,
       "norm_label": "fact check tool stage 2 test",
       "community_name": "Research Agent",
       "id": "productionstudio_tests_stage2_fact_check_tool_test"
@@ -3869,7 +3798,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 11,
       "norm_label": "mugshot tool stage 2 test",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage2_mugshot_tool_test"
@@ -3883,7 +3812,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 11,
       "norm_label": "seo export & github sync stage 2 test",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage2_seo_export_and_github_sync_test"
@@ -3897,7 +3826,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "stage 3 two-node link audit",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage3_link_audit"
@@ -3911,7 +3840,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "stage 4 full 14-agent pipeline n8n test",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage4_full_pipeline_n8n_test"
@@ -3925,7 +3854,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "n8n local bootstrap test",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage4_n8n_local_bootstrap"
@@ -3939,7 +3868,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "remotion local render test",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage4_remotion_local_render_test"
@@ -3953,7 +3882,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 9,
       "norm_label": "fact check tool",
       "community_name": "Research Agent",
       "id": "productionstudio_tools_fact_check_tool"
@@ -3967,7 +3896,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 11,
       "norm_label": "github sync tool",
       "community_name": "Project Stack & Policies",
       "id": "productionstudio_tools_github_sync_tool"
@@ -3981,7 +3910,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 11,
       "norm_label": "seo export tool",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tools_seo_export_tool"
@@ -3995,7 +3924,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "pipeline overview",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_workflows_pipeline_overview"
@@ -4009,7 +3938,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 27,
+      "community": 29,
       "norm_label": "yt-studio readme",
       "community_name": "Repo Root README",
       "id": "readme"
@@ -4023,7 +3952,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "orchestration decision: claude code direct execution over n8n",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage4_full_pipeline_n8n_test_orchestration_decision"
@@ -4037,7 +3966,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "extend_existing output shape",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage1_tool_manager_agent_test_extend_existing_shape"
@@ -4051,7 +3980,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "real per-word caption alignment fix",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tools_remotion_assembly_tool_caption_alignment_fix"
@@ -4065,7 +3994,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 11,
       "norm_label": "outlet-attribution exception for track 1 mugshots",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tools_mugshot_fetch_tool_outlet_attribution_exception"
@@ -4079,7 +4008,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 9,
       "norm_label": "fixed source priority ranking",
       "community_name": "Research Agent",
       "id": "productionstudio_tools_fact_check_tool_source_ranking"
@@ -4093,7 +4022,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 11,
       "norm_label": "automated eye redaction method (opencv haar cascades)",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tools_mugshot_fetch_tool_eye_redaction_automation"
@@ -4107,7 +4036,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 11,
       "norm_label": "royalty-free music sourcing decision",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tools_royalty_free_music_tool_sourcing_decision"
@@ -4121,7 +4050,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "mixed opus/sonnet model cost optimization",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage4_full_pipeline_n8n_test_mixed_model_cost_optimization"
@@ -4135,7 +4064,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "elevenlabs concurrency and n8n batching fixes",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage4_full_pipeline_n8n_test_concurrency_fixes"
@@ -4149,7 +4078,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "cli-driven vs ui-driven n8n automation finding",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage4_n8n_local_bootstrap_cli_vs_ui_finding"
@@ -4163,7 +4092,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "clause-boundary caption chunking issue (unresolved)",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tools_remotion_assembly_tool_caption_chunking_issue"
@@ -4177,7 +4106,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "trailing meta-prose narration bug fix",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage4_full_pipeline_n8n_test_trailing_prose_bug"
@@ -4191,7 +4120,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "template \u2014 checklist.md",
       "id": "productionstudio_templates_checklist"
     },
@@ -4204,7 +4133,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 0,
       "norm_label": "template \u2014 imageprompts.md",
       "id": "productionstudio_templates_imageprompts"
     },
@@ -4217,7 +4146,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 11,
       "norm_label": "template \u2014 seo.md",
       "id": "productionstudio_templates_seo"
     },
@@ -4230,7 +4159,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 0,
       "norm_label": "template \u2014 script.md",
       "id": "productionstudio_templates_script"
     },
@@ -4243,7 +4172,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 7,
       "norm_label": "template \u2014 shorts.md",
       "id": "productionstudio_templates_shorts"
     },
@@ -4256,7 +4185,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 9,
       "norm_label": "template \u2014 sources.md",
       "id": "productionstudio_templates_sources"
     },
@@ -4269,7 +4198,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 9,
       "norm_label": "template \u2014 successrules.md",
       "id": "productionstudio_templates_successrules"
     },
@@ -4282,7 +4211,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 9,
+      "community": 7,
       "norm_label": "template \u2014 thumbnail.md",
       "id": "productionstudio_templates_thumbnail"
     },
@@ -4295,7 +4224,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "qc checklist",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_checklist_doc"
     },
@@ -4308,7 +4237,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "fact-check report",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_factcheck_doc"
     },
@@ -4321,7 +4250,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "image prompts",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_imageprompts_doc"
     },
@@ -4334,7 +4263,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "person photos research",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_personphotos_doc"
     },
@@ -4347,7 +4276,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "publish plan",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_doc"
     },
@@ -4360,7 +4289,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "seo metadata",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_seo_doc"
     },
@@ -4373,7 +4302,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "video script",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_script_doc"
     },
@@ -4386,7 +4315,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "shorts plan",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_shorts_doc"
     },
@@ -4399,7 +4328,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "sources table",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_sources_doc"
     },
@@ -4412,7 +4341,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "thumbnail design",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_thumbnail_doc"
     },
@@ -4425,7 +4354,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "voiceover text (chaptered)",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_voiceover_doc"
     },
@@ -4438,7 +4367,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "monica sementilli",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_script_monica_sementilli"
     },
@@ -4451,7 +4380,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "fabio sementilli",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_script_fabio_sementilli"
     },
@@ -4464,7 +4393,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "robert louis baker",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_script_robert_baker"
     },
@@ -4477,7 +4406,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "christopher austin",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_script_christopher_austin"
     },
@@ -4490,7 +4419,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "isabella sementilli (daughter, found body)",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_script_isabella_sementilli"
     },
@@ -4503,7 +4432,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "gessica sementilli (daughter)",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_script_gessica_sementilli"
     },
@@ -4516,7 +4445,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "detective mitzi roberts (lapd)",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_script_detective_mitzi_roberts"
     },
@@ -4529,7 +4458,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "judge ronald coen",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_script_judge_ronald_coen"
     },
@@ -4542,7 +4471,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "da nathan hochman",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_script_da_nathan_hochman"
     },
@@ -4555,7 +4484,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "lapd robbery-homicide division",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_script_lapd_robbery_homicide_division"
     },
@@ -4568,7 +4497,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "wella (procter & gamble salon-professional division)",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_script_wella"
     },
@@ -4581,7 +4510,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "viber (encrypted messaging app used as evidence)",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_script_viber_app"
     },
@@ -4594,7 +4523,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "$1.6m life insurance motive",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_script_life_insurance_motive"
     },
@@ -4607,7 +4536,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "surveillance-video evidence (monica watching live feed)",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_script_surveillance_video_evidence"
     },
@@ -4620,7 +4549,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "funeral sexting detail (monica/baker at fabio's funeral)",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_script_funeral_sexting_detail"
     },
@@ -4633,7 +4562,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "'knock-knock burglars' initial theory",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_script_knock_knock_burglars_theory"
     },
@@ -4646,7 +4575,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "austin's stabbing role flagged as ambiguous, not asserted in script - rationale: only one summarized source phrased it ambiguously, not cleanly corroborated across outlets",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_factcheck_austin_role_ambiguity"
     },
@@ -4659,7 +4588,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "monica's reaction quote attributed to cbs 48 hours, not stated as bare fact - rationale: single-outlet framing, not independently re-confirmed word-for-word",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_factcheck_monica_reaction_quote_attribution"
     },
@@ -4672,7 +4601,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "scene 0056 garbled-text qc fix - rationale: fal.ai flux schnell can't render legible on-screen text, so prompt rewritten to describe illegible document",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_checklist_scene_0056_garbled_text_fix"
     },
@@ -4685,7 +4614,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "scene 0062 tonal-mismatch qc fix - rationale: original video-wall render was tonally wrong, rewritten to simple tv-glow shot",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_checklist_scene_0062_tonal_mismatch_fix"
     },
@@ -4698,7 +4627,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "kouri richins production precedent (prior case that left person-photo gap undocumented)",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_checklist_kouri_richins_precedent"
     },
@@ -4711,7 +4640,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "opencv eye-redaction step (used previously for the banfield mugshot)",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_personphotos_opencv_eye_redaction_step"
     },
@@ -4724,7 +4653,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "tools/mugshot_fetch_tool.md (mugshot fetch tool spec)",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_personphotos_mugshot_fetch_tool"
     },
@@ -4737,7 +4666,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "agents/publishing_agent.md (human-confirmation publish gate)",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_publishing_agent"
     },
@@ -4750,7 +4679,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "agents/shorts_agent.md (shorts visual style spec)",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_shorts_shorts_agent"
     },
@@ -4763,7 +4692,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "generate_case_assets.py (fal.ai/elevenlabs allowlisted asset generator)",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_personphotos_generate_case_assets_tool"
     },
@@ -4776,7 +4705,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "assets/audio/.../timing.json (real elevenlabs voice timing)",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_checklist_timing_json"
     },
@@ -4789,7 +4718,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "scenelist.json (estimated scene/runtime plan)",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_checklist_scenelist_json"
     },
@@ -4802,7 +4731,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "lapd press release on arrests (403'd to automated fetch)",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_personphotos_lapd_press_release"
     },
@@ -4815,7 +4744,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "cdcr inmate locator (interactive form, not automatable)",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_personphotos_cdcr_inmate_locator"
     },
@@ -4828,7 +4757,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "abc7 sentencing-day photo (blocked download, never used)",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_personphotos_abc7_sentencing_photo"
     },
@@ -4841,7 +4770,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "cbs 48 hours photo of baker and monica at fabio's wake (not pursued, licensing unclear)",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_personphotos_cbs_48hours_baker_monica_photo"
     },
@@ -4854,7 +4783,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "la county da press release - verdict/charges/statement",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_sources_da_lacounty_press_release"
     },
@@ -4867,7 +4796,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "la county sentencing announcement",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_sources_lacounty_sentencing_announcement"
     },
@@ -4880,7 +4809,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "abc7 los angeles article - motive/relationship/austin testimony",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_sources_abc7_article"
     },
@@ -4893,7 +4822,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "cbs news article - insurance figure/wella role/austin plea",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_sources_cbsnews_amp_article"
     },
@@ -4906,7 +4835,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "yahoo news (ap) article - surveillance video/viber counts/funeral sexting",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_sources_yahoo_ap_article"
     },
@@ -4919,7 +4848,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "cbs news 48 hours article - body discovery/family background/8-year delay",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_sources_cbsnews_48hours_article"
     },
@@ -4932,7 +4861,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "nbc dateline / people magazine investigates coverage (search-summary corroboration)",
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_sources_nbc_dateline_people_coverage"
     },
@@ -4942,9 +4871,9 @@
       "source_file": ".claude/settings.json",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "claude_settings",
-      "community": 12,
-      "norm_label": "settings.json"
+      "community": 13,
+      "norm_label": "settings.json",
+      "id": "claude_settings"
     },
     {
       "label": "$schema",
@@ -4952,9 +4881,9 @@
       "source_file": ".claude/settings.json",
       "source_location": "L2",
       "_origin": "ast",
-      "id": "claude_settings_schema",
-      "community": 12,
-      "norm_label": "$schema"
+      "community": 13,
+      "norm_label": "$schema",
+      "id": "claude_settings_schema"
     },
     {
       "label": "permissions",
@@ -4962,9 +4891,9 @@
       "source_file": ".claude/settings.json",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "claude_settings_permissions",
-      "community": 12,
-      "norm_label": "permissions"
+      "community": 13,
+      "norm_label": "permissions",
+      "id": "claude_settings_permissions"
     },
     {
       "label": "defaultMode",
@@ -4972,9 +4901,9 @@
       "source_file": ".claude/settings.json",
       "source_location": "L4",
       "_origin": "ast",
-      "id": "claude_settings_permissions_defaultmode",
-      "community": 12,
-      "norm_label": "defaultmode"
+      "community": 13,
+      "norm_label": "defaultmode",
+      "id": "claude_settings_permissions_defaultmode"
     },
     {
       "label": "deny",
@@ -4982,9 +4911,9 @@
       "source_file": ".claude/settings.json",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "claude_settings_permissions_deny",
-      "community": 12,
-      "norm_label": "deny"
+      "community": 13,
+      "norm_label": "deny",
+      "id": "claude_settings_permissions_deny"
     },
     {
       "label": "Read(./.env)",
@@ -4992,9 +4921,9 @@
       "source_file": ".claude/settings.json",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "ref_read_env",
-      "community": 12,
-      "norm_label": "read(./.env)"
+      "community": 13,
+      "norm_label": "read(./.env)",
+      "id": "ref_read_env"
     },
     {
       "label": "Read(./**/secrets/**)",
@@ -5002,9 +4931,9 @@
       "source_file": ".claude/settings.json",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "ref_read_secrets",
-      "community": 12,
-      "norm_label": "read(./**/secrets/**)"
+      "community": 13,
+      "norm_label": "read(./**/secrets/**)",
+      "id": "ref_read_secrets"
     },
     {
       "label": "Read(~/.ssh/**)",
@@ -5012,9 +4941,9 @@
       "source_file": ".claude/settings.json",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "ref_read_ssh",
-      "community": 12,
-      "norm_label": "read(~/.ssh/**)"
+      "community": 13,
+      "norm_label": "read(~/.ssh/**)",
+      "id": "ref_read_ssh"
     },
     {
       "label": "Read(~/.aws/credentials)",
@@ -5022,9 +4951,9 @@
       "source_file": ".claude/settings.json",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "ref_read_aws_credentials",
-      "community": 12,
-      "norm_label": "read(~/.aws/credentials)"
+      "community": 13,
+      "norm_label": "read(~/.aws/credentials)",
+      "id": "ref_read_aws_credentials"
     },
     {
       "label": "Bash(curl *)",
@@ -5032,9 +4961,9 @@
       "source_file": ".claude/settings.json",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "ref_bash_curl",
-      "community": 12,
-      "norm_label": "bash(curl *)"
+      "community": 13,
+      "norm_label": "bash(curl *)",
+      "id": "ref_bash_curl"
     },
     {
       "label": "ask",
@@ -5042,9 +4971,9 @@
       "source_file": ".claude/settings.json",
       "source_location": "L13",
       "_origin": "ast",
-      "id": "claude_settings_permissions_ask",
-      "community": 12,
-      "norm_label": "ask"
+      "community": 13,
+      "norm_label": "ask",
+      "id": "claude_settings_permissions_ask"
     },
     {
       "label": "Bash(git push *)",
@@ -5052,9 +4981,9 @@
       "source_file": ".claude/settings.json",
       "source_location": "L13",
       "_origin": "ast",
-      "id": "ref_bash_git_push",
-      "community": 12,
-      "norm_label": "bash(git push *)"
+      "community": 13,
+      "norm_label": "bash(git push *)",
+      "id": "ref_bash_git_push"
     },
     {
       "label": "Bash(gh pr merge *)",
@@ -5062,9 +4991,9 @@
       "source_file": ".claude/settings.json",
       "source_location": "L13",
       "_origin": "ast",
-      "id": "ref_bash_gh_pr_merge",
-      "community": 12,
-      "norm_label": "bash(gh pr merge *)"
+      "community": 13,
+      "norm_label": "bash(gh pr merge *)",
+      "id": "ref_bash_gh_pr_merge"
     },
     {
       "label": "hooks",
@@ -5072,9 +5001,9 @@
       "source_file": ".claude/settings.json",
       "source_location": "L18",
       "_origin": "ast",
-      "id": "claude_settings_hooks",
-      "community": 12,
-      "norm_label": "hooks"
+      "community": 13,
+      "norm_label": "hooks",
+      "id": "claude_settings_hooks"
     },
     {
       "label": "PreToolUse",
@@ -5082,9 +5011,9 @@
       "source_file": ".claude/settings.json",
       "source_location": "L19",
       "_origin": "ast",
-      "id": "claude_settings_hooks_pretooluse",
-      "community": 12,
-      "norm_label": "pretooluse"
+      "community": 13,
+      "norm_label": "pretooluse",
+      "id": "claude_settings_hooks_pretooluse"
     },
     {
       "label": "Fatal Affairs (channel)",
@@ -5095,9 +5024,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_fatal_affairs_channel",
       "community": 17,
-      "norm_label": "fatal affairs (channel)"
+      "norm_label": "fatal affairs (channel)",
+      "id": "claude_md_fatal_affairs_channel"
     },
     {
       "label": "ProductionStudio (studio memory)",
@@ -5108,9 +5037,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_production_studio",
       "community": 18,
-      "norm_label": "productionstudio (studio memory)"
+      "norm_label": "productionstudio (studio memory)",
+      "id": "claude_md_production_studio"
     },
     {
       "label": "Phase 1: manual production",
@@ -5121,9 +5050,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_phase_1_manual_production",
       "community": 17,
-      "norm_label": "phase 1: manual production"
+      "norm_label": "phase 1: manual production",
+      "id": "claude_md_phase_1_manual_production"
     },
     {
       "label": "Phase 2: full automated pipeline",
@@ -5134,9 +5063,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_phase_2_automation",
       "community": 17,
-      "norm_label": "phase 2: full automated pipeline"
+      "norm_label": "phase 2: full automated pipeline",
+      "id": "claude_md_phase_2_automation"
     },
     {
       "label": "Human-gated publishing rule",
@@ -5147,9 +5076,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_publish_human_gate_rule",
-      "community": 21,
-      "norm_label": "human-gated publishing rule"
+      "community": 22,
+      "norm_label": "human-gated publishing rule",
+      "id": "claude_md_publish_human_gate_rule"
     },
     {
       "label": "Check tool registry before writing new tools",
@@ -5160,9 +5089,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_tool_registry_reuse_rule",
-      "community": 22,
-      "norm_label": "check tool registry before writing new tools"
+      "community": 23,
+      "norm_label": "check tool registry before writing new tools",
+      "id": "claude_md_tool_registry_reuse_rule"
     },
     {
       "label": "Test agents/tools in isolation before wiring",
@@ -5173,9 +5102,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_isolation_testing_rule",
-      "community": 20,
-      "norm_label": "test agents/tools in isolation before wiring"
+      "community": 21,
+      "norm_label": "test agents/tools in isolation before wiring",
+      "id": "claude_md_isolation_testing_rule"
     },
     {
       "label": "Knowledge graph as project's actual memory",
@@ -5186,9 +5115,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_graphify_memory_principle",
       "community": 18,
-      "norm_label": "knowledge graph as project's actual memory"
+      "norm_label": "knowledge graph as project's actual memory",
+      "id": "claude_md_graphify_memory_principle"
     },
     {
       "label": "Query graph before grep/read-cold rule",
@@ -5199,9 +5128,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_graphify_query_first_rule",
       "community": 18,
-      "norm_label": "query graph before grep/read-cold rule"
+      "norm_label": "query graph before grep/read-cold rule",
+      "id": "claude_md_graphify_query_first_rule"
     },
     {
       "label": "Bare `graphify update .` is AST-only, skips docs",
@@ -5212,9 +5141,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_graphify_doc_vs_code_gap",
-      "community": 6,
-      "norm_label": "bare `graphify update .` is ast-only, skips docs"
+      "community": 19,
+      "norm_label": "bare `graphify update .` is ast-only, skips docs",
+      "id": "claude_md_graphify_doc_vs_code_gap"
     },
     {
       "label": "Required full /graphify --update flow after doc edits",
@@ -5225,9 +5154,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_graphify_full_update_flow",
-      "community": 6,
-      "norm_label": "required full /graphify --update flow after doc edits"
+      "community": 19,
+      "norm_label": "required full /graphify --update flow after doc edits",
+      "id": "claude_md_graphify_full_update_flow"
     },
     {
       "label": "Monica Sementilli case went un-indexed (stale-graph incident)",
@@ -5238,9 +5167,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_monica_sementilli_stale_incident",
-      "community": 6,
-      "norm_label": "monica sementilli case went un-indexed (stale-graph incident)"
+      "community": 19,
+      "norm_label": "monica sementilli case went un-indexed (stale-graph incident)",
+      "id": "claude_md_monica_sementilli_stale_incident"
     },
     {
       "label": "Don't force a shrinking merge unless stubs confirmed",
@@ -5251,9 +5180,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_graphify_merge_shrink_guard",
-      "community": 6,
-      "norm_label": "don't force a shrinking merge unless stubs confirmed"
+      "community": 19,
+      "norm_label": "don't force a shrinking merge unless stubs confirmed",
+      "id": "claude_md_graphify_merge_shrink_guard"
     },
     {
       "label": "Russian in chat, English in code/docs",
@@ -5264,9 +5193,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_language_policy",
       "community": 17,
-      "norm_label": "russian in chat, english in code/docs"
+      "norm_label": "russian in chat, english in code/docs",
+      "id": "claude_md_language_policy"
     },
     {
       "label": "Plain code, no speculative abstractions/new scaffold",
@@ -5277,9 +5206,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_style_policy",
-      "community": 25,
-      "norm_label": "plain code, no speculative abstractions/new scaffold"
+      "community": 27,
+      "norm_label": "plain code, no speculative abstractions/new scaffold",
+      "id": "claude_md_style_policy"
     },
     {
       "label": "Molly Watson / James Addie script (first real test case)",
@@ -5290,9 +5219,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_molly_watson_test_case",
       "community": 17,
-      "norm_label": "molly watson / james addie script (first real test case)"
+      "norm_label": "molly watson / james addie script (first real test case)",
+      "id": "claude_md_molly_watson_test_case"
     },
     {
       "label": "ProductionStudio/Documentation/ARCHITECTURE.md",
@@ -5303,9 +5232,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_architecture_doc_ref",
       "community": 18,
-      "norm_label": "productionstudio/documentation/architecture.md"
+      "norm_label": "productionstudio/documentation/architecture.md",
+      "id": "claude_md_architecture_doc_ref"
     },
     {
       "label": "Agents/publishing_agent.md",
@@ -5316,9 +5245,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_publishing_agent_ref",
-      "community": 21,
-      "norm_label": "agents/publishing_agent.md"
+      "community": 22,
+      "norm_label": "agents/publishing_agent.md",
+      "id": "claude_md_publishing_agent_ref"
     },
     {
       "label": "ProductionStudio/Tests/TEST_PLAN.md",
@@ -5329,9 +5258,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_test_plan_ref",
-      "community": 20,
-      "norm_label": "productionstudio/tests/test_plan.md"
+      "community": 21,
+      "norm_label": "productionstudio/tests/test_plan.md",
+      "id": "claude_md_test_plan_ref"
     },
     {
       "label": "ProductionStudio/Tools/tool_registry.json",
@@ -5342,9 +5271,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_tool_registry_ref",
-      "community": 22,
-      "norm_label": "productionstudio/tools/tool_registry.json"
+      "community": 23,
+      "norm_label": "productionstudio/tools/tool_registry.json",
+      "id": "claude_md_tool_registry_ref"
     },
     {
       "label": "ProductionStudio/Tools/image_gen_tool.md",
@@ -5355,9 +5284,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_image_gen_tool_ref",
-      "community": 19,
-      "norm_label": "productionstudio/tools/image_gen_tool.md"
+      "community": 20,
+      "norm_label": "productionstudio/tools/image_gen_tool.md",
+      "id": "claude_md_image_gen_tool_ref"
     },
     {
       "label": "fal.ai + Flux schnell (Phase 1 default image provider)",
@@ -5368,256 +5297,442 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_md_image_provider_default",
-      "community": 19,
-      "norm_label": "fal.ai + flux schnell (phase 1 default image provider)"
+      "community": 20,
+      "norm_label": "fal.ai + flux schnell (phase 1 default image provider)",
+      "id": "claude_md_image_provider_default"
     },
     {
-      "label": "Fatal Affairs Channel Trailer",
-      "file_type": "concept",
+      "label": "youtube_agent.py",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent",
+      "community": 12,
+      "norm_label": "youtube_agent.py"
+    },
+    {
+      "label": "_find_client_secret_file()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_find_client_secret_file",
+      "community": 12,
+      "norm_label": "_find_client_secret_file()"
+    },
+    {
+      "label": "get_authenticated_service()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "community": 12,
+      "norm_label": "get_authenticated_service()"
+    },
+    {
+      "label": "cmd_auth()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_cmd_auth",
+      "community": 12,
+      "norm_label": "cmd_auth()"
+    },
+    {
+      "label": "cmd_channel_info()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_cmd_channel_info",
+      "community": 12,
+      "norm_label": "cmd_channel_info()"
+    },
+    {
+      "label": "prepare_upload()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L111",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_prepare_upload",
+      "community": 12,
+      "norm_label": "prepare_upload()"
+    },
+    {
+      "label": "set_thumbnail()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L149",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_set_thumbnail",
+      "community": 12,
+      "norm_label": "set_thumbnail()"
+    },
+    {
+      "label": "list_uploads()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L155",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_list_uploads",
+      "community": 12,
+      "norm_label": "list_uploads()"
+    },
+    {
+      "label": "confirm_publish()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L168",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_confirm_publish",
+      "community": 12,
+      "norm_label": "confirm_publish()"
+    },
+    {
+      "label": "Official YouTube Data API v3 wrapper - the single module every future publish go",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_rationale_1",
+      "community": 12,
+      "norm_label": "official youtube data api v3 wrapper - the single module every future publish go"
+    },
+    {
+      "label": "Loads cached credentials, refreshing if expired. Raises with clear instructions",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_rationale_66",
+      "community": 12,
+      "norm_label": "loads cached credentials, refreshing if expired. raises with clear instructions"
+    },
+    {
+      "label": "One-time interactive OAuth consent flow. Opens a local browser window - the",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_rationale_87",
+      "community": 12,
+      "norm_label": "one-time interactive oauth consent flow. opens a local browser window - the"
+    },
+    {
+      "label": "Read-only sanity check that the OAuth token actually works.",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_rationale_99",
+      "community": 12,
+      "norm_label": "read-only sanity check that the oauth token actually works."
+    },
+    {
+      "label": "Uploads the video as PRIVATE with full metadata. Returns the video_id (the     \"",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L113",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_rationale_113",
+      "community": 12,
+      "norm_label": "uploads the video as private with full metadata. returns the video_id (the     \""
+    },
+    {
+      "label": "Read-only: lists the channel's most recent uploads (any privacy status).",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L156",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_rationale_156",
+      "community": 12,
+      "norm_label": "read-only: lists the channel's most recent uploads (any privacy status)."
+    },
+    {
+      "label": "THE ONLY function in this module that makes a video visible to anyone besides th",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L169",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_rationale_169",
+      "community": 12,
+      "norm_label": "the only function in this module that makes a video visible to anyone besides th"
+    },
+    {
+      "label": "Fatal Affairs Channel Trailer (~60s movie-trailer-style channel preview, replaces unbranded preview; rendered 2026-07-25 at 30.1s/903 frames, awaiting channel owner review before manual upload)",
+      "file_type": "document",
       "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_location": "## Purpose / ## Status",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
       "id": "productionstudio_channel_trailer_channel_trailer",
-      "community": 6,
-      "norm_label": "fatal affairs channel trailer"
+      "community": 3,
+      "norm_label": "fatal affairs channel trailer (~60s movie-trailer-style channel preview, replaces unbranded preview; rendered 2026-07-25 at 30.1s/903 frames, awaiting channel owner review before manual upload)"
     },
     {
-      "label": "Fatal Affairs brand facts (name, slogan, colors, fonts)",
+      "label": "Fatal Affairs (channel name, slogan \"Every Affair Has a Story. Some End in Murder.\")",
       "file_type": "concept",
       "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_location": "## Brand facts used",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_channel_trailer_fatal_affairs_brand",
-      "community": 6,
-      "norm_label": "fatal affairs brand facts (name, slogan, colors, fonts)"
+      "id": "productionstudio_channel_trailer_fatal_affairs",
+      "community": 3,
+      "norm_label": "fatal affairs (channel name, slogan \"every affair has a story. some end in murder.\")"
     },
     {
-      "label": "Config/config.schema.json",
-      "file_type": "document",
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "productionstudio_channel_trailer_config_schema_ref",
-      "community": 6,
-      "norm_label": "config/config.schema.json"
-    },
-    {
-      "label": "ElevenLabs voice \"Brian\" (nPczCjzI2devNBz1zQrb)",
+      "label": "Brian voice, ElevenLabs voiceId nPczCjzI2devNBz1zQrb (\"Deep, Resonant and Comforting\", American, movie-trailer register) \u2014 chosen deliberately distinct from the standard case-narration voice for a more theatrical register",
       "file_type": "concept",
       "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_location": "## Voice",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
       "id": "productionstudio_channel_trailer_brian_voice",
-      "community": 6,
-      "norm_label": "elevenlabs voice \"brian\" (npczcjzi2devnbz1zqrb)"
+      "community": 24,
+      "norm_label": "brian voice, elevenlabs voiceid npczcjzi2devnbz1zqrb (\"deep, resonant and comforting\", american, movie-trailer register) \u2014 chosen deliberately distinct from the standard case-narration voice for a more theatrical register"
     },
     {
-      "label": "Standard case-narration voice (wSChTcAxdiTjLPhHeyrM)",
+      "label": "Standard case-narration voice, ElevenLabs voiceId wSChTcAxdiTjLPhHeyrM, used inside actual case videos",
       "file_type": "concept",
       "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_location": "## Voice",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
       "id": "productionstudio_channel_trailer_case_narration_voice",
-      "community": 6,
-      "norm_label": "standard case-narration voice (wschtcaxditjlphheyrm)"
+      "community": 24,
+      "norm_label": "standard case-narration voice, elevenlabs voiceid wschtcaxditjlphheyrm, used inside actual case videos"
     },
     {
-      "label": "Trailer needs a distinct theatrical register vs case narration",
-      "file_type": "rationale",
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "productionstudio_channel_trailer_voice_choice_rationale",
-      "community": 6,
-      "norm_label": "trailer needs a distinct theatrical register vs case narration"
-    },
-    {
-      "label": "Trailer script (15 scenes, 63 words, real ElevenLabs timing)",
-      "file_type": "concept",
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "productionstudio_channel_trailer_script",
-      "community": 6,
-      "norm_label": "trailer script (15 scenes, 63 words, real elevenlabs timing)"
-    },
-    {
-      "label": "Structure: scenes 1-10 photo montage, 11-15 logo/CTA card",
-      "file_type": "concept",
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "productionstudio_channel_trailer_scene_structure",
-      "community": 6,
-      "norm_label": "structure: scenes 1-10 photo montage, 11-15 logo/cta card"
-    },
-    {
-      "label": "Collage images (10 sourced/generated stills)",
-      "file_type": "concept",
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "productionstudio_channel_trailer_collage_images",
-      "community": 6,
-      "norm_label": "collage images (10 sourced/generated stills)"
-    },
-    {
-      "label": "Image rights basis (owned stills + cleared mugshot + generic AI)",
-      "file_type": "rationale",
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "productionstudio_channel_trailer_rights_basis",
-      "community": 6,
-      "norm_label": "image rights basis (owned stills + cleared mugshot + generic ai)"
-    },
-    {
-      "label": "Monica Sementilli hairdresser-murder case (reused stills)",
+      "label": "Config/config.schema.json (source of channel name, slogan, colors, fonts used in trailer)",
       "file_type": "document",
       "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_location": "## Brand facts used",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_channel_trailer_monica_sementilli_case_ref",
-      "community": 6,
-      "norm_label": "monica sementilli hairdresser-murder case (reused stills)"
+      "id": "productionstudio_channel_trailer_config_schema",
+      "community": 3,
+      "norm_label": "config/config.schema.json (source of channel name, slogan, colors, fonts used in trailer)"
     },
     {
-      "label": "Kouri Richins fentanyl-murder case (reused stills)",
-      "file_type": "document",
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "productionstudio_channel_trailer_kouri_richins_case_ref",
-      "community": 6,
-      "norm_label": "kouri richins fentanyl-murder case (reused stills)"
-    },
-    {
-      "label": "Banfield case (real redacted mugshot)",
-      "file_type": "document",
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "productionstudio_channel_trailer_banfield_case_ref",
-      "community": 6,
-      "norm_label": "banfield case (real redacted mugshot)"
-    },
-    {
-      "label": "Tools/mugshot_fetch_tool.md (redaction standing policy)",
-      "file_type": "document",
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "productionstudio_channel_trailer_mugshot_fetch_tool_ref",
-      "community": 6,
-      "norm_label": "tools/mugshot_fetch_tool.md (redaction standing policy)"
-    },
-    {
-      "label": "ARCHITECTURE.md \u2192 \"Real-photo sourcing decision\"",
-      "file_type": "document",
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "productionstudio_channel_trailer_architecture_real_photo_decision_ref",
-      "community": 6,
-      "norm_label": "architecture.md \u2192 \"real-photo sourcing decision\""
-    },
-    {
-      "label": "Freshly generated generic images (corkboard, crimetape_rain via fal.ai Flux schnell)",
+      "label": "Banfield case (previously produced video; source of the real redacted mugshot reused in the trailer under the newsworthy-exception analysis)",
       "file_type": "concept",
       "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_location": "## Collage images / Rights basis",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_channel_trailer_ai_generated_images",
-      "community": 6,
-      "norm_label": "freshly generated generic images (corkboard, crimetape_rain via fal.ai flux schnell)"
+      "id": "productionstudio_channel_trailer_banfield_case",
+      "community": 3,
+      "norm_label": "banfield case (previously produced video; source of the real redacted mugshot reused in the trailer under the newsworthy-exception analysis)"
     },
     {
-      "label": "Music bed track (-18dB below narration, studio mix spec)",
-      "file_type": "concept",
+      "label": "Assets/images/real_photos/banfield_mugshot_REDACTED.jpg \u2014 real photo, eyes redacted per mugshot_fetch_tool's standing policy",
+      "file_type": "image",
       "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_location": "## Collage images, item 9",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_channel_trailer_music_bed",
-      "community": 6,
-      "norm_label": "music bed track (-18db below narration, studio mix spec)"
+      "id": "productionstudio_channel_trailer_banfield_mugshot_image",
+      "community": 11,
+      "norm_label": "assets/images/real_photos/banfield_mugshot_redacted.jpg \u2014 real photo, eyes redacted per mugshot_fetch_tool's standing policy"
     },
     {
-      "label": "Rendered 2026-07-25: 30.1s, 1920x1080, 903 frames @30fps",
+      "label": "Kouri Richins fentanyl-murder case (already-produced video whose stills are reused as trailer collage images, cleared rights)",
       "file_type": "concept",
       "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_location": "## Collage images / Rights basis",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_channel_trailer_render_status",
-      "community": 6,
-      "norm_label": "rendered 2026-07-25: 30.1s, 1920x1080, 903 frames @30fps"
+      "id": "productionstudio_channel_trailer_kouri_richins_case",
+      "community": 3,
+      "norm_label": "kouri richins fentanyl-murder case (already-produced video whose stills are reused as trailer collage images, cleared rights)"
     },
     {
-      "label": "Manual YouTube Studio upload step (not automated)",
+      "label": "Monica Sementilli hairdresser-murder case (already-produced video whose stills are reused as trailer collage images, cleared rights)",
       "file_type": "concept",
       "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_location": "## Collage images / Rights basis",
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_channel_trailer_manual_youtube_upload_step",
-      "community": 6,
-      "norm_label": "manual youtube studio upload step (not automated)"
+      "id": "productionstudio_channel_trailer_monica_sementilli_case",
+      "community": 3,
+      "norm_label": "monica sementilli hairdresser-murder case (already-produced video whose stills are reused as trailer collage images, cleared rights)"
+    },
+    {
+      "label": "fal.ai Flux schnell image-generation pipeline (used for the two freshly-generated generic trailer images, corkboard.png and crimetape_rain.png, chosen over third-party stock/footage specifically to avoid a new ungoverned rights question for a channel-level asset)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Channel/Trailer.md",
+      "source_location": "## Rights basis",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_channel_trailer_flux_schnell_pipeline",
+      "community": 3,
+      "norm_label": "fal.ai flux schnell image-generation pipeline (used for the two freshly-generated generic trailer images, corkboard.png and crimetape_rain.png, chosen over third-party stock/footage specifically to avoid a new ungoverned rights question for a channel-level asset)"
+    },
+    {
+      "label": "Assets/renders/fatal-affairs-channel-trailer.mp4 (gitignored render, 1920x1080, 903 frames @ 30fps, 30.1s, spot-checked cold open/mugshot beat/logo-CTA sequence)",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Channel/Trailer.md",
+      "source_location": "## Status",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_channel_trailer_render_output",
+      "community": 3,
+      "norm_label": "assets/renders/fatal-affairs-channel-trailer.mp4 (gitignored render, 1920x1080, 903 frames @ 30fps, 30.1s, spot-checked cold open/mugshot beat/logo-cta sequence)"
+    },
+    {
+      "label": "YouTube Studio channel-trailer upload slot \u2014 uploading a channel trailer is a manual step in YouTube's own UI, explicitly not automated by this pipeline",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Channel/Trailer.md",
+      "source_location": "## Status",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_channel_trailer_youtube_studio",
+      "community": 3,
+      "norm_label": "youtube studio channel-trailer upload slot \u2014 uploading a channel trailer is a manual step in youtube's own ui, explicitly not automated by this pipeline"
+    },
+    {
+      "label": "youtube_publish_tool \u2014 wraps YouTube Data API v3 for upload + metadata, publish call always gated by explicit human confirmation",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": "## Purpose",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool",
+      "community": 3,
+      "norm_label": "youtube_publish_tool \u2014 wraps youtube data api v3 for upload + metadata, publish call always gated by explicit human confirmation"
+    },
+    {
+      "label": "prepare_upload(video_file, metadata) -> {draft_id} \u2014 uploads as privacyStatus: private with full metadata, returns real YouTube video_id as draft_id; not a publish action so it runs without a separate human-confirmation gate",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": "## Interface / ## Status: implemented",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_prepare_upload",
+      "community": 3,
+      "norm_label": "prepare_upload(video_file, metadata) -> {draft_id} \u2014 uploads as privacystatus: private with full metadata, returns real youtube video_id as draft_id; not a publish action so it runs without a separate human-confirmation gate"
+    },
+    {
+      "label": "confirm_publish(draft_id) -> {video_id, status} \u2014 only function that can flip a video to public or schedule it (publishAt + privacyStatus:private for scheduling); hard-requires human_confirmed=True, raises and refuses otherwise",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": "## Interface / ## Status: implemented",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_confirm_publish",
+      "community": 3,
+      "norm_label": "confirm_publish(draft_id) -> {video_id, status} \u2014 only function that can flip a video to public or schedule it (publishat + privacystatus:private for scheduling); hard-requires human_confirmed=true, raises and refuses otherwise"
+    },
+    {
+      "label": "Workflows/youtube_agent.py \u2014 the one real implemented module every future publish goes through, per the channel owner's explicit instruction (\"write it once, reuse for all future publications\"); no longer a draft spec",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": "## Status: implemented (2026-07-25)",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_youtube_agent_module",
+      "community": 3,
+      "norm_label": "workflows/youtube_agent.py \u2014 the one real implemented module every future publish goes through, per the channel owner's explicit instruction (\"write it once, reuse for all future publications\"); no longer a draft spec"
+    },
+    {
+      "label": "human_confirmed=True hard requirement \u2014 confirm_publish raises and refuses without it; the real gate is that Claude must never pass human_confirmed=True without an actual \"yes, publish this\" from the channel owner in the current session, for that specific video",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": "## Status: implemented (2026-07-25)",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_human_confirmed_requirement",
+      "community": 3,
+      "norm_label": "human_confirmed=true hard requirement \u2014 confirm_publish raises and refuses without it; the real gate is that claude must never pass human_confirmed=true without an actual \"yes, publish this\" from the channel owner in the current session, for that specific video"
+    },
+    {
+      "label": "OAuth client from Google Cloud Console at Config/client_secret_*.json, cached token at Config/youtube_token.json \u2014 both gitignored, never committed; one-time setup via `python youtube_agent.py auth` opens a local browser for the channel owner's own Google login, Claude never sees or enters the password",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": "## Status: implemented (2026-07-25)",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_oauth_credentials",
+      "community": 3,
+      "norm_label": "oauth client from google cloud console at config/client_secret_*.json, cached token at config/youtube_token.json \u2014 both gitignored, never committed; one-time setup via `python youtube_agent.py auth` opens a local browser for the channel owner's own google login, claude never sees or enters the password"
+    },
+    {
+      "label": "OAuth scopes: youtube.upload + youtube (covers upload, metadata, thumbnails, playlists \u2014 the full \"manage the channel\" surface, not just publishing one video)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": "## Status: implemented (2026-07-25)",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_scopes",
+      "community": 3,
+      "norm_label": "oauth scopes: youtube.upload + youtube (covers upload, metadata, thumbnails, playlists \u2014 the full \"manage the channel\" surface, not just publishing one video)"
+    },
+    {
+      "label": "YouTube Data API v3 (upload + metadata endpoints wrapped by youtube_publish_tool; daily quota limits require batching metadata reads/writes once past a handful of videos a week)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": "## Purpose / ## Implementation notes",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_youtube_data_api_v3",
+      "community": 3,
+      "norm_label": "youtube data api v3 (upload + metadata endpoints wrapped by youtube_publish_tool; daily quota limits require batching metadata reads/writes once past a handful of videos a week)"
+    },
+    {
+      "label": "Human-gated publishing rule \u2014 every publish requires explicit human confirmation with no exceptions; confirm_publish's human_confirmed=True requirement is the code-level backstop for this rule as defined in publishing_agent.md",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": "## Status: implemented (2026-07-25)",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_human_gated_publishing_rule",
+      "community": 3,
+      "norm_label": "human-gated publishing rule \u2014 every publish requires explicit human confirmation with no exceptions; confirm_publish's human_confirmed=true requirement is the code-level backstop for this rule as defined in publishing_agent.md"
     }
   ],
   "links": [
@@ -8004,6 +8119,16 @@
     },
     {
       "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "ProductionStudio/Channel/Trailer.md",
+      "source_location": "## Rights basis (fal.ai Flux schnell is documented as the Phase 1 default image pipeline in Tools/image_gen_tool.md, not named directly in this doc)",
+      "weight": 1.0,
+      "source": "productionstudio_channel_trailer_flux_schnell_pipeline",
+      "target": "productionstudio_tools_image_gen_tool"
+    },
+    {
+      "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "ProductionStudio/Tests/stage3_link_audit.md",
@@ -8139,80 +8264,6 @@
       "confidence_score": 1.0,
       "source": "productionstudio_tools_image_gen_tool_tool_image_gen_tool",
       "target": "productionstudio_tools_image_gen_tool_stage_4_live_test_result_2026_07_20_21_confirmed_working_through_n8n_not_just_direct_python"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Cases/brendan-banfield-double-murder/PublishPlan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_cases_brendan_banfield_double_murder_publishplan",
-      "target": "productionstudio_tools_youtube_publish_tool"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_tools_youtube_publish_tool",
-      "target": "fatal_affairs_project_brief"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_tools_youtube_publish_tool",
-      "target": "productionstudio_agents_publishing_agent"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_tools_youtube_publish_tool",
-      "target": "productionstudio_tools_youtube_publish_tool_tool_youtube_publish_tool"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": "L17",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_tools_youtube_publish_tool_tool_youtube_publish_tool",
-      "target": "productionstudio_tools_youtube_publish_tool_implementation_notes"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": "L8",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_tools_youtube_publish_tool_tool_youtube_publish_tool",
-      "target": "productionstudio_tools_youtube_publish_tool_interface"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_tools_youtube_publish_tool_tool_youtube_publish_tool",
-      "target": "productionstudio_tools_youtube_publish_tool_purpose"
     },
     {
       "relation": "references",
@@ -8422,6 +8473,36 @@
       "source_location": null,
       "weight": 1.0,
       "source": "productionstudio_cases_kouri_richins_fentanyl_murder_publishplan",
+      "target": "productionstudio_agents_publishing_agent"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": "## Purpose",
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool",
+      "target": "productionstudio_agents_publishing_agent"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": "## Status: implemented (2026-07-25)",
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_confirm_publish",
+      "target": "productionstudio_agents_publishing_agent"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": "## Status: implemented (2026-07-25)",
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_human_gated_publishing_rule",
       "target": "productionstudio_agents_publishing_agent"
     },
     {
@@ -9145,6 +9226,16 @@
       "target": "productionstudio_tools_remotion_assembly_tool"
     },
     {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/brendan-banfield-double-murder/PublishPlan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_brendan_banfield_double_murder_publishplan",
+      "target": "productionstudio_tools_youtube_publish_tool"
+    },
+    {
       "relation": "implements",
       "confidence": "INFERRED",
       "confidence_score": 0.95,
@@ -9288,6 +9379,26 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Channel/Trailer.md",
+      "source_location": "## Collage images, item 9",
+      "weight": 1.0,
+      "source": "productionstudio_channel_trailer_banfield_mugshot_image",
+      "target": "productionstudio_tools_mugshot_fetch_tool"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Channel/Trailer.md",
+      "source_location": "## Rights basis",
+      "weight": 1.0,
+      "source": "productionstudio_channel_trailer_channel_trailer",
+      "target": "productionstudio_tools_mugshot_fetch_tool"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "ProductionStudio/Documentation/ARCHITECTURE.md",
       "source_location": null,
       "weight": 1.0,
@@ -9382,6 +9493,16 @@
       "source_location": null,
       "weight": 1.0,
       "source": "productionstudio_documentation_self_improvement_process",
+      "target": "fatal_affairs_project_brief"
+    },
+    {
+      "relation": "references",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.2,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": "## Implementation notes (exact repo path of fatal-affairs-project-brief.md not given in this doc)",
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool",
       "target": "fatal_affairs_project_brief"
     },
     {
@@ -12121,9 +12242,9 @@
       "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "claude_settings",
-      "target": "claude_settings_hooks",
-      "confidence_score": 1.0
+      "target": "claude_settings_hooks"
     },
     {
       "relation": "contains",
@@ -12132,9 +12253,9 @@
       "source_location": "L3",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "claude_settings",
-      "target": "claude_settings_permissions",
-      "confidence_score": 1.0
+      "target": "claude_settings_permissions"
     },
     {
       "relation": "contains",
@@ -12143,9 +12264,9 @@
       "source_location": "L2",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "claude_settings",
-      "target": "claude_settings_schema",
-      "confidence_score": 1.0
+      "target": "claude_settings_schema"
     },
     {
       "relation": "contains",
@@ -12154,9 +12275,9 @@
       "source_location": "L13",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "claude_settings_permissions",
-      "target": "claude_settings_permissions_ask",
-      "confidence_score": 1.0
+      "target": "claude_settings_permissions_ask"
     },
     {
       "relation": "contains",
@@ -12165,9 +12286,9 @@
       "source_location": "L4",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "claude_settings_permissions",
-      "target": "claude_settings_permissions_defaultmode",
-      "confidence_score": 1.0
+      "target": "claude_settings_permissions_defaultmode"
     },
     {
       "relation": "contains",
@@ -12176,9 +12297,9 @@
       "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "claude_settings_permissions",
-      "target": "claude_settings_permissions_deny",
-      "confidence_score": 1.0
+      "target": "claude_settings_permissions_deny"
     },
     {
       "relation": "extends",
@@ -12188,9 +12309,9 @@
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "claude_settings_permissions_deny",
-      "target": "ref_bash_curl",
-      "confidence_score": 1.0
+      "target": "ref_bash_curl"
     },
     {
       "relation": "extends",
@@ -12200,9 +12321,9 @@
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "claude_settings_permissions_deny",
-      "target": "ref_read_aws_credentials",
-      "confidence_score": 1.0
+      "target": "ref_read_aws_credentials"
     },
     {
       "relation": "extends",
@@ -12212,9 +12333,9 @@
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "claude_settings_permissions_deny",
-      "target": "ref_read_env",
-      "confidence_score": 1.0
+      "target": "ref_read_env"
     },
     {
       "relation": "extends",
@@ -12224,9 +12345,9 @@
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "claude_settings_permissions_deny",
-      "target": "ref_read_secrets",
-      "confidence_score": 1.0
+      "target": "ref_read_secrets"
     },
     {
       "relation": "extends",
@@ -12236,9 +12357,9 @@
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "claude_settings_permissions_deny",
-      "target": "ref_read_ssh",
-      "confidence_score": 1.0
+      "target": "ref_read_ssh"
     },
     {
       "relation": "extends",
@@ -12248,9 +12369,9 @@
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "claude_settings_permissions_ask",
-      "target": "ref_bash_gh_pr_merge",
-      "confidence_score": 1.0
+      "target": "ref_bash_gh_pr_merge"
     },
     {
       "relation": "extends",
@@ -12260,9 +12381,9 @@
       "weight": 1.0,
       "context": "import",
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "claude_settings_permissions_ask",
-      "target": "ref_bash_git_push",
-      "confidence_score": 1.0
+      "target": "ref_bash_git_push"
     },
     {
       "relation": "contains",
@@ -12271,9 +12392,9 @@
       "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "claude_settings_hooks",
-      "target": "claude_settings_hooks_pretooluse",
-      "confidence_score": 1.0
+      "target": "claude_settings_hooks_pretooluse"
     },
     {
       "relation": "conceptually_related_to",
@@ -12416,16 +12537,6 @@
       "target": "claude_md_monica_sementilli_stale_incident"
     },
     {
-      "relation": "semantically_similar_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "CLAUDE.md",
-      "source_location": null,
-      "weight": 0.95,
-      "source": "claude_md_monica_sementilli_stale_incident",
-      "target": "productionstudio_channel_trailer_monica_sementilli_case_ref"
-    },
-    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -12436,233 +12547,436 @@
       "target": "claude_md_image_gen_tool_ref"
     },
     {
-      "relation": "references",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L86",
       "weight": 1.0,
-      "source": "productionstudio_channel_trailer_channel_trailer",
-      "target": "productionstudio_channel_trailer_brian_voice"
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_cmd_auth",
+      "confidence_score": 1.0
     },
     {
-      "relation": "references",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L98",
       "weight": 1.0,
-      "source": "productionstudio_channel_trailer_channel_trailer",
-      "target": "productionstudio_channel_trailer_fatal_affairs_brand"
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_cmd_channel_info",
+      "confidence_score": 1.0
     },
     {
-      "relation": "references",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L168",
       "weight": 1.0,
-      "source": "productionstudio_channel_trailer_channel_trailer",
-      "target": "productionstudio_channel_trailer_music_bed"
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_confirm_publish",
+      "confidence_score": 1.0
     },
     {
-      "relation": "references",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L55",
       "weight": 1.0,
-      "source": "productionstudio_channel_trailer_channel_trailer",
-      "target": "productionstudio_channel_trailer_render_status"
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_find_client_secret_file",
+      "confidence_score": 1.0
     },
     {
-      "relation": "references",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L65",
       "weight": 1.0,
-      "source": "productionstudio_channel_trailer_channel_trailer",
-      "target": "productionstudio_channel_trailer_script"
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "confidence_score": 1.0
     },
     {
-      "relation": "references",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L155",
       "weight": 1.0,
-      "source": "productionstudio_channel_trailer_fatal_affairs_brand",
-      "target": "productionstudio_channel_trailer_config_schema_ref"
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_list_uploads",
+      "confidence_score": 1.0
     },
     {
-      "relation": "references",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L111",
       "weight": 1.0,
-      "source": "productionstudio_channel_trailer_scene_structure",
-      "target": "productionstudio_channel_trailer_fatal_affairs_brand"
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_prepare_upload",
+      "confidence_score": 1.0
     },
     {
-      "relation": "rationale_for",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L149",
       "weight": 1.0,
-      "source": "productionstudio_channel_trailer_voice_choice_rationale",
-      "target": "productionstudio_channel_trailer_brian_voice"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_channel_trailer_voice_choice_rationale",
-      "target": "productionstudio_channel_trailer_case_narration_voice"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_channel_trailer_script",
-      "target": "productionstudio_channel_trailer_scene_structure"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_channel_trailer_scene_structure",
-      "target": "productionstudio_channel_trailer_collage_images"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_channel_trailer_collage_images",
-      "target": "productionstudio_channel_trailer_ai_generated_images"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_channel_trailer_collage_images",
-      "target": "productionstudio_channel_trailer_banfield_case_ref"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_channel_trailer_collage_images",
-      "target": "productionstudio_channel_trailer_kouri_richins_case_ref"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_channel_trailer_collage_images",
-      "target": "productionstudio_channel_trailer_monica_sementilli_case_ref"
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_set_thumbnail",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_rationale_1",
+      "target": "productionstudio_workflows_youtube_agent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_cmd_auth",
+      "target": "productionstudio_workflows_youtube_agent_find_client_secret_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_cmd_channel_info",
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L183",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_confirm_publish",
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L157",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_list_uploads",
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L117",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_prepare_upload",
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_rationale_66",
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L150",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_set_thumbnail",
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_rationale_87",
+      "target": "productionstudio_workflows_youtube_agent_cmd_auth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_rationale_99",
+      "target": "productionstudio_workflows_youtube_agent_cmd_channel_info",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L144",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_prepare_upload",
+      "target": "productionstudio_workflows_youtube_agent_set_thumbnail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L113",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_rationale_113",
+      "target": "productionstudio_workflows_youtube_agent_prepare_upload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L156",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_rationale_156",
+      "target": "productionstudio_workflows_youtube_agent_list_uploads",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L169",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_rationale_169",
+      "target": "productionstudio_workflows_youtube_agent_confirm_publish",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_location": "## Collage images, item 9",
       "weight": 1.0,
-      "source": "productionstudio_channel_trailer_rights_basis",
-      "target": "productionstudio_channel_trailer_collage_images"
+      "source": "productionstudio_channel_trailer_channel_trailer",
+      "target": "productionstudio_channel_trailer_banfield_case"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Channel/Trailer.md",
+      "source_location": "## Brand facts used",
+      "weight": 1.0,
+      "source": "productionstudio_channel_trailer_channel_trailer",
+      "target": "productionstudio_channel_trailer_config_schema"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Channel/Trailer.md",
+      "source_location": "## Brand facts used",
+      "weight": 1.0,
+      "source": "productionstudio_channel_trailer_channel_trailer",
+      "target": "productionstudio_channel_trailer_fatal_affairs"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Channel/Trailer.md",
+      "source_location": "## Rights basis",
+      "weight": 1.0,
+      "source": "productionstudio_channel_trailer_channel_trailer",
+      "target": "productionstudio_channel_trailer_flux_schnell_pipeline"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Channel/Trailer.md",
+      "source_location": "## Collage images / Rights basis",
+      "weight": 1.0,
+      "source": "productionstudio_channel_trailer_channel_trailer",
+      "target": "productionstudio_channel_trailer_kouri_richins_case"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Channel/Trailer.md",
+      "source_location": "## Collage images / Rights basis",
+      "weight": 1.0,
+      "source": "productionstudio_channel_trailer_channel_trailer",
+      "target": "productionstudio_channel_trailer_monica_sementilli_case"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Channel/Trailer.md",
+      "source_location": "## Status",
+      "weight": 1.0,
+      "source": "productionstudio_channel_trailer_channel_trailer",
+      "target": "productionstudio_channel_trailer_render_output"
     },
     {
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_location": "## Status",
       "weight": 1.0,
-      "source": "productionstudio_channel_trailer_ai_generated_images",
-      "target": "productionstudio_channel_trailer_rights_basis"
+      "source": "productionstudio_channel_trailer_channel_trailer",
+      "target": "productionstudio_channel_trailer_youtube_studio"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_location": "## Voice",
       "weight": 1.0,
-      "source": "productionstudio_channel_trailer_rights_basis",
-      "target": "productionstudio_channel_trailer_architecture_real_photo_decision_ref"
+      "source": "productionstudio_channel_trailer_brian_voice",
+      "target": "productionstudio_channel_trailer_case_narration_voice"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "ProductionStudio/Channel/Trailer.md",
+      "source_location": "## Status (\"uploading a channel trailer is a manual step in YouTube's own UI, not something this pipeline automates\" \u2014 contrasts directly with youtube_publish_tool/youtube_agent.py, the studio's implemented YouTube publish automation)",
+      "weight": 1.0,
+      "source": "productionstudio_channel_trailer_youtube_studio",
+      "target": "productionstudio_tools_youtube_publish_tool"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": "## Purpose",
       "weight": 1.0,
-      "source": "productionstudio_channel_trailer_banfield_case_ref",
-      "target": "productionstudio_channel_trailer_architecture_real_photo_decision_ref"
+      "source": "productionstudio_tools_youtube_publish_tool",
+      "target": "productionstudio_tools_youtube_publish_tool_youtube_data_api_v3"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": "## Status: implemented (2026-07-25)",
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_prepare_upload",
+      "target": "productionstudio_tools_youtube_publish_tool_scopes"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": "## Status: implemented (2026-07-25)",
       "weight": 1.0,
-      "source": "productionstudio_channel_trailer_banfield_case_ref",
-      "target": "productionstudio_channel_trailer_mugshot_fetch_tool_ref"
+      "source": "productionstudio_tools_youtube_publish_tool_youtube_agent_module",
+      "target": "productionstudio_tools_youtube_publish_tool_prepare_upload"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Channel/Trailer.md",
-      "source_location": null,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": "## Status: implemented (2026-07-25)",
       "weight": 1.0,
-      "source": "productionstudio_channel_trailer_render_status",
-      "target": "productionstudio_channel_trailer_manual_youtube_upload_step"
+      "source": "productionstudio_tools_youtube_publish_tool_confirm_publish",
+      "target": "productionstudio_tools_youtube_publish_tool_human_confirmed_requirement"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": "## Status: implemented (2026-07-25)",
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_confirm_publish",
+      "target": "productionstudio_tools_youtube_publish_tool_scopes"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": "## Status: implemented (2026-07-25)",
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_youtube_agent_module",
+      "target": "productionstudio_tools_youtube_publish_tool_confirm_publish"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": "## Status: implemented (2026-07-25)",
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_youtube_agent_module",
+      "target": "productionstudio_tools_youtube_publish_tool_oauth_credentials"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": "## Status: implemented (2026-07-25)",
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_human_confirmed_requirement",
+      "target": "productionstudio_tools_youtube_publish_tool_human_gated_publishing_rule"
     }
   ],
   "hyperedges": [
-    {
-      "id": "trailer_image_rights_clearance",
-      "label": "Channel Trailer Image Rights Clearance",
-      "nodes": [
-        "productionstudio_channel_trailer_collage_images",
-        "productionstudio_channel_trailer_rights_basis",
-        "productionstudio_channel_trailer_banfield_case_ref",
-        "productionstudio_channel_trailer_mugshot_fetch_tool_ref",
-        "productionstudio_channel_trailer_architecture_real_photo_decision_ref",
-        "productionstudio_channel_trailer_ai_generated_images"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Channel/Trailer.md"
-    },
     {
       "id": "graphify_incremental_update_workflow",
       "label": "Graphify Incremental Update Workflow (query-first + doc-vs-code update)",
@@ -12877,5 +13191,5 @@
       "source_file": "ProductionStudio/Tools/mugshot_fetch_tool.md"
     }
   ],
-  "built_at_commit": "ead19084cb0449377d094fe36c86ae88d25f0e89"
+  "built_at_commit": "38e55138b778ab2dcda32212ee0238c9222f6d5a"
 }
