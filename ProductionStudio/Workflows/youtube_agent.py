@@ -1,0 +1,240 @@
+"""Official YouTube Data API v3 wrapper - the single module every future publish goes
+through, per the channel owner's instruction (2026-07-25): write it once, reuse it for
+every case going forward. Implements the prepare/confirm split from
+Tools/youtube_publish_tool.md exactly:
+
+    prepare_upload()  -> uploads the video as PRIVATE with full metadata, returns video_id
+    confirm_publish() -> the ONLY call that makes a video public/scheduled. Requires
+                          human_confirmed=True - never set that programmatically. This
+                          mirrors Agents/publishing_agent.md's hard rule: publishing is
+                          human-gated, no exceptions, regardless of how automated the rest
+                          of the pipeline becomes.
+
+Credentials (never committed - see .gitignore):
+    Config/client_secret_*.json   OAuth client (Desktop app type), from Google Cloud Console
+    Config/youtube_token.json     Cached OAuth token after the one-time consent flow below
+
+First-time setup (run once per machine):
+    python youtube_agent.py auth
+This opens a local browser window - YOU log into your own Google account and click Allow.
+Claude never sees or enters your credentials; it only reads the resulting token file.
+
+Scopes requested: youtube.upload (video uploads) + youtube (channel/playlist/thumbnail
+management) - the two together cover everything "manage the channel" needs.
+
+Usage:
+    python youtube_agent.py auth
+    python youtube_agent.py channel-info
+    python youtube_agent.py upload <video_file> <title> <description> <tags_csv> [--category ID] [--thumbnail PATH]
+    python youtube_agent.py set-thumbnail <video_id> <thumbnail_file>
+    python youtube_agent.py list-uploads [--max N]
+    python youtube_agent.py publish <video_id> --confirm [--at ISO_TIMESTAMP]
+"""
+import argparse
+import glob
+import os
+
+from google.auth.transport.requests import Request
+from google.oauth2.credentials import Credentials
+from google_auth_oauthlib.flow import InstalledAppFlow
+from googleapiclient.discovery import build
+from googleapiclient.http import MediaFileUpload
+
+SCOPES = [
+    "https://www.googleapis.com/auth/youtube.upload",
+    "https://www.googleapis.com/auth/youtube",
+]
+
+REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+CONFIG_DIR = os.path.join(REPO, "ProductionStudio", "Config")
+TOKEN_PATH = os.path.join(CONFIG_DIR, "youtube_token.json")
+
+DEFAULT_CATEGORY_ID = "24"  # Entertainment - see https://developers.google.com/youtube/v3/docs/videoCategories/list
+
+
+def _find_client_secret_file():
+    matches = glob.glob(os.path.join(CONFIG_DIR, "client_secret_*.json"))
+    if not matches:
+        raise SystemExit(
+            f"No client_secret_*.json found in {CONFIG_DIR}. "
+            "Download the OAuth client (Desktop app type) from Google Cloud Console first."
+        )
+    return matches[0]
+
+
+def get_authenticated_service():
+    """Loads cached credentials, refreshing if expired. Raises with clear instructions
+    if no token exists yet - run `python youtube_agent.py auth` first."""
+    creds = None
+    if os.path.exists(TOKEN_PATH):
+        creds = Credentials.from_authorized_user_file(TOKEN_PATH, SCOPES)
+
+    if creds and creds.expired and creds.refresh_token:
+        creds.refresh(Request())
+        with open(TOKEN_PATH, "w", encoding="utf-8") as f:
+            f.write(creds.to_json())
+
+    if not creds or not creds.valid:
+        raise SystemExit(
+            "No valid YouTube credentials found. Run `python youtube_agent.py auth` first "
+            "- this opens a browser for you to log into your own Google account."
+        )
+
+    return build("youtube", "v3", credentials=creds)
+
+
+def cmd_auth():
+    """One-time interactive OAuth consent flow. Opens a local browser window - the
+    channel owner logs in and clicks Allow themselves. Writes the resulting token
+    (including refresh token) to Config/youtube_token.json."""
+    client_secret_file = _find_client_secret_file()
+    flow = InstalledAppFlow.from_client_secrets_file(client_secret_file, SCOPES)
+    creds = flow.run_local_server(port=0)
+    with open(TOKEN_PATH, "w", encoding="utf-8") as f:
+        f.write(creds.to_json())
+    print(f"Authorized. Token saved to {TOKEN_PATH}")
+
+
+def cmd_channel_info():
+    """Read-only sanity check that the OAuth token actually works."""
+    yt = get_authenticated_service()
+    resp = yt.channels().list(part="snippet,statistics", mine=True).execute()
+    for ch in resp.get("items", []):
+        snippet = ch["snippet"]
+        stats = ch["statistics"]
+        print(f"Channel: {snippet['title']} ({ch['id']})")
+        print(f"  Subscribers: {stats.get('subscriberCount', '?')}")
+        print(f"  Videos: {stats.get('videoCount', '?')}")
+        print(f"  Views: {stats.get('viewCount', '?')}")
+
+
+def prepare_upload(video_file, title, description, tags, category_id=DEFAULT_CATEGORY_ID,
+                    thumbnail_file=None):
+    """Uploads the video as PRIVATE with full metadata. Returns the video_id (the
+    "draft_id" from youtube_publish_tool.md's contract) - nothing is public yet.
+    Safe to call without a human-confirmation gate: a private, unlisted-to-everyone-
+    but-the-owner upload is reversible and not a publish action."""
+    yt = get_authenticated_service()
+
+    body = {
+        "snippet": {
+            "title": title,
+            "description": description,
+            "tags": tags,
+            "categoryId": category_id,
+        },
+        "status": {
+            "privacyStatus": "private",
+            "selfDeclaredMadeForKids": False,
+        },
+    }
+    media = MediaFileUpload(video_file, chunksize=-1, resumable=True, mimetype="video/mp4")
+    request = yt.videos().insert(part="snippet,status", body=body, media_body=media)
+
+    response = None
+    while response is None:
+        status, response = request.next_chunk()
+        if status:
+            print(f"  uploaded {int(status.progress() * 100)}%")
+
+    video_id = response["id"]
+    print(f"Uploaded as PRIVATE draft: video_id={video_id}")
+
+    if thumbnail_file:
+        set_thumbnail(video_id, thumbnail_file)
+
+    return video_id
+
+
+def set_thumbnail(video_id, thumbnail_file):
+    yt = get_authenticated_service()
+    yt.thumbnails().set(videoId=video_id, media_body=MediaFileUpload(thumbnail_file)).execute()
+    print(f"Thumbnail set for {video_id}")
+
+
+def list_uploads(max_results=10):
+    """Read-only: lists the channel's most recent uploads (any privacy status)."""
+    yt = get_authenticated_service()
+    ch = yt.channels().list(part="contentDetails", mine=True).execute()
+    uploads_playlist = ch["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+    resp = yt.playlistItems().list(
+        part="snippet,status", playlistId=uploads_playlist, maxResults=max_results
+    ).execute()
+    for item in resp.get("items", []):
+        s = item["snippet"]
+        print(f"{s['resourceId']['videoId']}  {s['title']}  (published {s['publishedAt']})")
+
+
+def confirm_publish(video_id, human_confirmed=False, privacy_status="public", publish_at=None):
+    """THE ONLY function in this module that makes a video visible to anyone besides the
+    channel owner. Per Agents/publishing_agent.md's hard rule, this requires an explicit
+    human go-ahead EVERY time - human_confirmed must be True, and that must come from a
+    real "yes, publish this" in the current chat session, never set programmatically or
+    inferred. If publish_at is given (ISO 8601, e.g. "2026-08-01T15:00:00Z"), the video is
+    scheduled instead of published immediately (YouTube requires privacyStatus="private"
+    plus a future publishAt for scheduling)."""
+    if not human_confirmed:
+        raise SystemExit(
+            "Refusing to publish: human_confirmed=True was not passed. This call must "
+            "only happen after the channel owner explicitly said to publish this specific "
+            "video in the current session - see Agents/publishing_agent.md."
+        )
+
+    yt = get_authenticated_service()
+    status = {"privacyStatus": "private" if publish_at else privacy_status}
+    if publish_at:
+        status["publishAt"] = publish_at
+
+    yt.videos().update(part="status", body={"id": video_id, "status": status}).execute()
+    if publish_at:
+        print(f"Scheduled {video_id} to publish at {publish_at}")
+    else:
+        print(f"Published {video_id} as {privacy_status}")
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    sub = parser.add_subparsers(dest="cmd", required=True)
+
+    sub.add_parser("auth")
+    sub.add_parser("channel-info")
+
+    p_upload = sub.add_parser("upload")
+    p_upload.add_argument("video_file")
+    p_upload.add_argument("title")
+    p_upload.add_argument("description")
+    p_upload.add_argument("tags_csv")
+    p_upload.add_argument("--category", default=DEFAULT_CATEGORY_ID)
+    p_upload.add_argument("--thumbnail", default=None)
+
+    p_thumb = sub.add_parser("set-thumbnail")
+    p_thumb.add_argument("video_id")
+    p_thumb.add_argument("thumbnail_file")
+
+    p_list = sub.add_parser("list-uploads")
+    p_list.add_argument("--max", type=int, default=10)
+
+    p_publish = sub.add_parser("publish")
+    p_publish.add_argument("video_id")
+    p_publish.add_argument("--confirm", action="store_true",
+                            help="Required. Only pass this after the channel owner explicitly said to publish.")
+    p_publish.add_argument("--privacy", default="public")
+    p_publish.add_argument("--at", default=None, help="ISO 8601 timestamp to schedule instead of publishing now")
+
+    args = parser.parse_args()
+
+    if args.cmd == "auth":
+        cmd_auth()
+    elif args.cmd == "channel-info":
+        cmd_channel_info()
+    elif args.cmd == "upload":
+        tags = [t.strip() for t in args.tags_csv.split(",") if t.strip()]
+        prepare_upload(args.video_file, args.title, args.description, tags,
+                        category_id=args.category, thumbnail_file=args.thumbnail)
+    elif args.cmd == "set-thumbnail":
+        set_thumbnail(args.video_id, args.thumbnail_file)
+    elif args.cmd == "list-uploads":
+        list_uploads(max_results=args.max)
+    elif args.cmd == "publish":
+        confirm_publish(args.video_id, human_confirmed=args.confirm,
+                         privacy_status=args.privacy, publish_at=args.at)

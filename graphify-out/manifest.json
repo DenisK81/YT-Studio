@@ -35,9 +35,9 @@
     "semantic_hash": "8be3eefe4c72f18e2ffaaab25330b069"
   },
   "ProductionStudio/Tools/tool_registry.json": {
-    "mtime": 1784656182.4413538,
-    "ast_hash": "0e25b35c89a3f7955ad79f2049fc8df2",
-    "semantic_hash": "0e25b35c89a3f7955ad79f2049fc8df2"
+    "mtime": 1785039477.0849612,
+    "ast_hash": "3134857792f39ae356a7ec28631f4392",
+    "semantic_hash": "3134857792f39ae356a7ec28631f4392"
   },
   "ProductionStudio/Workflows/build_master_workflow.py": {
     "mtime": 1784656182.4423742,
@@ -435,9 +435,9 @@
     "semantic_hash": "d79a25a484791c0d7ef241b2a0160cd3"
   },
   "ProductionStudio/Tools/youtube_publish_tool.md": {
-    "mtime": 1784423014.4536414,
-    "ast_hash": "4df63b587fd5a18e679a9bf8d32f7b74",
-    "semantic_hash": "4df63b587fd5a18e679a9bf8d32f7b74"
+    "mtime": 1785039493.048032,
+    "ast_hash": "052b169a8de0b8b598b065f829549571",
+    "semantic_hash": "052b169a8de0b8b598b065f829549571"
   },
   "ProductionStudio/Workflows/PIPELINE_OVERVIEW.md": {
     "mtime": 1784656182.4423742,
@@ -555,8 +555,13 @@
     "semantic_hash": "ded0608fff8df73a13111664a2e8b556"
   },
   "ProductionStudio/Channel/Trailer.md": {
-    "mtime": 1784999624.390474,
-    "ast_hash": "119c730db8293dc9d60f6665b06f89aa",
-    "semantic_hash": "119c730db8293dc9d60f6665b06f89aa"
+    "mtime": 1785000139.6522002,
+    "ast_hash": "c0710db219bf7d69f49e9d36e8d23e42",
+    "semantic_hash": "c0710db219bf7d69f49e9d36e8d23e42"
+  },
+  "ProductionStudio/Workflows/youtube_agent.py": {
+    "mtime": 1785039433.8200428,
+    "ast_hash": "a3f90eabbb922059fb887ea1edf0f3c4",
+    "semantic_hash": "a3f90eabbb922059fb887ea1edf0f3c4"
   }
 }

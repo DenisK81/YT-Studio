@@ -6,6 +6,12 @@
 */.env
 */.env.local
 
+# Real Google/YouTube OAuth credentials and tokens — never committed, only
+# Config/.env.example (empty) and the youtube_agent.py code that reads them belong in git.
+ProductionStudio/Config/client_secret*.json
+ProductionStudio/Config/oauth_yt.txt
+ProductionStudio/Config/youtube_token.json
+
 # Generated media — see ProductionStudio/Assets/README.md. Keep this repo a
 # code/prompt/template repo, not a media dump.
 ProductionStudio/Assets/images/
