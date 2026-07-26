@@ -51,10 +51,17 @@ starts once explicitly requested — don't self-initiate Phase 2 work from a Pha
   scheduling is planned in LA local time and converted to UTC for the API's `publishAt` field —
   compute the conversion with a real timezone library (e.g. Python `zoneinfo`), never hardcode
   UTC-7/UTC-8, since LA switches between PDT and PST across the year.
-- **Every case gets one YouTube playlist, named `Case Files: {Case Name}`.** Created via
-  `youtube_agent.py`'s `get_or_create_playlist()` (idempotent — safe to call every time, never
-  duplicates). Every video for that case — main video and every Short — gets added via
-  `add_video_to_playlist()` as soon as it's uploaded, not batched up later.
+- **Playlists are by theme/motive, never by case name** (decided 2026-07-26, replacing an
+  earlier "one playlist per case" attempt the channel owner rejected after checking how
+  competitor true-crime channels organize theirs). Examples already in use: `Love Triangle
+  Murders`, `Wife Killed Husband`, `Murder For Insurance Money`, `Framed The Wrong Person`. A
+  single video normally belongs in 2-3 of these at once (e.g. a wife-and-lover insurance-murder
+  case is both `Wife Killed Husband` and `Murder For Insurance Money` and `Love Triangle
+  Murders`) — that overlap is expected and fine, not a bug. When a new case is produced, decide
+  its 2-4 fitting themes from the existing playlist set first; only create a new themed
+  playlist if the case genuinely doesn't fit any existing one. Created via `youtube_agent.py`'s
+  `get_or_create_playlist()` (idempotent by title) and `add_video_to_playlist()`, added as soon
+  as each video is uploaded, not batched up later.
 - First real test case: the Molly Watson / James Addie script. Chapters 6-16 and the ending
   were drafted separately from this repo; chapters 1-5 may or may not be finished yet — ask the
   user for current status rather than assuming.

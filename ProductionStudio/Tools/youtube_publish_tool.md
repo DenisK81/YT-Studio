@@ -47,16 +47,27 @@ spec anymore.
 - Scopes: `youtube.upload` + `youtube` (covers upload, metadata, thumbnails, playlists —
   the full "manage the channel" surface, not just publishing one video).
 
-## Playlists (added 2026-07-26)
+## Playlists (added 2026-07-26, revised same day)
 
-Every case gets exactly one playlist, named `Case Files: {Case Name}` — created via
-`get_or_create_playlist(title, description)` (idempotent by title, never duplicates) and
-populated via `add_video_to_playlist(playlist_id, video_id)`. The main video and every Short for
-that case go in the same playlist, added as soon as each is uploaded — not batched up later.
-Existing channel videos were retroactively sorted into `Case Files: Brendan Banfield`,
-`Case Files: Molly Watson`, `Case Files: Kouri Richins`, `Case Files: Monica Sementilli` on
-2026-07-26 (two pre-existing videos, "Renovation" and an untitled cold-open clip, had empty
-descriptions and no identifiable case — left out rather than guessed).
+First attempt used one playlist per case (`Case Files: {Case Name}`). The channel owner rejected
+this after checking how competitor true-crime channels actually organize their playlists — real
+channels group by **theme/motive**, not by case name, since that's what a viewer browses by
+("show me more love-triangle murders", not "show me more Case Files"). Deleted the 4 case
+playlists (`delete_playlist()`) and replaced them with themed ones:
+
+- `Love Triangle Murders`
+- `Wife Killed Husband`
+- `Murder For Insurance Money`
+- `Framed The Wrong Person`
+
+A video normally belongs in 2-3 of these — e.g. the Monica Sementilli and Kouri Richins videos
+are all in `Wife Killed Husband` AND `Murder For Insurance Money`, and Sementilli/Banfield/Molly
+Watson are all in `Love Triangle Murders` too. That overlap is intentional, not a dedup bug.
+Created via `get_or_create_playlist(title, description)` (idempotent by title) and populated via
+`add_video_to_playlist(playlist_id, video_id)`; for a new case, pick its 2-4 fitting existing
+themes first, only make a new themed playlist if nothing fits. Two pre-existing videos
+("Renovation", an untitled cold-open clip) had empty descriptions and no identifiable
+case/theme — left out of every playlist rather than guessed.
 
 ## Scheduling in practice (2026-07-26 real run)
 

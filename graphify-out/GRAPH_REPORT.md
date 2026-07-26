@@ -1,33 +1,37 @@
 # Graph Report - .  (2026-07-25)
 
 ## Corpus Check
-- 4 files · ~89,285 words
+- 4 files · ~89,499 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 444 nodes · 705 edges · 23 communities (18 shown, 5 thin omitted)
-- Extraction: 93% EXTRACTED · 7% INFERRED · 1% AMBIGUOUS · INFERRED: 46 edges (avg confidence: 0.89)
-- Token cost: 65,265 input · 0 output
+- 468 nodes · 768 edges · 27 communities (22 shown, 5 thin omitted)
+- Extraction: 92% EXTRACTED · 7% INFERRED · 1% AMBIGUOUS · INFERRED: 53 edges (avg confidence: 0.9)
+- Token cost: 80,924 input · 0 output
 
 ## Community Hubs (Navigation)
 - Monica Sementilli Case Package
-- Visual Style & Real-Photo Policy
+- Playlist Theme Rules & Scheduling
 - Banfield Auto-Run & Candidates
-- Config Schema Properties A
 - Research & Story Structure Rules
-- Mugshot Redaction & Banfield Case
-- Core Pipeline Policies
+- Config Schema Properties A
 - YouTube Agent Module (real API)
 - Config Schema Properties B
+- Core Pipeline Policies
 - Config Schema Properties C
+- Mugshot Redaction Policy
 - Config Schema Enum Values
-- Publishing Timezone & Playlist Rules
 - Asset Generation Script
 - Claude Code Settings/Permissions
+- Scene Marker & Timing Convention
+- Visual Style & Brand Identity
+- n8n Orchestration History
+- Brendan Banfield Case Package
 - Voice & Music Tool Notes
 - Image Generation Tool Notes
 - Test Plan Stages
-- n8n Workflow Builder
+- n8n Workflow Builder Script
+- Audio Post-Processing Script
 - Channel Trailer Voice Choice
 - Remotion Render Prep
 - Shorts Render Prep
@@ -42,20 +46,20 @@
 5. `Brendan Banfield Auto-Run — ResearchOutput.md` - 14 edges
 6. `Brendan Banfield (convicted husband)` - 14 edges
 7. `Person Photos Research` - 14 edges
-8. `Juliana Peres Magalhães (au pair)` - 13 edges
-9. `get_authenticated_service()` - 13 edges
+8. `get_authenticated_service()` - 14 edges
+9. `Juliana Peres Magalhães (au pair)` - 13 edges
 10. `QC Checklist` - 12 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Shorts Agent` --conceptually_related_to--> `Shorts release pacing rule: one strong short day-of, remaining shorts one per day after (rationale: avoid dumping all 5 shorts on day one)`  [INFERRED]
-  ProductionStudio/Agents/shorts_agent.md → ProductionStudio/Agents/publishing_agent.md
-- `Kouri Richins Case — Voiceover.txt` --implements--> `Template — Voiceover.txt`  [INFERRED]
-  ProductionStudio/Cases/kouri-richins-fentanyl-murder/Voiceover.txt → ProductionStudio/Templates/Voiceover.txt
-- `Tools/royalty_free_music_tool.md (referenced, not read this chunk)` --semantically_similar_to--> `Tools/mugshot_fetch_tool.md (referenced, not read this chunk)`  [INFERRED] [semantically similar]
-  ProductionStudio/Agents/video_assembly_agent.md → ProductionStudio/Cases/brendan-banfield-double-murder/PersonPhotos.md
-- `Brendan Banfield Case — SEO.md (main)` --semantically_similar_to--> `2025-2026 true-crime genre trend: victim-centered storytelling, primary-footage format, TikTok-driven virality`  [INFERRED] [semantically similar]
-  ProductionStudio/Cases/brendan-banfield-double-murder/SEO.md → ProductionStudio/Cases/brendan-banfield-double-murder/auto-run-2026-07-21/ResearchOutput.md
-- `Every case gets one YouTube playlist, named 'Case Files: {Case Name}'` --shares_data_with--> `Playlists section (added 2026-07-26): one playlist per case via get_or_create_playlist/add_video_to_playlist`  [INFERRED]
+- `Playlists are by theme/motive, never by case name (decided 2026-07-26)` --semantically_similar_to--> `Playlists (added 2026-07-26, revised same day): pivot from per-case to theme playlists`  [INFERRED] [semantically similar]
+  CLAUDE.md → ProductionStudio/Tools/youtube_publish_tool.md
+- `Playlist: Love Triangle Murders` --semantically_similar_to--> `Playlist: Love Triangle Murders (PLex0mHScQ9nU)`  [INFERRED] [semantically similar]
+  CLAUDE.md → ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md
+- `Playlist: Love Triangle Murders` --semantically_similar_to--> `Playlist: Love Triangle Murders`  [INFERRED] [semantically similar]
+  CLAUDE.md → ProductionStudio/Tools/youtube_publish_tool.md
+- `Playlist: Wife Killed Husband` --semantically_similar_to--> `Playlist: Wife Killed Husband (PLe6_jN9U_ijM)`  [INFERRED] [semantically similar]
+  CLAUDE.md → ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md
+- `Playlist: Wife Killed Husband` --semantically_similar_to--> `Playlist: Wife Killed Husband`  [INFERRED] [semantically similar]
   CLAUDE.md → ProductionStudio/Tools/youtube_publish_tool.md
 
 ## Import Cycles
@@ -75,79 +79,95 @@
 - **Local Phase 2 Infrastructure Bootstrap (Remotion + n8n + fal.ai)** — productionstudio_tests_stage4_n8n_local_bootstrap, productionstudio_tests_stage4_remotion_local_render_test, productionstudio_tools_image_gen_tool [EXTRACTED 1.00]
 - **Real-World Asset Sourcing Tools with Channel-Owner Risk Decisions** — productionstudio_tools_mugshot_fetch_tool, productionstudio_tools_royalty_free_music_tool, productionstudio_tools_mugshot_fetch_tool_outlet_attribution_exception, productionstudio_tools_royalty_free_music_tool_sourcing_decision [INFERRED 0.75]
 
-## Communities (23 total, 5 thin omitted)
+## Communities (27 total, 5 thin omitted)
 
 ### Community 0 - "Monica Sementilli Case Package"
 Cohesion: 0.08
 Nodes (48): QC Checklist, Kouri Richins production precedent (prior case that left person-photo gap undocumented), Scene 0056 garbled-text QC fix - rationale: fal.ai Flux schnell can't render legible on-screen text, so prompt rewritten to describe illegible document, Scene 0062 tonal-mismatch QC fix - rationale: original video-wall render was tonally wrong, rewritten to simple TV-glow shot, SceneList.json (estimated scene/runtime plan), Assets/audio/.../timing.json (real ElevenLabs voice timing), Austin's stabbing role flagged as ambiguous, not asserted in script - rationale: only one summarized source phrased it ambiguously, not cleanly corroborated across outlets, Fact-Check Report (+40 more)
 
-### Community 1 - "Visual Style & Real-Photo Policy"
+### Community 1 - "Playlist Theme Rules & Scheduling"
 Cohesion: 0.10
-Nodes (39): Channel fixed visual brand style (photorealistic, cinematic, 35mm, 16:9, dark backgrounds, colors #111111/#FFFFFF/#A30E15/#4D4D4D/#BDBDBD, Bebas Neue/Oswald headline), scene_id convention shared across Scene Planner, Voice, Image, Assembly agents, [[SCENE:NNNN]] inline marker convention (rationale: naive word-count estimates drifted 74% from real audio, so real caption/scene timing must come from ElevenLabs per-character alignment, not estimation), Tool Management Policy: never solve the same problem twice (rationale: avoid duplicate/competing tools), Image Generation Agent, Image Planning Agent, Scene Planner Agent, Shorts Agent (+31 more)
+Nodes (38): youtube_agent.py add_video_to_playlist(), added as soon as each video is uploaded, youtube_agent.py get_or_create_playlist() (idempotent by title), A video normally belongs in 2-3 theme playlists at once (overlap expected, not a bug), Playlist: Framed The Wrong Person, Playlist: Love Triangle Murders, Playlist: Murder For Insurance Money, Playlists are by theme/motive, never by case name (decided 2026-07-26), Playlist: Wife Killed Husband (+30 more)
 
 ### Community 2 - "Banfield Auto-Run & Candidates"
 Cohesion: 0.13
 Nodes (41): Brendan Banfield Auto-Run — Checklist.md, Brendan Banfield Auto-Run — FactCheck.md, Brendan Banfield Auto-Run — ImagePrompts.md, Brendan Banfield Auto-Run — PublishPlan.md, banfield_auto_draft.mp4 (rendered video asset), Brendan Banfield Auto-Run — ResearchOutput.md, Ana Walshe (alternate candidate case, victim), Brian Walshe (alternate candidate case, defendant) (+33 more)
 
-### Community 3 - "Config Schema Properties A"
-Cohesion: 0.05
-Nodes (36): description, type, const, description, const, description, type, const (+28 more)
+### Community 3 - "Research & Story Structure Rules"
+Cohesion: 0.07
+Nodes (34): Discovery sources for candidate cases (DOJ/USAO press feeds, r/TrueCrime, r/UnresolvedMysteries, Websleuths) distinct from the citation source list, Fixed 10-beat script structure: Hook, Conflict, Mystery, Escalation, Evidence, Twist, Investigation, Final Reveal, Aftermath, Question, No-clickbait-lies policy (rationale: true-crime audiences disengage from fake mystery/oversold claims), Research source priority list (FBI/DOJ/court docs/AP/CourtTV/Law&Crime/Oxygen; Wikipedia timeline-only; Reddit sentiment-only), Shanna Golyar, fatal-affairs-project-brief.md (referenced, not read this chunk), Fact Verification Agent, Research Agent (+26 more)
 
-### Community 4 - "Research & Story Structure Rules"
-Cohesion: 0.08
-Nodes (30): Discovery sources for candidate cases (DOJ/USAO press feeds, r/TrueCrime, r/UnresolvedMysteries, Websleuths) distinct from the citation source list, Fixed 10-beat script structure: Hook, Conflict, Mystery, Escalation, Evidence, Twist, Investigation, Final Reveal, Aftermath, Question, No-clickbait-lies policy (rationale: true-crime audiences disengage from fake mystery/oversold claims), Research source priority list (FBI/DOJ/court docs/AP/CourtTV/Law&Crime/Oxygen; Wikipedia timeline-only; Reddit sentiment-only), Shanna Golyar, fatal-affairs-project-brief.md (referenced, not read this chunk), Fact Verification Agent, Research Agent (+22 more)
+### Community 4 - "Config Schema Properties A"
+Cohesion: 0.06
+Nodes (33): description, type, const, description, const, description, type, const (+25 more)
 
-### Community 5 - "Mugshot Redaction & Banfield Case"
-Cohesion: 0.08
-Nodes (32): Track 1 mugshot redaction policy (Haar-cascade face+eye detection, eyes_blacked, raw file kept only for verification, never used in output), Brendan Banfield, Christine Banfield, Fairfax County Police Department, Joseph Ryan, Juliana Peres Magalhães, WJLA (news outlet), Brendan Banfield Case Checklist (+24 more)
+### Community 5 - "YouTube Agent Module (real API)"
+Cohesion: 0.11
+Nodes (27): add_video_to_playlist(), cmd_auth(), cmd_channel_info(), confirm_publish(), delete_playlist(), _find_client_secret_file(), find_playlist_by_title(), get_authenticated_service() (+19 more)
 
-### Community 6 - "Core Pipeline Policies"
-Cohesion: 0.14
-Nodes (26): checklist_status field (renamed from 'status' 2026-07-20 so it exactly matches Publishing Agent's gating input), Human-gated publishing rule (rationale: publishing is irreversible/public, no exceptions even in a fully automated pipeline), Shorts release pacing rule: one strong short day-of, remaining shorts one per day after (rationale: avoid dumping all 5 shorts on day one), Publishing Agent, Quality Control Agent, Kouri Richins Case — Checklist.md, Flux Schnell On-Screen Text Rendering Limitation, Kouri Richins Case — FactCheck.md (+18 more)
-
-### Community 7 - "YouTube Agent Module (real API)"
-Cohesion: 0.12
-Nodes (25): add_video_to_playlist(), cmd_auth(), cmd_channel_info(), confirm_publish(), _find_client_secret_file(), find_playlist_by_title(), get_authenticated_service(), get_or_create_playlist() (+17 more)
-
-### Community 8 - "Config Schema Properties B"
+### Community 6 - "Config Schema Properties B"
 Cohesion: 0.08
 Nodes (25): const, const, const, properties, properties, type, properties, type (+17 more)
 
-### Community 9 - "Config Schema Properties C"
+### Community 7 - "Core Pipeline Policies"
+Cohesion: 0.16
+Nodes (24): checklist_status field (renamed from 'status' 2026-07-20 so it exactly matches Publishing Agent's gating input), Human-gated publishing rule (rationale: publishing is irreversible/public, no exceptions even in a fully automated pipeline), Shorts release pacing rule: one strong short day-of, remaining shorts one per day after (rationale: avoid dumping all 5 shorts on day one), Publishing Agent, Quality Control Agent, Kouri Richins Case — Checklist.md, Flux Schnell On-Screen Text Rendering Limitation, Kouri Richins Case — FactCheck.md (+16 more)
+
+### Community 8 - "Config Schema Properties C"
 Cohesion: 0.09
 Nodes (22): properties, const, const, const, const, description, const, description (+14 more)
+
+### Community 9 - "Mugshot Redaction Policy"
+Cohesion: 0.10
+Nodes (21): Track 1 mugshot redaction policy (Haar-cascade face+eye detection, eyes_blacked, raw file kept only for verification, never used in output), Fairfax County Police Department, Juliana Peres Magalhães, WJLA (news outlet), Brendan Banfield Case PersonPhotos, Banfield case (previously produced video; source of the real redacted mugshot reused in the trailer under the newsworthy-exception analysis), Assets/images/real_photos/banfield_mugshot_REDACTED.jpg — real photo, eyes redacted per mugshot_fetch_tool's standing policy, Fatal Affairs Channel Trailer (~60s movie-trailer-style channel preview, replaces unbranded preview; rendered 2026-07-25 at 30.1s/903 frames, awaiting channel owner review before manual upload) (+13 more)
 
 ### Community 10 - "Config Schema Enum Values"
 Cohesion: 0.10
 Nodes (20): default, enum, image, publish, video_assembly, voice_id, voice_model, properties (+12 more)
 
-### Community 11 - "Publishing Timezone & Playlist Rules"
-Cohesion: 0.14
-Nodes (19): Every case gets one YouTube playlist, named 'Case Files: {Case Name}', Publishing timezone: America/Los_Angeles (Pacific), confirmed 2026-07-26, youtube_agent.py — real publishing implementation (Workflows/youtube_agent.py), Main video (video_id 37SdUL9S-AY), published 2026-07-25, channel-owner-uploaded, title from SEO.md options, Original pacing rationale (superseded, kept for reference), Playlist: 'Case Files: Monica Sementilli' (PLErsd2D4rc9g) — main video + all 4 shorts added, 2026-07-26 update: original one-per-day plan superseded by 2-per-day schedule, Short 1 'She Watched The Murder On Camera' (video_id MWImIifQNzg), scheduled 2026-07-26T15:00:00Z (+11 more)
+### Community 11 - "Asset Generation Script"
+Cohesion: 0.22
+Nodes (15): cmd_audio(), cmd_images(), get_bytes(), main(), parse_voiceover(), post_json(), Local, no-n8n, no-Anthropic-key asset generator for a case.  Phase 1 default (, Group per-character alignment into (start, end, word) spans on whitespace. (+7 more)
 
-### Community 12 - "Asset Generation Script"
-Cohesion: 0.20
-Nodes (16): Orchestration Decision — No n8n / No Standalone API Key for Phase 1, cmd_audio(), cmd_images(), get_bytes(), main(), parse_voiceover(), post_json(), Local, no-n8n, no-Anthropic-key asset generator for a case.  Phase 1 default ( (+8 more)
-
-### Community 13 - "Claude Code Settings/Permissions"
+### Community 12 - "Claude Code Settings/Permissions"
 Cohesion: 0.13
 Nodes (14): hooks, PreToolUse, permissions, ask, defaultMode, deny, $schema, Bash(curl *) (+6 more)
 
-### Community 14 - "Voice & Music Tool Notes"
+### Community 13 - "Scene Marker & Timing Convention"
+Cohesion: 0.21
+Nodes (14): scene_id convention shared across Scene Planner, Voice, Image, Assembly agents, [[SCENE:NNNN]] inline marker convention (rationale: naive word-count estimates drifted 74% from real audio, so real caption/scene timing must come from ElevenLabs per-character alignment, not estimation), Tool Management Policy: never solve the same problem twice (rationale: avoid duplicate/competing tools), Scene Planner Agent, Tool Manager Agent, Video Assembly Agent, Voice Production Agent, ProductionStudio/Assets README (+6 more)
+
+### Community 14 - "Visual Style & Brand Identity"
+Cohesion: 0.26
+Nodes (11): Channel fixed visual brand style (photorealistic, cinematic, 35mm, 16:9, dark backgrounds, colors #111111/#FFFFFF/#A30E15/#4D4D4D/#BDBDBD, Bebas Neue/Oswald headline), Image Generation Agent, Image Planning Agent, Shorts Agent, Thumbnail Agent, Shorts Visual Style Requirement, Template — ImagePrompts.md, Template — Shorts.md (+3 more)
+
+### Community 15 - "n8n Orchestration History"
+Cohesion: 0.27
+Nodes (11): Orchestration Decision — No n8n / No Standalone API Key for Phase 1, Stage 4 Full 14-Agent Pipeline n8n Test, ElevenLabs Concurrency and n8n Batching Fixes, Mixed Opus/Sonnet Model Cost Optimization, Orchestration Decision: Claude Code Direct Execution over n8n, Trailing Meta-Prose Narration Bug Fix, Remotion Local Render Test, Tools/remotion_assembly_tool.md (referenced, not read this chunk) (+3 more)
+
+### Community 16 - "Brendan Banfield Case Package"
+Cohesion: 0.29
+Nodes (10): Brendan Banfield, Christine Banfield, Joseph Ryan, Brendan Banfield Case Checklist, Brendan Banfield Case ImagePrompts, Brendan Banfield Case PublishPlan, Brendan Banfield Case SceneList.json (referenced, not read this chunk), $schema (+2 more)
+
+### Community 17 - "Voice & Music Tool Notes"
 Cohesion: 0.22
 Nodes (9): Background music — Stage 2 live-test attempt (2026-07-19), Default provider notes (ElevenLabs, verify against current docs before building), Gap closure (2026-07-19) — concrete fix for the two shape mismatches above, Implementation notes, Interface, Purpose, Real-timestamp captioning — fixed endpoint choice (2026-07-21), Stage 1/2 live-test result (2026-07-19) (+1 more)
 
-### Community 15 - "Image Generation Tool Notes"
+### Community 18 - "Image Generation Tool Notes"
 Cohesion: 0.25
 Nodes (8): Default provider: fal.ai + Flux, Fallback / secondary providers (keep the interface provider-agnostic), Implementation notes, Interface, Purpose, Stage 2 live-test result (2026-07-19), Stage 4 live-test result (2026-07-20/21) — confirmed working through n8n, not just direct Python, Tool: image_gen_tool
 
-### Community 16 - "Test Plan Stages"
+### Community 19 - "Test Plan Stages"
 Cohesion: 0.29
 Nodes (7): Regression check, Stage 1 — Agents in isolation, Stage 2 — Tools in isolation, Stage 3 — Two-node links, Stage 4 — Full chain, one real case, dry-run publish, Stage 5 — First real publish, Test Plan
 
-### Community 17 - "n8n Workflow Builder"
+### Community 20 - "n8n Workflow Builder Script"
 Cohesion: 0.29
 Nodes (3): Build the Fatal Affairs master pipeline workflow for n8n (local Phase 2 trial)., JS expr: concatenated text blocks of an Anthropic node's response., txt()
+
+### Community 21 - "Audio Post-Processing Script"
+Cohesion: 0.43
+Nodes (6): load_rawoutput(), main(), node_items(), Post-process an n8n execution's rawOutput after the ElevenLabs with-timestamps, Group a per-character alignment into per-word (start, end, word) spans,     spl, word_spans()
 
 ## Ambiguous Edges - Review These
 - `Brendan Banfield Case PersonPhotos` → `Juliana Peres Magalhães`  [AMBIGUOUS]
@@ -164,7 +184,7 @@ Nodes (3): Build the Fatal Affairs master pipeline workflow for n8n (local Phase
   ProductionStudio/Cases/brendan-banfield-double-murder/auto-run-2026-07-21/Voiceover.txt · relation: references
 
 ## Knowledge Gaps
-- **143 isolated node(s):** `$schema`, `title`, `type`, `type`, `const` (+138 more)
+- **141 isolated node(s):** `$schema`, `title`, `type`, `type`, `const` (+136 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -183,5 +203,5 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: references) - confidence is low._
 - **What is the exact relationship between `Brendan Banfield Auto-Run — Voiceover.txt` and `Joseph Ryan (victim, second victim)`?**
   _Edge tagged AMBIGUOUS (relation: references) - confidence is low._
-- **Why does `Shorts Agent` connect `Visual Style & Real-Photo Policy` to `Config Schema Properties A`, `Research & Story Structure Rules`, `Mugshot Redaction & Banfield Case`, `Core Pipeline Policies`?**
-  _High betweenness centrality (0.137) - this node is a cross-community bridge._
+- **Why does `properties` connect `Config Schema Properties A` to `Brendan Banfield Case Package`?**
+  _High betweenness centrality (0.204) - this node is a cross-community bridge._

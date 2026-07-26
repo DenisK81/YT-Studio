@@ -275,6 +275,13 @@ def add_video_to_playlist(playlist_id, video_id):
     print(f"Added {video_id} to playlist {playlist_id}")
 
 
+def delete_playlist(playlist_id):
+    """Removes a playlist. Does NOT delete the videos in it - only the grouping."""
+    yt = get_authenticated_service()
+    yt.playlists().delete(id=playlist_id).execute()
+    print(f"Deleted playlist {playlist_id}")
+
+
 def list_playlist_items(playlist_id):
     yt = get_authenticated_service()
     resp = yt.playlistItems().list(part="snippet", playlistId=playlist_id, maxResults=50).execute()
@@ -320,6 +327,9 @@ if __name__ == "__main__":
     p_addplaylist.add_argument("playlist_id")
     p_addplaylist.add_argument("video_id")
 
+    p_delplaylist = sub.add_parser("delete-playlist")
+    p_delplaylist.add_argument("playlist_id")
+
     p_publish = sub.add_parser("publish")
     p_publish.add_argument("video_id")
     p_publish.add_argument("--confirm", action="store_true",
@@ -351,6 +361,8 @@ if __name__ == "__main__":
         get_or_create_playlist(args.title, description=args.description)
     elif args.cmd == "add-to-playlist":
         add_video_to_playlist(args.playlist_id, args.video_id)
+    elif args.cmd == "delete-playlist":
+        delete_playlist(args.playlist_id)
     elif args.cmd == "publish":
         confirm_publish(args.video_id, human_confirmed=args.confirm,
                          privacy_status=args.privacy, publish_at=args.at)

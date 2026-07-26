@@ -196,7 +196,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 3,
+      "community": 16,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "config.schema.json",
       "id": "productionstudio_config_config_schema"
@@ -207,7 +207,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L2",
       "_origin": "ast",
-      "community": 3,
+      "community": 16,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "$schema",
       "id": "productionstudio_config_config_schema_schema"
@@ -218,7 +218,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 3,
+      "community": 16,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "title",
       "id": "productionstudio_config_config_schema_title"
@@ -229,7 +229,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 3,
+      "community": 16,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "type",
       "id": "productionstudio_config_config_schema_type"
@@ -240,7 +240,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "properties",
       "id": "productionstudio_config_config_schema_properties"
@@ -251,7 +251,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "channel",
       "id": "productionstudio_config_config_schema_properties_channel"
@@ -262,7 +262,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "type",
       "id": "productionstudio_config_config_schema_channel_type"
@@ -273,7 +273,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "properties",
       "id": "productionstudio_config_config_schema_channel_properties"
@@ -284,7 +284,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "name",
       "id": "productionstudio_config_config_schema_properties_name"
@@ -295,7 +295,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_name_const"
@@ -306,7 +306,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "slogan",
       "id": "productionstudio_config_config_schema_properties_slogan"
@@ -317,7 +317,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_slogan_const"
@@ -328,7 +328,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "colors",
       "id": "productionstudio_config_config_schema_properties_colors"
@@ -339,7 +339,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "type",
       "id": "productionstudio_config_config_schema_colors_type"
@@ -350,7 +350,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "properties",
       "id": "productionstudio_config_config_schema_colors_properties"
@@ -361,7 +361,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "bg",
       "id": "productionstudio_config_config_schema_properties_bg"
@@ -372,7 +372,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_bg_const"
@@ -383,7 +383,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "text",
       "id": "productionstudio_config_config_schema_properties_text"
@@ -394,7 +394,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_text_const"
@@ -405,7 +405,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "accent",
       "id": "productionstudio_config_config_schema_properties_accent"
@@ -416,7 +416,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_accent_const"
@@ -427,7 +427,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "gray",
       "id": "productionstudio_config_config_schema_properties_gray"
@@ -438,7 +438,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_gray_const"
@@ -449,7 +449,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L18",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "light_gray",
       "id": "productionstudio_config_config_schema_properties_light_gray"
@@ -460,7 +460,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L18",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_light_gray_const"
@@ -471,7 +471,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "fonts",
       "id": "productionstudio_config_config_schema_properties_fonts"
@@ -482,7 +482,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "type",
       "id": "productionstudio_config_config_schema_fonts_type"
@@ -493,7 +493,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "properties",
       "id": "productionstudio_config_config_schema_fonts_properties"
@@ -504,7 +504,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L24",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "headline",
       "id": "productionstudio_config_config_schema_properties_headline"
@@ -515,7 +515,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L24",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_headline_const"
@@ -526,7 +526,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "body",
       "id": "productionstudio_config_config_schema_properties_body"
@@ -537,7 +537,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_body_const"
@@ -548,7 +548,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "providers",
       "id": "productionstudio_config_config_schema_properties_providers"
@@ -559,7 +559,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L31",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "type",
       "id": "productionstudio_config_config_schema_providers_type"
@@ -581,7 +581,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "voice",
       "id": "productionstudio_config_config_schema_properties_voice"
@@ -592,7 +592,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "enum",
       "id": "productionstudio_config_config_schema_voice_enum"
@@ -603,7 +603,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "elevenlabs",
       "id": "ref_elevenlabs"
@@ -614,7 +614,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "default",
       "id": "productionstudio_config_config_schema_voice_default"
@@ -834,7 +834,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L47",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "publishing_pace",
       "id": "productionstudio_config_config_schema_properties_publishing_pace"
@@ -845,7 +845,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L48",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "type",
       "id": "productionstudio_config_config_schema_publishing_pace_type"
@@ -856,7 +856,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L49",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "description",
       "id": "productionstudio_config_config_schema_publishing_pace_description"
@@ -867,7 +867,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L50",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "properties",
       "id": "productionstudio_config_config_schema_publishing_pace_properties"
@@ -878,7 +878,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L51",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "main_video_and_first_short_same_day",
       "id": "productionstudio_config_config_schema_properties_main_video_and_first_short_same_day"
@@ -889,7 +889,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L51",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_main_video_and_first_short_same_day_const"
@@ -900,7 +900,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L52",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "remaining_shorts_one_per_day",
       "id": "productionstudio_config_config_schema_properties_remaining_shorts_one_per_day"
@@ -911,7 +911,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L52",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_remaining_shorts_one_per_day_const"
@@ -922,7 +922,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L53",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "shorts_order",
       "id": "productionstudio_config_config_schema_properties_shorts_order"
@@ -933,7 +933,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L53",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_shorts_order_const"
@@ -944,7 +944,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L56",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "shorts",
       "id": "productionstudio_config_config_schema_properties_shorts"
@@ -955,7 +955,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L57",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "type",
       "id": "productionstudio_config_config_schema_shorts_type"
@@ -966,7 +966,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L58",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "description",
       "id": "productionstudio_config_config_schema_shorts_description"
@@ -977,7 +977,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L59",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "properties",
       "id": "productionstudio_config_config_schema_shorts_properties"
@@ -988,7 +988,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L60",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "max_seconds",
       "id": "productionstudio_config_config_schema_properties_max_seconds"
@@ -999,7 +999,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L61",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_max_seconds_const"
@@ -1010,7 +1010,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L62",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "description",
       "id": "productionstudio_config_config_schema_max_seconds_description"
@@ -1021,7 +1021,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L64",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "count_per_video",
       "id": "productionstudio_config_config_schema_properties_count_per_video"
@@ -1032,7 +1032,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L64",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_count_per_video_const"
@@ -1043,7 +1043,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L65",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "caption_font",
       "id": "productionstudio_config_config_schema_properties_caption_font"
@@ -1054,7 +1054,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L66",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_caption_font_const"
@@ -1065,7 +1065,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L67",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "description",
       "id": "productionstudio_config_config_schema_caption_font_description"
@@ -1076,7 +1076,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L69",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "caption_highlight_color",
       "id": "productionstudio_config_config_schema_properties_caption_highlight_color"
@@ -1087,7 +1087,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L70",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_caption_highlight_color_const"
@@ -1098,7 +1098,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L71",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Captions",
       "norm_label": "description",
       "id": "productionstudio_config_config_schema_caption_highlight_color_description"
@@ -1109,7 +1109,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L75",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "background_music",
       "id": "productionstudio_config_config_schema_properties_background_music"
@@ -1120,7 +1120,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L76",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "type",
       "id": "productionstudio_config_config_schema_background_music_type"
@@ -1131,7 +1131,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L77",
       "_origin": "ast",
-      "community": 3,
+      "community": 4,
       "community_name": "Config Schema: Providers & Channel",
       "norm_label": "description",
       "id": "productionstudio_config_config_schema_background_music_description"
@@ -1142,7 +1142,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L78",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "properties",
       "id": "productionstudio_config_config_schema_background_music_properties"
@@ -1153,7 +1153,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L79",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "provider",
       "id": "productionstudio_config_config_schema_properties_provider"
@@ -1164,7 +1164,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L80",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "enum",
       "id": "productionstudio_config_config_schema_provider_enum"
@@ -1175,7 +1175,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L80",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "local_bed_track_set",
       "id": "ref_local_bed_track_set"
@@ -1186,7 +1186,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L81",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "default",
       "id": "productionstudio_config_config_schema_provider_default"
@@ -1197,7 +1197,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L82",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "description",
       "id": "productionstudio_config_config_schema_provider_description"
@@ -1208,7 +1208,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L84",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "bed_track_count",
       "id": "productionstudio_config_config_schema_properties_bed_track_count"
@@ -1219,7 +1219,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L84",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_bed_track_count_const"
@@ -1230,7 +1230,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L85",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "bed_track_path",
       "id": "productionstudio_config_config_schema_properties_bed_track_path"
@@ -1241,7 +1241,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L85",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_bed_track_path_const"
@@ -1252,7 +1252,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L86",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "mood_prompt",
       "id": "productionstudio_config_config_schema_properties_mood_prompt"
@@ -1263,7 +1263,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L87",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_mood_prompt_const"
@@ -1274,7 +1274,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L88",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "description",
       "id": "productionstudio_config_config_schema_mood_prompt_description"
@@ -1285,7 +1285,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L90",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "mix_db_below_voiceover",
       "id": "productionstudio_config_config_schema_properties_mix_db_below_voiceover"
@@ -1296,7 +1296,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L91",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_mix_db_below_voiceover_const"
@@ -1307,7 +1307,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L92",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "description",
       "id": "productionstudio_config_config_schema_mix_db_below_voiceover_description"
@@ -1318,7 +1318,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L94",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "instrumental",
       "id": "productionstudio_config_config_schema_properties_instrumental"
@@ -1329,7 +1329,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L94",
       "_origin": "ast",
-      "community": 9,
+      "community": 8,
       "community_name": "Config Schema: Audio Tracks",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_instrumental_const"
@@ -1340,7 +1340,7 @@
       "source_file": "ProductionStudio/Workflows/build_master_workflow.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 17,
+      "community": 20,
       "community_name": "n8n Workflow Builder Script",
       "norm_label": "build_master_workflow.py",
       "id": "productionstudio_workflows_build_master_workflow"
@@ -1351,7 +1351,7 @@
       "source_file": "ProductionStudio/Workflows/build_master_workflow.py",
       "source_location": "L48",
       "_origin": "ast",
-      "community": 17,
+      "community": 20,
       "community_name": "n8n Workflow Builder Script",
       "norm_label": "read_agent()",
       "id": "productionstudio_workflows_build_master_workflow_read_agent"
@@ -1362,7 +1362,7 @@
       "source_file": "ProductionStudio/Workflows/build_master_workflow.py",
       "source_location": "L86",
       "_origin": "ast",
-      "community": 17,
+      "community": 20,
       "community_name": "n8n Workflow Builder Script",
       "norm_label": "txt()",
       "id": "productionstudio_workflows_build_master_workflow_txt"
@@ -1373,7 +1373,7 @@
       "source_file": "ProductionStudio/Workflows/build_master_workflow.py",
       "source_location": "L93",
       "_origin": "ast",
-      "community": 17,
+      "community": 20,
       "community_name": "n8n Workflow Builder Script",
       "norm_label": "anthropic_node()",
       "id": "productionstudio_workflows_build_master_workflow_anthropic_node"
@@ -1384,7 +1384,7 @@
       "source_file": "ProductionStudio/Workflows/build_master_workflow.py",
       "source_location": "L129",
       "_origin": "ast",
-      "community": 17,
+      "community": 20,
       "community_name": "n8n Workflow Builder Script",
       "norm_label": "connect()",
       "id": "productionstudio_workflows_build_master_workflow_connect"
@@ -1395,7 +1395,7 @@
       "source_file": "ProductionStudio/Workflows/build_master_workflow.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 17,
+      "community": 20,
       "community_name": "n8n Workflow Builder Script",
       "norm_label": "build the fatal affairs master pipeline workflow for n8n (local phase 2 trial).",
       "id": "productionstudio_workflows_build_master_workflow_rationale_1"
@@ -1406,7 +1406,7 @@
       "source_file": "ProductionStudio/Workflows/build_master_workflow.py",
       "source_location": "L87",
       "_origin": "ast",
-      "community": 17,
+      "community": 20,
       "community_name": "n8n Workflow Builder Script",
       "norm_label": "js expr: concatenated text blocks of an anthropic node's response.",
       "id": "productionstudio_workflows_build_master_workflow_rationale_87"
@@ -1417,7 +1417,7 @@
       "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "Case Asset Generator Script",
       "norm_label": "generate_case_assets.py",
       "id": "productionstudio_workflows_generate_case_assets"
@@ -1428,7 +1428,7 @@
       "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
       "source_location": "L40",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "Case Asset Generator Script",
       "norm_label": "repo_root()",
       "id": "productionstudio_workflows_generate_case_assets_repo_root"
@@ -1439,7 +1439,7 @@
       "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
       "source_location": "L45",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "Case Asset Generator Script",
       "norm_label": "post_json()",
       "id": "productionstudio_workflows_generate_case_assets_post_json"
@@ -1450,7 +1450,7 @@
       "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
       "source_location": "L56",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "Case Asset Generator Script",
       "norm_label": "get_bytes()",
       "id": "productionstudio_workflows_generate_case_assets_get_bytes"
@@ -1461,7 +1461,7 @@
       "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
       "source_location": "L62",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "Case Asset Generator Script",
       "norm_label": "parse_voiceover()",
       "id": "productionstudio_workflows_generate_case_assets_parse_voiceover"
@@ -1472,7 +1472,7 @@
       "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
       "source_location": "L107",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "Case Asset Generator Script",
       "norm_label": "word_spans()",
       "id": "productionstudio_workflows_generate_case_assets_word_spans"
@@ -1483,7 +1483,7 @@
       "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
       "source_location": "L126",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "Case Asset Generator Script",
       "norm_label": "cmd_audio()",
       "id": "productionstudio_workflows_generate_case_assets_cmd_audio"
@@ -1494,7 +1494,7 @@
       "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
       "source_location": "L199",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "Case Asset Generator Script",
       "norm_label": "cmd_images()",
       "id": "productionstudio_workflows_generate_case_assets_cmd_images"
@@ -1505,7 +1505,7 @@
       "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
       "source_location": "L232",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "Case Asset Generator Script",
       "norm_label": "main()",
       "id": "productionstudio_workflows_generate_case_assets_main"
@@ -1516,7 +1516,7 @@
       "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "Case Asset Generator Script",
       "norm_label": "local, no-n8n, no-anthropic-key asset generator for a case.  phase 1 default (",
       "id": "productionstudio_workflows_generate_case_assets_rationale_1"
@@ -1527,7 +1527,7 @@
       "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
       "source_location": "L108",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "Case Asset Generator Script",
       "norm_label": "group per-character alignment into (start, end, word) spans on whitespace.",
       "id": "productionstudio_workflows_generate_case_assets_rationale_108"
@@ -1538,7 +1538,7 @@
       "source_file": "ProductionStudio/Workflows/generate_shorts_audio.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "Case Asset Generator Script",
       "norm_label": "generate_shorts_audio.py",
       "id": "productionstudio_workflows_generate_shorts_audio"
@@ -1549,7 +1549,7 @@
       "source_file": "ProductionStudio/Workflows/generate_shorts_audio.py",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "Case Asset Generator Script",
       "norm_label": "extract_marked_text_from_script()",
       "id": "productionstudio_workflows_generate_shorts_audio_extract_marked_text_from_script"
@@ -1560,7 +1560,7 @@
       "source_file": "ProductionStudio/Workflows/generate_shorts_audio.py",
       "source_location": "L41",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "Case Asset Generator Script",
       "norm_label": "extract_marked_text()",
       "id": "productionstudio_workflows_generate_shorts_audio_extract_marked_text"
@@ -1571,7 +1571,7 @@
       "source_file": "ProductionStudio/Workflows/generate_shorts_audio.py",
       "source_location": "L67",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "Case Asset Generator Script",
       "norm_label": "main()",
       "id": "productionstudio_workflows_generate_shorts_audio_main"
@@ -1582,7 +1582,7 @@
       "source_file": "ProductionStudio/Workflows/generate_shorts_audio.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "Case Asset Generator Script",
       "norm_label": "generate standalone audio + real per-word timing for a single short from its ow",
       "id": "productionstudio_workflows_generate_shorts_audio_rationale_1"
@@ -1593,7 +1593,7 @@
       "source_file": "ProductionStudio/Workflows/generate_shorts_audio.py",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 12,
+      "community": 11,
       "community_name": "Case Asset Generator Script",
       "norm_label": "a standalone script file already in [[scene:nnnn]] text ... format,     one par",
       "id": "productionstudio_workflows_generate_shorts_audio_rationale_23"
@@ -1604,7 +1604,7 @@
       "source_file": "ProductionStudio/Workflows/prep_remotion_render.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 19,
+      "community": 23,
       "community_name": "Remotion Render Prep Script",
       "norm_label": "prep_remotion_render.py",
       "id": "productionstudio_workflows_prep_remotion_render"
@@ -1615,7 +1615,7 @@
       "source_file": "ProductionStudio/Workflows/prep_remotion_render.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 19,
+      "community": 23,
       "community_name": "Remotion Render Prep Script",
       "norm_label": "prepare a remotion render from a case's real timing.json (produced by process_p",
       "id": "productionstudio_workflows_prep_remotion_render_rationale_1"
@@ -1626,7 +1626,7 @@
       "source_file": "ProductionStudio/Workflows/prep_short_render.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 20,
+      "community": 24,
       "community_name": "Shorts Render Prep Script",
       "norm_label": "prep_short_render.py",
       "id": "productionstudio_workflows_prep_short_render"
@@ -1637,7 +1637,7 @@
       "source_file": "ProductionStudio/Workflows/prep_short_render.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 20,
+      "community": 24,
       "community_name": "Shorts Render Prep Script",
       "norm_label": "prepare a single short's remotion render data: copies its narration audio, cold",
       "id": "productionstudio_workflows_prep_short_render_rationale_1"
@@ -1648,7 +1648,7 @@
       "source_file": "ProductionStudio/Workflows/process_pipeline_audio.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 21,
       "community_name": "process_pipeline_audio.py",
       "norm_label": "process_pipeline_audio.py",
       "id": "productionstudio_workflows_process_pipeline_audio"
@@ -1659,7 +1659,7 @@
       "source_file": "ProductionStudio/Workflows/process_pipeline_audio.py",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 1,
+      "community": 21,
       "community_name": "process_pipeline_audio.py",
       "norm_label": "load_rawoutput()",
       "id": "productionstudio_workflows_process_pipeline_audio_load_rawoutput"
@@ -1670,7 +1670,7 @@
       "source_file": "ProductionStudio/Workflows/process_pipeline_audio.py",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 1,
+      "community": 21,
       "community_name": "process_pipeline_audio.py",
       "norm_label": "node_items()",
       "id": "productionstudio_workflows_process_pipeline_audio_node_items"
@@ -1681,7 +1681,7 @@
       "source_file": "ProductionStudio/Workflows/process_pipeline_audio.py",
       "source_location": "L41",
       "_origin": "ast",
-      "community": 1,
+      "community": 21,
       "community_name": "process_pipeline_audio.py",
       "norm_label": "word_spans()",
       "id": "productionstudio_workflows_process_pipeline_audio_word_spans"
@@ -1692,7 +1692,7 @@
       "source_file": "ProductionStudio/Workflows/process_pipeline_audio.py",
       "source_location": "L62",
       "_origin": "ast",
-      "community": 1,
+      "community": 21,
       "community_name": "process_pipeline_audio.py",
       "norm_label": "main()",
       "id": "productionstudio_workflows_process_pipeline_audio_main"
@@ -1703,7 +1703,7 @@
       "source_file": "ProductionStudio/Workflows/process_pipeline_audio.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 21,
       "community_name": "process_pipeline_audio.py",
       "norm_label": "post-process an n8n execution's rawoutput after the elevenlabs with-timestamps",
       "id": "productionstudio_workflows_process_pipeline_audio_rationale_1"
@@ -1714,7 +1714,7 @@
       "source_file": "ProductionStudio/Workflows/process_pipeline_audio.py",
       "source_location": "L42",
       "_origin": "ast",
-      "community": 1,
+      "community": 21,
       "community_name": "process_pipeline_audio.py",
       "norm_label": "group a per-character alignment into per-word (start, end, word) spans,     spl",
       "id": "productionstudio_workflows_process_pipeline_audio_rationale_42"
@@ -1725,7 +1725,7 @@
       "source_file": "ProductionStudio/Documentation/HANDOFF_TO_CLAUDE_CODE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "Project Stack & Policies",
       "norm_label": "handoff_to_claude_code.md",
       "id": "productionstudio_documentation_handoff_to_claude_code"
@@ -1736,7 +1736,7 @@
       "source_file": "ProductionStudio/Documentation/HANDOFF_TO_CLAUDE_CODE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "Project Stack & Policies",
       "norm_label": "handoff to claude code",
       "id": "productionstudio_documentation_handoff_to_claude_code_handoff_to_claude_code"
@@ -1747,7 +1747,7 @@
       "source_file": "ProductionStudio/Documentation/HANDOFF_TO_CLAUDE_CODE.md",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "Project Stack & Policies",
       "norm_label": "build order",
       "id": "productionstudio_documentation_handoff_to_claude_code_build_order"
@@ -1758,7 +1758,7 @@
       "source_file": "ProductionStudio/Documentation/HANDOFF_TO_CLAUDE_CODE.md",
       "source_location": "L62",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "Project Stack & Policies",
       "norm_label": "what not to do",
       "id": "productionstudio_documentation_handoff_to_claude_code_what_not_to_do"
@@ -1769,7 +1769,7 @@
       "source_file": "ProductionStudio/README.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "Project Stack & Policies",
       "norm_label": "readme.md",
       "id": "productionstudio_readme"
@@ -1780,7 +1780,7 @@
       "source_file": "ProductionStudio/README.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "Project Stack & Policies",
       "norm_label": "fatal affairs \u2014 production studio",
       "id": "productionstudio_readme_fatal_affairs_production_studio"
@@ -1791,7 +1791,7 @@
       "source_file": "ProductionStudio/README.md",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "Project Stack & Policies",
       "norm_label": "current status (2026-07-21 \u2014 read this before assuming anything below is still the plan)",
       "id": "productionstudio_readme_current_status_2026_07_21_read_this_before_assuming_anything_below_is_still_the_plan"
@@ -1802,7 +1802,7 @@
       "source_file": "ProductionStudio/README.md",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "Project Stack & Policies",
       "norm_label": "philosophy",
       "id": "productionstudio_readme_philosophy"
@@ -1813,7 +1813,7 @@
       "source_file": "ProductionStudio/README.md",
       "source_location": "L45",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "Project Stack & Policies",
       "norm_label": "structure",
       "id": "productionstudio_readme_structure"
@@ -1824,7 +1824,7 @@
       "source_file": "ProductionStudio/README.md",
       "source_location": "L59",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "Project Stack & Policies",
       "norm_label": "where this came from / what it is not",
       "id": "productionstudio_readme_where_this_came_from_what_it_is_not"
@@ -1835,7 +1835,7 @@
       "source_file": "ProductionStudio/README.md",
       "source_location": "L67",
       "_origin": "ast",
-      "community": 4,
+      "community": 3,
       "community_name": "Project Stack & Policies",
       "norm_label": "quick start for whoever builds this (claude code or a human dev)",
       "id": "productionstudio_readme_quick_start_for_whoever_builds_this_claude_code_or_a_human_dev"
@@ -1846,7 +1846,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 15,
       "community_name": "Production Agents & Style Rules",
       "norm_label": "test_plan.md",
       "id": "productionstudio_tests_test_plan"
@@ -1857,7 +1857,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 16,
+      "community": 19,
       "community_name": "Test Plan",
       "norm_label": "test plan",
       "id": "productionstudio_tests_test_plan_test_plan"
@@ -1868,7 +1868,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 16,
+      "community": 19,
       "community_name": "Test Plan",
       "norm_label": "stage 1 \u2014 agents in isolation",
       "id": "productionstudio_tests_test_plan_stage_1_agents_in_isolation"
@@ -1879,7 +1879,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 16,
+      "community": 19,
       "community_name": "Test Plan",
       "norm_label": "stage 2 \u2014 tools in isolation",
       "id": "productionstudio_tests_test_plan_stage_2_tools_in_isolation"
@@ -1890,7 +1890,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 16,
+      "community": 19,
       "community_name": "Test Plan",
       "norm_label": "stage 3 \u2014 two-node links",
       "id": "productionstudio_tests_test_plan_stage_3_two_node_links"
@@ -1901,7 +1901,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 16,
+      "community": 19,
       "community_name": "Test Plan",
       "norm_label": "stage 4 \u2014 full chain, one real case, dry-run publish",
       "id": "productionstudio_tests_test_plan_stage_4_full_chain_one_real_case_dry_run_publish"
@@ -1912,7 +1912,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L71",
       "_origin": "ast",
-      "community": 16,
+      "community": 19,
       "community_name": "Test Plan",
       "norm_label": "stage 5 \u2014 first real publish",
       "id": "productionstudio_tests_test_plan_stage_5_first_real_publish"
@@ -1923,7 +1923,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L75",
       "_origin": "ast",
-      "community": 16,
+      "community": 19,
       "community_name": "Test Plan",
       "norm_label": "regression check",
       "id": "productionstudio_tests_test_plan_regression_check"
@@ -1934,7 +1934,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 13,
       "community_name": "Production Agents & Style Rules",
       "norm_label": "elevenlabs_voice_tool.md",
       "id": "productionstudio_tools_elevenlabs_voice_tool"
@@ -1945,7 +1945,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 14,
+      "community": 17,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "tool: elevenlabs_voice_tool",
       "id": "productionstudio_tools_elevenlabs_voice_tool_tool_elevenlabs_voice_tool"
@@ -1956,7 +1956,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 14,
+      "community": 17,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "purpose",
       "id": "productionstudio_tools_elevenlabs_voice_tool_purpose"
@@ -1967,7 +1967,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 14,
+      "community": 17,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "interface",
       "id": "productionstudio_tools_elevenlabs_voice_tool_interface"
@@ -1978,7 +1978,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 14,
+      "community": 17,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "default provider notes (elevenlabs, verify against current docs before building)",
       "id": "productionstudio_tools_elevenlabs_voice_tool_default_provider_notes_elevenlabs_verify_against_current_docs_before_building"
@@ -1989,7 +1989,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L47",
       "_origin": "ast",
-      "community": 14,
+      "community": 17,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "implementation notes",
       "id": "productionstudio_tools_elevenlabs_voice_tool_implementation_notes"
@@ -2000,7 +2000,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L53",
       "_origin": "ast",
-      "community": 14,
+      "community": 17,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "stage 1/2 live-test result (2026-07-19)",
       "id": "productionstudio_tools_elevenlabs_voice_tool_stage_1_2_live_test_result_2026_07_19"
@@ -2011,7 +2011,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L87",
       "_origin": "ast",
-      "community": 14,
+      "community": 17,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "background music \u2014 stage 2 live-test attempt (2026-07-19)",
       "id": "productionstudio_tools_elevenlabs_voice_tool_background_music_stage_2_live_test_attempt_2026_07_19"
@@ -2022,7 +2022,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L112",
       "_origin": "ast",
-      "community": 14,
+      "community": 17,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "real-timestamp captioning \u2014 fixed endpoint choice (2026-07-21)",
       "id": "productionstudio_tools_elevenlabs_voice_tool_real_timestamp_captioning_fixed_endpoint_choice_2026_07_21"
@@ -2033,7 +2033,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L126",
       "_origin": "ast",
-      "community": 14,
+      "community": 17,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "gap closure (2026-07-19) \u2014 concrete fix for the two shape mismatches above",
       "id": "productionstudio_tools_elevenlabs_voice_tool_gap_closure_2026_07_19_concrete_fix_for_the_two_shape_mismatches_above"
@@ -2044,7 +2044,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 1,
+      "community": 14,
       "community_name": "Production Agents & Style Rules",
       "norm_label": "image_gen_tool.md",
       "id": "productionstudio_tools_image_gen_tool"
@@ -2055,7 +2055,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 15,
+      "community": 18,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "tool: image_gen_tool",
       "id": "productionstudio_tools_image_gen_tool_tool_image_gen_tool"
@@ -2066,7 +2066,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 15,
+      "community": 18,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "purpose",
       "id": "productionstudio_tools_image_gen_tool_purpose"
@@ -2077,7 +2077,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 15,
+      "community": 18,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "interface",
       "id": "productionstudio_tools_image_gen_tool_interface"
@@ -2088,7 +2088,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 15,
+      "community": 18,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "default provider: fal.ai + flux",
       "id": "productionstudio_tools_image_gen_tool_default_provider_fal_ai_flux"
@@ -2099,7 +2099,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 15,
+      "community": 18,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "stage 2 live-test result (2026-07-19)",
       "id": "productionstudio_tools_image_gen_tool_stage_2_live_test_result_2026_07_19"
@@ -2110,7 +2110,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L49",
       "_origin": "ast",
-      "community": 15,
+      "community": 18,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "fallback / secondary providers (keep the interface provider-agnostic)",
       "id": "productionstudio_tools_image_gen_tool_fallback_secondary_providers_keep_the_interface_provider_agnostic"
@@ -2121,7 +2121,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L68",
       "_origin": "ast",
-      "community": 15,
+      "community": 18,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "stage 4 live-test result (2026-07-20/21) \u2014 confirmed working through n8n, not just direct python",
       "id": "productionstudio_tools_image_gen_tool_stage_4_live_test_result_2026_07_20_21_confirmed_working_through_n8n_not_just_direct_python"
@@ -2132,7 +2132,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L76",
       "_origin": "ast",
-      "community": 15,
+      "community": 18,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "implementation notes",
       "id": "productionstudio_tools_image_gen_tool_implementation_notes"
@@ -2146,7 +2146,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "kickoff_prompt.md",
       "community_name": "Project Stack & Policies",
       "id": "kickoff_prompt"
@@ -2160,7 +2160,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "fact verification agent",
       "community_name": "Project Stack & Policies",
       "id": "productionstudio_agents_fact_verification_agent"
@@ -2174,7 +2174,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 14,
       "norm_label": "image generation agent",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_agents_image_generation_agent"
@@ -2188,7 +2188,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 14,
       "norm_label": "image planning agent",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "productionstudio_agents_image_planning_agent"
@@ -2202,7 +2202,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "publishing agent",
       "community_name": "Project Stack & Policies",
       "id": "productionstudio_agents_publishing_agent"
@@ -2216,7 +2216,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "quality control agent",
       "community_name": "Project Stack & Policies",
       "id": "productionstudio_agents_quality_control_agent"
@@ -2230,7 +2230,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "research agent",
       "community_name": "Research Agent",
       "id": "productionstudio_agents_research_agent"
@@ -2244,7 +2244,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 13,
       "norm_label": "scene planner agent",
       "community_name": "Script \u2014 {CASE_NAME}",
       "id": "productionstudio_agents_scene_planner_agent"
@@ -2258,7 +2258,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "seo agent",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_agents_seo_agent"
@@ -2272,7 +2272,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 14,
       "norm_label": "shorts agent",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_agents_shorts_agent"
@@ -2286,7 +2286,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "story agent",
       "community_name": "Project Stack & Policies",
       "id": "productionstudio_agents_story_agent"
@@ -2300,7 +2300,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 14,
       "norm_label": "thumbnail agent",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "productionstudio_agents_thumbnail_agent"
@@ -2314,7 +2314,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 13,
       "norm_label": "tool manager agent",
       "community_name": "Project Stack & Policies",
       "id": "productionstudio_agents_tool_manager_agent"
@@ -2328,7 +2328,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 13,
       "norm_label": "video assembly agent",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_agents_video_assembly_agent"
@@ -2342,7 +2342,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 13,
       "norm_label": "voice production agent",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_agents_voice_production_agent"
@@ -2356,7 +2356,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 13,
       "norm_label": "productionstudio/assets readme",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_assets_readme"
@@ -2370,7 +2370,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 16,
       "norm_label": "brendan banfield case checklist",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "productionstudio_cases_brendan_banfield_double_murder_checklist"
@@ -2384,7 +2384,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 16,
       "norm_label": "brendan banfield case imageprompts",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "productionstudio_cases_brendan_banfield_double_murder_imageprompts"
@@ -2398,7 +2398,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "brendan banfield case personphotos",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "productionstudio_cases_brendan_banfield_double_murder_personphotos"
@@ -2412,7 +2412,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 16,
       "norm_label": "brendan banfield case publishplan",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "productionstudio_cases_brendan_banfield_double_murder_publishplan"
@@ -2426,7 +2426,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 13,
       "norm_label": "template \u2014 voiceover.txt",
       "id": "productionstudio_templates_voiceover"
     },
@@ -2439,7 +2439,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 15,
       "norm_label": "tools/remotion_assembly_tool.md (referenced, not read this chunk)",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tools_remotion_assembly_tool"
@@ -2453,7 +2453,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 13,
       "norm_label": "tools/royalty_free_music_tool.md (referenced, not read this chunk)",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tools_royalty_free_music_tool"
@@ -2467,7 +2467,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "tools/mugshot_fetch_tool.md (referenced, not read this chunk)",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tools_mugshot_fetch_tool"
@@ -2481,7 +2481,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "cases/covered_cases.json (referenced, not read this chunk)",
       "community_name": "Research Agent",
       "id": "productionstudio_cases_covered_cases"
@@ -2495,7 +2495,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 13,
       "norm_label": "tests/stage1_tool_manager_agent_test.md (referenced, not read this chunk)",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage1_tool_manager_agent_test"
@@ -2509,7 +2509,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "fatal-affairs-project-brief.md (referenced, not read this chunk)",
       "community_name": "Project Stack & Policies",
       "id": "fatal_affairs_project_brief"
@@ -2523,7 +2523,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 16,
       "norm_label": "brendan banfield case scenelist.json (referenced, not read this chunk)",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "productionstudio_cases_brendan_banfield_double_murder_scenelist"
@@ -2537,7 +2537,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "human-gated publishing rule (rationale: publishing is irreversible/public, no exceptions even in a fully automated pipeline)",
       "community_name": "Project Stack & Policies",
       "id": "concept_human_gated_publishing"
@@ -2551,7 +2551,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 13,
       "norm_label": "tool management policy: never solve the same problem twice (rationale: avoid duplicate/competing tools)",
       "community_name": "Project Stack & Policies",
       "id": "concept_tool_reuse_policy"
@@ -2565,7 +2565,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "no-clickbait-lies policy (rationale: true-crime audiences disengage from fake mystery/oversold claims)",
       "community_name": "Production Agents & Style Rules",
       "id": "concept_no_clickbait_lies_policy"
@@ -2579,7 +2579,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "shorts release pacing rule: one strong short day-of, remaining shorts one per day after (rationale: avoid dumping all 5 shorts on day one)",
       "community_name": "Project Stack & Policies",
       "id": "concept_shorts_release_pacing"
@@ -2593,7 +2593,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 13,
       "norm_label": "scene_id convention shared across scene planner, voice, image, assembly agents",
       "community_name": "Script \u2014 {CASE_NAME}",
       "id": "concept_scene_id_convention"
@@ -2607,7 +2607,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "checklist_status field (renamed from 'status' 2026-07-20 so it exactly matches publishing agent's gating input)",
       "community_name": "Project Stack & Policies",
       "id": "concept_checklist_status_field"
@@ -2621,7 +2621,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 13,
       "norm_label": "[[scene:nnnn]] inline marker convention (rationale: naive word-count estimates drifted 74% from real audio, so real caption/scene timing must come from elevenlabs per-character alignment, not estimation)",
       "community_name": "Production Agents & Style Rules",
       "id": "concept_scene_marker_convention"
@@ -2635,7 +2635,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "research source priority list (fbi/doj/court docs/ap/courttv/law&crime/oxygen; wikipedia timeline-only; reddit sentiment-only)",
       "community_name": "Research Agent",
       "id": "concept_source_priority_list"
@@ -2649,7 +2649,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "discovery sources for candidate cases (doj/usao press feeds, r/truecrime, r/unresolvedmysteries, websleuths) distinct from the citation source list",
       "community_name": "Research Agent",
       "id": "concept_discovery_sources"
@@ -2663,7 +2663,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 14,
       "norm_label": "channel fixed visual brand style (photorealistic, cinematic, 35mm, 16:9, dark backgrounds, colors #111111/#ffffff/#a30e15/#4d4d4d/#bdbdbd, bebas neue/oswald headline)",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "concept_brand_style"
@@ -2677,7 +2677,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "fixed 10-beat script structure: hook, conflict, mystery, escalation, evidence, twist, investigation, final reveal, aftermath, question",
       "community_name": "Project Stack & Policies",
       "id": "concept_fixed_10_beat_structure"
@@ -2691,7 +2691,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "track 1 mugshot redaction policy (haar-cascade face+eye detection, eyes_blacked, raw file kept only for verification, never used in output)",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "concept_thumbnail_redaction_policy"
@@ -2705,7 +2705,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 16,
       "norm_label": "brendan banfield",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "entity_brendan_banfield"
@@ -2719,7 +2719,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 16,
       "norm_label": "christine banfield",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "entity_christine_banfield"
@@ -2733,7 +2733,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 16,
       "norm_label": "joseph ryan",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "entity_joseph_ryan"
@@ -2747,7 +2747,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "juliana peres magalhaes",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "entity_juliana_peres_magalhaes"
@@ -2761,7 +2761,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "shanna golyar",
       "community_name": "Project Stack & Policies",
       "id": "entity_shanna_golyar"
@@ -2775,7 +2775,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "fairfax county police department",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "entity_fairfax_county_police_department"
@@ -2789,7 +2789,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "wjla (news outlet)",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "entity_wjla"
@@ -3377,7 +3377,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "kouri richins case \u2014 checklist.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_checklist"
@@ -3391,7 +3391,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "kouri richins case \u2014 factcheck.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_factcheck"
@@ -3405,7 +3405,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "kouri richins case \u2014 imageprompts.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_imageprompts"
@@ -3419,7 +3419,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "kouri richins case \u2014 publishplan.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_publishplan"
@@ -3433,7 +3433,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "kouri richins case \u2014 seo.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_seo"
@@ -3447,7 +3447,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "kouri richins case \u2014 script.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_script"
@@ -3461,7 +3461,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "kouri richins case \u2014 shorts.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_shorts"
@@ -3475,7 +3475,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "kouri richins case \u2014 sources.md",
       "community_name": "Research Agent",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_sources"
@@ -3489,7 +3489,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "kouri richins case \u2014 thumbnail.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_thumbnail"
@@ -3503,7 +3503,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "kouri richins case \u2014 voiceover.txt",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_voiceover"
@@ -3517,7 +3517,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "sonam raghuvanshi case \u2014 sources.md",
       "community_name": "Research Agent",
       "id": "productionstudio_cases_sonam_raghuvanshi_honeymoon_murder_sources"
@@ -3531,7 +3531,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "documentation \u2014 self_improvement_process.md",
       "community_name": "Project Stack & Policies",
       "id": "productionstudio_documentation_self_improvement_process"
@@ -3545,7 +3545,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "kouri richins",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_sources_kouri_richins"
@@ -3559,7 +3559,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "eric richins",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_sources_eric_richins"
@@ -3573,7 +3573,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "robert josh grossman",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_sources_robert_josh_grossman"
@@ -3587,7 +3587,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "carmen lauber",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_sources_carmen_lauber"
@@ -3601,7 +3601,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "\"are you with me?\" (children's grief book)",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_sources_are_you_with_me_book"
@@ -3615,7 +3615,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "judge richard mrazik",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_sources_judge_richard_mrazik"
@@ -3629,7 +3629,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 25,
       "norm_label": "\"agent\" as a stateless system-prompt api call",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_documentation_architecture_agent_as_stateless_api_call"
@@ -3643,7 +3643,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 12,
+      "community": 15,
       "norm_label": "orchestration decision \u2014 no n8n / no standalone api key for phase 1",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_documentation_architecture_no_n8n_phase1_decision"
@@ -3657,7 +3657,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "channel intro bumper requirement",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_documentation_architecture_channel_intro_bumper_requirement"
@@ -3671,7 +3671,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 14,
       "norm_label": "shorts visual style requirement",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_documentation_architecture_shorts_visual_style_requirement"
@@ -3685,7 +3685,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "real-photo sourcing decision (mugshot/redaction policy)",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_documentation_architecture_real_photo_sourcing_decision"
@@ -3699,7 +3699,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "trend-grounding requirement",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_documentation_architecture_trend_grounding_requirement"
@@ -3713,7 +3713,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 13,
       "norm_label": "background music requirement",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_documentation_architecture_background_music_requirement"
@@ -3727,7 +3727,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "file-based self-improvement loop",
       "community_name": "Project Stack & Policies",
       "id": "productionstudio_documentation_self_improvement_process_self_improvement_loop"
@@ -3741,7 +3741,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "flux schnell on-screen text rendering limitation",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_checklist_flux_text_rendering_limitation"
@@ -3755,7 +3755,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "fact check tool stage 2 test",
       "community_name": "Research Agent",
       "id": "productionstudio_tests_stage2_fact_check_tool_test"
@@ -3769,7 +3769,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "mugshot tool stage 2 test",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage2_mugshot_tool_test"
@@ -3783,7 +3783,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 3,
       "norm_label": "seo export & github sync stage 2 test",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage2_seo_export_and_github_sync_test"
@@ -3797,7 +3797,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 14,
       "norm_label": "stage 3 two-node link audit",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage3_link_audit"
@@ -3811,7 +3811,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 15,
       "norm_label": "stage 4 full 14-agent pipeline n8n test",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage4_full_pipeline_n8n_test"
@@ -3825,7 +3825,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 14,
       "norm_label": "n8n local bootstrap test",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage4_n8n_local_bootstrap"
@@ -3839,7 +3839,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 15,
       "norm_label": "remotion local render test",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage4_remotion_local_render_test"
@@ -3853,7 +3853,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "fact check tool",
       "community_name": "Research Agent",
       "id": "productionstudio_tools_fact_check_tool"
@@ -3867,7 +3867,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 3,
       "norm_label": "github sync tool",
       "community_name": "Project Stack & Policies",
       "id": "productionstudio_tools_github_sync_tool"
@@ -3881,7 +3881,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 3,
       "norm_label": "seo export tool",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tools_seo_export_tool"
@@ -3895,7 +3895,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 15,
       "norm_label": "pipeline overview",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_workflows_pipeline_overview"
@@ -3909,7 +3909,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 26,
       "norm_label": "yt-studio readme",
       "community_name": "Repo Root README",
       "id": "readme"
@@ -3923,7 +3923,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 15,
       "norm_label": "orchestration decision: claude code direct execution over n8n",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage4_full_pipeline_n8n_test_orchestration_decision"
@@ -3937,7 +3937,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 13,
       "norm_label": "extend_existing output shape",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage1_tool_manager_agent_test_extend_existing_shape"
@@ -3951,7 +3951,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 15,
       "norm_label": "real per-word caption alignment fix",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tools_remotion_assembly_tool_caption_alignment_fix"
@@ -3965,7 +3965,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "outlet-attribution exception for track 1 mugshots",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tools_mugshot_fetch_tool_outlet_attribution_exception"
@@ -3979,7 +3979,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "fixed source priority ranking",
       "community_name": "Research Agent",
       "id": "productionstudio_tools_fact_check_tool_source_ranking"
@@ -3993,7 +3993,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "automated eye redaction method (opencv haar cascades)",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tools_mugshot_fetch_tool_eye_redaction_automation"
@@ -4007,7 +4007,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "royalty-free music sourcing decision",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tools_royalty_free_music_tool_sourcing_decision"
@@ -4021,7 +4021,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 15,
       "norm_label": "mixed opus/sonnet model cost optimization",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage4_full_pipeline_n8n_test_mixed_model_cost_optimization"
@@ -4035,7 +4035,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 15,
       "norm_label": "elevenlabs concurrency and n8n batching fixes",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage4_full_pipeline_n8n_test_concurrency_fixes"
@@ -4049,7 +4049,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 14,
       "norm_label": "cli-driven vs ui-driven n8n automation finding",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage4_n8n_local_bootstrap_cli_vs_ui_finding"
@@ -4063,7 +4063,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 15,
       "norm_label": "clause-boundary caption chunking issue (unresolved)",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tools_remotion_assembly_tool_caption_chunking_issue"
@@ -4077,7 +4077,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 15,
       "norm_label": "trailing meta-prose narration bug fix",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage4_full_pipeline_n8n_test_trailing_prose_bug"
@@ -4091,7 +4091,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "template \u2014 checklist.md",
       "id": "productionstudio_templates_checklist"
     },
@@ -4104,7 +4104,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 14,
       "norm_label": "template \u2014 imageprompts.md",
       "id": "productionstudio_templates_imageprompts"
     },
@@ -4117,7 +4117,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 3,
       "norm_label": "template \u2014 seo.md",
       "id": "productionstudio_templates_seo"
     },
@@ -4130,7 +4130,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 13,
       "norm_label": "template \u2014 script.md",
       "id": "productionstudio_templates_script"
     },
@@ -4143,7 +4143,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 14,
       "norm_label": "template \u2014 shorts.md",
       "id": "productionstudio_templates_shorts"
     },
@@ -4156,7 +4156,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "template \u2014 sources.md",
       "id": "productionstudio_templates_sources"
     },
@@ -4169,7 +4169,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 3,
       "norm_label": "template \u2014 successrules.md",
       "id": "productionstudio_templates_successrules"
     },
@@ -4182,7 +4182,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 6,
+      "community": 7,
       "norm_label": "template \u2014 thumbnail.md",
       "id": "productionstudio_templates_thumbnail"
     },
@@ -4816,7 +4816,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 13,
+      "community": 12,
       "norm_label": "settings.json",
       "id": "claude_settings"
     },
@@ -4826,7 +4826,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L2",
       "_origin": "ast",
-      "community": 13,
+      "community": 12,
       "norm_label": "$schema",
       "id": "claude_settings_schema"
     },
@@ -4836,7 +4836,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 13,
+      "community": 12,
       "norm_label": "permissions",
       "id": "claude_settings_permissions"
     },
@@ -4846,7 +4846,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 13,
+      "community": 12,
       "norm_label": "defaultmode",
       "id": "claude_settings_permissions_defaultmode"
     },
@@ -4856,7 +4856,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 13,
+      "community": 12,
       "norm_label": "deny",
       "id": "claude_settings_permissions_deny"
     },
@@ -4866,7 +4866,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 13,
+      "community": 12,
       "norm_label": "read(./.env)",
       "id": "ref_read_env"
     },
@@ -4876,7 +4876,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 13,
+      "community": 12,
       "norm_label": "read(./**/secrets/**)",
       "id": "ref_read_secrets"
     },
@@ -4886,7 +4886,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 13,
+      "community": 12,
       "norm_label": "read(~/.ssh/**)",
       "id": "ref_read_ssh"
     },
@@ -4896,7 +4896,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 13,
+      "community": 12,
       "norm_label": "read(~/.aws/credentials)",
       "id": "ref_read_aws_credentials"
     },
@@ -4906,7 +4906,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 13,
+      "community": 12,
       "norm_label": "bash(curl *)",
       "id": "ref_bash_curl"
     },
@@ -4916,7 +4916,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 13,
+      "community": 12,
       "norm_label": "ask",
       "id": "claude_settings_permissions_ask"
     },
@@ -4926,7 +4926,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 13,
+      "community": 12,
       "norm_label": "bash(git push *)",
       "id": "ref_bash_git_push"
     },
@@ -4936,7 +4936,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 13,
+      "community": 12,
       "norm_label": "bash(gh pr merge *)",
       "id": "ref_bash_gh_pr_merge"
     },
@@ -4946,7 +4946,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L18",
       "_origin": "ast",
-      "community": 13,
+      "community": 12,
       "norm_label": "hooks",
       "id": "claude_settings_hooks"
     },
@@ -4956,7 +4956,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L19",
       "_origin": "ast",
-      "community": 13,
+      "community": 12,
       "norm_label": "pretooluse",
       "id": "claude_settings_hooks_pretooluse"
     },
@@ -4969,7 +4969,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "fatal affairs channel trailer (~60s movie-trailer-style channel preview, replaces unbranded preview; rendered 2026-07-25 at 30.1s/903 frames, awaiting channel owner review before manual upload)",
       "id": "productionstudio_channel_trailer_channel_trailer"
     },
@@ -4982,7 +4982,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "fatal affairs (channel name, slogan \"every affair has a story. some end in murder.\")",
       "id": "productionstudio_channel_trailer_fatal_affairs"
     },
@@ -4995,7 +4995,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 22,
       "norm_label": "brian voice, elevenlabs voiceid npczcjzi2devnbz1zqrb (\"deep, resonant and comforting\", american, movie-trailer register) \u2014 chosen deliberately distinct from the standard case-narration voice for a more theatrical register",
       "id": "productionstudio_channel_trailer_brian_voice"
     },
@@ -5008,7 +5008,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 22,
       "norm_label": "standard case-narration voice, elevenlabs voiceid wschtcaxditjlphheyrm, used inside actual case videos",
       "id": "productionstudio_channel_trailer_case_narration_voice"
     },
@@ -5021,7 +5021,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "config/config.schema.json (source of channel name, slogan, colors, fonts used in trailer)",
       "id": "productionstudio_channel_trailer_config_schema"
     },
@@ -5034,7 +5034,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "banfield case (previously produced video; source of the real redacted mugshot reused in the trailer under the newsworthy-exception analysis)",
       "id": "productionstudio_channel_trailer_banfield_case"
     },
@@ -5047,7 +5047,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "assets/images/real_photos/banfield_mugshot_redacted.jpg \u2014 real photo, eyes redacted per mugshot_fetch_tool's standing policy",
       "id": "productionstudio_channel_trailer_banfield_mugshot_image"
     },
@@ -5060,7 +5060,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "kouri richins fentanyl-murder case (already-produced video whose stills are reused as trailer collage images, cleared rights)",
       "id": "productionstudio_channel_trailer_kouri_richins_case"
     },
@@ -5073,7 +5073,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "monica sementilli hairdresser-murder case (already-produced video whose stills are reused as trailer collage images, cleared rights)",
       "id": "productionstudio_channel_trailer_monica_sementilli_case"
     },
@@ -5086,7 +5086,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "fal.ai flux schnell image-generation pipeline (used for the two freshly-generated generic trailer images, corkboard.png and crimetape_rain.png, chosen over third-party stock/footage specifically to avoid a new ungoverned rights question for a channel-level asset)",
       "id": "productionstudio_channel_trailer_flux_schnell_pipeline"
     },
@@ -5099,7 +5099,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "assets/renders/fatal-affairs-channel-trailer.mp4 (gitignored render, 1920x1080, 903 frames @ 30fps, 30.1s, spot-checked cold open/mugshot beat/logo-cta sequence)",
       "id": "productionstudio_channel_trailer_render_output"
     },
@@ -5112,7 +5112,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 5,
+      "community": 9,
       "norm_label": "youtube studio channel-trailer upload slot \u2014 uploading a channel trailer is a manual step in youtube's own ui, explicitly not automated by this pipeline",
       "id": "productionstudio_channel_trailer_youtube_studio"
     },
@@ -5123,7 +5123,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent",
-      "community": 7,
+      "community": 5,
       "norm_label": "youtube_agent.py"
     },
     {
@@ -5133,7 +5133,7 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_find_client_secret_file",
-      "community": 7,
+      "community": 5,
       "norm_label": "_find_client_secret_file()"
     },
     {
@@ -5143,7 +5143,7 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_get_authenticated_service",
-      "community": 7,
+      "community": 5,
       "norm_label": "get_authenticated_service()"
     },
     {
@@ -5153,7 +5153,7 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_cmd_auth",
-      "community": 7,
+      "community": 5,
       "norm_label": "cmd_auth()"
     },
     {
@@ -5163,7 +5163,7 @@
       "source_location": "L102",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_cmd_channel_info",
-      "community": 7,
+      "community": 5,
       "norm_label": "cmd_channel_info()"
     },
     {
@@ -5173,7 +5173,7 @@
       "source_location": "L115",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_prepare_upload",
-      "community": 7,
+      "community": 5,
       "norm_label": "prepare_upload()"
     },
     {
@@ -5183,7 +5183,7 @@
       "source_location": "L153",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_set_thumbnail",
-      "community": 7,
+      "community": 5,
       "norm_label": "set_thumbnail()"
     },
     {
@@ -5193,7 +5193,7 @@
       "source_location": "L159",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_update_metadata",
-      "community": 7,
+      "community": 5,
       "norm_label": "update_metadata()"
     },
     {
@@ -5203,7 +5203,7 @@
       "source_location": "L186",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_list_uploads",
-      "community": 7,
+      "community": 5,
       "norm_label": "list_uploads()"
     },
     {
@@ -5213,7 +5213,7 @@
       "source_location": "L200",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_confirm_publish",
-      "community": 7,
+      "community": 5,
       "norm_label": "confirm_publish()"
     },
     {
@@ -5223,7 +5223,7 @@
       "source_location": "L227",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_list_playlists",
-      "community": 7,
+      "community": 5,
       "norm_label": "list_playlists()"
     },
     {
@@ -5233,7 +5233,7 @@
       "source_location": "L236",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_find_playlist_by_title",
-      "community": 7,
+      "community": 5,
       "norm_label": "find_playlist_by_title()"
     },
     {
@@ -5243,7 +5243,7 @@
       "source_location": "L245",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_get_or_create_playlist",
-      "community": 7,
+      "community": 5,
       "norm_label": "get_or_create_playlist()"
     },
     {
@@ -5253,17 +5253,27 @@
       "source_location": "L263",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_add_video_to_playlist",
-      "community": 7,
+      "community": 5,
       "norm_label": "add_video_to_playlist()"
+    },
+    {
+      "label": "delete_playlist()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L278",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_delete_playlist",
+      "community": 5,
+      "norm_label": "delete_playlist()"
     },
     {
       "label": "list_playlist_items()",
       "file_type": "code",
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L278",
+      "source_location": "L285",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_list_playlist_items",
-      "community": 7,
+      "community": 5,
       "norm_label": "list_playlist_items()"
     },
     {
@@ -5273,7 +5283,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_rationale_1",
-      "community": 7,
+      "community": 5,
       "norm_label": "official youtube data api v3 wrapper - the single module every future publish go"
     },
     {
@@ -5283,7 +5293,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_rationale_70",
-      "community": 7,
+      "community": 5,
       "norm_label": "loads cached credentials, refreshing if expired. raises with clear instructions"
     },
     {
@@ -5293,7 +5303,7 @@
       "source_location": "L91",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_rationale_91",
-      "community": 7,
+      "community": 5,
       "norm_label": "one-time interactive oauth consent flow. opens a local browser window - the"
     },
     {
@@ -5303,7 +5313,7 @@
       "source_location": "L103",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_rationale_103",
-      "community": 7,
+      "community": 5,
       "norm_label": "read-only sanity check that the oauth token actually works."
     },
     {
@@ -5313,7 +5323,7 @@
       "source_location": "L117",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_rationale_117",
-      "community": 7,
+      "community": 5,
       "norm_label": "uploads the video as private with full metadata. returns the video_id (the"
     },
     {
@@ -5323,7 +5333,7 @@
       "source_location": "L160",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_rationale_160",
-      "community": 7,
+      "community": 5,
       "norm_label": "edits title/description/tags/category on an existing video, public or not."
     },
     {
@@ -5333,7 +5343,7 @@
       "source_location": "L187",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_rationale_187",
-      "community": 7,
+      "community": 5,
       "norm_label": "read-only: lists the channel's most recent uploads (any privacy status)."
     },
     {
@@ -5343,7 +5353,7 @@
       "source_location": "L201",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_rationale_201",
-      "community": 7,
+      "community": 5,
       "norm_label": "the only function in this module that makes a video visible to anyone besides th"
     },
     {
@@ -5353,7 +5363,7 @@
       "source_location": "L228",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_rationale_228",
-      "community": 7,
+      "community": 5,
       "norm_label": "read-only: lists the channel's existing playlists."
     },
     {
@@ -5363,7 +5373,7 @@
       "source_location": "L246",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_rationale_246",
-      "community": 7,
+      "community": 5,
       "norm_label": "idempotent: returns the existing playlist's id if one with this exact title"
     },
     {
@@ -5373,145 +5383,192 @@
       "source_location": "L264",
       "_origin": "ast",
       "id": "productionstudio_workflows_youtube_agent_rationale_264",
-      "community": 7,
+      "community": 5,
       "norm_label": "idempotent-ish: youtube allows the same video in a playlist only once in practic"
     },
     {
-      "label": "Publishing timezone: America/Los_Angeles (Pacific), confirmed 2026-07-26",
-      "file_type": "concept",
-      "source_file": "CLAUDE.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "rationale": "All release scheduling is planned in LA local time and converted to UTC for the API's publishAt field; conversion must use a real timezone library (e.g. Python zoneinfo), never hardcode UTC-7/UTC-8, since LA switches between PDT and PST across the year.",
-      "id": "claude_md_publishing_timezone_rule",
-      "community": 11,
-      "norm_label": "publishing timezone: america/los_angeles (pacific), confirmed 2026-07-26"
-    },
-    {
-      "label": "Every case gets one YouTube playlist, named 'Case Files: {Case Name}'",
-      "file_type": "concept",
-      "source_file": "CLAUDE.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "rationale": "Created via youtube_agent.py's get_or_create_playlist() (idempotent, safe to call every time, never duplicates); every video for the case (main video and every Short) gets added via add_video_to_playlist() as soon as it's uploaded, not batched up later.",
-      "id": "claude_md_case_playlist_rule",
-      "community": 11,
-      "norm_label": "every case gets one youtube playlist, named 'case files: {case name}'"
-    },
-    {
-      "label": "youtube_agent.py \u2014 real publishing implementation (Workflows/youtube_agent.py)",
-      "file_type": "concept",
-      "source_file": "CLAUDE.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "claude_md_youtube_agent_py",
-      "community": 11,
-      "norm_label": "youtube_agent.py \u2014 real publishing implementation (workflows/youtube_agent.py)"
-    },
-    {
-      "label": "Playlists section (added 2026-07-26): one playlist per case via get_or_create_playlist/add_video_to_playlist",
-      "file_type": "concept",
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "rationale": "Existing channel videos were retroactively sorted into 'Case Files: Brendan Banfield', 'Case Files: Molly Watson', 'Case Files: Kouri Richins', 'Case Files: Monica Sementilli' on 2026-07-26; two pre-existing videos with empty descriptions and no identifiable case ('Renovation' and an untitled cold-open clip) were left out rather than guessed.",
-      "id": "productionstudio_tools_youtube_publish_tool_playlist_policy",
-      "community": 11,
-      "norm_label": "playlists section (added 2026-07-26): one playlist per case via get_or_create_playlist/add_video_to_playlist"
-    },
-    {
-      "label": "Scheduling in practice (2026-07-26 real run): first real confirm_publish(publish_at=...) batch",
-      "file_type": "concept",
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "productionstudio_tools_youtube_publish_tool_scheduling_section",
-      "community": 11,
-      "norm_label": "scheduling in practice (2026-07-26 real run): first real confirm_publish(publish_at=...) batch"
-    },
-    {
-      "label": "Short 1 'She Watched The Murder On Camera' \u2014 2026-07-26 08:00 PDT / 2026-07-26T15:00:00Z",
-      "file_type": "concept",
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "productionstudio_tools_youtube_publish_tool_short_1_schedule",
-      "community": 11,
-      "norm_label": "short 1 'she watched the murder on camera' \u2014 2026-07-26 08:00 pdt / 2026-07-26t15:00:00z"
-    },
-    {
-      "label": "Short 2 'She Sexted Her Husband's Killer...' \u2014 2026-07-26 20:00 PDT / 2026-07-27T03:00:00Z",
-      "file_type": "concept",
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "productionstudio_tools_youtube_publish_tool_short_2_schedule",
-      "community": 11,
-      "norm_label": "short 2 'she sexted her husband's killer...' \u2014 2026-07-26 20:00 pdt / 2026-07-27t03:00:00z"
-    },
-    {
-      "label": "Short 3 'The Killer Took The Stand To Save Her' \u2014 2026-07-27 07:00 PDT / 2026-07-27T14:00:00Z",
-      "file_type": "concept",
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "productionstudio_tools_youtube_publish_tool_short_3_schedule",
-      "community": 11,
-      "norm_label": "short 3 'the killer took the stand to save her' \u2014 2026-07-27 07:00 pdt / 2026-07-27t14:00:00z"
-    },
-    {
-      "label": "Short 4 '8 Years Later, The Verdict Finally Came' \u2014 2026-07-27 19:00 PDT / 2026-07-28T02:00:00Z",
-      "file_type": "concept",
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "productionstudio_tools_youtube_publish_tool_short_4_schedule",
-      "community": 11,
-      "norm_label": "short 4 '8 years later, the verdict finally came' \u2014 2026-07-27 19:00 pdt / 2026-07-28t02:00:00z"
-    },
-    {
-      "label": "Lesson learned: verify already-uploaded videos by real duration, not title text",
+      "label": "Removes a playlist. Does NOT delete the videos in it - only the grouping.",
       "file_type": "rationale",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L279",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_rationale_279",
+      "community": 5,
+      "norm_label": "removes a playlist. does not delete the videos in it - only the grouping."
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_document",
+      "community": 1,
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "Fatal Affairs true-crime YouTube studio, ProductionStudio as permanent memory",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_project_identity",
+      "community": 1,
+      "norm_label": "fatal affairs true-crime youtube studio, productionstudio as permanent memory"
+    },
+    {
+      "label": "Publishing timezone: America/Los_Angeles, confirmed 2026-07-26",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_publishing_timezone",
+      "community": 1,
+      "norm_label": "publishing timezone: america/los_angeles, confirmed 2026-07-26"
+    },
+    {
+      "label": "Playlists are by theme/motive, never by case name (decided 2026-07-26)",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Replaced an earlier 'one playlist per case' attempt the channel owner rejected after checking how competitor true-crime channels organize their playlists.",
+      "id": "claude_playlist_theme_pivot",
+      "community": 1,
+      "norm_label": "playlists are by theme/motive, never by case name (decided 2026-07-26)"
+    },
+    {
+      "label": "Playlist: Love Triangle Murders",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_playlist_love_triangle_murders",
+      "community": 1,
+      "norm_label": "playlist: love triangle murders"
+    },
+    {
+      "label": "Playlist: Wife Killed Husband",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_playlist_wife_killed_husband",
+      "community": 1,
+      "norm_label": "playlist: wife killed husband"
+    },
+    {
+      "label": "Playlist: Murder For Insurance Money",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_playlist_murder_for_insurance_money",
+      "community": 1,
+      "norm_label": "playlist: murder for insurance money"
+    },
+    {
+      "label": "Playlist: Framed The Wrong Person",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_playlist_framed_wrong_person",
+      "community": 1,
+      "norm_label": "playlist: framed the wrong person"
+    },
+    {
+      "label": "A video normally belongs in 2-3 theme playlists at once (overlap expected, not a bug)",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "E.g. a wife-and-lover insurance-murder case is both Wife Killed Husband, Murder For Insurance Money, and Love Triangle Murders at once.",
+      "id": "claude_multi_playlist_membership",
+      "community": 1,
+      "norm_label": "a video normally belongs in 2-3 theme playlists at once (overlap expected, not a bug)"
+    },
+    {
+      "label": "youtube_agent.py get_or_create_playlist() (idempotent by title)",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_get_or_create_playlist",
+      "community": 1,
+      "norm_label": "youtube_agent.py get_or_create_playlist() (idempotent by title)"
+    },
+    {
+      "label": "youtube_agent.py add_video_to_playlist(), added as soon as each video is uploaded",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_add_video_to_playlist",
+      "community": 1,
+      "norm_label": "youtube_agent.py add_video_to_playlist(), added as soon as each video is uploaded"
+    },
+    {
+      "label": "Agents/publishing_agent.md human-confirmation gate",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_publishing_agent_ref",
+      "community": 1,
+      "norm_label": "agents/publishing_agent.md human-confirmation gate"
+    },
+    {
+      "label": "Tools/youtube_publish_tool.md",
+      "file_type": "document",
       "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
       "source_location": null,
       "source_url": null,
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "A channel-owner-uploaded video titled 'She Sexted Her Husband's Killer \u2014 At His Funeral' was initially assumed to be Short #2 by title match, but checking its real contentDetails.duration via the API (PT11M35S) showed it was actually the main video uploaded under one of its SEO.md title options, not a Short at all.",
-      "id": "productionstudio_tools_youtube_publish_tool_lesson_learned",
-      "community": 11,
-      "norm_label": "lesson learned: verify already-uploaded videos by real duration, not title text"
+      "id": "productionstudio_tools_youtube_publish_tool_document",
+      "community": 1,
+      "norm_label": "tools/youtube_publish_tool.md"
     },
     {
-      "label": "Implementation note: respect channel owner's pacing plan \u2014 main video + one strong short same day, remaining shorts staged one per day",
+      "label": "Tool purpose: wraps YouTube Data API v3, publish always human-gated",
       "file_type": "concept",
       "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
       "source_location": null,
@@ -5519,12 +5576,275 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_tools_youtube_publish_tool_pacing_note",
-      "community": 11,
-      "norm_label": "implementation note: respect channel owner's pacing plan \u2014 main video + one strong short same day, remaining shorts staged one per day"
+      "id": "productionstudio_tools_youtube_publish_tool_purpose",
+      "community": 1,
+      "norm_label": "tool purpose: wraps youtube data api v3, publish always human-gated"
     },
     {
-      "label": "Main video (video_id 37SdUL9S-AY), published 2026-07-25, channel-owner-uploaded, title from SEO.md options",
+      "label": "prepare_upload(): uploads as privacyStatus private, returns video_id as draft_id",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_prepare_upload",
+      "community": 1,
+      "norm_label": "prepare_upload(): uploads as privacystatus private, returns video_id as draft_id"
+    },
+    {
+      "label": "confirm_publish(): only function that can flip a video public/scheduled, hard-requires human_confirmed=True",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_confirm_publish",
+      "community": 1,
+      "norm_label": "confirm_publish(): only function that can flip a video public/scheduled, hard-requires human_confirmed=true"
+    },
+    {
+      "label": "Playlists (added 2026-07-26, revised same day): pivot from per-case to theme playlists",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "First attempt used one playlist per case ('Case Files: {Case Name}'); the channel owner rejected this after checking how competitor true-crime channels actually organize their playlists \u2014 real channels group by theme/motive, not case name, since that's what a viewer browses by ('show me more love-triangle murders', not 'show me more Case Files').",
+      "id": "productionstudio_tools_youtube_publish_tool_playlist_pivot",
+      "community": 1,
+      "norm_label": "playlists (added 2026-07-26, revised same day): pivot from per-case to theme playlists"
+    },
+    {
+      "label": "Original per-case playlists ('Case Files: {Case Name}'), 4 deleted via delete_playlist()",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_case_playlist_attempt",
+      "community": 1,
+      "norm_label": "original per-case playlists ('case files: {case name}'), 4 deleted via delete_playlist()"
+    },
+    {
+      "label": "Playlist: Love Triangle Murders",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_love_triangle_murders",
+      "community": 1,
+      "norm_label": "playlist: love triangle murders"
+    },
+    {
+      "label": "Playlist: Wife Killed Husband",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_wife_killed_husband",
+      "community": 1,
+      "norm_label": "playlist: wife killed husband"
+    },
+    {
+      "label": "Playlist: Murder For Insurance Money",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_murder_for_insurance_money",
+      "community": 1,
+      "norm_label": "playlist: murder for insurance money"
+    },
+    {
+      "label": "Playlist: Framed The Wrong Person",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_framed_wrong_person",
+      "community": 1,
+      "norm_label": "playlist: framed the wrong person"
+    },
+    {
+      "label": "get_or_create_playlist(title, description), idempotent by title",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_get_or_create_playlist",
+      "community": 1,
+      "norm_label": "get_or_create_playlist(title, description), idempotent by title"
+    },
+    {
+      "label": "add_video_to_playlist(playlist_id, video_id)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_add_video_to_playlist",
+      "community": 1,
+      "norm_label": "add_video_to_playlist(playlist_id, video_id)"
+    },
+    {
+      "label": "delete_playlist() used to remove the 4 obsolete case playlists",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_delete_playlist",
+      "community": 1,
+      "norm_label": "delete_playlist() used to remove the 4 obsolete case playlists"
+    },
+    {
+      "label": "A video normally belongs in 2-3 theme playlists at once (overlap intentional, not a dedup bug)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Monica Sementilli and Kouri Richins videos are both in Wife Killed Husband AND Murder For Insurance Money, and Sementilli/Banfield/Molly Watson are all in Love Triangle Murders too.",
+      "id": "productionstudio_tools_youtube_publish_tool_multi_playlist_membership",
+      "community": 1,
+      "norm_label": "a video normally belongs in 2-3 theme playlists at once (overlap intentional, not a dedup bug)"
+    },
+    {
+      "label": "Monica Sementilli video(s)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_monica_sementilli_case",
+      "community": 1,
+      "norm_label": "monica sementilli video(s)"
+    },
+    {
+      "label": "Kouri Richins video",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_kouri_richins_case",
+      "community": 1,
+      "norm_label": "kouri richins video"
+    },
+    {
+      "label": "Banfield video",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_banfield_case",
+      "community": 1,
+      "norm_label": "banfield video"
+    },
+    {
+      "label": "Molly Watson video",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_molly_watson_case",
+      "community": 1,
+      "norm_label": "molly watson video"
+    },
+    {
+      "label": "2026-07-26 real scheduling run: 4 Monica Sementilli Shorts, LA-local to UTC publishAt table",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_scheduling_table",
+      "community": 1,
+      "norm_label": "2026-07-26 real scheduling run: 4 monica sementilli shorts, la-local to utc publishat table"
+    },
+    {
+      "label": "Agents/publishing_agent.md hard rule backstop",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_tools_youtube_publish_tool_publishing_agent_ref",
+      "community": 1,
+      "norm_label": "agents/publishing_agent.md hard rule backstop"
+    },
+    {
+      "label": "'Renovation' and untitled cold-open clip: left out of every playlist (empty description, no identifiable case/theme)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Left out rather than guessed, since they had empty descriptions and no identifiable case/theme.",
+      "id": "productionstudio_tools_youtube_publish_tool_excluded_videos",
+      "community": 1,
+      "norm_label": "'renovation' and untitled cold-open clip: left out of every playlist (empty description, no identifiable case/theme)"
+    },
+    {
+      "label": "Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_document",
+      "community": 1,
+      "norm_label": "cases/monica-sementilli-hairdresser-murder/publishplan.md"
+    },
+    {
+      "label": "Release plan: main video + 4 Shorts, 2026-07-25/26/27",
       "file_type": "concept",
       "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
       "source_location": null,
@@ -5532,12 +5852,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_main_video",
-      "community": 11,
-      "norm_label": "main video (video_id 37sdul9s-ay), published 2026-07-25, channel-owner-uploaded, title from seo.md options"
+      "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_release_plan",
+      "community": 1,
+      "norm_label": "release plan: main video + 4 shorts, 2026-07-25/26/27"
     },
     {
-      "label": "Short 1 'She Watched The Murder On Camera' (video_id MWImIifQNzg), scheduled 2026-07-26T15:00:00Z",
+      "label": "Updated 'playlists' field: 3 theme playlists this case's videos belong to",
       "file_type": "concept",
       "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
       "source_location": null,
@@ -5545,12 +5865,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_short_1",
-      "community": 11,
-      "norm_label": "short 1 'she watched the murder on camera' (video_id mwimiifqnzg), scheduled 2026-07-26t15:00:00z"
+      "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_playlists_field",
+      "community": 1,
+      "norm_label": "updated 'playlists' field: 3 theme playlists this case's videos belong to"
     },
     {
-      "label": "Short 2 'She Sexted Her Husband's Killer...' (video_id NbizOpw65pg), scheduled 2026-07-27T03:00:00Z",
+      "label": "Playlist: Love Triangle Murders (PLex0mHScQ9nU)",
       "file_type": "concept",
       "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
       "source_location": null,
@@ -5558,12 +5878,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_short_2",
-      "community": 11,
-      "norm_label": "short 2 'she sexted her husband's killer...' (video_id nbizopw65pg), scheduled 2026-07-27t03:00:00z"
+      "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_love_triangle_murders",
+      "community": 1,
+      "norm_label": "playlist: love triangle murders (plex0mhscq9nu)"
     },
     {
-      "label": "Short 3 'The Killer Took The Stand To Save Her' (video_id arqfpT5AanM), scheduled 2026-07-27T14:00:00Z",
+      "label": "Playlist: Wife Killed Husband (PLe6_jN9U_ijM)",
       "file_type": "concept",
       "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
       "source_location": null,
@@ -5571,12 +5891,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_short_3",
-      "community": 11,
-      "norm_label": "short 3 'the killer took the stand to save her' (video_id arqfpt5aanm), scheduled 2026-07-27t14:00:00z"
+      "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_wife_killed_husband",
+      "community": 1,
+      "norm_label": "playlist: wife killed husband (ple6_jn9u_ijm)"
     },
     {
-      "label": "Short 4 '8 Years Later, The Verdict Finally Came' (video_id NvIekvoLu1k), scheduled 2026-07-28T02:00:00Z",
+      "label": "Playlist: Murder For Insurance Money (PLVCbFw1Wp6mk)",
       "file_type": "concept",
       "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
       "source_location": null,
@@ -5584,12 +5904,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_short_4",
-      "community": 11,
-      "norm_label": "short 4 '8 years later, the verdict finally came' (video_id nviekvolu1k), scheduled 2026-07-28t02:00:00z"
+      "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_murder_for_insurance_money",
+      "community": 1,
+      "norm_label": "playlist: murder for insurance money (plvcbfw1wp6mk)"
     },
     {
-      "label": "Playlist: 'Case Files: Monica Sementilli' (PLErsd2D4rc9g) \u2014 main video + all 4 shorts added",
+      "label": "awaiting_human_confirmation now false for these 4 videos only; hard rule unchanged for future publishes",
       "file_type": "concept",
       "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
       "source_location": null,
@@ -5597,12 +5917,12 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_playlist",
-      "community": 11,
-      "norm_label": "playlist: 'case files: monica sementilli' (plersd2d4rc9g) \u2014 main video + all 4 shorts added"
+      "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_human_confirmation",
+      "community": 1,
+      "norm_label": "awaiting_human_confirmation now false for these 4 videos only; hard rule unchanged for future publishes"
     },
     {
-      "label": "2026-07-26 update: original one-per-day plan superseded by 2-per-day schedule",
+      "label": "2026-07-26 update: original one-short-per-day plan superseded by 2-shorts-per-day real schedule",
       "file_type": "concept",
       "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
       "source_location": null,
@@ -5610,24 +5930,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "rationale": "Channel owner's own real schedule (2 shorts per day across 07-26/07-27) superseded the original plan; all 4 scheduled for real via youtube_agent.py after the channel owner gave explicit go-ahead with exact LA-local times for each slot. awaiting_human_confirmation is now false only for these 4 specific videos at these specific times \u2014 this does not waive the hard rule for any future video; each new publish still needs its own explicit go-ahead per Agents/publishing_agent.md.",
-      "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_schedule_supersession",
-      "community": 11,
-      "norm_label": "2026-07-26 update: original one-per-day plan superseded by 2-per-day schedule"
-    },
-    {
-      "label": "Original pacing rationale (superseded, kept for reference)",
-      "file_type": "rationale",
-      "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "rationale": "One strong short (the surveillance-video hook, matching the thumbnail) same-day as the main video to drive immediate cross-traffic, remaining three staged one per day \u2014 never all dumped on day one, per the channel's existing pacing note. The channel owner chose a tighter 2-per-day cadence instead for this batch.",
-      "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_original_pacing_rationale",
-      "community": 11,
-      "norm_label": "original pacing rationale (superseded, kept for reference)"
+      "rationale": "Channel owner chose a tighter 2-per-day cadence instead of the original one-strong-short-same-day-plus-one-per-day pacing plan.",
+      "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_scheduling_update",
+      "community": 1,
+      "norm_label": "2026-07-26 update: original one-short-per-day plan superseded by 2-shorts-per-day real schedule"
     }
   ],
   "links": [
@@ -12329,6 +12635,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L278",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_delete_playlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L59",
       "weight": 1.0,
       "_origin": "ast",
@@ -12373,7 +12690,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L278",
+      "source_location": "L285",
       "weight": 1.0,
       "_origin": "ast",
       "source": "productionstudio_workflows_youtube_agent",
@@ -12499,6 +12816,18 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L280",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_delete_playlist",
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L237",
       "weight": 1.0,
       "_origin": "ast",
@@ -12523,7 +12852,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L279",
+      "source_location": "L286",
       "weight": 1.0,
       "_origin": "ast",
       "source": "productionstudio_workflows_youtube_agent_list_playlist_items",
@@ -12725,14 +13054,15 @@
       "confidence_score": 1.0
     },
     {
-      "relation": "references",
+      "relation": "rationale_for",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": null,
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L279",
       "weight": 1.0,
-      "source": "productionstudio_tools_youtube_publish_tool_scheduling_section",
-      "target": "claude_md_publishing_timezone_rule"
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_rationale_279",
+      "target": "productionstudio_workflows_youtube_agent_delete_playlist",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -12741,218 +13071,748 @@
       "source_file": "CLAUDE.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "claude_md_case_playlist_rule",
-      "target": "claude_md_youtube_agent_py"
+      "source": "claude_document",
+      "target": "claude_add_video_to_playlist"
     },
     {
-      "relation": "shares_data_with",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
       "source_location": null,
-      "weight": 0.95,
-      "source": "claude_md_case_playlist_rule",
-      "target": "productionstudio_tools_youtube_publish_tool_playlist_policy"
+      "weight": 1.0,
+      "source": "claude_document",
+      "target": "claude_get_or_create_playlist"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
+      "source_file": "CLAUDE.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_short_1",
-      "target": "claude_md_youtube_agent_py"
+      "source": "claude_document",
+      "target": "claude_multi_playlist_membership"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
+      "source_file": "CLAUDE.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_short_2",
-      "target": "claude_md_youtube_agent_py"
+      "source": "claude_document",
+      "target": "claude_playlist_framed_wrong_person"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
+      "source_file": "CLAUDE.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_short_3",
-      "target": "claude_md_youtube_agent_py"
+      "source": "claude_document",
+      "target": "claude_playlist_love_triangle_murders"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
+      "source_file": "CLAUDE.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_short_4",
-      "target": "claude_md_youtube_agent_py"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": null,
-      "weight": 0.95,
-      "source": "productionstudio_tools_youtube_publish_tool_playlist_policy",
-      "target": "claude_md_youtube_agent_py"
+      "source": "claude_document",
+      "target": "claude_playlist_murder_for_insurance_money"
     },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_file": "CLAUDE.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "productionstudio_tools_youtube_publish_tool_scheduling_section",
-      "target": "claude_md_youtube_agent_py"
+      "source": "claude_document",
+      "target": "claude_playlist_theme_pivot"
     },
     {
-      "relation": "shares_data_with",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
       "source_location": null,
-      "weight": 0.95,
-      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_playlist",
-      "target": "productionstudio_tools_youtube_publish_tool_playlist_policy"
+      "weight": 1.0,
+      "source": "claude_document",
+      "target": "claude_playlist_wife_killed_husband"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_document",
+      "target": "claude_project_identity"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_document",
+      "target": "claude_publishing_agent_ref"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_document",
+      "target": "claude_publishing_timezone"
     },
     {
       "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
       "source_location": null,
-      "weight": 0.95,
-      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_schedule_supersession",
-      "target": "productionstudio_tools_youtube_publish_tool_scheduling_section"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": null,
-      "weight": 0.95,
-      "source": "productionstudio_tools_youtube_publish_tool_short_1_schedule",
-      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_short_1"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": null,
-      "weight": 0.95,
-      "source": "productionstudio_tools_youtube_publish_tool_short_2_schedule",
-      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_short_2"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": null,
-      "weight": 0.95,
-      "source": "productionstudio_tools_youtube_publish_tool_short_3_schedule",
-      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_short_3"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": null,
-      "weight": 0.95,
-      "source": "productionstudio_tools_youtube_publish_tool_short_4_schedule",
-      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_short_4"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
-      "source_location": null,
-      "weight": 0.85,
-      "source": "productionstudio_tools_youtube_publish_tool_lesson_learned",
-      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_main_video"
+      "weight": 1.0,
+      "source": "claude_add_video_to_playlist",
+      "target": "claude_playlist_theme_pivot"
     },
     {
       "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
       "source_location": null,
-      "weight": 0.85,
-      "source": "productionstudio_tools_youtube_publish_tool_lesson_learned",
-      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_short_2"
+      "weight": 1.0,
+      "source": "claude_get_or_create_playlist",
+      "target": "claude_playlist_theme_pivot"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_playlist_theme_pivot",
+      "target": "claude_multi_playlist_membership"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_playlist_theme_pivot",
+      "target": "claude_playlist_framed_wrong_person"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_playlist_theme_pivot",
+      "target": "claude_playlist_love_triangle_murders"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_playlist_theme_pivot",
+      "target": "claude_playlist_murder_for_insurance_money"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_playlist_theme_pivot",
+      "target": "claude_playlist_wife_killed_husband"
     },
     {
       "relation": "semantically_similar_to",
       "confidence": "INFERRED",
       "confidence_score": 0.95,
-      "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
+      "source_file": "CLAUDE.md",
       "source_location": null,
-      "weight": 0.95,
-      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_original_pacing_rationale",
-      "target": "productionstudio_tools_youtube_publish_tool_pacing_note"
+      "weight": 1.0,
+      "source": "claude_playlist_theme_pivot",
+      "target": "productionstudio_tools_youtube_publish_tool_playlist_pivot"
     },
     {
-      "relation": "shares_data_with",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_playlist_love_triangle_murders",
+      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_love_triangle_murders"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_playlist_love_triangle_murders",
+      "target": "productionstudio_tools_youtube_publish_tool_love_triangle_murders"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_playlist_wife_killed_husband",
+      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_wife_killed_husband"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_playlist_wife_killed_husband",
+      "target": "productionstudio_tools_youtube_publish_tool_wife_killed_husband"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_playlist_murder_for_insurance_money",
+      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_murder_for_insurance_money"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_playlist_murder_for_insurance_money",
+      "target": "productionstudio_tools_youtube_publish_tool_murder_for_insurance_money"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_playlist_framed_wrong_person",
+      "target": "productionstudio_tools_youtube_publish_tool_framed_wrong_person"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_multi_playlist_membership",
+      "target": "productionstudio_tools_youtube_publish_tool_multi_playlist_membership"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_get_or_create_playlist",
+      "target": "productionstudio_tools_youtube_publish_tool_get_or_create_playlist"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_add_video_to_playlist",
+      "target": "productionstudio_tools_youtube_publish_tool_add_video_to_playlist"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_publishing_agent_ref",
+      "target": "productionstudio_tools_youtube_publish_tool_publishing_agent_ref"
+    },
+    {
+      "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_document",
+      "target": "productionstudio_tools_youtube_publish_tool_add_video_to_playlist"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_document",
+      "target": "productionstudio_tools_youtube_publish_tool_banfield_case"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_document",
+      "target": "productionstudio_tools_youtube_publish_tool_case_playlist_attempt"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_document",
+      "target": "productionstudio_tools_youtube_publish_tool_confirm_publish"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_document",
+      "target": "productionstudio_tools_youtube_publish_tool_delete_playlist"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_document",
+      "target": "productionstudio_tools_youtube_publish_tool_excluded_videos"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_document",
+      "target": "productionstudio_tools_youtube_publish_tool_framed_wrong_person"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_document",
+      "target": "productionstudio_tools_youtube_publish_tool_get_or_create_playlist"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_document",
+      "target": "productionstudio_tools_youtube_publish_tool_kouri_richins_case"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_document",
+      "target": "productionstudio_tools_youtube_publish_tool_love_triangle_murders"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_document",
+      "target": "productionstudio_tools_youtube_publish_tool_molly_watson_case"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_document",
+      "target": "productionstudio_tools_youtube_publish_tool_monica_sementilli_case"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_document",
+      "target": "productionstudio_tools_youtube_publish_tool_multi_playlist_membership"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_document",
+      "target": "productionstudio_tools_youtube_publish_tool_murder_for_insurance_money"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_document",
+      "target": "productionstudio_tools_youtube_publish_tool_playlist_pivot"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_document",
+      "target": "productionstudio_tools_youtube_publish_tool_prepare_upload"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_document",
+      "target": "productionstudio_tools_youtube_publish_tool_publishing_agent_ref"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_document",
+      "target": "productionstudio_tools_youtube_publish_tool_purpose"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_document",
+      "target": "productionstudio_tools_youtube_publish_tool_scheduling_table"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_document",
+      "target": "productionstudio_tools_youtube_publish_tool_wife_killed_husband"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_publishing_agent_ref",
+      "target": "productionstudio_tools_youtube_publish_tool_confirm_publish"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_scheduling_table",
+      "target": "productionstudio_tools_youtube_publish_tool_confirm_publish"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_add_video_to_playlist",
+      "target": "productionstudio_tools_youtube_publish_tool_playlist_pivot"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_excluded_videos",
+      "target": "productionstudio_tools_youtube_publish_tool_playlist_pivot"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_get_or_create_playlist",
+      "target": "productionstudio_tools_youtube_publish_tool_playlist_pivot"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_playlist_pivot",
+      "target": "productionstudio_tools_youtube_publish_tool_case_playlist_attempt"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_playlist_pivot",
+      "target": "productionstudio_tools_youtube_publish_tool_framed_wrong_person"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_playlist_pivot",
+      "target": "productionstudio_tools_youtube_publish_tool_love_triangle_murders"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_playlist_pivot",
+      "target": "productionstudio_tools_youtube_publish_tool_multi_playlist_membership"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_playlist_pivot",
+      "target": "productionstudio_tools_youtube_publish_tool_murder_for_insurance_money"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_playlist_pivot",
+      "target": "productionstudio_tools_youtube_publish_tool_wife_killed_husband"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_delete_playlist",
+      "target": "productionstudio_tools_youtube_publish_tool_case_playlist_attempt"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_banfield_case",
+      "target": "productionstudio_tools_youtube_publish_tool_love_triangle_murders"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_love_triangle_murders",
+      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_love_triangle_murders"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_molly_watson_case",
+      "target": "productionstudio_tools_youtube_publish_tool_love_triangle_murders"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_monica_sementilli_case",
+      "target": "productionstudio_tools_youtube_publish_tool_love_triangle_murders"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_kouri_richins_case",
+      "target": "productionstudio_tools_youtube_publish_tool_wife_killed_husband"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_monica_sementilli_case",
+      "target": "productionstudio_tools_youtube_publish_tool_wife_killed_husband"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_wife_killed_husband",
+      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_wife_killed_husband"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_kouri_richins_case",
+      "target": "productionstudio_tools_youtube_publish_tool_murder_for_insurance_money"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_monica_sementilli_case",
+      "target": "productionstudio_tools_youtube_publish_tool_murder_for_insurance_money"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tools_youtube_publish_tool_murder_for_insurance_money",
+      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_murder_for_insurance_money"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
       "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_main_video",
-      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_playlist"
+      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_playlists_field",
+      "target": "productionstudio_tools_youtube_publish_tool_multi_playlist_membership"
     },
     {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_short_1",
-      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_playlist"
+      "source": "productionstudio_tools_youtube_publish_tool_monica_sementilli_case",
+      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_document"
     },
     {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "ProductionStudio/Tools/youtube_publish_tool.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_short_2",
-      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_playlist"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_short_3",
-      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_playlist"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_short_4",
-      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_playlist"
+      "source": "productionstudio_tools_youtube_publish_tool_scheduling_table",
+      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_release_plan"
     },
     {
       "relation": "references",
@@ -12961,8 +13821,88 @@
       "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
       "source_location": null,
       "weight": 1.0,
-      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_schedule_supersession",
-      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_original_pacing_rationale"
+      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_document",
+      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_human_confirmation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_document",
+      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_playlists_field"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_document",
+      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_release_plan"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_document",
+      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_scheduling_update"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_scheduling_update",
+      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_release_plan"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_playlists_field",
+      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_love_triangle_murders"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_playlists_field",
+      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_murder_for_insurance_money"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_playlists_field",
+      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_wife_killed_husband"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_human_confirmation",
+      "target": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_scheduling_update"
     }
   ],
   "hyperedges": [
@@ -13151,5 +14091,5 @@
       "source_file": "ProductionStudio/Tools/mugshot_fetch_tool.md"
     }
   ],
-  "built_at_commit": "3b5b0bf36e453efabdf34589dc8827d3e9a7088d"
+  "built_at_commit": "f17adaed309c79b9b7b389a102bb7a92845990d9"
 }

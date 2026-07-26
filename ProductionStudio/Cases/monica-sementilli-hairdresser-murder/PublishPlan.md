@@ -7,7 +7,7 @@
     { "date": "2026-07-27 07:00 PDT / 2026-07-27T14:00:00Z", "asset": "short 3 (The Killer Took The Stand To Save Her)", "video_id": "arqfpT5AanM", "status": "scheduled via youtube_agent.py confirm_publish()" },
     { "date": "2026-07-27 19:00 PDT / 2026-07-28T02:00:00Z", "asset": "short 4 (8 Years Later, The Verdict Finally Came)", "video_id": "NvIekvoLu1k", "status": "scheduled via youtube_agent.py confirm_publish()" }
   ],
-  "playlist": "Case Files: Monica Sementilli (PLErsd2D4rc9g) — main video + all 4 shorts added",
+  "playlists": ["Love Triangle Murders (PLex0mHScQ9nU)", "Wife Killed Husband (PLe6_jN9U_ijM)", "Murder For Insurance Money (PLVCbFw1Wp6mk)"],
   "awaiting_human_confirmation": false
 }
 ```
