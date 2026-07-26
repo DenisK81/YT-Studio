@@ -128,7 +128,7 @@ as a "scene" photo.
 - Output feeds Image Generation Agent's asset pool as a secondary source alongside
   `Assets/images/{scene_id}.png`, not as a replacement.
 
-## Status: unblocked (2026-07-19), Track 1 live-tested end-to-end (2026-07-20)
+## Status: unblocked (2026-07-19), Track 1 live-tested end-to-end (2026-07-20), MANDATORY per case (2026-07-26)
 Previously blocked pending legal review (see git history for the original Stage 2 live-check
 note). Unblocked after real research into the newsworthy/documentary exception (favorable, see
 above) and an explicit, informed risk decision by the channel owner: use real person photos with
@@ -139,3 +139,13 @@ exception above found a real, usable photo for the Banfield case specifically wi
 that FOIA request. Full pipeline (find → verify official attribution → download → detect →
 redact → save) run for real on the Banfield mugshot; Track 2 (non-person) tried on the same
 article and found no valid candidate that run — see `Tests/stage2_mugshot_tool_test.md`.
+
+**Escalated 2026-07-26 from "recommended mixing" to "mandatory attempt, every case, no
+exceptions."** See `Documentation/ARCHITECTURE.md`'s "Real photos are now MANDATORY per case"
+section for the full rationale (YouTube's 2026 AI-slop enforcement policy). Concretely: run
+both tracks' fetch step for every new case before Image Generation Agent starts filling gaps
+with AI generation. A case may still end up generation-only for a given person/scene if access
+is genuinely blocked (a jurisdiction with no API and no outlet-attribution exception, exactly
+like the Sementilli LAPD/CDCR case) — but that has to be a documented, checked outcome in the
+case's own `PersonPhotos.md` (see the Sementilli case for the template), never a silently
+skipped step the way the Kouri Richins production skipped it entirely.

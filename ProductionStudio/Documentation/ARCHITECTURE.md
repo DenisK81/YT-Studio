@@ -221,6 +221,35 @@ wanted before scaling past the test phase:
   and remains unresolved** — a human still has to manually request a person photo per case in
   that jurisdiction; this isn't something Tool Manager or any agent can automate around.
 
+## Real photos are now MANDATORY per case, not optional mixing (escalated 2026-07-26)
+
+What started as a preference ("mix in real photos, don't ship 100% AI-generated") is now a hard
+requirement, after the channel owner connected it to real platform risk, confirmed by research
+this same day: **YouTube's January 2026 enforcement wave specifically targets "AI slop"** —
+mass-produced, template-based AI content judged to add no original insight — under a three-strike
+system (warning → 90-day Partner Program suspension → permanent removal). The distinguishing
+factor YouTube itself states isn't "was AI used" but whether the final product demonstrates real
+creative/editorial value. Real, downloaded crime-scene/court photos are concrete evidence this
+studio is not template AI slop — they cannot be faked by a generic prompt, unlike every AI-
+generated scene image.
+
+- **Every case must actually attempt both `mugshot_fetch_tool.md` tracks before falling back to
+  generation** — this is no longer "nice to have, skip if inconvenient." The Kouri Richins video
+  skipped this step entirely (no attempt at all) and that is now a documented process failure,
+  not an acceptable default; the Monica Sementilli video's `PersonPhotos.md` (a real, documented,
+  multi-source attempt that hit genuine access walls — LAPD 403, CDCR interactive-only) is the
+  correct standard going forward, whether or not a usable photo is ultimately found.
+- **Mandatory redaction applies to every real photo containing an identifiable living person**,
+  not just Track 1 mugshots specifically — if a Track 2 "scene" photo turns out to have a
+  recognizable face in frame, it gets the same black-bar-over-eyes (or blur) treatment before use,
+  per `mugshot_fetch_tool.md`'s own escalation rule.
+- **Check YouTube Studio's "Altered or synthetic content" disclosure toggle before every
+  publish** — confirmed 2026-07-26: YouTube now requires creators to label realistic AI-generated
+  content in Studio at upload time; undisclosed synthetic material is itself a violation trigger
+  independent of the AI-slop policy above. Added to `Agents/quality_control_agent.md` /
+  `Agents/publishing_agent.md`'s pre-publish checklist — this is a human click in Studio, not
+  something `youtube_agent.py` sets via the API.
+
 ## Stage 3 link contracts (added 2026-07-20, after a link-by-link audit)
 
 `Tests/TEST_PLAN.md`'s Stage 3 found 4 real schema mismatches between adjacent agents — not
