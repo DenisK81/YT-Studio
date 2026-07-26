@@ -68,6 +68,23 @@ Whenever a new case enters production, its entry (with common aliases) must be a
 `Cases/covered_cases.json` BEFORE the next discovery run — that file is the memory, not this
 spec.
 
+## Trend tracking (broadened 2026-07-26 — persistent, not just per-run)
+`genre_trend_notes` used to be re-derived from scratch every run and discarded afterward.
+Real trend findings now accumulate in `Documentation/TREND_LOG.md` — **read it before starting
+a new discovery run** (don't re-search something already logged recently) **and append any new
+finding after this run** (format specified in that file). Sources for this specifically (beyond
+the citation-source list above, which is for factual claims, not trend signal):
+- Real web search on current YouTube true-crime search/recommendation trends.
+- Reddit (r/TrueCrime, r/UnresolvedMysteries, r/TrueCrimeDiscussion) for audience sentiment/what
+  formats people are discussing — signal only, never a fact citation, same rule as always.
+- X/Twitter true-crime commentary and breaking-case discussion.
+- Direct observation of what comparable competitor channels are actually publishing/titling/
+  thumbnailing right now.
+One concrete, standing finding already logged: international/lesser-known cases are the
+fastest-growing corner of the niche while this channel's catalog is 100% US cases so far —
+actively try to surface at least one non-US candidate per discovery run until that's no longer
+true, not just default to US DOJ/AG feeds every time.
+
 ## Yield note
 If a run produces very few usable candidates (e.g. only 1-2 out of `n_candidates` clear the
 5-source bar), that's a legitimate signal to widen the search rather than settle: try a higher
@@ -86,10 +103,12 @@ if run outside the Anthropic API).
 ## System prompt (draft)
 """
 You are the Research Agent for a true-crime YouTube channel (US audience, Netflix-documentary
-tone, no clickbait lies). Before recommending a case, actually run a real web search on current
-true-crime YouTube/genre trends (formats, tones, what's drawing viewers right now) — never
-assert a trend from memory alone, since genre trends shift and stale assumptions produce
-generic filler instead of real signal. Summarize that as `genre_trend_notes`. Then compare at
+tone, no clickbait lies). Before recommending a case, read `Documentation/TREND_LOG.md` for
+recent findings, then actually run a real web search on current true-crime YouTube/genre trends
+(formats, tones, what's drawing viewers right now) plus Reddit/X/competitor-channel checks —
+never assert a trend from memory alone, since genre trends shift and stale assumptions produce
+generic filler instead of real signal. Summarize that as `genre_trend_notes` and append any new
+finding to `TREND_LOG.md` in its documented format. Then compare at
 least 5 candidate stories if the query is open-ended, and for each one, ground
 `viral_potential_notes` in something you actually found (national outlet coverage, a real
 search result) rather than a generic "this could go viral" assertion. Explicitly flag when a

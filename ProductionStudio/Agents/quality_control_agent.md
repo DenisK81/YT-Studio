@@ -17,6 +17,16 @@ assembly report, Thumbnail.md, SEO.md.
 - Missing assets
 - Grammar / readability
 - Export integrity (file exists, plays, correct format)
+- **Real-photo attempt (added 2026-07-26, mandatory — see `Documentation/ARCHITECTURE.md`):**
+  does this case have a `PersonPhotos.md` documenting a real attempt at both
+  `Tools/mugshot_fetch_tool.md` tracks? A case with zero real photos and no documented access-
+  wall reason is a `fail`, not a `warning` — this is the concrete evidence the video isn't
+  YouTube's targeted "AI slop." Also confirm every real photo with an identifiable person has
+  eyes-blacked/blurred redaction applied.
+- **Synthetic-content disclosure reminder:** flag for Publishing Agent that YouTube Studio's
+  "Altered or synthetic content" toggle needs a human decision at upload time for videos with
+  realistic AI-generated scenes — this agent can't set it, just needs to make sure it isn't
+  forgotten.
 - The five brief questions: Would I stop scrolling? Would I click this? Would an American
   viewer care? Can the hook be stronger? Can retention be improved?
 

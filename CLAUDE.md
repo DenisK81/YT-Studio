@@ -34,6 +34,17 @@ starts once explicitly requested — don't self-initiate Phase 2 work from a Pha
   black box.
 - Two candidate approaches that are roughly equally good (choice of image provider, choice of
   hosting detail not already decided in the brief) — surface both and ask, don't silently pick.
+- **Real photos are mandatory per case, not optional** (escalated 2026-07-26 — see
+  `Documentation/ARCHITECTURE.md`). Run both `Tools/mugshot_fetch_tool.md` tracks for every case
+  before letting Image Generation fill gaps with AI. Never ship a case 100% AI-generated — real,
+  downloaded crime-scene/court photos are the concrete evidence this channel isn't YouTube's
+  targeted 2026 "AI slop" (mass-produced template content, three-strike enforcement policy).
+  Every identifiable real person in any real photo gets eyes-blacked or blurred before use, no
+  exceptions. If access is genuinely blocked, document the attempt and the wall hit in that
+  case's `PersonPhotos.md` — never silently skip the step.
+- Before every publish, check YouTube Studio's "Altered or synthetic content" disclosure toggle
+  for videos containing realistic AI-generated scenes — a human click in Studio, not something
+  the API sets.
 
 ## Project facts (don't re-derive these by searching or guessing)
 
