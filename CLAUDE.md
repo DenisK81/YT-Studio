@@ -45,7 +45,16 @@ starts once explicitly requested — don't self-initiate Phase 2 work from a Pha
   Midjourney is excluded from automation (no official API) but is fine for one-off manual
   generation in Phase 1.
 - Video assembly: Remotion.
-- Publishing: YouTube Data API v3, always human-gated.
+- Publishing: YouTube Data API v3, always human-gated. Real implementation:
+  `ProductionStudio/Workflows/youtube_agent.py` (see `Tools/youtube_publish_tool.md`).
+- **Publishing timezone: America/Los_Angeles (Pacific), confirmed 2026-07-26.** All release
+  scheduling is planned in LA local time and converted to UTC for the API's `publishAt` field —
+  compute the conversion with a real timezone library (e.g. Python `zoneinfo`), never hardcode
+  UTC-7/UTC-8, since LA switches between PDT and PST across the year.
+- **Every case gets one YouTube playlist, named `Case Files: {Case Name}`.** Created via
+  `youtube_agent.py`'s `get_or_create_playlist()` (idempotent — safe to call every time, never
+  duplicates). Every video for that case — main video and every Short — gets added via
+  `add_video_to_playlist()` as soon as it's uploaded, not batched up later.
 - First real test case: the Molly Watson / James Addie script. Chapters 6-16 and the ending
   were drafted separately from this repo; chapters 1-5 may or may not be finished yet — ask the
   user for current status rather than assuming.

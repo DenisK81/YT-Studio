@@ -35,7 +35,7 @@
     "semantic_hash": "8be3eefe4c72f18e2ffaaab25330b069"
   },
   "ProductionStudio/Tools/tool_registry.json": {
-    "mtime": 1785039477.0849612,
+    "mtime": 1785039912.1846466,
     "ast_hash": "3134857792f39ae356a7ec28631f4392",
     "semantic_hash": "3134857792f39ae356a7ec28631f4392"
   },
@@ -75,9 +75,9 @@
     "semantic_hash": "ba1e6db4b44372e3052e368adf254ab9"
   },
   "CLAUDE.md": {
-    "mtime": 1784997798.414056,
-    "ast_hash": "2c7e91c3af24e460aae7f88041376222",
-    "semantic_hash": "2c7e91c3af24e460aae7f88041376222"
+    "mtime": 1785041624.9114852,
+    "ast_hash": "78324d2146c548b949d9b97ce726a164",
+    "semantic_hash": "78324d2146c548b949d9b97ce726a164"
   },
   "KICKOFF_PROMPT.md": {
     "mtime": 1784425351.0,
@@ -435,9 +435,9 @@
     "semantic_hash": "d79a25a484791c0d7ef241b2a0160cd3"
   },
   "ProductionStudio/Tools/youtube_publish_tool.md": {
-    "mtime": 1785039493.048032,
-    "ast_hash": "052b169a8de0b8b598b065f829549571",
-    "semantic_hash": "052b169a8de0b8b598b065f829549571"
+    "mtime": 1785041649.6146226,
+    "ast_hash": "d398a5a1fb9e148a5438bab2fdb67fba",
+    "semantic_hash": "d398a5a1fb9e148a5438bab2fdb67fba"
   },
   "ProductionStudio/Workflows/PIPELINE_OVERVIEW.md": {
     "mtime": 1784656182.4423742,
@@ -475,9 +475,9 @@
     "semantic_hash": "fddab73ecab2781ebd9129dae6b95dc7"
   },
   "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md": {
-    "mtime": 1784995424.47999,
-    "ast_hash": "02fe7a8895f74e49fbca73f3a7fcfe21",
-    "semantic_hash": "02fe7a8895f74e49fbca73f3a7fcfe21"
+    "mtime": 1785041674.491782,
+    "ast_hash": "c79b777f3e764f4ba1feea6283b34a67",
+    "semantic_hash": "c79b777f3e764f4ba1feea6283b34a67"
   },
   "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/SEO.md": {
     "mtime": 1784995424.47999,
@@ -560,8 +560,8 @@
     "semantic_hash": "c0710db219bf7d69f49e9d36e8d23e42"
   },
   "ProductionStudio/Workflows/youtube_agent.py": {
-    "mtime": 1785039433.8200428,
-    "ast_hash": "a3f90eabbb922059fb887ea1edf0f3c4",
-    "semantic_hash": "a3f90eabbb922059fb887ea1edf0f3c4"
+    "mtime": 1785040986.0230618,
+    "ast_hash": "d3dcf903f9f6fb4d965195159a3f420f",
+    "semantic_hash": "d3dcf903f9f6fb4d965195159a3f420f"
   }
 }
