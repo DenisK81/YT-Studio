@@ -28,6 +28,7 @@ Usage:
     python youtube_agent.py upload <video_file> <title> <description> <tags_csv> [--category ID] [--thumbnail PATH]
     python youtube_agent.py set-thumbnail <video_id> <thumbnail_file>
     python youtube_agent.py list-uploads [--max N]
+    python youtube_agent.py update-metadata <video_id> [--title T] [--description D] [--tags CSV] [--category ID]
     python youtube_agent.py publish <video_id> --confirm [--at ISO_TIMESTAMP]
 """
 import argparse
@@ -152,6 +153,33 @@ def set_thumbnail(video_id, thumbnail_file):
     print(f"Thumbnail set for {video_id}")
 
 
+def update_metadata(video_id, title=None, description=None, tags=None, category_id=None):
+    """Edits title/description/tags/category on an existing video, public or not.
+    Only the fields passed are changed - existing snippet fields are preserved.
+    Not gated behind human_confirmed: editing the title of an ALREADY-public video is a
+    much smaller, easily-reversible action than the initial publish decision, but it does
+    modify public-facing content, so Claude must still only call this after the channel
+    owner has said what the new text should be in the current session - never invent or
+    apply wording on its own initiative."""
+    yt = get_authenticated_service()
+    current = yt.videos().list(part="snippet", id=video_id).execute()
+    if not current["items"]:
+        raise SystemExit(f"No video found with id {video_id}")
+    snippet = current["items"][0]["snippet"]
+
+    if title is not None:
+        snippet["title"] = title
+    if description is not None:
+        snippet["description"] = description
+    if tags is not None:
+        snippet["tags"] = tags
+    if category_id is not None:
+        snippet["categoryId"] = category_id
+
+    yt.videos().update(part="snippet", body={"id": video_id, "snippet": snippet}).execute()
+    print(f"Updated metadata for {video_id}: title={snippet['title']!r}")
+
+
 def list_uploads(max_results=10):
     """Read-only: lists the channel's most recent uploads (any privacy status)."""
     yt = get_authenticated_service()
@@ -162,7 +190,8 @@ def list_uploads(max_results=10):
     ).execute()
     for item in resp.get("items", []):
         s = item["snippet"]
-        print(f"{s['resourceId']['videoId']}  {s['title']}  (published {s['publishedAt']})")
+        line = f"{s['resourceId']['videoId']}  {s['title']}  (published {s['publishedAt']})"
+        print(line.encode("ascii", "replace").decode("ascii"))
 
 
 def confirm_publish(video_id, human_confirmed=False, privacy_status="public", publish_at=None):
@@ -214,6 +243,13 @@ if __name__ == "__main__":
     p_list = sub.add_parser("list-uploads")
     p_list.add_argument("--max", type=int, default=10)
 
+    p_meta = sub.add_parser("update-metadata")
+    p_meta.add_argument("video_id")
+    p_meta.add_argument("--title", default=None)
+    p_meta.add_argument("--description", default=None)
+    p_meta.add_argument("--tags", default=None, help="comma-separated")
+    p_meta.add_argument("--category", default=None)
+
     p_publish = sub.add_parser("publish")
     p_publish.add_argument("video_id")
     p_publish.add_argument("--confirm", action="store_true",
@@ -235,6 +271,10 @@ if __name__ == "__main__":
         set_thumbnail(args.video_id, args.thumbnail_file)
     elif args.cmd == "list-uploads":
         list_uploads(max_results=args.max)
+    elif args.cmd == "update-metadata":
+        tags = [t.strip() for t in args.tags.split(",") if t.strip()] if args.tags else None
+        update_metadata(args.video_id, title=args.title, description=args.description,
+                         tags=tags, category_id=args.category)
     elif args.cmd == "publish":
         confirm_publish(args.video_id, human_confirmed=args.confirm,
                          privacy_status=args.privacy, publish_at=args.at)
