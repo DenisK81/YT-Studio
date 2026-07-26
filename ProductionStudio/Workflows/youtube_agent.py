@@ -29,6 +29,9 @@ Usage:
     python youtube_agent.py set-thumbnail <video_id> <thumbnail_file>
     python youtube_agent.py list-uploads [--max N]
     python youtube_agent.py update-metadata <video_id> [--title T] [--description D] [--tags CSV] [--category ID]
+    python youtube_agent.py list-playlists
+    python youtube_agent.py get-or-create-playlist "<title>" [--description D]
+    python youtube_agent.py add-to-playlist <playlist_id> <video_id>
     python youtube_agent.py publish <video_id> --confirm [--at ISO_TIMESTAMP]
 """
 import argparse
@@ -221,6 +224,63 @@ def confirm_publish(video_id, human_confirmed=False, privacy_status="public", pu
         print(f"Published {video_id} as {privacy_status}")
 
 
+def list_playlists():
+    """Read-only: lists the channel's existing playlists."""
+    yt = get_authenticated_service()
+    resp = yt.playlists().list(part="snippet", mine=True, maxResults=50).execute()
+    for pl in resp.get("items", []):
+        title = pl["snippet"]["title"].encode("ascii", "replace").decode("ascii")
+        print(pl["id"], " ", title)
+
+
+def find_playlist_by_title(title):
+    yt = get_authenticated_service()
+    resp = yt.playlists().list(part="snippet", mine=True, maxResults=50).execute()
+    for pl in resp.get("items", []):
+        if pl["snippet"]["title"] == title:
+            return pl["id"]
+    return None
+
+
+def get_or_create_playlist(title, description=""):
+    """Idempotent: returns the existing playlist's id if one with this exact title
+    already exists, otherwise creates a new public playlist. Safe to call every time a
+    new video in a given case/theme is published - never creates a duplicate playlist."""
+    existing = find_playlist_by_title(title)
+    if existing:
+        return existing
+
+    yt = get_authenticated_service()
+    body = {
+        "snippet": {"title": title, "description": description},
+        "status": {"privacyStatus": "public"},
+    }
+    resp = yt.playlists().insert(part="snippet,status", body=body).execute()
+    print(f"Created playlist {resp['id']}: {title}")
+    return resp["id"]
+
+
+def add_video_to_playlist(playlist_id, video_id):
+    """Idempotent-ish: YouTube allows the same video in a playlist only once in practice
+    for this use case, but we don't de-dupe here - check with list_playlist_items first
+    if calling this in a loop across repeated runs."""
+    yt = get_authenticated_service()
+    body = {
+        "snippet": {
+            "playlistId": playlist_id,
+            "resourceId": {"kind": "youtube#video", "videoId": video_id},
+        }
+    }
+    yt.playlistItems().insert(part="snippet", body=body).execute()
+    print(f"Added {video_id} to playlist {playlist_id}")
+
+
+def list_playlist_items(playlist_id):
+    yt = get_authenticated_service()
+    resp = yt.playlistItems().list(part="snippet", playlistId=playlist_id, maxResults=50).execute()
+    return [item["snippet"]["resourceId"]["videoId"] for item in resp.get("items", [])]
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = parser.add_subparsers(dest="cmd", required=True)
@@ -250,6 +310,16 @@ if __name__ == "__main__":
     p_meta.add_argument("--tags", default=None, help="comma-separated")
     p_meta.add_argument("--category", default=None)
 
+    sub.add_parser("list-playlists")
+
+    p_getplaylist = sub.add_parser("get-or-create-playlist")
+    p_getplaylist.add_argument("title")
+    p_getplaylist.add_argument("--description", default="")
+
+    p_addplaylist = sub.add_parser("add-to-playlist")
+    p_addplaylist.add_argument("playlist_id")
+    p_addplaylist.add_argument("video_id")
+
     p_publish = sub.add_parser("publish")
     p_publish.add_argument("video_id")
     p_publish.add_argument("--confirm", action="store_true",
@@ -275,6 +345,12 @@ if __name__ == "__main__":
         tags = [t.strip() for t in args.tags.split(",") if t.strip()] if args.tags else None
         update_metadata(args.video_id, title=args.title, description=args.description,
                          tags=tags, category_id=args.category)
+    elif args.cmd == "list-playlists":
+        list_playlists()
+    elif args.cmd == "get-or-create-playlist":
+        get_or_create_playlist(args.title, description=args.description)
+    elif args.cmd == "add-to-playlist":
+        add_video_to_playlist(args.playlist_id, args.video_id)
     elif args.cmd == "publish":
         confirm_publish(args.video_id, human_confirmed=args.confirm,
                          privacy_status=args.privacy, publish_at=args.at)

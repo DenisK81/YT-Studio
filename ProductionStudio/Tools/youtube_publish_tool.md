@@ -46,3 +46,34 @@ spec anymore.
   browser for the channel owner's own Google login; Claude never sees or enters the password.
 - Scopes: `youtube.upload` + `youtube` (covers upload, metadata, thumbnails, playlists —
   the full "manage the channel" surface, not just publishing one video).
+
+## Playlists (added 2026-07-26)
+
+Every case gets exactly one playlist, named `Case Files: {Case Name}` — created via
+`get_or_create_playlist(title, description)` (idempotent by title, never duplicates) and
+populated via `add_video_to_playlist(playlist_id, video_id)`. The main video and every Short for
+that case go in the same playlist, added as soon as each is uploaded — not batched up later.
+Existing channel videos were retroactively sorted into `Case Files: Brendan Banfield`,
+`Case Files: Molly Watson`, `Case Files: Kouri Richins`, `Case Files: Monica Sementilli` on
+2026-07-26 (two pre-existing videos, "Renovation" and an untitled cold-open clip, had empty
+descriptions and no identifiable case — left out rather than guessed).
+
+## Scheduling in practice (2026-07-26 real run)
+
+First real batch of `confirm_publish(..., publish_at=...)` calls: the 4 Monica Sementilli
+Shorts, scheduled across 2 days per the channel owner's explicit slots, computed in
+America/Los_Angeles and converted to UTC (see CLAUDE.md's timezone project fact):
+
+| Short | LA local time | UTC `publishAt` |
+|---|---|---|
+| short_1 "She Watched The Murder On Camera" | 2026-07-26 08:00 PDT | `2026-07-26T15:00:00Z` |
+| short_2 "She Sexted Her Husband's Killer..." | 2026-07-26 20:00 PDT | `2026-07-27T03:00:00Z` |
+| short_3 "The Killer Took The Stand To Save Her" | 2026-07-27 07:00 PDT | `2026-07-27T14:00:00Z` |
+| short_4 "8 Years Later, The Verdict Finally Came" | 2026-07-27 19:00 PDT | `2026-07-28T02:00:00Z` |
+
+**Lesson learned:** don't identify an already-uploaded video by title-matching alone — a
+channel-owner-uploaded video titled "She Sexted Her Husband's Killer — At His Funeral" was
+initially assumed to be Short #2, but checking its real `contentDetails.duration` via the API
+(`PT11M35S`) showed it was actually the **main video** uploaded under one of its `SEO.md` title
+options, not a Short at all. Always verify by real duration/file size, not title text, before
+concluding a specific render was or wasn't already published.
