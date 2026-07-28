@@ -82,13 +82,13 @@
     {
       "name": "mugshot_fetch_tool",
       "path": "Tools/mugshot_fetch_tool.md",
-      "description": "Two-track real-photo sourcing. Track 1: person photos (mugshot/court exhibit) from official public-record sources only (now including outlet-hosted photos with explicit official-source captions), always eyes-redacted before use via OpenCV Haar-cascade detection. Track 2: non-person photos from any source including news articles, per the channel owner's 2026-07-19 risk decision. Track 1 live-tested end-to-end 2026-07-20 on the real Banfield mugshot (Cases/brendan-banfield-double-murder/PersonPhotos.md) — found, verified, downloaded, and automatically redacted successfully. Track 2 tried on the same article, found no valid candidate that run.",
+      "description": "Two-track real-photo sourcing. Track 1: person photos (mugshot/court exhibit) from official public-record sources only (now including outlet-hosted photos with explicit official-source captions), always eyes-redacted before use via OpenCV Haar-cascade detection, with a manual pixel-coordinate fallback when the cascade misses or false-positives (confirmed necessary on real off-angle photos, not just a theoretical edge case — see Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md). Track 2: non-person photos from any source including news articles, per the channel owner's 2026-07-19 risk decision. Track 1 live-tested end-to-end 2026-07-20 on the real Banfield mugshot — found, verified, downloaded, and automatically redacted successfully. 2026-07-28: extended to a non-US jurisdiction (Victoria, Australia) with no booking-photo release system — real equivalent found via AAP wire-service press photography of the defendant at his own public court hearing; images retrieved by loading them in the Browser pane and fetching client-side (this session's own Bash sandbox blocks outbound curl to arbitrary CDN hosts even with explicit user approval). generate_case_assets.py's cmd_images now auto-copies real-photo-scene images instead of generating over them, driven by ImagePrompts.md's real_photo_scenes list.",
       "input_schema_ref": "case_name: string, subjects: object[], scene_targets: object[]",
       "output_schema_ref": "person_images: object[], scene_images: object[], not_found: object[]",
       "tags": ["images", "public-records", "mugshots", "legal"],
-      "provider": "county sheriff / state DOC inmate lookup / court press releases / outlet-hosted-with-official-attribution (person track); any outlet (scene track)",
+      "provider": "county sheriff / state DOC inmate lookup / court press releases / outlet-hosted-with-official-attribution / wire-service press photography (person track, jurisdiction-dependent); any outlet (scene track)",
       "status": "active",
-      "last_updated": "2026-07-20"
+      "last_updated": "2026-07-28"
     },
     {
       "name": "royalty_free_music_tool",

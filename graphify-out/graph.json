@@ -4,6 +4,50 @@
   "graph": {
     "hyperedges": [
       {
+        "id": "real_photo_mandate_compliance_muliaga",
+        "label": "Real-photo mandate compliance (Track 1 + Track 2, mugshot_fetch_tool)",
+        "nodes": [
+          "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_mugshot_fetch_tool",
+          "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_court_escort_photo",
+          "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_prison_van_photo",
+          "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_supreme_court_sign_photo",
+          "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_document"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Checklist.md"
+      },
+      {
+        "id": "rimoni_muliaga_trial_participants",
+        "label": "Rimoni Muliaga murder trial and sentencing participants",
+        "nodes": [
+          "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_rimoni_muliaga",
+          "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_patrick_bourke",
+          "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_michael_mcgrath",
+          "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_james_gorton",
+          "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_dpp_v_muliaga"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md"
+      },
+      {
+        "id": "automated_redaction_failure_and_manual_fix",
+        "label": "Automated redaction failure on both real photos, fixed via manual pixel-coordinate redaction",
+        "nodes": [
+          "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_automated_redaction_reliability_note",
+          "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_manual_pixel_redaction",
+          "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_court_escort_photo",
+          "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_prison_van_photo"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md"
+      },
+      {
         "id": "hyperedge_ai_slop_policy_rationale",
         "label": "YouTube's January 2026 'AI slop' enforcement policy (three-strike system) and mandatory synthetic-content disclosure toggle as the shared rationale escalating real photos from recommended to mandatory, described consistently across CLAUDE.md, ARCHITECTURE.md, TREND_LOG.md, and mugshot_fetch_tool.md",
         "nodes": [
@@ -1345,7 +1389,7 @@
       "source_file": "ProductionStudio/Workflows/build_master_workflow.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 21,
+      "community": 26,
       "community_name": "n8n Workflow Builder Script",
       "norm_label": "build_master_workflow.py",
       "id": "productionstudio_workflows_build_master_workflow"
@@ -1356,7 +1400,7 @@
       "source_file": "ProductionStudio/Workflows/build_master_workflow.py",
       "source_location": "L48",
       "_origin": "ast",
-      "community": 21,
+      "community": 26,
       "community_name": "n8n Workflow Builder Script",
       "norm_label": "read_agent()",
       "id": "productionstudio_workflows_build_master_workflow_read_agent"
@@ -1367,7 +1411,7 @@
       "source_file": "ProductionStudio/Workflows/build_master_workflow.py",
       "source_location": "L86",
       "_origin": "ast",
-      "community": 21,
+      "community": 26,
       "community_name": "n8n Workflow Builder Script",
       "norm_label": "txt()",
       "id": "productionstudio_workflows_build_master_workflow_txt"
@@ -1378,7 +1422,7 @@
       "source_file": "ProductionStudio/Workflows/build_master_workflow.py",
       "source_location": "L93",
       "_origin": "ast",
-      "community": 21,
+      "community": 26,
       "community_name": "n8n Workflow Builder Script",
       "norm_label": "anthropic_node()",
       "id": "productionstudio_workflows_build_master_workflow_anthropic_node"
@@ -1389,7 +1433,7 @@
       "source_file": "ProductionStudio/Workflows/build_master_workflow.py",
       "source_location": "L129",
       "_origin": "ast",
-      "community": 21,
+      "community": 26,
       "community_name": "n8n Workflow Builder Script",
       "norm_label": "connect()",
       "id": "productionstudio_workflows_build_master_workflow_connect"
@@ -1400,7 +1444,7 @@
       "source_file": "ProductionStudio/Workflows/build_master_workflow.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 21,
+      "community": 26,
       "community_name": "n8n Workflow Builder Script",
       "norm_label": "build the fatal affairs master pipeline workflow for n8n (local phase 2 trial).",
       "id": "productionstudio_workflows_build_master_workflow_rationale_1"
@@ -1411,131 +1455,10 @@
       "source_file": "ProductionStudio/Workflows/build_master_workflow.py",
       "source_location": "L87",
       "_origin": "ast",
-      "community": 21,
+      "community": 26,
       "community_name": "n8n Workflow Builder Script",
       "norm_label": "js expr: concatenated text blocks of an anthropic node's response.",
       "id": "productionstudio_workflows_build_master_workflow_rationale_87"
-    },
-    {
-      "label": "generate_case_assets.py",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "Case Asset Generator Script",
-      "norm_label": "generate_case_assets.py",
-      "id": "productionstudio_workflows_generate_case_assets"
-    },
-    {
-      "label": "repo_root()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L40",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "Case Asset Generator Script",
-      "norm_label": "repo_root()",
-      "id": "productionstudio_workflows_generate_case_assets_repo_root"
-    },
-    {
-      "label": "post_json()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L45",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "Case Asset Generator Script",
-      "norm_label": "post_json()",
-      "id": "productionstudio_workflows_generate_case_assets_post_json"
-    },
-    {
-      "label": "get_bytes()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L56",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "Case Asset Generator Script",
-      "norm_label": "get_bytes()",
-      "id": "productionstudio_workflows_generate_case_assets_get_bytes"
-    },
-    {
-      "label": "parse_voiceover()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L62",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "Case Asset Generator Script",
-      "norm_label": "parse_voiceover()",
-      "id": "productionstudio_workflows_generate_case_assets_parse_voiceover"
-    },
-    {
-      "label": "word_spans()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L107",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "Case Asset Generator Script",
-      "norm_label": "word_spans()",
-      "id": "productionstudio_workflows_generate_case_assets_word_spans"
-    },
-    {
-      "label": "cmd_audio()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L126",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "Case Asset Generator Script",
-      "norm_label": "cmd_audio()",
-      "id": "productionstudio_workflows_generate_case_assets_cmd_audio"
-    },
-    {
-      "label": "cmd_images()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L199",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "Case Asset Generator Script",
-      "norm_label": "cmd_images()",
-      "id": "productionstudio_workflows_generate_case_assets_cmd_images"
-    },
-    {
-      "label": "main()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L232",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "Case Asset Generator Script",
-      "norm_label": "main()",
-      "id": "productionstudio_workflows_generate_case_assets_main"
-    },
-    {
-      "label": "Local, no-n8n, no-Anthropic-key asset generator for a case.  Phase 1 default (",
-      "file_type": "rationale",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "Case Asset Generator Script",
-      "norm_label": "local, no-n8n, no-anthropic-key asset generator for a case.  phase 1 default (",
-      "id": "productionstudio_workflows_generate_case_assets_rationale_1"
-    },
-    {
-      "label": "Group per-character alignment into (start, end, word) spans on whitespace.",
-      "file_type": "rationale",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L108",
-      "_origin": "ast",
-      "community": 12,
-      "community_name": "Case Asset Generator Script",
-      "norm_label": "group per-character alignment into (start, end, word) spans on whitespace.",
-      "id": "productionstudio_workflows_generate_case_assets_rationale_108"
     },
     {
       "label": "generate_shorts_audio.py",
@@ -1609,7 +1532,7 @@
       "source_file": "ProductionStudio/Workflows/prep_remotion_render.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 23,
+      "community": 28,
       "community_name": "Remotion Render Prep Script",
       "norm_label": "prep_remotion_render.py",
       "id": "productionstudio_workflows_prep_remotion_render"
@@ -1620,7 +1543,7 @@
       "source_file": "ProductionStudio/Workflows/prep_remotion_render.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 23,
+      "community": 28,
       "community_name": "Remotion Render Prep Script",
       "norm_label": "prepare a remotion render from a case's real timing.json (produced by process_p",
       "id": "productionstudio_workflows_prep_remotion_render_rationale_1"
@@ -1631,7 +1554,7 @@
       "source_file": "ProductionStudio/Workflows/prep_short_render.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 24,
+      "community": 29,
       "community_name": "Shorts Render Prep Script",
       "norm_label": "prep_short_render.py",
       "id": "productionstudio_workflows_prep_short_render"
@@ -1642,7 +1565,7 @@
       "source_file": "ProductionStudio/Workflows/prep_short_render.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 24,
+      "community": 29,
       "community_name": "Shorts Render Prep Script",
       "norm_label": "prepare a single short's remotion render data: copies its narration audio, cold",
       "id": "productionstudio_workflows_prep_short_render_rationale_1"
@@ -1862,7 +1785,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 20,
+      "community": 0,
       "community_name": "Test Plan",
       "norm_label": "test plan",
       "id": "productionstudio_tests_test_plan_test_plan"
@@ -1873,7 +1796,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 20,
+      "community": 0,
       "community_name": "Test Plan",
       "norm_label": "stage 1 \u2014 agents in isolation",
       "id": "productionstudio_tests_test_plan_stage_1_agents_in_isolation"
@@ -1884,7 +1807,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 20,
+      "community": 0,
       "community_name": "Test Plan",
       "norm_label": "stage 2 \u2014 tools in isolation",
       "id": "productionstudio_tests_test_plan_stage_2_tools_in_isolation"
@@ -1895,7 +1818,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 20,
+      "community": 0,
       "community_name": "Test Plan",
       "norm_label": "stage 3 \u2014 two-node links",
       "id": "productionstudio_tests_test_plan_stage_3_two_node_links"
@@ -1906,7 +1829,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 20,
+      "community": 0,
       "community_name": "Test Plan",
       "norm_label": "stage 4 \u2014 full chain, one real case, dry-run publish",
       "id": "productionstudio_tests_test_plan_stage_4_full_chain_one_real_case_dry_run_publish"
@@ -1917,7 +1840,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L71",
       "_origin": "ast",
-      "community": 20,
+      "community": 0,
       "community_name": "Test Plan",
       "norm_label": "stage 5 \u2014 first real publish",
       "id": "productionstudio_tests_test_plan_stage_5_first_real_publish"
@@ -1928,7 +1851,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L75",
       "_origin": "ast",
-      "community": 20,
+      "community": 0,
       "community_name": "Test Plan",
       "norm_label": "regression check",
       "id": "productionstudio_tests_test_plan_regression_check"
@@ -1950,7 +1873,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 18,
+      "community": 22,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "tool: elevenlabs_voice_tool",
       "id": "productionstudio_tools_elevenlabs_voice_tool_tool_elevenlabs_voice_tool"
@@ -1961,7 +1884,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 18,
+      "community": 22,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "purpose",
       "id": "productionstudio_tools_elevenlabs_voice_tool_purpose"
@@ -1972,7 +1895,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 18,
+      "community": 22,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "interface",
       "id": "productionstudio_tools_elevenlabs_voice_tool_interface"
@@ -1983,7 +1906,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 18,
+      "community": 22,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "default provider notes (elevenlabs, verify against current docs before building)",
       "id": "productionstudio_tools_elevenlabs_voice_tool_default_provider_notes_elevenlabs_verify_against_current_docs_before_building"
@@ -1994,7 +1917,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L47",
       "_origin": "ast",
-      "community": 18,
+      "community": 22,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "implementation notes",
       "id": "productionstudio_tools_elevenlabs_voice_tool_implementation_notes"
@@ -2005,7 +1928,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L53",
       "_origin": "ast",
-      "community": 18,
+      "community": 22,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "stage 1/2 live-test result (2026-07-19)",
       "id": "productionstudio_tools_elevenlabs_voice_tool_stage_1_2_live_test_result_2026_07_19"
@@ -2016,7 +1939,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L87",
       "_origin": "ast",
-      "community": 18,
+      "community": 22,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "background music \u2014 stage 2 live-test attempt (2026-07-19)",
       "id": "productionstudio_tools_elevenlabs_voice_tool_background_music_stage_2_live_test_attempt_2026_07_19"
@@ -2027,7 +1950,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L112",
       "_origin": "ast",
-      "community": 18,
+      "community": 22,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "real-timestamp captioning \u2014 fixed endpoint choice (2026-07-21)",
       "id": "productionstudio_tools_elevenlabs_voice_tool_real_timestamp_captioning_fixed_endpoint_choice_2026_07_21"
@@ -2038,7 +1961,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L126",
       "_origin": "ast",
-      "community": 18,
+      "community": 22,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "gap closure (2026-07-19) \u2014 concrete fix for the two shape mismatches above",
       "id": "productionstudio_tools_elevenlabs_voice_tool_gap_closure_2026_07_19_concrete_fix_for_the_two_shape_mismatches_above"
@@ -2060,7 +1983,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 19,
+      "community": 24,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "tool: image_gen_tool",
       "id": "productionstudio_tools_image_gen_tool_tool_image_gen_tool"
@@ -2071,7 +1994,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 19,
+      "community": 24,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "purpose",
       "id": "productionstudio_tools_image_gen_tool_purpose"
@@ -2082,7 +2005,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 19,
+      "community": 24,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "interface",
       "id": "productionstudio_tools_image_gen_tool_interface"
@@ -2093,7 +2016,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 19,
+      "community": 24,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "default provider: fal.ai + flux",
       "id": "productionstudio_tools_image_gen_tool_default_provider_fal_ai_flux"
@@ -2104,7 +2027,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 19,
+      "community": 24,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "stage 2 live-test result (2026-07-19)",
       "id": "productionstudio_tools_image_gen_tool_stage_2_live_test_result_2026_07_19"
@@ -2115,7 +2038,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L49",
       "_origin": "ast",
-      "community": 19,
+      "community": 24,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "fallback / secondary providers (keep the interface provider-agnostic)",
       "id": "productionstudio_tools_image_gen_tool_fallback_secondary_providers_keep_the_interface_provider_agnostic"
@@ -2126,7 +2049,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L68",
       "_origin": "ast",
-      "community": 19,
+      "community": 24,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "stage 4 live-test result (2026-07-20/21) \u2014 confirmed working through n8n, not just direct python",
       "id": "productionstudio_tools_image_gen_tool_stage_4_live_test_result_2026_07_20_21_confirmed_working_through_n8n_not_just_direct_python"
@@ -2137,7 +2060,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L76",
       "_origin": "ast",
-      "community": 19,
+      "community": 24,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "implementation notes",
       "id": "productionstudio_tools_image_gen_tool_implementation_notes"
@@ -3690,7 +3613,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 31,
       "norm_label": "yt-studio readme",
       "community_name": "Repo Root README",
       "id": "readme"
@@ -4569,7 +4492,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 13,
+      "community": 14,
       "norm_label": "settings.json",
       "id": "claude_settings"
     },
@@ -4579,7 +4502,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L2",
       "_origin": "ast",
-      "community": 13,
+      "community": 14,
       "norm_label": "$schema",
       "id": "claude_settings_schema"
     },
@@ -4589,7 +4512,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 13,
+      "community": 14,
       "norm_label": "permissions",
       "id": "claude_settings_permissions"
     },
@@ -4599,7 +4522,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 13,
+      "community": 14,
       "norm_label": "defaultmode",
       "id": "claude_settings_permissions_defaultmode"
     },
@@ -4609,7 +4532,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 13,
+      "community": 14,
       "norm_label": "deny",
       "id": "claude_settings_permissions_deny"
     },
@@ -4619,7 +4542,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 13,
+      "community": 14,
       "norm_label": "read(./.env)",
       "id": "ref_read_env"
     },
@@ -4629,7 +4552,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 13,
+      "community": 14,
       "norm_label": "read(./**/secrets/**)",
       "id": "ref_read_secrets"
     },
@@ -4639,7 +4562,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 13,
+      "community": 14,
       "norm_label": "read(~/.ssh/**)",
       "id": "ref_read_ssh"
     },
@@ -4649,7 +4572,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 13,
+      "community": 14,
       "norm_label": "read(~/.aws/credentials)",
       "id": "ref_read_aws_credentials"
     },
@@ -4659,7 +4582,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L5",
       "_origin": "ast",
-      "community": 13,
+      "community": 14,
       "norm_label": "bash(curl *)",
       "id": "ref_bash_curl"
     },
@@ -4669,7 +4592,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 13,
+      "community": 14,
       "norm_label": "ask",
       "id": "claude_settings_permissions_ask"
     },
@@ -4679,7 +4602,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 13,
+      "community": 14,
       "norm_label": "bash(git push *)",
       "id": "ref_bash_git_push"
     },
@@ -4689,7 +4612,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 13,
+      "community": 14,
       "norm_label": "bash(gh pr merge *)",
       "id": "ref_bash_gh_pr_merge"
     },
@@ -4699,7 +4622,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L18",
       "_origin": "ast",
-      "community": 13,
+      "community": 14,
       "norm_label": "hooks",
       "id": "claude_settings_hooks"
     },
@@ -4709,7 +4632,7 @@
       "source_file": ".claude/settings.json",
       "source_location": "L19",
       "_origin": "ast",
-      "community": 13,
+      "community": 14,
       "norm_label": "pretooluse",
       "id": "claude_settings_hooks_pretooluse"
     },
@@ -4722,7 +4645,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 21,
       "norm_label": "fatal affairs channel trailer (~60s movie-trailer-style channel preview, replaces unbranded preview; rendered 2026-07-25 at 30.1s/903 frames, awaiting channel owner review before manual upload)",
       "id": "productionstudio_channel_trailer_channel_trailer"
     },
@@ -4735,7 +4658,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 21,
       "norm_label": "fatal affairs (channel name, slogan \"every affair has a story. some end in murder.\")",
       "id": "productionstudio_channel_trailer_fatal_affairs"
     },
@@ -4748,7 +4671,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 27,
       "norm_label": "brian voice, elevenlabs voiceid npczcjzi2devnbz1zqrb (\"deep, resonant and comforting\", american, movie-trailer register) \u2014 chosen deliberately distinct from the standard case-narration voice for a more theatrical register",
       "id": "productionstudio_channel_trailer_brian_voice"
     },
@@ -4761,7 +4684,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 27,
       "norm_label": "standard case-narration voice, elevenlabs voiceid wschtcaxditjlphheyrm, used inside actual case videos",
       "id": "productionstudio_channel_trailer_case_narration_voice"
     },
@@ -4774,7 +4697,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 21,
       "norm_label": "config/config.schema.json (source of channel name, slogan, colors, fonts used in trailer)",
       "id": "productionstudio_channel_trailer_config_schema"
     },
@@ -4787,7 +4710,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 21,
       "norm_label": "banfield case (previously produced video; source of the real redacted mugshot reused in the trailer under the newsworthy-exception analysis)",
       "id": "productionstudio_channel_trailer_banfield_case"
     },
@@ -4813,7 +4736,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 21,
       "norm_label": "kouri richins fentanyl-murder case (already-produced video whose stills are reused as trailer collage images, cleared rights)",
       "id": "productionstudio_channel_trailer_kouri_richins_case"
     },
@@ -4826,7 +4749,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 21,
       "norm_label": "monica sementilli hairdresser-murder case (already-produced video whose stills are reused as trailer collage images, cleared rights)",
       "id": "productionstudio_channel_trailer_monica_sementilli_case"
     },
@@ -4839,7 +4762,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 21,
       "norm_label": "fal.ai flux schnell image-generation pipeline (used for the two freshly-generated generic trailer images, corkboard.png and crimetape_rain.png, chosen over third-party stock/footage specifically to avoid a new ungoverned rights question for a channel-level asset)",
       "id": "productionstudio_channel_trailer_flux_schnell_pipeline"
     },
@@ -4852,7 +4775,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 21,
       "norm_label": "assets/renders/fatal-affairs-channel-trailer.mp4 (gitignored render, 1920x1080, 903 frames @ 30fps, 30.1s, spot-checked cold open/mugshot beat/logo-cta sequence)",
       "id": "productionstudio_channel_trailer_render_output"
     },
@@ -4865,7 +4788,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
+      "community": 21,
       "norm_label": "youtube studio channel-trailer upload slot \u2014 uploading a channel trailer is a manual step in youtube's own ui, explicitly not automated by this pipeline",
       "id": "productionstudio_channel_trailer_youtube_studio"
     },
@@ -5259,7 +5182,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "quality control agent \u2014 final gate before publishing, aggregates all prior stage outputs into templates/checklist.md; only a pass allows publishing agent to proceed",
       "id": "productionstudio_agents_quality_control_agent_overview"
     },
@@ -5272,7 +5195,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 19,
       "norm_label": "new qc check (added 2026-07-26, mandatory): case must have personphotos.md documenting a real attempt at both mugshot_fetch_tool tracks. zero real photos with no documented access-wall reason is a fail, not a warning \u2014 concrete evidence the video isn't youtube's targeted 'ai slop'. also confirms every identifiable real photo has eyes-blacked/blurred redaction applied.",
       "id": "productionstudio_agents_quality_control_agent_real_photo_attempt_check"
     },
@@ -5285,7 +5208,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 19,
       "norm_label": "new qc check: synthetic-content disclosure reminder \u2014 flags for publishing agent that youtube studio's 'altered or synthetic content' toggle needs a human decision at upload time for videos with realistic ai-generated scenes; qc agent cannot set it itself, only ensures it isn't forgotten",
       "id": "productionstudio_agents_quality_control_agent_synthetic_disclosure_reminder"
     },
@@ -5298,7 +5221,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "stage 3 link fix (2026-07-20): output field renamed from 'status' to 'checklist_status' to match publishing agent's expected input field exactly",
       "id": "productionstudio_agents_quality_control_agent_checklist_status_field"
     },
@@ -5311,7 +5234,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "research agent \u2014 given a case query, gathers raw factual material from priority sources and produces a structured case brief, never a finished script",
       "id": "productionstudio_agents_research_agent_overview"
     },
@@ -5324,7 +5247,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "trend tracking integration (broadened 2026-07-26): research agent must read documentation/trend_log.md before starting a new discovery run (avoid re-searching recently logged findings) and append any new finding after the run, in trend_log.md's documented format",
       "id": "productionstudio_agents_research_agent_trend_log_integration"
     },
@@ -5337,7 +5260,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 25,
+      "community": 30,
       "norm_label": "standing finding: international/lesser-known cases are the fastest-growing corner of the true-crime niche while this channel's catalog is 100% us cases so far \u2014 actively surface at least one non-us candidate per discovery run until that's no longer true",
       "id": "productionstudio_agents_research_agent_international_case_finding"
     },
@@ -5350,7 +5273,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "discovery sources (added 2026-07-19), distinct from the fixed citation-source list: doj/usao/state ag press-release feeds and forums (r/truecrime, r/unresolvedmysteries, websleuths) are valid for finding candidates, though anything found still needs the full citation-source verification pass",
       "id": "productionstudio_agents_research_agent_discovery_sources"
     },
@@ -5363,7 +5286,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "covered-case memory (added 2026-07-21): cases/covered_cases.json injected as 'covered_cases' input on every discovery run; never propose a case already on that list \u2014 added after the pipeline independently re-picked the already-in-production banfield case",
       "id": "productionstudio_agents_research_agent_covered_case_memory"
     },
@@ -5376,7 +5299,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "full agent pipeline: research -> fact verification -> story -> scene planner -> voice/image -> video assembly -> shorts/thumbnail/seo -> quality control -> publishing (human-gated)",
       "id": "productionstudio_documentation_architecture_pipeline"
     },
@@ -5389,7 +5312,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 19,
       "norm_label": "real-photo sourcing decision (2026-07-19): mugshot_fetch_tool unblocked via the 'newsworthy' exception to right-of-publicity claims, two-track policy (person photos mandatorily redacted; non-person photos any source) \u2014 originally a preference to 'mix in real photos, don't ship 100% ai-generated'",
       "id": "productionstudio_documentation_architecture_mugshot_sourcing_decision"
     },
@@ -5402,7 +5325,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 19,
       "norm_label": "real photos now mandatory per case, not optional mixing (escalated 2026-07-26). rationale: youtube's january 2026 enforcement wave specifically targets 'ai slop' (mass-produced, template-based ai content judged to add no original insight) under a three-strike system (warning -> 90-day partner program suspension -> permanent removal). real, downloaded crime-scene/court photos are concrete evidence this studio is not template ai slop. also requires checking youtube studio's 'altered or synthetic content' disclosure toggle before every publish (confirmed 2026-07-26) \u2014 added to quality_control_agent.md / publishing_agent.md's pre-publish checklist.",
       "id": "productionstudio_documentation_architecture_real_photo_mandatory_escalation"
     },
@@ -5415,7 +5338,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "trend-grounding requirement (2026-07-19): research agent must run a real web search for genre_trend_notes every run rather than asserting trends from memory; a trending frame must never override the facts of a case",
       "id": "productionstudio_documentation_architecture_trend_grounding_requirement"
     },
@@ -5428,7 +5351,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "stage 3 link contracts (2026-07-20): 4 real schema mismatches found and fixed between adjacent agents, including qc's 'status' field renamed to 'checklist_status' to match publishing agent's expected input exactly",
       "id": "productionstudio_documentation_architecture_stage3_link_contracts"
     },
@@ -5441,7 +5364,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 16,
       "norm_label": "shorts agent requirement (2026-07-19): new shorts_agent.md runs immediately after video assembly agent, hard 45s cap per short, one hook under 3 seconds, fixed karaoke caption style",
       "id": "productionstudio_documentation_architecture_shorts_agent_requirement"
     },
@@ -5454,7 +5377,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 19,
       "norm_label": "mugshot_fetch_tool \u2014 fetches real photos for a case to mix with image generation agent's ai-generated stills, not to replace them; two tracks (person photos vs non-person photos) with different legal-risk rules",
       "id": "productionstudio_tools_mugshot_fetch_tool_overview"
     },
@@ -5467,7 +5390,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 19,
       "norm_label": "track 1 \u2014 person photos (mugshots, booking photos, court exhibits): official public-record sources only (sheriff/jail booking pages, state doc inmate-lookup, court/prosecutor exhibits), mandatory eyes-blacked redaction, outlet-attribution exception for explicitly officially-credited republished mugshots",
       "id": "productionstudio_tools_mugshot_fetch_tool_track1_person_photos"
     },
@@ -5480,7 +5403,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 19,
       "norm_label": "track 2 \u2014 non-person photos (buildings, evidence, locations): any source acceptable including news articles already in sources.md, since no right-of-publicity is implicated when no person appears; no redaction needed; escalate to track 1 rules if an identifiable person turns out to be in frame",
       "id": "productionstudio_tools_mugshot_fetch_tool_track2_scene_photos"
     },
@@ -5493,7 +5416,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 19,
       "norm_label": "redaction automated (confirmed 2026-07-20): opencv haar cascades (frontalface then eye-detection restricted to upper 60% of face box) draw a black bar over both eyes in under a second, no external model/gpu needed; fallback to fixed proportional estimate if eye detection fails",
       "id": "productionstudio_tools_mugshot_fetch_tool_redaction_automation"
     },
@@ -5506,7 +5429,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 16,
+      "community": 19,
       "norm_label": "escalated 2026-07-26 from 'recommended mixing' to 'mandatory attempt, every case, no exceptions.' rationale: see architecture.md's 'real photos are now mandatory per case' section (youtube's 2026 ai-slop enforcement policy). every new case must run both tracks before image generation fills gaps; genuinely blocked access must be a documented, checked outcome in personphotos.md (per the monica sementilli standard), never silently skipped as the kouri richins production did.",
       "id": "productionstudio_tools_mugshot_fetch_tool_mandatory_escalation"
     },
@@ -5516,9 +5439,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent",
       "community": 5,
-      "norm_label": "youtube_agent.py"
+      "norm_label": "youtube_agent.py",
+      "id": "productionstudio_workflows_youtube_agent"
     },
     {
       "label": "_find_client_secret_file()",
@@ -5526,9 +5449,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L65",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_find_client_secret_file",
       "community": 5,
-      "norm_label": "_find_client_secret_file()"
+      "norm_label": "_find_client_secret_file()",
+      "id": "productionstudio_workflows_youtube_agent_find_client_secret_file"
     },
     {
       "label": "get_authenticated_service()",
@@ -5536,9 +5459,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L75",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_get_authenticated_service",
       "community": 5,
-      "norm_label": "get_authenticated_service()"
+      "norm_label": "get_authenticated_service()",
+      "id": "productionstudio_workflows_youtube_agent_get_authenticated_service"
     },
     {
       "label": "cmd_auth()",
@@ -5546,9 +5469,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L96",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_cmd_auth",
       "community": 5,
-      "norm_label": "cmd_auth()"
+      "norm_label": "cmd_auth()",
+      "id": "productionstudio_workflows_youtube_agent_cmd_auth"
     },
     {
       "label": "cmd_channel_info()",
@@ -5556,9 +5479,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L108",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_cmd_channel_info",
       "community": 5,
-      "norm_label": "cmd_channel_info()"
+      "norm_label": "cmd_channel_info()",
+      "id": "productionstudio_workflows_youtube_agent_cmd_channel_info"
     },
     {
       "label": "prepare_upload()",
@@ -5566,9 +5489,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L121",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_prepare_upload",
       "community": 5,
-      "norm_label": "prepare_upload()"
+      "norm_label": "prepare_upload()",
+      "id": "productionstudio_workflows_youtube_agent_prepare_upload"
     },
     {
       "label": "set_thumbnail()",
@@ -5576,9 +5499,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L159",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_set_thumbnail",
       "community": 5,
-      "norm_label": "set_thumbnail()"
+      "norm_label": "set_thumbnail()",
+      "id": "productionstudio_workflows_youtube_agent_set_thumbnail"
     },
     {
       "label": "update_metadata()",
@@ -5586,9 +5509,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L165",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_update_metadata",
       "community": 5,
-      "norm_label": "update_metadata()"
+      "norm_label": "update_metadata()",
+      "id": "productionstudio_workflows_youtube_agent_update_metadata"
     },
     {
       "label": "list_uploads()",
@@ -5596,9 +5519,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L193",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_list_uploads",
       "community": 5,
-      "norm_label": "list_uploads()"
+      "norm_label": "list_uploads()",
+      "id": "productionstudio_workflows_youtube_agent_list_uploads"
     },
     {
       "label": "confirm_publish()",
@@ -5606,9 +5529,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L207",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_confirm_publish",
       "community": 5,
-      "norm_label": "confirm_publish()"
+      "norm_label": "confirm_publish()",
+      "id": "productionstudio_workflows_youtube_agent_confirm_publish"
     },
     {
       "label": "list_playlists()",
@@ -5616,9 +5539,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L234",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_list_playlists",
       "community": 5,
-      "norm_label": "list_playlists()"
+      "norm_label": "list_playlists()",
+      "id": "productionstudio_workflows_youtube_agent_list_playlists"
     },
     {
       "label": "find_playlist_by_title()",
@@ -5626,9 +5549,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L243",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_find_playlist_by_title",
       "community": 5,
-      "norm_label": "find_playlist_by_title()"
+      "norm_label": "find_playlist_by_title()",
+      "id": "productionstudio_workflows_youtube_agent_find_playlist_by_title"
     },
     {
       "label": "get_or_create_playlist()",
@@ -5636,9 +5559,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L252",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_get_or_create_playlist",
       "community": 5,
-      "norm_label": "get_or_create_playlist()"
+      "norm_label": "get_or_create_playlist()",
+      "id": "productionstudio_workflows_youtube_agent_get_or_create_playlist"
     },
     {
       "label": "add_video_to_playlist()",
@@ -5646,9 +5569,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L270",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_add_video_to_playlist",
       "community": 5,
-      "norm_label": "add_video_to_playlist()"
+      "norm_label": "add_video_to_playlist()",
+      "id": "productionstudio_workflows_youtube_agent_add_video_to_playlist"
     },
     {
       "label": "delete_playlist()",
@@ -5656,9 +5579,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L285",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_delete_playlist",
       "community": 5,
-      "norm_label": "delete_playlist()"
+      "norm_label": "delete_playlist()",
+      "id": "productionstudio_workflows_youtube_agent_delete_playlist"
     },
     {
       "label": "list_playlist_items()",
@@ -5666,9 +5589,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L292",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_list_playlist_items",
       "community": 5,
-      "norm_label": "list_playlist_items()"
+      "norm_label": "list_playlist_items()",
+      "id": "productionstudio_workflows_youtube_agent_list_playlist_items"
     },
     {
       "label": "Official YouTube Data API v3 wrapper - the single module every future publish go",
@@ -5676,9 +5599,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_rationale_1",
       "community": 5,
-      "norm_label": "official youtube data api v3 wrapper - the single module every future publish go"
+      "norm_label": "official youtube data api v3 wrapper - the single module every future publish go",
+      "id": "productionstudio_workflows_youtube_agent_rationale_1"
     },
     {
       "label": "Loads cached credentials, refreshing if expired. Raises with clear instructions",
@@ -5686,9 +5609,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L76",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_rationale_76",
       "community": 5,
-      "norm_label": "loads cached credentials, refreshing if expired. raises with clear instructions"
+      "norm_label": "loads cached credentials, refreshing if expired. raises with clear instructions",
+      "id": "productionstudio_workflows_youtube_agent_rationale_76"
     },
     {
       "label": "One-time interactive OAuth consent flow. Opens a local browser window - the",
@@ -5696,9 +5619,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L97",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_rationale_97",
       "community": 5,
-      "norm_label": "one-time interactive oauth consent flow. opens a local browser window - the"
+      "norm_label": "one-time interactive oauth consent flow. opens a local browser window - the",
+      "id": "productionstudio_workflows_youtube_agent_rationale_97"
     },
     {
       "label": "Read-only sanity check that the OAuth token actually works.",
@@ -5706,9 +5629,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L109",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_rationale_109",
       "community": 5,
-      "norm_label": "read-only sanity check that the oauth token actually works."
+      "norm_label": "read-only sanity check that the oauth token actually works.",
+      "id": "productionstudio_workflows_youtube_agent_rationale_109"
     },
     {
       "label": "Uploads the video as PRIVATE with full metadata. Returns the video_id (the",
@@ -5716,9 +5639,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L123",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_rationale_123",
       "community": 5,
-      "norm_label": "uploads the video as private with full metadata. returns the video_id (the"
+      "norm_label": "uploads the video as private with full metadata. returns the video_id (the",
+      "id": "productionstudio_workflows_youtube_agent_rationale_123"
     },
     {
       "label": "Edits title/description/tags/category on an existing video, public or not.",
@@ -5726,9 +5649,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L166",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_rationale_166",
       "community": 5,
-      "norm_label": "edits title/description/tags/category on an existing video, public or not."
+      "norm_label": "edits title/description/tags/category on an existing video, public or not.",
+      "id": "productionstudio_workflows_youtube_agent_rationale_166"
     },
     {
       "label": "Read-only: lists the channel's most recent uploads (any privacy status).",
@@ -5736,9 +5659,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L194",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_rationale_194",
       "community": 5,
-      "norm_label": "read-only: lists the channel's most recent uploads (any privacy status)."
+      "norm_label": "read-only: lists the channel's most recent uploads (any privacy status).",
+      "id": "productionstudio_workflows_youtube_agent_rationale_194"
     },
     {
       "label": "THE ONLY function in this module that makes a video visible to anyone besides th",
@@ -5746,9 +5669,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L208",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_rationale_208",
       "community": 5,
-      "norm_label": "the only function in this module that makes a video visible to anyone besides th"
+      "norm_label": "the only function in this module that makes a video visible to anyone besides th",
+      "id": "productionstudio_workflows_youtube_agent_rationale_208"
     },
     {
       "label": "Read-only: lists the channel's existing playlists.",
@@ -5756,9 +5679,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L235",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_rationale_235",
       "community": 5,
-      "norm_label": "read-only: lists the channel's existing playlists."
+      "norm_label": "read-only: lists the channel's existing playlists.",
+      "id": "productionstudio_workflows_youtube_agent_rationale_235"
     },
     {
       "label": "Idempotent: returns the existing playlist's id if one with this exact title",
@@ -5766,9 +5689,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L253",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_rationale_253",
       "community": 5,
-      "norm_label": "idempotent: returns the existing playlist's id if one with this exact title"
+      "norm_label": "idempotent: returns the existing playlist's id if one with this exact title",
+      "id": "productionstudio_workflows_youtube_agent_rationale_253"
     },
     {
       "label": "Idempotent-ish: YouTube allows the same video in a playlist only once in practic",
@@ -5776,9 +5699,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L271",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_rationale_271",
       "community": 5,
-      "norm_label": "idempotent-ish: youtube allows the same video in a playlist only once in practic"
+      "norm_label": "idempotent-ish: youtube allows the same video in a playlist only once in practic",
+      "id": "productionstudio_workflows_youtube_agent_rationale_271"
     },
     {
       "label": "Removes a playlist. Does NOT delete the videos in it - only the grouping.",
@@ -5786,9 +5709,9 @@
       "source_file": "ProductionStudio/Workflows/youtube_agent.py",
       "source_location": "L286",
       "_origin": "ast",
-      "id": "productionstudio_workflows_youtube_agent_rationale_286",
       "community": 5,
-      "norm_label": "removes a playlist. does not delete the videos in it - only the grouping."
+      "norm_label": "removes a playlist. does not delete the videos in it - only the grouping.",
+      "id": "productionstudio_workflows_youtube_agent_rationale_286"
     },
     {
       "label": "Phase 1: manual production, testing the channel hypothesis on the first 10 videos \u2014 Phase 2 (n8n, agents wired end to end, auto-publishing) only starts once explicitly requested",
@@ -5799,9 +5722,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_phase1",
-      "community": 14,
-      "norm_label": "phase 1: manual production, testing the channel hypothesis on the first 10 videos \u2014 phase 2 (n8n, agents wired end to end, auto-publishing) only starts once explicitly requested"
+      "community": 15,
+      "norm_label": "phase 1: manual production, testing the channel hypothesis on the first 10 videos \u2014 phase 2 (n8n, agents wired end to end, auto-publishing) only starts once explicitly requested",
+      "id": "claude_phase1"
     },
     {
       "label": "Real photos mandatory per case, not optional (escalated 2026-07-26) \u2014 run both mugshot_fetch_tool tracks before Image Generation fills gaps with AI; never ship a case 100% AI-generated; rationale: concrete evidence this channel isn't YouTube's targeted 2026 'AI slop' enforcement wave (mass-produced template content, three-strike policy)",
@@ -5812,9 +5735,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_real_photos_mandatory_rule",
-      "community": 14,
-      "norm_label": "real photos mandatory per case, not optional (escalated 2026-07-26) \u2014 run both mugshot_fetch_tool tracks before image generation fills gaps with ai; never ship a case 100% ai-generated; rationale: concrete evidence this channel isn't youtube's targeted 2026 'ai slop' enforcement wave (mass-produced template content, three-strike policy)"
+      "community": 15,
+      "norm_label": "real photos mandatory per case, not optional (escalated 2026-07-26) \u2014 run both mugshot_fetch_tool tracks before image generation fills gaps with ai; never ship a case 100% ai-generated; rationale: concrete evidence this channel isn't youtube's targeted 2026 'ai slop' enforcement wave (mass-produced template content, three-strike policy)",
+      "id": "claude_real_photos_mandatory_rule"
     },
     {
       "label": "Playlists are by theme/motive, never by case name (decided 2026-07-26) \u2014 replaces an earlier 'one playlist per case' attempt the channel owner rejected after checking competitor true-crime channels' organization; a video normally belongs in 2-4 themed playlists at once",
@@ -5825,9 +5748,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_playlists_by_theme_rule",
-      "community": 14,
-      "norm_label": "playlists are by theme/motive, never by case name (decided 2026-07-26) \u2014 replaces an earlier 'one playlist per case' attempt the channel owner rejected after checking competitor true-crime channels' organization; a video normally belongs in 2-4 themed playlists at once"
+      "community": 15,
+      "norm_label": "playlists are by theme/motive, never by case name (decided 2026-07-26) \u2014 replaces an earlier 'one playlist per case' attempt the channel owner rejected after checking competitor true-crime channels' organization; a video normally belongs in 2-4 themed playlists at once",
+      "id": "claude_playlists_by_theme_rule"
     },
     {
       "label": "Publishing timezone: America/Los_Angeles (Pacific), confirmed 2026-07-26 \u2014 scheduling planned in LA local time, converted to UTC for publishAt via a real timezone library, never hardcoded UTC offsets",
@@ -5838,9 +5761,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_publishing_timezone_rule",
-      "community": 14,
-      "norm_label": "publishing timezone: america/los_angeles (pacific), confirmed 2026-07-26 \u2014 scheduling planned in la local time, converted to utc for publishat via a real timezone library, never hardcoded utc offsets"
+      "community": 15,
+      "norm_label": "publishing timezone: america/los_angeles (pacific), confirmed 2026-07-26 \u2014 scheduling planned in la local time, converted to utc for publishat via a real timezone library, never hardcoded utc offsets",
+      "id": "claude_publishing_timezone_rule"
     },
     {
       "label": "Molly Watson / James Addie script \u2014 first real test case; chapters 6-16 and the ending drafted separately from this repo, status of chapters 1-5 to be confirmed with user",
@@ -5851,9 +5774,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_molly_watson_case",
-      "community": 14,
-      "norm_label": "molly watson / james addie script \u2014 first real test case; chapters 6-16 and the ending drafted separately from this repo, status of chapters 1-5 to be confirmed with user"
+      "community": 15,
+      "norm_label": "molly watson / james addie script \u2014 first real test case; chapters 6-16 and the ending drafted separately from this repo, status of chapters 1-5 to be confirmed with user",
+      "id": "claude_molly_watson_case"
     },
     {
       "label": "Every video/Short description must end with the channel name + a working link (CHANNEL_FOOTER constant) \u2014 confirmed 2026-07-26 after a real viewer commented on a published Short asking which channel it was from; retroactively applied to all 20 videos already on the channel that day; never leave a bracket placeholder like '[link to X]' in description text meant to be pasted directly into YouTube",
@@ -5864,9 +5787,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_channel_footer_rule",
       "community": 7,
-      "norm_label": "every video/short description must end with the channel name + a working link (channel_footer constant) \u2014 confirmed 2026-07-26 after a real viewer commented on a published short asking which channel it was from; retroactively applied to all 20 videos already on the channel that day; never leave a bracket placeholder like '[link to x]' in description text meant to be pasted directly into youtube"
+      "norm_label": "every video/short description must end with the channel name + a working link (channel_footer constant) \u2014 confirmed 2026-07-26 after a real viewer commented on a published short asking which channel it was from; retroactively applied to all 20 videos already on the channel that day; never leave a bracket placeholder like '[link to x]' in description text meant to be pasted directly into youtube",
+      "id": "claude_channel_footer_rule"
     },
     {
       "label": "CHANNEL_FOOTER constant in Workflows/youtube_agent.py \u2014 channel name + working @handle link, currently https://www.youtube.com/@fatalaffairs-f1i",
@@ -5877,9 +5800,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_channel_footer_constant",
       "community": 7,
-      "norm_label": "channel_footer constant in workflows/youtube_agent.py \u2014 channel name + working @handle link, currently https://www.youtube.com/@fatalaffairs-f1i"
+      "norm_label": "channel_footer constant in workflows/youtube_agent.py \u2014 channel name + working @handle link, currently https://www.youtube.com/@fatalaffairs-f1i",
+      "id": "claude_channel_footer_constant"
     },
     {
       "label": "graphify knowledge graph at graphify-out/ treated as this project's actual memory \u2014 query before grepping/reading cold; bare 'graphify update .' is AST-only and silently skips Markdown/JSON case docs, agent specs, tool specs; full /graphify --update flow required after editing any of those before ending the session",
@@ -5890,9 +5813,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_graphify_rule",
-      "community": 14,
-      "norm_label": "graphify knowledge graph at graphify-out/ treated as this project's actual memory \u2014 query before grepping/reading cold; bare 'graphify update .' is ast-only and silently skips markdown/json case docs, agent specs, tool specs; full /graphify --update flow required after editing any of those before ending the session"
+      "community": 15,
+      "norm_label": "graphify knowledge graph at graphify-out/ treated as this project's actual memory \u2014 query before grepping/reading cold; bare 'graphify update .' is ast-only and silently skips markdown/json case docs, agent specs, tool specs; full /graphify --update flow required after editing any of those before ending the session",
+      "id": "claude_graphify_rule"
     },
     {
       "label": "SEO Agent \u2014 generates the full SEO package (titles, description, chapters, pinned comment, tags, hashtags) for a finished video, informed by Templates/SuccessRules.md",
@@ -5903,9 +5826,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_agents_seo_agent",
       "community": 7,
-      "norm_label": "seo agent \u2014 generates the full seo package (titles, description, chapters, pinned comment, tags, hashtags) for a finished video, informed by templates/successrules.md"
+      "norm_label": "seo agent \u2014 generates the full seo package (titles, description, chapters, pinned comment, tags, hashtags) for a finished video, informed by templates/successrules.md",
+      "id": "productionstudio_agents_seo_agent"
     },
     {
       "label": "SEO Agent 'Channel footer required' rule (added 2026-07-26) \u2014 description must always end with the CHANNEL_FOOTER constant (channel name + working @handle link) on its own line; added after a real viewer commented on a published Short asking which channel it was from, and two already-published main videos had a 'Follow Fatal Affairs' line with a broken placeholder bracket instead of an actual link \u2014 exactly the gap that caused it",
@@ -5916,9 +5839,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_agents_seo_agent_channel_footer_requirement",
       "community": 7,
-      "norm_label": "seo agent 'channel footer required' rule (added 2026-07-26) \u2014 description must always end with the channel_footer constant (channel name + working @handle link) on its own line; added after a real viewer commented on a published short asking which channel it was from, and two already-published main videos had a 'follow fatal affairs' line with a broken placeholder bracket instead of an actual link \u2014 exactly the gap that caused it"
+      "norm_label": "seo agent 'channel footer required' rule (added 2026-07-26) \u2014 description must always end with the channel_footer constant (channel name + working @handle link) on its own line; added after a real viewer commented on a published short asking which channel it was from, and two already-published main videos had a 'follow fatal affairs' line with a broken placeholder bracket instead of an actual link \u2014 exactly the gap that caused it",
+      "id": "productionstudio_agents_seo_agent_channel_footer_requirement"
     },
     {
       "label": "SEO Agent tags/hashtags limits \u2014 tags total combined length must not exceed 500 characters (~8-15 focused tags, not padding filler); hashtags 3-5 total ordered strongest-first, never more than 15 (YouTube silently discards all hashtags past that point)",
@@ -5929,9 +5852,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_agents_seo_agent_tags_hashtags_limits",
       "community": 7,
-      "norm_label": "seo agent tags/hashtags limits \u2014 tags total combined length must not exceed 500 characters (~8-15 focused tags, not padding filler); hashtags 3-5 total ordered strongest-first, never more than 15 (youtube silently discards all hashtags past that point)"
+      "norm_label": "seo agent tags/hashtags limits \u2014 tags total combined length must not exceed 500 characters (~8-15 focused tags, not padding filler); hashtags 3-5 total ordered strongest-first, never more than 15 (youtube silently discards all hashtags past that point)",
+      "id": "productionstudio_agents_seo_agent_tags_hashtags_limits"
     },
     {
       "label": "Shorts Agent \u2014 runs immediately after Video Assembly Agent's final render; selects moments from the finished long-form video for standalone Shorts, writes each Short's own hook, and specifies caption/pacing treatment",
@@ -5942,9 +5865,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_agents_shorts_agent",
       "community": 7,
-      "norm_label": "shorts agent \u2014 runs immediately after video assembly agent's final render; selects moments from the finished long-form video for standalone shorts, writes each short's own hook, and specifies caption/pacing treatment"
+      "norm_label": "shorts agent \u2014 runs immediately after video assembly agent's final render; selects moments from the finished long-form video for standalone shorts, writes each short's own hook, and specifies caption/pacing treatment",
+      "id": "productionstudio_agents_shorts_agent"
     },
     {
       "label": "Shorts Agent description channel-footer requirement (added 2026-07-26) \u2014 each Short's description must end with the CHANNEL_FOOTER constant (channel name + working @handle link) on its own line, added after a real viewer commented on a published Short asking which channel it was from",
@@ -5955,9 +5878,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_agents_shorts_agent_channel_footer_requirement",
       "community": 7,
-      "norm_label": "shorts agent description channel-footer requirement (added 2026-07-26) \u2014 each short's description must end with the channel_footer constant (channel name + working @handle link) on its own line, added after a real viewer commented on a published short asking which channel it was from"
+      "norm_label": "shorts agent description channel-footer requirement (added 2026-07-26) \u2014 each short's description must end with the channel_footer constant (channel name + working @handle link) on its own line, added after a real viewer commented on a published short asking which channel it was from",
+      "id": "productionstudio_agents_shorts_agent_channel_footer_requirement"
     },
     {
       "label": "Shorts visual style (research-grounded, added 2026-07-21) \u2014 cold-open dramatic close-up face image with hook_overlay_text burned in (brand white/#A30E15, black stroke), captions center-frame (not lower-third like main video), CTA in final 3-5 seconds as bold on-screen text, hard 45-second cap per Short, ends on a genuine open question not a manufactured one",
@@ -5968,9 +5891,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_agents_shorts_agent_visual_style",
       "community": 7,
-      "norm_label": "shorts visual style (research-grounded, added 2026-07-21) \u2014 cold-open dramatic close-up face image with hook_overlay_text burned in (brand white/#a30e15, black stroke), captions center-frame (not lower-third like main video), cta in final 3-5 seconds as bold on-screen text, hard 45-second cap per short, ends on a genuine open question not a manufactured one"
+      "norm_label": "shorts visual style (research-grounded, added 2026-07-21) \u2014 cold-open dramatic close-up face image with hook_overlay_text burned in (brand white/#a30e15, black stroke), captions center-frame (not lower-third like main video), cta in final 3-5 seconds as bold on-screen text, hard 45-second cap per short, ends on a genuine open question not a manufactured one",
+      "id": "productionstudio_agents_shorts_agent_visual_style"
     },
     {
       "label": "Trend Log \u2014 persistent, cross-case memory of real trend research across the true-crime genre (YouTube, Reddit, X, competitor channels), distinct from Templates/SuccessRules.md; started 2026-07-26 after the channel owner asked for ongoing trend-tracking",
@@ -5981,9 +5904,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_documentation_trend_log",
-      "community": 14,
-      "norm_label": "trend log \u2014 persistent, cross-case memory of real trend research across the true-crime genre (youtube, reddit, x, competitor channels), distinct from templates/successrules.md; started 2026-07-26 after the channel owner asked for ongoing trend-tracking"
+      "community": 15,
+      "norm_label": "trend log \u2014 persistent, cross-case memory of real trend research across the true-crime genre (youtube, reddit, x, competitor channels), distinct from templates/successrules.md; started 2026-07-26 after the channel owner asked for ongoing trend-tracking",
+      "id": "productionstudio_documentation_trend_log"
     },
     {
       "label": "2026-07-26 finding: YouTube's January 2026 enforcement wave specifically targets 'AI slop' (mass-produced template AI content) under a three-strike system, plus a new 'altered or synthetic' content disclosure requirement at upload \u2014 direct platform-survival risk that is the concrete reason real photos became mandatory, rather than just a stylistic preference; synthetic-content disclosure check added to quality_control_agent.md's pre-publish checklist",
@@ -5994,9 +5917,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_documentation_trend_log_ai_slop_finding",
-      "community": 14,
-      "norm_label": "2026-07-26 finding: youtube's january 2026 enforcement wave specifically targets 'ai slop' (mass-produced template ai content) under a three-strike system, plus a new 'altered or synthetic' content disclosure requirement at upload \u2014 direct platform-survival risk that is the concrete reason real photos became mandatory, rather than just a stylistic preference; synthetic-content disclosure check added to quality_control_agent.md's pre-publish checklist"
+      "community": 15,
+      "norm_label": "2026-07-26 finding: youtube's january 2026 enforcement wave specifically targets 'ai slop' (mass-produced template ai content) under a three-strike system, plus a new 'altered or synthetic' content disclosure requirement at upload \u2014 direct platform-survival risk that is the concrete reason real photos became mandatory, rather than just a stylistic preference; synthetic-content disclosure check added to quality_control_agent.md's pre-publish checklist",
+      "id": "productionstudio_documentation_trend_log_ai_slop_finding"
     },
     {
       "label": "2026-07-26 finding: true crime is one of YouTube's three highest-RPM niches in 2026 ($4-$12/1000 views); single-case chronological 15-25 min faceless documentary-style content is the winning backbone format \u2014 validates this channel's existing ~11-15 min faceless/AI-visual documentary format, no change needed",
@@ -6007,9 +5930,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_documentation_trend_log_format_validation_finding",
-      "community": 14,
-      "norm_label": "2026-07-26 finding: true crime is one of youtube's three highest-rpm niches in 2026 ($4-$12/1000 views); single-case chronological 15-25 min faceless documentary-style content is the winning backbone format \u2014 validates this channel's existing ~11-15 min faceless/ai-visual documentary format, no change needed"
+      "community": 15,
+      "norm_label": "2026-07-26 finding: true crime is one of youtube's three highest-rpm niches in 2026 ($4-$12/1000 views); single-case chronological 15-25 min faceless documentary-style content is the winning backbone format \u2014 validates this channel's existing ~11-15 min faceless/ai-visual documentary format, no change needed",
+      "id": "productionstudio_documentation_trend_log_format_validation_finding"
     },
     {
       "label": "2026-07-26 finding: English-speaking true-crime audiences are saturated on US cases; international/lesser-known cases (Brazil, Japan, Eastern Europe, etc.) are the fastest-growing corner of the niche as of 2026 \u2014 all 4 cases produced so far (Molly Watson, Banfield, Kouri Richins, Monica Sementilli) are US cases; action: Research Agent should surface at least one non-US candidate in its next discovery run",
@@ -6020,9 +5943,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_documentation_trend_log_international_cases_finding",
-      "community": 14,
-      "norm_label": "2026-07-26 finding: english-speaking true-crime audiences are saturated on us cases; international/lesser-known cases (brazil, japan, eastern europe, etc.) are the fastest-growing corner of the niche as of 2026 \u2014 all 4 cases produced so far (molly watson, banfield, kouri richins, monica sementilli) are us cases; action: research agent should surface at least one non-us candidate in its next discovery run"
+      "community": 15,
+      "norm_label": "2026-07-26 finding: english-speaking true-crime audiences are saturated on us cases; international/lesser-known cases (brazil, japan, eastern europe, etc.) are the fastest-growing corner of the niche as of 2026 \u2014 all 4 cases produced so far (molly watson, banfield, kouri richins, monica sementilli) are us cases; action: research agent should surface at least one non-us candidate in its next discovery run",
+      "id": "productionstudio_documentation_trend_log_international_cases_finding"
     },
     {
       "label": "2026-07-26 finding: the revenue/subscriber-growth gap between high-CTR and low-CTR true-crime channels is measurable and driven specifically by thumbnail design quality \u2014 reinforces treating thumbnail_agent.md's output as a real growth lever, worth periodically A/B-checking against comparable channels",
@@ -6033,9 +5956,899 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_documentation_trend_log_thumbnail_ctr_finding",
-      "community": 14,
-      "norm_label": "2026-07-26 finding: the revenue/subscriber-growth gap between high-ctr and low-ctr true-crime channels is measurable and driven specifically by thumbnail design quality \u2014 reinforces treating thumbnail_agent.md's output as a real growth lever, worth periodically a/b-checking against comparable channels"
+      "community": 15,
+      "norm_label": "2026-07-26 finding: the revenue/subscriber-growth gap between high-ctr and low-ctr true-crime channels is measurable and driven specifically by thumbnail design quality \u2014 reinforces treating thumbnail_agent.md's output as a real growth lever, worth periodically a/b-checking against comparable channels",
+      "id": "productionstudio_documentation_trend_log_thumbnail_ctr_finding"
+    },
+    {
+      "label": "generate_case_assets.py",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_generate_case_assets",
+      "community": 12,
+      "norm_label": "generate_case_assets.py"
+    },
+    {
+      "label": "repo_root()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_generate_case_assets_repo_root",
+      "community": 12,
+      "norm_label": "repo_root()"
+    },
+    {
+      "label": "post_json()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_generate_case_assets_post_json",
+      "community": 12,
+      "norm_label": "post_json()"
+    },
+    {
+      "label": "get_bytes()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_generate_case_assets_get_bytes",
+      "community": 12,
+      "norm_label": "get_bytes()"
+    },
+    {
+      "label": "parse_voiceover()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_generate_case_assets_parse_voiceover",
+      "community": 12,
+      "norm_label": "parse_voiceover()"
+    },
+    {
+      "label": "word_spans()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_generate_case_assets_word_spans",
+      "community": 12,
+      "norm_label": "word_spans()"
+    },
+    {
+      "label": "cmd_audio()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L126",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_generate_case_assets_cmd_audio",
+      "community": 12,
+      "norm_label": "cmd_audio()"
+    },
+    {
+      "label": "cmd_images()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L199",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_generate_case_assets_cmd_images",
+      "community": 12,
+      "norm_label": "cmd_images()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L248",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_generate_case_assets_main",
+      "community": 12,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Local, no-n8n, no-Anthropic-key asset generator for a case.  Phase 1 default (",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_generate_case_assets_rationale_1",
+      "community": 12,
+      "norm_label": "local, no-n8n, no-anthropic-key asset generator for a case.  phase 1 default ("
+    },
+    {
+      "label": "Group per-character alignment into (start, end, word) spans on whitespace.",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_generate_case_assets_rationale_108",
+      "community": 12,
+      "norm_label": "group per-character alignment into (start, end, word) spans on whitespace."
+    },
+    {
+      "label": "Rimoni Muliaga",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_rimoni_muliaga",
+      "community": 17,
+      "norm_label": "rimoni muliaga"
+    },
+    {
+      "label": "Lise Muliaga (victim)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_lise_muliaga",
+      "community": 17,
+      "norm_label": "lise muliaga (victim)"
+    },
+    {
+      "label": "Leuma Muliaga (brother, wrongly suspected)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_leuma_muliaga",
+      "community": 17,
+      "norm_label": "leuma muliaga (brother, wrongly suspected)"
+    },
+    {
+      "label": "Marama Randall (sister-in-law, witness)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_marama_randall",
+      "community": 17,
+      "norm_label": "marama randall (sister-in-law, witness)"
+    },
+    {
+      "label": "Patrick Bourke KC (prosecutor)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_patrick_bourke",
+      "community": 17,
+      "norm_label": "patrick bourke kc (prosecutor)"
+    },
+    {
+      "label": "Michael McGrath (defense barrister)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_michael_mcgrath",
+      "community": 17,
+      "norm_label": "michael mcgrath (defense barrister)"
+    },
+    {
+      "label": "Justice James Gorton (sentencing judge)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_james_gorton",
+      "community": 17,
+      "norm_label": "justice james gorton (sentencing judge)"
+    },
+    {
+      "label": "DPP v MULIAGA [2026] VSC 145 (case citation)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md",
+      "source_location": null,
+      "source_url": "https://www.supremecourt.vic.gov.au/areas/case-summaries/recent-sentences",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_dpp_v_muliaga",
+      "community": 23,
+      "norm_label": "dpp v muliaga [2026] vsc 145 (case citation)"
+    },
+    {
+      "label": "FactCheck.md (Rimoni Muliaga case)",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_document",
+      "community": 17,
+      "norm_label": "factcheck.md (rimoni muliaga case)"
+    },
+    {
+      "label": "Ambiguous sequencing of prior warning-sign incidents (single-source, undated)",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_flagged_warning_sign_sequencing",
+      "community": 20,
+      "norm_label": "ambiguous sequencing of prior warning-sign incidents (single-source, undated)"
+    },
+    {
+      "label": "Sources.md (Rimoni Muliaga case)",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Sources.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_sources_document",
+      "community": 23,
+      "norm_label": "sources.md (rimoni muliaga case)"
+    },
+    {
+      "label": "The Nightly (Australia)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Sources.md",
+      "source_location": null,
+      "source_url": "https://thenightly.com.au/australia/victoria/rimoni-muliaga-husband-found-guilty-of-murder-over-wifes-stabbing-c-20854671",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_sources_the_nightly",
+      "community": 23,
+      "norm_label": "the nightly (australia)"
+    },
+    {
+      "label": "Supreme Court of Victoria (official court record)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Sources.md",
+      "source_location": null,
+      "source_url": "https://www.supremecourt.vic.gov.au/areas/case-summaries/recent-sentences",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_sources_supreme_court_of_victoria",
+      "community": 23,
+      "norm_label": "supreme court of victoria (official court record)"
+    },
+    {
+      "label": "Yahoo News Australia",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Sources.md",
+      "source_location": null,
+      "source_url": "https://au.news.yahoo.com/woman-murdered-amid-false-affair-052407513.html",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_sources_yahoo_news_australia",
+      "community": 23,
+      "norm_label": "yahoo news australia"
+    },
+    {
+      "label": "Samoa Global News",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Sources.md",
+      "source_location": null,
+      "source_url": "https://samoaglobalnews.com/jealous-rage-samoan-father-of-5-jailed-24-years-for-wifes-brutal-stabbing/",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_sources_samoa_global_news",
+      "community": 23,
+      "norm_label": "samoa global news"
+    },
+    {
+      "label": "Samoa Observer",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Sources.md",
+      "source_location": null,
+      "source_url": "https://www.samoaobserver.ws/category/samoa/119167",
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_sources_samoa_observer",
+      "community": 23,
+      "norm_label": "samoa observer"
+    },
+    {
+      "label": "Documentation/TREND_LOG.md",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Sources.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_sources_trend_log",
+      "community": 23,
+      "norm_label": "documentation/trend_log.md"
+    },
+    {
+      "label": "PersonPhotos.md (Rimoni Muliaga case)",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_document",
+      "community": 13,
+      "norm_label": "personphotos.md (rimoni muliaga case)"
+    },
+    {
+      "label": "Muliaga court-escort photo (redacted)",
+      "file_type": "image",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "source_url": "https://www.canberratimes.com.au/story/9185555/killers-kids-vow-to-forgive-not-forget-mothers-death/",
+      "captured_at": "2026-07-28",
+      "author": "Joel Carrett/AAP PHOTOS",
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_court_escort_photo",
+      "community": 13,
+      "norm_label": "muliaga court-escort photo (redacted)"
+    },
+    {
+      "label": "Muliaga prison-van transfer photo (redacted)",
+      "file_type": "image",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "source_url": "https://www.canberratimes.com.au/story/9185555/killers-kids-vow-to-forgive-not-forget-mothers-death/",
+      "captured_at": "2026-07-28",
+      "author": "Jay Kogler/AAP PHOTOS",
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_prison_van_photo",
+      "community": 13,
+      "norm_label": "muliaga prison-van transfer photo (redacted)"
+    },
+    {
+      "label": "Supreme Court of Victoria entrance plaque photo",
+      "file_type": "image",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "source_url": "https://www.canberratimes.com.au/story/9185555/killers-kids-vow-to-forgive-not-forget-mothers-death/",
+      "captured_at": "2026-07-28",
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_supreme_court_sign_photo",
+      "community": 13,
+      "norm_label": "supreme court of victoria entrance plaque photo"
+    },
+    {
+      "label": "Joel Carrett (AAP photographer)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_joel_carrett",
+      "community": 13,
+      "norm_label": "joel carrett (aap photographer)"
+    },
+    {
+      "label": "Jay Kogler (AAP photographer)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_jay_kogler",
+      "community": 13,
+      "norm_label": "jay kogler (aap photographer)"
+    },
+    {
+      "label": "Canberra Times",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_canberra_times",
+      "community": 13,
+      "norm_label": "canberra times"
+    },
+    {
+      "label": "AAP PHOTOS (Australian Associated Press, wire service)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_aap_photos",
+      "community": 13,
+      "norm_label": "aap photos (australian associated press, wire service)"
+    },
+    {
+      "label": "Tools/mugshot_fetch_tool.md",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_mugshot_fetch_tool",
+      "community": 13,
+      "norm_label": "tools/mugshot_fetch_tool.md"
+    },
+    {
+      "label": "Automated OpenCV Haar-cascade redaction reliability limitation (off-angle/tilted faces)",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_automated_redaction_reliability_note",
+      "community": 13,
+      "norm_label": "automated opencv haar-cascade redaction reliability limitation (off-angle/tilted faces)"
+    },
+    {
+      "label": "Manual pixel-coordinate redaction fallback (debug grid overlay)",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_manual_pixel_redaction",
+      "community": 13,
+      "norm_label": "manual pixel-coordinate redaction fallback (debug grid overlay)"
+    },
+    {
+      "label": "Browser-fetch client-side workaround for sandbox curl allowlist block",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_access_method_note",
+      "community": 13,
+      "norm_label": "browser-fetch client-side workaround for sandbox curl allowlist block"
+    },
+    {
+      "label": "Porco v. Lifetime (documentary-use legal precedent)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_porco_v_lifetime",
+      "community": 13,
+      "norm_label": "porco v. lifetime (documentary-use legal precedent)"
+    },
+    {
+      "label": "Cases/monica-sementilli-hairdresser-murder/PersonPhotos.md",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_sementilli_personphotos_precedent",
+      "community": 13,
+      "norm_label": "cases/monica-sementilli-hairdresser-murder/personphotos.md"
+    },
+    {
+      "label": "ImagePrompts.md (Rimoni Muliaga case)",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/ImagePrompts.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_imageprompts_document",
+      "community": 13,
+      "norm_label": "imageprompts.md (rimoni muliaga case)"
+    },
+    {
+      "label": "Checklist.md (Rimoni Muliaga case QC)",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Checklist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_document",
+      "community": 20,
+      "norm_label": "checklist.md (rimoni muliaga case qc)"
+    },
+    {
+      "label": "Real-facts-only script expansion rule (script length reflects thin source material, not under-effort)",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Checklist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_script_length_rationale",
+      "community": 20,
+      "norm_label": "real-facts-only script expansion rule (script length reflects thin source material, not under-effort)"
+    },
+    {
+      "label": "Kouri Richins case (word-count comparison, 2435 words)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Checklist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_kouri_richins_case",
+      "community": 20,
+      "norm_label": "kouri richins case (word-count comparison, 2435 words)"
+    },
+    {
+      "label": "Monica Sementilli case (word-count comparison, 1831 words; pacing/style precedent)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Checklist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_monica_sementilli_case",
+      "community": 20,
+      "norm_label": "monica sementilli case (word-count comparison, 1831 words; pacing/style precedent)"
+    },
+    {
+      "label": "generate_case_assets.py cmd_images() (extended to copy real-photo assets instead of generating over REAL PHOTO placeholders)",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Checklist.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_generate_case_assets_cmd_images",
+      "community": 20,
+      "norm_label": "generate_case_assets.py cmd_images() (extended to copy real-photo assets instead of generating over real photo placeholders)"
+    },
+    {
+      "label": "PublishPlan.md (Rimoni Muliaga case)",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PublishPlan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_publishplan_document",
+      "community": 20,
+      "norm_label": "publishplan.md (rimoni muliaga case)"
+    },
+    {
+      "label": "Agents/publishing_agent.md",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PublishPlan.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_publishplan_publishing_agent",
+      "community": 20,
+      "norm_label": "agents/publishing_agent.md"
+    },
+    {
+      "label": "SEO.md (Rimoni Muliaga case)",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/SEO.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_document",
+      "community": 25,
+      "norm_label": "seo.md (rimoni muliaga case)"
+    },
+    {
+      "label": "Love Triangle Murders (themed playlist)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/SEO.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_love_triangle_murders_playlist",
+      "community": 25,
+      "norm_label": "love triangle murders (themed playlist)"
+    },
+    {
+      "label": "Wife Killed Husband (themed playlist)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/SEO.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_wife_killed_husband_playlist",
+      "community": 25,
+      "norm_label": "wife killed husband (themed playlist)"
+    },
+    {
+      "label": "Murder For Insurance Money (themed playlist)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/SEO.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_murder_for_insurance_money_playlist",
+      "community": 25,
+      "norm_label": "murder for insurance money (themed playlist)"
+    },
+    {
+      "label": "Framed The Wrong Person (themed playlist)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/SEO.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_framed_the_wrong_person_playlist",
+      "community": 25,
+      "norm_label": "framed the wrong person (themed playlist)"
+    },
+    {
+      "label": "Playlist taxonomy gap: no existing theme fits an imagined-affair husband-kills-wife case",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/SEO.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_playlist_gap_rationale",
+      "community": 20,
+      "norm_label": "playlist taxonomy gap: no existing theme fits an imagined-affair husband-kills-wife case"
+    },
+    {
+      "label": "CHANNEL_FOOTER (mandatory channel name + link at end of every description)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/SEO.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_channel_footer",
+      "community": 25,
+      "norm_label": "channel_footer (mandatory channel name + link at end of every description)"
+    },
+    {
+      "label": "Assets/audio/rimoni-muliaga-jealousy-murder/timing.json",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/SEO.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_timing_json",
+      "community": 25,
+      "norm_label": "assets/audio/rimoni-muliaga-jealousy-murder/timing.json"
+    },
+    {
+      "label": "Script.md (Rimoni Muliaga case, 45 scenes / 1212 words)",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Script.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_script_document",
+      "community": 17,
+      "norm_label": "script.md (rimoni muliaga case, 45 scenes / 1212 words)"
+    },
+    {
+      "label": "Voiceover.txt (Rimoni Muliaga case, chaptered narration)",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Voiceover.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_voiceover_document",
+      "community": 17,
+      "norm_label": "voiceover.txt (rimoni muliaga case, chaptered narration)"
+    },
+    {
+      "label": "Shorts.md (Rimoni Muliaga case, 4 shorts)",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Shorts.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_shorts_document",
+      "community": 18,
+      "norm_label": "shorts.md (rimoni muliaga case, 4 shorts)"
+    },
+    {
+      "label": "Short 1 - There Was No Affair",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Shorts.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_shorts_short_1",
+      "community": 18,
+      "norm_label": "short 1 - there was no affair"
+    },
+    {
+      "label": "Short 2 - Three Kids Watched",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Shorts.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_shorts_short_2",
+      "community": 18,
+      "norm_label": "short 2 - three kids watched"
+    },
+    {
+      "label": "Short 3 - He Accused His Own Brother",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Shorts.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_shorts_short_3",
+      "community": 18,
+      "norm_label": "short 3 - he accused his own brother"
+    },
+    {
+      "label": "Short 4 - 24 Years For A Delusion",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Shorts.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_shorts_short_4",
+      "community": 13,
+      "norm_label": "short 4 - 24 years for a delusion"
+    },
+    {
+      "label": "Agents/shorts_agent.md",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Shorts.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_shorts_shorts_agent",
+      "community": 18,
+      "norm_label": "agents/shorts_agent.md"
+    },
+    {
+      "label": "Thumbnail.md (Rimoni Muliaga case)",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Thumbnail.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_thumbnail_document",
+      "community": 18,
+      "norm_label": "thumbnail.md (rimoni muliaga case)"
+    },
+    {
+      "label": "thumbnail_with_text.png / thumbnail.png (real-photo-based output)",
+      "file_type": "image",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Thumbnail.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_thumbnail_asset",
+      "community": 18,
+      "norm_label": "thumbnail_with_text.png / thumbnail.png (real-photo-based output)"
+    },
+    {
+      "label": "'SHE NEVER CHEATED' headline choice",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Thumbnail.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_thumbnail_she_never_cheated_headline",
+      "community": 18,
+      "norm_label": "'she never cheated' headline choice"
+    },
+    {
+      "label": "Kouri Richins thumbnail headline 'SHE WROTE THIS'",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Thumbnail.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_thumbnail_kouri_richins_headline",
+      "community": 18,
+      "norm_label": "kouri richins thumbnail headline 'she wrote this'"
+    },
+    {
+      "label": "Monica Sementilli thumbnail headline 'SHE WATCHED IT HAPPEN'",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Thumbnail.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_cases_rimoni_muliaga_jealousy_murder_thumbnail_sementilli_headline",
+      "community": 18,
+      "norm_label": "monica sementilli thumbnail headline 'she watched it happen'"
     }
   ],
   "links": [
@@ -7277,115 +8090,6 @@
       "target": "productionstudio_workflows_build_master_workflow_txt"
     },
     {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Tests/stage4_full_pipeline_n8n_test.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_tests_stage4_full_pipeline_n8n_test",
-      "target": "productionstudio_workflows_generate_case_assets"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L126",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_generate_case_assets",
-      "target": "productionstudio_workflows_generate_case_assets_cmd_audio"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L199",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_generate_case_assets",
-      "target": "productionstudio_workflows_generate_case_assets_cmd_images"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L56",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_generate_case_assets",
-      "target": "productionstudio_workflows_generate_case_assets_get_bytes"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L232",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_generate_case_assets",
-      "target": "productionstudio_workflows_generate_case_assets_main"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L62",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_generate_case_assets",
-      "target": "productionstudio_workflows_generate_case_assets_parse_voiceover"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L45",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_generate_case_assets",
-      "target": "productionstudio_workflows_generate_case_assets_post_json"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L40",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_generate_case_assets",
-      "target": "productionstudio_workflows_generate_case_assets_repo_root"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L107",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_generate_case_assets",
-      "target": "productionstudio_workflows_generate_case_assets_word_spans"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_generate_case_assets_rationale_1",
-      "target": "productionstudio_workflows_generate_case_assets"
-    },
-    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -7398,52 +8102,6 @@
       "target": "productionstudio_workflows_generate_case_assets"
     },
     {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Workflows/PIPELINE_OVERVIEW.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_workflows_pipeline_overview",
-      "target": "productionstudio_workflows_generate_case_assets"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L242",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_generate_case_assets_main",
-      "target": "productionstudio_workflows_generate_case_assets_repo_root"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L142",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_generate_case_assets_cmd_audio",
-      "target": "productionstudio_workflows_generate_case_assets_post_json"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L219",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_generate_case_assets_cmd_images",
-      "target": "productionstudio_workflows_generate_case_assets_post_json"
-    },
-    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -7456,65 +8114,6 @@
       "target": "productionstudio_workflows_generate_case_assets_post_json"
     },
     {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/generate_shorts_audio.py",
-      "source_location": "L76",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_generate_shorts_audio_main",
-      "target": "productionstudio_workflows_generate_case_assets_post_json"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L224",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_generate_case_assets_cmd_images",
-      "target": "productionstudio_workflows_generate_case_assets_get_bytes"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L130",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_generate_case_assets_cmd_audio",
-      "target": "productionstudio_workflows_generate_case_assets_parse_voiceover"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L174",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_generate_case_assets_cmd_audio",
-      "target": "productionstudio_workflows_generate_case_assets_word_spans"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L108",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_generate_case_assets_rationale_108",
-      "target": "productionstudio_workflows_generate_case_assets_word_spans"
-    },
-    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -7525,42 +8124,6 @@
       "confidence_score": 1.0,
       "source": "productionstudio_workflows_generate_shorts_audio",
       "target": "productionstudio_workflows_generate_case_assets_word_spans"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/generate_shorts_audio.py",
-      "source_location": "L106",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_generate_shorts_audio_main",
-      "target": "productionstudio_workflows_generate_case_assets_word_spans"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L247",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_generate_case_assets_main",
-      "target": "productionstudio_workflows_generate_case_assets_cmd_audio"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
-      "source_location": "L249",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_generate_case_assets_main",
-      "target": "productionstudio_workflows_generate_case_assets_cmd_images"
     },
     {
       "relation": "contains",
@@ -7640,6 +8203,30 @@
       "confidence_score": 1.0,
       "source": "productionstudio_workflows_generate_shorts_audio_main",
       "target": "productionstudio_workflows_generate_shorts_audio_extract_marked_text"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/generate_shorts_audio.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "productionstudio_workflows_generate_shorts_audio_main",
+      "target": "productionstudio_workflows_generate_case_assets_post_json"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/generate_shorts_audio.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast",
+      "confidence_score": 1.0,
+      "source": "productionstudio_workflows_generate_shorts_audio_main",
+      "target": "productionstudio_workflows_generate_case_assets_word_spans"
     },
     {
       "relation": "rationale_for",
@@ -11059,6 +11646,16 @@
       "target": "productionstudio_tools_remotion_assembly_tool_caption_alignment_fix"
     },
     {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tests/stage4_full_pipeline_n8n_test.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tests_stage4_full_pipeline_n8n_test",
+      "target": "productionstudio_workflows_generate_case_assets"
+    },
+    {
       "relation": "conceptually_related_to",
       "confidence": "INFERRED",
       "confidence_score": 0.75,
@@ -11117,6 +11714,16 @@
       "weight": 1.0,
       "source": "productionstudio_workflows_pipeline_overview",
       "target": "productionstudio_tests_stage4_full_pipeline_n8n_test_orchestration_decision"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Workflows/PIPELINE_OVERVIEW.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_workflows_pipeline_overview",
+      "target": "productionstudio_workflows_generate_case_assets"
     },
     {
       "relation": "references",
@@ -13016,9 +13623,9 @@
       "source_location": "L270",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_add_video_to_playlist",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_add_video_to_playlist"
     },
     {
       "relation": "contains",
@@ -13027,9 +13634,9 @@
       "source_location": "L96",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_cmd_auth",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_cmd_auth"
     },
     {
       "relation": "contains",
@@ -13038,9 +13645,9 @@
       "source_location": "L108",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_cmd_channel_info",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_cmd_channel_info"
     },
     {
       "relation": "contains",
@@ -13049,9 +13656,9 @@
       "source_location": "L207",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_confirm_publish",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_confirm_publish"
     },
     {
       "relation": "contains",
@@ -13060,9 +13667,9 @@
       "source_location": "L285",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_delete_playlist",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_delete_playlist"
     },
     {
       "relation": "contains",
@@ -13071,9 +13678,9 @@
       "source_location": "L65",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_find_client_secret_file",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_find_client_secret_file"
     },
     {
       "relation": "contains",
@@ -13082,9 +13689,9 @@
       "source_location": "L243",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_find_playlist_by_title",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_find_playlist_by_title"
     },
     {
       "relation": "contains",
@@ -13093,9 +13700,9 @@
       "source_location": "L75",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
     },
     {
       "relation": "contains",
@@ -13104,9 +13711,9 @@
       "source_location": "L252",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_get_or_create_playlist",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_get_or_create_playlist"
     },
     {
       "relation": "contains",
@@ -13115,9 +13722,9 @@
       "source_location": "L292",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_list_playlist_items",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_list_playlist_items"
     },
     {
       "relation": "contains",
@@ -13126,9 +13733,9 @@
       "source_location": "L234",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_list_playlists",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_list_playlists"
     },
     {
       "relation": "contains",
@@ -13137,9 +13744,9 @@
       "source_location": "L193",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_list_uploads",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_list_uploads"
     },
     {
       "relation": "contains",
@@ -13148,9 +13755,9 @@
       "source_location": "L121",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_prepare_upload",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_prepare_upload"
     },
     {
       "relation": "contains",
@@ -13159,9 +13766,9 @@
       "source_location": "L159",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_set_thumbnail",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_set_thumbnail"
     },
     {
       "relation": "contains",
@@ -13170,9 +13777,9 @@
       "source_location": "L165",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_update_metadata",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_update_metadata"
     },
     {
       "relation": "rationale_for",
@@ -13181,9 +13788,9 @@
       "source_location": "L1",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_rationale_1",
-      "target": "productionstudio_workflows_youtube_agent",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent"
     },
     {
       "relation": "calls",
@@ -13193,9 +13800,9 @@
       "source_location": "L100",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_cmd_auth",
-      "target": "productionstudio_workflows_youtube_agent_find_client_secret_file",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_find_client_secret_file"
     },
     {
       "relation": "calls",
@@ -13205,9 +13812,9 @@
       "source_location": "L274",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_add_video_to_playlist",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
     },
     {
       "relation": "calls",
@@ -13217,9 +13824,9 @@
       "source_location": "L110",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_cmd_channel_info",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
     },
     {
       "relation": "calls",
@@ -13229,9 +13836,9 @@
       "source_location": "L222",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_confirm_publish",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
     },
     {
       "relation": "calls",
@@ -13241,9 +13848,9 @@
       "source_location": "L287",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_delete_playlist",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
     },
     {
       "relation": "calls",
@@ -13253,9 +13860,9 @@
       "source_location": "L244",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_find_playlist_by_title",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
     },
     {
       "relation": "calls",
@@ -13265,9 +13872,9 @@
       "source_location": "L260",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_get_or_create_playlist",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
     },
     {
       "relation": "calls",
@@ -13277,9 +13884,9 @@
       "source_location": "L293",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_list_playlist_items",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
     },
     {
       "relation": "calls",
@@ -13289,9 +13896,9 @@
       "source_location": "L236",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_list_playlists",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
     },
     {
       "relation": "calls",
@@ -13301,9 +13908,9 @@
       "source_location": "L195",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_list_uploads",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
     },
     {
       "relation": "calls",
@@ -13313,9 +13920,9 @@
       "source_location": "L127",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_prepare_upload",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
     },
     {
       "relation": "rationale_for",
@@ -13324,9 +13931,9 @@
       "source_location": "L76",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_rationale_76",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
     },
     {
       "relation": "calls",
@@ -13336,9 +13943,9 @@
       "source_location": "L160",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_set_thumbnail",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
     },
     {
       "relation": "calls",
@@ -13348,9 +13955,9 @@
       "source_location": "L173",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_update_metadata",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
     },
     {
       "relation": "rationale_for",
@@ -13359,9 +13966,9 @@
       "source_location": "L97",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_rationale_97",
-      "target": "productionstudio_workflows_youtube_agent_cmd_auth",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_cmd_auth"
     },
     {
       "relation": "rationale_for",
@@ -13370,9 +13977,9 @@
       "source_location": "L109",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_rationale_109",
-      "target": "productionstudio_workflows_youtube_agent_cmd_channel_info",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_cmd_channel_info"
     },
     {
       "relation": "calls",
@@ -13382,9 +13989,9 @@
       "source_location": "L154",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_prepare_upload",
-      "target": "productionstudio_workflows_youtube_agent_set_thumbnail",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_set_thumbnail"
     },
     {
       "relation": "rationale_for",
@@ -13393,9 +14000,9 @@
       "source_location": "L123",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_rationale_123",
-      "target": "productionstudio_workflows_youtube_agent_prepare_upload",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_prepare_upload"
     },
     {
       "relation": "rationale_for",
@@ -13404,9 +14011,9 @@
       "source_location": "L166",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_rationale_166",
-      "target": "productionstudio_workflows_youtube_agent_update_metadata",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_update_metadata"
     },
     {
       "relation": "rationale_for",
@@ -13415,9 +14022,9 @@
       "source_location": "L194",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_rationale_194",
-      "target": "productionstudio_workflows_youtube_agent_list_uploads",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_list_uploads"
     },
     {
       "relation": "rationale_for",
@@ -13426,9 +14033,9 @@
       "source_location": "L208",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_rationale_208",
-      "target": "productionstudio_workflows_youtube_agent_confirm_publish",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_confirm_publish"
     },
     {
       "relation": "rationale_for",
@@ -13437,9 +14044,9 @@
       "source_location": "L235",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_rationale_235",
-      "target": "productionstudio_workflows_youtube_agent_list_playlists",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_list_playlists"
     },
     {
       "relation": "calls",
@@ -13449,9 +14056,9 @@
       "source_location": "L256",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_get_or_create_playlist",
-      "target": "productionstudio_workflows_youtube_agent_find_playlist_by_title",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_find_playlist_by_title"
     },
     {
       "relation": "rationale_for",
@@ -13460,9 +14067,9 @@
       "source_location": "L253",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_rationale_253",
-      "target": "productionstudio_workflows_youtube_agent_get_or_create_playlist",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_get_or_create_playlist"
     },
     {
       "relation": "rationale_for",
@@ -13471,9 +14078,9 @@
       "source_location": "L271",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_rationale_271",
-      "target": "productionstudio_workflows_youtube_agent_add_video_to_playlist",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_add_video_to_playlist"
     },
     {
       "relation": "rationale_for",
@@ -13482,9 +14089,9 @@
       "source_location": "L286",
       "weight": 1.0,
       "_origin": "ast",
+      "confidence_score": 1.0,
       "source": "productionstudio_workflows_youtube_agent_rationale_286",
-      "target": "productionstudio_workflows_youtube_agent_delete_playlist",
-      "confidence_score": 1.0
+      "target": "productionstudio_workflows_youtube_agent_delete_playlist"
     },
     {
       "relation": "conceptually_related_to",
@@ -13715,9 +14322,1131 @@
       "weight": 1.0,
       "source": "productionstudio_documentation_trend_log_thumbnail_ctr_finding",
       "target": "productionstudio_documentation_trend_log"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L126",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_generate_case_assets",
+      "target": "productionstudio_workflows_generate_case_assets_cmd_audio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L199",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_generate_case_assets",
+      "target": "productionstudio_workflows_generate_case_assets_cmd_images",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_generate_case_assets",
+      "target": "productionstudio_workflows_generate_case_assets_get_bytes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L248",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_generate_case_assets",
+      "target": "productionstudio_workflows_generate_case_assets_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_generate_case_assets",
+      "target": "productionstudio_workflows_generate_case_assets_parse_voiceover",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_generate_case_assets",
+      "target": "productionstudio_workflows_generate_case_assets_post_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_generate_case_assets",
+      "target": "productionstudio_workflows_generate_case_assets_repo_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_generate_case_assets",
+      "target": "productionstudio_workflows_generate_case_assets_word_spans",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_generate_case_assets_rationale_1",
+      "target": "productionstudio_workflows_generate_case_assets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L225",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_generate_case_assets_cmd_images",
+      "target": "productionstudio_workflows_generate_case_assets_repo_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L258",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_generate_case_assets_main",
+      "target": "productionstudio_workflows_generate_case_assets_repo_root",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L142",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_generate_case_assets_cmd_audio",
+      "target": "productionstudio_workflows_generate_case_assets_post_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L236",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_generate_case_assets_cmd_images",
+      "target": "productionstudio_workflows_generate_case_assets_post_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L241",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_generate_case_assets_cmd_images",
+      "target": "productionstudio_workflows_generate_case_assets_get_bytes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L130",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_generate_case_assets_cmd_audio",
+      "target": "productionstudio_workflows_generate_case_assets_parse_voiceover",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L174",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_generate_case_assets_cmd_audio",
+      "target": "productionstudio_workflows_generate_case_assets_word_spans",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L108",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_generate_case_assets_rationale_108",
+      "target": "productionstudio_workflows_generate_case_assets_word_spans",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L263",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_generate_case_assets_main",
+      "target": "productionstudio_workflows_generate_case_assets_cmd_audio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/generate_case_assets.py",
+      "source_location": "L265",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_generate_case_assets_main",
+      "target": "productionstudio_workflows_generate_case_assets_cmd_images",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_rimoni_muliaga"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Script.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_script_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_rimoni_muliaga"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_lise_muliaga"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Script.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_script_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_lise_muliaga"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_leuma_muliaga"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Script.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_script_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_leuma_muliaga"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_marama_randall"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Script.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_script_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_marama_randall"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_patrick_bourke"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Script.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_script_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_patrick_bourke"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_michael_mcgrath"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Script.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_script_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_michael_mcgrath"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_james_gorton"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Script.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_script_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_james_gorton"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Checklist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_dpp_v_muliaga"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_dpp_v_muliaga"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_dpp_v_muliaga",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_sources_supreme_court_of_victoria"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_flagged_warning_sign_sequencing"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Sources.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_sources_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_document"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Checklist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_flagged_warning_sign_sequencing"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Sources.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_sources_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_flagged_warning_sign_sequencing"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Sources.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_sources_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_sources_samoa_global_news"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Sources.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_sources_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_sources_samoa_observer"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Sources.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_sources_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_sources_supreme_court_of_victoria"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Sources.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_sources_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_sources_the_nightly"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Sources.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_sources_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_sources_trend_log"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Sources.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_sources_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_sources_yahoo_news_australia"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Checklist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_document"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_access_method_note"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_automated_redaction_reliability_note"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_court_escort_photo"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_manual_pixel_redaction"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_mugshot_fetch_tool"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_porco_v_lifetime"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_prison_van_photo"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_sementilli_personphotos_precedent"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_supreme_court_sign_photo"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Thumbnail.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_thumbnail_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_document"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/ImagePrompts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_imageprompts_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_court_escort_photo"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_court_escort_photo",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_aap_photos"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_court_escort_photo",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_automated_redaction_reliability_note"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_court_escort_photo",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_canberra_times"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_court_escort_photo",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_joel_carrett"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Thumbnail.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_thumbnail_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_court_escort_photo"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/ImagePrompts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_imageprompts_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_prison_van_photo"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_prison_van_photo",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_automated_redaction_reliability_note"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_prison_van_photo",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_jay_kogler"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Shorts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_shorts_short_4",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_prison_van_photo"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/ImagePrompts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_imageprompts_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_supreme_court_sign_photo"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Checklist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_mugshot_fetch_tool"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/ImagePrompts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_imageprompts_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_mugshot_fetch_tool"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Checklist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_automated_redaction_reliability_note"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_automated_redaction_reliability_note",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_manual_pixel_redaction"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/ImagePrompts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_imageprompts_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_monica_sementilli_case"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Checklist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_generate_case_assets_cmd_images"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Checklist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_script_length_rationale"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Checklist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_playlist_gap_rationale"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PublishPlan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_publishplan_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_document"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Checklist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_script_length_rationale",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_kouri_richins_case"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Checklist.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_script_length_rationale",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_monica_sementilli_case"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PublishPlan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_publishplan_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_monica_sementilli_case"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PublishPlan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_publishplan_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_publishplan_publishing_agent"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PublishPlan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_publishplan_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_document"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/SEO.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_channel_footer"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/SEO.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_framed_the_wrong_person_playlist"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/SEO.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_love_triangle_murders_playlist"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/SEO.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_murder_for_insurance_money_playlist"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/SEO.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_playlist_gap_rationale"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/SEO.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_timing_json"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/SEO.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_seo_wife_killed_husband_playlist"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Shorts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_shorts_short_1",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_script_document"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Shorts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_shorts_short_2",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_script_document"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Shorts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_shorts_short_3",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_script_document"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Shorts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_shorts_short_4",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_script_document"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Voiceover.txt",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_voiceover_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_script_document"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Shorts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_shorts_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_shorts_short_1"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Shorts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_shorts_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_shorts_short_2"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Shorts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_shorts_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_shorts_short_3"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Shorts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_shorts_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_shorts_short_4"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Shorts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_shorts_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_shorts_shorts_agent"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Shorts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_shorts_short_1",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_thumbnail_asset"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Thumbnail.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_thumbnail_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_thumbnail_asset"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Thumbnail.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_thumbnail_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_thumbnail_kouri_richins_headline"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Thumbnail.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_thumbnail_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_thumbnail_sementilli_headline"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Thumbnail.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_thumbnail_document",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_thumbnail_she_never_cheated_headline"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Thumbnail.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_rimoni_muliaga_jealousy_murder_thumbnail_she_never_cheated_headline",
+      "target": "productionstudio_cases_rimoni_muliaga_jealousy_murder_thumbnail_sementilli_headline"
     }
   ],
   "hyperedges": [
+    {
+      "id": "real_photo_mandate_compliance_muliaga",
+      "label": "Real-photo mandate compliance (Track 1 + Track 2, mugshot_fetch_tool)",
+      "nodes": [
+        "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_mugshot_fetch_tool",
+        "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_court_escort_photo",
+        "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_prison_van_photo",
+        "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_supreme_court_sign_photo",
+        "productionstudio_cases_rimoni_muliaga_jealousy_murder_checklist_document"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Checklist.md"
+    },
+    {
+      "id": "rimoni_muliaga_trial_participants",
+      "label": "Rimoni Muliaga murder trial and sentencing participants",
+      "nodes": [
+        "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_rimoni_muliaga",
+        "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_patrick_bourke",
+        "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_michael_mcgrath",
+        "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_james_gorton",
+        "productionstudio_cases_rimoni_muliaga_jealousy_murder_factcheck_dpp_v_muliaga"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md"
+    },
+    {
+      "id": "automated_redaction_failure_and_manual_fix",
+      "label": "Automated redaction failure on both real photos, fixed via manual pixel-coordinate redaction",
+      "nodes": [
+        "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_automated_redaction_reliability_note",
+        "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_manual_pixel_redaction",
+        "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_court_escort_photo",
+        "productionstudio_cases_rimoni_muliaga_jealousy_murder_personphotos_prison_van_photo"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md"
+    },
     {
       "id": "hyperedge_ai_slop_policy_rationale",
       "label": "YouTube's January 2026 'AI slop' enforcement policy (three-strike system) and mandatory synthetic-content disclosure toggle as the shared rationale escalating real photos from recommended to mandatory, described consistently across CLAUDE.md, ARCHITECTURE.md, TREND_LOG.md, and mugshot_fetch_tool.md",
@@ -13908,5 +15637,5 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md"
     }
   ],
-  "built_at_commit": "8abeebb4552b72c50d77b82d9b0d81409a2e3182"
+  "built_at_commit": "f969eb799720cec459f2a422aa5c300be75c96a2"
 }

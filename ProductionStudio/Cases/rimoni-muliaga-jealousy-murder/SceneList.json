@@ -1,0 +1,375 @@
+{
+  "case_name": "Rimoni Muliaga jealousy murder",
+  "total_scenes": 45,
+  "total_words": 1212,
+  "estimated_total_seconds": 484.8,
+  "beat_ranges": [
+    {
+      "beat": "Hook",
+      "from_scene": "0001",
+      "to_scene": "0006"
+    },
+    {
+      "beat": "Conflict",
+      "from_scene": "0007",
+      "to_scene": "0012"
+    },
+    {
+      "beat": "Mystery",
+      "from_scene": "0013",
+      "to_scene": "0016"
+    },
+    {
+      "beat": "Escalation",
+      "from_scene": "0017",
+      "to_scene": "0018"
+    },
+    {
+      "beat": "Evidence",
+      "from_scene": "0019",
+      "to_scene": "0021"
+    },
+    {
+      "beat": "Twist",
+      "from_scene": "0022",
+      "to_scene": "0025"
+    },
+    {
+      "beat": "Investigation",
+      "from_scene": "0026",
+      "to_scene": "0031"
+    },
+    {
+      "beat": "Final Reveal",
+      "from_scene": "0032",
+      "to_scene": "0037"
+    },
+    {
+      "beat": "Aftermath",
+      "from_scene": "0038",
+      "to_scene": "0043"
+    },
+    {
+      "beat": "Question for viewers",
+      "from_scene": "0044",
+      "to_scene": "0045"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "0001",
+      "beat": "Hook",
+      "text": "Three children watched their father kill their mother in the backyard of a house they'd lived in for exactly one week.",
+      "word_count": 21,
+      "estimated_seconds": 8.4
+    },
+    {
+      "scene_id": "0002",
+      "beat": "Hook",
+      "text": "He was completely convinced she was cheating on him.",
+      "word_count": 9,
+      "estimated_seconds": 3.6
+    },
+    {
+      "scene_id": "0003",
+      "beat": "Hook",
+      "text": "There was no affair. Not one piece of evidence. The court would later call his jealousy \"entirely unwarranted.\"",
+      "word_count": 18,
+      "estimated_seconds": 7.2
+    },
+    {
+      "scene_id": "0004",
+      "beat": "Hook",
+      "text": "He killed her anyway.",
+      "word_count": 4,
+      "estimated_seconds": 1.6
+    },
+    {
+      "scene_id": "0005",
+      "beat": "Hook",
+      "text": "This is a true crime story with no hidden killer to unmask, no twist ending where the wrong man goes to prison. Everyone already knew who did it.",
+      "word_count": 28,
+      "estimated_seconds": 11.2
+    },
+    {
+      "scene_id": "0006",
+      "beat": "Hook",
+      "text": "The only question the court had to answer was whether a man could be convicted of murder for something that only ever existed in his own mind.",
+      "word_count": 27,
+      "estimated_seconds": 10.8
+    },
+    {
+      "scene_id": "0007",
+      "beat": "Conflict",
+      "text": "Rimoni Muliaga was born in Samoa in 1981, one of nine children. He grew up with physical abuse in the household.",
+      "word_count": 21,
+      "estimated_seconds": 8.4
+    },
+    {
+      "scene_id": "0008",
+      "beat": "Conflict",
+      "text": "By adulthood, he carried an IQ of 61 — in the bottom half a percent of the population, low enough to meet the legal threshold for intellectual disability — along with depression involving psychotic features, and an earlier schizophrenia diagnosis from New Zealand.",
+      "word_count": 43,
+      "estimated_seconds": 17.2
+    },
+    {
+      "scene_id": "0009",
+      "beat": "Conflict",
+      "text": "He married Lise. Together they had five children.",
+      "word_count": 8,
+      "estimated_seconds": 3.2
+    },
+    {
+      "scene_id": "0010",
+      "beat": "Conflict",
+      "text": "For years, the family lived out an ordinary life in New Zealand — the kind of life where nobody outside the household would have had any reason to suspect what would eventually happen inside it.",
+      "word_count": 35,
+      "estimated_seconds": 14.0
+    },
+    {
+      "scene_id": "0011",
+      "beat": "Conflict",
+      "text": "In July 2023, the family made a fresh start — leaving New Zealand for Melbourne, Australia. A new country. A new chance to build something for five kids.",
+      "word_count": 28,
+      "estimated_seconds": 11.2
+    },
+    {
+      "scene_id": "0012",
+      "beat": "Conflict",
+      "text": "They didn't have their own place yet. First they stayed with Rimoni's sister, Ete. Then, about a week before everything changed, they moved into a bungalow behind the home of Rimoni's brother, Leuma, in Melton South.",
+      "word_count": 36,
+      "estimated_seconds": 14.4
+    },
+    {
+      "scene_id": "0013",
+      "beat": "Mystery",
+      "text": "This wasn't the first sign something was wrong. On a separate occasion before that final day, Rimoni's brother had walked in and found him on top of Lise.",
+      "word_count": 28,
+      "estimated_seconds": 11.2
+    },
+    {
+      "scene_id": "0014",
+      "beat": "Mystery",
+      "text": "On another occasion, his own sister-in-law saw him with his hand around Lise's neck.",
+      "word_count": 14,
+      "estimated_seconds": 5.6
+    },
+    {
+      "scene_id": "0015",
+      "beat": "Mystery",
+      "text": "Nobody outside the family stepped in. There was no report, no restraining order, no warning on record — just a pattern building quietly inside a house that had barely been theirs for a week.",
+      "word_count": 34,
+      "estimated_seconds": 13.6
+    },
+    {
+      "scene_id": "0016",
+      "beat": "Mystery",
+      "text": "And underneath all of it sat something else nobody outside the family could see: a man managing serious mental illness, in a new country, recently uprooted, whose grip on his own paranoid thoughts was about to fail completely.",
+      "word_count": 38,
+      "estimated_seconds": 15.2
+    },
+    {
+      "scene_id": "0017",
+      "beat": "Escalation",
+      "text": "On the morning of September 18th, 2023, Rimoni confronted Lise. He'd convinced himself she was having an affair — with his own brother, Leuma, the man whose backyard they were now living in.",
+      "word_count": 33,
+      "estimated_seconds": 13.2
+    },
+    {
+      "scene_id": "0018",
+      "beat": "Escalation",
+      "text": "Lise left the house and walked to a nearby park. Whatever she was hoping to clear her head about, she walked back home anyway.",
+      "word_count": 24,
+      "estimated_seconds": 9.6
+    },
+    {
+      "scene_id": "0019",
+      "beat": "Evidence",
+      "text": "Rimoni armed himself with a large kitchen knife. He stabbed her four times — twice in the right shoulder, once in the left upper chest, once in the left breast.",
+      "word_count": 30,
+      "estimated_seconds": 12.0
+    },
+    {
+      "scene_id": "0020",
+      "beat": "Evidence",
+      "text": "The fatal wound was nine and a half centimeters deep, severing two ribs and the major blood vessels beneath them. Time of death was recorded at 2:33 in the afternoon.",
+      "word_count": 30,
+      "estimated_seconds": 12.0
+    },
+    {
+      "scene_id": "0021",
+      "beat": "Evidence",
+      "text": "Three of their five children — twelve, seven, and five years old — were there. They watched it happen.",
+      "word_count": 19,
+      "estimated_seconds": 7.6
+    },
+    {
+      "scene_id": "0022",
+      "beat": "Twist",
+      "text": "Here's what makes this case different from almost every other one like it: prosecutors searched for evidence of an affair between Lise and Leuma.",
+      "word_count": 24,
+      "estimated_seconds": 9.6
+    },
+    {
+      "scene_id": "0023",
+      "beat": "Twist",
+      "text": "They found none. Not a text. Not a witness. Nothing.",
+      "word_count": 10,
+      "estimated_seconds": 4.0
+    },
+    {
+      "scene_id": "0024",
+      "beat": "Twist",
+      "text": "Later, speaking to a psychiatrist, Rimoni tried to explain what happened in his own head. \"I had suspicions that something was going on between the two of them,\" he said. \"That's when I grabbed the weapon.\"",
+      "word_count": 36,
+      "estimated_seconds": 14.4
+    },
+    {
+      "scene_id": "0025",
+      "beat": "Twist",
+      "text": "After his arrest, he told police flatly: \"Lise and [his brother] were sleeping together.\" They weren't. He killed his wife over something prosecutors would later prove never happened at all.",
+      "word_count": 30,
+      "estimated_seconds": 12.0
+    },
+    {
+      "scene_id": "0026",
+      "beat": "Investigation",
+      "text": "His sister-in-law, Marama Randall, described what she saw of him that day: \"His brain was gone. He was ranting.\"",
+      "word_count": 19,
+      "estimated_seconds": 7.6
+    },
+    {
+      "scene_id": "0027",
+      "beat": "Investigation",
+      "text": "At trial, prosecutor Patrick Bourke KC put it to the jury directly: \"That jealousy, the anger — is what we call motive.\"",
+      "word_count": 22,
+      "estimated_seconds": 8.8
+    },
+    {
+      "scene_id": "0028",
+      "beat": "Investigation",
+      "text": "The case went to the Melbourne Supreme Court. Rimoni's defense didn't deny what he'd done — they argued about what to call it.",
+      "word_count": 23,
+      "estimated_seconds": 9.2
+    },
+    {
+      "scene_id": "0029",
+      "beat": "Investigation",
+      "text": "Defense barrister Michael McGrath told the jury the correct verdict was manslaughter, not murder, pointing to Rimoni's intellectual disability and depressive disorder as reasons he may not have been capable of forming real murderous intent.",
+      "word_count": 35,
+      "estimated_seconds": 14.0
+    },
+    {
+      "scene_id": "0030",
+      "beat": "Investigation",
+      "text": "It's a real legal question, not a technicality: could a man with an IQ of 61, in the grip of psychotic depression, actually form the specific intent the law requires for murder — or was this, whatever else it was, something short of that?",
+      "word_count": 44,
+      "estimated_seconds": 17.6
+    },
+    {
+      "scene_id": "0031",
+      "beat": "Investigation",
+      "text": "The jury deliberated for four days. Fourteen people had been empanelled at the start of the trial; twelve remained to deliver the verdict. On December 1st, 2025, they came back with their answer: guilty of murder.",
+      "word_count": 36,
+      "estimated_seconds": 14.4
+    },
+    {
+      "scene_id": "0032",
+      "beat": "Final Reveal",
+      "text": "Sentencing came on March 25th, 2026.",
+      "word_count": 6,
+      "estimated_seconds": 2.4
+    },
+    {
+      "scene_id": "0033",
+      "beat": "Final Reveal",
+      "text": "Justice James Gorton didn't hold back describing what he'd seen in the evidence: an act, he said, \"of the most serious domestic violence\" — made significantly worse by the fact that three children watched their mother die.",
+      "word_count": 37,
+      "estimated_seconds": 14.8
+    },
+    {
+      "scene_id": "0034",
+      "beat": "Final Reveal",
+      "text": "The judge called the attack \"entirely unprovoked,\" even though it wasn't planned in advance — spontaneous, but rooted in what he described as \"unjustified and unwarranted feelings of jealousy and anger.\"",
+      "word_count": 31,
+      "estimated_seconds": 12.4
+    },
+    {
+      "scene_id": "0035",
+      "beat": "Final Reveal",
+      "text": "Justice Gorton noted something bigger than this one case: family violence homicides, he said, are disturbingly common in Australia — common enough that sentencing has to send a real message, both to Rimoni Muliaga specifically and to anyone else who might be watching.",
+      "word_count": 43,
+      "estimated_seconds": 17.2
+    },
+    {
+      "scene_id": "0036",
+      "beat": "Final Reveal",
+      "text": "Courts don't treat unfounded jealousy as a lesser crime because the affair turns out to be imaginary.",
+      "word_count": 17,
+      "estimated_seconds": 6.8
+    },
+    {
+      "scene_id": "0037",
+      "beat": "Final Reveal",
+      "text": "If anything, it cuts the other way: there was no betrayal to provoke him, no real threat to respond to — only a belief he built entirely in his own head, and then acted on with a knife.",
+      "word_count": 38,
+      "estimated_seconds": 15.2
+    },
+    {
+      "scene_id": "0038",
+      "beat": "Aftermath",
+      "text": "Rimoni Muliaga was sentenced to 24 years in prison, with a non-parole period of 18 years and six months. The court declared 919 days he'd already spent in custody waiting for this exact moment.",
+      "word_count": 34,
+      "estimated_seconds": 13.6
+    },
+    {
+      "scene_id": "0039",
+      "beat": "Aftermath",
+      "text": "One detail sat quietly underneath all of it: Rimoni hadn't taken his prescribed mental health medication since the day before he killed his wife.",
+      "word_count": 24,
+      "estimated_seconds": 9.6
+    },
+    {
+      "scene_id": "0040",
+      "beat": "Aftermath",
+      "text": "He isn't an Australian citizen. When his sentence eventually ends, in his sixties, he's expected to be deported — to a country his five children, now growing up without a mother, may not be living in themselves.",
+      "word_count": 37,
+      "estimated_seconds": 14.8
+    },
+    {
+      "scene_id": "0041",
+      "beat": "Aftermath",
+      "text": "A family moved to the other side of the world for a fresh start. They lasted six weeks before the fresh start became a crime scene, and one week in the house where it happened.",
+      "word_count": 35,
+      "estimated_seconds": 14.0
+    },
+    {
+      "scene_id": "0042",
+      "beat": "Aftermath",
+      "text": "Five children lost their mother that afternoon. Three of them watched it happen.",
+      "word_count": 13,
+      "estimated_seconds": 5.2
+    },
+    {
+      "scene_id": "0043",
+      "beat": "Aftermath",
+      "text": "All five are now growing up with a father serving 24 years, a mother who isn't coming back, and a story about their family that will follow them whether they want it to or not.",
+      "word_count": 35,
+      "estimated_seconds": 14.0
+    },
+    {
+      "scene_id": "0044",
+      "beat": "Question for viewers",
+      "text": "Somewhere between the hand around her neck that a sister-in-law once saw, and the morning he finally picked up the knife, there was a version of this story where someone intervened in time.",
+      "word_count": 33,
+      "estimated_seconds": 13.2
+    },
+    {
+      "scene_id": "0045",
+      "beat": "Question for viewers",
+      "text": "If you'd seen those warning signs — quietly, from inside the family — would you have known how serious they already were?",
+      "word_count": 22,
+      "estimated_seconds": 8.8
+    }
+  ]
+}
