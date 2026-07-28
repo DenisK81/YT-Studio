@@ -65,7 +65,10 @@ starts once explicitly requested — don't self-initiate Phase 2 work from a Pha
 - **Playlists are by theme/motive, never by case name** (decided 2026-07-26, replacing an
   earlier "one playlist per case" attempt the channel owner rejected after checking how
   competitor true-crime channels organize theirs). Examples already in use: `Love Triangle
-  Murders`, `Wife Killed Husband`, `Murder For Insurance Money`, `Framed The Wrong Person`. A
+  Murders`, `Wife Killed Husband`, `Murder For Insurance Money`, `Framed The Wrong Person`,
+  `Unfounded Jealousy Murders` (added 2026-07-28 for the Rimoni Muliaga case — neither `Wife
+  Killed Husband` nor `Love Triangle Murders` fit a case where the victim is the wife and the
+  "affair" was entirely imagined). A
   single video normally belongs in 2-3 of these at once (e.g. a wife-and-lover insurance-murder
   case is both `Wife Killed Husband` and `Murder For Insurance Money` and `Love Triangle
   Murders`) — that overlap is expected and fine, not a bug. When a new case is produced, decide
