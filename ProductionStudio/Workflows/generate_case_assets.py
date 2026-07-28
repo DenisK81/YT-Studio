@@ -197,6 +197,8 @@ def cmd_audio(case_dir, audio_dir):
 
 
 def cmd_images(case_dir, images_dir):
+    from PIL import Image
+
     fal_key = os.environ["FAL_KEY"]
     prompts_path = os.path.join(case_dir, "ImagePrompts.md")
     with open(prompts_path, encoding="utf-8") as f:
@@ -209,11 +211,26 @@ def cmd_images(case_dir, images_dir):
     if not prompts:
         raise SystemExit("No prompts parsed from ImagePrompts.md")
 
+    # Real-photo scenes (mandatory mixing, see Tools/mugshot_fetch_tool.md) are copied
+    # in as-is instead of generated - never send their placeholder prompt to fal.ai.
+    real_photo_scenes = {rp["scene_id"]: rp["local_path"] for rp in data.get("real_photo_scenes", [])}
+
     os.makedirs(images_dir, exist_ok=True)
-    for i, p in enumerate(prompts):
-        if i > 0:
-            time.sleep(FAL_REQUEST_SPACING_SECONDS)
+    generated = 0
+    for p in prompts:
         scene_id = p["scene_id"]
+        out_path = os.path.join(images_dir, scene_id + ".png")
+
+        if scene_id in real_photo_scenes:
+            src_path = os.path.join(repo_root(), real_photo_scenes[scene_id])
+            img = Image.open(src_path).convert("RGB")
+            img.save(out_path)
+            print(f"real photo scene {scene_id}: copied {src_path} -> {out_path}")
+            continue
+
+        if generated > 0:
+            time.sleep(FAL_REQUEST_SPACING_SECONDS)
+        generated += 1
         full_prompt = p["prompt"] + ", " + ", ".join(p.get("style_tags", []))
         print(f"generating scene {scene_id}...")
         resp = post_json(
@@ -222,11 +239,10 @@ def cmd_images(case_dir, images_dir):
             {"prompt": full_prompt, "image_size": "landscape_16_9", "num_images": 1, "output_format": "png"},
         )
         img_bytes = get_bytes(resp["images"][0]["url"])
-        out_path = os.path.join(images_dir, scene_id + ".png")
         with open(out_path, "wb") as f:
             f.write(img_bytes)
         print(f"  -> {out_path} ({len(img_bytes)} bytes)")
-    print(f"\ndone: {len(prompts)} images -> {images_dir}")
+    print(f"\ndone: {generated} generated + {len(real_photo_scenes)} real photos -> {images_dir}")
 
 
 def main():

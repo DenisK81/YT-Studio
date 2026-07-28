@@ -20,9 +20,9 @@
     "semantic_hash": "1fbedeb144ccb84bf22dcd8c576123e7"
   },
   "ProductionStudio/Cases/covered_cases.json": {
-    "mtime": 1784995424.476624,
-    "ast_hash": "3c209c37f802b29791767c15ed3d03c1",
-    "semantic_hash": "3c209c37f802b29791767c15ed3d03c1"
+    "mtime": 1785211123.9253504,
+    "ast_hash": "8c676d3c94a8f2eacd4353680d795844",
+    "semantic_hash": "8c676d3c94a8f2eacd4353680d795844"
   },
   "ProductionStudio/Cases/kouri-richins-fentanyl-murder/SceneList.json": {
     "mtime": 1784665943.0153754,
@@ -35,9 +35,9 @@
     "semantic_hash": "8be3eefe4c72f18e2ffaaab25330b069"
   },
   "ProductionStudio/Tools/tool_registry.json": {
-    "mtime": 1785039912.1846466,
-    "ast_hash": "3134857792f39ae356a7ec28631f4392",
-    "semantic_hash": "3134857792f39ae356a7ec28631f4392"
+    "mtime": 1785213162.2874422,
+    "ast_hash": "cf92729c056fb3eade8ae107bb8f981b",
+    "semantic_hash": "cf92729c056fb3eade8ae107bb8f981b"
   },
   "ProductionStudio/Workflows/build_master_workflow.py": {
     "mtime": 1784656182.4423742,
@@ -45,9 +45,9 @@
     "semantic_hash": "e8a7b0b3d97b6f9507f596d02a77a6bd"
   },
   "ProductionStudio/Workflows/generate_case_assets.py": {
-    "mtime": 1784656182.4434266,
-    "ast_hash": "ef906f06eb7aefef1a7489471828a81d",
-    "semantic_hash": "ef906f06eb7aefef1a7489471828a81d"
+    "mtime": 1785212301.9193842,
+    "ast_hash": "19ce7b321b6b1ce104c46df23105d1b8",
+    "semantic_hash": "19ce7b321b6b1ce104c46df23105d1b8"
   },
   "ProductionStudio/Workflows/generate_shorts_audio.py": {
     "mtime": 1784668395.9756238,
@@ -560,7 +560,7 @@
     "semantic_hash": "c0710db219bf7d69f49e9d36e8d23e42"
   },
   "ProductionStudio/Workflows/youtube_agent.py": {
-    "mtime": 1785209399.9278958,
+    "mtime": 1785209818.9779,
     "ast_hash": "1115b3bccb9105eac9bbb8496fefdb39",
     "semantic_hash": "1115b3bccb9105eac9bbb8496fefdb39"
   },
@@ -568,5 +568,65 @@
     "mtime": 1785045369.996538,
     "ast_hash": "d5502e71829cda43c5216fa2f0c56a75",
     "semantic_hash": "d5502e71829cda43c5216fa2f0c56a75"
+  },
+  "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/SceneList.json": {
+    "mtime": 1785211350.0480604,
+    "ast_hash": "a3a543693121b94c53343a9647e47803",
+    "semantic_hash": "a3a543693121b94c53343a9647e47803"
+  },
+  "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Checklist.md": {
+    "mtime": 1785212951.1891768,
+    "ast_hash": "6ef47c2bfd1fc138bbd43c3582628064",
+    "semantic_hash": "6ef47c2bfd1fc138bbd43c3582628064"
+  },
+  "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/FactCheck.md": {
+    "mtime": 1785211169.658545,
+    "ast_hash": "a5f76018be9b8b870a5928264e684a22",
+    "semantic_hash": "a5f76018be9b8b870a5928264e684a22"
+  },
+  "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/ImagePrompts.md": {
+    "mtime": 1785212252.9848728,
+    "ast_hash": "91f347be397bd70233c1daf50d80421c",
+    "semantic_hash": "91f347be397bd70233c1daf50d80421c"
+  },
+  "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md": {
+    "mtime": 1785212065.367433,
+    "ast_hash": "317e4b472c39ddab62f524624a784ff3",
+    "semantic_hash": "317e4b472c39ddab62f524624a784ff3"
+  },
+  "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/PublishPlan.md": {
+    "mtime": 1785212983.2153273,
+    "ast_hash": "7565c3b069d81aa5b6432323e9d8c985",
+    "semantic_hash": "7565c3b069d81aa5b6432323e9d8c985"
+  },
+  "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/SEO.md": {
+    "mtime": 1785212640.6365094,
+    "ast_hash": "e8040a93878ccefc6503b0d7a46a59b4",
+    "semantic_hash": "e8040a93878ccefc6503b0d7a46a59b4"
+  },
+  "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Script.md": {
+    "mtime": 1785211350.0480604,
+    "ast_hash": "0f83f21fb2e114fa67adc644aa46a7af",
+    "semantic_hash": "0f83f21fb2e114fa67adc644aa46a7af"
+  },
+  "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Shorts.md": {
+    "mtime": 1785213029.7483284,
+    "ast_hash": "303ec9bd9fdffbacfb80847d70adcd67",
+    "semantic_hash": "303ec9bd9fdffbacfb80847d70adcd67"
+  },
+  "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Sources.md": {
+    "mtime": 1785211140.7007391,
+    "ast_hash": "4a719acb4e2fb303de49e4561fd709e8",
+    "semantic_hash": "4a719acb4e2fb303de49e4561fd709e8"
+  },
+  "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Thumbnail.md": {
+    "mtime": 1785212175.80832,
+    "ast_hash": "b37c7703b913e416bdf3736918ab5716",
+    "semantic_hash": "b37c7703b913e416bdf3736918ab5716"
+  },
+  "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Voiceover.txt": {
+    "mtime": 1785211573.5825996,
+    "ast_hash": "4f600062e8cdb0a7c7f3485d3eb7f6fe",
+    "semantic_hash": "4f600062e8cdb0a7c7f3485d3eb7f6fe"
   }
 }
