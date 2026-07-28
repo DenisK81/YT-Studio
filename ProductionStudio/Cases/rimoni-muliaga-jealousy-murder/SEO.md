@@ -21,7 +21,7 @@
   "pinned_comment": "There was no affair. Not one piece of evidence. He killed her anyway, over something that only ever existed in his own head. If you'd seen the warning signs beforehand — would you have known how serious they were? Tell us below, we read every comment.",
   "tags": ["Rimoni Muliaga", "Lise Muliaga", "Melton South stabbing", "Melbourne murder", "true crime", "Australia murder trial", "jealousy murder", "domestic violence homicide", "Supreme Court of Victoria", "true crime documentary", "wife killed by husband", "Samoan New Zealand family", "murder trial 2025"],
   "hashtags": ["#TrueCrime", "#RimoniMuliaga", "#MeltonSouth", "#TrueCrimeDocumentary", "#Australia"],
-  "suggested_playlists": ["NEEDS DECISION — see note below, no existing playlist cleanly fits"]
+  "suggested_playlists": ["Unfounded Jealousy Murders (PLcyGDM96lozc) — new playlist created 2026-07-28 for this case"]
 }
 ```
 

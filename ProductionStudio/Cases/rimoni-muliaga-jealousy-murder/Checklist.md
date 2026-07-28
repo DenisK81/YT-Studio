@@ -41,15 +41,15 @@
     "scene_consistency": "pass - all 45 scenes have both real audio (ElevenLabs with-timestamps) and an image (42 AI-generated + 3 real photos), no missing-asset flags",
     "voice_timing": "pass - real total 7:24 (444.2s) from timing.json vs SceneList.json's pre-audio estimate of 8:04 (484.8s) - within normal narration-pace variance (ElevenLabs ran faster than the 2.5 words/sec estimate assumption)",
     "real_photo_mandate": "pass - both Track 1 (person, muliaga_court_escort + muliaga_prison_van, eyes/face redacted) and Track 2 (scene, Supreme Court sign) attempted and successful for this case, documented in PersonPhotos.md; thumbnail explicitly uses a real photo per this session's specific requirement",
-    "export_integrity": "pending final render spot-check (frame-level QC to be done once Remotion render completes)"
+    "export_integrity": "pass - main video and all 4 Shorts rendered via Remotion and spot-checked frame-by-frame (hook, real-photo scenes, captions/karaoke, cold-open real-photo Shorts)"
   },
   "resolution_log": [
     "2026-07-28: caught and manually fixed a mislocated automated redaction (black box on shoulder, not face) on muliaga_court_escort photo before use",
     "2026-07-28: caught and manually fixed a failed automated face detection on muliaga_prison_van photo before use",
-    "2026-07-28: extended generate_case_assets.py's cmd_images to skip fal.ai generation for real-photo scenes and copy the real asset instead, rather than accidentally generating an AI image over a 'REAL PHOTO' placeholder prompt"
+    "2026-07-28: extended generate_case_assets.py's cmd_images to skip fal.ai generation for real-photo scenes and copy the real asset instead, rather than accidentally generating an AI image over a 'REAL PHOTO' placeholder prompt",
+    "2026-07-28: playlist gap resolved - channel owner created a new playlist, Unfounded Jealousy Murders (PLcyGDM96lozc), rather than forcing a mismatched fit",
+    "2026-07-28: all 5 videos (main + 4 Shorts) uploaded and scheduled via youtube_agent.py after explicit channel-owner go-ahead with exact publish times - see PublishPlan.md"
   ],
-  "escalations": [
-    "Playlist assignment needs a channel-owner decision - no existing theme fits (see SEO.md)"
-  ]
+  "escalations": []
 }
 ```
