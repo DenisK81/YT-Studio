@@ -40,6 +40,14 @@ Output must be ready to paste directly into YouTube's fields with no manual trim
 the tag string's total character count and the hashtag count yourself before finalizing, don't
 just target a round number.
 
+**Channel footer required (added 2026-07-26):** `description` must always end with
+`Workflows/youtube_agent.py`'s `CHANNEL_FOOTER` constant (channel name + working `@handle` link)
+on its own line. Added after a real viewer commented on a published Short asking which channel
+it was from — two already-published main videos had a "Follow Fatal Affairs" line with a broken
+placeholder bracket instead of an actual link, which is exactly the gap that caused it. Never
+leave a bracket placeholder like `[link to X]` in output that's meant to be pasted directly into
+YouTube — either resolve it to a real value or omit the line entirely.
+
 ## Escalate to human when
 A title/description choice would require a factual claim not present in the verified script
 (i.e. don't oversell the twist beyond what's actually verified).

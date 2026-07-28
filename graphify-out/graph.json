@@ -7,9 +7,7 @@
         "id": "hyperedge_ai_slop_policy_rationale",
         "label": "YouTube's January 2026 'AI slop' enforcement policy (three-strike system) and mandatory synthetic-content disclosure toggle as the shared rationale escalating real photos from recommended to mandatory, described consistently across CLAUDE.md, ARCHITECTURE.md, TREND_LOG.md, and mugshot_fetch_tool.md",
         "nodes": [
-          "claude_real_photos_mandatory",
           "productionstudio_documentation_architecture_real_photo_mandatory_escalation",
-          "productionstudio_documentation_trend_log_ai_slop_policy_finding",
           "productionstudio_tools_mugshot_fetch_tool_mandatory_escalation"
         ],
         "relation": "participate_in",
@@ -35,9 +33,7 @@
         "label": "Research Agent's trend-tracking flow: reads TREND_LOG.md before discovery, appends new findings after, and specifically acts on the standing international-case growth-opportunity finding logged there",
         "nodes": [
           "productionstudio_agents_research_agent_trend_log_integration",
-          "productionstudio_documentation_trend_log_overview",
-          "productionstudio_agents_research_agent_international_case_finding",
-          "productionstudio_documentation_trend_log_international_growth_finding"
+          "productionstudio_agents_research_agent_international_case_finding"
         ],
         "relation": "participate_in",
         "confidence": "INFERRED",
@@ -282,7 +278,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "properties",
       "id": "productionstudio_config_config_schema_channel_properties"
@@ -293,7 +289,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "name",
       "id": "productionstudio_config_config_schema_properties_name"
@@ -304,7 +300,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_name_const"
@@ -315,7 +311,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "slogan",
       "id": "productionstudio_config_config_schema_properties_slogan"
@@ -326,7 +322,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_slogan_const"
@@ -337,7 +333,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "colors",
       "id": "productionstudio_config_config_schema_properties_colors"
@@ -348,7 +344,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L12",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "type",
       "id": "productionstudio_config_config_schema_colors_type"
@@ -359,7 +355,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "properties",
       "id": "productionstudio_config_config_schema_colors_properties"
@@ -370,7 +366,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "bg",
       "id": "productionstudio_config_config_schema_properties_bg"
@@ -381,7 +377,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_bg_const"
@@ -392,7 +388,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "text",
       "id": "productionstudio_config_config_schema_properties_text"
@@ -403,7 +399,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_text_const"
@@ -414,7 +410,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "accent",
       "id": "productionstudio_config_config_schema_properties_accent"
@@ -425,7 +421,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L16",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_accent_const"
@@ -436,7 +432,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "gray",
       "id": "productionstudio_config_config_schema_properties_gray"
@@ -447,7 +443,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_gray_const"
@@ -458,7 +454,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L18",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "light_gray",
       "id": "productionstudio_config_config_schema_properties_light_gray"
@@ -469,7 +465,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L18",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_light_gray_const"
@@ -480,7 +476,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "fonts",
       "id": "productionstudio_config_config_schema_properties_fonts"
@@ -491,7 +487,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "type",
       "id": "productionstudio_config_config_schema_fonts_type"
@@ -502,7 +498,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "properties",
       "id": "productionstudio_config_config_schema_fonts_properties"
@@ -513,7 +509,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L24",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "headline",
       "id": "productionstudio_config_config_schema_properties_headline"
@@ -524,7 +520,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L24",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_headline_const"
@@ -535,7 +531,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "body",
       "id": "productionstudio_config_config_schema_properties_body"
@@ -546,7 +542,7 @@
       "source_file": "ProductionStudio/Config/config.schema.json",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 8,
+      "community": 6,
       "community_name": "Config Schema Fragments",
       "norm_label": "const",
       "id": "productionstudio_config_config_schema_body_const"
@@ -1349,7 +1345,7 @@
       "source_file": "ProductionStudio/Workflows/build_master_workflow.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 19,
+      "community": 21,
       "community_name": "n8n Workflow Builder Script",
       "norm_label": "build_master_workflow.py",
       "id": "productionstudio_workflows_build_master_workflow"
@@ -1360,7 +1356,7 @@
       "source_file": "ProductionStudio/Workflows/build_master_workflow.py",
       "source_location": "L48",
       "_origin": "ast",
-      "community": 19,
+      "community": 21,
       "community_name": "n8n Workflow Builder Script",
       "norm_label": "read_agent()",
       "id": "productionstudio_workflows_build_master_workflow_read_agent"
@@ -1371,7 +1367,7 @@
       "source_file": "ProductionStudio/Workflows/build_master_workflow.py",
       "source_location": "L86",
       "_origin": "ast",
-      "community": 19,
+      "community": 21,
       "community_name": "n8n Workflow Builder Script",
       "norm_label": "txt()",
       "id": "productionstudio_workflows_build_master_workflow_txt"
@@ -1382,7 +1378,7 @@
       "source_file": "ProductionStudio/Workflows/build_master_workflow.py",
       "source_location": "L93",
       "_origin": "ast",
-      "community": 19,
+      "community": 21,
       "community_name": "n8n Workflow Builder Script",
       "norm_label": "anthropic_node()",
       "id": "productionstudio_workflows_build_master_workflow_anthropic_node"
@@ -1393,7 +1389,7 @@
       "source_file": "ProductionStudio/Workflows/build_master_workflow.py",
       "source_location": "L129",
       "_origin": "ast",
-      "community": 19,
+      "community": 21,
       "community_name": "n8n Workflow Builder Script",
       "norm_label": "connect()",
       "id": "productionstudio_workflows_build_master_workflow_connect"
@@ -1404,7 +1400,7 @@
       "source_file": "ProductionStudio/Workflows/build_master_workflow.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 19,
+      "community": 21,
       "community_name": "n8n Workflow Builder Script",
       "norm_label": "build the fatal affairs master pipeline workflow for n8n (local phase 2 trial).",
       "id": "productionstudio_workflows_build_master_workflow_rationale_1"
@@ -1415,7 +1411,7 @@
       "source_file": "ProductionStudio/Workflows/build_master_workflow.py",
       "source_location": "L87",
       "_origin": "ast",
-      "community": 19,
+      "community": 21,
       "community_name": "n8n Workflow Builder Script",
       "norm_label": "js expr: concatenated text blocks of an anthropic node's response.",
       "id": "productionstudio_workflows_build_master_workflow_rationale_87"
@@ -1613,7 +1609,7 @@
       "source_file": "ProductionStudio/Workflows/prep_remotion_render.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 22,
+      "community": 23,
       "community_name": "Remotion Render Prep Script",
       "norm_label": "prep_remotion_render.py",
       "id": "productionstudio_workflows_prep_remotion_render"
@@ -1624,7 +1620,7 @@
       "source_file": "ProductionStudio/Workflows/prep_remotion_render.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 22,
+      "community": 23,
       "community_name": "Remotion Render Prep Script",
       "norm_label": "prepare a remotion render from a case's real timing.json (produced by process_p",
       "id": "productionstudio_workflows_prep_remotion_render_rationale_1"
@@ -1635,7 +1631,7 @@
       "source_file": "ProductionStudio/Workflows/prep_short_render.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 23,
+      "community": 24,
       "community_name": "Shorts Render Prep Script",
       "norm_label": "prep_short_render.py",
       "id": "productionstudio_workflows_prep_short_render"
@@ -1646,7 +1642,7 @@
       "source_file": "ProductionStudio/Workflows/prep_short_render.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 23,
+      "community": 24,
       "community_name": "Shorts Render Prep Script",
       "norm_label": "prepare a single short's remotion render data: copies its narration audio, cold",
       "id": "productionstudio_workflows_prep_short_render_rationale_1"
@@ -1734,7 +1730,7 @@
       "source_file": "ProductionStudio/Documentation/HANDOFF_TO_CLAUDE_CODE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
+      "community": 10,
       "community_name": "Project Stack & Policies",
       "norm_label": "handoff_to_claude_code.md",
       "id": "productionstudio_documentation_handoff_to_claude_code"
@@ -1745,7 +1741,7 @@
       "source_file": "ProductionStudio/Documentation/HANDOFF_TO_CLAUDE_CODE.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
+      "community": 10,
       "community_name": "Project Stack & Policies",
       "norm_label": "handoff to claude code",
       "id": "productionstudio_documentation_handoff_to_claude_code_handoff_to_claude_code"
@@ -1756,7 +1752,7 @@
       "source_file": "ProductionStudio/Documentation/HANDOFF_TO_CLAUDE_CODE.md",
       "source_location": "L7",
       "_origin": "ast",
-      "community": 7,
+      "community": 10,
       "community_name": "Project Stack & Policies",
       "norm_label": "build order",
       "id": "productionstudio_documentation_handoff_to_claude_code_build_order"
@@ -1767,7 +1763,7 @@
       "source_file": "ProductionStudio/Documentation/HANDOFF_TO_CLAUDE_CODE.md",
       "source_location": "L62",
       "_origin": "ast",
-      "community": 7,
+      "community": 10,
       "community_name": "Project Stack & Policies",
       "norm_label": "what not to do",
       "id": "productionstudio_documentation_handoff_to_claude_code_what_not_to_do"
@@ -1778,7 +1774,7 @@
       "source_file": "ProductionStudio/README.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
+      "community": 10,
       "community_name": "Project Stack & Policies",
       "norm_label": "readme.md",
       "id": "productionstudio_readme"
@@ -1789,7 +1785,7 @@
       "source_file": "ProductionStudio/README.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
+      "community": 10,
       "community_name": "Project Stack & Policies",
       "norm_label": "fatal affairs \u2014 production studio",
       "id": "productionstudio_readme_fatal_affairs_production_studio"
@@ -1800,7 +1796,7 @@
       "source_file": "ProductionStudio/README.md",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 7,
+      "community": 10,
       "community_name": "Project Stack & Policies",
       "norm_label": "current status (2026-07-21 \u2014 read this before assuming anything below is still the plan)",
       "id": "productionstudio_readme_current_status_2026_07_21_read_this_before_assuming_anything_below_is_still_the_plan"
@@ -1811,7 +1807,7 @@
       "source_file": "ProductionStudio/README.md",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 7,
+      "community": 10,
       "community_name": "Project Stack & Policies",
       "norm_label": "philosophy",
       "id": "productionstudio_readme_philosophy"
@@ -1822,7 +1818,7 @@
       "source_file": "ProductionStudio/README.md",
       "source_location": "L45",
       "_origin": "ast",
-      "community": 7,
+      "community": 10,
       "community_name": "Project Stack & Policies",
       "norm_label": "structure",
       "id": "productionstudio_readme_structure"
@@ -1833,7 +1829,7 @@
       "source_file": "ProductionStudio/README.md",
       "source_location": "L59",
       "_origin": "ast",
-      "community": 7,
+      "community": 10,
       "community_name": "Project Stack & Policies",
       "norm_label": "where this came from / what it is not",
       "id": "productionstudio_readme_where_this_came_from_what_it_is_not"
@@ -1844,7 +1840,7 @@
       "source_file": "ProductionStudio/README.md",
       "source_location": "L67",
       "_origin": "ast",
-      "community": 7,
+      "community": 10,
       "community_name": "Project Stack & Policies",
       "norm_label": "quick start for whoever builds this (claude code or a human dev)",
       "id": "productionstudio_readme_quick_start_for_whoever_builds_this_claude_code_or_a_human_dev"
@@ -1866,7 +1862,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 18,
+      "community": 20,
       "community_name": "Test Plan",
       "norm_label": "test plan",
       "id": "productionstudio_tests_test_plan_test_plan"
@@ -1877,7 +1873,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 18,
+      "community": 20,
       "community_name": "Test Plan",
       "norm_label": "stage 1 \u2014 agents in isolation",
       "id": "productionstudio_tests_test_plan_stage_1_agents_in_isolation"
@@ -1888,7 +1884,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 18,
+      "community": 20,
       "community_name": "Test Plan",
       "norm_label": "stage 2 \u2014 tools in isolation",
       "id": "productionstudio_tests_test_plan_stage_2_tools_in_isolation"
@@ -1899,7 +1895,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 18,
+      "community": 20,
       "community_name": "Test Plan",
       "norm_label": "stage 3 \u2014 two-node links",
       "id": "productionstudio_tests_test_plan_stage_3_two_node_links"
@@ -1910,7 +1906,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 18,
+      "community": 20,
       "community_name": "Test Plan",
       "norm_label": "stage 4 \u2014 full chain, one real case, dry-run publish",
       "id": "productionstudio_tests_test_plan_stage_4_full_chain_one_real_case_dry_run_publish"
@@ -1921,7 +1917,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L71",
       "_origin": "ast",
-      "community": 18,
+      "community": 20,
       "community_name": "Test Plan",
       "norm_label": "stage 5 \u2014 first real publish",
       "id": "productionstudio_tests_test_plan_stage_5_first_real_publish"
@@ -1932,7 +1928,7 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md",
       "source_location": "L75",
       "_origin": "ast",
-      "community": 18,
+      "community": 20,
       "community_name": "Test Plan",
       "norm_label": "regression check",
       "id": "productionstudio_tests_test_plan_regression_check"
@@ -1954,7 +1950,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 16,
+      "community": 18,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "tool: elevenlabs_voice_tool",
       "id": "productionstudio_tools_elevenlabs_voice_tool_tool_elevenlabs_voice_tool"
@@ -1965,7 +1961,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 16,
+      "community": 18,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "purpose",
       "id": "productionstudio_tools_elevenlabs_voice_tool_purpose"
@@ -1976,7 +1972,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 16,
+      "community": 18,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "interface",
       "id": "productionstudio_tools_elevenlabs_voice_tool_interface"
@@ -1987,7 +1983,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 16,
+      "community": 18,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "default provider notes (elevenlabs, verify against current docs before building)",
       "id": "productionstudio_tools_elevenlabs_voice_tool_default_provider_notes_elevenlabs_verify_against_current_docs_before_building"
@@ -1998,7 +1994,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L47",
       "_origin": "ast",
-      "community": 16,
+      "community": 18,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "implementation notes",
       "id": "productionstudio_tools_elevenlabs_voice_tool_implementation_notes"
@@ -2009,7 +2005,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L53",
       "_origin": "ast",
-      "community": 16,
+      "community": 18,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "stage 1/2 live-test result (2026-07-19)",
       "id": "productionstudio_tools_elevenlabs_voice_tool_stage_1_2_live_test_result_2026_07_19"
@@ -2020,7 +2016,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L87",
       "_origin": "ast",
-      "community": 16,
+      "community": 18,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "background music \u2014 stage 2 live-test attempt (2026-07-19)",
       "id": "productionstudio_tools_elevenlabs_voice_tool_background_music_stage_2_live_test_attempt_2026_07_19"
@@ -2031,7 +2027,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L112",
       "_origin": "ast",
-      "community": 16,
+      "community": 18,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "real-timestamp captioning \u2014 fixed endpoint choice (2026-07-21)",
       "id": "productionstudio_tools_elevenlabs_voice_tool_real_timestamp_captioning_fixed_endpoint_choice_2026_07_21"
@@ -2042,7 +2038,7 @@
       "source_file": "ProductionStudio/Tools/elevenlabs_voice_tool.md",
       "source_location": "L126",
       "_origin": "ast",
-      "community": 16,
+      "community": 18,
       "community_name": "Tool: elevenlabs_voice_tool",
       "norm_label": "gap closure (2026-07-19) \u2014 concrete fix for the two shape mismatches above",
       "id": "productionstudio_tools_elevenlabs_voice_tool_gap_closure_2026_07_19_concrete_fix_for_the_two_shape_mismatches_above"
@@ -2064,7 +2060,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 17,
+      "community": 19,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "tool: image_gen_tool",
       "id": "productionstudio_tools_image_gen_tool_tool_image_gen_tool"
@@ -2075,7 +2071,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 17,
+      "community": 19,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "purpose",
       "id": "productionstudio_tools_image_gen_tool_purpose"
@@ -2086,7 +2082,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L8",
       "_origin": "ast",
-      "community": 17,
+      "community": 19,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "interface",
       "id": "productionstudio_tools_image_gen_tool_interface"
@@ -2097,7 +2093,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 17,
+      "community": 19,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "default provider: fal.ai + flux",
       "id": "productionstudio_tools_image_gen_tool_default_provider_fal_ai_flux"
@@ -2108,7 +2104,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 17,
+      "community": 19,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "stage 2 live-test result (2026-07-19)",
       "id": "productionstudio_tools_image_gen_tool_stage_2_live_test_result_2026_07_19"
@@ -2119,7 +2115,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L49",
       "_origin": "ast",
-      "community": 17,
+      "community": 19,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "fallback / secondary providers (keep the interface provider-agnostic)",
       "id": "productionstudio_tools_image_gen_tool_fallback_secondary_providers_keep_the_interface_provider_agnostic"
@@ -2130,7 +2126,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L68",
       "_origin": "ast",
-      "community": 17,
+      "community": 19,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "stage 4 live-test result (2026-07-20/21) \u2014 confirmed working through n8n, not just direct python",
       "id": "productionstudio_tools_image_gen_tool_stage_4_live_test_result_2026_07_20_21_confirmed_working_through_n8n_not_just_direct_python"
@@ -2141,7 +2137,7 @@
       "source_file": "ProductionStudio/Tools/image_gen_tool.md",
       "source_location": "L76",
       "_origin": "ast",
-      "community": 17,
+      "community": 19,
       "community_name": "Tool: image_gen_tool",
       "norm_label": "implementation notes",
       "id": "productionstudio_tools_image_gen_tool_implementation_notes"
@@ -2155,7 +2151,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "kickoff_prompt.md",
       "community_name": "Project Stack & Policies",
       "id": "kickoff_prompt"
@@ -2169,7 +2165,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "fact verification agent",
       "community_name": "Project Stack & Policies",
       "id": "productionstudio_agents_fact_verification_agent"
@@ -2211,7 +2207,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 7,
       "norm_label": "publishing agent",
       "community_name": "Project Stack & Policies",
       "id": "productionstudio_agents_publishing_agent"
@@ -2231,34 +2227,6 @@
       "id": "productionstudio_agents_scene_planner_agent"
     },
     {
-      "label": "SEO Agent",
-      "file_type": "document",
-      "source_file": "ProductionStudio/Agents/seo_agent.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 7,
-      "norm_label": "seo agent",
-      "community_name": "Production Agents & Style Rules",
-      "id": "productionstudio_agents_seo_agent"
-    },
-    {
-      "label": "Shorts Agent",
-      "file_type": "document",
-      "source_file": "ProductionStudio/Agents/shorts_agent.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 0,
-      "norm_label": "shorts agent",
-      "community_name": "Production Agents & Style Rules",
-      "id": "productionstudio_agents_shorts_agent"
-    },
-    {
       "label": "Story Agent",
       "file_type": "document",
       "source_file": "ProductionStudio/Agents/story_agent.md",
@@ -2267,7 +2235,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "story agent",
       "community_name": "Project Stack & Policies",
       "id": "productionstudio_agents_story_agent"
@@ -2351,7 +2319,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 7,
       "norm_label": "brendan banfield case checklist",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "productionstudio_cases_brendan_banfield_double_murder_checklist"
@@ -2365,7 +2333,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 7,
       "norm_label": "brendan banfield case imageprompts",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "productionstudio_cases_brendan_banfield_double_murder_imageprompts"
@@ -2379,7 +2347,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 7,
       "norm_label": "brendan banfield case personphotos",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "productionstudio_cases_brendan_banfield_double_murder_personphotos"
@@ -2393,7 +2361,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 7,
       "norm_label": "brendan banfield case publishplan",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "productionstudio_cases_brendan_banfield_double_murder_publishplan"
@@ -2476,7 +2444,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "fatal-affairs-project-brief.md (referenced, not read this chunk)",
       "community_name": "Project Stack & Policies",
       "id": "fatal_affairs_project_brief"
@@ -2490,7 +2458,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 7,
       "norm_label": "brendan banfield case scenelist.json (referenced, not read this chunk)",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "productionstudio_cases_brendan_banfield_double_murder_scenelist"
@@ -2504,7 +2472,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 7,
       "norm_label": "human-gated publishing rule (rationale: publishing is irreversible/public, no exceptions even in a fully automated pipeline)",
       "community_name": "Project Stack & Policies",
       "id": "concept_human_gated_publishing"
@@ -2524,20 +2492,6 @@
       "id": "concept_tool_reuse_policy"
     },
     {
-      "label": "No-clickbait-lies policy (rationale: true-crime audiences disengage from fake mystery/oversold claims)",
-      "file_type": "rationale",
-      "source_file": "ProductionStudio/Agents/seo_agent.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 0,
-      "norm_label": "no-clickbait-lies policy (rationale: true-crime audiences disengage from fake mystery/oversold claims)",
-      "community_name": "Production Agents & Style Rules",
-      "id": "concept_no_clickbait_lies_policy"
-    },
-    {
       "label": "Shorts release pacing rule: one strong short day-of, remaining shorts one per day after (rationale: avoid dumping all 5 shorts on day one)",
       "file_type": "rationale",
       "source_file": "ProductionStudio/Agents/publishing_agent.md",
@@ -2546,7 +2500,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 7,
       "norm_label": "shorts release pacing rule: one strong short day-of, remaining shorts one per day after (rationale: avoid dumping all 5 shorts on day one)",
       "community_name": "Project Stack & Policies",
       "id": "concept_shorts_release_pacing"
@@ -2602,7 +2556,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "fixed 10-beat script structure: hook, conflict, mystery, escalation, evidence, twist, investigation, final reveal, aftermath, question",
       "community_name": "Project Stack & Policies",
       "id": "concept_fixed_10_beat_structure"
@@ -2616,7 +2570,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 7,
       "norm_label": "track 1 mugshot redaction policy (haar-cascade face+eye detection, eyes_blacked, raw file kept only for verification, never used in output)",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "concept_thumbnail_redaction_policy"
@@ -2630,7 +2584,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 7,
       "norm_label": "brendan banfield",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "entity_brendan_banfield"
@@ -2644,7 +2598,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 7,
       "norm_label": "christine banfield",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "entity_christine_banfield"
@@ -2658,7 +2612,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 7,
       "norm_label": "joseph ryan",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "entity_joseph_ryan"
@@ -2672,7 +2626,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 7,
       "norm_label": "juliana peres magalhaes",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "entity_juliana_peres_magalhaes"
@@ -2686,7 +2640,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "shanna golyar",
       "community_name": "Project Stack & Policies",
       "id": "entity_shanna_golyar"
@@ -2700,7 +2654,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 7,
       "norm_label": "fairfax county police department",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "entity_fairfax_county_police_department"
@@ -2714,7 +2668,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 14,
+      "community": 7,
       "norm_label": "wjla (news outlet)",
       "community_name": "Brendan Banfield Case & Research Policy",
       "id": "entity_wjla"
@@ -3302,7 +3256,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "kouri richins case \u2014 checklist.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_checklist"
@@ -3316,7 +3270,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "kouri richins case \u2014 factcheck.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_factcheck"
@@ -3330,7 +3284,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "kouri richins case \u2014 imageprompts.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_imageprompts"
@@ -3344,7 +3298,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "kouri richins case \u2014 publishplan.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_publishplan"
@@ -3358,7 +3312,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "kouri richins case \u2014 seo.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_seo"
@@ -3372,7 +3326,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "kouri richins case \u2014 script.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_script"
@@ -3386,7 +3340,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "kouri richins case \u2014 shorts.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_shorts"
@@ -3400,7 +3354,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "kouri richins case \u2014 sources.md",
       "community_name": "Research Agent",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_sources"
@@ -3414,7 +3368,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "kouri richins case \u2014 thumbnail.md",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_thumbnail"
@@ -3428,7 +3382,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "kouri richins case \u2014 voiceover.txt",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_voiceover"
@@ -3442,7 +3396,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "sonam raghuvanshi case \u2014 sources.md",
       "community_name": "Research Agent",
       "id": "productionstudio_cases_sonam_raghuvanshi_honeymoon_murder_sources"
@@ -3456,7 +3410,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "documentation \u2014 self_improvement_process.md",
       "community_name": "Project Stack & Policies",
       "id": "productionstudio_documentation_self_improvement_process"
@@ -3470,7 +3424,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "kouri richins",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_sources_kouri_richins"
@@ -3484,7 +3438,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "eric richins",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_sources_eric_richins"
@@ -3498,7 +3452,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "robert josh grossman",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_sources_robert_josh_grossman"
@@ -3512,7 +3466,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "carmen lauber",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_sources_carmen_lauber"
@@ -3526,7 +3480,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "\"are you with me?\" (children's grief book)",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_sources_are_you_with_me_book"
@@ -3540,7 +3494,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "judge richard mrazik",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_sources_judge_richard_mrazik"
@@ -3554,7 +3508,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "file-based self-improvement loop",
       "community_name": "Project Stack & Policies",
       "id": "productionstudio_documentation_self_improvement_process_self_improvement_loop"
@@ -3568,7 +3522,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "flux schnell on-screen text rendering limitation",
       "community_name": "Kouri Richins Case Package",
       "id": "productionstudio_cases_kouri_richins_fentanyl_murder_checklist_flux_text_rendering_limitation"
@@ -3610,7 +3564,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 0,
       "norm_label": "seo export & github sync stage 2 test",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tests_stage2_seo_export_and_github_sync_test"
@@ -3694,7 +3648,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 0,
       "norm_label": "github sync tool",
       "community_name": "Project Stack & Policies",
       "id": "productionstudio_tools_github_sync_tool"
@@ -3708,7 +3662,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 0,
       "norm_label": "seo export tool",
       "community_name": "Production Agents & Style Rules",
       "id": "productionstudio_tools_seo_export_tool"
@@ -3736,7 +3690,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 24,
+      "community": 26,
       "norm_label": "yt-studio readme",
       "community_name": "Repo Root README",
       "id": "readme"
@@ -3890,7 +3844,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "template \u2014 checklist.md",
       "id": "productionstudio_templates_checklist"
     },
@@ -3916,7 +3870,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 0,
       "norm_label": "template \u2014 seo.md",
       "id": "productionstudio_templates_seo"
     },
@@ -3942,7 +3896,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 8,
       "norm_label": "template \u2014 shorts.md",
       "id": "productionstudio_templates_shorts"
     },
@@ -3955,7 +3909,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "template \u2014 sources.md",
       "id": "productionstudio_templates_sources"
     },
@@ -3968,7 +3922,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 7,
+      "community": 10,
       "norm_label": "template \u2014 successrules.md",
       "id": "productionstudio_templates_successrules"
     },
@@ -3981,7 +3935,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 8,
       "norm_label": "template \u2014 thumbnail.md",
       "id": "productionstudio_templates_thumbnail"
     },
@@ -4768,7 +4722,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 17,
       "norm_label": "fatal affairs channel trailer (~60s movie-trailer-style channel preview, replaces unbranded preview; rendered 2026-07-25 at 30.1s/903 frames, awaiting channel owner review before manual upload)",
       "id": "productionstudio_channel_trailer_channel_trailer"
     },
@@ -4781,7 +4735,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 17,
       "norm_label": "fatal affairs (channel name, slogan \"every affair has a story. some end in murder.\")",
       "id": "productionstudio_channel_trailer_fatal_affairs"
     },
@@ -4794,7 +4748,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "brian voice, elevenlabs voiceid npczcjzi2devnbz1zqrb (\"deep, resonant and comforting\", american, movie-trailer register) \u2014 chosen deliberately distinct from the standard case-narration voice for a more theatrical register",
       "id": "productionstudio_channel_trailer_brian_voice"
     },
@@ -4807,7 +4761,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
+      "community": 22,
       "norm_label": "standard case-narration voice, elevenlabs voiceid wschtcaxditjlphheyrm, used inside actual case videos",
       "id": "productionstudio_channel_trailer_case_narration_voice"
     },
@@ -4820,7 +4774,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 17,
       "norm_label": "config/config.schema.json (source of channel name, slogan, colors, fonts used in trailer)",
       "id": "productionstudio_channel_trailer_config_schema"
     },
@@ -4833,7 +4787,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 17,
       "norm_label": "banfield case (previously produced video; source of the real redacted mugshot reused in the trailer under the newsworthy-exception analysis)",
       "id": "productionstudio_channel_trailer_banfield_case"
     },
@@ -4859,7 +4813,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 17,
       "norm_label": "kouri richins fentanyl-murder case (already-produced video whose stills are reused as trailer collage images, cleared rights)",
       "id": "productionstudio_channel_trailer_kouri_richins_case"
     },
@@ -4872,7 +4826,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 17,
       "norm_label": "monica sementilli hairdresser-murder case (already-produced video whose stills are reused as trailer collage images, cleared rights)",
       "id": "productionstudio_channel_trailer_monica_sementilli_case"
     },
@@ -4885,7 +4839,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 17,
       "norm_label": "fal.ai flux schnell image-generation pipeline (used for the two freshly-generated generic trailer images, corkboard.png and crimetape_rain.png, chosen over third-party stock/footage specifically to avoid a new ungoverned rights question for a channel-level asset)",
       "id": "productionstudio_channel_trailer_flux_schnell_pipeline"
     },
@@ -4898,7 +4852,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 17,
       "norm_label": "assets/renders/fatal-affairs-channel-trailer.mp4 (gitignored render, 1920x1080, 903 frames @ 30fps, 30.1s, spot-checked cold open/mugshot beat/logo-cta sequence)",
       "id": "productionstudio_channel_trailer_render_output"
     },
@@ -4911,289 +4865,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 15,
+      "community": 17,
       "norm_label": "youtube studio channel-trailer upload slot \u2014 uploading a channel trailer is a manual step in youtube's own ui, explicitly not automated by this pipeline",
       "id": "productionstudio_channel_trailer_youtube_studio"
-    },
-    {
-      "label": "youtube_agent.py",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "youtube_agent.py",
-      "id": "productionstudio_workflows_youtube_agent"
-    },
-    {
-      "label": "_find_client_secret_file()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L59",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "_find_client_secret_file()",
-      "id": "productionstudio_workflows_youtube_agent_find_client_secret_file"
-    },
-    {
-      "label": "get_authenticated_service()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L69",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "get_authenticated_service()",
-      "id": "productionstudio_workflows_youtube_agent_get_authenticated_service"
-    },
-    {
-      "label": "cmd_auth()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L90",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "cmd_auth()",
-      "id": "productionstudio_workflows_youtube_agent_cmd_auth"
-    },
-    {
-      "label": "cmd_channel_info()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L102",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "cmd_channel_info()",
-      "id": "productionstudio_workflows_youtube_agent_cmd_channel_info"
-    },
-    {
-      "label": "prepare_upload()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L115",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "prepare_upload()",
-      "id": "productionstudio_workflows_youtube_agent_prepare_upload"
-    },
-    {
-      "label": "set_thumbnail()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L153",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "set_thumbnail()",
-      "id": "productionstudio_workflows_youtube_agent_set_thumbnail"
-    },
-    {
-      "label": "update_metadata()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L159",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "update_metadata()",
-      "id": "productionstudio_workflows_youtube_agent_update_metadata"
-    },
-    {
-      "label": "list_uploads()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L186",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "list_uploads()",
-      "id": "productionstudio_workflows_youtube_agent_list_uploads"
-    },
-    {
-      "label": "confirm_publish()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L200",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "confirm_publish()",
-      "id": "productionstudio_workflows_youtube_agent_confirm_publish"
-    },
-    {
-      "label": "list_playlists()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L227",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "list_playlists()",
-      "id": "productionstudio_workflows_youtube_agent_list_playlists"
-    },
-    {
-      "label": "find_playlist_by_title()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L236",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "find_playlist_by_title()",
-      "id": "productionstudio_workflows_youtube_agent_find_playlist_by_title"
-    },
-    {
-      "label": "get_or_create_playlist()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L245",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "get_or_create_playlist()",
-      "id": "productionstudio_workflows_youtube_agent_get_or_create_playlist"
-    },
-    {
-      "label": "add_video_to_playlist()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L263",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "add_video_to_playlist()",
-      "id": "productionstudio_workflows_youtube_agent_add_video_to_playlist"
-    },
-    {
-      "label": "delete_playlist()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L278",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "delete_playlist()",
-      "id": "productionstudio_workflows_youtube_agent_delete_playlist"
-    },
-    {
-      "label": "list_playlist_items()",
-      "file_type": "code",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L285",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "list_playlist_items()",
-      "id": "productionstudio_workflows_youtube_agent_list_playlist_items"
-    },
-    {
-      "label": "Official YouTube Data API v3 wrapper - the single module every future publish go",
-      "file_type": "rationale",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "official youtube data api v3 wrapper - the single module every future publish go",
-      "id": "productionstudio_workflows_youtube_agent_rationale_1"
-    },
-    {
-      "label": "Loads cached credentials, refreshing if expired. Raises with clear instructions",
-      "file_type": "rationale",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L70",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "loads cached credentials, refreshing if expired. raises with clear instructions",
-      "id": "productionstudio_workflows_youtube_agent_rationale_70"
-    },
-    {
-      "label": "One-time interactive OAuth consent flow. Opens a local browser window - the",
-      "file_type": "rationale",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L91",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "one-time interactive oauth consent flow. opens a local browser window - the",
-      "id": "productionstudio_workflows_youtube_agent_rationale_91"
-    },
-    {
-      "label": "Read-only sanity check that the OAuth token actually works.",
-      "file_type": "rationale",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L103",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "read-only sanity check that the oauth token actually works.",
-      "id": "productionstudio_workflows_youtube_agent_rationale_103"
-    },
-    {
-      "label": "Uploads the video as PRIVATE with full metadata. Returns the video_id (the",
-      "file_type": "rationale",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L117",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "uploads the video as private with full metadata. returns the video_id (the",
-      "id": "productionstudio_workflows_youtube_agent_rationale_117"
-    },
-    {
-      "label": "Edits title/description/tags/category on an existing video, public or not.",
-      "file_type": "rationale",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L160",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "edits title/description/tags/category on an existing video, public or not.",
-      "id": "productionstudio_workflows_youtube_agent_rationale_160"
-    },
-    {
-      "label": "Read-only: lists the channel's most recent uploads (any privacy status).",
-      "file_type": "rationale",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L187",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "read-only: lists the channel's most recent uploads (any privacy status).",
-      "id": "productionstudio_workflows_youtube_agent_rationale_187"
-    },
-    {
-      "label": "THE ONLY function in this module that makes a video visible to anyone besides th",
-      "file_type": "rationale",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L201",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "the only function in this module that makes a video visible to anyone besides th",
-      "id": "productionstudio_workflows_youtube_agent_rationale_201"
-    },
-    {
-      "label": "Read-only: lists the channel's existing playlists.",
-      "file_type": "rationale",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L228",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "read-only: lists the channel's existing playlists.",
-      "id": "productionstudio_workflows_youtube_agent_rationale_228"
-    },
-    {
-      "label": "Idempotent: returns the existing playlist's id if one with this exact title",
-      "file_type": "rationale",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L246",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "idempotent: returns the existing playlist's id if one with this exact title",
-      "id": "productionstudio_workflows_youtube_agent_rationale_246"
-    },
-    {
-      "label": "Idempotent-ish: YouTube allows the same video in a playlist only once in practic",
-      "file_type": "rationale",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L264",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "idempotent-ish: youtube allows the same video in a playlist only once in practic",
-      "id": "productionstudio_workflows_youtube_agent_rationale_264"
-    },
-    {
-      "label": "Removes a playlist. Does NOT delete the videos in it - only the grouping.",
-      "file_type": "rationale",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L279",
-      "_origin": "ast",
-      "community": 5,
-      "norm_label": "removes a playlist. does not delete the videos in it - only the grouping.",
-      "id": "productionstudio_workflows_youtube_agent_rationale_279"
     },
     {
       "label": "Tools/youtube_publish_tool.md",
@@ -5577,71 +5251,6 @@
       "id": "productionstudio_cases_monica_sementilli_hairdresser_murder_publishplan_scheduling_update"
     },
     {
-      "label": "Fatal Affairs true-crime YouTube channel production studio (CLAUDE.md project overview)",
-      "file_type": "document",
-      "source_file": "CLAUDE.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "claude_project_overview",
-      "community": 20,
-      "norm_label": "fatal affairs true-crime youtube channel production studio (claude.md project overview)"
-    },
-    {
-      "label": "Phase 1 (manual production, 10 test videos) vs Phase 2 (full n8n automation) boundary \u2014 Phase 2 only starts on explicit request",
-      "file_type": "concept",
-      "source_file": "CLAUDE.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "claude_phase1_phase2",
-      "community": 20,
-      "norm_label": "phase 1 (manual production, 10 test videos) vs phase 2 (full n8n automation) boundary \u2014 phase 2 only starts on explicit request"
-    },
-    {
-      "label": "Hard rule: real photos are mandatory per case, not optional (escalated 2026-07-26). Run both mugshot_fetch_tool tracks before AI Image Generation fills gaps; never ship a case 100% AI-generated. Rationale: real downloaded crime-scene/court photos are concrete evidence the channel is not YouTube's targeted 2026 'AI slop' (mass-produced template content), which is enforced under a three-strike policy. Every identifiable real person gets eyes-blacked/blurred. If access is blocked, document the attempt in PersonPhotos.md \u2014 never silently skip.",
-      "file_type": "concept",
-      "source_file": "CLAUDE.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "claude_real_photos_mandatory",
-      "community": 6,
-      "norm_label": "hard rule: real photos are mandatory per case, not optional (escalated 2026-07-26). run both mugshot_fetch_tool tracks before ai image generation fills gaps; never ship a case 100% ai-generated. rationale: real downloaded crime-scene/court photos are concrete evidence the channel is not youtube's targeted 2026 'ai slop' (mass-produced template content), which is enforced under a three-strike policy. every identifiable real person gets eyes-blacked/blurred. if access is blocked, document the attempt in personphotos.md \u2014 never silently skip."
-    },
-    {
-      "label": "Hard rule: check YouTube Studio's 'Altered or synthetic content' disclosure toggle before every publish for videos with realistic AI-generated scenes \u2014 a human click in Studio, not something the API sets",
-      "file_type": "concept",
-      "source_file": "CLAUDE.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "claude_synthetic_disclosure_toggle",
-      "community": 6,
-      "norm_label": "hard rule: check youtube studio's 'altered or synthetic content' disclosure toggle before every publish for videos with realistic ai-generated scenes \u2014 a human click in studio, not something the api sets"
-    },
-    {
-      "label": "graphify treated as the project's actual memory; bare 'graphify update .' is AST-only and skips Markdown/JSON case docs \u2014 full '/graphify --update' semantic flow required after editing case files, agent specs, or tool specs",
-      "file_type": "concept",
-      "source_file": "CLAUDE.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "claude_graphify_rules",
-      "community": 20,
-      "norm_label": "graphify treated as the project's actual memory; bare 'graphify update .' is ast-only and skips markdown/json case docs \u2014 full '/graphify --update' semantic flow required after editing case files, agent specs, or tool specs"
-    },
-    {
       "label": "Quality Control Agent \u2014 final gate before publishing, aggregates all prior stage outputs into Templates/Checklist.md; only a pass allows Publishing Agent to proceed",
       "file_type": "concept",
       "source_file": "ProductionStudio/Agents/quality_control_agent.md",
@@ -5650,9 +5259,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_agents_quality_control_agent_overview",
-      "community": 6,
-      "norm_label": "quality control agent \u2014 final gate before publishing, aggregates all prior stage outputs into templates/checklist.md; only a pass allows publishing agent to proceed"
+      "community": 15,
+      "norm_label": "quality control agent \u2014 final gate before publishing, aggregates all prior stage outputs into templates/checklist.md; only a pass allows publishing agent to proceed",
+      "id": "productionstudio_agents_quality_control_agent_overview"
     },
     {
       "label": "New QC check (added 2026-07-26, mandatory): case must have PersonPhotos.md documenting a real attempt at both mugshot_fetch_tool tracks. Zero real photos with no documented access-wall reason is a fail, not a warning \u2014 concrete evidence the video isn't YouTube's targeted 'AI slop'. Also confirms every identifiable real photo has eyes-blacked/blurred redaction applied.",
@@ -5663,9 +5272,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_agents_quality_control_agent_real_photo_attempt_check",
-      "community": 6,
-      "norm_label": "new qc check (added 2026-07-26, mandatory): case must have personphotos.md documenting a real attempt at both mugshot_fetch_tool tracks. zero real photos with no documented access-wall reason is a fail, not a warning \u2014 concrete evidence the video isn't youtube's targeted 'ai slop'. also confirms every identifiable real photo has eyes-blacked/blurred redaction applied."
+      "community": 16,
+      "norm_label": "new qc check (added 2026-07-26, mandatory): case must have personphotos.md documenting a real attempt at both mugshot_fetch_tool tracks. zero real photos with no documented access-wall reason is a fail, not a warning \u2014 concrete evidence the video isn't youtube's targeted 'ai slop'. also confirms every identifiable real photo has eyes-blacked/blurred redaction applied.",
+      "id": "productionstudio_agents_quality_control_agent_real_photo_attempt_check"
     },
     {
       "label": "New QC check: synthetic-content disclosure reminder \u2014 flags for Publishing Agent that YouTube Studio's 'Altered or synthetic content' toggle needs a human decision at upload time for videos with realistic AI-generated scenes; QC agent cannot set it itself, only ensures it isn't forgotten",
@@ -5676,9 +5285,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_agents_quality_control_agent_synthetic_disclosure_reminder",
-      "community": 6,
-      "norm_label": "new qc check: synthetic-content disclosure reminder \u2014 flags for publishing agent that youtube studio's 'altered or synthetic content' toggle needs a human decision at upload time for videos with realistic ai-generated scenes; qc agent cannot set it itself, only ensures it isn't forgotten"
+      "community": 16,
+      "norm_label": "new qc check: synthetic-content disclosure reminder \u2014 flags for publishing agent that youtube studio's 'altered or synthetic content' toggle needs a human decision at upload time for videos with realistic ai-generated scenes; qc agent cannot set it itself, only ensures it isn't forgotten",
+      "id": "productionstudio_agents_quality_control_agent_synthetic_disclosure_reminder"
     },
     {
       "label": "Stage 3 link fix (2026-07-20): output field renamed from 'status' to 'checklist_status' to match Publishing Agent's expected input field exactly",
@@ -5689,9 +5298,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_agents_quality_control_agent_checklist_status_field",
-      "community": 6,
-      "norm_label": "stage 3 link fix (2026-07-20): output field renamed from 'status' to 'checklist_status' to match publishing agent's expected input field exactly"
+      "community": 15,
+      "norm_label": "stage 3 link fix (2026-07-20): output field renamed from 'status' to 'checklist_status' to match publishing agent's expected input field exactly",
+      "id": "productionstudio_agents_quality_control_agent_checklist_status_field"
     },
     {
       "label": "Research Agent \u2014 given a case query, gathers raw factual material from priority sources and produces a structured case brief, never a finished script",
@@ -5702,9 +5311,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_agents_research_agent_overview",
-      "community": 6,
-      "norm_label": "research agent \u2014 given a case query, gathers raw factual material from priority sources and produces a structured case brief, never a finished script"
+      "community": 15,
+      "norm_label": "research agent \u2014 given a case query, gathers raw factual material from priority sources and produces a structured case brief, never a finished script",
+      "id": "productionstudio_agents_research_agent_overview"
     },
     {
       "label": "Trend tracking integration (broadened 2026-07-26): Research Agent must read Documentation/TREND_LOG.md before starting a new discovery run (avoid re-searching recently logged findings) and append any new finding after the run, in TREND_LOG.md's documented format",
@@ -5715,9 +5324,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_agents_research_agent_trend_log_integration",
-      "community": 6,
-      "norm_label": "trend tracking integration (broadened 2026-07-26): research agent must read documentation/trend_log.md before starting a new discovery run (avoid re-searching recently logged findings) and append any new finding after the run, in trend_log.md's documented format"
+      "community": 15,
+      "norm_label": "trend tracking integration (broadened 2026-07-26): research agent must read documentation/trend_log.md before starting a new discovery run (avoid re-searching recently logged findings) and append any new finding after the run, in trend_log.md's documented format",
+      "id": "productionstudio_agents_research_agent_trend_log_integration"
     },
     {
       "label": "Standing finding: international/lesser-known cases are the fastest-growing corner of the true-crime niche while this channel's catalog is 100% US cases so far \u2014 actively surface at least one non-US candidate per discovery run until that's no longer true",
@@ -5728,9 +5337,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_agents_research_agent_international_case_finding",
-      "community": 6,
-      "norm_label": "standing finding: international/lesser-known cases are the fastest-growing corner of the true-crime niche while this channel's catalog is 100% us cases so far \u2014 actively surface at least one non-us candidate per discovery run until that's no longer true"
+      "community": 25,
+      "norm_label": "standing finding: international/lesser-known cases are the fastest-growing corner of the true-crime niche while this channel's catalog is 100% us cases so far \u2014 actively surface at least one non-us candidate per discovery run until that's no longer true",
+      "id": "productionstudio_agents_research_agent_international_case_finding"
     },
     {
       "label": "Discovery sources (added 2026-07-19), distinct from the fixed citation-source list: DOJ/USAO/state AG press-release feeds and forums (r/TrueCrime, r/UnresolvedMysteries, Websleuths) are valid for finding candidates, though anything found still needs the full citation-source verification pass",
@@ -5741,9 +5350,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_agents_research_agent_discovery_sources",
-      "community": 6,
-      "norm_label": "discovery sources (added 2026-07-19), distinct from the fixed citation-source list: doj/usao/state ag press-release feeds and forums (r/truecrime, r/unresolvedmysteries, websleuths) are valid for finding candidates, though anything found still needs the full citation-source verification pass"
+      "community": 15,
+      "norm_label": "discovery sources (added 2026-07-19), distinct from the fixed citation-source list: doj/usao/state ag press-release feeds and forums (r/truecrime, r/unresolvedmysteries, websleuths) are valid for finding candidates, though anything found still needs the full citation-source verification pass",
+      "id": "productionstudio_agents_research_agent_discovery_sources"
     },
     {
       "label": "Covered-case memory (added 2026-07-21): Cases/covered_cases.json injected as 'covered_cases' input on every discovery run; never propose a case already on that list \u2014 added after the pipeline independently re-picked the already-in-production Banfield case",
@@ -5754,9 +5363,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_agents_research_agent_covered_case_memory",
-      "community": 6,
-      "norm_label": "covered-case memory (added 2026-07-21): cases/covered_cases.json injected as 'covered_cases' input on every discovery run; never propose a case already on that list \u2014 added after the pipeline independently re-picked the already-in-production banfield case"
+      "community": 15,
+      "norm_label": "covered-case memory (added 2026-07-21): cases/covered_cases.json injected as 'covered_cases' input on every discovery run; never propose a case already on that list \u2014 added after the pipeline independently re-picked the already-in-production banfield case",
+      "id": "productionstudio_agents_research_agent_covered_case_memory"
     },
     {
       "label": "Full agent pipeline: Research -> Fact Verification -> Story -> Scene Planner -> Voice/Image -> Video Assembly -> Shorts/Thumbnail/SEO -> Quality Control -> Publishing (human-gated)",
@@ -5767,9 +5376,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_documentation_architecture_pipeline",
-      "community": 6,
-      "norm_label": "full agent pipeline: research -> fact verification -> story -> scene planner -> voice/image -> video assembly -> shorts/thumbnail/seo -> quality control -> publishing (human-gated)"
+      "community": 15,
+      "norm_label": "full agent pipeline: research -> fact verification -> story -> scene planner -> voice/image -> video assembly -> shorts/thumbnail/seo -> quality control -> publishing (human-gated)",
+      "id": "productionstudio_documentation_architecture_pipeline"
     },
     {
       "label": "Real-photo sourcing decision (2026-07-19): mugshot_fetch_tool unblocked via the 'newsworthy' exception to right-of-publicity claims, two-track policy (person photos mandatorily redacted; non-person photos any source) \u2014 originally a preference to 'mix in real photos, don't ship 100% AI-generated'",
@@ -5780,9 +5389,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_documentation_architecture_mugshot_sourcing_decision",
-      "community": 6,
-      "norm_label": "real-photo sourcing decision (2026-07-19): mugshot_fetch_tool unblocked via the 'newsworthy' exception to right-of-publicity claims, two-track policy (person photos mandatorily redacted; non-person photos any source) \u2014 originally a preference to 'mix in real photos, don't ship 100% ai-generated'"
+      "community": 16,
+      "norm_label": "real-photo sourcing decision (2026-07-19): mugshot_fetch_tool unblocked via the 'newsworthy' exception to right-of-publicity claims, two-track policy (person photos mandatorily redacted; non-person photos any source) \u2014 originally a preference to 'mix in real photos, don't ship 100% ai-generated'",
+      "id": "productionstudio_documentation_architecture_mugshot_sourcing_decision"
     },
     {
       "label": "Real photos now MANDATORY per case, not optional mixing (escalated 2026-07-26). Rationale: YouTube's January 2026 enforcement wave specifically targets 'AI slop' (mass-produced, template-based AI content judged to add no original insight) under a three-strike system (warning -> 90-day Partner Program suspension -> permanent removal). Real, downloaded crime-scene/court photos are concrete evidence this studio is not template AI slop. Also requires checking YouTube Studio's 'Altered or synthetic content' disclosure toggle before every publish (confirmed 2026-07-26) \u2014 added to quality_control_agent.md / publishing_agent.md's pre-publish checklist.",
@@ -5793,9 +5402,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_documentation_architecture_real_photo_mandatory_escalation",
-      "community": 6,
-      "norm_label": "real photos now mandatory per case, not optional mixing (escalated 2026-07-26). rationale: youtube's january 2026 enforcement wave specifically targets 'ai slop' (mass-produced, template-based ai content judged to add no original insight) under a three-strike system (warning -> 90-day partner program suspension -> permanent removal). real, downloaded crime-scene/court photos are concrete evidence this studio is not template ai slop. also requires checking youtube studio's 'altered or synthetic content' disclosure toggle before every publish (confirmed 2026-07-26) \u2014 added to quality_control_agent.md / publishing_agent.md's pre-publish checklist."
+      "community": 16,
+      "norm_label": "real photos now mandatory per case, not optional mixing (escalated 2026-07-26). rationale: youtube's january 2026 enforcement wave specifically targets 'ai slop' (mass-produced, template-based ai content judged to add no original insight) under a three-strike system (warning -> 90-day partner program suspension -> permanent removal). real, downloaded crime-scene/court photos are concrete evidence this studio is not template ai slop. also requires checking youtube studio's 'altered or synthetic content' disclosure toggle before every publish (confirmed 2026-07-26) \u2014 added to quality_control_agent.md / publishing_agent.md's pre-publish checklist.",
+      "id": "productionstudio_documentation_architecture_real_photo_mandatory_escalation"
     },
     {
       "label": "Trend-grounding requirement (2026-07-19): Research Agent must run a real web search for genre_trend_notes every run rather than asserting trends from memory; a trending frame must never override the facts of a case",
@@ -5806,9 +5415,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_documentation_architecture_trend_grounding_requirement",
-      "community": 6,
-      "norm_label": "trend-grounding requirement (2026-07-19): research agent must run a real web search for genre_trend_notes every run rather than asserting trends from memory; a trending frame must never override the facts of a case"
+      "community": 15,
+      "norm_label": "trend-grounding requirement (2026-07-19): research agent must run a real web search for genre_trend_notes every run rather than asserting trends from memory; a trending frame must never override the facts of a case",
+      "id": "productionstudio_documentation_architecture_trend_grounding_requirement"
     },
     {
       "label": "Stage 3 link contracts (2026-07-20): 4 real schema mismatches found and fixed between adjacent agents, including QC's 'status' field renamed to 'checklist_status' to match Publishing Agent's expected input exactly",
@@ -5819,9 +5428,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_documentation_architecture_stage3_link_contracts",
-      "community": 6,
-      "norm_label": "stage 3 link contracts (2026-07-20): 4 real schema mismatches found and fixed between adjacent agents, including qc's 'status' field renamed to 'checklist_status' to match publishing agent's expected input exactly"
+      "community": 15,
+      "norm_label": "stage 3 link contracts (2026-07-20): 4 real schema mismatches found and fixed between adjacent agents, including qc's 'status' field renamed to 'checklist_status' to match publishing agent's expected input exactly",
+      "id": "productionstudio_documentation_architecture_stage3_link_contracts"
     },
     {
       "label": "Shorts Agent requirement (2026-07-19): new shorts_agent.md runs immediately after Video Assembly Agent, hard 45s cap per Short, one hook under 3 seconds, fixed karaoke caption style",
@@ -5832,74 +5441,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_documentation_architecture_shorts_agent_requirement",
-      "community": 6,
-      "norm_label": "shorts agent requirement (2026-07-19): new shorts_agent.md runs immediately after video assembly agent, hard 45s cap per short, one hook under 3 seconds, fixed karaoke caption style"
-    },
-    {
-      "label": "TREND_LOG.md \u2014 persistent cross-case memory of real trend research, distinct from per-case genre_trend_notes which is re-derived and discarded each run; started 2026-07-26",
-      "file_type": "concept",
-      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "productionstudio_documentation_trend_log_overview",
-      "community": 6,
-      "norm_label": "trend_log.md \u2014 persistent cross-case memory of real trend research, distinct from per-case genre_trend_notes which is re-derived and discarded each run; started 2026-07-26"
-    },
-    {
-      "label": "Finding (2026-07-26): true crime is one of YouTube's three highest-RPM niches in 2026 ($4-$12 per 1,000 views); single-case chronological 15-25 min format is the winning backbone; faceless channels perform exceptionally well \u2014 validates this channel's existing format, no change needed",
-      "file_type": "concept",
-      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "productionstudio_documentation_trend_log_rpm_format_finding",
-      "community": 6,
-      "norm_label": "finding (2026-07-26): true crime is one of youtube's three highest-rpm niches in 2026 ($4-$12 per 1,000 views); single-case chronological 15-25 min format is the winning backbone; faceless channels perform exceptionally well \u2014 validates this channel's existing format, no change needed"
-    },
-    {
-      "label": "Finding (2026-07-26): English-speaking true-crime audiences are saturated on US cases; international and lesser-known cases (Brazil, Japan, Eastern Europe) are the fastest-growing corner of the niche in 2026 \u2014 all 4 cases produced so far (Molly Watson, Banfield, Kouri Richins, Monica Sementilli) are US cases, a real untried growth lever; action: Research Agent should surface at least one non-US candidate in its next discovery run",
-      "file_type": "concept",
-      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "productionstudio_documentation_trend_log_international_growth_finding",
-      "community": 6,
-      "norm_label": "finding (2026-07-26): english-speaking true-crime audiences are saturated on us cases; international and lesser-known cases (brazil, japan, eastern europe) are the fastest-growing corner of the niche in 2026 \u2014 all 4 cases produced so far (molly watson, banfield, kouri richins, monica sementilli) are us cases, a real untried growth lever; action: research agent should surface at least one non-us candidate in its next discovery run"
-    },
-    {
-      "label": "Finding (2026-07-26): the revenue/subscriber-growth gap between high-CTR and low-CTR true-crime channels is measurable and driven specifically by thumbnail design quality \u2014 reinforces treating thumbnail_agent.md's output as a real growth lever; flagged as an area to watch, no process change yet",
-      "file_type": "concept",
-      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "productionstudio_documentation_trend_log_thumbnail_ctr_finding",
-      "community": 6,
-      "norm_label": "finding (2026-07-26): the revenue/subscriber-growth gap between high-ctr and low-ctr true-crime channels is measurable and driven specifically by thumbnail design quality \u2014 reinforces treating thumbnail_agent.md's output as a real growth lever; flagged as an area to watch, no process change yet"
-    },
-    {
-      "label": "Finding (2026-07-26): YouTube's January 2026 enforcement wave specifically targets 'AI slop' (mass-produced, template-based AI content judged to add no original insight) under a three-strike system (warning -> 90-day Partner Program suspension -> permanent removal); separately requires disclosure of 'altered or synthetic' realistic AI content at upload time. Direct platform-survival risk for a studio generating most imagery with AI \u2014 the concrete reason real photos became mandatory per case rather than a stylistic preference. Action: real-photo sourcing made mandatory per case; synthetic-content disclosure check added to quality_control_agent.md's pre-publish checklist, both done 2026-07-26.",
-      "file_type": "concept",
-      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "productionstudio_documentation_trend_log_ai_slop_policy_finding",
-      "community": 6,
-      "norm_label": "finding (2026-07-26): youtube's january 2026 enforcement wave specifically targets 'ai slop' (mass-produced, template-based ai content judged to add no original insight) under a three-strike system (warning -> 90-day partner program suspension -> permanent removal); separately requires disclosure of 'altered or synthetic' realistic ai content at upload time. direct platform-survival risk for a studio generating most imagery with ai \u2014 the concrete reason real photos became mandatory per case rather than a stylistic preference. action: real-photo sourcing made mandatory per case; synthetic-content disclosure check added to quality_control_agent.md's pre-publish checklist, both done 2026-07-26."
+      "community": 15,
+      "norm_label": "shorts agent requirement (2026-07-19): new shorts_agent.md runs immediately after video assembly agent, hard 45s cap per short, one hook under 3 seconds, fixed karaoke caption style",
+      "id": "productionstudio_documentation_architecture_shorts_agent_requirement"
     },
     {
       "label": "mugshot_fetch_tool \u2014 fetches real photos for a case to mix with Image Generation Agent's AI-generated stills, not to replace them; two tracks (person photos vs non-person photos) with different legal-risk rules",
@@ -5910,9 +5454,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_tools_mugshot_fetch_tool_overview",
-      "community": 6,
-      "norm_label": "mugshot_fetch_tool \u2014 fetches real photos for a case to mix with image generation agent's ai-generated stills, not to replace them; two tracks (person photos vs non-person photos) with different legal-risk rules"
+      "community": 16,
+      "norm_label": "mugshot_fetch_tool \u2014 fetches real photos for a case to mix with image generation agent's ai-generated stills, not to replace them; two tracks (person photos vs non-person photos) with different legal-risk rules",
+      "id": "productionstudio_tools_mugshot_fetch_tool_overview"
     },
     {
       "label": "Track 1 \u2014 person photos (mugshots, booking photos, court exhibits): official public-record sources only (sheriff/jail booking pages, state DOC inmate-lookup, court/prosecutor exhibits), mandatory eyes-blacked redaction, outlet-attribution exception for explicitly officially-credited republished mugshots",
@@ -5923,9 +5467,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_tools_mugshot_fetch_tool_track1_person_photos",
-      "community": 6,
-      "norm_label": "track 1 \u2014 person photos (mugshots, booking photos, court exhibits): official public-record sources only (sheriff/jail booking pages, state doc inmate-lookup, court/prosecutor exhibits), mandatory eyes-blacked redaction, outlet-attribution exception for explicitly officially-credited republished mugshots"
+      "community": 16,
+      "norm_label": "track 1 \u2014 person photos (mugshots, booking photos, court exhibits): official public-record sources only (sheriff/jail booking pages, state doc inmate-lookup, court/prosecutor exhibits), mandatory eyes-blacked redaction, outlet-attribution exception for explicitly officially-credited republished mugshots",
+      "id": "productionstudio_tools_mugshot_fetch_tool_track1_person_photos"
     },
     {
       "label": "Track 2 \u2014 non-person photos (buildings, evidence, locations): any source acceptable including news articles already in Sources.md, since no right-of-publicity is implicated when no person appears; no redaction needed; escalate to Track 1 rules if an identifiable person turns out to be in frame",
@@ -5936,9 +5480,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_tools_mugshot_fetch_tool_track2_scene_photos",
-      "community": 6,
-      "norm_label": "track 2 \u2014 non-person photos (buildings, evidence, locations): any source acceptable including news articles already in sources.md, since no right-of-publicity is implicated when no person appears; no redaction needed; escalate to track 1 rules if an identifiable person turns out to be in frame"
+      "community": 16,
+      "norm_label": "track 2 \u2014 non-person photos (buildings, evidence, locations): any source acceptable including news articles already in sources.md, since no right-of-publicity is implicated when no person appears; no redaction needed; escalate to track 1 rules if an identifiable person turns out to be in frame",
+      "id": "productionstudio_tools_mugshot_fetch_tool_track2_scene_photos"
     },
     {
       "label": "Redaction automated (confirmed 2026-07-20): OpenCV Haar cascades (frontalface then eye-detection restricted to upper 60% of face box) draw a black bar over both eyes in under a second, no external model/GPU needed; fallback to fixed proportional estimate if eye detection fails",
@@ -5949,9 +5493,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_tools_mugshot_fetch_tool_redaction_automation",
-      "community": 6,
-      "norm_label": "redaction automated (confirmed 2026-07-20): opencv haar cascades (frontalface then eye-detection restricted to upper 60% of face box) draw a black bar over both eyes in under a second, no external model/gpu needed; fallback to fixed proportional estimate if eye detection fails"
+      "community": 16,
+      "norm_label": "redaction automated (confirmed 2026-07-20): opencv haar cascades (frontalface then eye-detection restricted to upper 60% of face box) draw a black bar over both eyes in under a second, no external model/gpu needed; fallback to fixed proportional estimate if eye detection fails",
+      "id": "productionstudio_tools_mugshot_fetch_tool_redaction_automation"
     },
     {
       "label": "Escalated 2026-07-26 from 'recommended mixing' to 'mandatory attempt, every case, no exceptions.' Rationale: see ARCHITECTURE.md's 'Real photos are now MANDATORY per case' section (YouTube's 2026 AI-slop enforcement policy). Every new case must run both tracks before Image Generation fills gaps; genuinely blocked access must be a documented, checked outcome in PersonPhotos.md (per the Monica Sementilli standard), never silently skipped as the Kouri Richins production did.",
@@ -5962,22 +5506,539 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "productionstudio_tools_mugshot_fetch_tool_mandatory_escalation",
-      "community": 6,
-      "norm_label": "escalated 2026-07-26 from 'recommended mixing' to 'mandatory attempt, every case, no exceptions.' rationale: see architecture.md's 'real photos are now mandatory per case' section (youtube's 2026 ai-slop enforcement policy). every new case must run both tracks before image generation fills gaps; genuinely blocked access must be a documented, checked outcome in personphotos.md (per the monica sementilli standard), never silently skipped as the kouri richins production did."
+      "community": 16,
+      "norm_label": "escalated 2026-07-26 from 'recommended mixing' to 'mandatory attempt, every case, no exceptions.' rationale: see architecture.md's 'real photos are now mandatory per case' section (youtube's 2026 ai-slop enforcement policy). every new case must run both tracks before image generation fills gaps; genuinely blocked access must be a documented, checked outcome in personphotos.md (per the monica sementilli standard), never silently skipped as the kouri richins production did.",
+      "id": "productionstudio_tools_mugshot_fetch_tool_mandatory_escalation"
+    },
+    {
+      "label": "youtube_agent.py",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent",
+      "community": 5,
+      "norm_label": "youtube_agent.py"
+    },
+    {
+      "label": "_find_client_secret_file()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_find_client_secret_file",
+      "community": 5,
+      "norm_label": "_find_client_secret_file()"
+    },
+    {
+      "label": "get_authenticated_service()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "community": 5,
+      "norm_label": "get_authenticated_service()"
+    },
+    {
+      "label": "cmd_auth()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_cmd_auth",
+      "community": 5,
+      "norm_label": "cmd_auth()"
+    },
+    {
+      "label": "cmd_channel_info()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L108",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_cmd_channel_info",
+      "community": 5,
+      "norm_label": "cmd_channel_info()"
+    },
+    {
+      "label": "prepare_upload()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L121",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_prepare_upload",
+      "community": 5,
+      "norm_label": "prepare_upload()"
+    },
+    {
+      "label": "set_thumbnail()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L159",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_set_thumbnail",
+      "community": 5,
+      "norm_label": "set_thumbnail()"
+    },
+    {
+      "label": "update_metadata()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L165",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_update_metadata",
+      "community": 5,
+      "norm_label": "update_metadata()"
+    },
+    {
+      "label": "list_uploads()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L193",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_list_uploads",
+      "community": 5,
+      "norm_label": "list_uploads()"
+    },
+    {
+      "label": "confirm_publish()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L207",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_confirm_publish",
+      "community": 5,
+      "norm_label": "confirm_publish()"
+    },
+    {
+      "label": "list_playlists()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L234",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_list_playlists",
+      "community": 5,
+      "norm_label": "list_playlists()"
+    },
+    {
+      "label": "find_playlist_by_title()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L243",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_find_playlist_by_title",
+      "community": 5,
+      "norm_label": "find_playlist_by_title()"
+    },
+    {
+      "label": "get_or_create_playlist()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L252",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_get_or_create_playlist",
+      "community": 5,
+      "norm_label": "get_or_create_playlist()"
+    },
+    {
+      "label": "add_video_to_playlist()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L270",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_add_video_to_playlist",
+      "community": 5,
+      "norm_label": "add_video_to_playlist()"
+    },
+    {
+      "label": "delete_playlist()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L285",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_delete_playlist",
+      "community": 5,
+      "norm_label": "delete_playlist()"
+    },
+    {
+      "label": "list_playlist_items()",
+      "file_type": "code",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L292",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_list_playlist_items",
+      "community": 5,
+      "norm_label": "list_playlist_items()"
+    },
+    {
+      "label": "Official YouTube Data API v3 wrapper - the single module every future publish go",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_rationale_1",
+      "community": 5,
+      "norm_label": "official youtube data api v3 wrapper - the single module every future publish go"
+    },
+    {
+      "label": "Loads cached credentials, refreshing if expired. Raises with clear instructions",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L76",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_rationale_76",
+      "community": 5,
+      "norm_label": "loads cached credentials, refreshing if expired. raises with clear instructions"
+    },
+    {
+      "label": "One-time interactive OAuth consent flow. Opens a local browser window - the",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_rationale_97",
+      "community": 5,
+      "norm_label": "one-time interactive oauth consent flow. opens a local browser window - the"
+    },
+    {
+      "label": "Read-only sanity check that the OAuth token actually works.",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L109",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_rationale_109",
+      "community": 5,
+      "norm_label": "read-only sanity check that the oauth token actually works."
+    },
+    {
+      "label": "Uploads the video as PRIVATE with full metadata. Returns the video_id (the",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L123",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_rationale_123",
+      "community": 5,
+      "norm_label": "uploads the video as private with full metadata. returns the video_id (the"
+    },
+    {
+      "label": "Edits title/description/tags/category on an existing video, public or not.",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L166",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_rationale_166",
+      "community": 5,
+      "norm_label": "edits title/description/tags/category on an existing video, public or not."
+    },
+    {
+      "label": "Read-only: lists the channel's most recent uploads (any privacy status).",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L194",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_rationale_194",
+      "community": 5,
+      "norm_label": "read-only: lists the channel's most recent uploads (any privacy status)."
+    },
+    {
+      "label": "THE ONLY function in this module that makes a video visible to anyone besides th",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L208",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_rationale_208",
+      "community": 5,
+      "norm_label": "the only function in this module that makes a video visible to anyone besides th"
+    },
+    {
+      "label": "Read-only: lists the channel's existing playlists.",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L235",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_rationale_235",
+      "community": 5,
+      "norm_label": "read-only: lists the channel's existing playlists."
+    },
+    {
+      "label": "Idempotent: returns the existing playlist's id if one with this exact title",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L253",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_rationale_253",
+      "community": 5,
+      "norm_label": "idempotent: returns the existing playlist's id if one with this exact title"
+    },
+    {
+      "label": "Idempotent-ish: YouTube allows the same video in a playlist only once in practic",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L271",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_rationale_271",
+      "community": 5,
+      "norm_label": "idempotent-ish: youtube allows the same video in a playlist only once in practic"
+    },
+    {
+      "label": "Removes a playlist. Does NOT delete the videos in it - only the grouping.",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L286",
+      "_origin": "ast",
+      "id": "productionstudio_workflows_youtube_agent_rationale_286",
+      "community": 5,
+      "norm_label": "removes a playlist. does not delete the videos in it - only the grouping."
+    },
+    {
+      "label": "Phase 1: manual production, testing the channel hypothesis on the first 10 videos \u2014 Phase 2 (n8n, agents wired end to end, auto-publishing) only starts once explicitly requested",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_phase1",
+      "community": 14,
+      "norm_label": "phase 1: manual production, testing the channel hypothesis on the first 10 videos \u2014 phase 2 (n8n, agents wired end to end, auto-publishing) only starts once explicitly requested"
+    },
+    {
+      "label": "Real photos mandatory per case, not optional (escalated 2026-07-26) \u2014 run both mugshot_fetch_tool tracks before Image Generation fills gaps with AI; never ship a case 100% AI-generated; rationale: concrete evidence this channel isn't YouTube's targeted 2026 'AI slop' enforcement wave (mass-produced template content, three-strike policy)",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_real_photos_mandatory_rule",
+      "community": 14,
+      "norm_label": "real photos mandatory per case, not optional (escalated 2026-07-26) \u2014 run both mugshot_fetch_tool tracks before image generation fills gaps with ai; never ship a case 100% ai-generated; rationale: concrete evidence this channel isn't youtube's targeted 2026 'ai slop' enforcement wave (mass-produced template content, three-strike policy)"
+    },
+    {
+      "label": "Playlists are by theme/motive, never by case name (decided 2026-07-26) \u2014 replaces an earlier 'one playlist per case' attempt the channel owner rejected after checking competitor true-crime channels' organization; a video normally belongs in 2-4 themed playlists at once",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_playlists_by_theme_rule",
+      "community": 14,
+      "norm_label": "playlists are by theme/motive, never by case name (decided 2026-07-26) \u2014 replaces an earlier 'one playlist per case' attempt the channel owner rejected after checking competitor true-crime channels' organization; a video normally belongs in 2-4 themed playlists at once"
+    },
+    {
+      "label": "Publishing timezone: America/Los_Angeles (Pacific), confirmed 2026-07-26 \u2014 scheduling planned in LA local time, converted to UTC for publishAt via a real timezone library, never hardcoded UTC offsets",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_publishing_timezone_rule",
+      "community": 14,
+      "norm_label": "publishing timezone: america/los_angeles (pacific), confirmed 2026-07-26 \u2014 scheduling planned in la local time, converted to utc for publishat via a real timezone library, never hardcoded utc offsets"
+    },
+    {
+      "label": "Molly Watson / James Addie script \u2014 first real test case; chapters 6-16 and the ending drafted separately from this repo, status of chapters 1-5 to be confirmed with user",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_molly_watson_case",
+      "community": 14,
+      "norm_label": "molly watson / james addie script \u2014 first real test case; chapters 6-16 and the ending drafted separately from this repo, status of chapters 1-5 to be confirmed with user"
+    },
+    {
+      "label": "Every video/Short description must end with the channel name + a working link (CHANNEL_FOOTER constant) \u2014 confirmed 2026-07-26 after a real viewer commented on a published Short asking which channel it was from; retroactively applied to all 20 videos already on the channel that day; never leave a bracket placeholder like '[link to X]' in description text meant to be pasted directly into YouTube",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_channel_footer_rule",
+      "community": 7,
+      "norm_label": "every video/short description must end with the channel name + a working link (channel_footer constant) \u2014 confirmed 2026-07-26 after a real viewer commented on a published short asking which channel it was from; retroactively applied to all 20 videos already on the channel that day; never leave a bracket placeholder like '[link to x]' in description text meant to be pasted directly into youtube"
+    },
+    {
+      "label": "CHANNEL_FOOTER constant in Workflows/youtube_agent.py \u2014 channel name + working @handle link, currently https://www.youtube.com/@fatalaffairs-f1i",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_channel_footer_constant",
+      "community": 7,
+      "norm_label": "channel_footer constant in workflows/youtube_agent.py \u2014 channel name + working @handle link, currently https://www.youtube.com/@fatalaffairs-f1i"
+    },
+    {
+      "label": "graphify knowledge graph at graphify-out/ treated as this project's actual memory \u2014 query before grepping/reading cold; bare 'graphify update .' is AST-only and silently skips Markdown/JSON case docs, agent specs, tool specs; full /graphify --update flow required after editing any of those before ending the session",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "claude_graphify_rule",
+      "community": 14,
+      "norm_label": "graphify knowledge graph at graphify-out/ treated as this project's actual memory \u2014 query before grepping/reading cold; bare 'graphify update .' is ast-only and silently skips markdown/json case docs, agent specs, tool specs; full /graphify --update flow required after editing any of those before ending the session"
+    },
+    {
+      "label": "SEO Agent \u2014 generates the full SEO package (titles, description, chapters, pinned comment, tags, hashtags) for a finished video, informed by Templates/SuccessRules.md",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Agents/seo_agent.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_agents_seo_agent",
+      "community": 7,
+      "norm_label": "seo agent \u2014 generates the full seo package (titles, description, chapters, pinned comment, tags, hashtags) for a finished video, informed by templates/successrules.md"
+    },
+    {
+      "label": "SEO Agent 'Channel footer required' rule (added 2026-07-26) \u2014 description must always end with the CHANNEL_FOOTER constant (channel name + working @handle link) on its own line; added after a real viewer commented on a published Short asking which channel it was from, and two already-published main videos had a 'Follow Fatal Affairs' line with a broken placeholder bracket instead of an actual link \u2014 exactly the gap that caused it",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Agents/seo_agent.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_agents_seo_agent_channel_footer_requirement",
+      "community": 7,
+      "norm_label": "seo agent 'channel footer required' rule (added 2026-07-26) \u2014 description must always end with the channel_footer constant (channel name + working @handle link) on its own line; added after a real viewer commented on a published short asking which channel it was from, and two already-published main videos had a 'follow fatal affairs' line with a broken placeholder bracket instead of an actual link \u2014 exactly the gap that caused it"
+    },
+    {
+      "label": "SEO Agent tags/hashtags limits \u2014 tags total combined length must not exceed 500 characters (~8-15 focused tags, not padding filler); hashtags 3-5 total ordered strongest-first, never more than 15 (YouTube silently discards all hashtags past that point)",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Agents/seo_agent.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_agents_seo_agent_tags_hashtags_limits",
+      "community": 7,
+      "norm_label": "seo agent tags/hashtags limits \u2014 tags total combined length must not exceed 500 characters (~8-15 focused tags, not padding filler); hashtags 3-5 total ordered strongest-first, never more than 15 (youtube silently discards all hashtags past that point)"
+    },
+    {
+      "label": "Shorts Agent \u2014 runs immediately after Video Assembly Agent's final render; selects moments from the finished long-form video for standalone Shorts, writes each Short's own hook, and specifies caption/pacing treatment",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Agents/shorts_agent.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_agents_shorts_agent",
+      "community": 7,
+      "norm_label": "shorts agent \u2014 runs immediately after video assembly agent's final render; selects moments from the finished long-form video for standalone shorts, writes each short's own hook, and specifies caption/pacing treatment"
+    },
+    {
+      "label": "Shorts Agent description channel-footer requirement (added 2026-07-26) \u2014 each Short's description must end with the CHANNEL_FOOTER constant (channel name + working @handle link) on its own line, added after a real viewer commented on a published Short asking which channel it was from",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Agents/shorts_agent.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_agents_shorts_agent_channel_footer_requirement",
+      "community": 7,
+      "norm_label": "shorts agent description channel-footer requirement (added 2026-07-26) \u2014 each short's description must end with the channel_footer constant (channel name + working @handle link) on its own line, added after a real viewer commented on a published short asking which channel it was from"
+    },
+    {
+      "label": "Shorts visual style (research-grounded, added 2026-07-21) \u2014 cold-open dramatic close-up face image with hook_overlay_text burned in (brand white/#A30E15, black stroke), captions center-frame (not lower-third like main video), CTA in final 3-5 seconds as bold on-screen text, hard 45-second cap per Short, ends on a genuine open question not a manufactured one",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Agents/shorts_agent.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_agents_shorts_agent_visual_style",
+      "community": 7,
+      "norm_label": "shorts visual style (research-grounded, added 2026-07-21) \u2014 cold-open dramatic close-up face image with hook_overlay_text burned in (brand white/#a30e15, black stroke), captions center-frame (not lower-third like main video), cta in final 3-5 seconds as bold on-screen text, hard 45-second cap per short, ends on a genuine open question not a manufactured one"
+    },
+    {
+      "label": "Trend Log \u2014 persistent, cross-case memory of real trend research across the true-crime genre (YouTube, Reddit, X, competitor channels), distinct from Templates/SuccessRules.md; started 2026-07-26 after the channel owner asked for ongoing trend-tracking",
+      "file_type": "document",
+      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_documentation_trend_log",
+      "community": 14,
+      "norm_label": "trend log \u2014 persistent, cross-case memory of real trend research across the true-crime genre (youtube, reddit, x, competitor channels), distinct from templates/successrules.md; started 2026-07-26 after the channel owner asked for ongoing trend-tracking"
+    },
+    {
+      "label": "2026-07-26 finding: YouTube's January 2026 enforcement wave specifically targets 'AI slop' (mass-produced template AI content) under a three-strike system, plus a new 'altered or synthetic' content disclosure requirement at upload \u2014 direct platform-survival risk that is the concrete reason real photos became mandatory, rather than just a stylistic preference; synthetic-content disclosure check added to quality_control_agent.md's pre-publish checklist",
+      "file_type": "rationale",
+      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_documentation_trend_log_ai_slop_finding",
+      "community": 14,
+      "norm_label": "2026-07-26 finding: youtube's january 2026 enforcement wave specifically targets 'ai slop' (mass-produced template ai content) under a three-strike system, plus a new 'altered or synthetic' content disclosure requirement at upload \u2014 direct platform-survival risk that is the concrete reason real photos became mandatory, rather than just a stylistic preference; synthetic-content disclosure check added to quality_control_agent.md's pre-publish checklist"
+    },
+    {
+      "label": "2026-07-26 finding: true crime is one of YouTube's three highest-RPM niches in 2026 ($4-$12/1000 views); single-case chronological 15-25 min faceless documentary-style content is the winning backbone format \u2014 validates this channel's existing ~11-15 min faceless/AI-visual documentary format, no change needed",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_documentation_trend_log_format_validation_finding",
+      "community": 14,
+      "norm_label": "2026-07-26 finding: true crime is one of youtube's three highest-rpm niches in 2026 ($4-$12/1000 views); single-case chronological 15-25 min faceless documentary-style content is the winning backbone format \u2014 validates this channel's existing ~11-15 min faceless/ai-visual documentary format, no change needed"
+    },
+    {
+      "label": "2026-07-26 finding: English-speaking true-crime audiences are saturated on US cases; international/lesser-known cases (Brazil, Japan, Eastern Europe, etc.) are the fastest-growing corner of the niche as of 2026 \u2014 all 4 cases produced so far (Molly Watson, Banfield, Kouri Richins, Monica Sementilli) are US cases; action: Research Agent should surface at least one non-US candidate in its next discovery run",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_documentation_trend_log_international_cases_finding",
+      "community": 14,
+      "norm_label": "2026-07-26 finding: english-speaking true-crime audiences are saturated on us cases; international/lesser-known cases (brazil, japan, eastern europe, etc.) are the fastest-growing corner of the niche as of 2026 \u2014 all 4 cases produced so far (molly watson, banfield, kouri richins, monica sementilli) are us cases; action: research agent should surface at least one non-us candidate in its next discovery run"
+    },
+    {
+      "label": "2026-07-26 finding: the revenue/subscriber-growth gap between high-CTR and low-CTR true-crime channels is measurable and driven specifically by thumbnail design quality \u2014 reinforces treating thumbnail_agent.md's output as a real growth lever, worth periodically A/B-checking against comparable channels",
+      "file_type": "concept",
+      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "productionstudio_documentation_trend_log_thumbnail_ctr_finding",
+      "community": 14,
+      "norm_label": "2026-07-26 finding: the revenue/subscriber-growth gap between high-ctr and low-ctr true-crime channels is measurable and driven specifically by thumbnail design quality \u2014 reinforces treating thumbnail_agent.md's output as a real growth lever, worth periodically a/b-checking against comparable channels"
     }
   ],
   "links": [
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Agents/shorts_agent.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_agents_shorts_agent",
-      "target": "productionstudio_config_config_schema"
-    },
     {
       "relation": "references",
       "confidence": "EXTRACTED",
@@ -8321,16 +8382,6 @@
     },
     {
       "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Agents/shorts_agent.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_agents_shorts_agent",
-      "target": "productionstudio_tools_image_gen_tool"
-    },
-    {
-      "relation": "references",
       "confidence": "INFERRED",
       "confidence_score": 0.75,
       "source_file": "ProductionStudio/Channel/Trailer.md",
@@ -8706,126 +8757,6 @@
       "weight": 1.0,
       "source": "productionstudio_agents_scene_planner_agent",
       "target": "productionstudio_templates_script"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Agents/seo_agent.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_agents_seo_agent",
-      "target": "concept_no_clickbait_lies_policy"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Agents/seo_agent.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_agents_seo_agent",
-      "target": "productionstudio_templates_seo"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Agents/seo_agent.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_agents_seo_agent",
-      "target": "productionstudio_templates_successrules"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Tests/stage3_link_audit.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_tests_stage3_link_audit",
-      "target": "productionstudio_agents_seo_agent"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Agents/shorts_agent.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_agents_shorts_agent",
-      "target": "concept_no_clickbait_lies_policy"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": "ProductionStudio/Agents/shorts_agent.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_agents_shorts_agent",
-      "target": "concept_shorts_release_pacing"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Agents/shorts_agent.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_agents_shorts_agent",
-      "target": "productionstudio_agents_video_assembly_agent"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Agents/shorts_agent.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_agents_shorts_agent",
-      "target": "productionstudio_templates_shorts"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Agents/shorts_agent.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_agents_shorts_agent",
-      "target": "productionstudio_tools_remotion_assembly_tool"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "ProductionStudio/Cases/brendan-banfield-double-murder/PublishPlan.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_cases_brendan_banfield_double_murder_publishplan",
-      "target": "productionstudio_agents_shorts_agent"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Cases/kouri-richins-fentanyl-murder/Shorts.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_cases_kouri_richins_fentanyl_murder_shorts",
-      "target": "productionstudio_agents_shorts_agent"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Tests/stage3_link_audit.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_tests_stage3_link_audit",
-      "target": "productionstudio_agents_shorts_agent"
     },
     {
       "relation": "conceptually_related_to",
@@ -9226,6 +9157,16 @@
       "weight": 1.0,
       "source": "productionstudio_cases_brendan_banfield_double_murder_publishplan",
       "target": "entity_joseph_ryan"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "ProductionStudio/Cases/brendan-banfield-double-murder/PublishPlan.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_brendan_banfield_double_murder_publishplan",
+      "target": "productionstudio_agents_shorts_agent"
     },
     {
       "relation": "references",
@@ -10845,6 +10786,16 @@
       "source_location": null,
       "weight": 1.0,
       "source": "productionstudio_cases_kouri_richins_fentanyl_murder_shorts",
+      "target": "productionstudio_agents_shorts_agent"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Cases/kouri-richins-fentanyl-murder/Shorts.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_cases_kouri_richins_fentanyl_murder_shorts",
       "target": "productionstudio_cases_kouri_richins_fentanyl_murder_sources_are_you_with_me_book"
     },
     {
@@ -11026,6 +10977,26 @@
       "weight": 1.0,
       "source": "productionstudio_tests_stage2_seo_export_and_github_sync_test",
       "target": "productionstudio_tools_seo_export_tool"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tests/stage3_link_audit.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tests_stage3_link_audit",
+      "target": "productionstudio_agents_seo_agent"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Tests/stage3_link_audit.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_tests_stage3_link_audit",
+      "target": "productionstudio_agents_shorts_agent"
     },
     {
       "relation": "references",
@@ -12319,483 +12290,6 @@
       "target": "productionstudio_channel_trailer_case_narration_voice"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L263",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_add_video_to_playlist"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L90",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_cmd_auth"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L102",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_cmd_channel_info"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L200",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_confirm_publish"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L278",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_delete_playlist"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L59",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_find_client_secret_file"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L236",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_find_playlist_by_title"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L69",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L245",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_get_or_create_playlist"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L285",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_list_playlist_items"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L227",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_list_playlists"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L186",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_list_uploads"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L115",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_prepare_upload"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L153",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_set_thumbnail"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L159",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent",
-      "target": "productionstudio_workflows_youtube_agent_update_metadata"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L1",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_rationale_1",
-      "target": "productionstudio_workflows_youtube_agent"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L94",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_cmd_auth",
-      "target": "productionstudio_workflows_youtube_agent_find_client_secret_file"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L267",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_add_video_to_playlist",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L104",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_cmd_channel_info",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L215",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_confirm_publish",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L280",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_delete_playlist",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L237",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_find_playlist_by_title",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L253",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_get_or_create_playlist",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L286",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_list_playlist_items",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L229",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_list_playlists",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L188",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_list_uploads",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L121",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_prepare_upload",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L70",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_rationale_70",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L154",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_set_thumbnail",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L167",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_update_metadata",
-      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L91",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_rationale_91",
-      "target": "productionstudio_workflows_youtube_agent_cmd_auth"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L103",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_rationale_103",
-      "target": "productionstudio_workflows_youtube_agent_cmd_channel_info"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L148",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_prepare_upload",
-      "target": "productionstudio_workflows_youtube_agent_set_thumbnail"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L117",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_rationale_117",
-      "target": "productionstudio_workflows_youtube_agent_prepare_upload"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L160",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_rationale_160",
-      "target": "productionstudio_workflows_youtube_agent_update_metadata"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L187",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_rationale_187",
-      "target": "productionstudio_workflows_youtube_agent_list_uploads"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L201",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_rationale_201",
-      "target": "productionstudio_workflows_youtube_agent_confirm_publish"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L228",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_rationale_228",
-      "target": "productionstudio_workflows_youtube_agent_list_playlists"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L249",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_get_or_create_playlist",
-      "target": "productionstudio_workflows_youtube_agent_find_playlist_by_title"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L246",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_rationale_246",
-      "target": "productionstudio_workflows_youtube_agent_get_or_create_playlist"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L264",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_rationale_264",
-      "target": "productionstudio_workflows_youtube_agent_add_video_to_playlist"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
-      "source_location": "L279",
-      "weight": 1.0,
-      "_origin": "ast",
-      "confidence_score": 1.0,
-      "source": "productionstudio_workflows_youtube_agent_rationale_279",
-      "target": "productionstudio_workflows_youtube_agent_delete_playlist"
-    },
-    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -13338,76 +12832,6 @@
     {
       "relation": "conceptually_related_to",
       "confidence": "INFERRED",
-      "confidence_score": 0.65,
-      "source_file": "CLAUDE.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "claude_graphify_rules",
-      "target": "claude_project_overview"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CLAUDE.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "claude_phase1_phase2",
-      "target": "claude_project_overview"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CLAUDE.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "claude_real_photos_mandatory",
-      "target": "productionstudio_documentation_architecture_real_photo_mandatory_escalation"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CLAUDE.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "claude_real_photos_mandatory",
-      "target": "productionstudio_tools_mugshot_fetch_tool_mandatory_escalation"
-    },
-    {
-      "relation": "semantically_similar_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_documentation_trend_log_ai_slop_policy_finding",
-      "target": "claude_real_photos_mandatory"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CLAUDE.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "claude_synthetic_disclosure_toggle",
-      "target": "productionstudio_documentation_architecture_real_photo_mandatory_escalation"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Agents/quality_control_agent.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_agents_quality_control_agent_synthetic_disclosure_reminder",
-      "target": "claude_synthetic_disclosure_toggle"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
       "confidence_score": 0.75,
       "source_file": "ProductionStudio/Agents/quality_control_agent.md",
       "source_location": null,
@@ -13526,36 +12950,6 @@
       "target": "productionstudio_agents_research_agent_overview"
     },
     {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_documentation_trend_log_international_growth_finding",
-      "target": "productionstudio_agents_research_agent_overview"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Agents/research_agent.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_agents_research_agent_trend_log_integration",
-      "target": "productionstudio_documentation_trend_log_overview"
-    },
-    {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Agents/research_agent.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_agents_research_agent_international_case_finding",
-      "target": "productionstudio_documentation_trend_log_international_growth_finding"
-    },
-    {
       "relation": "conceptually_related_to",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -13586,16 +12980,6 @@
       "target": "productionstudio_tools_mugshot_fetch_tool_overview"
     },
     {
-      "relation": "shares_data_with",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_documentation_trend_log_ai_slop_policy_finding",
-      "target": "productionstudio_documentation_architecture_real_photo_mandatory_escalation"
-    },
-    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -13604,56 +12988,6 @@
       "weight": 1.0,
       "source": "productionstudio_tools_mugshot_fetch_tool_mandatory_escalation",
       "target": "productionstudio_documentation_architecture_real_photo_mandatory_escalation"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_documentation_trend_log_ai_slop_policy_finding",
-      "target": "productionstudio_documentation_trend_log_overview"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_documentation_trend_log_international_growth_finding",
-      "target": "productionstudio_documentation_trend_log_overview"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_documentation_trend_log_rpm_format_finding",
-      "target": "productionstudio_documentation_trend_log_overview"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_documentation_trend_log_thumbnail_ctr_finding",
-      "target": "productionstudio_documentation_trend_log_overview"
-    },
-    {
-      "relation": "semantically_similar_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "productionstudio_documentation_trend_log_ai_slop_policy_finding",
-      "target": "productionstudio_tools_mugshot_fetch_tool_mandatory_escalation"
     },
     {
       "relation": "conceptually_related_to",
@@ -13674,6 +13008,713 @@
       "weight": 1.0,
       "source": "productionstudio_tools_mugshot_fetch_tool_track1_person_photos",
       "target": "productionstudio_tools_mugshot_fetch_tool_redaction_automation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L270",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_add_video_to_playlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L96",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_cmd_auth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L108",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_cmd_channel_info",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L207",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_confirm_publish",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L285",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_delete_playlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_find_client_secret_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L243",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_find_playlist_by_title",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L252",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_get_or_create_playlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L292",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_list_playlist_items",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L234",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_list_playlists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L193",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_list_uploads",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L121",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_prepare_upload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L159",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_set_thumbnail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L165",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent",
+      "target": "productionstudio_workflows_youtube_agent_update_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_rationale_1",
+      "target": "productionstudio_workflows_youtube_agent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_cmd_auth",
+      "target": "productionstudio_workflows_youtube_agent_find_client_secret_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L274",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_add_video_to_playlist",
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_cmd_channel_info",
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L222",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_confirm_publish",
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L287",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_delete_playlist",
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L244",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_find_playlist_by_title",
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L260",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_get_or_create_playlist",
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L293",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_list_playlist_items",
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L236",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_list_playlists",
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L195",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_list_uploads",
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L127",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_prepare_upload",
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_rationale_76",
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L160",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_set_thumbnail",
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L173",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_update_metadata",
+      "target": "productionstudio_workflows_youtube_agent_get_authenticated_service",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_rationale_97",
+      "target": "productionstudio_workflows_youtube_agent_cmd_auth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L109",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_rationale_109",
+      "target": "productionstudio_workflows_youtube_agent_cmd_channel_info",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L154",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_prepare_upload",
+      "target": "productionstudio_workflows_youtube_agent_set_thumbnail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_rationale_123",
+      "target": "productionstudio_workflows_youtube_agent_prepare_upload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L166",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_rationale_166",
+      "target": "productionstudio_workflows_youtube_agent_update_metadata",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L194",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_rationale_194",
+      "target": "productionstudio_workflows_youtube_agent_list_uploads",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L208",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_rationale_208",
+      "target": "productionstudio_workflows_youtube_agent_confirm_publish",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L235",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_rationale_235",
+      "target": "productionstudio_workflows_youtube_agent_list_playlists",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L256",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_get_or_create_playlist",
+      "target": "productionstudio_workflows_youtube_agent_find_playlist_by_title",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L253",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_rationale_253",
+      "target": "productionstudio_workflows_youtube_agent_get_or_create_playlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L271",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_rationale_271",
+      "target": "productionstudio_workflows_youtube_agent_add_video_to_playlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ProductionStudio/Workflows/youtube_agent.py",
+      "source_location": "L286",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "productionstudio_workflows_youtube_agent_rationale_286",
+      "target": "productionstudio_workflows_youtube_agent_delete_playlist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 0.75,
+      "source": "claude_molly_watson_case",
+      "target": "claude_phase1"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_phase1",
+      "target": "productionstudio_documentation_trend_log"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.55,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 0.55,
+      "source": "claude_playlists_by_theme_rule",
+      "target": "claude_phase1"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.55,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 0.55,
+      "source": "claude_publishing_timezone_rule",
+      "target": "claude_phase1"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.55,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 0.55,
+      "source": "claude_real_photos_mandatory_rule",
+      "target": "claude_phase1"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_real_photos_mandatory_rule",
+      "target": "productionstudio_documentation_trend_log_ai_slop_finding"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_documentation_trend_log_international_cases_finding",
+      "target": "claude_molly_watson_case"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_channel_footer_rule",
+      "target": "claude_channel_footer_constant"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_channel_footer_rule",
+      "target": "productionstudio_agents_seo_agent_channel_footer_requirement"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "claude_channel_footer_rule",
+      "target": "productionstudio_agents_shorts_agent_channel_footer_requirement"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Agents/seo_agent.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_agents_seo_agent_channel_footer_requirement",
+      "target": "claude_channel_footer_constant"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Agents/shorts_agent.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_agents_shorts_agent_channel_footer_requirement",
+      "target": "claude_channel_footer_constant"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 0.65,
+      "source": "claude_graphify_rule",
+      "target": "productionstudio_documentation_trend_log"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Agents/seo_agent.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_agents_seo_agent",
+      "target": "productionstudio_agents_seo_agent_tags_hashtags_limits"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Agents/seo_agent.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_agents_seo_agent_channel_footer_requirement",
+      "target": "productionstudio_agents_seo_agent"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Agents/seo_agent.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_agents_seo_agent_channel_footer_requirement",
+      "target": "productionstudio_agents_shorts_agent_channel_footer_requirement"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Agents/shorts_agent.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_agents_shorts_agent",
+      "target": "productionstudio_agents_seo_agent_tags_hashtags_limits"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Agents/shorts_agent.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_agents_shorts_agent",
+      "target": "productionstudio_agents_shorts_agent_visual_style"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Agents/shorts_agent.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_agents_shorts_agent_channel_footer_requirement",
+      "target": "productionstudio_agents_shorts_agent"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_documentation_trend_log_ai_slop_finding",
+      "target": "productionstudio_documentation_trend_log"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_documentation_trend_log_format_validation_finding",
+      "target": "productionstudio_documentation_trend_log"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_documentation_trend_log_international_cases_finding",
+      "target": "productionstudio_documentation_trend_log"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProductionStudio/Documentation/TREND_LOG.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "productionstudio_documentation_trend_log_thumbnail_ctr_finding",
+      "target": "productionstudio_documentation_trend_log"
     }
   ],
   "hyperedges": [
@@ -13681,9 +13722,7 @@
       "id": "hyperedge_ai_slop_policy_rationale",
       "label": "YouTube's January 2026 'AI slop' enforcement policy (three-strike system) and mandatory synthetic-content disclosure toggle as the shared rationale escalating real photos from recommended to mandatory, described consistently across CLAUDE.md, ARCHITECTURE.md, TREND_LOG.md, and mugshot_fetch_tool.md",
       "nodes": [
-        "claude_real_photos_mandatory",
         "productionstudio_documentation_architecture_real_photo_mandatory_escalation",
-        "productionstudio_documentation_trend_log_ai_slop_policy_finding",
         "productionstudio_tools_mugshot_fetch_tool_mandatory_escalation"
       ],
       "relation": "participate_in",
@@ -13709,9 +13748,7 @@
       "label": "Research Agent's trend-tracking flow: reads TREND_LOG.md before discovery, appends new findings after, and specifically acts on the standing international-case growth-opportunity finding logged there",
       "nodes": [
         "productionstudio_agents_research_agent_trend_log_integration",
-        "productionstudio_documentation_trend_log_overview",
-        "productionstudio_agents_research_agent_international_case_finding",
-        "productionstudio_documentation_trend_log_international_growth_finding"
+        "productionstudio_agents_research_agent_international_case_finding"
       ],
       "relation": "participate_in",
       "confidence": "INFERRED",
@@ -13871,5 +13908,5 @@
       "source_file": "ProductionStudio/Tests/TEST_PLAN.md"
     }
   ],
-  "built_at_commit": "b5d35d5ed1af130dd8a240b6871b8fc18868150c"
+  "built_at_commit": "8abeebb4552b72c50d77b82d9b0d81409a2e3182"
 }
