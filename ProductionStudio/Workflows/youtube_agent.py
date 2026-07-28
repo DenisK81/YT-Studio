@@ -55,6 +55,12 @@ TOKEN_PATH = os.path.join(CONFIG_DIR, "youtube_token.json")
 
 DEFAULT_CATEGORY_ID = "24"  # Entertainment - see https://developers.google.com/youtube/v3/docs/videoCategories/list
 
+# Every video and Short description must end with this line (added 2026-07-26, after a real
+# viewer commented on a Short asking which channel it was from). SEO Agent / Shorts Agent must
+# append it when writing Description text - not enforced automatically by prepare_upload(),
+# since the exact placement (end of description, after hashtags, etc.) is a content decision.
+CHANNEL_FOOTER = "Fatal Affairs — subscribe for more true crime cases: https://www.youtube.com/@fatalaffairs-f1i"
+
 
 def _find_client_secret_file():
     matches = glob.glob(os.path.join(CONFIG_DIR, "client_secret_*.json"))
@@ -180,7 +186,8 @@ def update_metadata(video_id, title=None, description=None, tags=None, category_
         snippet["categoryId"] = category_id
 
     yt.videos().update(part="snippet", body={"id": video_id, "snippet": snippet}).execute()
-    print(f"Updated metadata for {video_id}: title={snippet['title']!r}")
+    line = f"Updated metadata for {video_id}: title={snippet['title']!r}"
+    print(line.encode("ascii", "replace").decode("ascii"))
 
 
 def list_uploads(max_results=10):

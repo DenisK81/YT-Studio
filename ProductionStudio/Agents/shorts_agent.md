@@ -25,7 +25,9 @@ different constraints), and specifies the caption/pacing treatment for that Shor
       "cold_open_image_prompt": "string — a dramatic close-up face image prompt in the same style as Tools/image_gen_tool.md's thumbnail convention (anonymized/generic subject, no real likeness), shown for the first ~1.5-2s before the scene footage starts",
       "cta_text": "string, short, e.g. 'FULL STORY ON THE CHANNEL' — shown in the final 3-5 seconds, ALL CAPS, per the fixed CTA placement rule below",
       "title": "string, max 3-5 words",
-      "description": "string",
+      "description": "string — must end with Workflows/youtube_agent.py's CHANNEL_FOOTER
+        constant (channel name + working @handle link) on its own line, added 2026-07-26 after
+        a real viewer commented on a published Short asking which channel it was from",
       "hashtags": ["... 3-5 total, strongest first — same YouTube limits as SEO Agent"],
       "estimated_seconds": "target ~45s; hard cap 45s per Config/config.schema.json shorts.max_seconds" } ] }
 ```

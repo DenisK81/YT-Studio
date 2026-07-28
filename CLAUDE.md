@@ -76,6 +76,13 @@ starts once explicitly requested — don't self-initiate Phase 2 work from a Pha
 - First real test case: the Molly Watson / James Addie script. Chapters 6-16 and the ending
   were drafted separately from this repo; chapters 1-5 may or may not be finished yet — ask the
   user for current status rather than assuming.
+- **Every video/Short description must end with the channel name + a working link**
+  (`Workflows/youtube_agent.py`'s `CHANNEL_FOOTER` constant, currently
+  `https://www.youtube.com/@fatalaffairs-f1i`) — confirmed 2026-07-26 after a real viewer
+  commented on a published Short asking which channel it was from. Retroactively applied to all
+  20 videos already on the channel that day. Never leave a bracket placeholder like `[link to
+  X]` in description text meant to be pasted directly into YouTube — resolve it to a real value
+  or drop the line.
 
 ## Language
 
