@@ -29,6 +29,23 @@ assembly report, Thumbnail.md, SEO.md.
   forgotten.
 - The five brief questions: Would I stop scrolling? Would I click this? Would an American
   viewer care? Can the hook be stronger? Can retention be improved?
+- **Redaction-under-zoom check (added 2026-07-28, mandatory — real published bug, see
+  `Tools/mugshot_fetch_tool.md`'s "Manual fallback margin bug" note):** for every real photo
+  scene, extract and visually check a frame at that scene's *maximum* Ken-Burns zoom level
+  (both ends of the `interpolate()` range), not just the static source JPG. A redaction that
+  looks complete at full-frame can still leak ear/jaw/eye at the video's actual crop. `fail` if
+  any part of an eye is visible at any point in the rendered scene, not just at rest.
+- **AI-generated-image artifact scan (added 2026-07-28, mandatory):** visually check every
+  AI-generated scene image for anatomical/object hallucinations (extra limbs, duplicated
+  tool handles, warped hands/faces) before render — a real published case had a courtroom gavel
+  rendered with two crossed handles through one head, caught only after publish. Regenerate any
+  flagged image with a more constrained prompt rather than accepting it.
+- **Chapter-to-chapter loudness check (added 2026-07-28, mandatory):** run
+  `ffmpeg -af loudnorm=print_format=summary` on every chapter mp3 before assembly; flag if
+  Input Integrated loudness varies by more than ~2-3 LU across chapters (a real case measured a
+  7 LU swing, audible as a volume jump at chapter boundaries) — normalize with `loudnorm`
+  per-chapter before handing off to Remotion rather than trusting ElevenLabs' per-call
+  consistency.
 
 ## Output
 `Templates/Checklist.md`:
