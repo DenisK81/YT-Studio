@@ -79,6 +79,26 @@ GPU, and no Node/Remotion environment needed — runs fine in this same Phase 1 
 4. If eye detection fails within the face ROI, fall back to a fixed proportional estimate (eyes
    sit ~30-50% down a frontal mugshot face box) rather than leaving the photo unredacted.
 
+**Manual fallback margin bug, found 2026-07-28 in production (Rimoni Muliaga case) — real
+consequence, not theoretical:** when BOTH the face cascade and the eye cascade fail (an off-angle
+custody/escort photo, not a frontal mugshot — see `Cases/rimoni-muliaga-jealousy-murder/
+PersonPhotos.md`), the fallback in that session was a **bare eyeballed box from a debug grid
+overlay, with no margin added** — skipping the 15%/25% margin rule above, which only got applied
+to the automated-detection path in the code, not written into the manual/human-drawn fallback
+path. The box looked correct at full-frame view, but the channel's Remotion Ken-Burns pan/zoom
+crops and enlarges the frame — at higher zoom, ~15-20% of the box's own width (the subject's ear
+and jaw line) fell outside the box and was visible on the published video. **Root cause: the
+redaction box was checked for correctness only at full-frame, static view — never re-checked
+after the same image goes through the video's actual zoom/pan treatment, which is a strictly
+tighter effective crop than the source frame.** Fix for every future case, no exceptions: (a) the
+manual/eyeballed fallback box must add the same 15%/25% margin the automated path already uses,
+generously, since a hand-drawn box is a worse estimate than a cascade-detected one, not a better
+one; (b) after redacting any real photo whose scene will be Ken-Burns panned/zoomed in Remotion,
+re-render or at minimum re-check the redaction at the scene's *maximum* zoom level (the tightest
+crop in its `interpolate()` range, both `zoomIn` and `zoomOut` directions in
+`Tools/remotion_assembly_tool.md`'s `SceneImage` component), not just the static source file —
+a redaction that looks complete in the raw JPG can still leak once the video crops into it.
+
 **Legal grounding (informational research, not legal advice — see
 `Documentation/ARCHITECTURE.md`'s "Real-photo sourcing decision" section for the full research):**
 the news/commentary ("newsworthy") exception to right-of-publicity claims broadly covers

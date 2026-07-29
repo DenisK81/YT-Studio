@@ -86,6 +86,52 @@ is the one render element that should NOT vary video-to-video; consistency is th
 - Same font/color/stroke/position style applies to both the main video (16:9) and Shorts
   (9:16) — only the *timing* rule (natural pacing vs. 2s floor) differs between them.
 
+## Chapter-to-chapter voice loudness inconsistency (found 2026-07-28 in production, confirmed with
+real measurements — Rimoni Muliaga case)
+The channel owner reported the narrator sounding "sometimes louder, then normal again" on a
+published video. Measured via `ffmpeg -af loudnorm=print_format=summary` on the 5 real
+ElevenLabs chapter files for that case: Input Integrated loudness ranged from **-30.0 LUFS to
+-22.9 LUFS** across the 5 chapters — a ~7 LU swing, clearly audible as a volume jump at every
+chapter boundary. **Root cause:** each chapter is a separate ElevenLabs `/with-timestamps` API
+call (`generate_case_assets.py`'s `cmd_audio()`), and ElevenLabs does not guarantee consistent
+output loudness across separate calls — nothing in the pipeline normalizes them relative to each
+other afterward. The Remotion composition (`SementilliTrial.tsx`/`MuliagaTrial.tsx`-style
+components) just plays each chapter's raw mp3 back to back via a plain `<Audio src={...} />` with
+no volume adjustment per chapter. **Fix for every future case:** after `cmd_audio()` produces the
+per-chapter mp3s, run each through `ffmpeg -af loudnorm` (two-pass, targeting a fixed integrated
+loudness, e.g. -24 LUFS) before they reach Remotion's `public/` dir, so every chapter starts from
+the same measured loudness rather than trusting ElevenLabs' per-call consistency. This is a
+render-pipeline gap, not a one-off — every prior case (Banfield, Richins, Sementilli) has the same
+un-normalized multi-chapter structure and is presumably carrying the same defect, just not yet
+reported.
+
+## Per-video cold open / branding (escalated 2026-07-28 — the 2026-07-21 open task above was
+never actually built before this session's first real publish)
+Channel owner feedback after watching a published video: it "starts immediately" and "looks raw"
+with "not enough interactivity." Real 2026 true-crime-channel research (see
+`Documentation/TREND_LOG.md` for the citations) is consistent on two points that initially look
+contradictory but aren't:
+1. **Long animated intros hurt retention** — channels that removed a multi-second animated intro
+   saw a measured ~22% boost in 30-second retention. A full branded intro sequence before the
+   content starts is a real risk, not just old-fashioned.
+2. **A short, consistent, dramatic cold-open teaser is the actual genre convention** — true-crime
+   viewers reward predictable structure: a brief (research suggests up to ~30-60s, though that
+   reads high for a channel already leading with a strong Hook beat) teaser of the case's most
+   striking moment, before a brief channel bumper/sting, before the story proper begins.
+   This channel's existing 10-beat Script structure already puts the Hook first — the open
+   question is whether that Hook needs a *very short* (2-3s) branded stinger prepended (name +
+   sting sound, the original 2026-07-21 spec), or whether the channel owner's "preview with a
+   short backstory" idea (effectively a distinct, separately-written cold-open teaser ahead of the
+   Hook) is the better fit — these are different builds, not the same thing with different labels.
+   **Not decided unilaterally — see the channel owner's explicit direction before building either.**
+3. **Visual variety, not just more realistic photos, is what "interactive" likely refers to**:
+   creators report crime-scene/location map graphics boost retention (~35% in one cited case) and
+   recommend 5-7 distinct visual element *types* per video, not just narrated Ken-Burns pans over
+   still photos for the full runtime. This channel's current visual vocabulary is a single format
+   (one photo per scene, panned/zoomed) end to end — worth a future case testing a map/timeline
+   graphic insert or an on-screen pull-quote card as a second visual format, not just more/better
+   photos in the same format.
+
 ## Background music mixing (fixed, research-grounded 2026-07-19 — see
 `Tools/royalty_free_music_tool.md` for sourcing, `Tools/elevenlabs_voice_tool.md`'s "Background
 music" section for the fallback path)

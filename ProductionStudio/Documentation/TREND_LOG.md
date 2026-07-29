@@ -67,6 +67,42 @@ separate research passes now") instead of being rediscovered/re-searched from sc
   — Action: real-photo sourcing made mandatory per case; synthetic-content disclosure check
     added to `Agents/quality_control_agent.md`'s pre-publish checklist. Both done 2026-07-26.
 
+### 2026-07-28 — Archival-material usage, cold opens, and interactivity (prompted by real QC feedback on the Rimoni Muliaga video)
+
+- **Finding:** Successful true-crime channels (PoliceActivity, Law&Crime BodyCam, Grizzly True
+  Crime, That Chapter) lean much harder into raw archival material than this channel currently
+  does — full bodycam footage, press-conference clips, and court documents shown directly on
+  screen, not just still photos mixed into otherwise AI-generated scenes. [PoliceActivity](https://en.wikipedia.org/wiki/PoliceActivity),
+  [Law&Crime BodyCam](https://blog.jellysmack.com/real-crime-raw-footage-new-lawcrime-channel-bodycam-launches-on-youtube/)
+  — Why it matters: this channel's current real-photo mandate (2-3 still photos per case) is a
+    floor, not the ceiling other channels operate at — there is real room to lean further into
+    archival material as a differentiator, not just a compliance minimum.
+  — Action: none yet — flagging as a direction to test on a future case (e.g. sourcing an actual
+    news video clip, not just a still photo, where one exists and rights allow it).
+
+- **Finding:** Long/animated channel intros measurably hurt retention (~22% average boost in
+  30-second retention after channels removed them), but true-crime viewers specifically reward a
+  short, consistent, dramatic **cold-open teaser** of the case's most striking moment ahead of a
+  brief channel bumper — a distinct thing from a long branded intro. [YT SEO Architect](https://yt-seo-architect.vercel.app/blog/youtube-intro-hook-first-3-seconds),
+  [1of10](https://1of10.com/blog/how-to-hook-viewers-in-the-first-30-seconds-of-a-youtube-video/)
+  — Why it matters: directly answers the channel owner's 2026-07-28 feedback that videos "start
+    immediately" and "look raw" — the fix is very likely a short (2-3s) bumper and/or a
+    distinct cold-open teaser ahead of the existing Hook beat, NOT a return to a long animated
+    intro (which the data says would hurt, not help).
+  — Action: escalated to `Tools/remotion_assembly_tool.md`'s "Per-video cold open / branding"
+    section 2026-07-28 — needs the channel owner's direction on bumper vs. teaser-with-backstory
+    before building either (real content/format decision, not a tooling default).
+
+- **Finding:** Visual-format variety (crime-scene/location maps, on-screen timelines, pull-quote
+  cards) measurably boosts retention (one cited figure: ~35% from map graphics specifically) and
+  is recommended at 5-7 distinct visual element types per video — not just narrated photos panned
+  end to end. [Subscribr niche-ideas roundup](https://subscribr.ai/p/true-crime-youtube-niche-ideas)
+  — Why it matters: this channel's videos are currently one visual format (Ken-Burns-panned
+    still photo per scene) for the entire runtime — likely what read as "raw" / lacking
+    "interactivity" in the 2026-07-28 feedback, more than a literal request for YouTube polls.
+  — Action: flagged in `Tools/remotion_assembly_tool.md` as a future-case test (map/timeline
+    graphic or pull-quote card as a second visual format), not yet built.
+
 ### Suggested cadence
 Re-run this research pass at the start of each new case's discovery step at minimum (feeds
 Research Agent's `genre_trend_notes` for that case), and do a dedicated "just trends, no specific
