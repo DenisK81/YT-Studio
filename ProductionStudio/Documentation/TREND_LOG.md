@@ -89,9 +89,11 @@ separate research passes now") instead of being rediscovered/re-searched from sc
     immediately" and "look raw" — the fix is very likely a short (2-3s) bumper and/or a
     distinct cold-open teaser ahead of the existing Hook beat, NOT a return to a long animated
     intro (which the data says would hurt, not help).
-  — Action: escalated to `Tools/remotion_assembly_tool.md`'s "Per-video cold open / branding"
-    section 2026-07-28 — needs the channel owner's direction on bumper vs. teaser-with-backstory
-    before building either (real content/format decision, not a tooling default).
+  — Action: channel owner chose the short branded stinger over the teaser-with-backstory
+    alternative. Built the same day — `src/ChannelBumper.tsx` (2.5s, brand title card + a real
+    generated sting sound), reused unchanged across every future video, prepended ahead of the
+    Hook beat. See `Tools/remotion_assembly_tool.md`'s "Channel intro bumper" section for the
+    implementation. Not applied retroactively to the already-published Rimoni Muliaga video.
 
 - **Finding:** Visual-format variety (crime-scene/location maps, on-screen timelines, pull-quote
   cards) measurably boosts retention (one cited figure: ~35% from map graphics specifically) and

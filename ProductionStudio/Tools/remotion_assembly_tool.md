@@ -105,32 +105,47 @@ render-pipeline gap, not a one-off — every prior case (Banfield, Richins, Seme
 un-normalized multi-chapter structure and is presumably carrying the same defect, just not yet
 reported.
 
-## Per-video cold open / branding (escalated 2026-07-28 — the 2026-07-21 open task above was
-never actually built before this session's first real publish)
-Channel owner feedback after watching a published video: it "starts immediately" and "looks raw"
-with "not enough interactivity." Real 2026 true-crime-channel research (see
-`Documentation/TREND_LOG.md` for the citations) is consistent on two points that initially look
-contradictory but aren't:
-1. **Long animated intros hurt retention** — channels that removed a multi-second animated intro
-   saw a measured ~22% boost in 30-second retention. A full branded intro sequence before the
-   content starts is a real risk, not just old-fashioned.
-2. **A short, consistent, dramatic cold-open teaser is the actual genre convention** — true-crime
-   viewers reward predictable structure: a brief (research suggests up to ~30-60s, though that
-   reads high for a channel already leading with a strong Hook beat) teaser of the case's most
-   striking moment, before a brief channel bumper/sting, before the story proper begins.
-   This channel's existing 10-beat Script structure already puts the Hook first — the open
-   question is whether that Hook needs a *very short* (2-3s) branded stinger prepended (name +
-   sting sound, the original 2026-07-21 spec), or whether the channel owner's "preview with a
-   short backstory" idea (effectively a distinct, separately-written cold-open teaser ahead of the
-   Hook) is the better fit — these are different builds, not the same thing with different labels.
-   **Not decided unilaterally — see the channel owner's explicit direction before building either.**
-3. **Visual variety, not just more realistic photos, is what "interactive" likely refers to**:
-   creators report crime-scene/location map graphics boost retention (~35% in one cited case) and
-   recommend 5-7 distinct visual element *types* per video, not just narrated Ken-Burns pans over
-   still photos for the full runtime. This channel's current visual vocabulary is a single format
-   (one photo per scene, panned/zoomed) end to end — worth a future case testing a map/timeline
-   graphic insert or an on-screen pull-quote card as a second visual format, not just more/better
-   photos in the same format.
+## Channel intro bumper — built 2026-07-28 (open since 2026-07-21, escalated by real channel-owner
+feedback the same day: published videos "start immediately" and "look raw")
+Real 2026 true-crime-channel research (see `Documentation/TREND_LOG.md`'s 2026-07-28 entry for
+citations) found two points that initially look contradictory but aren't: long animated intros
+measurably hurt retention (~22% average boost in 30-second retention after channels removed
+them), but true-crime viewers specifically reward a short, consistent, dramatic structure —
+either a brief branded stinger or a distinct cold-open teaser ahead of the Hook. Presented both
+options to the channel owner; **short branded stinger was the explicit choice**, over a
+cold-open teaser-with-backstory alternative.
+- **Component:** `src/ChannelBumper.tsx` — `ChannelBumperComponent` (2.5s @ 30fps = 75 frames,
+  exported as `BUMPER_DURATION_FRAMES`) plus a standalone `ChannelBumper` composition for
+  isolated preview/render. Visual: "FATAL AFFAIRS" in Impact/Oswald 900-weight 130px, brand
+  white on brand black, thin red accent underline — reuses `ChannelTrailer.tsx`'s existing
+  title-card styling exactly for visual consistency with the channel trailer. Audio: a real
+  generated 2.5s sting (`Assets/audio/channel_bumper/bumper_sting.mp3`, ElevenLabs
+  sound-generation API — dark cinematic drone/reverb hit, no melody/percussion), generated
+  once and reused unchanged, same principle as the visual.
+- **Fixed and reused unchanged across every future video** — this is the one render element
+  that should NOT vary case-to-case. Not yet wired into `prep_remotion_render.py`'s per-case
+  data generation — the next case's Trial/Short composition should prepend
+  `<Sequence from={0} durationInFrames={BUMPER_DURATION_FRAMES}><ChannelBumperComponent />
+  </Sequence>` and shift every other Sequence's `from` by `BUMPER_DURATION_FRAMES`, rather than
+  copy-pasting the bumper's JSX into each new Trial component.
+- **Deliberately NOT applied to the already-published Rimoni Muliaga video** — channel owner's
+  explicit instruction was to fix the pipeline for future cases, not retroactively touch a live
+  video.
+- **Visual-variety point (still open, not built):** the same feedback pass ("not enough
+  interactivity") is most likely about visual-format variety, not the intro specifically —
+  creators report crime-scene/location map graphics boost retention (~35% in one cited case)
+  and recommend 5-7 distinct visual element *types* per video, not just narrated Ken-Burns pans
+  over still photos for the full runtime. This channel's current visual vocabulary is a single
+  format end to end — worth a future case testing a map/timeline graphic insert or an on-screen
+  pull-quote card as a second visual format. Not decided/built yet, separate from the bumper.
+- **Found and fixed while building this:** the local Remotion project's `node_modules`
+  (`@remotion/studio`, `@remotion/bundler`, likely others) had missing `dist` files — a latent
+  pre-existing install defect masked by webpack's build cache until a new file
+  (`ChannelBumper.tsx`) invalidated that cache and forced a fresh bundle-config resolution,
+  which then failed on `require.resolve()` calls into the broken packages. Fixed with a full
+  `rm -rf node_modules package-lock.json && npm install`. Worth doing this clean reinstall
+  proactively at the start of any future session that resumes this render project, rather than
+  waiting for a cache-invalidating change to surface it again.
 
 ## Background music mixing (fixed, research-grounded 2026-07-19 — see
 `Tools/royalty_free_music_tool.md` for sourcing, `Tools/elevenlabs_voice_tool.md`'s "Background
