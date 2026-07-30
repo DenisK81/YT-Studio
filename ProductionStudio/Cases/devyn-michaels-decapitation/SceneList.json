@@ -1,0 +1,396 @@
+{
+  "case_name": "Devyn Michaels decapitation",
+  "total_scenes": 48,
+  "total_words": 1200,
+  "estimated_total_seconds": 480.0,
+  "beat_ranges": [
+    {
+      "beat": "Hook",
+      "from_scene": "0001",
+      "to_scene": "0004"
+    },
+    {
+      "beat": "Conflict",
+      "from_scene": "0005",
+      "to_scene": "0009"
+    },
+    {
+      "beat": "Mystery",
+      "from_scene": "0010",
+      "to_scene": "0013"
+    },
+    {
+      "beat": "Escalation",
+      "from_scene": "0014",
+      "to_scene": "0016"
+    },
+    {
+      "beat": "Evidence",
+      "from_scene": "0017",
+      "to_scene": "0025"
+    },
+    {
+      "beat": "Twist",
+      "from_scene": "0026",
+      "to_scene": "0030"
+    },
+    {
+      "beat": "Investigation",
+      "from_scene": "0031",
+      "to_scene": "0035"
+    },
+    {
+      "beat": "Final Reveal",
+      "from_scene": "0036",
+      "to_scene": "0039"
+    },
+    {
+      "beat": "Aftermath",
+      "from_scene": "0040",
+      "to_scene": "0046"
+    },
+    {
+      "beat": "Question for viewers",
+      "from_scene": "0047",
+      "to_scene": "0048"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "0001",
+      "beat": "Hook",
+      "text": "A mother walked into her son's home and found his body wrapped in blankets on the bed. He had no head.",
+      "word_count": 21,
+      "estimated_seconds": 8.4
+    },
+    {
+      "scene_id": "0002",
+      "beat": "Hook",
+      "text": "Police never found it. Not that day. Not ever.",
+      "word_count": 9,
+      "estimated_seconds": 3.6
+    },
+    {
+      "scene_id": "0003",
+      "beat": "Hook",
+      "text": "The woman who did it wasn't a stranger. She was the mother of two of his children — and, at the same time, married to his son.",
+      "word_count": 27,
+      "estimated_seconds": 10.8
+    },
+    {
+      "scene_id": "0004",
+      "beat": "Hook",
+      "text": "She'd already pleaded guilty once. Then she took it back, and pointed the finger at her own husband instead.",
+      "word_count": 19,
+      "estimated_seconds": 7.6
+    },
+    {
+      "scene_id": "0005",
+      "beat": "Conflict",
+      "text": "Devyn Michaels was 47 years old, a former adult-film performer who'd gone by the stage names Nikki Fairchild and Tracee Tavarez. Her connection to the Willette family went back years before anyone died.",
+      "word_count": 33,
+      "estimated_seconds": 13.2
+    },
+    {
+      "scene_id": "0006",
+      "beat": "Conflict",
+      "text": "She and Johnathan Willette — 46 years old — had two daughters together. He wasn't a stranger she'd later target. He was the father of her children.",
+      "word_count": 27,
+      "estimated_seconds": 10.8
+    },
+    {
+      "scene_id": "0007",
+      "beat": "Conflict",
+      "text": "Then, in her late thirties, Michaels started a relationship with someone else in the same family: Johnathan's own son, Deviere. He was 19. Court testimony would later note he'd only just lost his virginity when it began.",
+      "word_count": 37,
+      "estimated_seconds": 14.8
+    },
+    {
+      "scene_id": "0008",
+      "beat": "Conflict",
+      "text": "She married him. Which meant the father of her daughters was now, officially, her father-in-law.",
+      "word_count": 15,
+      "estimated_seconds": 6.0
+    },
+    {
+      "scene_id": "0009",
+      "beat": "Conflict",
+      "text": "The age gap alone was enough to raise eyebrows at trial — a woman in her late thirties, starting a relationship with a 19-year-old who, by the prosecution's own account, \"had just lost his virginity.\"",
+      "word_count": 35,
+      "estimated_seconds": 14.0
+    },
+    {
+      "scene_id": "0010",
+      "beat": "Mystery",
+      "text": "On the surface, prosecutors said, this looked like a fresh start — Michaels building a new life with her young husband and their blended family.",
+      "word_count": 25,
+      "estimated_seconds": 10.0
+    },
+    {
+      "scene_id": "0011",
+      "beat": "Mystery",
+      "text": "Underneath it, a relationship with Johnathan that never fully ended.",
+      "word_count": 10,
+      "estimated_seconds": 4.0
+    },
+    {
+      "scene_id": "0012",
+      "beat": "Mystery",
+      "text": "By some accounts, the family was even trying to move in together — a strange, tangled attempt at keeping everyone close for the sake of the children, with the father, the son, and the woman connected to both of them all still circling one another.",
+      "word_count": 45,
+      "estimated_seconds": 18.0
+    },
+    {
+      "scene_id": "0013",
+      "beat": "Mystery",
+      "text": "Nobody outside that tangled family arrangement had any way of knowing where the fault lines actually were — until August 7th, 2023.",
+      "word_count": 22,
+      "estimated_seconds": 8.8
+    },
+    {
+      "scene_id": "0014",
+      "beat": "Escalation",
+      "text": "That morning, at Johnathan Willette's home in Henderson, Nevada, Michaels was giving him a back massage.",
+      "word_count": 16,
+      "estimated_seconds": 6.4
+    },
+    {
+      "scene_id": "0015",
+      "beat": "Escalation",
+      "text": "She struck him in the head with a wooden stick. He went limp.",
+      "word_count": 13,
+      "estimated_seconds": 5.2
+    },
+    {
+      "scene_id": "0016",
+      "beat": "Escalation",
+      "text": "She would later tell police he was still breathing when she left him. Prosecutors said that detail was Michaels minimizing what she'd actually done.",
+      "word_count": 24,
+      "estimated_seconds": 9.6
+    },
+    {
+      "scene_id": "0017",
+      "beat": "Evidence",
+      "text": "What happened next took more than one tool. The medical examiner, Dr. Stephanie Yagi, testified that Johnathan's head had been removed using a knife and a mechanically powered saw — two separate implements, used in sequence.",
+      "word_count": 36,
+      "estimated_seconds": 14.4
+    },
+    {
+      "scene_id": "0018",
+      "beat": "Evidence",
+      "text": "Yagi also found evidence of an earlier, unsuccessful attempt at a sharp-force injury in that same area — meaning this wasn't fast, and it wasn't clean.",
+      "word_count": 26,
+      "estimated_seconds": 10.4
+    },
+    {
+      "scene_id": "0019",
+      "beat": "Evidence",
+      "text": "Johnathan's body was found wrapped in blankets, soaked in a bleach-and-ammonia mixture strong enough that the fumes were still noticeable when his mother walked in.",
+      "word_count": 25,
+      "estimated_seconds": 10.0
+    },
+    {
+      "scene_id": "0020",
+      "beat": "Evidence",
+      "text": "His head was never recovered. To this day, it has never been found.",
+      "word_count": 13,
+      "estimated_seconds": 5.2
+    },
+    {
+      "scene_id": "0021",
+      "beat": "Evidence",
+      "text": "Investigators found two swords lying on the living room floor at the scene. They never forensically tested either one.",
+      "word_count": 19,
+      "estimated_seconds": 7.6
+    },
+    {
+      "scene_id": "0022",
+      "beat": "Evidence",
+      "text": "Which means nobody can say, to this day, whether the actual weapon used to remove Johnathan's head was ever sitting right there in the room the whole time — or whether it was something else entirely, something that was never found at all.",
+      "word_count": 43,
+      "estimated_seconds": 17.2
+    },
+    {
+      "scene_id": "0023",
+      "beat": "Evidence",
+      "text": "No murder weapon was ever definitively recovered or confirmed — despite a body found without its head.",
+      "word_count": 17,
+      "estimated_seconds": 6.8
+    },
+    {
+      "scene_id": "0024",
+      "beat": "Evidence",
+      "text": "What investigators did find: Johnathan's bloody phone, in Michaels' driveway. His wallet, his ID, his Social Security card, tied up in a plastic bag inside her dresser.",
+      "word_count": 27,
+      "estimated_seconds": 10.8
+    },
+    {
+      "scene_id": "0025",
+      "beat": "Evidence",
+      "text": "And at the property where Johnathan lived, a Ring camera system that had been removed shortly before the killing. No footage from it was ever recovered.",
+      "word_count": 26,
+      "estimated_seconds": 10.4
+    },
+    {
+      "scene_id": "0026",
+      "beat": "Twist",
+      "text": "Nine days after the killing, on August 15th, 2023, Michaels was arrested and charged with open murder.",
+      "word_count": 17,
+      "estimated_seconds": 6.8
+    },
+    {
+      "scene_id": "0027",
+      "beat": "Twist",
+      "text": "In 2024, she pleaded guilty — to second-degree murder, under a deal that would have given her 15 years to life.",
+      "word_count": 21,
+      "estimated_seconds": 8.4
+    },
+    {
+      "scene_id": "0028",
+      "beat": "Twist",
+      "text": "Then, in the summer of 2025, she withdrew that plea entirely.",
+      "word_count": 11,
+      "estimated_seconds": 4.4
+    },
+    {
+      "scene_id": "0029",
+      "beat": "Twist",
+      "text": "By then, more than a year and a half had passed since the arrest — a real deal already signed, a sentence already agreed to, and Michaels chose to tear it up and gamble on a jury instead.",
+      "word_count": 38,
+      "estimated_seconds": 15.2
+    },
+    {
+      "scene_id": "0030",
+      "beat": "Twist",
+      "text": "\"I can actually prove my innocence,\" she told reporters. \"And I'm not going to stop fighting to prove my innocence.\"",
+      "word_count": 20,
+      "estimated_seconds": 8.0
+    },
+    {
+      "scene_id": "0031",
+      "beat": "Investigation",
+      "text": "At trial that November, in Clark County, Michaels claimed Johnathan had been abusive — that he'd tried to force her into a sexual act, and that she'd only meant to injure him, never kill him.",
+      "word_count": 35,
+      "estimated_seconds": 14.0
+    },
+    {
+      "scene_id": "0032",
+      "beat": "Investigation",
+      "text": "Her own defense went further than self-defense. Attorney Robert Draskovich suggested someone else was actually responsible: Deviere — her husband. Johnathan's own son.",
+      "word_count": 23,
+      "estimated_seconds": 9.2
+    },
+    {
+      "scene_id": "0033",
+      "beat": "Investigation",
+      "text": "Draskovich would later admit exactly what he was up against: \"Any time there's a confession, it's a difficult case to defend.\"",
+      "word_count": 21,
+      "estimated_seconds": 8.4
+    },
+    {
+      "scene_id": "0034",
+      "beat": "Investigation",
+      "text": "Prosecutor Chief Deputy DA John Giordani laid out the motive to the jury directly: the only way Michaels could have the future she wanted — a new husband, a fresh start with her children — \"was with John out of the picture.\"",
+      "word_count": 42,
+      "estimated_seconds": 16.8
+    },
+    {
+      "scene_id": "0035",
+      "beat": "Investigation",
+      "text": "Deputy DA Brittni Griffith didn't soften it either: \"Devyn is a master manipulator, and that is shown through the evidence.\" She told the jury the walls had been closing in on \"the fantasy that she had put together.\"",
+      "word_count": 38,
+      "estimated_seconds": 15.2
+    },
+    {
+      "scene_id": "0036",
+      "beat": "Final Reveal",
+      "text": "Giordani, showing the jury crime scene photos during closing arguments, told them plainly: \"Buckle up, because you're in for a wild ride.\" It wasn't a rhetorical flourish. It was a warning about exactly what those photos showed.",
+      "word_count": 37,
+      "estimated_seconds": 14.8
+    },
+    {
+      "scene_id": "0037",
+      "beat": "Final Reveal",
+      "text": "The jury deliberated for roughly two hours.",
+      "word_count": 7,
+      "estimated_seconds": 2.8
+    },
+    {
+      "scene_id": "0038",
+      "beat": "Final Reveal",
+      "text": "On November 14th, 2025, they came back: guilty of first-degree murder, with the use of a deadly weapon.",
+      "word_count": 18,
+      "estimated_seconds": 7.2
+    },
+    {
+      "scene_id": "0039",
+      "beat": "Final Reveal",
+      "text": "Afterward, Giordani put it in the starkest terms he had: \"I am extremely grateful that the jury saw Deviere's innocence — and saw the overwhelming evidence of Devyn's guilt.\"",
+      "word_count": 29,
+      "estimated_seconds": 11.6
+    },
+    {
+      "scene_id": "0040",
+      "beat": "Aftermath",
+      "text": "On January 8th, 2026, Devyn Michaels was sentenced to 28 years to life in prison. She won't be eligible for parole until she's around 70 years old.",
+      "word_count": 27,
+      "estimated_seconds": 10.8
+    },
+    {
+      "scene_id": "0041",
+      "beat": "Aftermath",
+      "text": "Somewhere in all of this, a young man in his early twenties had to watch prosecutors argue, in open court, that his own wife killed his father — while his wife's own defense tried to convince the jury it was him instead.",
+      "word_count": 42,
+      "estimated_seconds": 16.8
+    },
+    {
+      "scene_id": "0042",
+      "beat": "Aftermath",
+      "text": "Deviere Willette wasn't just a name in this story.",
+      "word_count": 9,
+      "estimated_seconds": 3.6
+    },
+    {
+      "scene_id": "0043",
+      "beat": "Aftermath",
+      "text": "He was married to the woman on trial, and he was the son of the man she killed — meaning every single day of that trial, he had to sit with both halves of that sentence at once.",
+      "word_count": 38,
+      "estimated_seconds": 15.2
+    },
+    {
+      "scene_id": "0044",
+      "beat": "Aftermath",
+      "text": "Two young girls lost their father. Their mother is the reason why.",
+      "word_count": 12,
+      "estimated_seconds": 4.8
+    },
+    {
+      "scene_id": "0045",
+      "beat": "Aftermath",
+      "text": "And somewhere, still, is a head that was never found — the one piece of this case that was never resolved, no matter what the verdict said.",
+      "word_count": 27,
+      "estimated_seconds": 10.8
+    },
+    {
+      "scene_id": "0046",
+      "beat": "Aftermath",
+      "text": "Two swords sat on that living room floor the entire time investigators worked the scene. Nobody ever tested them. Whatever they could have proven, one way or the other, is a question that will never get answered now.",
+      "word_count": 38,
+      "estimated_seconds": 15.2
+    },
+    {
+      "scene_id": "0047",
+      "beat": "Question for viewers",
+      "text": "She pleaded guilty once. She took it back and tried to blame her own husband instead.",
+      "word_count": 16,
+      "estimated_seconds": 6.4
+    },
+    {
+      "scene_id": "0048",
+      "beat": "Question for viewers",
+      "text": "If you were sitting on that jury, watching her point at someone else — would two hours have been enough to see through it?",
+      "word_count": 24,
+      "estimated_seconds": 9.6
+    }
+  ]
+}

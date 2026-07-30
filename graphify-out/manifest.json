@@ -5,9 +5,9 @@
     "semantic_hash": "c70ef00121eb5612cdc025725b6c6baa"
   },
   ".claude/settings.local.json": {
-    "mtime": 1784958375.2266297,
-    "ast_hash": "284def99b35114d0cd1312c2258a3997",
-    "semantic_hash": "284def99b35114d0cd1312c2258a3997"
+    "mtime": 1785344008.39497,
+    "ast_hash": "f14f03465309c18a5b4d11b9dd5203a6",
+    "semantic_hash": "f14f03465309c18a5b4d11b9dd5203a6"
   },
   "ProductionStudio/Cases/brendan-banfield-double-murder/SceneList.json": {
     "mtime": 1784437338.4095516,
@@ -20,9 +20,9 @@
     "semantic_hash": "1fbedeb144ccb84bf22dcd8c576123e7"
   },
   "ProductionStudio/Cases/covered_cases.json": {
-    "mtime": 1785223985.7105162,
-    "ast_hash": "8c676d3c94a8f2eacd4353680d795844",
-    "semantic_hash": "8c676d3c94a8f2eacd4353680d795844"
+    "mtime": 1785388206.8777905,
+    "ast_hash": "ef8608e93b8604ccc306dd7bf13481c9",
+    "semantic_hash": "ef8608e93b8604ccc306dd7bf13481c9"
   },
   "ProductionStudio/Cases/kouri-richins-fentanyl-murder/SceneList.json": {
     "mtime": 1784665943.0153754,
@@ -45,9 +45,9 @@
     "semantic_hash": "e8a7b0b3d97b6f9507f596d02a77a6bd"
   },
   "ProductionStudio/Workflows/generate_case_assets.py": {
-    "mtime": 1785223985.718747,
-    "ast_hash": "19ce7b321b6b1ce104c46df23105d1b8",
-    "semantic_hash": "19ce7b321b6b1ce104c46df23105d1b8"
+    "mtime": 1785389303.3848722,
+    "ast_hash": "accfa2ae348698d2a2db40f926610806",
+    "semantic_hash": "accfa2ae348698d2a2db40f926610806"
   },
   "ProductionStudio/Workflows/generate_shorts_audio.py": {
     "mtime": 1784668395.9756238,
@@ -265,9 +265,9 @@
     "semantic_hash": "76eede6721cb3c3533d68b8d5eddcced"
   },
   "ProductionStudio/Cases/devyn-michaels-decapitation/Sources.md": {
-    "mtime": 1784431166.2623134,
-    "ast_hash": "ff36e3f8688b4198229a47b51ddd89e9",
-    "semantic_hash": "ff36e3f8688b4198229a47b51ddd89e9"
+    "mtime": 1785388326.7951744,
+    "ast_hash": "1facc7f8ee989a89ae63c020c2a80def",
+    "semantic_hash": "1facc7f8ee989a89ae63c020c2a80def"
   },
   "ProductionStudio/Cases/eric-thompson-jon-tokuhara-murder/Sources.md": {
     "mtime": 1784431166.2623134,
@@ -628,5 +628,60 @@
     "mtime": 1785223985.716743,
     "ast_hash": "0739ea7a6c9b1e5469def45140eb374f",
     "semantic_hash": "0739ea7a6c9b1e5469def45140eb374f"
+  },
+  "ProductionStudio/Cases/devyn-michaels-decapitation/SceneList.json": {
+    "mtime": 1785388510.4723017,
+    "ast_hash": "9bcfaf6188557c3522090cd528c8f4cd",
+    "semantic_hash": "9bcfaf6188557c3522090cd528c8f4cd"
+  },
+  "ProductionStudio/Cases/devyn-michaels-decapitation/Checklist.md": {
+    "mtime": 1785422822.7653296,
+    "ast_hash": "321645880f889bcf1c526eccf2201fa7",
+    "semantic_hash": "321645880f889bcf1c526eccf2201fa7"
+  },
+  "ProductionStudio/Cases/devyn-michaels-decapitation/FactCheck.md": {
+    "mtime": 1785388357.6547222,
+    "ast_hash": "92e67826bd842b35b3a5fcb7dd8f6574",
+    "semantic_hash": "92e67826bd842b35b3a5fcb7dd8f6574"
+  },
+  "ProductionStudio/Cases/devyn-michaels-decapitation/ImagePrompts.md": {
+    "mtime": 1785389740.5129733,
+    "ast_hash": "c4a8b994bc1e9d06b2c437229a52fc6f",
+    "semantic_hash": "c4a8b994bc1e9d06b2c437229a52fc6f"
+  },
+  "ProductionStudio/Cases/devyn-michaels-decapitation/PersonPhotos.md": {
+    "mtime": 1785389049.8687,
+    "ast_hash": "36c4a8d6348b22df2dde02dbc7a6e3ba",
+    "semantic_hash": "36c4a8d6348b22df2dde02dbc7a6e3ba"
+  },
+  "ProductionStudio/Cases/devyn-michaels-decapitation/PublishPlan.md": {
+    "mtime": 1785422813.0900252,
+    "ast_hash": "8c5dd368b1ef22e3213f07e179f0df69",
+    "semantic_hash": "8c5dd368b1ef22e3213f07e179f0df69"
+  },
+  "ProductionStudio/Cases/devyn-michaels-decapitation/SEO.md": {
+    "mtime": 1785422830.4412282,
+    "ast_hash": "5e7acfffd87035f0957100ecc36f1f25",
+    "semantic_hash": "5e7acfffd87035f0957100ecc36f1f25"
+  },
+  "ProductionStudio/Cases/devyn-michaels-decapitation/Script.md": {
+    "mtime": 1785388510.4712143,
+    "ast_hash": "23fea5cf9206b1511736a4a260ecf9e1",
+    "semantic_hash": "23fea5cf9206b1511736a4a260ecf9e1"
+  },
+  "ProductionStudio/Cases/devyn-michaels-decapitation/Shorts.md": {
+    "mtime": 1785389588.560736,
+    "ast_hash": "e846792d29650a87f63f3d40209dd4af",
+    "semantic_hash": "e846792d29650a87f63f3d40209dd4af"
+  },
+  "ProductionStudio/Cases/devyn-michaels-decapitation/Thumbnail.md": {
+    "mtime": 1785389498.7236903,
+    "ast_hash": "b4b57320855cedf6eb952ab66ed7e24b",
+    "semantic_hash": "b4b57320855cedf6eb952ab66ed7e24b"
+  },
+  "ProductionStudio/Cases/devyn-michaels-decapitation/Voiceover.txt": {
+    "mtime": 1785388528.3527129,
+    "ast_hash": "8ad88840619fb31d9314c1b6e78fc3a9",
+    "semantic_hash": "8ad88840619fb31d9314c1b6e78fc3a9"
   }
 }
