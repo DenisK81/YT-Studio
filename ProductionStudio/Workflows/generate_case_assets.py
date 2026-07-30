@@ -23,9 +23,12 @@ Requires ELEVENLABS_API_KEY and/or FAL_KEY in the environment - never hardcode.
 """
 import argparse
 import base64
+import glob
 import json
 import os
 import re
+import shutil
+import subprocess
 import sys
 import time
 import urllib.error
@@ -35,6 +38,54 @@ VOICE_ID = "wSChTcAxdiTjLPhHeyrM"  # Jimmy - Canadian Podcast Narration (fixed i
 ELEVENLABS_MODEL = "eleven_multilingual_v2"
 TTS_REQUEST_SPACING_SECONDS = 20  # Creator plan: max 5 concurrent - stay well under it
 FAL_REQUEST_SPACING_SECONDS = 1
+LOUDNORM_TARGET_I = -24  # integrated LUFS target - see Tools/remotion_assembly_tool.md's
+LOUDNORM_TARGET_TP = -1.5  # "Chapter-to-chapter voice loudness inconsistency" note (2026-07-28):
+LOUDNORM_TARGET_LRA = 11  # each chapter is a separate ElevenLabs call with no cross-call loudness
+                           # guarantee - a real case measured up to a 9.7 LU swing between chapters
+                           # (clearly audible as a volume jump) before this normalization existed.
+
+
+def _find_ffmpeg():
+    exe = shutil.which("ffmpeg")
+    if exe:
+        return exe
+    # Known winget install location on this machine - shutil.which alone won't find it since
+    # ffmpeg isn't on PATH by default even after `winget install`.
+    candidates = glob.glob(
+        os.path.expandvars(r"%LOCALAPPDATA%\Microsoft\WinGet\Packages\Gyan.FFmpeg_*\ffmpeg-*\bin\ffmpeg.exe")
+    )
+    return candidates[0] if candidates else None
+
+
+def normalize_chapter_loudness(mp3_path):
+    """Two-pass ffmpeg loudnorm in place, sample-accurate (no duration change - verified via
+    mutagen on a real case), so it's always safe to run right after ElevenLabs writes a chapter
+    and before its real per-word timing (derived independently from the API's own alignment,
+    not from the audio file) is used downstream."""
+    ffmpeg = _find_ffmpeg()
+    if not ffmpeg:
+        print(f"  WARNING: ffmpeg not found - skipping loudness normalization for {mp3_path}")
+        return
+    measure_cmd = [ffmpeg, "-i", mp3_path, "-af",
+                   f"loudnorm=I={LOUDNORM_TARGET_I}:TP={LOUDNORM_TARGET_TP}:LRA={LOUDNORM_TARGET_LRA}:print_format=json",
+                   "-f", "null", "-"]
+    result = subprocess.run(measure_cmd, capture_output=True, text=True)
+    match = re.search(r"\{[^{}]*\}", result.stderr, re.DOTALL)
+    if not match:
+        print(f"  WARNING: loudnorm measurement failed for {mp3_path} - leaving un-normalized")
+        return
+    m = json.loads(match.group(0))
+    out_path = mp3_path + ".norm.mp3"
+    apply_cmd = [
+        ffmpeg, "-y", "-i", mp3_path, "-af",
+        f"loudnorm=I={LOUDNORM_TARGET_I}:TP={LOUDNORM_TARGET_TP}:LRA={LOUDNORM_TARGET_LRA}:"
+        f"measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}:"
+        f"measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true",
+        "-ar", "44100", "-c:a", "libmp3lame", "-b:a", "192k", out_path,
+    ]
+    subprocess.run(apply_cmd, capture_output=True, text=True)
+    os.replace(out_path, mp3_path)
+    print(f"  normalized loudness: {m['input_i']} LUFS -> {LOUDNORM_TARGET_I} LUFS")
 
 
 def repo_root():
@@ -150,6 +201,7 @@ def cmd_audio(case_dir, audio_dir):
         mp3_path = os.path.join(audio_dir, ch["label"] + ".mp3")
         with open(mp3_path, "wb") as f:
             f.write(audio_bytes)
+        normalize_chapter_loudness(mp3_path)
 
         align = resp.get("alignment") or resp.get("normalized_alignment")
         if not align:

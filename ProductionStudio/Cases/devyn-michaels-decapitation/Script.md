@@ -1,0 +1,145 @@
+```
+[[SCENE:0001]]
+A mother walked into her son's home and found his body wrapped in blankets on the bed. He had no head.
+
+[[SCENE:0002]]
+Police never found it. Not that day. Not ever.
+
+[[SCENE:0003]]
+The woman who did it wasn't a stranger. She was the mother of two of his children — and, at the same time, married to his son.
+
+[[SCENE:0004]]
+She'd already pleaded guilty once. Then she took it back, and pointed the finger at her own husband instead.
+
+[[SCENE:0005]]
+Devyn Michaels was 47 years old, a former adult-film performer who'd gone by the stage names Nikki Fairchild and Tracee Tavarez. Her connection to the Willette family went back years before anyone died.
+
+[[SCENE:0006]]
+She and Johnathan Willette — 46 years old — had two daughters together. He wasn't a stranger she'd later target. He was the father of her children.
+
+[[SCENE:0007]]
+Then, in her late thirties, Michaels started a relationship with someone else in the same family: Johnathan's own son, Deviere. He was 19. Court testimony would later note he'd only just lost his virginity when it began.
+
+[[SCENE:0008]]
+She married him. Which meant the father of her daughters was now, officially, her father-in-law.
+
+[[SCENE:0009]]
+The age gap alone was enough to raise eyebrows at trial — a woman in her late thirties, starting a relationship with a 19-year-old who, by the prosecution's own account, "had just lost his virginity."
+
+[[SCENE:0010]]
+On the surface, prosecutors said, this looked like a fresh start — Michaels building a new life with her young husband and their blended family.
+
+[[SCENE:0011]]
+Underneath it, a relationship with Johnathan that never fully ended.
+
+[[SCENE:0012]]
+By some accounts, the family was even trying to move in together — a strange, tangled attempt at keeping everyone close for the sake of the children, with the father, the son, and the woman connected to both of them all still circling one another.
+
+[[SCENE:0013]]
+Nobody outside that tangled family arrangement had any way of knowing where the fault lines actually were — until August 7th, 2023.
+
+[[SCENE:0014]]
+That morning, at Johnathan Willette's home in Henderson, Nevada, Michaels was giving him a back massage.
+
+[[SCENE:0015]]
+She struck him in the head with a wooden stick. He went limp.
+
+[[SCENE:0016]]
+She would later tell police he was still breathing when she left him. Prosecutors said that detail was Michaels minimizing what she'd actually done.
+
+[[SCENE:0017]]
+What happened next took more than one tool. The medical examiner, Dr. Stephanie Yagi, testified that Johnathan's head had been removed using a knife and a mechanically powered saw — two separate implements, used in sequence.
+
+[[SCENE:0018]]
+Yagi also found evidence of an earlier, unsuccessful attempt at a sharp-force injury in that same area — meaning this wasn't fast, and it wasn't clean.
+
+[[SCENE:0019]]
+Johnathan's body was found wrapped in blankets, soaked in a bleach-and-ammonia mixture strong enough that the fumes were still noticeable when his mother walked in.
+
+[[SCENE:0020]]
+His head was never recovered. To this day, it has never been found.
+
+[[SCENE:0021]]
+Investigators found two swords lying on the living room floor at the scene. They never forensically tested either one.
+
+[[SCENE:0022]]
+Which means nobody can say, to this day, whether the actual weapon used to remove Johnathan's head was ever sitting right there in the room the whole time — or whether it was something else entirely, something that was never found at all.
+
+[[SCENE:0023]]
+No murder weapon was ever definitively recovered or confirmed — despite a body found without its head.
+
+[[SCENE:0024]]
+What investigators did find: Johnathan's bloody phone, in Michaels' driveway. His wallet, his ID, his Social Security card, tied up in a plastic bag inside her dresser.
+
+[[SCENE:0025]]
+And at the property where Johnathan lived, a Ring camera system that had been removed shortly before the killing. No footage from it was ever recovered.
+
+[[SCENE:0026]]
+Nine days after the killing, on August 15th, 2023, Michaels was arrested and charged with open murder.
+
+[[SCENE:0027]]
+In 2024, she pleaded guilty — to second-degree murder, under a deal that would have given her 15 years to life.
+
+[[SCENE:0028]]
+Then, in the summer of 2025, she withdrew that plea entirely.
+
+[[SCENE:0029]]
+By then, more than a year and a half had passed since the arrest — a real deal already signed, a sentence already agreed to, and Michaels chose to tear it up and gamble on a jury instead.
+
+[[SCENE:0030]]
+"I can actually prove my innocence," she told reporters. "And I'm not going to stop fighting to prove my innocence."
+
+[[SCENE:0031]]
+At trial that November, in Clark County, Michaels claimed Johnathan had been abusive — that he'd tried to force her into a sexual act, and that she'd only meant to injure him, never kill him.
+
+[[SCENE:0032]]
+Her own defense went further than self-defense. Attorney Robert Draskovich suggested someone else was actually responsible: Deviere — her husband. Johnathan's own son.
+
+[[SCENE:0033]]
+Draskovich would later admit exactly what he was up against: "Any time there's a confession, it's a difficult case to defend."
+
+[[SCENE:0034]]
+Prosecutor Chief Deputy DA John Giordani laid out the motive to the jury directly: the only way Michaels could have the future she wanted — a new husband, a fresh start with her children — "was with John out of the picture."
+
+[[SCENE:0035]]
+Deputy DA Brittni Griffith didn't soften it either: "Devyn is a master manipulator, and that is shown through the evidence." She told the jury the walls had been closing in on "the fantasy that she had put together."
+
+[[SCENE:0036]]
+Giordani, showing the jury crime scene photos during closing arguments, told them plainly: "Buckle up, because you're in for a wild ride." It wasn't a rhetorical flourish. It was a warning about exactly what those photos showed.
+
+[[SCENE:0037]]
+The jury deliberated for roughly two hours.
+
+[[SCENE:0038]]
+On November 14th, 2025, they came back: guilty of first-degree murder, with the use of a deadly weapon.
+
+[[SCENE:0039]]
+Afterward, Giordani put it in the starkest terms he had: "I am extremely grateful that the jury saw Deviere's innocence — and saw the overwhelming evidence of Devyn's guilt."
+
+[[SCENE:0040]]
+On January 8th, 2026, Devyn Michaels was sentenced to 28 years to life in prison. She won't be eligible for parole until she's around 70 years old.
+
+[[SCENE:0041]]
+Somewhere in all of this, a young man in his early twenties had to watch prosecutors argue, in open court, that his own wife killed his father — while his wife's own defense tried to convince the jury it was him instead.
+
+[[SCENE:0042]]
+Deviere Willette wasn't just a name in this story.
+
+[[SCENE:0043]]
+He was married to the woman on trial, and he was the son of the man she killed — meaning every single day of that trial, he had to sit with both halves of that sentence at once.
+
+[[SCENE:0044]]
+Two young girls lost their father. Their mother is the reason why.
+
+[[SCENE:0045]]
+And somewhere, still, is a head that was never found — the one piece of this case that was never resolved, no matter what the verdict said.
+
+[[SCENE:0046]]
+Two swords sat on that living room floor the entire time investigators worked the scene. Nobody ever tested them. Whatever they could have proven, one way or the other, is a question that will never get answered now.
+
+[[SCENE:0047]]
+She pleaded guilty once. She took it back and tried to blame her own husband instead.
+
+[[SCENE:0048]]
+If you were sitting on that jury, watching her point at someone else — would two hours have been enough to see through it?
+```
