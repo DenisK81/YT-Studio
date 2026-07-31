@@ -88,3 +88,72 @@ initially assumed to be Short #2, but checking its real `contentDetails.duration
 (`PT11M35S`) showed it was actually the **main video** uploaded under one of its `SEO.md` title
 options, not a Short at all. Always verify by real duration/file size, not title text, before
 concluding a specific render was or wasn't already published.
+
+## Pinned comment automation — added 2026-07-31 (real gap found: SEO Agent/Shorts Agent always
+drafted a `pinned_comment` field, but nothing ever actually posted it)
+
+`post_comment(video_id, text)` in `youtube_agent.py` posts the pre-drafted `pinned_comment` from
+`SEO.md`/`Shorts.md` as a top-level comment via `commentThreads().insert()`. Called once per
+video/Short, right alongside that asset's `confirm_publish()` call, using the same
+already-given human go-ahead for the batch (this is a much smaller, easily-reversible action
+than the publish decision itself — a comment can be deleted — so it does not need its own
+separate confirmation beyond the batch-level "yes, publish these" already required for
+`confirm_publish`).
+
+**Real limitation, not a bug to route around:** the YouTube Data API v3 has no endpoint to pin
+a comment — `commentThreads.insert` can only post it. Making it the *pinned* top comment (the
+one shown first, marked "Pinned by [channel]") is a channel-owner-only action in YouTube
+Studio's own UI (comment's `...` menu → Pin). This tool posts the comment; it does not and
+cannot pin it. If the channel owner wants it visibly pinned, that's a ~5-second manual step in
+Studio after each publish — no API workaround exists, and scraping Studio's web UI to fake it
+would be fragile and against the API's terms, so this tool deliberately doesn't attempt that.
+
+**New scope required:** `youtube.force-ssl` was added to `SCOPES` for `commentThreads.insert`.
+Since scopes changed, the cached token at `Config/youtube_token.json` needs one more
+`python youtube_agent.py auth` re-consent (opens a browser, channel owner clicks Allow again)
+before `comment`/`post_comment()` will work — the old token issued under the narrower scope set
+will otherwise fail on this specific call.
+
+**Resolved 2026-07-31:** the new scope initially failed with a silent `403 insufficient
+permissions` even after re-auth — the scope appeared in the consent URL but Google wasn't
+actually granting it. Root cause: **this app's OAuth consent screen (Google Cloud Console →
+APIs & Services → OAuth consent screen → Scopes) has its own explicit allow-list of scopes** —
+requesting a scope in the auth URL that isn't also added there gets silently dropped from the
+issued token, no error at auth time. Fixed by adding `youtube.force-ssl` there, then re-running
+`python youtube_agent.py auth` once more. `post_comment()` now works.
+
+**Real platform restriction (not a bug):** `commentThreads.insert` returns the same
+`403 insufficient permissions` error on a video that is still `privacyStatus: private`
+(i.e. scheduled but not yet live) — YouTube does not allow comment threads on private videos
+regardless of scope/ownership. Comments for a scheduled video can only be posted once
+`publishAt` has actually passed and the video flips public. There's no way to pre-stage a
+comment for a not-yet-public video; `post_comment()` must be called again after the video goes
+live.
+
+## Analytics — added 2026-07-31 (channel owner asked for real per-video performance data,
+not just the aggregate stats `videos().list` gives)
+
+`get_analytics_service()` builds a separate `youtubeAnalytics` v2 API client (distinct from the
+`youtube` v3 client used everywhere else in this module — different discovery doc, same cached
+OAuth credentials). `video_analytics(video_id, start_date, end_date)` queries `reports().query()`
+for `views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage` on `dimensions=
+video`, filtered to one video.
+
+- **New scope required:** `yt-analytics.readonly`. Same Cloud Console gotcha as `force-ssl`
+  above — the underlying **YouTube Analytics API also had to be explicitly enabled** in
+  Google Cloud Console → APIs & Services → Library before its scope would even appear in the
+  OAuth consent screen's scope picker. Enable the API first, then add the scope, then re-auth.
+- **`impressions`/`impressionsClickThroughRate` (thumbnail CTR) are NOT queryable** on this
+  channel via this `reports().query()` shape — the API rejects them outright with
+  `Unknown identifier (impressions)`, not a permissions or data-availability error. Deliberately
+  left out of `video_analytics()`'s metric list rather than silently retried or faked. If
+  thumbnail CTR is ever needed, check YouTube Studio's own Analytics tab directly (it has real
+  per-video CTR) — there is currently no working API path to it from this tool.
+- **Processing lag:** metrics return `None` for videos published within roughly the last 1-3
+  days — YouTube Analytics data isn't processed in real time. Don't read a `None` result as
+  "zero performance," it means "not processed yet."
+- Real first test (2026-07-31): Muliaga main (published 2026-07-28) showed 4 views, 182s average
+  view duration, 41.08% average view percentage; Muliaga short_1 (published 2026-07-29) showed
+  37 views, 18s average view duration, 69.49% average view percentage — the higher retention
+  percentage on the Short vs. the main video is the expected short-form-vs-long-form pattern,
+  not a hook-quality signal on this small a sample.

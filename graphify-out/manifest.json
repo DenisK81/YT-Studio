@@ -20,7 +20,7 @@
     "semantic_hash": "1fbedeb144ccb84bf22dcd8c576123e7"
   },
   "ProductionStudio/Cases/covered_cases.json": {
-    "mtime": 1785473980.420936,
+    "mtime": 1785523871.6374688,
     "ast_hash": "094cf5b0e29b266c29eb1dfb1da94fbd",
     "semantic_hash": "094cf5b0e29b266c29eb1dfb1da94fbd"
   },
@@ -435,9 +435,9 @@
     "semantic_hash": "d79a25a484791c0d7ef241b2a0160cd3"
   },
   "ProductionStudio/Tools/youtube_publish_tool.md": {
-    "mtime": 1785043856.3899665,
-    "ast_hash": "88386f8a6f67c33526636ae8311af27b",
-    "semantic_hash": "88386f8a6f67c33526636ae8311af27b"
+    "mtime": 1785534616.135523,
+    "ast_hash": "20c519ad89a1823219431f665b2262e5",
+    "semantic_hash": "20c519ad89a1823219431f665b2262e5"
   },
   "ProductionStudio/Workflows/PIPELINE_OVERVIEW.md": {
     "mtime": 1784656182.4423742,
@@ -560,9 +560,9 @@
     "semantic_hash": "c0710db219bf7d69f49e9d36e8d23e42"
   },
   "ProductionStudio/Workflows/youtube_agent.py": {
-    "mtime": 1785209818.9779,
-    "ast_hash": "1115b3bccb9105eac9bbb8496fefdb39",
-    "semantic_hash": "1115b3bccb9105eac9bbb8496fefdb39"
+    "mtime": 1785534530.6577024,
+    "ast_hash": "e12675f803ae889a7dbc84084c871040",
+    "semantic_hash": "e12675f803ae889a7dbc84084c871040"
   },
   "ProductionStudio/Documentation/TREND_LOG.md": {
     "mtime": 1785304931.6085033,
@@ -685,39 +685,39 @@
     "semantic_hash": "8ad88840619fb31d9314c1b6e78fc3a9"
   },
   "ProductionStudio/Cases/walter-buchanan-murder/SceneList.json": {
-    "mtime": 1785476216.4550757,
+    "mtime": 1785523871.6411269,
     "ast_hash": "b632a321d72a40f2420af12110f7c303",
     "semantic_hash": "b632a321d72a40f2420af12110f7c303"
   },
   "ProductionStudio/Cases/walter-buchanan-murder/Checklist.md": {
-    "mtime": 1785479689.5007095,
-    "ast_hash": "25b681086277ed7f9b77b97620496af3",
-    "semantic_hash": "25b681086277ed7f9b77b97620496af3"
+    "mtime": 1785534639.9607377,
+    "ast_hash": "5c1c8b07964ea1d3b2da89756df62272",
+    "semantic_hash": "5c1c8b07964ea1d3b2da89756df62272"
   },
   "ProductionStudio/Cases/walter-buchanan-murder/FactCheck.md": {
-    "mtime": 1785476000.3550787,
-    "ast_hash": "27d4dbf96c4c4420625be0f31b1267e1",
-    "semantic_hash": "27d4dbf96c4c4420625be0f31b1267e1"
+    "mtime": 1785523871.6386082,
+    "ast_hash": "0c5fa3d5aeaeeccbd07a326967328ea7",
+    "semantic_hash": "0c5fa3d5aeaeeccbd07a326967328ea7"
   },
   "ProductionStudio/Cases/walter-buchanan-murder/ImagePrompts.md": {
-    "mtime": 1785477827.894916,
-    "ast_hash": "885c04ba8510003399aaff4d9ec227e4",
-    "semantic_hash": "885c04ba8510003399aaff4d9ec227e4"
+    "mtime": 1785523871.6386082,
+    "ast_hash": "7163d603f74a8b45bbdd443f0ccee498",
+    "semantic_hash": "7163d603f74a8b45bbdd443f0ccee498"
   },
   "ProductionStudio/Cases/walter-buchanan-murder/PersonPhotos.md": {
-    "mtime": 1785477863.5865505,
-    "ast_hash": "44cde3915c6ce838d6ff75e04a3cf8d8",
-    "semantic_hash": "44cde3915c6ce838d6ff75e04a3cf8d8"
+    "mtime": 1785523871.639623,
+    "ast_hash": "d8cde861358b4294b4390ea77042b5b1",
+    "semantic_hash": "d8cde861358b4294b4390ea77042b5b1"
   },
   "ProductionStudio/Cases/walter-buchanan-murder/PublishPlan.md": {
-    "mtime": 1785478148.7258356,
-    "ast_hash": "dfd92455e485e5ada86315dfe5134018",
-    "semantic_hash": "dfd92455e485e5ada86315dfe5134018"
+    "mtime": 1785528365.9744842,
+    "ast_hash": "32bbeee25ef7ed1a001f83d2d48473fe",
+    "semantic_hash": "32bbeee25ef7ed1a001f83d2d48473fe"
   },
   "ProductionStudio/Cases/walter-buchanan-murder/SEO.md": {
-    "mtime": 1785477135.4002404,
-    "ast_hash": "bd5022ee22d5c84cecef46726b4be480",
-    "semantic_hash": "bd5022ee22d5c84cecef46726b4be480"
+    "mtime": 1785523871.6411269,
+    "ast_hash": "5a69b05ba0f25add06944f7e85fcba70",
+    "semantic_hash": "5a69b05ba0f25add06944f7e85fcba70"
   },
   "ProductionStudio/Cases/walter-buchanan-murder/Script.md": {
     "mtime": 1785476216.453415,
@@ -725,19 +725,19 @@
     "semantic_hash": "0e954ae399938ed4c4fe5e8fa0729bf8"
   },
   "ProductionStudio/Cases/walter-buchanan-murder/Shorts.md": {
-    "mtime": 1785477180.8064387,
-    "ast_hash": "40005babc2eff1e0eea33356c7b47c9c",
-    "semantic_hash": "40005babc2eff1e0eea33356c7b47c9c"
+    "mtime": 1785523871.6437008,
+    "ast_hash": "5263c51fe239fe63116c7e0c8739f74c",
+    "semantic_hash": "5263c51fe239fe63116c7e0c8739f74c"
   },
   "ProductionStudio/Cases/walter-buchanan-murder/Sources.md": {
-    "mtime": 1785475972.084192,
-    "ast_hash": "fc0d029f65edc07170ae5fbb6a190d93",
-    "semantic_hash": "fc0d029f65edc07170ae5fbb6a190d93"
+    "mtime": 1785523871.6451108,
+    "ast_hash": "2abb2291d1cc123e2b57747ea589928b",
+    "semantic_hash": "2abb2291d1cc123e2b57747ea589928b"
   },
   "ProductionStudio/Cases/walter-buchanan-murder/Thumbnail.md": {
-    "mtime": 1785477045.0922332,
-    "ast_hash": "c22741198cd9da2e79ee4b0744153ca6",
-    "semantic_hash": "c22741198cd9da2e79ee4b0744153ca6"
+    "mtime": 1785523871.6451108,
+    "ast_hash": "a1e1bf8eb492813deb6ed004f8a548be",
+    "semantic_hash": "a1e1bf8eb492813deb6ed004f8a548be"
   },
   "ProductionStudio/Cases/walter-buchanan-murder/Voiceover.txt": {
     "mtime": 1785476449.8987515,
@@ -745,23 +745,23 @@
     "semantic_hash": "e480756f1b50e9042516e8f233df2343"
   },
   "ProductionStudio/Cases/walter-buchanan-murder/shorts_scripts/short_1.txt": {
-    "mtime": 1785479158.8841927,
-    "ast_hash": "ff996ec7458d782abe909d4a40091afa",
-    "semantic_hash": "ff996ec7458d782abe909d4a40091afa"
+    "mtime": 1785523871.6461165,
+    "ast_hash": "4e46642e08281ea65c2c17051a3b1742",
+    "semantic_hash": "4e46642e08281ea65c2c17051a3b1742"
   },
   "ProductionStudio/Cases/walter-buchanan-murder/shorts_scripts/short_2.txt": {
-    "mtime": 1785479168.0775406,
-    "ast_hash": "1174c5d0592d10a98d1a07adcdc73dfd",
-    "semantic_hash": "1174c5d0592d10a98d1a07adcdc73dfd"
+    "mtime": 1785523871.6475081,
+    "ast_hash": "8c5438d2a953b39112b24b4125bdd6bb",
+    "semantic_hash": "8c5438d2a953b39112b24b4125bdd6bb"
   },
   "ProductionStudio/Cases/walter-buchanan-murder/shorts_scripts/short_3.txt": {
-    "mtime": 1785479174.1541383,
-    "ast_hash": "2ca8601963ebbe37e43a4e4f0e47db28",
-    "semantic_hash": "2ca8601963ebbe37e43a4e4f0e47db28"
+    "mtime": 1785523871.6475081,
+    "ast_hash": "3d1dd88a1c2a4fd07893afe8f2055945",
+    "semantic_hash": "3d1dd88a1c2a4fd07893afe8f2055945"
   },
   "ProductionStudio/Cases/walter-buchanan-murder/shorts_scripts/short_4.txt": {
-    "mtime": 1785479180.183539,
-    "ast_hash": "e7ecc0ed840521841947697e5f70f776",
-    "semantic_hash": "e7ecc0ed840521841947697e5f70f776"
+    "mtime": 1785523871.6475081,
+    "ast_hash": "eecb45cd255542123f344e450904fb8b",
+    "semantic_hash": "eecb45cd255542123f344e450904fb8b"
   }
 }
