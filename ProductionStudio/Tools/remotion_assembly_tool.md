@@ -147,6 +147,32 @@ cold-open teaser-with-backstory alternative.
   proactively at the start of any future session that resumes this render project, rather than
   waiting for a cache-invalidating change to surface it again.
 
+## Channel outro bumper — built 2026-07-30 (channel owner feedback on the Devyn Michaels video:
+"в прошлом видео ты забыл сделать превью в видео и концовку такую же" — the intro bumper existed
+but nothing mirrored it at the end)
+Presented two options — a short teaser-with-backstory preview vs. the same brand screen repeated
+at both start and end — and the channel owner chose the latter: **the exact same
+`ChannelBumperComponent`, unchanged, now appears at both the start AND the end of every main
+video going forward**, not just the start. This is a standing requirement from the Walter
+Buchanan case onward, not a one-off.
+- **Implementation:** no new component needed — reuse `ChannelBumperComponent` and
+  `BUMPER_DURATION_FRAMES` from `src/ChannelBumper.tsx` unchanged. In the Trial component, add a
+  second `<Sequence>` starting at `totalFrames + BUMPER_DURATION_FRAMES` (i.e. right after the
+  last scene/caption/audio ends, accounting for the intro bumper's own offset), with
+  `durationInFrames={BUMPER_DURATION_FRAMES}`. The `Composition`'s `durationInFrames` must become
+  `totalFrames + BUMPER_DURATION_FRAMES * 2` (intro + content + outro), not just `+ 1x` as before.
+  See `src/WalterBuchananTrial.tsx` for the first real implementation of this pattern.
+- **Not applied to Shorts** — Shorts stay bumper-free at both ends, per the existing
+  intro-bumper convention (`Shorts.md`'s "Visual structure and rationale" section), to preserve
+  their fast cold-open hook. The "same ending too" feedback was about the main video specifically.
+- **Deliberately NOT applied retroactively to the already-published Devyn Michaels video** —
+  consistent with the channel owner's standing "fix the pipeline going forward, don't touch a
+  live video" precedent from the Rimoni Muliaga case's redaction-margin fix.
+- **Total runtime impact:** adds one more `BUMPER_DURATION_FRAMES` (75 frames / 2.5s) to every
+  future main video's total length beyond what the intro-only version added. Does not affect any
+  mid-video chapter timestamp used in `SEO.md`'s YouTube chapter list — only the video's total
+  duration.
+
 ## Background music mixing (fixed, research-grounded 2026-07-19 — see
 `Tools/royalty_free_music_tool.md` for sourcing, `Tools/elevenlabs_voice_tool.md`'s "Background
 music" section for the fallback path)

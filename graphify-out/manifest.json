@@ -20,9 +20,9 @@
     "semantic_hash": "1fbedeb144ccb84bf22dcd8c576123e7"
   },
   "ProductionStudio/Cases/covered_cases.json": {
-    "mtime": 1785388206.8777905,
-    "ast_hash": "ef8608e93b8604ccc306dd7bf13481c9",
-    "semantic_hash": "ef8608e93b8604ccc306dd7bf13481c9"
+    "mtime": 1785473980.420936,
+    "ast_hash": "094cf5b0e29b266c29eb1dfb1da94fbd",
+    "semantic_hash": "094cf5b0e29b266c29eb1dfb1da94fbd"
   },
   "ProductionStudio/Cases/kouri-richins-fentanyl-murder/SceneList.json": {
     "mtime": 1784665943.0153754,
@@ -45,7 +45,7 @@
     "semantic_hash": "e8a7b0b3d97b6f9507f596d02a77a6bd"
   },
   "ProductionStudio/Workflows/generate_case_assets.py": {
-    "mtime": 1785389303.3848722,
+    "mtime": 1785423347.4389524,
     "ast_hash": "accfa2ae348698d2a2db40f926610806",
     "semantic_hash": "accfa2ae348698d2a2db40f926610806"
   },
@@ -110,7 +110,7 @@
     "semantic_hash": "48c5723ace5f18c5763ffaffb96e6573"
   },
   "ProductionStudio/Agents/research_agent.md": {
-    "mtime": 1785044937.0789013,
+    "mtime": 1785045369.9943717,
     "ast_hash": "bea8628595eb586e460caf04b9326678",
     "semantic_hash": "bea8628595eb586e460caf04b9326678"
   },
@@ -120,12 +120,12 @@
     "semantic_hash": "45a28218d52b05b6fb323e77d15e19bc"
   },
   "ProductionStudio/Agents/seo_agent.md": {
-    "mtime": 1785209419.283508,
+    "mtime": 1785209818.9769032,
     "ast_hash": "16abc18f824ed1d727429a39a8e656e0",
     "semantic_hash": "16abc18f824ed1d727429a39a8e656e0"
   },
   "ProductionStudio/Agents/shorts_agent.md": {
-    "mtime": 1785209451.9611738,
+    "mtime": 1785209818.9779,
     "ast_hash": "3ebbf169b0cbafcf23c61488f582787e",
     "semantic_hash": "3ebbf169b0cbafcf23c61488f582787e"
   },
@@ -265,9 +265,9 @@
     "semantic_hash": "76eede6721cb3c3533d68b8d5eddcced"
   },
   "ProductionStudio/Cases/devyn-michaels-decapitation/Sources.md": {
-    "mtime": 1785388326.7951744,
-    "ast_hash": "1facc7f8ee989a89ae63c020c2a80def",
-    "semantic_hash": "1facc7f8ee989a89ae63c020c2a80def"
+    "mtime": 1785423347.4379559,
+    "ast_hash": "10c457fbc86300643142341ef9ea1614",
+    "semantic_hash": "10c457fbc86300643142341ef9ea1614"
   },
   "ProductionStudio/Cases/eric-thompson-jon-tokuhara-murder/Sources.md": {
     "mtime": 1784431166.2623134,
@@ -330,7 +330,7 @@
     "semantic_hash": "75d29810f69e000544d479f3f3fd0579"
   },
   "ProductionStudio/Documentation/ARCHITECTURE.md": {
-    "mtime": 1785044791.742838,
+    "mtime": 1785045369.99549,
     "ast_hash": "a6722b7dfa424d6bb3346822539ad8d7",
     "semantic_hash": "a6722b7dfa424d6bb3346822539ad8d7"
   },
@@ -410,9 +410,9 @@
     "semantic_hash": "279f19414d43eb1cf16c0116d0ae6496"
   },
   "ProductionStudio/Tools/image_gen_tool.md": {
-    "mtime": 1784618258.2978673,
-    "ast_hash": "26faa9039026a67d8adc3fa09f4bbd3f",
-    "semantic_hash": "26faa9039026a67d8adc3fa09f4bbd3f"
+    "mtime": 1785478211.0281796,
+    "ast_hash": "0239644b3e3d00cba915e8d517521d41",
+    "semantic_hash": "0239644b3e3d00cba915e8d517521d41"
   },
   "ProductionStudio/Tools/mugshot_fetch_tool.md": {
     "mtime": 1785304931.6085033,
@@ -420,9 +420,9 @@
     "semantic_hash": "71763aab7800aee99e2406c41a959a78"
   },
   "ProductionStudio/Tools/remotion_assembly_tool.md": {
-    "mtime": 1785304931.6085033,
-    "ast_hash": "846bcf55bde53a91083c298b53d392a8",
-    "semantic_hash": "846bcf55bde53a91083c298b53d392a8"
+    "mtime": 1785478189.8706417,
+    "ast_hash": "cdf3eaab745c1011f3f68f899d80da87",
+    "semantic_hash": "cdf3eaab745c1011f3f68f899d80da87"
   },
   "ProductionStudio/Tools/royalty_free_music_tool.md": {
     "mtime": 1784530321.2093349,
@@ -435,7 +435,7 @@
     "semantic_hash": "d79a25a484791c0d7ef241b2a0160cd3"
   },
   "ProductionStudio/Tools/youtube_publish_tool.md": {
-    "mtime": 1785043354.5107477,
+    "mtime": 1785043856.3899665,
     "ast_hash": "88386f8a6f67c33526636ae8311af27b",
     "semantic_hash": "88386f8a6f67c33526636ae8311af27b"
   },
@@ -475,7 +475,7 @@
     "semantic_hash": "fddab73ecab2781ebd9129dae6b95dc7"
   },
   "ProductionStudio/Cases/monica-sementilli-hairdresser-murder/PublishPlan.md": {
-    "mtime": 1785043368.921597,
+    "mtime": 1785043856.38897,
     "ast_hash": "8a5be84be0106a0f4c553ec20a6e301b",
     "semantic_hash": "8a5be84be0106a0f4c553ec20a6e301b"
   },
@@ -605,7 +605,7 @@
     "semantic_hash": "d9f331e380e521c5e9b82c01d6a3ed40"
   },
   "ProductionStudio/Cases/rimoni-muliaga-jealousy-murder/Script.md": {
-    "mtime": 1785211350.0480604,
+    "mtime": 1785223985.7147388,
     "ast_hash": "0f83f21fb2e114fa67adc644aa46a7af",
     "semantic_hash": "0f83f21fb2e114fa67adc644aa46a7af"
   },
@@ -630,58 +630,138 @@
     "semantic_hash": "0739ea7a6c9b1e5469def45140eb374f"
   },
   "ProductionStudio/Cases/devyn-michaels-decapitation/SceneList.json": {
-    "mtime": 1785388510.4723017,
+    "mtime": 1785423347.4369588,
     "ast_hash": "9bcfaf6188557c3522090cd528c8f4cd",
     "semantic_hash": "9bcfaf6188557c3522090cd528c8f4cd"
   },
   "ProductionStudio/Cases/devyn-michaels-decapitation/Checklist.md": {
-    "mtime": 1785422822.7653296,
-    "ast_hash": "321645880f889bcf1c526eccf2201fa7",
-    "semantic_hash": "321645880f889bcf1c526eccf2201fa7"
+    "mtime": 1785423347.4349656,
+    "ast_hash": "4bb2b6f8f673214f617fc68d6625290d",
+    "semantic_hash": "4bb2b6f8f673214f617fc68d6625290d"
   },
   "ProductionStudio/Cases/devyn-michaels-decapitation/FactCheck.md": {
-    "mtime": 1785388357.6547222,
-    "ast_hash": "92e67826bd842b35b3a5fcb7dd8f6574",
-    "semantic_hash": "92e67826bd842b35b3a5fcb7dd8f6574"
+    "mtime": 1785423347.4359622,
+    "ast_hash": "8885afeb6efcb68566bd2cbf12c5666a",
+    "semantic_hash": "8885afeb6efcb68566bd2cbf12c5666a"
   },
   "ProductionStudio/Cases/devyn-michaels-decapitation/ImagePrompts.md": {
-    "mtime": 1785389740.5129733,
-    "ast_hash": "c4a8b994bc1e9d06b2c437229a52fc6f",
-    "semantic_hash": "c4a8b994bc1e9d06b2c437229a52fc6f"
+    "mtime": 1785423347.4359622,
+    "ast_hash": "99d750d4feaadccf1194a60692e89feb",
+    "semantic_hash": "99d750d4feaadccf1194a60692e89feb"
   },
   "ProductionStudio/Cases/devyn-michaels-decapitation/PersonPhotos.md": {
-    "mtime": 1785389049.8687,
-    "ast_hash": "36c4a8d6348b22df2dde02dbc7a6e3ba",
-    "semantic_hash": "36c4a8d6348b22df2dde02dbc7a6e3ba"
+    "mtime": 1785423347.4359622,
+    "ast_hash": "c3a0192b42e1ebc1c9f1b09288041453",
+    "semantic_hash": "c3a0192b42e1ebc1c9f1b09288041453"
   },
   "ProductionStudio/Cases/devyn-michaels-decapitation/PublishPlan.md": {
-    "mtime": 1785422813.0900252,
-    "ast_hash": "8c5dd368b1ef22e3213f07e179f0df69",
-    "semantic_hash": "8c5dd368b1ef22e3213f07e179f0df69"
+    "mtime": 1785423347.4359622,
+    "ast_hash": "174db795abc5032b85366eea799b6759",
+    "semantic_hash": "174db795abc5032b85366eea799b6759"
   },
   "ProductionStudio/Cases/devyn-michaels-decapitation/SEO.md": {
-    "mtime": 1785422830.4412282,
-    "ast_hash": "5e7acfffd87035f0957100ecc36f1f25",
-    "semantic_hash": "5e7acfffd87035f0957100ecc36f1f25"
+    "mtime": 1785423347.4369588,
+    "ast_hash": "3fa0ac71327dcbe8f86a7bb45d7cdcba",
+    "semantic_hash": "3fa0ac71327dcbe8f86a7bb45d7cdcba"
   },
   "ProductionStudio/Cases/devyn-michaels-decapitation/Script.md": {
-    "mtime": 1785388510.4712143,
+    "mtime": 1785423347.4369588,
     "ast_hash": "23fea5cf9206b1511736a4a260ecf9e1",
     "semantic_hash": "23fea5cf9206b1511736a4a260ecf9e1"
   },
   "ProductionStudio/Cases/devyn-michaels-decapitation/Shorts.md": {
-    "mtime": 1785389588.560736,
-    "ast_hash": "e846792d29650a87f63f3d40209dd4af",
-    "semantic_hash": "e846792d29650a87f63f3d40209dd4af"
+    "mtime": 1785423347.4379559,
+    "ast_hash": "f833dde3317373a2db8afe1faff440d4",
+    "semantic_hash": "f833dde3317373a2db8afe1faff440d4"
   },
   "ProductionStudio/Cases/devyn-michaels-decapitation/Thumbnail.md": {
-    "mtime": 1785389498.7236903,
-    "ast_hash": "b4b57320855cedf6eb952ab66ed7e24b",
-    "semantic_hash": "b4b57320855cedf6eb952ab66ed7e24b"
+    "mtime": 1785423347.4379559,
+    "ast_hash": "8e76bb27a93be93c0b149ce1a1210d81",
+    "semantic_hash": "8e76bb27a93be93c0b149ce1a1210d81"
   },
   "ProductionStudio/Cases/devyn-michaels-decapitation/Voiceover.txt": {
-    "mtime": 1785388528.3527129,
+    "mtime": 1785423347.4389524,
     "ast_hash": "8ad88840619fb31d9314c1b6e78fc3a9",
     "semantic_hash": "8ad88840619fb31d9314c1b6e78fc3a9"
+  },
+  "ProductionStudio/Cases/walter-buchanan-murder/SceneList.json": {
+    "mtime": 1785476216.4550757,
+    "ast_hash": "b632a321d72a40f2420af12110f7c303",
+    "semantic_hash": "b632a321d72a40f2420af12110f7c303"
+  },
+  "ProductionStudio/Cases/walter-buchanan-murder/Checklist.md": {
+    "mtime": 1785479689.5007095,
+    "ast_hash": "25b681086277ed7f9b77b97620496af3",
+    "semantic_hash": "25b681086277ed7f9b77b97620496af3"
+  },
+  "ProductionStudio/Cases/walter-buchanan-murder/FactCheck.md": {
+    "mtime": 1785476000.3550787,
+    "ast_hash": "27d4dbf96c4c4420625be0f31b1267e1",
+    "semantic_hash": "27d4dbf96c4c4420625be0f31b1267e1"
+  },
+  "ProductionStudio/Cases/walter-buchanan-murder/ImagePrompts.md": {
+    "mtime": 1785477827.894916,
+    "ast_hash": "885c04ba8510003399aaff4d9ec227e4",
+    "semantic_hash": "885c04ba8510003399aaff4d9ec227e4"
+  },
+  "ProductionStudio/Cases/walter-buchanan-murder/PersonPhotos.md": {
+    "mtime": 1785477863.5865505,
+    "ast_hash": "44cde3915c6ce838d6ff75e04a3cf8d8",
+    "semantic_hash": "44cde3915c6ce838d6ff75e04a3cf8d8"
+  },
+  "ProductionStudio/Cases/walter-buchanan-murder/PublishPlan.md": {
+    "mtime": 1785478148.7258356,
+    "ast_hash": "dfd92455e485e5ada86315dfe5134018",
+    "semantic_hash": "dfd92455e485e5ada86315dfe5134018"
+  },
+  "ProductionStudio/Cases/walter-buchanan-murder/SEO.md": {
+    "mtime": 1785477135.4002404,
+    "ast_hash": "bd5022ee22d5c84cecef46726b4be480",
+    "semantic_hash": "bd5022ee22d5c84cecef46726b4be480"
+  },
+  "ProductionStudio/Cases/walter-buchanan-murder/Script.md": {
+    "mtime": 1785476216.453415,
+    "ast_hash": "0e954ae399938ed4c4fe5e8fa0729bf8",
+    "semantic_hash": "0e954ae399938ed4c4fe5e8fa0729bf8"
+  },
+  "ProductionStudio/Cases/walter-buchanan-murder/Shorts.md": {
+    "mtime": 1785477180.8064387,
+    "ast_hash": "40005babc2eff1e0eea33356c7b47c9c",
+    "semantic_hash": "40005babc2eff1e0eea33356c7b47c9c"
+  },
+  "ProductionStudio/Cases/walter-buchanan-murder/Sources.md": {
+    "mtime": 1785475972.084192,
+    "ast_hash": "fc0d029f65edc07170ae5fbb6a190d93",
+    "semantic_hash": "fc0d029f65edc07170ae5fbb6a190d93"
+  },
+  "ProductionStudio/Cases/walter-buchanan-murder/Thumbnail.md": {
+    "mtime": 1785477045.0922332,
+    "ast_hash": "c22741198cd9da2e79ee4b0744153ca6",
+    "semantic_hash": "c22741198cd9da2e79ee4b0744153ca6"
+  },
+  "ProductionStudio/Cases/walter-buchanan-murder/Voiceover.txt": {
+    "mtime": 1785476449.8987515,
+    "ast_hash": "e480756f1b50e9042516e8f233df2343",
+    "semantic_hash": "e480756f1b50e9042516e8f233df2343"
+  },
+  "ProductionStudio/Cases/walter-buchanan-murder/shorts_scripts/short_1.txt": {
+    "mtime": 1785479158.8841927,
+    "ast_hash": "ff996ec7458d782abe909d4a40091afa",
+    "semantic_hash": "ff996ec7458d782abe909d4a40091afa"
+  },
+  "ProductionStudio/Cases/walter-buchanan-murder/shorts_scripts/short_2.txt": {
+    "mtime": 1785479168.0775406,
+    "ast_hash": "1174c5d0592d10a98d1a07adcdc73dfd",
+    "semantic_hash": "1174c5d0592d10a98d1a07adcdc73dfd"
+  },
+  "ProductionStudio/Cases/walter-buchanan-murder/shorts_scripts/short_3.txt": {
+    "mtime": 1785479174.1541383,
+    "ast_hash": "2ca8601963ebbe37e43a4e4f0e47db28",
+    "semantic_hash": "2ca8601963ebbe37e43a4e4f0e47db28"
+  },
+  "ProductionStudio/Cases/walter-buchanan-murder/shorts_scripts/short_4.txt": {
+    "mtime": 1785479180.183539,
+    "ast_hash": "e7ecc0ed840521841947697e5f70f776",
+    "semantic_hash": "e7ecc0ed840521841947697e5f70f776"
   }
 }

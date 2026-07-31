@@ -46,6 +46,20 @@ Real call against the Banfield case, scene 0001 from `ImagePrompts.md`:
   was sufficient.** Worth a note in `Agents/quality_control_agent.md` if this keeps recurring
   across scenes.
 
+## Confirmed pattern (2026-07-30, Walter Buchanan case): monumental architecture resists text
+suppression entirely via prompting
+Flux schnell's text-hallucination tendency (noted above) turned out to have a specific,
+reliably-reproducing trigger: any grand civic/monumental stone facade with a pediment or
+inscription-bearing surface (courthouse fronts, column bases). On this case's Edinburgh
+courthouse establishing shot, three consecutive prompt rewrites — each adding stronger negative
+constraints ("no carvings, no engravings, no inscriptions, no signage, no building name, no
+decorative crest") — all still produced legible gibberish lettering baked into the stonework
+(`COUTT`, `GOVERRIANT`, `Ganelrrell`). **Negative prompting alone does not reliably fix this
+class of image on this model.** The only fix that worked was changing the composition to avoid
+the trigger surface entirely (switched to a wood-paneled courtroom interior with no exterior
+stonework). If a future scene needs an exterior monumental-building shot, budget for this and
+plan a non-facade alternative composition up front rather than iterating on the same shot.
+
 ## Fallback / secondary providers (keep the interface provider-agnostic)
 - Leonardo.ai API — separate pay-as-you-go balance (starts with its own free credit), useful
   as a second source if fal.ai has an outage or a specific model isn't available there.
