@@ -1,0 +1,354 @@
+{
+  "case_name": "Walter Buchanan murder of Darrel Odhiambo",
+  "total_scenes": 42,
+  "total_words": 985,
+  "estimated_total_seconds": 394.0,
+  "beat_ranges": [
+    {
+      "beat": "Hook",
+      "from_scene": "0001",
+      "to_scene": "0004"
+    },
+    {
+      "beat": "Conflict",
+      "from_scene": "0005",
+      "to_scene": "0009"
+    },
+    {
+      "beat": "Mystery",
+      "from_scene": "0010",
+      "to_scene": "0012"
+    },
+    {
+      "beat": "Escalation",
+      "from_scene": "0013",
+      "to_scene": "0017"
+    },
+    {
+      "beat": "Evidence",
+      "from_scene": "0018",
+      "to_scene": "0023"
+    },
+    {
+      "beat": "Twist",
+      "from_scene": "0024",
+      "to_scene": "0027"
+    },
+    {
+      "beat": "Investigation",
+      "from_scene": "0028",
+      "to_scene": "0031"
+    },
+    {
+      "beat": "Final Reveal",
+      "from_scene": "0032",
+      "to_scene": "0035"
+    },
+    {
+      "beat": "Aftermath",
+      "from_scene": "0036",
+      "to_scene": "0040"
+    },
+    {
+      "beat": "Question for viewers",
+      "from_scene": "0041",
+      "to_scene": "0042"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "0001",
+      "beat": "Hook",
+      "text": "At 7:12 in the morning, a 66-year-old man called emergency services. He said he'd woken up and found his wife cold beside him.",
+      "word_count": 23,
+      "estimated_seconds": 9.2
+    },
+    {
+      "scene_id": "0002",
+      "beat": "Hook",
+      "text": "He said he tried CPR. He said he didn't know what happened.",
+      "word_count": 12,
+      "estimated_seconds": 4.8
+    },
+    {
+      "scene_id": "0003",
+      "beat": "Hook",
+      "text": "What he left out — to the 911 operator, to the paramedics — was the fight.",
+      "word_count": 16,
+      "estimated_seconds": 6.4
+    },
+    {
+      "scene_id": "0004",
+      "beat": "Hook",
+      "text": "And the fight wasn't about her cheating on him. It was about a text message that proved he was cheating on her.",
+      "word_count": 22,
+      "estimated_seconds": 8.8
+    },
+    {
+      "scene_id": "0005",
+      "beat": "Conflict",
+      "text": "Walter Buchanan was 66 years old, a chartered surveyor with what the court would later call \"a successful professional working life.\"",
+      "word_count": 21,
+      "estimated_seconds": 8.4
+    },
+    {
+      "scene_id": "0006",
+      "beat": "Conflict",
+      "text": "Darrel Odhiambo was 37, originally from Kenya, a mother to a young son.",
+      "word_count": 13,
+      "estimated_seconds": 5.2
+    },
+    {
+      "scene_id": "0007",
+      "beat": "Conflict",
+      "text": "They met in 2015, while Buchanan was on holiday in Thailand. They married two years later, in 2017.",
+      "word_count": 18,
+      "estimated_seconds": 7.2
+    },
+    {
+      "scene_id": "0008",
+      "beat": "Conflict",
+      "text": "By February 2023, they'd been married six years, living together in an upmarket flat near Hamilton racecourse, in South Lanarkshire, Scotland.",
+      "word_count": 21,
+      "estimated_seconds": 8.4
+    },
+    {
+      "scene_id": "0009",
+      "beat": "Conflict",
+      "text": "On paper, it read like a comfortable life — a respected local professional, a well-off address, a marriage six years in.",
+      "word_count": 21,
+      "estimated_seconds": 8.4
+    },
+    {
+      "scene_id": "0010",
+      "beat": "Mystery",
+      "text": "Friends and neighbours would later say the marriage had turned volatile. Darrel had confided in people close to her about the abuse.",
+      "word_count": 22,
+      "estimated_seconds": 8.8
+    },
+    {
+      "scene_id": "0011",
+      "beat": "Mystery",
+      "text": "After her death, investigators found a text message on her phone — sent by Buchanan. It read: \"I hope you die you black b****.\"",
+      "word_count": 24,
+      "estimated_seconds": 9.6
+    },
+    {
+      "scene_id": "0012",
+      "beat": "Mystery",
+      "text": "Nobody outside that relationship had any way of knowing exactly how bad it already was — until the night everything came apart.",
+      "word_count": 22,
+      "estimated_seconds": 8.8
+    },
+    {
+      "scene_id": "0013",
+      "beat": "Escalation",
+      "text": "On February 18th, 2023, Darrel found a text message on her husband's phone. It read: \"I guess you are having fun in Bothwell without your wife, cheater.\"",
+      "word_count": 27,
+      "estimated_seconds": 10.8
+    },
+    {
+      "scene_id": "0014",
+      "beat": "Escalation",
+      "text": "Bothwell is a town just a few miles from their own home — whatever Buchanan had been doing, he hadn't even gone far to do it.",
+      "word_count": 26,
+      "estimated_seconds": 10.4
+    },
+    {
+      "scene_id": "0015",
+      "beat": "Escalation",
+      "text": "She confronted him with it. This wasn't Darrel being accused of cheating — it was Darrel catching him.",
+      "word_count": 18,
+      "estimated_seconds": 7.2
+    },
+    {
+      "scene_id": "0016",
+      "beat": "Escalation",
+      "text": "By Buchanan's own account, given at trial, Darrel lunged at him. They fell. She was dragged across the floor.",
+      "word_count": 19,
+      "estimated_seconds": 7.6
+    },
+    {
+      "scene_id": "0017",
+      "beat": "Escalation",
+      "text": "Later, when she followed him into the bedroom, still calling him a cheater, he grabbed her by both wrists and pushed her onto the bed.",
+      "word_count": 25,
+      "estimated_seconds": 10.0
+    },
+    {
+      "scene_id": "0018",
+      "beat": "Evidence",
+      "text": "Buchanan admitted to what happened next. He placed his hand over her face. He grabbed her by the neck, with one hand, for what he said was only a matter of seconds.",
+      "word_count": 32,
+      "estimated_seconds": 12.8
+    },
+    {
+      "scene_id": "0019",
+      "beat": "Evidence",
+      "text": "He said he pushed her face into a pillow. He said she rolled onto her side afterward.",
+      "word_count": 17,
+      "estimated_seconds": 6.8
+    },
+    {
+      "scene_id": "0020",
+      "beat": "Evidence",
+      "text": "The post-mortem told a different story than \"a matter of seconds.\" Darrel died of manual strangulation and smothering — significant compression to the neck, a brain injury, bruising, a fractured rib.",
+      "word_count": 31,
+      "estimated_seconds": 12.4
+    },
+    {
+      "scene_id": "0021",
+      "beat": "Evidence",
+      "text": "Four distinct injuries, from a man who described his own hands on her as brief and almost incidental.",
+      "word_count": 18,
+      "estimated_seconds": 7.2
+    },
+    {
+      "scene_id": "0022",
+      "beat": "Evidence",
+      "text": "At 7:12 the next morning, Buchanan called for help. He told the operator he'd simply found her unresponsive. He told paramedics the same thing.",
+      "word_count": 24,
+      "estimated_seconds": 9.6
+    },
+    {
+      "scene_id": "0023",
+      "beat": "Evidence",
+      "text": "He never mentioned the fight. Not to the 911 operator. Not to the paramedics who arrived and tried to save a woman who was already gone.",
+      "word_count": 26,
+      "estimated_seconds": 10.4
+    },
+    {
+      "scene_id": "0024",
+      "beat": "Twist",
+      "text": "Buchanan denied murder. He went to trial at the High Court in Glasgow, and stood by his version: that this was a struggle that went wrong, not a killing.",
+      "word_count": 29,
+      "estimated_seconds": 11.6
+    },
+    {
+      "scene_id": "0025",
+      "beat": "Twist",
+      "text": "It took over a year after Darrel's death before Buchanan was even remanded into custody to await that trial — and nearly two years, total, before a jury ever heard the case at all.",
+      "word_count": 34,
+      "estimated_seconds": 13.6
+    },
+    {
+      "scene_id": "0026",
+      "beat": "Twist",
+      "text": "The prosecution's case rested on a simple, damning contrast — a man who claimed innocence to a jury, after already lying by omission to the people who'd tried to save his wife's life.",
+      "word_count": 33,
+      "estimated_seconds": 13.2
+    },
+    {
+      "scene_id": "0027",
+      "beat": "Twist",
+      "text": "Lord Cubie, the judge, would later put it plainly: Buchanan's own incomplete account to emergency responders was itself evidence — proof, in the court's own words, of \"a consciousness of guilt.\"",
+      "word_count": 31,
+      "estimated_seconds": 12.4
+    },
+    {
+      "scene_id": "0028",
+      "beat": "Investigation",
+      "text": "The trial ran eight days. Buchanan's own account of the struggle was put in front of the jury in his own words — lunging, dragging, wrists, a pillow, seconds.",
+      "word_count": 29,
+      "estimated_seconds": 11.6
+    },
+    {
+      "scene_id": "0029",
+      "beat": "Investigation",
+      "text": "It didn't match what the post-mortem found on Darrel's body.",
+      "word_count": 10,
+      "estimated_seconds": 4.0
+    },
+    {
+      "scene_id": "0030",
+      "beat": "Investigation",
+      "text": "And it didn't match how Buchanan had actually behaved that morning — a man who'd had hours to call for help immediately, and chose instead to wait, then leave out exactly what had happened.",
+      "word_count": 34,
+      "estimated_seconds": 13.6
+    },
+    {
+      "scene_id": "0031",
+      "beat": "Investigation",
+      "text": "On January 22nd, 2025, the jury reached its verdict: guilty of murder.",
+      "word_count": 12,
+      "estimated_seconds": 4.8
+    },
+    {
+      "scene_id": "0032",
+      "beat": "Final Reveal",
+      "text": "Sentencing came on April 2nd, 2025, at the High Court in Edinburgh.",
+      "word_count": 12,
+      "estimated_seconds": 4.8
+    },
+    {
+      "scene_id": "0033",
+      "beat": "Final Reveal",
+      "text": "Lord Cubie sentenced Walter Buchanan to life in prison, with a punishment part of 15 years before he can even be considered for parole.",
+      "word_count": 24,
+      "estimated_seconds": 9.6
+    },
+    {
+      "scene_id": "0034",
+      "beat": "Final Reveal",
+      "text": "Moira Orr, the homicide lead for Scotland's prosecution service, spoke for the record: \"Darrel Odhiambo was a loving mother, daughter, sister and friend, who had the right to be safe in her relationship and home.\"",
+      "word_count": 35,
+      "estimated_seconds": 14.0
+    },
+    {
+      "scene_id": "0035",
+      "beat": "Final Reveal",
+      "text": "It's a simple sentence. It's also exactly the thing Buchanan took from her.",
+      "word_count": 13,
+      "estimated_seconds": 5.2
+    },
+    {
+      "scene_id": "0036",
+      "beat": "Aftermath",
+      "text": "Buchanan had one minor prior conviction before this. A \"successful professional working life,\" as the court put it — nothing that marked him out, on paper, as capable of this.",
+      "word_count": 30,
+      "estimated_seconds": 12.0
+    },
+    {
+      "scene_id": "0037",
+      "beat": "Aftermath",
+      "text": "Darrel's mother and sisters spoke of their grief and frustration in the aftermath of the trial — grief for the woman they'd lost, frustration at how long it had taken to get here.",
+      "word_count": 33,
+      "estimated_seconds": 13.2
+    },
+    {
+      "scene_id": "0038",
+      "beat": "Aftermath",
+      "text": "News of the case reached Kenya, too — carried by outlets there as the story of a Kenyan woman killed thousands of miles from home, by the man she'd left everything to marry.",
+      "word_count": 33,
+      "estimated_seconds": 13.2
+    },
+    {
+      "scene_id": "0039",
+      "beat": "Aftermath",
+      "text": "Her son is growing up without his mother, because his stepfather couldn't stand being caught.",
+      "word_count": 15,
+      "estimated_seconds": 6.0
+    },
+    {
+      "scene_id": "0040",
+      "beat": "Aftermath",
+      "text": "Not caught in a lie about her. Caught in a lie of his own — the one written in a text message he never should have sent, to someone who wasn't his wife.",
+      "word_count": 33,
+      "estimated_seconds": 13.2
+    },
+    {
+      "scene_id": "0041",
+      "beat": "Question for viewers",
+      "text": "He had the chance, that morning, to tell the truth the first time he picked up the phone. If he had — would anything about what happened to Darrel have been different?",
+      "word_count": 32,
+      "estimated_seconds": 12.8
+    },
+    {
+      "scene_id": "0042",
+      "beat": "Question for viewers",
+      "text": "Or was the lie always going to be the last thing he chose to protect?",
+      "word_count": 15,
+      "estimated_seconds": 6.0
+    }
+  ]
+}
