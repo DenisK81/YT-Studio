@@ -62,7 +62,9 @@
     "2026-07-30: visual-artifact scan found 10 flagged images; all regenerated, with scene 0032 requiring 3 regeneration passes and scene 0039 requiring a content-violation fix",
     "2026-07-30: max-zoom redaction verification caught a new class of bug (portrait-aspect source photo silently cropped out of frame by default 16:9 cover-fit) and fixed it with a pre-cropped 16:9 derivative — documented as a new standing check for future portrait-oriented real photos",
     "2026-07-30: built the first-ever outro bumper use of ChannelBumperComponent, mirroring the intro exactly, per the channel owner's standing decision to add it to this and all future videos",
-    "2026-07-30: rendered main video and all 4 Shorts via Remotion; frame-level spot-check confirmed intro/outro bumpers, both real-photo max-zoom redaction checks, and both Shorts' real-photo cold-open redaction checks all pass"
+    "2026-07-30: rendered main video and all 4 Shorts via Remotion; frame-level spot-check confirmed intro/outro bumpers, both real-photo max-zoom redaction checks, and both Shorts' real-photo cold-open redaction checks all pass",
+    "2026-07-31: channel owner confirmed the publish schedule (checked against every prior case's real slots first to avoid overlap); all 5 assets uploaded, added to the new Husband Killed Wife playlist, and scheduled via confirm_publish()",
+    "2026-07-31: built post_comment()/delete_comment() and the YouTube Analytics integration in youtube_agent.py per the channel owner's request, closing a real gap where SEO.md/Shorts.md always drafted a pinned_comment but nothing ever posted it; backfilled real comments on all 7 already-public videos from prior cases (Muliaga x5, Devyn main + short_1) - the 3 still-private Devyn shorts (short_2/3/4) can't take a comment yet, YouTube rejects commentThreads.insert on private videos regardless of scope, so those 3 need a follow-up call once each goes public on 2026-08-01"
   ],
   "escalations": []
 }

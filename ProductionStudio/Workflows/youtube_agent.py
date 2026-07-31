@@ -33,6 +33,8 @@ Usage:
     python youtube_agent.py get-or-create-playlist "<title>" [--description D]
     python youtube_agent.py add-to-playlist <playlist_id> <video_id>
     python youtube_agent.py publish <video_id> --confirm [--at ISO_TIMESTAMP]
+    python youtube_agent.py comment <video_id> <text>
+    python youtube_agent.py analytics <video_id> --start YYYY-MM-DD --end YYYY-MM-DD
 """
 import argparse
 import glob
@@ -47,6 +49,8 @@ from googleapiclient.http import MediaFileUpload
 SCOPES = [
     "https://www.googleapis.com/auth/youtube.upload",
     "https://www.googleapis.com/auth/youtube",
+    "https://www.googleapis.com/auth/youtube.force-ssl",  # required for commentThreads.insert
+    "https://www.googleapis.com/auth/yt-analytics.readonly",  # required for the Analytics API (views, retention, CTR)
 ]
 
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -91,6 +95,55 @@ def get_authenticated_service():
         )
 
     return build("youtube", "v3", credentials=creds)
+
+
+def get_analytics_service():
+    """Same cached credentials as get_authenticated_service(), but builds the
+    separate YouTube Analytics API v2 service (different API surface: reports.query,
+    not videos/playlists). Requires the yt-analytics.readonly scope - see SCOPES."""
+    creds = None
+    if os.path.exists(TOKEN_PATH):
+        creds = Credentials.from_authorized_user_file(TOKEN_PATH, SCOPES)
+    if creds and creds.expired and creds.refresh_token:
+        creds.refresh(Request())
+        with open(TOKEN_PATH, "w", encoding="utf-8") as f:
+            f.write(creds.to_json())
+    if not creds or not creds.valid:
+        raise SystemExit(
+            "No valid YouTube credentials found. Run `python youtube_agent.py auth` first."
+        )
+    return build("youtubeAnalytics", "v2", credentials=creds)
+
+
+def video_analytics(video_id, start_date, end_date):
+    """Real per-video performance: views, watch time, average view duration/percentage -
+    none of this is available from videos().list(part='statistics'), which only has
+    views/likes/comments. Dates are 'YYYY-MM-DD' strings. Returns a dict of
+    metric -> value, or None values if YouTube has no data yet for this video/range.
+
+    Note: impressions/impressionsClickThroughRate (thumbnail CTR) were tried and
+    rejected by this account's API access with 'Unknown identifier (impressions)' -
+    that metric pair isn't queryable via this reports().query() shape on this
+    channel/product tier, so it's deliberately left out rather than silently
+    retried/masked. If thumbnail CTR data is needed later, check YouTube Studio's
+    own Analytics tab directly (it has real CTR per video) rather than assuming
+    the API gap can be worked around here."""
+    analytics = get_analytics_service()
+    metrics = "views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage"
+    resp = analytics.reports().query(
+        ids="channel==MINE",
+        startDate=start_date,
+        endDate=end_date,
+        metrics=metrics,
+        dimensions="video",
+        filters=f"video=={video_id}",
+    ).execute()
+    headers = [h["name"] for h in resp.get("columnHeaders", [])]
+    rows = resp.get("rows", [])
+    if not rows:
+        return {m: None for m in metrics.split(",")}
+    row = rows[0]
+    return dict(zip(headers, row))
 
 
 def cmd_auth():
@@ -231,6 +284,41 @@ def confirm_publish(video_id, human_confirmed=False, privacy_status="public", pu
         print(f"Published {video_id} as {privacy_status}")
 
 
+def post_comment(video_id, text):
+    """Posts a single top-level comment on a video/Short as the channel owner (the
+    authenticated account). Per the channel owner's 2026-07-31 instruction, every
+    publish should leave the pre-drafted `pinned_comment` from SEO.md/Shorts.md under
+    the video - closing a real gap where that field was always written but never
+    actually posted.
+
+    IMPORTANT LIMITATION: the YouTube Data API v3 has no endpoint to pin a comment.
+    commentThreads.insert can only post it; making it the pinned top comment is a
+    channel-owner-only action in YouTube Studio's own UI (click the comment's ... menu
+    -> Pin). This function posts the comment - it does not and cannot pin it. If you
+    want it pinned, do that manually in Studio after publish; there is no API
+    workaround (scraping the Studio web UI would be fragile and outside the API's
+    terms, so this tool deliberately does not attempt it)."""
+    yt = get_authenticated_service()
+    body = {
+        "snippet": {
+            "videoId": video_id,
+            "topLevelComment": {"snippet": {"textOriginal": text}},
+        }
+    }
+    resp = yt.commentThreads().insert(part="snippet", body=body).execute()
+    comment_id = resp["id"]
+    print(f"Posted comment {comment_id} on {video_id} (not pinned - pin manually in Studio if wanted)")
+    return comment_id
+
+
+def delete_comment(comment_id):
+    """Deletes a comment (only works on comments this channel's own account posted or
+    otherwise has moderation rights over)."""
+    yt = get_authenticated_service()
+    yt.comments().delete(id=comment_id).execute()
+    print(f"Deleted comment {comment_id}")
+
+
 def list_playlists():
     """Read-only: lists the channel's existing playlists."""
     yt = get_authenticated_service()
@@ -344,6 +432,15 @@ if __name__ == "__main__":
     p_publish.add_argument("--privacy", default="public")
     p_publish.add_argument("--at", default=None, help="ISO 8601 timestamp to schedule instead of publishing now")
 
+    p_comment = sub.add_parser("comment")
+    p_comment.add_argument("video_id")
+    p_comment.add_argument("text")
+
+    p_analytics = sub.add_parser("analytics")
+    p_analytics.add_argument("video_id")
+    p_analytics.add_argument("--start", required=True, help="YYYY-MM-DD")
+    p_analytics.add_argument("--end", required=True, help="YYYY-MM-DD")
+
     args = parser.parse_args()
 
     if args.cmd == "auth":
@@ -373,3 +470,9 @@ if __name__ == "__main__":
     elif args.cmd == "publish":
         confirm_publish(args.video_id, human_confirmed=args.confirm,
                          privacy_status=args.privacy, publish_at=args.at)
+    elif args.cmd == "comment":
+        post_comment(args.video_id, args.text)
+    elif args.cmd == "analytics":
+        result = video_analytics(args.video_id, args.start, args.end)
+        for k, v in result.items():
+            print(f"  {k}: {v}")
