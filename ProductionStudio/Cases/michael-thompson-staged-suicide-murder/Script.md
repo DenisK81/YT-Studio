@@ -1,0 +1,133 @@
+```
+[[SCENE:0001]]
+At 6 in the morning, a man called 999. He said he'd woken up and found his wife dead — surrounded by empty pill packets and bottles, exactly what a suicide looks like.
+
+[[SCENE:0002]]
+He said he'd tried CPR. He sounded frantic on the phone.
+
+[[SCENE:0003]]
+None of it was real.
+
+[[SCENE:0004]]
+Kimberley Thompson didn't take her own life. Her husband raped her and suffocated her — then spent time arranging the scene around her body before he ever called for help.
+
+[[SCENE:0005]]
+Michael Thompson was 56 years old. He and Kimberley had been married nineteen years, with two children together.
+
+[[SCENE:0006]]
+By the summer of 2025, the marriage was ending. The two were estranged, still living under the same roof on Pinewood Road in Northampton while their divorce moved toward completion.
+
+[[SCENE:0007]]
+Kimberley wasn't staying quiet about leaving. She had plans. A life on the other side of this marriage that she was actively building.
+
+[[SCENE:0008]]
+The trial would later hear that for years, Thompson had subjected her to controlling and coercive behaviour — and had secretly made hundreds of hours of recordings of her.
+
+[[SCENE:0009]]
+Investigators would later say that pattern of control painted a picture of the marriage long before anyone knew how it would end.
+
+[[SCENE:0010]]
+There was something else in Thompson's past. A warning he'd used against her more than once, according to prosecutors.
+
+[[SCENE:0011]]
+Back in 2000, a previous partner of his — 29-year-old Rhonda Anderson, a mother of two — was found dead in the bath at her Northampton home.
+
+[[SCENE:0012]]
+An inquest at the time ruled it an accident: a radio had fallen into the water.
+
+[[SCENE:0013]]
+Prosecutor Miranda Moore KC told the jury that Thompson used the "unusual circumstances" of that earlier death to threaten and intimidate Kimberley, throughout their relationship.
+
+[[SCENE:0014]]
+It was, prosecutors argued, a reminder of what he was capable of — and what he might do again.
+
+[[SCENE:0015]]
+In the early hours of August 9th, 2025 — sometime between midnight and 3:30 in the morning — Michael Thompson raped his estranged wife.
+
+[[SCENE:0016]]
+Then he suffocated her.
+
+[[SCENE:0017]]
+He did not call for help right away.
+
+[[SCENE:0018]]
+Before he ever dialled 999, Thompson took the time to arrange the scene around her body — empty pill packets, bottles of vodka and gin, family photographs, scattered to look like a woman who had chosen to die.
+
+[[SCENE:0019]]
+When paramedics and police arrived, he was pretending to perform CPR. He sounded distressed, both on the phone and in person.
+
+[[SCENE:0020]]
+For a moment, standing in that room, it worked. The scene in front of them looked exactly like what he wanted them to see.
+
+[[SCENE:0021]]
+He told officers that he and Kimberley had consensual sex before he found her unresponsive.
+
+[[SCENE:0022]]
+The post-mortem told a different story. No alcohol in her system at all — only low levels of caffeine, paracetamol, and codeine. Nothing about the scene he'd built matched what had actually happened to her.
+
+[[SCENE:0023]]
+Whatever Thompson told himself while he arranged that scene, a pathologist could see straight through it.
+
+[[SCENE:0024]]
+Thompson was charged with rape and murder in September 2025. He denied both.
+
+[[SCENE:0025]]
+The trial that followed ran six weeks, at Nottingham Crown Court.
+
+[[SCENE:0026]]
+Inside that courtroom, prosecutors laid out exactly how he had used Rhonda Anderson's death as a weapon — a quarter-century-old tragedy, turned into a threat dressed up as coincidence.
+
+[[SCENE:0027]]
+A quarter of a century between one death ruled an accident and the next one that wasn't — with the same man standing at the center of both.
+
+[[SCENE:0028]]
+On July 8th, 2026, the jury returned unanimous guilty verdicts: murder, rape, and two counts of perverting the course of justice.
+
+[[SCENE:0029]]
+Detective Chief Inspector Torie Harrison, who led the investigation, put it plainly: "Not only did Thompson brutally rape and murder Kim, he took the time to stage her death in order to make people believe she had committed suicide before calling for help."
+
+[[SCENE:0030]]
+Crown Prosecutor Emma Cornell said the evidence presented at trial "exposed his cowardice and lies."
+
+[[SCENE:0031]]
+The same abhorrent pattern of coercive and controlling behaviour, she said, that had defined the entire relationship.
+
+[[SCENE:0032]]
+Sentencing came on July 14th, 2026, back at Nottingham Crown Court.
+
+[[SCENE:0033]]
+Judge Nirmal Shant KC handed down a minimum term of 33 years for murder and perverting the course of justice, with 10 years running alongside it for the rape.
+
+[[SCENE:0034]]
+Thompson was placed on the sex offenders register for life.
+
+[[SCENE:0035]]
+Thirty-three years is a number that means Thompson, in his fifties now, will likely spend the rest of his life behind bars before he's ever eligible to walk free.
+
+[[SCENE:0036]]
+He didn't show up to hear it. Thompson refused to leave his cell for his own sentencing.
+
+[[SCENE:0037]]
+The judge called it "the ultimate act of cowardice and contempt" — and delivered the sentence with the dock sitting empty.
+
+[[SCENE:0038]]
+Kimberley's elder sister, Dionne Bounds, spoke for the family in court: "She was the kindest mother, daughter, sister, auntie and friend."
+
+[[SCENE:0039]]
+She was 43 years old. She had two children, and a divorce that was almost finished — a new life she never got to start living.
+
+[[SCENE:0040]]
+Rhonda Anderson's death, twenty-five years ago, is still officially recorded as an accident. It's simply no longer the only unusual death connected to Michael Thompson.
+
+[[SCENE:0041]]
+Investigators have said a review into that earlier case was opened in 2025 — the same year Kimberley died.
+
+[[SCENE:0042]]
+For Kimberley's family, that leaves two open questions instead of one — hers, and Rhonda Anderson's.
+
+[[SCENE:0043]]
+He had hours alone with her body to build a story, before he ever picked up the phone to call for help.
+
+[[SCENE:0044]]
+What does it say about a person, that staging a death took him longer than the violence itself?
+```

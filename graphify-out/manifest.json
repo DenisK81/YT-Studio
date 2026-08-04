@@ -20,9 +20,9 @@
     "semantic_hash": "1fbedeb144ccb84bf22dcd8c576123e7"
   },
   "ProductionStudio/Cases/covered_cases.json": {
-    "mtime": 1785523871.6374688,
-    "ast_hash": "094cf5b0e29b266c29eb1dfb1da94fbd",
-    "semantic_hash": "094cf5b0e29b266c29eb1dfb1da94fbd"
+    "mtime": 1785820577.954405,
+    "ast_hash": "d36e4fa1e5ebb02c9a7d054892dc69e7",
+    "semantic_hash": "d36e4fa1e5ebb02c9a7d054892dc69e7"
   },
   "ProductionStudio/Cases/kouri-richins-fentanyl-murder/SceneList.json": {
     "mtime": 1784665943.0153754,
@@ -60,14 +60,14 @@
     "semantic_hash": "6b097dbbf761cb6579092628b744108d"
   },
   "ProductionStudio/Workflows/prep_remotion_render.py": {
-    "mtime": 1784665943.0198686,
-    "ast_hash": "8e26e53ad2b7db983ef7506d787be2da",
-    "semantic_hash": "8e26e53ad2b7db983ef7506d787be2da"
+    "mtime": 1785820307.149229,
+    "ast_hash": "428bd4a5f9b6c69ac3e177f730ea8804",
+    "semantic_hash": "428bd4a5f9b6c69ac3e177f730ea8804"
   },
   "ProductionStudio/Workflows/prep_short_render.py": {
-    "mtime": 1784668395.9766726,
-    "ast_hash": "605065d575db04bb00ca6512e261b1ad",
-    "semantic_hash": "605065d575db04bb00ca6512e261b1ad"
+    "mtime": 1785820314.3092005,
+    "ast_hash": "9b63d32ec22e80204e748f8d3863c5fb",
+    "semantic_hash": "9b63d32ec22e80204e748f8d3863c5fb"
   },
   "ProductionStudio/Workflows/process_pipeline_audio.py": {
     "mtime": 1784656182.4434266,
@@ -410,9 +410,9 @@
     "semantic_hash": "279f19414d43eb1cf16c0116d0ae6496"
   },
   "ProductionStudio/Tools/image_gen_tool.md": {
-    "mtime": 1785478211.0281796,
-    "ast_hash": "0239644b3e3d00cba915e8d517521d41",
-    "semantic_hash": "0239644b3e3d00cba915e8d517521d41"
+    "mtime": 1785823178.643354,
+    "ast_hash": "40ea4c855c9271fc60042fca49753af2",
+    "semantic_hash": "40ea4c855c9271fc60042fca49753af2"
   },
   "ProductionStudio/Tools/mugshot_fetch_tool.md": {
     "mtime": 1785304931.6085033,
@@ -425,9 +425,9 @@
     "semantic_hash": "cdf3eaab745c1011f3f68f899d80da87"
   },
   "ProductionStudio/Tools/royalty_free_music_tool.md": {
-    "mtime": 1784530321.2093349,
-    "ast_hash": "b230e22891185389731f79868db6df8e",
-    "semantic_hash": "b230e22891185389731f79868db6df8e"
+    "mtime": 1785820335.0004368,
+    "ast_hash": "bc7be74b322099711801c7c9b2d6f68a",
+    "semantic_hash": "bc7be74b322099711801c7c9b2d6f68a"
   },
   "ProductionStudio/Tools/seo_export_tool.md": {
     "mtime": 1784423014.4536414,
@@ -560,7 +560,7 @@
     "semantic_hash": "c0710db219bf7d69f49e9d36e8d23e42"
   },
   "ProductionStudio/Workflows/youtube_agent.py": {
-    "mtime": 1785534530.6577024,
+    "mtime": 1785535437.2934554,
     "ast_hash": "e12675f803ae889a7dbc84084c871040",
     "semantic_hash": "e12675f803ae889a7dbc84084c871040"
   },
@@ -763,5 +763,85 @@
     "mtime": 1785523871.6475081,
     "ast_hash": "eecb45cd255542123f344e450904fb8b",
     "semantic_hash": "eecb45cd255542123f344e450904fb8b"
+  },
+  "ProductionStudio/Cases/michael-thompson-staged-suicide-murder/SceneList.json": {
+    "mtime": 1785821135.0100121,
+    "ast_hash": "b77ea44295aa6ce5b20561475a035c2f",
+    "semantic_hash": "b77ea44295aa6ce5b20561475a035c2f"
+  },
+  "ProductionStudio/Cases/michael-thompson-staged-suicide-murder/Checklist.md": {
+    "mtime": 1785825010.855168,
+    "ast_hash": "54544075b5cee179a24a2453629b1253",
+    "semantic_hash": "54544075b5cee179a24a2453629b1253"
+  },
+  "ProductionStudio/Cases/michael-thompson-staged-suicide-murder/FactCheck.md": {
+    "mtime": 1785820945.5180328,
+    "ast_hash": "3121b2e89b6c66c011a35cf0ba2b72ba",
+    "semantic_hash": "3121b2e89b6c66c011a35cf0ba2b72ba"
+  },
+  "ProductionStudio/Cases/michael-thompson-staged-suicide-murder/ImagePrompts.md": {
+    "mtime": 1785823090.2282906,
+    "ast_hash": "ff719af696948f07cf5654b71270f201",
+    "semantic_hash": "ff719af696948f07cf5654b71270f201"
+  },
+  "ProductionStudio/Cases/michael-thompson-staged-suicide-murder/PersonPhotos.md": {
+    "mtime": 1785822421.9142342,
+    "ast_hash": "da330f3656bbe4a0df1ff6d33ce4070a",
+    "semantic_hash": "da330f3656bbe4a0df1ff6d33ce4070a"
+  },
+  "ProductionStudio/Cases/michael-thompson-staged-suicide-murder/PublishPlan.md": {
+    "mtime": 1785823192.5197873,
+    "ast_hash": "7b0db45f0f2158010c6667bbf9dafb75",
+    "semantic_hash": "7b0db45f0f2158010c6667bbf9dafb75"
+  },
+  "ProductionStudio/Cases/michael-thompson-staged-suicide-murder/SEO.md": {
+    "mtime": 1785822302.2086208,
+    "ast_hash": "f88479ca0936149bf02aa2a601a37879",
+    "semantic_hash": "f88479ca0936149bf02aa2a601a37879"
+  },
+  "ProductionStudio/Cases/michael-thompson-staged-suicide-murder/Script.md": {
+    "mtime": 1785821135.006443,
+    "ast_hash": "daf191cd4340a3bd2d03281cdbd5d8d2",
+    "semantic_hash": "daf191cd4340a3bd2d03281cdbd5d8d2"
+  },
+  "ProductionStudio/Cases/michael-thompson-staged-suicide-murder/Shorts.md": {
+    "mtime": 1785822334.4494047,
+    "ast_hash": "ad429ec7b3f4b7820597d12dce9bf1a3",
+    "semantic_hash": "ad429ec7b3f4b7820597d12dce9bf1a3"
+  },
+  "ProductionStudio/Cases/michael-thompson-staged-suicide-murder/Sources.md": {
+    "mtime": 1785820882.7481995,
+    "ast_hash": "5abecd0834f0a67da4f9553ab0d63d0d",
+    "semantic_hash": "5abecd0834f0a67da4f9553ab0d63d0d"
+  },
+  "ProductionStudio/Cases/michael-thompson-staged-suicide-murder/Thumbnail.md": {
+    "mtime": 1785822227.6380506,
+    "ast_hash": "dae85ee4e041ead103f5c5175862ce2e",
+    "semantic_hash": "dae85ee4e041ead103f5c5175862ce2e"
+  },
+  "ProductionStudio/Cases/michael-thompson-staged-suicide-murder/Voiceover.txt": {
+    "mtime": 1785821159.4523118,
+    "ast_hash": "dd5708cf0ec557bb7a06b770a3a5a68d",
+    "semantic_hash": "dd5708cf0ec557bb7a06b770a3a5a68d"
+  },
+  "ProductionStudio/Cases/michael-thompson-staged-suicide-murder/shorts_scripts/short_1.txt": {
+    "mtime": 1785823410.656978,
+    "ast_hash": "c954e00f08cbe03da2eef8c72c683a5c",
+    "semantic_hash": "c954e00f08cbe03da2eef8c72c683a5c"
+  },
+  "ProductionStudio/Cases/michael-thompson-staged-suicide-murder/shorts_scripts/short_2.txt": {
+    "mtime": 1785823420.2935078,
+    "ast_hash": "e0e55e35f1edf62b58cd5f9e6227a965",
+    "semantic_hash": "e0e55e35f1edf62b58cd5f9e6227a965"
+  },
+  "ProductionStudio/Cases/michael-thompson-staged-suicide-murder/shorts_scripts/short_3.txt": {
+    "mtime": 1785823428.5330129,
+    "ast_hash": "667faee4513af6608f1d34b536959d3b",
+    "semantic_hash": "667faee4513af6608f1d34b536959d3b"
+  },
+  "ProductionStudio/Cases/michael-thompson-staged-suicide-murder/shorts_scripts/short_4.txt": {
+    "mtime": 1785823437.639683,
+    "ast_hash": "573c632268a587426e6e61be6dfbb90d",
+    "semantic_hash": "573c632268a587426e6e61be6dfbb90d"
   }
 }

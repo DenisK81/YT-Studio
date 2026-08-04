@@ -60,6 +60,25 @@ the trigger surface entirely (switched to a wood-paneled courtroom interior with
 stonework). If a future scene needs an exterior monumental-building shot, budget for this and
 plan a non-facade alternative composition up front rather than iterating on the same shot.
 
+## Confirmed pattern (2026-08-01, Michael Thompson case): the text-hallucination limitation
+extends to small branded electronics, not just monumental architecture
+
+The 2026-07-30 finding above (courthouse facades resist text suppression) generalizes further:
+Flux schnell also reliably invents fake brand names/model numbers/display text on small
+consumer electronics — voice recorders, radios, rotary phones — even when the prompt explicitly
+says the surface is blank. On this case, a voice-recorder prompt with "no legible text or labels
+on the device" still rendered a small embossed brand-and-model mark on the casing; the negative
+constraint was strengthened twice and failed twice more. The reliable fix was the same one that
+worked for architecture: **change the composition to remove the text-prone surface from frame
+entirely**, not add more negative words to the same shot. Concretely: an extreme close-up
+cropping to *only* the recorder's glowing display (with the branded casing edge out of frame)
+came back clean on the first try; a radio scene was abandoned entirely in favor of an abstract
+underwater-ripple composition after three straight failures. **General rule going forward:**
+if a prompt describes a manufactured object with a face/panel/nameplate (electronics, signage,
+vehicles, packaging) and a first-pass generation shows any hint of invented text, don't iterate
+on that composition — reframe to exclude the branded surface, or replace the object with a
+different symbol entirely.
+
 ## Fallback / secondary providers (keep the interface provider-agnostic)
 - Leonardo.ai API — separate pay-as-you-go balance (starts with its own free credit), useful
   as a second source if fal.ai has an outage or a specific model isn't available there.

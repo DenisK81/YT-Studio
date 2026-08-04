@@ -72,6 +72,39 @@ pick is a safe pick.
   is ever expanded with tracks from a *different* library (e.g. YouTube Audio Library), check
   that library's terms per track at that point — don't assume uniform terms across libraries.
 
+## Real Content ID claim found in production (2026-08-01)
+
+YouTube Studio flagged a **Copyright claim** on one published video: track "**Dark Forest**"
+(sped-up variant, shown as "Dark Forest SPDUP" in Studio), claimant "11PM18". Claim type shows
+"No impact to your video's reach" (doesn't restrict visibility/monetization on this claim), but
+it's a real confirmed case of exactly the gap this doc's own comparison table warned about:
+**a Pixabay Content License covering commercial use does NOT mean a track is clear of YouTube's
+Content ID system.** Content ID matches by audio fingerprint against whatever a rights holder
+registered — it has no awareness of Pixabay's license terms, so a legitimately-licensed track
+can still get claimed. Dispute-with-proof-of-license is the correct response if a future claim
+does restrict monetization/reach; for a "no impact" claim it's optional but the track should
+still be avoided going forward to stop repeat claims across other videos.
+
+**Identified 2026-08-01: `bed_05.mp3` is "Dark Forest."** The claim showed up specifically on
+Walter Buchanan Short 4 ("She Had The Right To Be Safe" — The Sentence), which let it be traced
+via `prep_short_render.py`'s deterministic `bed_n = (sum(ord(c) for c in slug) % 10) + 1` pick
+for slug `walter_buchanan_short_4` → `bed_05`, then confirmed by hashing every render's copied
+`bed.mp3` against the master `bed_05.mp3` file (`md5sum`) — exact match, no ambiguity. Checked
+every other render produced this session (Buchanan/Devyn/Muliaga main videos + all their Shorts)
+by the same hash comparison: **only this one Short uses `bed_05`.** Cases produced before this
+session (Richins, Banfield, Sementilli) couldn't be checked this way since their render outputs
+no longer exist locally — if their audio ever needs re-verifying, hash their published video's
+extracted audio track against `bed_05.mp3`, don't just re-guess from the slug-naming pattern.
+
+**Fixed at the source, not just documented:** `bed_05` is now permanently excluded from the
+pick pool in both `prep_remotion_render.py` and `prep_short_render.py` — `_BED_POOL = [1, 2, 3,
+4, 6, 7, 8, 9, 10]`, indexed by the same slug hash instead of `% 10`. No future case or Short
+can select `bed_05` again; this isn't a "remember not to" note, it's structurally impossible
+now. The already-published Buchanan Short 4 is left as-is (the claim has "no impact to video
+reach" per YouTube Studio, and per the channel's standing practice this session, a live video
+isn't touched retroactively for a non-urgent finding — see the Rimoni Muliaga redaction-margin
+precedent).
+
 ## Escalate to human when
 - The 10-track set starts feeling repetitive/stale across many videos — a human adds 1-2 more
   tracks from Pixabay, don't force the same 10 indefinitely if the channel scales well past 10

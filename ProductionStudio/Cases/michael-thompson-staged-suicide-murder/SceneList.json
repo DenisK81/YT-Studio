@@ -1,0 +1,368 @@
+{
+  "case_name": "Michael Thompson murder of Kimberley Thompson (Bounds)",
+  "total_scenes": 44,
+  "total_words": 933,
+  "estimated_total_seconds": 373.2,
+  "beat_ranges": [
+    {
+      "beat": "Hook",
+      "from_scene": "0001",
+      "to_scene": "0004"
+    },
+    {
+      "beat": "Conflict",
+      "from_scene": "0005",
+      "to_scene": "0009"
+    },
+    {
+      "beat": "Mystery",
+      "from_scene": "0010",
+      "to_scene": "0014"
+    },
+    {
+      "beat": "Escalation",
+      "from_scene": "0015",
+      "to_scene": "0017"
+    },
+    {
+      "beat": "Evidence",
+      "from_scene": "0018",
+      "to_scene": "0023"
+    },
+    {
+      "beat": "Twist",
+      "from_scene": "0024",
+      "to_scene": "0027"
+    },
+    {
+      "beat": "Investigation",
+      "from_scene": "0028",
+      "to_scene": "0031"
+    },
+    {
+      "beat": "Final Reveal",
+      "from_scene": "0032",
+      "to_scene": "0037"
+    },
+    {
+      "beat": "Aftermath",
+      "from_scene": "0038",
+      "to_scene": "0042"
+    },
+    {
+      "beat": "Question for viewers",
+      "from_scene": "0043",
+      "to_scene": "0044"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "0001",
+      "beat": "Hook",
+      "text": "At 6 in the morning, a man called 999. He said he'd woken up and found his wife dead — surrounded by empty pill packets and bottles, exactly what a suicide looks like.",
+      "word_count": 33,
+      "estimated_seconds": 13.2
+    },
+    {
+      "scene_id": "0002",
+      "beat": "Hook",
+      "text": "He said he'd tried CPR. He sounded frantic on the phone.",
+      "word_count": 11,
+      "estimated_seconds": 4.4
+    },
+    {
+      "scene_id": "0003",
+      "beat": "Hook",
+      "text": "None of it was real.",
+      "word_count": 5,
+      "estimated_seconds": 2.0
+    },
+    {
+      "scene_id": "0004",
+      "beat": "Hook",
+      "text": "Kimberley Thompson didn't take her own life. Her husband raped her and suffocated her — then spent time arranging the scene around her body before he ever called for help.",
+      "word_count": 30,
+      "estimated_seconds": 12.0
+    },
+    {
+      "scene_id": "0005",
+      "beat": "Conflict",
+      "text": "Michael Thompson was 56 years old. He and Kimberley had been married nineteen years, with two children together.",
+      "word_count": 18,
+      "estimated_seconds": 7.2
+    },
+    {
+      "scene_id": "0006",
+      "beat": "Conflict",
+      "text": "By the summer of 2025, the marriage was ending. The two were estranged, still living under the same roof on Pinewood Road in Northampton while their divorce moved toward completion.",
+      "word_count": 30,
+      "estimated_seconds": 12.0
+    },
+    {
+      "scene_id": "0007",
+      "beat": "Conflict",
+      "text": "Kimberley wasn't staying quiet about leaving. She had plans. A life on the other side of this marriage that she was actively building.",
+      "word_count": 23,
+      "estimated_seconds": 9.2
+    },
+    {
+      "scene_id": "0008",
+      "beat": "Conflict",
+      "text": "The trial would later hear that for years, Thompson had subjected her to controlling and coercive behaviour — and had secretly made hundreds of hours of recordings of her.",
+      "word_count": 29,
+      "estimated_seconds": 11.6
+    },
+    {
+      "scene_id": "0009",
+      "beat": "Conflict",
+      "text": "Investigators would later say that pattern of control painted a picture of the marriage long before anyone knew how it would end.",
+      "word_count": 22,
+      "estimated_seconds": 8.8
+    },
+    {
+      "scene_id": "0010",
+      "beat": "Mystery",
+      "text": "There was something else in Thompson's past. A warning he'd used against her more than once, according to prosecutors.",
+      "word_count": 19,
+      "estimated_seconds": 7.6
+    },
+    {
+      "scene_id": "0011",
+      "beat": "Mystery",
+      "text": "Back in 2000, a previous partner of his — 29-year-old Rhonda Anderson, a mother of two — was found dead in the bath at her Northampton home.",
+      "word_count": 27,
+      "estimated_seconds": 10.8
+    },
+    {
+      "scene_id": "0012",
+      "beat": "Mystery",
+      "text": "An inquest at the time ruled it an accident: a radio had fallen into the water.",
+      "word_count": 16,
+      "estimated_seconds": 6.4
+    },
+    {
+      "scene_id": "0013",
+      "beat": "Mystery",
+      "text": "Prosecutor Miranda Moore KC told the jury that Thompson used the \"unusual circumstances\" of that earlier death to threaten and intimidate Kimberley, throughout their relationship.",
+      "word_count": 25,
+      "estimated_seconds": 10.0
+    },
+    {
+      "scene_id": "0014",
+      "beat": "Mystery",
+      "text": "It was, prosecutors argued, a reminder of what he was capable of — and what he might do again.",
+      "word_count": 19,
+      "estimated_seconds": 7.6
+    },
+    {
+      "scene_id": "0015",
+      "beat": "Escalation",
+      "text": "In the early hours of August 9th, 2025 — sometime between midnight and 3:30 in the morning — Michael Thompson raped his estranged wife.",
+      "word_count": 24,
+      "estimated_seconds": 9.6
+    },
+    {
+      "scene_id": "0016",
+      "beat": "Escalation",
+      "text": "Then he suffocated her.",
+      "word_count": 4,
+      "estimated_seconds": 1.6
+    },
+    {
+      "scene_id": "0017",
+      "beat": "Escalation",
+      "text": "He did not call for help right away.",
+      "word_count": 8,
+      "estimated_seconds": 3.2
+    },
+    {
+      "scene_id": "0018",
+      "beat": "Evidence",
+      "text": "Before he ever dialled 999, Thompson took the time to arrange the scene around her body — empty pill packets, bottles of vodka and gin, family photographs, scattered to look like a woman who had chosen to die.",
+      "word_count": 38,
+      "estimated_seconds": 15.2
+    },
+    {
+      "scene_id": "0019",
+      "beat": "Evidence",
+      "text": "When paramedics and police arrived, he was pretending to perform CPR. He sounded distressed, both on the phone and in person.",
+      "word_count": 21,
+      "estimated_seconds": 8.4
+    },
+    {
+      "scene_id": "0020",
+      "beat": "Evidence",
+      "text": "For a moment, standing in that room, it worked. The scene in front of them looked exactly like what he wanted them to see.",
+      "word_count": 24,
+      "estimated_seconds": 9.6
+    },
+    {
+      "scene_id": "0021",
+      "beat": "Evidence",
+      "text": "He told officers that he and Kimberley had consensual sex before he found her unresponsive.",
+      "word_count": 15,
+      "estimated_seconds": 6.0
+    },
+    {
+      "scene_id": "0022",
+      "beat": "Evidence",
+      "text": "The post-mortem told a different story. No alcohol in her system at all — only low levels of caffeine, paracetamol, and codeine. Nothing about the scene he'd built matched what had actually happened to her.",
+      "word_count": 35,
+      "estimated_seconds": 14.0
+    },
+    {
+      "scene_id": "0023",
+      "beat": "Evidence",
+      "text": "Whatever Thompson told himself while he arranged that scene, a pathologist could see straight through it.",
+      "word_count": 16,
+      "estimated_seconds": 6.4
+    },
+    {
+      "scene_id": "0024",
+      "beat": "Twist",
+      "text": "Thompson was charged with rape and murder in September 2025. He denied both.",
+      "word_count": 13,
+      "estimated_seconds": 5.2
+    },
+    {
+      "scene_id": "0025",
+      "beat": "Twist",
+      "text": "The trial that followed ran six weeks, at Nottingham Crown Court.",
+      "word_count": 11,
+      "estimated_seconds": 4.4
+    },
+    {
+      "scene_id": "0026",
+      "beat": "Twist",
+      "text": "Inside that courtroom, prosecutors laid out exactly how he had used Rhonda Anderson's death as a weapon — a quarter-century-old tragedy, turned into a threat dressed up as coincidence.",
+      "word_count": 29,
+      "estimated_seconds": 11.6
+    },
+    {
+      "scene_id": "0027",
+      "beat": "Twist",
+      "text": "A quarter of a century between one death ruled an accident and the next one that wasn't — with the same man standing at the center of both.",
+      "word_count": 28,
+      "estimated_seconds": 11.2
+    },
+    {
+      "scene_id": "0028",
+      "beat": "Investigation",
+      "text": "On July 8th, 2026, the jury returned unanimous guilty verdicts: murder, rape, and two counts of perverting the course of justice.",
+      "word_count": 21,
+      "estimated_seconds": 8.4
+    },
+    {
+      "scene_id": "0029",
+      "beat": "Investigation",
+      "text": "Detective Chief Inspector Torie Harrison, who led the investigation, put it plainly: \"Not only did Thompson brutally rape and murder Kim, he took the time to stage her death in order to make people believe she had committed suicide before calling for help.\"",
+      "word_count": 43,
+      "estimated_seconds": 17.2
+    },
+    {
+      "scene_id": "0030",
+      "beat": "Investigation",
+      "text": "Crown Prosecutor Emma Cornell said the evidence presented at trial \"exposed his cowardice and lies.\"",
+      "word_count": 15,
+      "estimated_seconds": 6.0
+    },
+    {
+      "scene_id": "0031",
+      "beat": "Investigation",
+      "text": "The same abhorrent pattern of coercive and controlling behaviour, she said, that had defined the entire relationship.",
+      "word_count": 17,
+      "estimated_seconds": 6.8
+    },
+    {
+      "scene_id": "0032",
+      "beat": "Final Reveal",
+      "text": "Sentencing came on July 14th, 2026, back at Nottingham Crown Court.",
+      "word_count": 11,
+      "estimated_seconds": 4.4
+    },
+    {
+      "scene_id": "0033",
+      "beat": "Final Reveal",
+      "text": "Judge Nirmal Shant KC handed down a minimum term of 33 years for murder and perverting the course of justice, with 10 years running alongside it for the rape.",
+      "word_count": 29,
+      "estimated_seconds": 11.6
+    },
+    {
+      "scene_id": "0034",
+      "beat": "Final Reveal",
+      "text": "Thompson was placed on the sex offenders register for life.",
+      "word_count": 10,
+      "estimated_seconds": 4.0
+    },
+    {
+      "scene_id": "0035",
+      "beat": "Final Reveal",
+      "text": "Thirty-three years is a number that means Thompson, in his fifties now, will likely spend the rest of his life behind bars before he's ever eligible to walk free.",
+      "word_count": 29,
+      "estimated_seconds": 11.6
+    },
+    {
+      "scene_id": "0036",
+      "beat": "Final Reveal",
+      "text": "He didn't show up to hear it. Thompson refused to leave his cell for his own sentencing.",
+      "word_count": 17,
+      "estimated_seconds": 6.8
+    },
+    {
+      "scene_id": "0037",
+      "beat": "Final Reveal",
+      "text": "The judge called it \"the ultimate act of cowardice and contempt\" — and delivered the sentence with the dock sitting empty.",
+      "word_count": 21,
+      "estimated_seconds": 8.4
+    },
+    {
+      "scene_id": "0038",
+      "beat": "Aftermath",
+      "text": "Kimberley's elder sister, Dionne Bounds, spoke for the family in court: \"She was the kindest mother, daughter, sister, auntie and friend.\"",
+      "word_count": 21,
+      "estimated_seconds": 8.4
+    },
+    {
+      "scene_id": "0039",
+      "beat": "Aftermath",
+      "text": "She was 43 years old. She had two children, and a divorce that was almost finished — a new life she never got to start living.",
+      "word_count": 26,
+      "estimated_seconds": 10.4
+    },
+    {
+      "scene_id": "0040",
+      "beat": "Aftermath",
+      "text": "Rhonda Anderson's death, twenty-five years ago, is still officially recorded as an accident. It's simply no longer the only unusual death connected to Michael Thompson.",
+      "word_count": 25,
+      "estimated_seconds": 10.0
+    },
+    {
+      "scene_id": "0041",
+      "beat": "Aftermath",
+      "text": "Investigators have said a review into that earlier case was opened in 2025 — the same year Kimberley died.",
+      "word_count": 19,
+      "estimated_seconds": 7.6
+    },
+    {
+      "scene_id": "0042",
+      "beat": "Aftermath",
+      "text": "For Kimberley's family, that leaves two open questions instead of one — hers, and Rhonda Anderson's.",
+      "word_count": 16,
+      "estimated_seconds": 6.4
+    },
+    {
+      "scene_id": "0043",
+      "beat": "Question for viewers",
+      "text": "He had hours alone with her body to build a story, before he ever picked up the phone to call for help.",
+      "word_count": 22,
+      "estimated_seconds": 8.8
+    },
+    {
+      "scene_id": "0044",
+      "beat": "Question for viewers",
+      "text": "What does it say about a person, that staging a death took him longer than the violence itself?",
+      "word_count": 18,
+      "estimated_seconds": 7.2
+    }
+  ]
+}
