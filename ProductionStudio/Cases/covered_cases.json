@@ -42,6 +42,12 @@
       "aka": ["HMA v Walter Buchanan", "Darrel Odhiambo", "Darrel Buchanan", "Hamilton Lanarkshire murder", "South Lanarkshire strangulation", "Scotland cheating text murder"],
       "status": "in_production",
       "added": "2026-07-30"
+    },
+    {
+      "case_name": "Michael Thompson murder of Kimberley Thompson",
+      "aka": ["Kimberley Bounds", "Northampton staged suicide murder", "Nottingham Crown Court Thompson", "R v Michael Thompson UK", "faked suicide wife murder England"],
+      "status": "in_production",
+      "added": "2026-08-01"
     }
   ]
 }

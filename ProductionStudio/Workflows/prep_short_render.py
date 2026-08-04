@@ -77,7 +77,11 @@ total_frames = cold_open_frames + narration_frames + cta_frames
 
 # deterministic music-bed pick (same rule as royalty_free_music_tool's get_bed_track,
 # offset by short_id so each short doesn't necessarily reuse the main video's track)
-bed_n = (sum(ord(c) for c in slug) % 10) + 1
+# bed_05 excluded (2026-08-01: "Dark Forest" - confirmed real YouTube Content ID
+# claim in production, see Tools/royalty_free_music_tool.md). Maps into the
+# remaining 9 tracks instead of skipping a number in the middle of the range.
+_BED_POOL = [1, 2, 3, 4, 6, 7, 8, 9, 10]
+bed_n = _BED_POOL[sum(ord(c) for c in slug) % len(_BED_POOL)]
 repo = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 bed_src = repo + f"/ProductionStudio/Assets/audio/music_bed/bed_{bed_n:02d}.mp3"
 shutil.copyfile(bed_src, os.path.join(PUB, "bed.mp3"))
