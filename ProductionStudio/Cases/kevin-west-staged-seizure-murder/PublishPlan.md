@@ -1,16 +1,27 @@
 ```json
 {
   "release_plan": [
-    { "date": "2026-08-05 20:00 PT (America/Los_Angeles) / 2026-08-06T03:00:00Z", "asset": "main video", "video_id": null, "status": "not yet uploaded — awaiting render completion and channel owner's go-ahead" },
-    { "date": "2026-08-06 07:00 PT / 2026-08-06T14:00:00Z", "asset": "short 1 (He Knew Exactly What To Say)", "video_id": null, "status": "not yet uploaded" },
-    { "date": "2026-08-06 19:00 PT / 2026-08-07T02:00:00Z", "asset": "short 2 (The Affair He Hid For 20 Years)", "video_id": null, "status": "not yet uploaded" },
-    { "date": "2026-08-07 07:00 PT / 2026-08-07T14:00:00Z", "asset": "short 3 (His Fiancee May Have Been There That Morning)", "video_id": null, "status": "not yet uploaded" },
-    { "date": "2026-08-07 19:00 PT / 2026-08-08T02:00:00Z", "asset": "short 4 (He Apologized For The Affair, Not The Murder)", "video_id": null, "status": "not yet uploaded" }
+    { "date": "2026-08-06 07:00 PT (America/Los_Angeles) / 2026-08-06T14:00:00Z", "asset": "main video", "video_id": "zvqqbk-q_fc", "status": "scheduled via youtube_agent.py confirm_publish()" },
+    { "date": "2026-08-06 19:00 PT / 2026-08-07T02:00:00Z", "asset": "short 1 (He Knew Exactly What To Say)", "video_id": "yFGqo99s4MY", "status": "scheduled via youtube_agent.py confirm_publish()" },
+    { "date": "2026-08-07 07:00 PT / 2026-08-07T14:00:00Z", "asset": "short 2 (The Affair He Hid For 20 Years)", "video_id": "sRBJu2g7bv4", "status": "scheduled via youtube_agent.py confirm_publish()" },
+    { "date": "2026-08-07 19:00 PT / 2026-08-08T02:00:00Z", "asset": "short 3 (His Fiancee May Have Been There That Morning)", "video_id": "6UkI8LQ6e2c", "status": "scheduled via youtube_agent.py confirm_publish()" },
+    { "date": "2026-08-08 07:00 PT / 2026-08-08T14:00:00Z", "asset": "short 4 (He Apologized For The Affair, Not The Murder)", "video_id": "PeO4NvJWZD8", "status": "scheduled via youtube_agent.py confirm_publish()" }
   ],
-  "playlists": ["Husband Killed Wife — second-ever video, following Buchanan and Thompson", "Love Triangle Murders"],
-  "awaiting_human_confirmation": true
+  "playlists": ["Husband Killed Wife (PLbNIKr64Fk0Y) — third video for this playlist, after Buchanan and Thompson", "Love Triangle Murders (PLex0mHScQ9nU)"],
+  "awaiting_human_confirmation": false
 }
 ```
+
+**Update 2026-08-06:** the channel owner said "да мержи и планируй публикацию" (merge and schedule publication). Before scheduling, re-checked the real live schedule via `list-uploads` — the originally-drafted Aug 5 20:00 PT slot had already passed real time by the time of execution (session ran long), so the schedule was shifted forward to start at the next real morning slot instead of silently scheduling into the past. All 5 assets uploaded as PRIVATE via `prepare_upload()` (thumbnail set on the main video), added to both the `Husband Killed Wife` and `Love Triangle Murders` playlists, then all 5 scheduled for real via `confirm_publish(human_confirmed=True, publish_at=...)`.
+
+**Pinned comments — all 5 blocked, expected and documented, not a bug:** `post_comment()` was attempted immediately after each `confirm_publish()` call and failed on all 5 with "403 insufficient permissions" — every asset is still `privacyStatus: private` (scheduled, not yet live), matching the documented platform restriction in `Tools/youtube_publish_tool.md` (YouTube rejects `commentThreads.insert` on any private video regardless of scope). Once each video actually goes public per its schedule above, re-run `post_comment()` with the text below:
+- main (`zvqqbk-q_fc`): "Detective Dean Telecsan testified that strangulation takes only seven to ten seconds to cause unconsciousness. The jury deliberated for about two hours before finding Kevin West guilty on both counts. What stood out to you most about this case? Tell us below, we read every comment."
+- short 1 (`yFGqo99s4MY`): "He spent 22 years training for calls exactly like this one. Full story on the main channel."
+- short 2 (`sRBJu2g7bv4`): "He was planning to leave his wife the exact same day she died. Full story on the main channel."
+- short 3 (`6UkI8LQ6e2c`): "By the time she testified, they were already engaged. Full story on the main channel."
+- short 4 (`PeO4NvJWZD8`): "\"That is my only wrongdoing,\" he told the court — about the affair, not the killing. Full story on the main channel."
+
+**Hard rule, unchanged:** nothing is published automatically going forward. Per `Agents/publishing_agent.md`, every future upload still requires explicit human confirmation at the time, with no exceptions regardless of pipeline automation elsewhere.
 
 **Status:** no publish schedule has been given yet for this case. Per `Agents/publishing_agent.md`'s
 hard rule, `confirm_publish(human_confirmed=True, ...)` will not be called for any of these 5
