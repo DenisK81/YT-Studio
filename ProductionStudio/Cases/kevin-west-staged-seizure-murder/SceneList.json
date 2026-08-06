@@ -1,0 +1,361 @@
+{
+  "case_name": "Kevin West murder of Marcy West",
+  "total_scenes": 43,
+  "total_words": 939,
+  "estimated_total_seconds": 375.6,
+  "beat_ranges": [
+    {
+      "beat": "Hook",
+      "from_scene": "0001",
+      "to_scene": "0004"
+    },
+    {
+      "beat": "Conflict",
+      "from_scene": "0005",
+      "to_scene": "0009"
+    },
+    {
+      "beat": "Mystery",
+      "from_scene": "0010",
+      "to_scene": "0014"
+    },
+    {
+      "beat": "Escalation",
+      "from_scene": "0015",
+      "to_scene": "0018"
+    },
+    {
+      "beat": "Evidence",
+      "from_scene": "0019",
+      "to_scene": "0024"
+    },
+    {
+      "beat": "Twist",
+      "from_scene": "0025",
+      "to_scene": "0027"
+    },
+    {
+      "beat": "Investigation",
+      "from_scene": "0028",
+      "to_scene": "0032"
+    },
+    {
+      "beat": "Final Reveal",
+      "from_scene": "0033",
+      "to_scene": "0035"
+    },
+    {
+      "beat": "Aftermath",
+      "from_scene": "0036",
+      "to_scene": "0042"
+    },
+    {
+      "beat": "Question for viewers",
+      "from_scene": "0043",
+      "to_scene": "0043"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "0001",
+      "beat": "Hook",
+      "text": "At 4:27 in the morning, a fire battalion chief called 911 about his own wife. He said she was having a seizure.",
+      "word_count": 22,
+      "estimated_seconds": 8.8
+    },
+    {
+      "scene_id": "0002",
+      "beat": "Hook",
+      "text": "Forty-four minutes later, she was dead.",
+      "word_count": 6,
+      "estimated_seconds": 2.4
+    },
+    {
+      "scene_id": "0003",
+      "beat": "Hook",
+      "text": "He knew exactly what words would get the fastest response. He'd spent 22 years training for calls just like this one.",
+      "word_count": 21,
+      "estimated_seconds": 8.4
+    },
+    {
+      "scene_id": "0004",
+      "beat": "Hook",
+      "text": "It wasn't a seizure. Kevin West had strangled his wife — and then called it in like a professional, because that's exactly what he was.",
+      "word_count": 25,
+      "estimated_seconds": 10.0
+    },
+    {
+      "scene_id": "0005",
+      "beat": "Conflict",
+      "text": "Kevin West, 52, had spent 22 years as a battalion chief with the Camas-Washougal Fire Department. Marcy West, 48, was his wife of over two decades.",
+      "word_count": 26,
+      "estimated_seconds": 10.4
+    },
+    {
+      "scene_id": "0006",
+      "beat": "Conflict",
+      "text": "On paper, it read like an ordinary marriage under ordinary strain — arguments over money, over intimacy, over the kids.",
+      "word_count": 20,
+      "estimated_seconds": 8.0
+    },
+    {
+      "scene_id": "0007",
+      "beat": "Conflict",
+      "text": "In his own texts to her, Kevin wrote: \"You have made yourself clear that I have made you unhappy for 23 years.\" He also wrote: \"You create my anger.\"",
+      "word_count": 29,
+      "estimated_seconds": 11.6
+    },
+    {
+      "scene_id": "0008",
+      "beat": "Conflict",
+      "text": "Marcy had reportedly asked for two weeks — just enough time to find somewhere else to live.",
+      "word_count": 17,
+      "estimated_seconds": 6.8
+    },
+    {
+      "scene_id": "0009",
+      "beat": "Conflict",
+      "text": "He'd built a name across two decades of emergency response — the kind of person a town trusts by default.",
+      "word_count": 20,
+      "estimated_seconds": 8.0
+    },
+    {
+      "scene_id": "0010",
+      "beat": "Mystery",
+      "text": "What Marcy didn't know was that Kevin had been keeping something from her almost since the beginning.",
+      "word_count": 17,
+      "estimated_seconds": 6.8
+    },
+    {
+      "scene_id": "0011",
+      "beat": "Mystery",
+      "text": "A woman named Cynthia Ward — a volunteer firefighter in Washougal he first met around 2004. He and Marcy had already been married about two years at that point.",
+      "word_count": 29,
+      "estimated_seconds": 11.6
+    },
+    {
+      "scene_id": "0012",
+      "beat": "Mystery",
+      "text": "That relationship went quiet for years. Then, in 2023, Kevin messaged her out of nowhere on Facebook: \"Hi, is this Cynthia from Washougal that I knew back in the day?\"",
+      "word_count": 30,
+      "estimated_seconds": 12.0
+    },
+    {
+      "scene_id": "0013",
+      "beat": "Mystery",
+      "text": "By that winter, it had turned physical again — hotel rooms, trips to the beach, a visit to meet her mother — all coordinated over WhatsApp specifically because both of them were still with other people.",
+      "word_count": 36,
+      "estimated_seconds": 14.4
+    },
+    {
+      "scene_id": "0014",
+      "beat": "Mystery",
+      "text": "To colleagues and neighbors, there was nothing about him to suggest any of it.",
+      "word_count": 14,
+      "estimated_seconds": 5.6
+    },
+    {
+      "scene_id": "0015",
+      "beat": "Escalation",
+      "text": "Investigators later recovered deleted messages. To Cynthia's brother-in-law, Kevin had written: \"I'm moving out on Monday.\" \"Paper's done Tuesday.\" \"I know where I sit.\"",
+      "word_count": 24,
+      "estimated_seconds": 9.6
+    },
+    {
+      "scene_id": "0016",
+      "beat": "Escalation",
+      "text": "To Cynthia's mother, he wrote that next week would be \"a big week for Cynthia and I to celebrate.\"",
+      "word_count": 19,
+      "estimated_seconds": 7.6
+    },
+    {
+      "scene_id": "0017",
+      "beat": "Escalation",
+      "text": "He was planning to leave his wife on January 8th, 2024. That was the exact day Marcy died.",
+      "word_count": 18,
+      "estimated_seconds": 7.2
+    },
+    {
+      "scene_id": "0018",
+      "beat": "Escalation",
+      "text": "Whatever new chapter he was planning, it clearly wasn't going to wait for a divorce to finish first.",
+      "word_count": 18,
+      "estimated_seconds": 7.2
+    },
+    {
+      "scene_id": "0019",
+      "beat": "Evidence",
+      "text": "At 4:27 that morning, Kevin called 911. He reported his wife was having a seizure and going into respiratory arrest.",
+      "word_count": 20,
+      "estimated_seconds": 8.0
+    },
+    {
+      "scene_id": "0020",
+      "beat": "Evidence",
+      "text": "As a 22-year fire service veteran, he knew those exact words would trigger the fastest possible emergency response.",
+      "word_count": 18,
+      "estimated_seconds": 7.2
+    },
+    {
+      "scene_id": "0021",
+      "beat": "Evidence",
+      "text": "Marcy was pronounced dead at 5:11am. Her death was first attributed to natural causes.",
+      "word_count": 14,
+      "estimated_seconds": 5.6
+    },
+    {
+      "scene_id": "0022",
+      "beat": "Evidence",
+      "text": "For three days, that's exactly how it stood on paper — a sudden, natural tragedy.",
+      "word_count": 15,
+      "estimated_seconds": 6.0
+    },
+    {
+      "scene_id": "0023",
+      "beat": "Evidence",
+      "text": "An autopsy changed everything. Investigators found bruising under her jawline and earlobes, brain swelling, and hemorrhaging on both sides of her neck.",
+      "word_count": 22,
+      "estimated_seconds": 8.8
+    },
+    {
+      "scene_id": "0024",
+      "beat": "Evidence",
+      "text": "On March 20th, 2024, the Clark County Medical Examiner ruled it: homicide, caused by asphyxia from blunt trauma to the neck.",
+      "word_count": 21,
+      "estimated_seconds": 8.4
+    },
+    {
+      "scene_id": "0025",
+      "beat": "Twist",
+      "text": "Kevin West was arrested two days later and charged with first-degree murder. Bail was set at 1.5 million dollars. He posted it, and pleaded not guilty.",
+      "word_count": 26,
+      "estimated_seconds": 10.4
+    },
+    {
+      "scene_id": "0026",
+      "beat": "Twist",
+      "text": "Prosecutors alleged he had put his wife in a rear naked chokehold. West denied it — and said he had no explanation at all for the injuries on her neck.",
+      "word_count": 30,
+      "estimated_seconds": 12.0
+    },
+    {
+      "scene_id": "0027",
+      "beat": "Twist",
+      "text": "His defense argued something else entirely: that Marcy had a history of headaches and health problems, and that first responders simply hadn't acted fast enough to save her.",
+      "word_count": 28,
+      "estimated_seconds": 11.2
+    },
+    {
+      "scene_id": "0028",
+      "beat": "Investigation",
+      "text": "At trial, Cynthia Ward herself testified — and revealed she may have been at the house the very morning Marcy died.",
+      "word_count": 21,
+      "estimated_seconds": 8.4
+    },
+    {
+      "scene_id": "0029",
+      "beat": "Investigation",
+      "text": "The trial ran two weeks. Detective Dean Telecsan testified that strangulation takes only seven to ten seconds to cause unconsciousness — barely any time at all.",
+      "word_count": 26,
+      "estimated_seconds": 10.4
+    },
+    {
+      "scene_id": "0030",
+      "beat": "Investigation",
+      "text": "The jury didn't need long either. After only about two hours of deliberation, they came back.",
+      "word_count": 16,
+      "estimated_seconds": 6.4
+    },
+    {
+      "scene_id": "0031",
+      "beat": "Investigation",
+      "text": "On January 20th, 2026, Kevin West was found guilty of both first- and second-degree murder.",
+      "word_count": 15,
+      "estimated_seconds": 6.0
+    },
+    {
+      "scene_id": "0032",
+      "beat": "Investigation",
+      "text": "Two hours, for two counts of murder, after two weeks of testimony.",
+      "word_count": 12,
+      "estimated_seconds": 4.8
+    },
+    {
+      "scene_id": "0033",
+      "beat": "Final Reveal",
+      "text": "Sentencing came on February 27th, 2026, at Clark County Superior Court.",
+      "word_count": 11,
+      "estimated_seconds": 4.4
+    },
+    {
+      "scene_id": "0034",
+      "beat": "Final Reveal",
+      "text": "Judge Robert Lewis handed down 300 months — 25 years — and said plainly that he did not believe West's account. The jury, he said, had gotten it right.",
+      "word_count": 29,
+      "estimated_seconds": 11.6
+    },
+    {
+      "scene_id": "0035",
+      "beat": "Final Reveal",
+      "text": "Kevin West could be eligible for parole after serving 90 percent of that sentence.",
+      "word_count": 14,
+      "estimated_seconds": 5.6
+    },
+    {
+      "scene_id": "0036",
+      "beat": "Aftermath",
+      "text": "His own children stood on opposite sides of the courtroom that day.",
+      "word_count": 12,
+      "estimated_seconds": 4.8
+    },
+    {
+      "scene_id": "0037",
+      "beat": "Aftermath",
+      "text": "Their son, Ted, asked the judge for leniency: \"I love and respect my father deeply. I ask for leniency from you.\"",
+      "word_count": 21,
+      "estimated_seconds": 8.4
+    },
+    {
+      "scene_id": "0038",
+      "beat": "Aftermath",
+      "text": "Their daughter, Megan, wanted the harshest sentence possible. She told her father directly: \"Days after you killed our mother, you brought your mistress into our home.\"",
+      "word_count": 26,
+      "estimated_seconds": 10.4
+    },
+    {
+      "scene_id": "0039",
+      "beat": "Aftermath",
+      "text": "Kevin West apologized — for the affair. Not for the killing. \"That is my only wrongdoing,\" he told the court.",
+      "word_count": 20,
+      "estimated_seconds": 8.0
+    },
+    {
+      "scene_id": "0040",
+      "beat": "Aftermath",
+      "text": "By then, Cynthia Ward wasn't just his girlfriend. He had proposed to her that September — less than eight months after his wife's death. They were already living together, with his own son under the same roof.",
+      "word_count": 37,
+      "estimated_seconds": 14.8
+    },
+    {
+      "scene_id": "0041",
+      "beat": "Aftermath",
+      "text": "Afterward, Megan said she thought the sentence was too lenient, and that she worried her own brother had been shaped by their father's \"lies and manipulation.\" West's defense says they plan to appeal.",
+      "word_count": 33,
+      "estimated_seconds": 13.2
+    },
+    {
+      "scene_id": "0042",
+      "beat": "Aftermath",
+      "text": "For a family already split in half by one verdict, an appeal means the case isn't fully over yet — not for either of his children.",
+      "word_count": 26,
+      "estimated_seconds": 10.4
+    },
+    {
+      "scene_id": "0043",
+      "beat": "Question for viewers",
+      "text": "He spent 22 years being the person other families called in their worst moment. What does it mean that when it was his own family, the emergency he reported was the one he'd caused himself?",
+      "word_count": 35,
+      "estimated_seconds": 14.0
+    }
+  ]
+}
