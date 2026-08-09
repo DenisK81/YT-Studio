@@ -82,6 +82,37 @@ America/Los_Angeles and converted to UTC (see CLAUDE.md's timezone project fact)
 | short_3 "The Killer Took The Stand To Save Her" | 2026-07-27 07:00 PDT | `2026-07-27T14:00:00Z` |
 | short_4 "8 Years Later, The Verdict Finally Came" | 2026-07-27 19:00 PDT | `2026-07-28T02:00:00Z` |
 
+## Scheduling collision — real incident, 2026-08-06 (`list-uploads` is blind to scheduled-private videos)
+
+Scheduled the 5 Kevin West assets after checking `list-uploads` for "anything already booked in
+the future" and seeing nothing past 2026-08-05 — concluded the near-future slots were free.
+**They weren't.** 4 of the 5 chosen slots exactly collided with Michael Thompson's 4 remaining
+Shorts, which were sitting `privacyStatus: private` with a future `publishAt` at the time.
+
+**Root cause:** `list-uploads` calls `playlistItems().list()` on the channel's uploads playlist.
+That endpoint only returns videos that are already public (or otherwise visible in the playlist
+listing) — it does **not** surface videos in `privacyStatus: private` with a future `publishAt`,
+even though they are real, already-scheduled videos that will go live and would collide.
+Checking "is this future slot free?" via `list-uploads` alone is structurally unable to see the
+exact case it needs to catch.
+
+**Fix — standing rule, not a one-off:** before calling `confirm_publish(..., publish_at=...)`
+for any new batch, check the real `status.publishAt` of every video ID from **every other
+case's own `PublishPlan.md`** whose release window could plausibly overlap (not just the most
+recent case — check any case with a still-in-the-future schedule), via:
+```
+videos().list(part="status", id="<comma-separated video_ids>")
+```
+and read each one's `status.privacyStatus` + `status.publishAt` directly. This is the only
+reliable way to see a scheduled-but-still-private video. `list-uploads`/`playlistItems().list()`
+is fine for "what has already gone live," never for "is this future slot free."
+
+No videos were lost or overwritten in this incident — `confirm_publish()` only ever sets a
+`publishAt` on the video ID it's called with, so both sets of videos were untouched and intact
+throughout; the problem was purely that two unrelated videos would have gone live in the same
+instant. Fixed by re-checking via `videos().list()` and rescheduling the colliding batch to start
+after the other case's last remaining slot.
+
 **Lesson learned:** don't identify an already-uploaded video by title-matching alone — a
 channel-owner-uploaded video titled "She Sexted Her Husband's Killer — At His Funeral" was
 initially assumed to be Short #2, but checking its real `contentDetails.duration` via the API

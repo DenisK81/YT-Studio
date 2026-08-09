@@ -72,9 +72,11 @@ total_frames = round(timing["totalSeconds"] * FPS)
 # deterministic music-bed pick (same rule as royalty_free_music_tool's get_bed_track)
 slug = os.path.basename(os.path.dirname(CASE_DIR)) or os.path.basename(CASE_DIR)
 # bed_05 excluded (2026-08-01: "Dark Forest" - confirmed real YouTube Content ID
-# claim in production, see Tools/royalty_free_music_tool.md). Maps into the
-# remaining 9 tracks instead of skipping a number in the middle of the range.
-_BED_POOL = [1, 2, 3, 4, 6, 7, 8, 9, 10]
+# claim in production, see Tools/royalty_free_music_tool.md). bed_04 excluded
+# (2026-08-06: "Ashfall", claimant Elite Alliance Music - confirmed real Content ID
+# claim on the Kevin West main video). Maps into the remaining 8 tracks instead of
+# skipping numbers in the middle of the range.
+_BED_POOL = [1, 2, 3, 6, 7, 8, 9, 10]
 bed_n = _BED_POOL[sum(ord(c) for c in slug) % len(_BED_POOL)]
 bed_src = REPO + f"/ProductionStudio/Assets/audio/music_bed/bed_{bed_n:02d}.mp3"
 shutil.copyfile(bed_src, os.path.join(PUB, "bed.mp3"))

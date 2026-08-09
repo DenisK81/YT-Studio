@@ -105,6 +105,36 @@ reach" per YouTube Studio, and per the channel's standing practice this session,
 isn't touched retroactively for a non-urgent finding — see the Rimoni Muliaga redaction-margin
 precedent).
 
+## Second real Content ID claim found in production (2026-08-06)
+
+YouTube Studio flagged another **Copyright claim**, this time on the Kevin West main video:
+track "**Ashfall**" ("everything is dead"), claimant "Elite Alliance Music", found 0:02-6:01 of
+the video's 6:04 total runtime — i.e. the music bed ran essentially the entire video, same
+pattern as the bed_05/"Dark Forest" claim. Type: Copyright - Audio, with a potential monetization
+limitation (more severe than the bed_05 claim's "no impact" status).
+
+**Identified 2026-08-06: `bed_04.mp3` is "Ashfall."** Confirmed by hashing the actual `bed.mp3`
+copied into the Kevin West main video's Remotion render (`md5sum`) against the master
+`bed_04.mp3` file — exact match (`a68aa82a6dcea12e634a9f17dc98df12`), no ambiguity. The channel
+owner is replacing this track manually (with a YouTube Audio Library track) on the already-live
+video rather than waiting for a re-render.
+
+**Fixed at the source, same pattern as bed_05:** `bed_04` is now permanently excluded from the
+pick pool in both `prep_remotion_render.py` and `prep_short_render.py` — `_BED_POOL = [1, 2, 3,
+6, 7, 8, 9, 10]` (both `bed_04` and `bed_05` now excluded). Neither can be selected again; this
+is structural, not a "remember not to" note.
+
+**Pattern now visible across 2 of 10 tracks:** both confirmed claims hit tracks that ran for a
+video's *entire* duration (a full-length loop, not a short snippet), which is exactly the usage
+pattern most likely to trip Content ID's fingerprint matching regardless of the track's actual
+Pixabay license terms. With 2 of the original 10 tracks now confirmed claimed, the remaining
+8-track pool should be treated as "unconfirmed, not yet proven clean" rather than "safe" — a
+future claim on a third track would not be surprising. If a third claim happens, consider
+whether the whole 10-track set needs re-sourcing from a source with actual Content ID
+pre-clearance (e.g. YouTube Audio Library, which is explicitly cleared) rather than continuing
+to treat Pixabay license coverage as protection against fingerprint claims — see this doc's own
+comparison table, which already flagged Content ID as a separate risk from licensing.
+
 ## Escalate to human when
 - The 10-track set starts feeling repetitive/stale across many videos — a human adds 1-2 more
   tracks from Pixabay, don't force the same 10 indefinitely if the channel scales well past 10
