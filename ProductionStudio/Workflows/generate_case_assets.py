@@ -36,6 +36,23 @@ import urllib.request
 
 VOICE_ID = "wSChTcAxdiTjLPhHeyrM"  # Jimmy - Canadian Podcast Narration (fixed in config)
 ELEVENLABS_MODEL = "eleven_multilingual_v2"
+# Natural-delivery tuning (2026-08-10, channel owner asked for less robotic/more natural
+# pacing). Verified against ElevenLabs' current docs before setting these - no voice_settings
+# were being sent at all before (silent API defaults: stability 0.5, similarity_boost 0.75,
+# style 0). eleven_multilingual_v2 doesn't support <break time="Xs" /> SSML tags (that's
+# eleven_flash_v2 only, and Flash trades narration quality for low latency - not worth it here),
+# so pacing comes from voice_settings + the speed param + punctuation in the script text itself
+# (em dashes / ellipses at natural breath points), not markup.
+ELEVENLABS_VOICE_SETTINGS = {
+    "stability": 0.38,       # lower than the 0.5 default -> more natural pitch/pace variation,
+                              # less flat "read aloud" monotone, still stable enough not to drift
+    "similarity_boost": 0.75,
+    "style": 0.0,             # keep at 0 - non-zero style adds latency and can overact for this
+                              # documentary-narrator register
+    "use_speaker_boost": True,
+}
+ELEVENLABS_SPEED = 0.93       # slightly slower than the 1.0 default -> more deliberate, less
+                              # rushed delivery, closer to a real documentary narrator's pace
 TTS_REQUEST_SPACING_SECONDS = 20  # Creator plan: max 5 concurrent - stay well under it
 FAL_REQUEST_SPACING_SECONDS = 1
 LOUDNORM_TARGET_I = -24  # integrated LUFS target - see Tools/remotion_assembly_tool.md's
@@ -194,7 +211,8 @@ def cmd_audio(case_dir, audio_dir):
             f"https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}/with-timestamps"
             f"?output_format=mp3_44100_128",
             {"xi-api-key": el_key, "Content-Type": "application/json"},
-            {"text": ch["text"], "model_id": ELEVENLABS_MODEL},
+            {"text": ch["text"], "model_id": ELEVENLABS_MODEL,
+             "voice_settings": ELEVENLABS_VOICE_SETTINGS, "speed": ELEVENLABS_SPEED},
         )
 
         audio_bytes = base64.b64decode(resp["audio_base64"])

@@ -1,0 +1,382 @@
+{
+  "case_name": "Yoon Sang-yeop murder (Lee Eun-hae / Cho Hyun-soo)",
+  "total_scenes": 46,
+  "total_words": 931,
+  "estimated_total_seconds": 372.4,
+  "beat_ranges": [
+    {
+      "beat": "Hook",
+      "from_scene": "0001",
+      "to_scene": "0004"
+    },
+    {
+      "beat": "Conflict",
+      "from_scene": "0005",
+      "to_scene": "0009"
+    },
+    {
+      "beat": "Mystery",
+      "from_scene": "0010",
+      "to_scene": "0015"
+    },
+    {
+      "beat": "Escalation",
+      "from_scene": "0016",
+      "to_scene": "0024"
+    },
+    {
+      "beat": "Evidence",
+      "from_scene": "0025",
+      "to_scene": "0034"
+    },
+    {
+      "beat": "Twist",
+      "from_scene": "0035",
+      "to_scene": "0038"
+    },
+    {
+      "beat": "Investigation",
+      "from_scene": "0039",
+      "to_scene": "0040"
+    },
+    {
+      "beat": "Final Reveal",
+      "from_scene": "0041",
+      "to_scene": "0042"
+    },
+    {
+      "beat": "Aftermath",
+      "from_scene": "0043",
+      "to_scene": "0045"
+    },
+    {
+      "beat": "Question for viewers",
+      "from_scene": "0046",
+      "to_scene": "0046"
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "0001",
+      "beat": "Hook",
+      "text": "On June 30th, 2019, a man drowned at a waterfall outside Seoul, surrounded by seven people. Nobody moved to save him.",
+      "word_count": 21,
+      "estimated_seconds": 8.4
+    },
+    {
+      "scene_id": "0002",
+      "beat": "Hook",
+      "text": "Four hours after he died, three life insurance policies in his name — worth 800 million won — would have expired.",
+      "word_count": 21,
+      "estimated_seconds": 8.4
+    },
+    {
+      "scene_id": "0003",
+      "beat": "Hook",
+      "text": "His wife had already tried to kill him twice before that night. He knew it. He went into the water anyway.",
+      "word_count": 21,
+      "estimated_seconds": 8.4
+    },
+    {
+      "scene_id": "0004",
+      "beat": "Hook",
+      "text": "This is the real story of how Lee Eun-hae and her secret lover let Yoon Sang-yeop drown — and nearly got away with it.",
+      "word_count": 24,
+      "estimated_seconds": 9.6
+    },
+    {
+      "scene_id": "0005",
+      "beat": "Conflict",
+      "text": "Yoon Sang-yeop and Lee Eun-hae met at a bar in 2011. They married in 2017 — though they never actually lived together.",
+      "word_count": 22,
+      "estimated_seconds": 8.8
+    },
+    {
+      "scene_id": "0006",
+      "beat": "Conflict",
+      "text": "Yoon brought roughly 300 million won in savings into the marriage. He earned a good salary. On paper, he had everything.",
+      "word_count": 21,
+      "estimated_seconds": 8.4
+    },
+    {
+      "scene_id": "0007",
+      "beat": "Conflict",
+      "text": "But within a few years, colleagues said he was borrowing 3,000 won for lunch and wearing shoes worn through at the sole.",
+      "word_count": 22,
+      "estimated_seconds": 8.8
+    },
+    {
+      "scene_id": "0008",
+      "beat": "Conflict",
+      "text": "Every won he made was going somewhere. It was going to Lee.",
+      "word_count": 12,
+      "estimated_seconds": 4.8
+    },
+    {
+      "scene_id": "0009",
+      "beat": "Conflict",
+      "text": "What Yoon didn't fully grasp was that his marriage was never really a marriage. It was something else entirely.",
+      "word_count": 19,
+      "estimated_seconds": 7.6
+    },
+    {
+      "scene_id": "0010",
+      "beat": "Mystery",
+      "text": "For years, Lee Eun-hae had been carrying on a relationship with another man — Cho Hyun-soo.",
+      "word_count": 16,
+      "estimated_seconds": 6.4
+    },
+    {
+      "scene_id": "0011",
+      "beat": "Mystery",
+      "text": "It wasn't a secret affair in the usual sense. Cho wasn't hiding at the edges of her life. He was inside it.",
+      "word_count": 22,
+      "estimated_seconds": 8.8
+    },
+    {
+      "scene_id": "0012",
+      "beat": "Mystery",
+      "text": "A criminal profiler who later studied the case compared Yoon and Lee's relationship to a hostage situation.",
+      "word_count": 17,
+      "estimated_seconds": 6.8
+    },
+    {
+      "scene_id": "0013",
+      "beat": "Mystery",
+      "text": "Yoon hated conflict. Lee was the opposite. And somewhere along the way, he stopped being able to make decisions of his own.",
+      "word_count": 22,
+      "estimated_seconds": 8.8
+    },
+    {
+      "scene_id": "0014",
+      "beat": "Mystery",
+      "text": "In a note dated New Year's Eve, 2018, Yoon wrote about selling a kidney. About ending things. He predicted Lee wouldn't even come to his funeral — she was always too busy.",
+      "word_count": 32,
+      "estimated_seconds": 12.8
+    },
+    {
+      "scene_id": "0015",
+      "beat": "Mystery",
+      "text": "He wrote that six months before he died.",
+      "word_count": 8,
+      "estimated_seconds": 3.2
+    },
+    {
+      "scene_id": "0016",
+      "beat": "Escalation",
+      "text": "In February 2019, Lee and Cho tried to kill him for the first time. They mixed puffer fish blood and organs into his soup.",
+      "word_count": 24,
+      "estimated_seconds": 9.6
+    },
+    {
+      "scene_id": "0017",
+      "beat": "Escalation",
+      "text": "Puffer fish toxin, in the wrong amount, is lethal. Yoon survived. The dose wasn't strong enough.",
+      "word_count": 16,
+      "estimated_seconds": 6.4
+    },
+    {
+      "scene_id": "0018",
+      "beat": "Escalation",
+      "text": "Investigators later recovered a text Lee sent Cho that night: \"Why isn't he dying, even when I put puffer fish's blood in it?\"",
+      "word_count": 23,
+      "estimated_seconds": 9.2
+    },
+    {
+      "scene_id": "0019",
+      "beat": "Escalation",
+      "text": "Three months later, in May, they tried again. At a reservoir, late at night, Lee allegedly pushed him into the water.",
+      "word_count": 21,
+      "estimated_seconds": 8.4
+    },
+    {
+      "scene_id": "0020",
+      "beat": "Escalation",
+      "text": "A witness happened to see it. They pulled him out before it went any further.",
+      "word_count": 15,
+      "estimated_seconds": 6.0
+    },
+    {
+      "scene_id": "0021",
+      "beat": "Escalation",
+      "text": "Afterward, Yoon said four words to his wife: \"I know it.\"",
+      "word_count": 11,
+      "estimated_seconds": 4.4
+    },
+    {
+      "scene_id": "0022",
+      "beat": "Escalation",
+      "text": "He knew. And he still didn't leave.",
+      "word_count": 7,
+      "estimated_seconds": 2.8
+    },
+    {
+      "scene_id": "0023",
+      "beat": "Escalation",
+      "text": "By then, three life insurance policies existed in Yoon's name, worth a combined 800 million won — with Lee as the sole beneficiary.",
+      "word_count": 23,
+      "estimated_seconds": 9.2
+    },
+    {
+      "scene_id": "0024",
+      "beat": "Escalation",
+      "text": "Premiums were paid at the last possible moment, month after month — just enough to keep the policies from lapsing.",
+      "word_count": 20,
+      "estimated_seconds": 8.0
+    },
+    {
+      "scene_id": "0025",
+      "beat": "Evidence",
+      "text": "On June 30th, 2019, the group arrived at Yongso Falls in Gapyeong — Yoon, Lee, Cho, and four others.",
+      "word_count": 19,
+      "estimated_seconds": 7.6
+    },
+    {
+      "scene_id": "0026",
+      "beat": "Evidence",
+      "text": "Yoon couldn't swim. He was afraid of the water. Everyone around him knew it.",
+      "word_count": 14,
+      "estimated_seconds": 5.6
+    },
+    {
+      "scene_id": "0027",
+      "beat": "Evidence",
+      "text": "As evening fell, the other visitors and the safety staff left the falls. Only the group of seven remained.",
+      "word_count": 19,
+      "estimated_seconds": 7.6
+    },
+    {
+      "scene_id": "0028",
+      "beat": "Evidence",
+      "text": "Around 8:17pm, two men climbed a cliff about four meters high to jump into the pool below.",
+      "word_count": 17,
+      "estimated_seconds": 6.8
+    },
+    {
+      "scene_id": "0029",
+      "beat": "Evidence",
+      "text": "Yoon didn't want to go. Lee pushed him toward it anyway: \"Are you not going to dive when all the other men are doing it?\"",
+      "word_count": 25,
+      "estimated_seconds": 10.0
+    },
+    {
+      "scene_id": "0030",
+      "beat": "Evidence",
+      "text": "Cho jumped first. Moments later, so did Yoon.",
+      "word_count": 8,
+      "estimated_seconds": 3.2
+    },
+    {
+      "scene_id": "0031",
+      "beat": "Evidence",
+      "text": "A witness heard him scream after he hit the water. Lee would later say she heard nothing at all.",
+      "word_count": 19,
+      "estimated_seconds": 7.6
+    },
+    {
+      "scene_id": "0032",
+      "beat": "Evidence",
+      "text": "Cho was floating only about five meters away. He never moved to help.",
+      "word_count": 13,
+      "estimated_seconds": 5.2
+    },
+    {
+      "scene_id": "0033",
+      "beat": "Evidence",
+      "text": "The emergency call came in at 8:24pm. Yoon's body was recovered less than an hour later.",
+      "word_count": 16,
+      "estimated_seconds": 6.4
+    },
+    {
+      "scene_id": "0034",
+      "beat": "Evidence",
+      "text": "The autopsy found air bubbles still in his airway. He had surfaced. He had still been breathing. For a while, at least, he might have been saved.",
+      "word_count": 27,
+      "estimated_seconds": 10.8
+    },
+    {
+      "scene_id": "0035",
+      "beat": "Twist",
+      "text": "Police closed the case as an accidental drowning. No foul play. No further questions.",
+      "word_count": 14,
+      "estimated_seconds": 5.6
+    },
+    {
+      "scene_id": "0036",
+      "beat": "Twist",
+      "text": "It took a television documentary — a Korean program built around unanswered questions — to reopen it in 2022.",
+      "word_count": 19,
+      "estimated_seconds": 7.6
+    },
+    {
+      "scene_id": "0037",
+      "beat": "Twist",
+      "text": "Once investigators looked closer, an insurance company's own suspicion about the timing lined up with everything else.",
+      "word_count": 17,
+      "estimated_seconds": 6.8
+    },
+    {
+      "scene_id": "0038",
+      "beat": "Twist",
+      "text": "Lee and Cho fled. They were caught after roughly four months on the run — reportedly after Lee's own father convinced her to turn herself in.",
+      "word_count": 26,
+      "estimated_seconds": 10.4
+    },
+    {
+      "scene_id": "0039",
+      "beat": "Investigation",
+      "text": "At trial, prosecutors argued Lee and Cho had physically forced Yoon into the water. Every court that heard the case disagreed.",
+      "word_count": 21,
+      "estimated_seconds": 8.4
+    },
+    {
+      "scene_id": "0040",
+      "beat": "Investigation",
+      "text": "What the courts found instead was this: Yoon drowned in front of them, and they chose not to save him.",
+      "word_count": 20,
+      "estimated_seconds": 8.0
+    },
+    {
+      "scene_id": "0041",
+      "beat": "Final Reveal",
+      "text": "In October 2022, an Incheon court sentenced Lee Eun-hae to life in prison, and Cho Hyun-soo to 30 years.",
+      "word_count": 19,
+      "estimated_seconds": 7.6
+    },
+    {
+      "scene_id": "0042",
+      "beat": "Final Reveal",
+      "text": "On September 21st, 2023, South Korea's Supreme Court upheld both sentences. The case was final.",
+      "word_count": 15,
+      "estimated_seconds": 6.0
+    },
+    {
+      "scene_id": "0043",
+      "beat": "Aftermath",
+      "text": "A third man — identified in court only as \"Mr. A\" — had helped set up nine shell companies and fifteen ghost bank accounts, and pressured witnesses to lie. His sentence was doubled on appeal, from five years to ten.",
+      "word_count": 40,
+      "estimated_seconds": 16.0
+    },
+    {
+      "scene_id": "0044",
+      "beat": "Aftermath",
+      "text": "In 2024, Yoon's own family went to court one more time — not for money, but to have the marriage itself legally erased. They said they wanted to bring him peace, even in the afterlife.",
+      "word_count": 35,
+      "estimated_seconds": 14.0
+    },
+    {
+      "scene_id": "0045",
+      "beat": "Aftermath",
+      "text": "Investigators also looked into rumors that two of Lee's previous partners had died under strange circumstances too, with at least one insurance payout involved. No charges were ever filed over those deaths — the evidence wasn't there.",
+      "word_count": 37,
+      "estimated_seconds": 14.8
+    },
+    {
+      "scene_id": "0046",
+      "beat": "Question for viewers",
+      "text": "Yoon knew what his wife had tried to do to him. Twice. He climbed the cliff anyway. What does it take to make someone stop believing they're allowed to say no?",
+      "word_count": 31,
+      "estimated_seconds": 12.4
+    }
+  ]
+}
