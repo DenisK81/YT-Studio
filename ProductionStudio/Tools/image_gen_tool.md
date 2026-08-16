@@ -79,6 +79,21 @@ vehicles, packaging) and a first-pass generation shows any hint of invented text
 on that composition — reframe to exclude the branded surface, or replace the object with a
 different symbol entirely.
 
+## Confirmed pattern (2026-08-13, James Rummell case): police tape close-ups reliably hallucinate text
+
+Same underlying limitation, a third confirmed trigger surface: close-up shots of yellow
+police/crime-scene tape. Two independent scenes in this case — a wide establishing shot with
+tape across a yard, and a dedicated extreme-close-up of a taped doorway — both produced legible
+garbled lettering baked into the tape print (`POLICE DO NOOT COO`, `POLIICE CRIESE CRASS`) despite
+"no text" in the prompt each time. The first scene was fixed by removing the tape from frame
+entirely (kept the red/blue light bars, dropped the tape). The second scene needed two attempts:
+softening to "completely out of focus, abstracted into a blur" still rendered readable garbled
+text on the re-generation, and only a full composition pivot (dropped the tape object entirely,
+replaced with a cracked window pane) came back clean. **Add police/crime-scene tape to the
+known trigger-surface list** (alongside monumental architecture and small branded electronics) —
+don't budget on negative-prompting or blur language fixing it; plan a tape-free alternative
+composition (light bars, chalk outline, doorway ajar, etc.) for any "crime scene" beat up front.
+
 ## Fallback / secondary providers (keep the interface provider-agnostic)
 - Leonardo.ai API — separate pay-as-you-go balance (starts with its own free credit), useful
   as a second source if fal.ai has an outage or a specific model isn't available there.
