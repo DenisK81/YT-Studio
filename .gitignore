@@ -19,7 +19,13 @@ ProductionStudio/Assets/audio/
 ProductionStudio/Assets/renders/
 __pycache__/
 
-# graphify build cache and auto-generated dated backups — regenerable from source,
-# not the shared graph itself (graph.json/GRAPH_REPORT.md/graph.html ARE committed).
-graphify-out/cache/
-graphify-out/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]/
+# graphify output — the knowledge graph is this project's real memory of every case
+# (per CLAUDE.md) but lives locally only now, not in git. Regenerate with /graphify --update.
+graphify-out/
+
+# Case content (per-video production docs/scripts/prompts) — decided 2026-08-15: video
+# content isn't tracked in git anymore, it's already indexed in graphify-out/ (local) and
+# the videos themselves are published. The trailing "/" means this only matches
+# subdirectories, so ProductionStudio/Cases/covered_cases.json (the case registry, not
+# video content) stays tracked without needing a separate negation rule.
+ProductionStudio/Cases/*/
