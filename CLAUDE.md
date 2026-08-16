@@ -68,7 +68,10 @@ starts once explicitly requested — don't self-initiate Phase 2 work from a Pha
   Murders`, `Wife Killed Husband`, `Murder For Insurance Money`, `Framed The Wrong Person`,
   `Unfounded Jealousy Murders` (added 2026-07-28 for the Rimoni Muliaga case — neither `Wife
   Killed Husband` nor `Love Triangle Murders` fit a case where the victim is the wife and the
-  "affair" was entirely imagined). A
+  "affair" was entirely imagined), `Killed A Spouse Before` (added 2026-08-15 for the Yolanda
+  Marodi case — a same-sex marriage with no love triangle or insurance angle strong enough to
+  corroborate, whose one defining fact is that the perpetrator had already served time for
+  killing a previous spouse 25 years earlier). A
   single video normally belongs in 2-3 of these at once (e.g. a wife-and-lover insurance-murder
   case is both `Wife Killed Husband` and `Murder For Insurance Money` and `Love Triangle
   Murders`) — that overlap is expected and fine, not a bug. When a new case is produced, decide

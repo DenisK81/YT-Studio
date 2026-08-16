@@ -1,0 +1,9 @@
+# graphify's detect() respects .gitignore by default. ProductionStudio/Cases/*/ is
+# gitignored (decided 2026-08-15 — case content isn't tracked in git anymore) on the
+# explicit premise that it's still indexed locally by graphify. Without this negation,
+# graphify silently skips every case's production docs, which is exactly the kind of
+# stale-graph failure CLAUDE.md warns about (the Monica Sementilli incident) — discovered
+# 2026-08-15 while running graphify for the Yolanda Marodi case, when detect() came back
+# with zero files under Cases/ at all. Re-include it here, for graphify only; git tracking
+# is unaffected.
+!ProductionStudio/Cases/*/

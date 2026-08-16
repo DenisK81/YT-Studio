@@ -94,6 +94,30 @@ known trigger-surface list** (alongside monumental architecture and small brande
 don't budget on negative-prompting or blur language fixing it; plan a tape-free alternative
 composition (light bars, chalk outline, doorway ajar, etc.) for any "crime scene" beat up front.
 
+## Confirmed pattern (2026-08-15, Yolanda Marodi case): roadside/motel signage and calendar
+date grids both reliably hallucinate text
+
+Two more confirmed trigger surfaces, same underlying limitation. **Roadside motel/hotel
+signage**: three consecutive attempts on a border-town motel exterior scene all produced
+legible-looking but wrong text — a spelled-correctly-but-unwanted "HOTEL" on the first try, then
+garbled "MOTEL Realistins" / "MOTT COTE" / "TL" on two follow-ups that only tightened the
+camera framing (removing sky/roofline) rather than changing the underlying subject — the model
+kept re-inventing a sign even when the prompt explicitly said "no sign, no pole, no lettering
+anywhere." **Tightening framing on the same subject did not work; only dropping the subject
+itself did** — the fix that finally landed was pivoting away from the building exterior
+entirely, to a close-up of a hotel room key tag on a nightstand (same scene-beat, unrelated
+composition, zero signage-bearing surfaces in frame). **Calendar/date-grid close-ups**: a
+"desk calendar with a date circled" prompt produced a fully rendered grid with a misspelled day
+abbreviation ("SET" instead of "SAT") and numbers scattered out of real calendar order. Fix:
+same pivot pattern — extreme close-up on just the red circle marker with everything else
+thrown hard out of focus, avoiding a legible grid surface at all (a residual duplicated digit,
+"1010" instead of a clean date, is the acceptable trade-off — it reads as an odd number, not as
+broken/garbled AI slop). **Add both to the known trigger-surface list** (alongside monumental
+architecture, small branded electronics, and police/crime-scene tape) — for any scene concept
+that inherently implies a sign or a numbered grid (motels, storefronts, calendars, scoreboards,
+clocks with numerals), assume the first draft will hallucinate on it and budget for a full
+composition pivot away from the signage-bearing object, not just a tighter crop of the same one.
+
 ## Fallback / secondary providers (keep the interface provider-agnostic)
 - Leonardo.ai API — separate pay-as-you-go balance (starts with its own free credit), useful
   as a second source if fal.ai has an outage or a specific model isn't available there.
