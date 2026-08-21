@@ -71,7 +71,10 @@ starts once explicitly requested — don't self-initiate Phase 2 work from a Pha
   "affair" was entirely imagined), `Killed A Spouse Before` (added 2026-08-15 for the Yolanda
   Marodi case — a same-sex marriage with no love triangle or insurance angle strong enough to
   corroborate, whose one defining fact is that the perpetrator had already served time for
-  killing a previous spouse 25 years earlier). A
+  killing a previous spouse 25 years earlier), `Killed Over Custody` (added 2026-08-16 for the
+  Jamie/Nicholas Orsini case — victim was an ex-husband killed by his ex-wife and her new
+  husband acting together over a pending custody fight, so neither gendered "X Killed Y"
+  playlist fit, and no love-triangle, insurance, or repeat-offense angle applied either). A
   single video normally belongs in 2-3 of these at once (e.g. a wife-and-lover insurance-murder
   case is both `Wife Killed Husband` and `Murder For Insurance Money` and `Love Triangle
   Murders`) — that overlap is expected and fine, not a bug. When a new case is produced, decide

@@ -118,6 +118,48 @@ that inherently implies a sign or a numbered grid (motels, storefronts, calendar
 clocks with numerals), assume the first draft will hallucinate on it and budget for a full
 composition pivot away from the signage-bearing object, not just a tighter crop of the same one.
 
+## Confirmed pattern (2026-08-16, Jamie/Nicholas Orsini case): retail storefront signage joins
+the motel-sign pattern; printed photos/flyers of unnamed people reliably fabricate sharp,
+specific-looking faces
+
+**Retail storefront signage**: a "big-box home-improvement store parking lot" scene went through
+three regeneration rounds before passing. First attempt: "The HOSTSUSH Imponment Burret" garbled
+on a Walmart/Home-Depot-style facade. Second attempt (same subject, just removing the storefront
+from the described foreground and pushing it to a blurred background per the motel-case playbook):
+still produced legible "Bitet Ners" — the model re-added a sign even to a facade the prompt never
+asked it to render. **Only the third attempt, which removed every trace of a building from the
+frame entirely** (a low-angle close-up on the car's own taillights, sky and pavement only) came
+back clean. A companion scene — a car's open trunk with a store facade blurred in the
+background — followed the identical arc: legible "HOME IMPROVEMENT" on attempt one, a legible
+"NETTIA" pole sign on attempt two (blurring the *foreground* subject wasn't enough, since the
+background building was still the same rendered subject), clean only once the shot was
+tightened to an extreme close-up on the trunk interior with just a sliver of sky at the frame
+edge. **Confirms the motel-case lesson generalizes to any commercial-storefront subject, not
+just motels** — and sharpens it further: even "same building, less sky in frame" is not a
+composition pivot, it's still the same generative subject. The pivot has to remove the
+sign-bearing structure from the described scene entirely.
+
+**Printed photos/flyers of an unnamed person's face**: a "missing person flyer on a community
+board" scene, prompted explicitly for "the photo and text deliberately blurred and illegible,"
+came back with a fully sharp, prominent, specific-looking fabricated face plus garbled
+pseudo-text body copy — twice, on two different compositions (a single flyer, then a stack of
+overlapping flyers). This is a distinct risk from the text-hallucination pattern above: the
+model was not asked to depict any specific real person, but a "photo of a person on a printed
+document" concept reliably renders a sharp, detailed, memorable-looking face regardless of blur
+instructions — which risks being misread as a depiction of an actual named subject in the case
+(here, risk of being mistaken for Jamie Orsini, whose likeness this channel deliberately never
+fabricates, see `Cases/orsini-beacon-murder/PersonPhotos.md`). Same root issue showed up in a
+"smartphone displaying a photo" scene the same case — a "blurred, illegible photo held in a
+hand" prompt rendered a sharp, clearly composed face on the screen. **Fix is a full concept
+swap, not a blur/composition tweak** — for the flyer scene, dropped the person-photo concept
+entirely in favor of a stack of dusty case files (same "cold case" narrative beat, zero human
+faces in the composition); for the phone-screen scene, reframed so the screen's own glare/angle
+hides the display from camera rather than asking the model to render-then-blur a face. **Add
+"any prompt describing a photo/portrait of a person on a printed or displayed surface" to the
+known trigger-surface list** — treat it as a face-fabrication risk on top of the existing
+text-hallucination risk, and default straight to a no-photo, no-face alternative composition
+rather than trying a blur instruction first.
+
 ## Fallback / secondary providers (keep the interface provider-agnostic)
 - Leonardo.ai API — separate pay-as-you-go balance (starts with its own free credit), useful
   as a second source if fal.ai has an outage or a specific model isn't available there.
