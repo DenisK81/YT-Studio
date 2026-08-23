@@ -90,6 +90,13 @@
       "aka": ["Steven Kraft", "Beacon New York carjacking murder", "custody threat murder", "body never found", "SDNY Orsini trial", "ex-husband disappearance 2020"],
       "status": "in_production",
       "added": "2026-08-16"
+    },
+    {
+      "case_name": "Lawrence Goodine murder of Kara Akins",
+      "aka": ["Kara Akins", "Chattanooga ex-cop murder", "former Chattanooga police officer murder", "Hamilton County strangulation", "staged death scene", "Tina Calloway phone call witness"],
+      "status": "published",
+      "added": "2026-08-22",
+      "published": "2026-08-22"
     }
   ]
 }

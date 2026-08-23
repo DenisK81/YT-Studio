@@ -160,6 +160,26 @@ known trigger-surface list** — treat it as a face-fabrication risk on top of t
 text-hallucination risk, and default straight to a no-photo, no-face alternative composition
 rather than trying a blur instruction first.
 
+## Confirmed pattern (2026-08-22, Lawrence Goodine case): "blank/blurred" instruction alone is
+not reliable — the text-bearing surface itself has to leave the frame
+
+A "close-up of a folded legal document, blank and blurred so no text is legible" scene came back
+with a sharp, prominent, garbled fake headline ("EATWEUATE") across the top of the page — despite
+the prompt explicitly asking for blank/blurred/illegible. This is a step further than the
+Orsini-case lesson above: it's not that blur wasn't attempted, it's that the model still treated
+"legal document" as a subject worth rendering a headline for, and the blur instruction lost to
+that pull. **Confirms the instruction-based mitigation ("blurred", "illegible", "no text") is not
+reliable on its own for any prompt whose subject is fundamentally "a page/document/sign with
+text on it"** — same underlying failure as the storefront-signage lesson, just on paper instead
+of a building facade. Fix: reframed the shot to an extreme close-up on the document's folded
+edge and paper stack, with the flat top surface (the only place text could render) cropped
+**entirely out of frame** by the composition itself, not just blurred within frame. Regenerated
+clean on the first attempt with the new composition. **Rule of thumb going forward: for any
+prompt involving paper, signage, screens, or printed text, prefer describing a composition where
+the text-bearing surface is structurally out of frame (edge-on, cropped, angled away, or replaced
+by a non-text object) over relying on "blurred so no text is legible" language** — the latter has
+now failed at least once even when explicitly requested.
+
 ## Fallback / secondary providers (keep the interface provider-agnostic)
 - Leonardo.ai API — separate pay-as-you-go balance (starts with its own free credit), useful
   as a second source if fal.ai has an outage or a specific model isn't available there.
