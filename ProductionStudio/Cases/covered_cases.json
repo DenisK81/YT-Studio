@@ -75,9 +75,10 @@
     },
     {
       "case_name": "James Rummell murder of Lindy Rummell",
-      "aka": ["Lindy Rummell", "Darrell Riley hitman", "Clark County Washington murder-for-hire", "staged break-in murder", "life insurance murder for hire Vancouver WA"],
-      "status": "in_production",
-      "added": "2026-08-13"
+      "aka": ["Lindy Rummell", "Darrell Riley hitman", "Clark County Washington murder-for-hire", "staged break-in murder", "life insurance murder for hire Vancouver WA", "$35,000 To Kill His Wife"],
+      "status": "published",
+      "added": "2026-08-13",
+      "published": "2026-08-20"
     },
     {
       "case_name": "Yolanda Olejniczak Marodi murder of Rebecca Marodi",
@@ -97,6 +98,13 @@
       "status": "published",
       "added": "2026-08-22",
       "published": "2026-08-22"
+    },
+    {
+      "case_name": "Gofal Baziad murder of Jason Palmer",
+      "aka": ["Jason Palmer", "Nepean River murder", "Lakemba cold case", "Menangle body in river", "Renny Palmer love triangle", "Sydney 20-year cold case", "NSW Unsolved Homicide Squad"],
+      "status": "published",
+      "added": "2026-08-23",
+      "published": "2026-08-25"
     }
   ]
 }
