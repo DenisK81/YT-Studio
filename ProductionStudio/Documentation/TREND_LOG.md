@@ -77,8 +77,12 @@ separate research passes now") instead of being rediscovered/re-searched from sc
   — Why it matters: this channel's current real-photo mandate (2-3 still photos per case) is a
     floor, not the ceiling other channels operate at — there is real room to lean further into
     archival material as a differentiator, not just a compliance minimum.
-  — Action: none yet — flagging as a direction to test on a future case (e.g. sourcing an actual
-    news video clip, not just a still photo, where one exists and rights allow it).
+  — Action: **escalated 2026-08-30** from "flag for a future case" to a standing sourcing
+    priority, per explicit channel-owner instruction after a real channel-performance audit:
+    real archival video clip > real photo > AI generation, generation only for genuine gaps.
+    `Tools/mugshot_fetch_tool.md` gained a Track 3 (archival video clips) and
+    `Tools/remotion_assembly_tool.md` gained a `SceneClip` component to play one in the timeline.
+    Not yet exercised on a real case — the next case is the real test.
 
 - **Finding:** Long/animated channel intros measurably hurt retention (~22% average boost in
   30-second retention after channels removed them), but true-crime viewers specifically reward a
@@ -102,8 +106,35 @@ separate research passes now") instead of being rediscovered/re-searched from sc
   — Why it matters: this channel's videos are currently one visual format (Ken-Burns-panned
     still photo per scene) for the entire runtime — likely what read as "raw" / lacking
     "interactivity" in the 2026-07-28 feedback, more than a literal request for YouTube polls.
-  — Action: flagged in `Tools/remotion_assembly_tool.md` as a future-case test (map/timeline
-    graphic or pull-quote card as a second visual format), not yet built.
+  — Action: **escalated 2026-08-30 from "future-case test" to mandatory, after a real channel
+    audit** (8 subscribers, 78 public videos, main-video average-view-percentage 28-36% on a real
+    sample) found evidence consistent with this hypothesis. Built `PullQuoteCard.tsx` (ready to
+    use — a real-quote card, second visual format) and `SceneClip.tsx` (plays a real archival
+    clip, see the entry above). A map/timeline graphic remains unbuilt — needs real per-case
+    content to design against, build when a case's story calls for one. Every case forward must
+    use at least one non-`SceneImage` format.
+
+### 2026-08-30 — Real channel-performance audit (first one done against actual YouTube Analytics data, not just outside-world trend research)
+
+- **Finding:** 8 subscribers, 4,836 total views across 78 public videos, channel 7 weeks old.
+  Views/day (age-normalized) range from 0.03 to 49 across videos — a 1000x+ spread, meaning most
+  videos get near-zero organic distribution and a small handful get algorithmically picked up.
+  Shorts outperform main videos ~2.8x on a views/day basis (4.84 vs 1.73).
+  — Why it matters: this is genuine cold-start/discovery-stage behavior, not an "algorithm
+    problem" to solve with a trick — the channel doesn't yet have enough subscriber/interaction
+    signal for consistent organic reach. Growth levers matter, but expect a wide variance floor
+    at this stage regardless.
+  — Action: confirmed Shorts are the stronger current lever, reinforcing the existing 4-Shorts-
+    per-case cadence. Two early videos found mistagged (short-duration but missing `#shorts` in
+    title, likely hurting Shorts-feed placement) — fixed same day. Real per-video retention
+    pulled via `video_analytics()` for a sample: main videos averaged 28-36% view-percentage,
+    feeding directly into the visual-variety escalation above.
+  — Also found: one stray non-case video ("Renovation," 44s, 3 views, off-brand title) uploaded
+    near channel launch — flagged to the channel owner, who is reviewing it themselves.
+  — Real thumbnail CTR (impressions/impressionsClickThroughRate) is **not queryable via the
+    YouTube Analytics API on this account's tier** — confirmed in `video_analytics()`'s own code
+    comment, re-confirmed this pass. Only available in YouTube Studio's own Analytics UI
+    directly — the channel owner is checking this manually going forward, not automatable here.
 
 ### Suggested cadence
 Re-run this research pass at the start of each new case's discovery step at minimum (feeds

@@ -1,15 +1,23 @@
 # Tool: mugshot_fetch_tool
 
 ## Purpose
-Fetch real photos for a case to mix with Image Generation Agent's AI-generated reenactment
-stills, not to replace them. Covers **two tracks with different rules**, because they carry
-different legal risks:
+Fetch real material for a case — photos and, where publicly available, video clips — to mix
+with Image Generation Agent's AI-generated reenactment stills, not to replace them. **Sourcing
+priority, escalated 2026-08-30 per explicit channel-owner instruction:** real archival video
+clips first, real photos second, AI generation last — generation exists to fill genuine gaps
+(a scene with no real footage or photo available), not as the default. This is a tightening of
+the existing "real photos mandatory" rule (`Documentation/ARCHITECTURE.md`), not a new policy —
+the channel owner's concrete framing: "больше реальных фото, а не тупой генерации картинок... генерация
+нужна, но только точечно чтоб закрыть какие-то дыры." Covers **three tracks with different
+rules**, because they carry different legal/production risks:
 
 1. **Person photos** (mugshots, booking photos, court exhibits showing an identifiable
    individual) — official public-record sources only, always redacted before use.
 2. **Non-person photos** (house exteriors, courthouse buildings, evidence items, streets,
    general scenery) — any source is fine, including the news articles already collected in a
    case's `Sources.md`, per the channel owner's explicit decision below.
+3. **Archival video clips** (bodycam footage, press-conference clips, court-hearing video,
+   911-call audio-only excerpts) — see Track 3 below. New track, added 2026-08-30.
 
 ## Interface
 ```
@@ -132,6 +140,52 @@ on closer look to actually include an identifiable individual in frame (e.g. a h
 photo with a family member visible) — don't publish that unredacted just because it was sourced
 as a "scene" photo.
 
+## Track 3 — Archival video clips (bodycam, press conference, court hearing)
+
+**Escalated 2026-08-30, prompted by a real channel audit finding this format gap.** Sourced the
+same way Track 2 scene photos are — public official releases and news-outlet coverage of a
+genuinely adjudicated case — but the target is a short video clip, not a still, to embed
+directly in the Remotion timeline via a `SceneClip` component (see
+`Tools/remotion_assembly_tool.md`) instead of a Ken-Burns-panned still image.
+
+**What counts:**
+- Police department body-worn-camera footage released publicly (a public-records release, not a
+  leak) — often posted directly to the department's own YouTube channel or included in a press
+  release.
+- Press-conference video (DA/police chief announcing charges or a verdict) — usually on the
+  agency's own channel or embedded in outlet coverage.
+- Court-hearing video where the jurisdiction livestreams or publishes recordings (varies hugely
+  by state/country — many US states allow cameras in court, many don't; check per case).
+- A 911 call audio recording released by the agency (audio-only; pairs with a static visual in
+  Remotion, but the real audio itself is the point, not a narrated paraphrase).
+
+**Source priority (same officialness bar as Track 1, since a video clip is a stronger
+identifiability signal than a still photo):**
+1. The issuing agency's own channel/website (police department YouTube channel, DA's office
+   press release page, court's own recording archive).
+2. An outlet's coverage that clearly re-embeds the agency's own released video (not the outlet's
+   own original camera footage of, say, a courtroom sketch artist — that is the outlet's IP).
+
+**Never** use an outlet's own original video journalism (their reporter's stand-up, their own
+courtroom camera crew's footage) — that is squarely the outlet's copyrighted work, a different
+risk profile from a still photo republishing a public record. If no agency-sourced clip exists
+for a moment, that moment stays a real-photo-or-generated scene — don't reach for outlet video.
+
+**Redaction:** any identifiable bystander or minor visible in a bodycam clip needs the same
+eyes-blacked treatment as a Track 1 still — for video this means blacking out the region across
+the clip's duration, not a single frame. If that's not practical for a given clip, don't use it;
+find a shorter excerpt that avoids the bystander, or fall back to a still photo instead.
+
+**Usage in Remotion:** a clip scene replaces a `SceneImage` scene 1:1 in the scene list — same
+`[[SCENE:NNNN]]` timing convention, same duration budget, just video content instead of a panned
+still. See `Tools/remotion_assembly_tool.md`'s `SceneClip` component. Keep the clip's own audio
+muted unless the specific moment calls for it (e.g. a 911 call excerpt) — the channel's narration
+track is the primary audio everywhere else.
+
+**Not yet live-tested end-to-end on a real case** — the `SceneClip` Remotion component was built
+2026-08-30 in response to this finding, but no case has sourced and embedded a real clip yet.
+Treat the first real attempt as a test, same as Track 1 was on the Banfield case.
+
 ## Escalate to human when
 - A jurisdiction's mugshot-publication rules are unclear or contested (e.g. recently changed
   law, pending litigation about booking-photo publication in that state).
@@ -139,6 +193,8 @@ as a "scene" photo.
   (the video relies on AI-generated reenactment only for that person — a content decision, not
   a tool decision).
 - A "non-person" image turns out to contain an identifiable person on closer inspection.
+- A video clip's rights/officialness are ambiguous (agency-sourced vs. outlet's own footage
+  unclear) — default to not using it rather than guessing.
 
 ## Implementation notes
 - Not yet built — this is a draft spec (Stage 1, per `Tests/TEST_PLAN.md`). Before wiring a real

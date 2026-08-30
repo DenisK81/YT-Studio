@@ -131,13 +131,44 @@ cold-open teaser-with-backstory alternative.
 - **Deliberately NOT applied to the already-published Rimoni Muliaga video** — channel owner's
   explicit instruction was to fix the pipeline for future cases, not retroactively touch a live
   video.
-- **Visual-variety point (still open, not built):** the same feedback pass ("not enough
-  interactivity") is most likely about visual-format variety, not the intro specifically —
-  creators report crime-scene/location map graphics boost retention (~35% in one cited case)
-  and recommend 5-7 distinct visual element *types* per video, not just narrated Ken-Burns pans
-  over still photos for the full runtime. This channel's current visual vocabulary is a single
-  format end to end — worth a future case testing a map/timeline graphic insert or an on-screen
-  pull-quote card as a second visual format. Not decided/built yet, separate from the bumper.
+- **Visual-variety point — escalated from "flagged, not built" to a mandatory requirement,
+  2026-08-30, after a real channel audit found real supporting evidence:** the same feedback
+  pass ("not enough interactivity") is most likely about visual-format variety, not the intro
+  specifically — creators report crime-scene/location map graphics boost retention (~35% in one
+  cited case) and recommend 5-7 distinct visual element *types* per video, not just narrated
+  Ken-Burns pans over still photos for the full runtime. The audit found this is not just theory
+  for this channel: main-video average-view-percentage on a real sample (28-36%) is genuinely
+  low for a 4-7 minute documentary, consistent with the single-visual-format hypothesis (not
+  proof on its own — sample was 3 videos with low absolute view counts — but consistent enough,
+  combined with the prior research, to act on rather than keep flagging). **Every case from here
+  forward must use at least one non-`SceneImage` visual format** — a `PullQuoteCard` (built,
+  ready to use) at minimum, a `SceneClip` (built, needs a real case to test end-to-end) wherever
+  `Tools/mugshot_fetch_tool.md` Track 3 finds usable footage. A map/timeline graphic remains
+  not yet built — it needs real per-case geographic/chronological content to design against, not a
+  generic component; build it when a case's story actually calls for one (e.g. a case with a
+  meaningful multi-location chase or a complex timeline worth visualizing), not speculatively.
+
+### PullQuoteCard component (built 2026-08-30)
+A second visual format for on-screen text: a full-bleed dark card with a large centered quote
+(one striking line from the case — a real quote, not invented), matching the channel's brand
+typography (Impact/Oswald headline weight) and color palette (`#111111` background, `#FFFFFF`
+text, `#A30E15` accent rule above/below the quote). Distinct from `CaptionOverlay` (which
+tracks narration word-by-word) — this is a held, static beat for a scene the narration script
+already marks as a quote (`[[SCENE:NNNN]]` text wrapped in quotation marks is the natural
+trigger). `src/PullQuoteCard.tsx` — `PullQuoteCardComponent({ quote, attribution })`, used as a
+drop-in `SceneImage` replacement in the scene sequence (same duration-frame budget as any other
+scene). No new asset sourcing needed — reuses text already in the script.
+
+### SceneClip component (built 2026-08-30)
+Plays a real archival video clip (`Tools/mugshot_fetch_tool.md` Track 3) in place of a panned
+still, using Remotion's `OffthreadVideo`. `src/SceneClip.tsx` —
+`SceneClipComponent({ src, durationFrames, muted })`, same drop-in replacement pattern as
+`PullQuoteCard`: swaps in for one scene's `SceneImage` in the sequence list, same
+`[[SCENE:NNNN]]` timing. Muted by default (narration carries the audio) — pass `muted={false}`
+only for a scene built specifically around real clip audio (e.g. a 911 call). Clip file goes in
+the case's `public/{slug}/` dir alongside the scene images, same as any other asset
+`prep_remotion_render.py` copies in. Not yet exercised on a real case — the first real use is a
+genuine end-to-end test, same as every other Track 1/2 real-asset pipeline was on its first case.
 - **Found and fixed while building this:** the local Remotion project's `node_modules`
   (`@remotion/studio`, `@remotion/bundler`, likely others) had missing `dist` files — a latent
   pre-existing install defect masked by webpack's build cache until a new file

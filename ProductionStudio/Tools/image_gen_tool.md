@@ -5,6 +5,15 @@ Provider-agnostic image generation wrapper, per Image Policy: the pipeline must 
 on a single image source. Default provider is set below for the test phase (Phase 1, first 10
 videos) — chosen for cost, not locked in permanently.
 
+**Role clarified 2026-08-30 (channel-owner instruction, after a real channel audit):** AI
+generation is the **gap-filler**, not the default. Sourcing priority for every scene is real
+archival video clip (`Tools/mugshot_fetch_tool.md` Track 3) → real photo (Track 1/2) → AI
+generation only when nothing real exists for that specific scene. Before writing a scene's
+prompt for this tool, check whether a real clip or photo could cover it instead — don't default
+to generation just because it's fast. This doesn't relax the mandatory-redaction or
+trigger-surface-avoidance rules below; it just changes how many scenes should reach this tool
+at all.
+
 ## Interface
 ```
 generate(prompt: string, style_tags: string[]) -> {
