@@ -224,3 +224,28 @@ HTTP Request configuration, not just a placeholder node type.**
   the calling agent can decide whether to retry.
 - Track spend against the free credit (fal.ai dashboard) during the test phase so there's no
   surprise bill — Tool Manager Agent can log cumulative spend per video in a future iteration.
+
+## Confirmed pattern (2026-09-19, Blaise Taylor case): "no face" is ignored too, so change the composition
+The model kept drawing a face for "face not visible / cropped below the eyes" phone-call frames and old-woman
+close-ups (a generic face can be mistaken for the real victim or defendant). What worked: a concept where a face
+cannot exist - the person seen from behind, or hands only from the chest down. Courtroom frames repeatedly grew an
+eagle seal and flags; a close-up of a microphone on a plain wooden rail or an empty dark table removed them. Also
+avoid: labelled lab/kitchen bottles, license plates on vehicles, concrete-panel corridors with stencilled numbers,
+hospital corridors with exit signs. 15 of 39 images were flagged on the first pass, 4 needed a second round.
+
+## Confirmed pattern (2026-09-22, Frederick Spears case): any flat-surfaced object still gets text
+Documents, blades, folders, badges and receipts kept sprouting garbled or nonsense text (including
+one image where the model invented a drug-name-like word, "KETAMINS", engraved into a knife blade)
+even when the prompt said "no text" or "unmarked". What worked: isolating the object alone with an
+extreme shallow depth of field and no other surface in frame (a single blank knife, nothing else on
+the table), or turning the labelled surface away from camera entirely (folder spines instead of
+covers). Same lesson as the Blaise Taylor case's "no face" finding: telling the model NOT to render
+something is weaker than composing the shot so that thing has nowhere to appear.
+
+## Confirmed pattern (2026-09-22): thumbnails are a separate generation step, verify the file exists
+Writing `Thumbnail.md`'s JSON concept does NOT produce a PNG. On the Frederick Spears case the
+concept doc was written but the actual thumbnail image was never generated before starting the
+YouTube upload, and `prepare_upload`'s `set_thumbnail` call failed with `FileNotFoundError` on an
+already-uploaded video (had to be fixed with a follow-up `set_thumbnail` call). Before calling
+`prepare_upload` with a `thumbnail_file` argument, always confirm the PNG exists on disk - `ls` the
+path, don't just trust that a `Thumbnail.md` was written earlier in the session.

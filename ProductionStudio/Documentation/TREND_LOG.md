@@ -136,9 +136,102 @@ separate research passes now") instead of being rediscovered/re-searched from sc
     comment, re-confirmed this pass. Only available in YouTube Studio's own Analytics UI
     directly — the channel owner is checking this manually going forward, not automatable here.
 
+### 2026-09-15 — Real channel-performance audit #2 (16 days after the 2026-08-30 audit, 5 cases later)
+
+- **Finding:** 8 subscribers, 6,191 total views, 100 public videos. Compared to the 2026-08-30
+  audit (8 subscribers, 4,836 views, 78 videos): **+22 videos, +1,355 views, +0 net subscribers**
+  in 16 days. `subscribersGained`/`subscribersLost` for the 2026-08-30→2026-09-15 window queried
+  directly: exactly 0 and 0. This is a hard stall, not a slowdown — every fix shipped since the
+  last audit (real-photo mandate, `ChannelBumper`, `PullQuoteCard` visual variety, the UK/Scotland
+  international-case angle tried on Thompson/Buchanan/Isaacs/Greer) produced zero measurable
+  subscriber conversion in this window.
+  — Why it matters: the prior audit's framing ("cold-start variance, not an algorithm problem")
+    needs re-checking — 5 cases and 3 concrete fixes with a flat subscriber line is a longer
+    trend now, not a single noisy data point.
+- **Finding:** `insightTrafficSourceType` breakdown (whole-channel, 2026-06-01 to 2026-09-15):
+  SHORTS 5,431 views (87.3%), YT_SEARCH 380, RELATED_VIDEO 116, NOTIFICATION 83, YT_CHANNEL 57,
+  YT_OTHER_PAGE 52, SUBSCRIBER 40, all others <10 each.
+  — Why it matters: main long-form videos get almost no traffic from any source — not just low
+    totals, only 116 views channel-wide ever came from Shorts→related-video click-through, which
+    is the mechanism the 4-Shorts-per-case cadence is implicitly betting on to drive main-video
+    views. That bet is not paying off: per-video main sample this pass (Greer, Ferguson,
+    Hildabrand-era, Goodine, Orsini) ranged 1-14 views each, only one main video channel-wide
+    (`tbTY_Wz3Tp4`, "He Posed As His Own Wife...", 10:37) has ever broken 50 views (90, with 272
+    minutes watched — the single best absolute watch-time performer on the channel).
+  — Also found: engagement signal is near-zero channel-wide in this window — 128 likes but only
+    4 comments and 0 shares across 6,220 views (2026-06-01 to 2026-09-15) despite every script
+    ending on a comment-bait CTA. Even the channel's viral-est Shorts (500-700 views) converted
+    0-2 subscribers each.
+  — Action: **not yet decided — flagged to channel owner 2026-09-15 for a strategy discussion
+    before continuing to produce cases at the same cadence/format.** Candidate levers not yet
+    tried: thumbnail CTR is still not API-queryable (same tier limitation as 2026-08-30) and
+    still needs a manual YouTube Studio check; title/hook pattern-matching against the small set
+    of videos that *did* break out (all are short, punchy, first-person-quote or verdict-reveal
+    titles under 8 words — worth testing as a title-writing rule going forward, not yet applied).
+
+### 2026-09-15 — Real competitor-channel research pass (PoliceActivity, Law&Crime BodyCam,
+Grizzly True Crime, That Chapter, plus Coffeehouse Crime and a cautionary AI-fabrication case)
+
+- **Finding:** Real footage is table stakes at the top of this niche, not a nice-to-have. The two
+  biggest channels researched (PoliceActivity ~6.9M subs, Law&Crime BodyCam) are 100% real bodycam
+  footage by definition. Meanwhile "True Crime Case Files" (104 videos, millions of views,
+  entirely AI-fabricated script/narration/images with zero disclosure) was publicly exposed by
+  Denver Post reporting after a viral 1.8M-view video described a 2014 Colorado murder that never
+  happened — no court records, no news coverage, nothing.
+  — Why it matters: directly validates this channel's existing real-photo mandate and no-100%-AI
+    rule as responding to a real, current, documented failure mode in this exact niche — not
+    overcaution.
+- **Finding — no evidence of a per-shot "REAL" badge/watermark convention anywhere researched.**
+  The pattern that actually recurs across PoliceActivity and Grizzly True Crime is **citing the
+  source in the description or on-screen text** (case numbers, court documents, department names,
+  "per [outlet]") — channels self-segregate by format (100%-real vs. narrated-with-real-assets)
+  rather than labeling individual shots.
+  — Why it matters: the `RealBadge` component built the same day (see
+    `Tools/remotion_assembly_tool.md`) is worth testing but should NOT be treated as a proven
+    competitor tactic — pair it with an actual on-screen source-citation text convention, which
+    IS the validated pattern, not just the badge alone.
+  — Action: added a source-citation overlay requirement alongside the badge (see
+    `Tools/remotion_assembly_tool.md`'s updated "REAL badge overlay" section).
+- **Finding:** every channel with confirmed upload-cadence data published weekly or more often at
+  their current scale (Coffeehouse Crime weekly, Law&Crime BodyCam weekly+, Grizzly True Crime
+  multiple/week in bursts). This channel already publishes far more often than that (100 videos
+  in ~2.5 months) — cadence is not the growth bottleneck here, discovery/credibility is.
+  — Action: none needed on cadence; ruled out as a lever to pull.
+- **Finding:** mid/large narration-driven channels (Coffeehouse Crime ~36 min avg, Grizzly
+  frequently 60+ min) run longer than this channel's 11-15 min format.
+  — Why it matters: not proof this channel's runtime is wrong for a cold-start channel (shorter
+    = faster/cheaper iteration), but worth revisiting once the channel is past pure cold-start.
+  — Action: none yet, flagged for a later pass.
+- Shorts strategy could not be verified for any researched competitor (channel pages are
+  JS-rendered and blocked to this session's web tools) — a real gap in this research pass, not a
+  "competitors don't use Shorts" finding. Needs a follow-up pass with direct browser/mobile
+  access if Shorts strategy specifically becomes a priority question.
+
 ### Suggested cadence
 Re-run this research pass at the start of each new case's discovery step at minimum (feeds
 Research Agent's `genre_trend_notes` for that case), and do a dedicated "just trends, no specific
 case" pass every 5-10 videos to catch platform-policy or format shifts between cases. No
 automated/scheduled version of this exists yet — it's a manual step until the channel owner
 decides Phase 1 is ready to schedule it (see CLAUDE.md's Phase 1/2 boundary).
+
+## 2026-10-14 - Own-channel analytics pass + adjacent-niche scan
+
+**Source:** YouTube Analytics API (Jul 1 - Oct 14), Studio screenshots from the owner (Overview, Content, Audience, Advanced mode 'Shorts' content report for Sep 15 - Oct 12), and a web scan whose only credible source was Tubular Labs via The Drop (3 Sep 2026).
+
+- **Finding:** 89.7% of views come from the Shorts feed (11,426 of 12,763); search 6.4%; everything else under 1.5%. 118 Shorts have a median of 37.5 views (mean ~105, max 961); 28 long-form videos have a median of 5 and 672 minutes watched in total.
+  - Why it matters: long-form is not being distributed at all (viewers who do find it watch ~2 min / 34%), so the cost of a main video (~15 min render + 4 Shorts) buys almost no reach.
+  - Action: test, do not conclude. Run the adjacent-niche Shorts test below before reallocating production.
+- **Finding:** retention does not drive reach on Shorts (corr(avg view %, log views) = -0.10). 69.9% of viewers swipe away (30.1% stay), channel-wide, 28 days to Oct 12. In the 15-Short Advanced-mode export, thumbnail CTR is 0.9% on 6,041 impressions: the feed does not use the thumbnail, so impressions there are search/browse only.
+  - Action: the first second decides; test removing the 1.5 s cold open (variant A).
+- **Finding:** audience is 99.5% new viewers, <0.1% regular; +14/-4 subscribers in 105 days (9 of the 14 from Shorts, ~0.07% of views). October Short median 139 vs ~30 earlier (growth is real, retention of people is not).
+  - Action: test a subscribe CTA (variant C) instead of 'FULL STORY ON THE CHANNEL', which points at the long video.
+- **Finding (title patterns, small n, correlation only):** verdict/sentence/years in title median 80 vs 31; number in title 92 vs 36; '911 / call / text' 20 vs 44 (worse than the rest); victim-first (her/she) 51 vs 36.
+- **Finding (market, Tubular Labs):** true-crime YouTube viewership about 10x since early 2023; active channels at scale <100 -> ~3,000; 20-40 min videos capture most views; voiceover-over-bodycam is the most scalable format (100M+ views from a handful of videos in 90 days) but has the lowest engagement. No reliable per-view data was found for scams, cults, heists, wrongful convictions.
+- **Open test (started 2026-10-14):** 3 Shorts per variant - control, A (no cold open), C (subscribe CTA), A+C - on the unpublished Corcoran/Rudolph batch; then 3 Shorts each for four adjacent topics (scams/fraud, DNA cold cases, wrongful convictions, heists/escapes) against the previous-20-Shorts median at day 7. Run `Workflows/channel_analytics_report.py`.
+
+## 2026-10-13 - v2 rebuild of six scheduled Shorts (owner decision: 'real photos, a good hook, a subscribe ask, Shorts only')
+
+- **What changed:** Corcoran Shorts 3-4 and Rudolph Shorts 1-4 were re-narrated and re-rendered. The first spoken sentence is now a person in motion or direct speech (e.g. 'A game scout heard a shot... and ran', '"I wanted it out of my sight."'), the 1.5 s cold open is gone where the real photo now IS the first scene (a vertical face-centred crop, not the 16:9 centre crop), and both the spoken outro ('New true crime stories every day. Subscribe.') and the on-screen card ('SUBSCRIBE: NEW TRUE CRIME EVERY DAY') ask for the subscribe.
+- **Controls:** Corcoran Shorts 1-2 and the Penney Shorts keep the old cold open and 'FULL STORY ON THE CHANNEL' card. Corcoran Short 4 keeps its cold open (variant C only). Everything is confounded (hook + cold open + CTA change together): read the day-7 result as 'new package vs old package', not per-variable.
+- **Measure at day 7:** `python Workflows/channel_analytics_report.py`, plus Studio Advanced mode 'stayed to watch' per Short; compare each Short's views to the median of the previous 20 Shorts.
+- **Shorts-only strategy:** next cases are produced as Shorts packs without a long-form main until the day-7 data is in.

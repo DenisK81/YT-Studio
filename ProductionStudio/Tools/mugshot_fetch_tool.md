@@ -107,6 +107,20 @@ crop in its `interpolate()` range, both `zoomIn` and `zoomOut` directions in
 `Tools/remotion_assembly_tool.md`'s `SceneImage` component), not just the static source file —
 a redaction that looks complete in the raw JPG can still leak once the video crops into it.
 
+**Dense-crowd Track 2 scene photos (found 2026-09-29, Caleb Flynn case):** a courthouse exterior
+photo happened to be shot during a street fair, with roughly a dozen identifiable bystanders
+strung along the sidewalk — far more than the isolated 1-2 bystanders the per-face Haar-cascade
+approach above assumes. Running face detection caught only 5 of the group and produced one false
+positive (a sky/window region misdetected as a face), because faces that small and numerous
+overwhelm the cascade's confidence thresholds. **Fix: for a photo with a whole walking group or
+crowd rather than 1-2 isolated bystanders, skip per-face detection entirely and Gaussian-blur
+(`cv2.GaussianBlur(band, (0,0), sigmaX=25)` or stronger) the entire horizontal band the people
+occupy**, leaving the actual subject of the shot (the building facade, dome, inscription) sharp
+above it. Faster, safer, and doesn't depend on a cascade finding every face in a dense group. A
+small, low-detail, non-facial silhouette (e.g. a distant ferris-wheel gondola rider with no
+resolvable features) does not need this treatment — the bar is "identifiable," not "any human
+shape in frame."
+
 **Legal grounding (informational research, not legal advice — see
 `Documentation/ARCHITECTURE.md`'s "Real-photo sourcing decision" section for the full research):**
 the news/commentary ("newsworthy") exception to right-of-publicity claims broadly covers
@@ -139,6 +153,18 @@ No redaction needed — there's nothing to redact.
 on closer look to actually include an identifiable individual in frame (e.g. a house-exterior
 photo with a family member visible) — don't publish that unredacted just because it was sourced
 as a "scene" photo.
+
+**Confirmed real gap, 2026-08-30 (Zarrius Hildabrand case):** a missing-person flyer, sourced as a
+Track 2 scene/object photo, itself contained three printed photos of the missing person's
+unredacted face. Initial reasoning — "she's already redacted under her own Track 1 entry
+elsewhere, so this doesn't need its own pass" — is wrong and was caught only before publish, not
+by design. **The hard CLAUDE.md redaction rule applies per photo actually displayed in the
+output, not per subject once.** Any object photographed at close enough range to show printed or
+displayed photos of a real person (a flyer, a framed photo on a wall, a photo on a phone/laptop
+screen in frame, a newspaper clipping) needs its own redaction pass on those printed/displayed
+faces, even though the object itself is correctly sourced as Track 2 with no licensing
+restriction. Check every Track 2 candidate for this before use, not just for "a bystander walked
+into frame."
 
 ## Track 3 — Archival video clips (bodycam, press conference, court hearing)
 
@@ -225,3 +251,37 @@ is genuinely blocked (a jurisdiction with no API and no outlet-attribution excep
 like the Sementilli LAPD/CDCR case) — but that has to be a documented, checked outcome in the
 case's own `PersonPhotos.md` (see the Sementilli case for the template), never a silently
 skipped step the way the Kouri Richins production skipped it entirely.
+
+
+## Track 3 - practical acquisition recipe (added 2026-09-18 after the first successful Track 3 case, McCullagh)
+1. **Where agency footage really lives:** police often hand sentencing-day material (bodycam, CCTV, 999 audio,
+   interview footage) to the *media*, not to their own channel - the agency's own YouTube/website may have only an
+   older press conference. Search the outlets' YouTube uploads too, and look for the **watermark-free package**
+   (in the McCullagh case the Irish Independent's upload was clean; Belfast Telegraph's carried a logo).
+2. **Take only the agency's raw material, never the outlet's:** discard reporter voice-over, b-roll, graphics and
+   credited outlet camera work. Identify segments by transcribing the audio (ElevenLabs `speech-to-text`,
+   `scribe_v1`, word timestamps) and by frame contact sheets (`ffmpeg ... fps=1,tile=...`); watch for on-screen
+   outlet credit labels ("Video - <reporter>").
+3. **Faces (standing redaction rule applies to video):** police-blurred faces are fine; any unblurred identifiable
+   face (e.g. the last second of an arrest clip) is cut out or frozen on the previous safe frame with the audio
+   kept intact. Never use footage of a victim's grieving family (a police press conference clip was rejected for
+   exactly this reason).
+4. **Tooling:** `python -m yt_dlp` (installed to the user site 2026-09-18, with the channel owner's explicit OK for
+   each download - a download is always an ask-first action). curl is blocked in this environment.
+5. **Risk note:** outlet-republished agency footage can still trigger a Content ID claim from the outlet - keep
+   excerpts short, put original narration over them, credit the agency on screen (`REAL FOOTAGE` badge source).
+
+### Track 3 wall - US trial cases where only Court TV pool footage exists (Blaise Taylor, 2026-09-19)
+Not every case has agency-released material. In a US case where the police and the DA published only press releases,
+the only video of the exhibits (911 call, bodycam, hospital interview) is the Court TV pool feed re-uploaded by
+commentary channels - identifiable jurors/witnesses/attorneys, the broadcaster's footprint, commentary over it. That
+fails the "raw agency material only" rule, so record it as a wall in `PersonPhotos.md` and do not use it. Before
+downloading a news clip described as "jury hears 911 call", transcribe it first (speech-to-text): the Blaise Taylor
+WSMV clip turned out to be reporter voice-over plus a witness's live testimony, not the call audio. Check the case's
+selection stage for whether the agency itself released media (post-sentencing PSNI-style packages are the good sign);
+prefer such cases when growth-optimising for real footage.
+
+**Useful Track 1 shortcut (same case):** the prosecutor's own press-release page (e.g. da.nashville.gov) hosts a
+full-size court photo of the convicted defendant - Track 1 source priority 3. Crop out bystanders before redaction; a
+profile shot needs a hand-placed eye bar with generous margin because the Haar cascades do not fire on profiles.
+Portrait sources become 16:9 scene images by centering the sharp original over a blurred, darkened copy of itself.

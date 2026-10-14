@@ -159,6 +159,17 @@ trigger). `src/PullQuoteCard.tsx` — `PullQuoteCardComponent({ quote, attributi
 drop-in `SceneImage` replacement in the scene sequence (same duration-frame budget as any other
 scene). No new asset sourcing needed — reuses text already in the script.
 
+**Wiring convention (built out 2026-08-30, first real case: Zarrius Hildabrand):** a case's
+`ImagePrompts.md` gets a `pull_quote_scenes` array (same pattern as `real_photo_scenes`):
+`[{ "scene_id": "0032", "quote": "I did what I did.", "attribution": "Zarrius Hildabrand, to a
+friend after his arrest" }]`. That scene_id must NOT also appear in `prompts` — there's no image
+to generate or copy for it. `Workflows/prep_remotion_render.py` reads `ImagePrompts.md` directly
+(in addition to `timing.json`) and emits a `type: "quote"` scene entry (with `quote`/
+`attribution`, no `image`) instead of the usual `type: "image"` entry, skipping the image-file
+existence check for that scene entirely. Every case's Trial component (e.g. `HildabrandTrial.tsx`)
+must branch per scene on `s.type === "quote"` → `<PullQuoteCardComponent>`, else → `<SceneImage>`
+— copy this branch into each new case's Trial component, it isn't automatic.
+
 ### SceneClip component (built 2026-08-30)
 Plays a real archival video clip (`Tools/mugshot_fetch_tool.md` Track 3) in place of a panned
 still, using Remotion's `OffthreadVideo`. `src/SceneClip.tsx` —
@@ -177,6 +188,98 @@ genuine end-to-end test, same as every other Track 1/2 real-asset pipeline was o
   `rm -rf node_modules package-lock.json && npm install`. Worth doing this clean reinstall
   proactively at the start of any future session that resumes this render project, rather than
   waiting for a cache-invalidating change to surface it again.
+
+### Track 3 escalated to mandatory-attempt (2026-09-15, real channel audit)
+`SceneClip` shipped 2026-08-30 and, per its own note above, was still unused as of the
+2026-09-15 audit — every case since (Baziad, Hildabrand, Ferguson, Greer) documented a Track 3
+gap in `Sources.md`/`PersonPhotos.md` rather than actually finding and using a clip. **Every
+case going forward must make a real, documented search attempt for at least one usable Track 3
+clip** (press-conference footage, bodycam, agency-released CCTV — never an outlet's own
+trial-camera production, per the existing Court TV exclusion) before falling back to "gap,
+none found." A real attempt that finds nothing is still fine to document as a gap — the rule is
+"actually try," not "must succeed" — but "gap" without a real search log is no longer
+acceptable QC evidence.
+
+### "REAL" badge overlay + source citation (added 2026-09-15, real channel audit finding;
+revised same day after real competitor research — see `TREND_LOG.md`'s 2026-09-15 competitor
+entry)
+Audit found main videos get ~1-14 views each against near-zero `RELATED_VIDEO` traffic — the
+channel's AI-generated visuals may read as generic/synthetic to a cold viewer with zero
+subscriber trust built up yet. Competitor research found **no evidence of a per-shot "REAL"
+badge convention anywhere** (PoliceActivity, Law&Crime BodyCam, Grizzly True Crime) — the pattern
+that actually recurs is **on-screen/description source citation** (case number, department name,
+"per [outlet]"). Ship both, but treat the citation text as the validated piece and the badge as
+the experimental one:
+
+- New shared component `src/RealBadge.tsx` — `RealBadgeComponent({ label, source })`. `label` is
+  `"REAL PHOTO"` or `"REAL FOOTAGE"`; `source` is a short citation string (e.g. `"Police Scotland"`,
+  `"STV News"`, `"Aberdeen Sheriff Court"` — pull from that scene's `PersonPhotos.md`/`Sources.md`
+  attribution, never invent one). Renders as a small pill/tag, top-left corner, brand accent color
+  (`#A30E15`) background, white bold text for the label, a smaller lighter line underneath for
+  `source` — subtle fade-in over the first ~10 frames matching `PullQuoteCard`'s own fade pattern.
+  Low-opacity enough not to obscure the image, high-contrast enough to read at a glance.
+- Wire into `SceneImage` and `SceneClip`: both already receive `image`/`src` from `real_photo_
+  scenes` in `ImagePrompts.md` (per-scene, matched by `scene_id`) — extend that array's entries
+  with a `source` field, pass `isReal={true} source={s.source}` when the scene's `scene_id` is in
+  `real_photo_scenes`, and render `<RealBadgeComponent label="REAL PHOTO" source={source} />` (or
+  `"REAL FOOTAGE"` for a `SceneClip`) as a sibling overlay when `isReal` is true. Never show the
+  badge on an AI-generated scene — a false "REAL" label is worse than no badge at all. If a real
+  scene genuinely has no clean attribution string (rare — the mandate is to always document a
+  source in `PersonPhotos.md` already), omit `source` and show just the label.
+- Applies to Shorts too (`ShortComposition.tsx`'s scene rendering) wherever a Short reuses a
+  real-photo scene, same `isReal`/`source` prop threading.
+- Since this is an experiment (not a proven competitor pattern), treat the first case that ships
+  it as a real test — note in that case's `Checklist.md` whether it shipped correctly, don't
+  assume success and move on silently.
+
+### Real archival video - wiring convention (first real use: Stephen McCullagh case, 2026-09-18)
+`SceneClip` finally has a real case behind it. A case's `ImagePrompts.md` gets two new arrays, read by
+`Workflows/prep_remotion_render.py` and `prep_short_render.py` (helpers in `Workflows/real_media_utils.py`):
+- `real_clip_scenes: [{ scene_id, local_path, source, start_sec? }]` - a **muted** real clip replaces one
+  narrated scene's image. `prep_*` cuts it with ffmpeg to exactly the scene's length (`start_sec` picks the
+  moment inside the master clip; a clip shorter than its scene is **held on its last frame, never looped** -
+  looping surveillance footage reads as a fake second event). Rendered by the Trial component's `SceneClip`
+  (no Ken-Burns zoom - burned-in CCTV timestamps must stay readable) with a `REAL FOOTAGE` badge (top-right, so
+  it doesn't collide with an outlet watermark or timestamp in the top-left).
+- `real_media_inserts: [{ after_scene_id, kind: "audio"|"video", local_path, label, source, background_image?,
+  captions_json? }]` - real media **with its own audio**, inserted *between narration chapters*. It must sit on a
+  chapter boundary (a chapter is one TTS file; `prep_remotion_render.py` refuses otherwise), so split chapters
+  where an insert goes. The prep script shifts every later scene/chapter/caption by the insert's length, splits
+  caption chunks so none straddles the insert, and emits `quietRanges` so the music bed is silenced under the
+  insert's own audio. `kind: "audio"` renders a darkened real photo + word-by-word captions (from
+  `captions_json`, produced by speech-to-text on the real audio) + `REAL AUDIO` badge; `kind: "video"` plays the
+  clip full-screen with its audio + `REAL FOOTAGE` badge.
+- Shorts: `real_clip_scenes` work in Shorts too (ShortComposition `type: "clip"`); a Short can also use a
+  real audio file **as its narration track** by writing its own `short_N_timing.json` (scenes + `captionWords`
+  from speech-to-text) - McCullagh Short 2 is the raw 999 call with captions and no TTS at all.
+- **Encoding gotcha (real failure, 2026-09-18):** the first render died with `Compositor error: No frame found
+  at position ...` on a clip that ffmpeg reported as perfectly valid (251 frames, 30 fps). Fix: cut clips with
+  `-bf 0 -g 15 -movflags +faststart` (no B-frames, frequent keyframes) - now baked into `cut_clip()`. Re-encode
+  any inserted video the same way.
+- **Render concurrency rule (real failure, 2026-09-18):** the same `No frame found` error appeared when the main
+  render ran at the same time as the Shorts renders (parallel OffthreadVideo compositors). A solo re-run of the
+  identical composition rendered cleanly. Render a main video that contains clips **alone**; Shorts can run
+  together afterwards.
+- **Captions vs. PullQuoteCard in Shorts (2026-09-18):** `ShortComposition` hides the centre captions while the
+  frame is inside a `quote` scene - otherwise the caption words collide with the quote card text.
+
+### Real-photo bookending (added 2026-09-15, real channel audit finding — explicit channel-owner
+instruction: real photos "и на заставке и в начале ролика и в середине и в конце", not scattered
+1-2 mid-video)
+Real-photo/footage placement is no longer "wherever the scene plan happens to slot them into the
+middle of the scene list." Every case's `ImagePrompts.md` `real_photo_scenes` must now include,
+at minimum:
+- **The thumbnail** (already mandatory, unchanged — real-photo-only thumbnail rule).
+- **The cold-open / first on-screen scene** (scene 0001 or the earliest scene before the Hook
+  narration proper) — a real photo or Track 3 clip, not an AI-generated establishing shot, so
+  the very first thing a viewer sees after the bumper is real evidence.
+- **At least one real scene in the back third of the video** (the closing/aftermath/sentencing
+  beats) — not just clustered in the investigation-reveal middle third where it's sat by default
+  on every case so far.
+- The existing middle-of-video real photos (victim/accused portraits, scene photos) stay as-is —
+  this adds bookends, it doesn't replace the existing mandate.
+This is a sourcing-order change for scene-to-image assignment when building `ImagePrompts.md`
+for the next case, not a new tool.
 
 ## Channel outro bumper — built 2026-07-30 (channel owner feedback on the Devyn Michaels video:
 "в прошлом видео ты забыл сделать превью в видео и концовку такую же" — the intro bumper existed
@@ -221,6 +324,18 @@ music" section for the fallback path)
   distract from narration.
 
 ## Implementation notes
+- **Never hot-swap a public/ asset file while a render is actively in progress — confirmed real
+  failure, 2026-08-30 (Hildabrand case).** A redaction fix was copied into the Remotion project's
+  `public/{slug}/NNNN.png` while `remotion render` was already running (well before the render
+  had reached that scene's frame position by elapsed-time math). The final MP4 still contained
+  the stale, pre-fix frame. Root cause: Remotion's headless-Chrome render workers evidently
+  prefetch/cache asset requests ahead of the current frame position rather than reading the file
+  fresh at the moment each frame is captured, so an in-place overwrite mid-render is not reliably
+  picked up even when the timing looks safe on paper. **Fix any asset file before starting the
+  render, never during one.** If a defect is found mid-render, let the render finish (or kill it),
+  fix every affected file, and do a full clean re-render — don't try to swap in a fix and trust
+  the in-flight process to pick it up. Caught by the same frame-spot-check practice this file
+  already establishes (verify actual rendered frames, not just that the render completed).
 - **Shorts are no longer a blind re-export of the same scene data.** `Agents/shorts_agent.md`
   now selects specific moments and writes each Short's own hook/title/description
   (`Templates/Shorts.md`) immediately after this tool produces the main render — this tool then
@@ -254,3 +369,71 @@ render-mechanics proof, not the real Phase 2 render worker):
   the actual agent chain (that's the n8n/orchestration side, tracked separately) and still needs
   the real EQ processing and natural-language-aware caption chunking noted above before a real
   production render.
+
+### Never combine harness backgrounding with a manual `&` (real failure, 2026-09-22)
+Launching a render with the Bash tool's `run_in_background: true` AND a manual trailing `&` /
+subshell-backgrounding inside the same shell command spawns the job through **two** independent
+mechanisms at once - the result is two concurrent `npx remotion render` processes writing to the
+same output file (caught via a `Win32_Process` check both times: once on the main-video launch,
+once on the Shorts loop, which produced two concurrent renders of the same composition to the
+same `.mp4`). Pick exactly one backgrounding mechanism per render call, never both. If duplicates
+are suspected, check `Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -match
+'remotion render' }` before trusting any render's output.
+
+### Scratchpad node_modules corruption - root cause and the permanent fix (real failure, 2026-09-27)
+**What happened:** the Remotion scratchpad project was reused across multiple cases within one
+session (McCullagh, Taylor, Spears all rendered fine from it), then broke on the 4th case
+(Forcell) with three consecutive "Cannot find module" errors (`@remotion/studio/dist/
+renderEntry.js`, then `@remotion/media-parser/dist/index.js` again after a full `npm install`),
+each surfacing only once bundling reached that specific package. A single-package reinstall and
+a full `rm -rf node_modules && npm install` both failed to fix it - same pinned version
+(4.0.525) kept re-resolving broken, strongly suggesting the corruption was in that version's
+resolved dependency tree/cache, not something a same-version reinstall could shake off.
+
+**Root cause:** the project's `package.json` had `remotion`/`@remotion/cli` etc. pinned to one
+exact version (`4.0.525`) and that same node_modules tree was reused, un-reinstalled, across
+every case's render in the session - so any corruption (a bad cache entry, a partial write from
+an earlier killed/duplicate render process, or an upstream publish issue in that exact patch)
+persisted and accumulated silently until a render finally touched the broken code path.
+
+**The permanent fix (now the DEFAULT, not a recovery step - do this for every case, not just
+when something breaks):** scaffold a fresh Remotion project per case rather than reusing one
+long-lived directory across a session:
+```
+npx create-video@latest <case-dir> --yes --blank --no-tailwind
+cd <case-dir> && npm install
+```
+No version is pinned, so this always resolves whatever the current published patch is (the
+2026-09-27 incident's fix landed on 4.0.529, one patch ahead of the broken 4.0.525 - a fresh,
+unpinned install cannot inherit a stale/corrupted resolution the way a long-lived reinstall can).
+Copy over only the shared components (ChannelBumper.tsx, PullQuoteCard.tsx, RealBadge.tsx,
+ShortComposition.tsx) and the current case's own `*Trial.tsx`/`*Shorts.tsx`/`*_data.ts` files and
+`public/<case>` + `public/shorts/*` dirs into the new project - never copy node_modules itself.
+One asset does NOT live in the scratchpad and must be re-copied from its durable location every
+time: the channel bumper's sting audio, at
+`ProductionStudio/Assets/audio/channel_bumper/bumper_sting.mp3` (goes to `public/bumper/` in the
+project). This costs about one extra minute per case versus reusing a directory - cheap
+insurance against a multi-hour debugging session, and consistent with the existing
+`graphify`/scratchpad philosophy already in memory (`feedback_graph_holds_the_names.md`): nothing
+in the Remotion scratchpad is meant to be durable state, so don't treat it as durable by reusing
+it indefinitely.
+
+**Fresh-scaffold gotchas found 2026-10-02 (Williams case):** (1) a current `create-video --yes
+--blank --no-tailwind` scaffold no longer creates `src/index.css` AND no longer installs
+tailwind, but `Root.tsx` imports `./index.css` - bundling fails with "Can't resolve './index.css'".
+Create `src/index.css` as a one-line plain comment (components use inline styles; do NOT copy a
+previous project's `@import "tailwindcss"` file, it fails with `NotFound("tailwindcss")`).
+(2) A render longer than ~4 minutes of video (253 s main) outlived the Bash background time limit:
+the harness reported the task "killed" but the node/chrome-headless-shell tree kept running
+orphaned and wrote the finished file ~15 min later. Don't start a second render; check
+`Get-Process chrome-headless-shell` and wait for `out/<file>.mp4`, then verify with `ffprobe`
+(duration) before trusting it.
+
+**Process hygiene, unchanged:** never combine the Bash tool's backgrounding with a manual `&`
+(see the entry above) - when debugging a suspected duplicate/corrupted render, check
+`Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -match 'remotion render' }` to
+confirm exactly one `node.exe` process is running before trusting any output.
+
+**Short cold-open / CTA knobs (added 2026-10-14):** `prep_short_render.py` takes `--cold-open-seconds` (default 1.5; `0` = narration and the first scene start at frame 0) and `--cta-seconds` (default 3.5); the closing CTA text is the existing positional `cta_text` argument. `ShortComposition.tsx` must guard the cold-open `<Sequence>` with `data.coldOpenFrames > 0` (Remotion rejects a zero-length Sequence). Reason: the channel's Studio data showed 69.9% of viewers swipe away and the cold open delays the first narrated second; whether removing it helps is an open A/B test (see Documentation/TREND_LOG.md, 2026-10-14). Keep the defaults for control Shorts.
+
+**`--first-scene-real` (added 2026-10-13):** with `--cold-open-seconds 0`, the real cold-open photo becomes the first scene under the narration (it replaces a leading pull-quote card too; skipped if one of the first two scenes is already a real photo/clip). Pass a vertical face-centred crop (e.g. `*_9x16.jpg`) as the cold-open image: the 16:9 centre crop can cut the face off at the frame edge.

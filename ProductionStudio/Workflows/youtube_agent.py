@@ -39,6 +39,15 @@ Usage:
 import argparse
 import glob
 import os
+import sys
+
+# Comment text (ours and viewers') routinely contains em-dashes, curly quotes, and other
+# non-cp1252 characters. Windows' default console codepage crashes on print() of those unless
+# stdout is forced to UTF-8 - real failure, 2026-09-27 (list-comments crashed mid-listing on an
+# em-dash). Reconfigure once at import time rather than wrapping every print call.
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
@@ -319,6 +328,52 @@ def delete_comment(comment_id):
     print(f"Deleted comment {comment_id}")
 
 
+def list_comments(video_id=None, max_results=50):
+    """Read-only: lists top-level comment threads, newest first. Pass video_id to scope
+    to one video; omit it to pull the most recent comments across the whole channel
+    (added 2026-09-15 per a real channel audit finding near-zero comment replies -
+    engagement signal was going unanswered because there was no way to see new
+    comments without checking Studio by hand). Each row includes the thread id (for
+    reply_comment/delete_comment), the top-level comment id, author, text, and whether
+    the channel owner has already replied (replyCount > 0 is a proxy - it doesn't
+    prove WE replied vs. a third party, but on this small a channel that's rare)."""
+    yt = get_authenticated_service()
+    kwargs = dict(part="snippet,replies", maxResults=max_results, order="time",
+                  textFormat="plainText")
+    if video_id:
+        kwargs["videoId"] = video_id
+    else:
+        yt_channel = yt.channels().list(part="id", mine=True).execute()
+        kwargs["allThreadsRelatedToChannelId"] = yt_channel["items"][0]["id"]
+    resp = yt.commentThreads().list(**kwargs).execute()
+    rows = []
+    for item in resp.get("items", []):
+        top = item["snippet"]["topLevelComment"]["snippet"]
+        rows.append({
+            "thread_id": item["id"],
+            "comment_id": item["snippet"]["topLevelComment"]["id"],
+            "video_id": top["videoId"],
+            "author": top["authorDisplayName"],
+            "text": top["textDisplay"],
+            "reply_count": item["snippet"]["totalReplyCount"],
+            "published_at": top["publishedAt"],
+        })
+    return rows
+
+
+def reply_comment(parent_comment_id, text):
+    """Posts a reply under an existing top-level comment (parent_comment_id is the
+    topLevelComment's own id, i.e. list_comments()'s 'comment_id' field - NOT the
+    thread id). Uses comments().insert with parentId, distinct from post_comment()
+    which starts a new top-level thread via commentThreads().insert."""
+    yt = get_authenticated_service()
+    body = {"snippet": {"parentId": parent_comment_id, "textOriginal": text}}
+    resp = yt.comments().insert(part="snippet", body=body).execute()
+    reply_id = resp["id"]
+    print(f"Replied to {parent_comment_id} with comment {reply_id}")
+    return reply_id
+
+
 def list_playlists():
     """Read-only: lists the channel's existing playlists."""
     yt = get_authenticated_service()
@@ -436,6 +491,14 @@ if __name__ == "__main__":
     p_comment.add_argument("video_id")
     p_comment.add_argument("text")
 
+    p_listcomments = sub.add_parser("list-comments")
+    p_listcomments.add_argument("--video-id", default=None, help="omit for channel-wide")
+    p_listcomments.add_argument("--max", type=int, default=50)
+
+    p_replycomment = sub.add_parser("reply-comment")
+    p_replycomment.add_argument("comment_id")
+    p_replycomment.add_argument("text")
+
     p_analytics = sub.add_parser("analytics")
     p_analytics.add_argument("video_id")
     p_analytics.add_argument("--start", required=True, help="YYYY-MM-DD")
@@ -472,6 +535,12 @@ if __name__ == "__main__":
                          privacy_status=args.privacy, publish_at=args.at)
     elif args.cmd == "comment":
         post_comment(args.video_id, args.text)
+    elif args.cmd == "list-comments":
+        for row in list_comments(video_id=args.video_id, max_results=args.max):
+            print(f"[{row['comment_id']}] video={row['video_id']} replies={row['reply_count']} "
+                  f"{row['author']}: {row['text']}")
+    elif args.cmd == "reply-comment":
+        reply_comment(args.comment_id, args.text)
     elif args.cmd == "analytics":
         result = video_analytics(args.video_id, args.start, args.end)
         for k, v in result.items():

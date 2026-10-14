@@ -3,108 +3,457 @@
   "cases": [
     {
       "case_name": "Molly Watson / James Addie",
-      "aka": ["Molly Watson murder", "James Addie", "Missouri conservation agent affair murder"],
+      "aka": [
+        "Molly Watson murder",
+        "James Addie",
+        "Missouri conservation agent affair murder"
+      ],
       "status": "produced_manually",
       "added": "2026-07-21"
     },
     {
       "case_name": "Brendan Banfield double murder",
-      "aka": ["Christine Banfield", "Joseph Ryan", "Juliana Peres Magalhaes", "au pair affair Fairfax County Virginia"],
+      "aka": [
+        "Christine Banfield",
+        "Joseph Ryan",
+        "Juliana Peres Magalhaes",
+        "au pair affair Fairfax County Virginia"
+      ],
       "status": "in_production",
       "added": "2026-07-21"
     },
     {
       "case_name": "Kouri Richins fentanyl murder",
-      "aka": ["Eric Richins", "Kouri Richins children's book author", "Are You With Me poisoning", "Utah fentanyl cocktail murder", "Robert Josh Grossman"],
+      "aka": [
+        "Eric Richins",
+        "Kouri Richins children's book author",
+        "Are You With Me poisoning",
+        "Utah fentanyl cocktail murder",
+        "Robert Josh Grossman"
+      ],
       "status": "in_production",
       "added": "2026-07-21"
     },
     {
       "case_name": "Monica Sementilli hairdresser murder",
-      "aka": ["Fabio Sementilli", "Robert Baker", "Woodland Hills hairdresser murder", "LA hair mogul wife murder", "L'Oreal hairstylist murder"],
+      "aka": [
+        "Fabio Sementilli",
+        "Robert Baker",
+        "Woodland Hills hairdresser murder",
+        "LA hair mogul wife murder",
+        "L'Oreal hairstylist murder"
+      ],
       "status": "in_production",
       "added": "2026-07-21"
     },
     {
       "case_name": "Rimoni Muliaga jealousy murder",
-      "aka": ["Lise Muliaga", "Leuma Muliaga", "Melton South stabbing", "DPP v Muliaga", "Melbourne false affair murder", "Samoan father jealousy killing"],
+      "aka": [
+        "Lise Muliaga",
+        "Leuma Muliaga",
+        "Melton South stabbing",
+        "DPP v Muliaga",
+        "Melbourne false affair murder",
+        "Samoan father jealousy killing"
+      ],
       "status": "in_production",
       "added": "2026-07-28"
     },
     {
       "case_name": "Devyn Michaels decapitation",
-      "aka": ["Johnathan Willette", "Deviere Willette", "NV v. Devyn Michaels", "Henderson Nevada decapitation", "love triangle beheading", "adult film actress murder stepson father-in-law"],
+      "aka": [
+        "Johnathan Willette",
+        "Deviere Willette",
+        "NV v. Devyn Michaels",
+        "Henderson Nevada decapitation",
+        "love triangle beheading",
+        "adult film actress murder stepson father-in-law"
+      ],
       "status": "in_production",
       "added": "2026-07-29"
     },
     {
       "case_name": "Walter Buchanan murder of Darrel Odhiambo",
-      "aka": ["HMA v Walter Buchanan", "Darrel Odhiambo", "Darrel Buchanan", "Hamilton Lanarkshire murder", "South Lanarkshire strangulation", "Scotland cheating text murder"],
+      "aka": [
+        "HMA v Walter Buchanan",
+        "Darrel Odhiambo",
+        "Darrel Buchanan",
+        "Hamilton Lanarkshire murder",
+        "South Lanarkshire strangulation",
+        "Scotland cheating text murder"
+      ],
       "status": "in_production",
       "added": "2026-07-30"
     },
     {
       "case_name": "Michael Thompson murder of Kimberley Thompson",
-      "aka": ["Kimberley Bounds", "Northampton staged suicide murder", "Nottingham Crown Court Thompson", "R v Michael Thompson UK", "faked suicide wife murder England"],
+      "aka": [
+        "Kimberley Bounds",
+        "Northampton staged suicide murder",
+        "Nottingham Crown Court Thompson",
+        "R v Michael Thompson UK",
+        "faked suicide wife murder England"
+      ],
       "status": "in_production",
       "added": "2026-08-01"
     },
     {
       "case_name": "Kevin West murder of Marcy West",
-      "aka": ["Marcelle West", "Camas-Washougal fire battalion chief murder", "Clark County Washington strangulation", "WA v Kevin West", "staged seizure murder", "Cynthia Ward affair"],
+      "aka": [
+        "Marcelle West",
+        "Camas-Washougal fire battalion chief murder",
+        "Clark County Washington strangulation",
+        "WA v Kevin West",
+        "staged seizure murder",
+        "Cynthia Ward affair"
+      ],
       "status": "in_production",
       "added": "2026-08-04"
     },
     {
       "case_name": "Yoon Sang-yeop Gapyeong valley murder",
-      "aka": ["Lee Eun-hae", "Cho Hyun-soo", "Korea insurance drowning murder", "Gapyeong valley murder case", "scuba diving death insurance fraud Korea", "valley murder accomplice"],
+      "aka": [
+        "Lee Eun-hae",
+        "Cho Hyun-soo",
+        "Korea insurance drowning murder",
+        "Gapyeong valley murder case",
+        "scuba diving death insurance fraud Korea",
+        "valley murder accomplice"
+      ],
       "status": "in_production",
       "added": "2026-08-10"
     },
     {
       "case_name": "Mompati Dodo Isaacs murder of Keotshepile Naso Isaacs",
-      "aka": ["Naso Isaacs", "North Berwick New Year's Day murder", "HMA v Isaacs", "Edinburgh High Court stabbing", "Scotland jealousy affair murder", "Victor Unachukwa"],
+      "aka": [
+        "Naso Isaacs",
+        "North Berwick New Year's Day murder",
+        "HMA v Isaacs",
+        "Edinburgh High Court stabbing",
+        "Scotland jealousy affair murder",
+        "Victor Unachukwa"
+      ],
       "status": "in_production",
       "added": "2026-08-11"
     },
     {
       "case_name": "Brian Walshe murder of Ana Walshe",
-      "aka": ["Ana Walshe", "Cohasset Massachusetts murder", "Commonwealth v Brian Walshe", "New Year's Day dismemberment murder", "missing real estate executive Cohasset", "Serbian immigrant mother of three murder"],
+      "aka": [
+        "Ana Walshe",
+        "Cohasset Massachusetts murder",
+        "Commonwealth v Brian Walshe",
+        "New Year's Day dismemberment murder",
+        "missing real estate executive Cohasset",
+        "Serbian immigrant mother of three murder"
+      ],
       "status": "in_production",
       "added": "2026-08-11"
     },
     {
       "case_name": "James Rummell murder of Lindy Rummell",
-      "aka": ["Lindy Rummell", "Darrell Riley hitman", "Clark County Washington murder-for-hire", "staged break-in murder", "life insurance murder for hire Vancouver WA", "$35,000 To Kill His Wife"],
+      "aka": [
+        "Lindy Rummell",
+        "Darrell Riley hitman",
+        "Clark County Washington murder-for-hire",
+        "staged break-in murder",
+        "life insurance murder for hire Vancouver WA",
+        "$35,000 To Kill His Wife"
+      ],
       "status": "published",
       "added": "2026-08-13",
       "published": "2026-08-20"
     },
     {
       "case_name": "Yolanda Olejniczak Marodi murder of Rebecca Marodi",
-      "aka": ["Rebecca Marodi", "Becky Marodi", "Cal Fire captain murder", "Ramona California stabbing", "same-sex spouse murder", "James Joseph Olejniczak", "second spouse killed", "Mexico fugitive capture"],
+      "aka": [
+        "Rebecca Marodi",
+        "Becky Marodi",
+        "Cal Fire captain murder",
+        "Ramona California stabbing",
+        "same-sex spouse murder",
+        "James Joseph Olejniczak",
+        "second spouse killed",
+        "Mexico fugitive capture"
+      ],
       "status": "in_production",
       "added": "2026-08-15"
     },
     {
       "case_name": "Jamie and Nicholas Orsini murder of Steven Kraft",
-      "aka": ["Steven Kraft", "Beacon New York carjacking murder", "custody threat murder", "body never found", "SDNY Orsini trial", "ex-husband disappearance 2020"],
+      "aka": [
+        "Steven Kraft",
+        "Beacon New York carjacking murder",
+        "custody threat murder",
+        "body never found",
+        "SDNY Orsini trial",
+        "ex-husband disappearance 2020"
+      ],
       "status": "in_production",
       "added": "2026-08-16"
     },
     {
       "case_name": "Lawrence Goodine murder of Kara Akins",
-      "aka": ["Kara Akins", "Chattanooga ex-cop murder", "former Chattanooga police officer murder", "Hamilton County strangulation", "staged death scene", "Tina Calloway phone call witness"],
+      "aka": [
+        "Kara Akins",
+        "Chattanooga ex-cop murder",
+        "former Chattanooga police officer murder",
+        "Hamilton County strangulation",
+        "staged death scene",
+        "Tina Calloway phone call witness"
+      ],
       "status": "published",
       "added": "2026-08-22",
       "published": "2026-08-22"
     },
     {
       "case_name": "Gofal Baziad murder of Jason Palmer",
-      "aka": ["Jason Palmer", "Nepean River murder", "Lakemba cold case", "Menangle body in river", "Renny Palmer love triangle", "Sydney 20-year cold case", "NSW Unsolved Homicide Squad"],
+      "aka": [
+        "Jason Palmer",
+        "Nepean River murder",
+        "Lakemba cold case",
+        "Menangle body in river",
+        "Renny Palmer love triangle",
+        "Sydney 20-year cold case",
+        "NSW Unsolved Homicide Squad"
+      ],
       "status": "published",
       "added": "2026-08-23",
       "published": "2026-08-25"
+    },
+    {
+      "case_name": "Zarrius Hildabrand murder of Saria Barney Hildabrand",
+      "aka": [
+        "Saria Barney Hildabrand",
+        "Anchorage storm drain murder",
+        "JBER soldier murder",
+        "Alaska National Guard combat medic murder",
+        "University Lake Park missing person",
+        "Nesbett Courthouse sentencing"
+      ],
+      "status": "published",
+      "added": "2026-08-30",
+      "published": "2026-08-30"
+    },
+    {
+      "case_name": "Jeffrey Ferguson murder of Sheryl Ferguson",
+      "aka": [
+        "Sheryl Ferguson",
+        "Orange County judge murder",
+        "Anaheim Hills murder",
+        "judge kills wife",
+        "Orange County Superior Court",
+        "47 guns weapons cache"
+      ],
+      "status": "published",
+      "added": "2026-09-03",
+      "published": "2026-09-03"
+    },
+    {
+      "case_name": "Joseph Greer murder of Samantha Lee",
+      "aka": [
+        "Samantha Lee",
+        "Aberdeen murder",
+        "Bedford Road murder",
+        "claw hammer murder Scotland",
+        "Police Scotland domestic murder",
+        "High Court Glasgow guilty plea",
+        "High Court Dundee sentencing",
+        "electronic tag protective order breach"
+      ],
+      "status": "published",
+      "added": "2026-09-03",
+      "published": "2026-09-08"
+    },
+    {
+      "case_name": "Wyatt Swan murder of Teresa Francisco",
+      "aka": [
+        "Teresa Francisco",
+        "Northeast DC murder",
+        "Eastern Avenue murder",
+        "DC parking lot murder",
+        "H. Carl Moultrie Courthouse",
+        "second degree murder while armed",
+        "courtroom ambush DC",
+        "Washington DC domestic violence murder"
+      ],
+      "status": "published",
+      "added": "2026-09-15",
+      "published": "2026-09-16"
+    },
+    {
+      "case_name": "Stephen McCullagh murder of Natalie McNally",
+      "aka": [
+        "Natalie McNally",
+        "Lurgan murder",
+        "Lurgan stabbing pregnant woman",
+        "YouTuber killer",
+        "GTA livestream alibi",
+        "fake livestream alibi",
+        "Belfast Crown Court",
+        "Northern Ireland pregnant woman murder",
+        "PSNI Operation"
+      ],
+      "status": "published",
+      "added": "2026-09-18",
+      "published": "2026-09-19"
+    },
+    {
+      "case_name": "Blaise Taylor murder of Jade Benning",
+      "aka": [
+        "Jade Benning",
+        "Blaise Taylor",
+        "ex-Titans scout",
+        "NFL scout poisoned pregnant girlfriend",
+        "cocaine poisoning pink lemonade",
+        "Nashville pregnant girlfriend poisoning",
+        "Davidson County"
+      ],
+      "status": "published",
+      "added": "2026-09-19",
+      "published": "2026-09-22"
+    },
+    {
+      "case_name": "Frederick Spears murder of Mary Spears",
+      "aka": [
+        "Mary Spears",
+        "Frederick Spears",
+        "Arlington Texas stabbing",
+        "murder kit case",
+        "Tarrant County capital murder",
+        "police drove killer to victim home",
+        "Shortleaf Pine Drive"
+      ],
+      "status": "published",
+      "added": "2026-09-22",
+      "published": "2026-09-25"
+    },
+    {
+      "case_name": "Kalvin Forcell murder of Christina Artus and Kaylee Forcell",
+      "aka": [
+        "Christina Artus",
+        "Kaylee Forcell",
+        "Gonzales Louisiana murder",
+        "Oak Village mobile home park",
+        "Ascension Parish murder",
+        "murder kit not applicable",
+        "Dollar General surveillance"
+      ],
+      "status": "published",
+      "added": "2026-09-27",
+      "published": "2026-09-28"
+    },
+    {
+      "case_name": "Caleb Flynn murder of Ashley Flynn",
+      "aka": [
+        "Ashley Flynn murder",
+        "Tipp City Ohio murder",
+        "American Idol contestant murder trial",
+        "Caleb Flynn Alleigha Botner affair",
+        "Miami County Ohio murder"
+      ],
+      "status": "published",
+      "added": "2026-09-29",
+      "published": "2026-09-30"
+    },
+    {
+      "case_name": "Vickie Williams murder of Darryl and Sharon Getman",
+      "aka": [
+        "Mount Dora murders",
+        "Getman murders",
+        "Waterman Village murders",
+        "Mount Dora retirement community double murder",
+        "Vickie Lynn Williams"
+      ],
+      "status": "published",
+      "added": "2026-10-02",
+      "published": "2026-10-05"
+    },
+    {
+      "case_name": "David Wright murder of Mariah Samuels",
+      "aka": [
+        "Mariah Samuels murder",
+        "Mariah Samuels",
+        "Minneapolis restraining order murder",
+        "Russell Avenue North shooting",
+        "Justice for Mariah"
+      ],
+      "status": "scheduled",
+      "added": "2026-10-03",
+      "scheduled_publish_start": "2026-10-06T02:00:00Z"
+    },
+    {
+      "case_name": "Tifany Adams murders of Veronica Butler and Jilian Kelley",
+      "aka": [
+        "Veronica Butler",
+        "Jilian Kelley",
+        "God's Misfits",
+        "Hugoton Kansas moms",
+        "Texas County Oklahoma freezer murders",
+        "Butler and Kelley murders"
+      ],
+      "status": "scheduled",
+      "added": "2026-10-05",
+      "scheduled_publish_start": "2026-10-08T14:00:00Z"
+    },
+    {
+      "case_name": "Robert Atrops murder of Deborah Atrops",
+      "aka": [
+        "Deborah Atrops",
+        "Deborah Lee Atrops",
+        "Beaverton Oregon trunk murder",
+        "1988 Washington County cold case",
+        "Murray Road dead end murder",
+        "Sherwood Oregon wife murder",
+        "Washington County cold case unit DNA conviction"
+      ],
+      "status": "scheduled",
+      "added": "2026-10-07",
+      "scheduled_publish_start": "2026-10-11T02:00:00Z"
+    },
+    {
+      "case_name": "Dean Penney murder of Jennifer Hillier-Penney",
+      "aka": [
+        "Jennifer Hillier-Penney",
+        "Jennifer Hillier Penney",
+        "St. Anthony Newfoundland murder",
+        "Mr. Big sting Newfoundland",
+        "Corner Brook Supreme Court murder trial",
+        "no-body murder Newfoundland",
+        "RCMP undercover confession"
+      ],
+      "status": "scheduled",
+      "added": "2026-10-10",
+      "scheduled_publish_start": "2026-10-13T14:00:00Z"
+    },
+    {
+      "case_name": "Adam Corcoran murder of Daena Walsh",
+      "aka": [
+        "Daena Walsh",
+        "Midleton murder",
+        "John Barry House Midleton",
+        "Cork Central Criminal Court murder trial 2026",
+        "999 call suicide claim",
+        "Ireland partner murder Cork",
+        "Adam Corcoran"
+      ],
+      "status": "scheduled",
+      "added": "2026-10-11",
+      "scheduled_publish_start": "2026-10-16T02:00:00Z"
+    },
+    {
+      "case_name": "Lawrence Rudolph murder of Bianca Rudolph",
+      "aka": [
+        "Bianca Rudolph",
+        "Larry Rudolph",
+        "safari murder dentist",
+        "Kafue National Park Zambia shooting",
+        "Pittsburgh dentist murder",
+        "Lori Milliron",
+        "Denver federal court safari trial"
+      ],
+      "status": "scheduled",
+      "added": "2026-10-13",
+      "scheduled_publish_start": "2026-10-18T14:00:00Z"
     }
   ]
 }

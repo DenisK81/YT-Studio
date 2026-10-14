@@ -188,3 +188,59 @@ video`, filtered to one video.
   37 views, 18s average view duration, 69.49% average view percentage — the higher retention
   percentage on the Short vs. the main video is the expected short-form-vs-long-form pattern,
   not a hook-quality signal on this small a sample.
+
+## Comment engagement — added 2026-09-15 (real gap found by a channel audit: 21 of 23 comment
+threads on the whole channel were our own pinned CTA posts; only 2 were real viewers, and one —
+"What channel!!! What name?" — had sat unanswered for 7 weeks, the exact scenario that already
+once forced the mandatory channel-footer-link fix in CLAUDE.md)
+
+`list_comments(video_id=None, max_results=50)` lists top-level comment threads, newest first —
+omit `video_id` for a channel-wide pull via `allThreadsRelatedToChannelId` (what a "check for new
+comments" pass should use), or pass one to scope to a single video. Returns each thread's
+`thread_id`, top-level `comment_id`, `author`, `text`, and `reply_count`. `reply_comment
+(parent_comment_id, text)` posts a threaded reply under an existing top-level comment via
+`comments().insert(parentId=...)` — distinct from `post_comment()`, which starts a brand-new
+top-level thread.
+
+**Process, not full automation (Phase 1 scope):** this is a manual per-session check, not an
+unattended auto-reply bot — run `list-comments` (filter out rows authored by the channel's own
+handle to find real viewer comments), read/judge each one, then `reply-comment` the ones worth
+answering. Do this at the start of any session that touches the channel, AND every time a batch
+of videos is scheduled/published (see below) — real comments can land on any older video at any
+time, so a session-start check alone isn't enough. No scheduled/cron version exists yet — same
+"manual until Phase 2" boundary as the rest of this tool.
+
+**Mandatory as part of every publish, not a separate follow-up (escalated 2026-09-27, real gap
+found: McCullagh, Blaise Taylor, and Frederick Spears — 15 videos across 3 cases — all went
+public with zero comment threads, because `post_comment()` was never actually called after
+upload despite every case's SEO.md/Shorts.md having a pre-drafted `pinned_comment`/CTA line the
+whole time).** The channel owner's instruction: comments get checked after publishing *every*
+video, not as a thing to remember to circle back to. Treat this as the last step of the publish
+sequence itself: once a batch of videos is scheduled, (1) call `post_comment()` with each video's
+own pre-drafted line for every video that is *already public* (remember the private-video
+restriction above — a scheduled-but-not-yet-live video will 403; queue the still-scheduled ones
+for whenever they flip public, e.g. as part of the next session's check), and (2) run
+`list-comments` across the channel (or scoped to the videos that just went live) and reply to any
+genuine viewer comment. Remind the pin step is manual-in-Studio (see `post_comment()`'s own
+docstring) — the API cannot pin.
+
+- **CLI note (fixed 2026-09-27):** `list-comments`/`reply-comment`'s printed output used to hit
+  `UnicodeEncodeError` on Windows' default `cp1252` console for em-dashes/emoji in comment text.
+  Fixed at the source, not per-caller: `youtube_agent.py` now calls
+  `sys.stdout.reconfigure(encoding='utf-8', errors='replace')` once at import time, so this no
+  longer needs to be remembered per invocation.
+
+## Interrupted upload batch (found 2026-10-09, Atrops case)
+
+An `HTTP 410 Gone` on a resumable upload (`prepare_upload`'s `next_chunk`) in the middle of a batch
+does NOT mean nothing was uploaded: the earlier file in the batch (the main video) had already
+finished and processed, and the failing file (a Short) left a stuck stub (`uploadStatus: uploaded`,
+`processingStatus: processing` for ~22 hours, duration `P0D`, private). Before any retry:
+(1) list the channel's uploads read-only and match by title; (2) identify finished vs stub videos
+by `contentDetails.duration` and `processingStatus`; (3) only a private, zero-duration, stuck
+stub that you uploaded yourself may be deleted (`videos().delete`; the list can still show it for
+a few seconds afterwards); (4) re-upload only the missing files, one at a time, with a title
+guard against the channel's existing titles, and stop on the first error instead of auto-retrying.
+Scheduling is still done only after a live read confirms five distinct titles and no slot collisions.
+
+**Read-after-write lag (2026-10-13):** right after `confirm_publish(..., publish_at=...)` a `videos.list` read can come back WITHOUT `publishAt` for several seconds (a replacement script stopped on a false mismatch). Poll the read for up to ~60 s before treating it as a failure. When replacing a scheduled private video: upload the new one and verify it holds the old slot BEFORE deleting the old one; the new id needs the Studio 'Altered or synthetic content' toggle set again.

@@ -266,12 +266,27 @@ def cmd_images(case_dir, images_dir):
     # Real-photo scenes (mandatory mixing, see Tools/mugshot_fetch_tool.md) are copied
     # in as-is instead of generated - never send their placeholder prompt to fal.ai.
     real_photo_scenes = {rp["scene_id"]: rp["local_path"] for rp in data.get("real_photo_scenes", [])}
+    # Pull-quote scenes (PullQuoteCard, see Tools/remotion_assembly_tool.md) need no image
+    # file at all - prep_remotion_render.py sources them straight from ImagePrompts.md. They
+    # shouldn't appear in "prompts" in the first place, but skip defensively if one does.
+    quote_scene_ids = {qs["scene_id"] for qs in data.get("pull_quote_scenes", [])}
+    # Real archival video scenes (Track 3, SceneClip - see Tools/remotion_assembly_tool.md) are
+    # cut from a real clip by prep_remotion_render.py; nothing to generate or copy here.
+    clip_scene_ids = {cs["scene_id"] for cs in data.get("real_clip_scenes", [])}
 
     os.makedirs(images_dir, exist_ok=True)
     generated = 0
     for p in prompts:
         scene_id = p["scene_id"]
         out_path = os.path.join(images_dir, scene_id + ".png")
+
+        if scene_id in quote_scene_ids:
+            print(f"pull-quote scene {scene_id}: no image needed, skipped")
+            continue
+
+        if scene_id in clip_scene_ids:
+            print(f"real clip scene {scene_id}: sourced from a real video clip, skipped")
+            continue
 
         if scene_id in real_photo_scenes:
             src_path = os.path.join(repo_root(), real_photo_scenes[scene_id])

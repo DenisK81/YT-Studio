@@ -7,7 +7,11 @@
       "description": "Wraps web search/fetch with the channel's fixed source-priority ranking. Stage 2 live-tested 2026-07-20 (Tests/stage2_fact_check_tool_test.md): correctly ranked a DOJ press release over secondary outlets, and correctly flagged two deliberately-unsupported bait claims rather than fabricating sources for them.",
       "input_schema_ref": "claims: string[]",
       "output_schema_ref": "verified: object[], flagged: object[]",
-      "tags": ["research", "verification", "web-search"],
+      "tags": [
+        "research",
+        "verification",
+        "web-search"
+      ],
       "provider": "Anthropic web_search tool or equivalent search API",
       "status": "active",
       "last_updated": "2026-07-20"
@@ -18,7 +22,13 @@
       "description": "Provider-agnostic voiceover generation wrapper; default provider ElevenLabs Studio. generate_music() (Eleven Music API) is now the background-music FALLBACK only, superseded by Tools/royalty_free_music_tool.md as default since it costs per-generation credits. Real live-test of generate_music blocked by a missing music_generation permission on the current API key. Stage 4 (2026-07-21): TTS live-tested as a real n8n HTTP node with the standalone ELEVENLABS_API_KEY - 7 full chapters rendered in one run (Tests/stage4_full_pipeline_n8n_test.md). CONSTRAINT found: Creator plan allows max 5 concurrent requests, and n8n batchInterval only spaces request starts - use batchSize 1 + batchInterval 20000ms for chapter batches. FIXED same day: switched to the /with-timestamps endpoint (real per-character alignment) after captions built from a separate estimate drifted badly on a real render - see this file's 'Real-timestamp captioning' section and Workflows/process_pipeline_audio.py.",
       "input_schema_ref": "text: string, voice_id: string, chapter: string | mood_prompt: string, duration_seconds: number",
       "output_schema_ref": "audio_url_or_bytes: string, duration_seconds: number",
-      "tags": ["voice", "tts", "audio", "music", "fallback"],
+      "tags": [
+        "voice",
+        "tts",
+        "audio",
+        "music",
+        "fallback"
+      ],
       "provider": "ElevenLabs",
       "status": "active",
       "last_updated": "2026-07-19"
@@ -29,7 +39,11 @@
       "description": "Provider-agnostic image generation wrapper. Default: fal.ai + Flux schnell (real API, near-free at test volume). Leonardo/Replicate as fallback. Midjourney excluded from automation (no official API). Stage 4 (2026-07-21): the same contract also confirmed working as a real n8n HTTP Request node (Tests/stage4_n8n_local_bootstrap.md), then batch-proven in the full pipeline trial - 70 scene images generated and saved to disk in one n8n run with batchSize 1 / 1s spacing, zero failures (Tests/stage4_full_pipeline_n8n_test.md).",
       "input_schema_ref": "prompt: string, style_tags: string[]",
       "output_schema_ref": "image_url_or_file: string",
-      "tags": ["image", "generation", "visual"],
+      "tags": [
+        "image",
+        "generation",
+        "visual"
+      ],
       "provider": "fal.ai (flux/schnell), fallback: Leonardo.ai API, Replicate",
       "status": "active",
       "last_updated": "2026-07-21"
@@ -37,25 +51,36 @@
     {
       "name": "remotion_assembly_tool",
       "path": "Tools/remotion_assembly_tool.md",
-      "description": "Programmatic video assembly: audio + images + timing + burned-in captions (fixed 2026 karaoke-style spec) + effects. Renders both the 16:9 main video and 9:16 Shorts selected by Agents/shorts_agent.md. Live-tested locally 2026-07-20 (Node.js installed via winget, Remotion scaffolded via create-video): real ~18s render using actual Banfield assets (0001.png, Jimmy-voice TTS, a bed track) succeeded and was visually confirmed correct (captions, karaoke highlight, Ken Burns pan, audio mix). Found the caption-timing 2s-minimum rule doesn't work for continuous main-video narration (fixed: natural word-count timing for main video, 2s floor stays for Shorts only) and that chunking should prefer clause boundaries over blind word-count splits (not yet implemented). 2026-08-30: added PullQuoteCard.tsx (a second visual format, a held real-quote card, render-tested and visually confirmed) and SceneClip.tsx (plays a real archival clip via OffthreadVideo, not yet tested against a real clip) — every case going forward must use at least one non-SceneImage visual format, escalated from a flagged idea after a real channel audit found low main-video average-view-percentage on a real sample.",
+      "description": "Programmatic video assembly: audio + images + timing + burned-in captions (fixed 2026 karaoke-style spec) + effects. Renders both the 16:9 main video and 9:16 Shorts selected by Agents/shorts_agent.md. Live-tested locally 2026-07-20 (Node.js installed via winget, Remotion scaffolded via create-video): real ~18s render using actual Banfield assets (0001.png, Jimmy-voice TTS, a bed track) succeeded and was visually confirmed correct (captions, karaoke highlight, Ken Burns pan, audio mix). Found the caption-timing 2s-minimum rule doesn't work for continuous main-video narration (fixed: natural word-count timing for main video, 2s floor stays for Shorts only) and that chunking should prefer clause boundaries over blind word-count splits (not yet implemented). 2026-08-30: added PullQuoteCard.tsx (a second visual format, a held real-quote card, render-tested and visually confirmed) and SceneClip.tsx (plays a real archival clip via OffthreadVideo, not yet tested against a real clip) — every case going forward must use at least one non-SceneImage visual format, escalated from a flagged idea after a real channel audit found low main-video average-view-percentage on a real sample. Wiring built out same day: ImagePrompts.md's new pull_quote_scenes array + prep_remotion_render.py support (emits type:'quote' scene entries, no image file needed) + a per-case Trial component branch (s.type === 'quote' -> PullQuoteCardComponent). First real case: Zarrius Hildabrand. Extended 2026-09-18: real_clip_scenes / real_media_inserts (Track 3 real video and real audio, first used on the McCullagh case) via Workflows/real_media_utils.py; prep_remotion_render.py and prep_short_render.py cut clips, shift the timeline around inserts and emit quietRanges.",
       "input_schema_ref": "scenes: object[], audio_track: string, background_music_track: string, subtitle_track: string",
       "output_schema_ref": "render_path: string, duration_seconds: number",
-      "tags": ["video", "assembly", "render", "captions", "shorts"],
+      "tags": [
+        "video",
+        "assembly",
+        "render",
+        "captions",
+        "shorts"
+      ],
       "provider": "Remotion (Node.js)",
       "status": "active",
-      "last_updated": "2026-07-20"
+      "last_updated": "2026-09-18"
     },
     {
       "name": "youtube_publish_tool",
       "path": "Tools/youtube_publish_tool.md",
       "implementation": "Workflows/youtube_agent.py",
-      "description": "Real implementation written 2026-07-25 per the channel owner's instruction to write it once and reuse for every future publish. Official google-api-python-client + google-auth-oauthlib against YouTube Data API v3, OAuth client from Google Cloud Console (Config/client_secret_*.json, gitignored). prepare_upload() uploads as PRIVATE with full metadata (this is the 'draft_id' from this tool's own contract, implemented as the real video_id). confirm_publish() is the ONLY function that can make a video public/scheduled and hard-requires human_confirmed=True passed explicitly - never set programmatically, per Agents/publishing_agent.md's no-exceptions rule. One-time interactive OAuth consent (`python youtube_agent.py auth`) opens a local browser for the channel owner to log in themselves; Claude never sees or enters credentials.",
+      "description": "Real implementation written 2026-07-25 per the channel owner's instruction to write it once and reuse for every future publish. Official google-api-python-client + google-auth-oauthlib against YouTube Data API v3, OAuth client from Google Cloud Console (Config/client_secret_*.json, gitignored). prepare_upload() uploads as PRIVATE with full metadata (this is the 'draft_id' from this tool's own contract, implemented as the real video_id). confirm_publish() is the ONLY function that can make a video public/scheduled and hard-requires human_confirmed=True passed explicitly - never set programmatically, per Agents/publishing_agent.md's no-exceptions rule. One-time interactive OAuth consent (`python youtube_agent.py auth`) opens a local browser for the channel owner to log in themselves; Claude never sees or enters credentials. Extended 2026-09-15 after a real channel audit found real viewer comments going unanswered (one from 2026-07-28 sat unreplied for 7 weeks): list_comments() (channel-wide or per-video, newest first) and reply_comment() (threaded reply under a top-level comment) let the channel owner/Claude check and answer real comments each session instead of only via manual Studio checks.",
       "input_schema_ref": "video_file: string, title/description/tags: metadata, category_id: string, thumbnail_file: string?",
       "output_schema_ref": "video_id: string, status: string",
-      "tags": ["publishing", "youtube"],
+      "tags": [
+        "publishing",
+        "youtube",
+        "engagement",
+        "comments"
+      ],
       "provider": "YouTube Data API v3 (official google-api-python-client)",
       "status": "active",
-      "last_updated": "2026-07-25"
+      "last_updated": "2026-09-15"
     },
     {
       "name": "seo_export_tool",
@@ -63,7 +88,10 @@
       "description": "Formats SEO Agent's structured output into Templates/SEO.md. Validated 2026-07-20 via real session use (Tests/stage2_seo_export_and_github_sync_test.md) — Cases/brendan-banfield-double-murder/SEO.md is a real product of exactly this transform.",
       "input_schema_ref": "seo_json: object",
       "output_schema_ref": "SEO.md: file",
-      "tags": ["seo", "formatting"],
+      "tags": [
+        "seo",
+        "formatting"
+      ],
       "provider": "none (pure formatting)",
       "status": "active",
       "last_updated": "2026-07-20"
@@ -74,7 +102,11 @@
       "description": "Checks/updates tool_registry.json and commits studio changes to GitHub. Validated 2026-07-20 via real, repeated session use (Tests/stage2_seo_export_and_github_sync_test.md) — 5 real merged PRs this session with real commit SHAs; this environment has the real git/GitHub access the spec's own note said a plain chat session wouldn't.",
       "input_schema_ref": "action: 'check'|'commit', payload: object",
       "output_schema_ref": "result: object",
-      "tags": ["github", "meta", "tool-management"],
+      "tags": [
+        "github",
+        "meta",
+        "tool-management"
+      ],
       "provider": "GitHub API / git CLI",
       "status": "active",
       "last_updated": "2026-07-20"
@@ -82,13 +114,19 @@
     {
       "name": "mugshot_fetch_tool",
       "path": "Tools/mugshot_fetch_tool.md",
-      "description": "Three-track real-material sourcing. Track 1: person photos (mugshot/court exhibit) from official public-record sources only (now including outlet-hosted photos with explicit official-source captions), always eyes-redacted before use via OpenCV Haar-cascade detection, with a manual pixel-coordinate fallback when the cascade misses or false-positives (confirmed necessary on real off-angle photos, not just a theoretical edge case — see Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md). Track 2: non-person photos from any source including news articles, per the channel owner's 2026-07-19 risk decision. Track 3 (added 2026-08-30): archival video clips (bodycam, press conference, court hearing) from the issuing agency's own release only — never an outlet's own original video journalism — played via the new SceneClip Remotion component; not yet exercised end-to-end on a real case. Track 1 live-tested end-to-end 2026-07-20 on the real Banfield mugshot. 2026-07-28: extended to a non-US jurisdiction (Victoria, Australia) with no booking-photo release system — real equivalent found via AAP wire-service press photography. generate_case_assets.py's cmd_images auto-copies real-photo-scene images instead of generating over them, driven by ImagePrompts.md's real_photo_scenes list. Escalated 2026-08-30: sourcing priority is now real video clip > real photo > AI generation (gap-filler only), per explicit channel-owner instruction after a real channel-performance audit.",
+      "description": "Three-track real-material sourcing. Track 1: person photos (mugshot/court exhibit) from official public-record sources only (now including outlet-hosted photos with explicit official-source captions), always eyes-redacted before use via OpenCV Haar-cascade detection, with a manual pixel-coordinate fallback when the cascade misses or false-positives (confirmed necessary on real off-angle photos, not just a theoretical edge case — see Cases/rimoni-muliaga-jealousy-murder/PersonPhotos.md). Track 2: non-person photos from any source including news articles, per the channel owner's 2026-07-19 risk decision — but confirmed 2026-08-30 (Hildabrand case) that a Track 2 photo can itself contain printed/displayed photos of a real identifiable person (a flyer, a framed photo, a screen in frame) and those need their own redaction pass, independent of any Track 1 entry for the same person elsewhere. Track 3 (added 2026-08-30): archival video clips (bodycam, press conference, court hearing) from the issuing agency's own release only — never an outlet's own original video journalism — played via the new SceneClip Remotion component; not yet exercised end-to-end on a real case, and its officialness bar (agency-released only) is now also applied when deciding whether a real STILL photo of an accused/perpetrator qualifies as Track 1 (an outlet's own courtroom photojournalism does not qualify, even of a genuinely public proceeding — see Hildabrand's PersonPhotos.md). Track 1 live-tested end-to-end 2026-07-20 on the real Banfield mugshot. 2026-07-28: extended to a non-US jurisdiction (Victoria, Australia) with no booking-photo release system — real equivalent found via AAP wire-service press photography. generate_case_assets.py's cmd_images auto-copies real-photo-scene images instead of generating over them, driven by ImagePrompts.md's real_photo_scenes list, and now also skips pull_quote_scenes scene_ids (no image needed). Escalated 2026-08-30: sourcing priority is now real video clip > real photo > AI generation (gap-filler only), per explicit channel-owner instruction after a real channel-performance audit. Track 3 practical acquisition recipe added 2026-09-18 (outlet-republished agency packages, watermark-free source, speech-to-text segmenting, face rules for video).",
       "input_schema_ref": "case_name: string, subjects: object[], scene_targets: object[]",
       "output_schema_ref": "person_images: object[], scene_images: object[], video_clips: object[], not_found: object[]",
-      "tags": ["images", "video", "public-records", "mugshots", "legal"],
+      "tags": [
+        "images",
+        "video",
+        "public-records",
+        "mugshots",
+        "legal"
+      ],
       "provider": "county sheriff / state DOC inmate lookup / court press releases / outlet-hosted-with-official-attribution / wire-service press photography / agency-released video (person + clip tracks, jurisdiction-dependent); any outlet (scene track)",
       "status": "active",
-      "last_updated": "2026-08-30"
+      "last_updated": "2026-09-18"
     },
     {
       "name": "royalty_free_music_tool",
@@ -96,10 +134,31 @@
       "description": "Confirmed 2026-07-19 (direct read of Pixabay's API docs): no free music source checked has a public API. Finalized approach: channel owner hand-picked 10 tracks from Pixabay Music, stored at ProductionStudio/Assets/audio/music_bed/bed_01.mp3..bed_10.mp3 (gitignored). get_bed_track() picks one and loops/trims it per render (main video or Short) — no live search needed. Stage 1 live-tested 2026-07-19: all 10 files verified as valid MP3s (mutagen), real durations read (99-504s), pick-and-loop math confirmed against the real Banfield case (main video + 2 Shorts).",
       "input_schema_ref": "get_bed_track() -> track_path",
       "output_schema_ref": "track_path: string",
-      "tags": ["audio", "music", "royalty-free", "legal"],
+      "tags": [
+        "audio",
+        "music",
+        "royalty-free",
+        "legal"
+      ],
       "provider": "Pixabay Music (10 hand-picked tracks, local); ElevenLabs Music (automated fallback, paid)",
       "status": "active",
       "last_updated": "2026-07-19"
+    },
+    {
+      "name": "channel_analytics_tool",
+      "path": "Tools/channel_analytics_tool.md",
+      "description": "Read-only report of where the channel's views come from and which Short patterns work: traffic sources, Shorts vs long-form medians, retention-vs-reach correlation, title-pattern medians, monthly medians, top Shorts. Real YouTube Data + Analytics API numbers only; thumbnail impressions/CTR and the per-Short stayed-to-watch split are NOT in the API and must be read from Studio's Advanced mode. Validated 2026-10-14 against the live channel (152 videos, 12.7k views).",
+      "input_schema_ref": "--start YYYY-MM-DD, --end YYYY-MM-DD, --json path",
+      "output_schema_ref": "stdout report + optional json",
+      "tags": [
+        "youtube",
+        "analytics",
+        "shorts",
+        "read-only"
+      ],
+      "provider": "YouTube Data API v3 / YouTube Analytics API v2",
+      "status": "active",
+      "last_updated": "2026-10-14"
     }
   ]
 }

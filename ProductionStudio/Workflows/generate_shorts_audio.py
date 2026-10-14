@@ -16,7 +16,7 @@ import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from generate_case_assets import post_json, word_spans, VOICE_ID, ELEVENLABS_MODEL
+from generate_case_assets import post_json, word_spans, normalize_chapter_loudness, VOICE_ID, ELEVENLABS_MODEL
 
 
 def extract_marked_text_from_script(script_path):
@@ -48,7 +48,9 @@ def extract_marked_text(voiceover_path, scene_lo, scene_hi):
         sid = m.group(1)
         start = m.end()
         end = markers[i + 1].start() if i + 1 < len(markers) else len(body)
-        scene_text[sid] = body[start:end].strip()
+        # A chapter header ("=== CHAPTER 03 (scenes ...) ===") sits between two scene markers, so it
+        # would otherwise be read aloud as the tail of the previous scene (real defect, 2026-10-02).
+        scene_text[sid] = re.sub(r"^===.*===\s*$", "", body[start:end], flags=re.M).strip()
 
     lo, hi = int(scene_lo), int(scene_hi)
     ordered_ids = [f"{i:04d}" for i in range(lo, hi + 1)]
@@ -85,6 +87,9 @@ def main(short_id, out_dir, script_path=None, case_dir=None, scene_lo=None, scen
     mp3_path = os.path.join(out_dir, f"{short_id}.mp3")
     with open(mp3_path, "wb") as f:
         f.write(audio_bytes)
+    # Main-video chapters are loudness-normalized right after generation; Shorts weren't, so some
+    # rendered 5-7 LU quieter than the main video (Wright/Samuels Short 4: -31 LUFS, 2026-10-03).
+    normalize_chapter_loudness(mp3_path)
 
     align = resp.get("alignment") or resp.get("normalized_alignment")
     chars, starts, ends = align["characters"], align["character_start_times_seconds"], align["character_end_times_seconds"]

@@ -29,3 +29,6 @@ graphify-out/
 # subdirectories, so ProductionStudio/Cases/covered_cases.json (the case registry, not
 # video content) stays tracked without needing a separate negation rule.
 ProductionStudio/Cases/*/
+
+# Real source footage downloaded per case (bodycam/CCTV/911 clips) - media, not repo content.
+ProductionStudio/Assets/video/
